@@ -6,24 +6,27 @@
   "name": "Squashed",
   "description": "",
   "authors": [
-    "Leah (leafenzio), Eliza (@tellioaridoitsu), Merp (@I_Am_Merp)"
+    "Leah (@leafenzio), Eliza (@tellioaridoitsu), Merp (@I_Am_Merp)"
   ],
   "contact": {
     "homepage": "",
     "sources": "https://github.com/Leafenzo/Squashed"
   },
 
-  "license": "CC0-1.0",
+  "license": "MIT License",
   "icon": "assets/modid/icon.png",
 
   "environment": "*",
   "entrypoints": {
     "main": [
-      "net.fabricmc.example.ExampleMod"
+      "net.leafenzo.squashed.ModInit"
+    ],
+    "client": [
+      "net.leafenzo.squashed.ModClientInit"
     ]
   },
   "mixins": [
-    "modid.mixins.json"
+    "squashed.mixins.json"
   ],
 
   "depends": {
