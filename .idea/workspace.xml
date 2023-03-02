@@ -4,16 +4,120 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cb9b23c3-b8a2-4670-a4fd-59bdad0bfbb6" name="Changes" comment="" />
+    <list default="true" id="e439fdee-e774-42a1-be1f-d5f9b9a3f2de" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Squashed.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Squashed/.github/workflows/build.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Squashed/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Squashed/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Squashed/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Squashed/gradle.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Squashed/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Squashed/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Squashed/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Squashed/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Squashed/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Squashed/src/main/java/net/leafenzo/squashed/AllBlocks.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Squashed/src/main/java/net/leafenzo/squashed/ModClientInit.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Squashed/src/main/java/net/leafenzo/squashed/ModInit.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Squashed/src/main/java/net/leafenzo/squashed/Super.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Squashed/src/main/java/net/leafenzo/squashed/mixin/ExampleMixin.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Squashed/src/main/resources/assets/compressed_blocks/compressed_andesite_block.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Squashed/src/main/resources/assets/compressed_blocks/compressed_cobblestone_block.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Squashed/src/main/resources/assets/compressed_blocks/compressed_gravel_block.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Squashed/src/main/resources/assets/compressed_blocks/compressed_stone_block.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Squashed/src/main/resources/assets/compressed_blocks/compressed_tuff_block.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Squashed/src/main/resources/assets/compressed_blocks/super_compressed_andesite_block.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Squashed/src/main/resources/assets/compressed_blocks/super_compressed_cobblestone_block.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Squashed/src/main/resources/assets/compressed_blocks/super_compressed_gravel_block.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Squashed/src/main/resources/assets/compressed_blocks/super_compressed_stone_block.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Squashed/src/main/resources/assets/compressed_blocks/super_compressed_tuff_block.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Squashed/src/main/resources/assets/dye_blocks/black_dye_block.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Squashed/src/main/resources/assets/dye_blocks/blue_dye_block.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Squashed/src/main/resources/assets/dye_blocks/brown_dye_block.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Squashed/src/main/resources/assets/dye_blocks/cyan_dye_block.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Squashed/src/main/resources/assets/dye_blocks/gray_dye_block.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Squashed/src/main/resources/assets/dye_blocks/green_dye_block.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Squashed/src/main/resources/assets/dye_blocks/light_blue_dye_block.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Squashed/src/main/resources/assets/dye_blocks/light_gray_dye_block.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Squashed/src/main/resources/assets/dye_blocks/lime_dye_block.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Squashed/src/main/resources/assets/dye_blocks/magenta_dye_block.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Squashed/src/main/resources/assets/dye_blocks/orange_dye_block.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Squashed/src/main/resources/assets/dye_blocks/pink_dye_block.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Squashed/src/main/resources/assets/dye_blocks/purple_dye_block.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Squashed/src/main/resources/assets/dye_blocks/red_dye_block.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Squashed/src/main/resources/assets/dye_blocks/white_dye_block.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Squashed/src/main/resources/assets/dye_blocks/yellow_dye_block.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Squashed/src/main/resources/assets/leather_block/leather_block_01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Squashed/src/main/resources/assets/leather_block/leather_block_2345.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Squashed/src/main/resources/assets/misc_blocks/blaze_powder_block.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Squashed/src/main/resources/assets/misc_blocks/book_block.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Squashed/src/main/resources/assets/misc_blocks/crystalized_ghast_tear.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Squashed/src/main/resources/assets/misc_blocks/fire_charge_block.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Squashed/src/main/resources/assets/misc_blocks/magma_cream_block.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Squashed/src/main/resources/assets/misc_blocks/phantom_membrane_block.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Squashed/src/main/resources/assets/modid/icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Squashed/src/main/resources/assets/seed_blocks/beetroot_seed_block.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Squashed/src/main/resources/assets/seed_blocks/cocoa_bean_block.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Squashed/src/main/resources/assets/seed_blocks/melon_seed_block.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Squashed/src/main/resources/assets/seed_blocks/pumpkin_seed_block.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Squashed/src/main/resources/assets/seed_blocks/wheat_seed_block.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Squashed/src/main/resources/fabric.mod.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Squashed/src/main/resources/squashed.mixins.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external/Dye_Block.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external/Notes/block properties.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external/Textures/_alltextures.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/external/Textures/_dyeblocks.png" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Squashed" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectId" id="2MHG1GsTsf6aM6Mq5ybVGta6HEh" />
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2MGageGHEwwo7JOL7LiVm8kF5dA" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -23,30 +127,190 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/leafe/Documents/GitHub/Squashed/Squashed",
+    "last_opened_file_path": "C:/Users/leafe/Documents/GitHub/Squashed",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Minecraft Client">
+    <configuration name="Squashed [configureClientLaunch]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="configureClientLaunch" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="Squashed [configureLaunch]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="configureLaunch" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="Squashed [genSources]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="genSources" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="Squashed [remapJar]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="remapJar" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="Squashed [runClient]" type="GradleRunConfiguration" factoryName="Gradle">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="runClient" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="Squashed [testClasses]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="testClasses" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Application.Minecraft Client" />
+      <item itemvalue="Application.Minecraft Server" />
+      <item itemvalue="Gradle.Squashed [runClient]" />
+      <item itemvalue="Gradle.Squashed [configureClientLaunch]" />
+      <item itemvalue="Gradle.Squashed [configureLaunch]" />
+      <item itemvalue="Gradle.Squashed [genSources]" />
+      <item itemvalue="Gradle.Squashed [remapJar]" />
+      <item itemvalue="Gradle.Squashed [testClasses]" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.Squashed [configureClientLaunch]" />
+        <item itemvalue="Gradle.Squashed [configureLaunch]" />
+        <item itemvalue="Gradle.Squashed [testClasses]" />
+        <item itemvalue="Gradle.Squashed [genSources]" />
+        <item itemvalue="Gradle.Squashed [remapJar]" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="cb9b23c3-b8a2-4670-a4fd-59bdad0bfbb6" name="Changes" comment="" />
-      <created>1677416878910</created>
+      <changelist id="e439fdee-e774-42a1-be1f-d5f9b9a3f2de" name="Changes" comment="" />
+      <created>1677396485322</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1677416878910</updated>
-      <workItem from="1677416881040" duration="15000" />
-      <workItem from="1677417000115" duration="5000" />
-      <workItem from="1677417029197" duration="16000" />
-      <workItem from="1677461966272" duration="632000" />
+      <updated>1677396485322</updated>
+      <workItem from="1677396486463" duration="4221000" />
+      <workItem from="1677416899185" duration="32000" />
+      <workItem from="1677462606082" duration="16000" />
+      <workItem from="1677462751132" duration="8301000" />
+      <workItem from="1677560240823" duration="790000" />
+      <workItem from="1677722808184" duration="72000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/.." />
+    </ignored-roots>
   </component>
 </project>
