@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "id": "squashed-building-blocks",
+  "id": "net.leafenzo.squashed-building-blocks",
   "version": "${version}",
 
   "name": "Squashed",
