@@ -10,12 +10,12 @@ import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 
 public class AllItems {
-    /** Debug Owo */
-    public static final Item CAT_FOOD = registerItem(
-            "cat_food",
-            new Item(new Item.Settings()),
-            ItemGroups.SQUASHED
-    );
+//    /** Debug Owo */
+//    public static final Item CAT_FOOD = registerItem(
+//            "cat_food",
+//            new Item(new Item.Settings()),
+//            ItemGroups.SQUASHED
+//    );
 
     /** .name must not contain uppercase letters or special characters */
     private static Item registerItem(String name, Item item, ItemGroup group) {
