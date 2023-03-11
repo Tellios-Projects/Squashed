@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "id": "squashed",
+  "id": "${modid}",
   "version": "${version}",
 
   "name": "Squashed",
   "description": "",
   "authors": [
-    "Leah (@leafenzio), Eliza (@tellioaridoitsu), Merp (@I_Am_Merp)"
+    "Leah (@leafenzio), Tellio (@tellioaridoitsu), Merp (@I_Am_Merp)"
   ],
   "contact": {
     "homepage": "",
@@ -23,6 +23,9 @@
     ],
     "client": [
       "net.leafenzo.squashed.ModClientInit"
+    ],
+    "fabric-datagen": [
+      "net.leafenzo.squashed.datagen.DataGenerator"
     ]
   },
   "mixins": [

@@ -5,57 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e439fdee-e774-42a1-be1f-d5f9b9a3f2de" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/squashed/blockstates/cyan_dye_block.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/squashed/models/block/cyan_dye_block.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/squashed/models/item/cyan_dye_block.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/leafenzo/squashed/datageneration/DataGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/leafenzo/squashed/datageneration/LootTableGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/leafenzo/squashed/datageneration/ModelProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/leafenzo/squashed/datageneration/RecipeGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/leafenzo/squashed/datageneration/WorldGenerator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/net/leafenzo/squashed/ModClientInit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/leafenzo/squashed/ModClientInit.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/net/leafenzo/squashed/ModInit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/leafenzo/squashed/ModInit.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/net/leafenzo/squashed/Super.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/leafenzo/squashed/Super.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/leafenzo/squashed/block/AllBlocks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/leafenzo/squashed/block/AllBlocks.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/leafenzo/squashed/item/AllItems.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/leafenzo/squashed/item/AllItems.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/leafenzo/squashed/item/ItemGroups.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/leafenzo/squashed/item/ItemGroups.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/squashed/lang/en_us.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/squashed/lang/en_us.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/squashed/models/block/WIP cyan_dye_block.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/squashed/models/block/WIP cyan_dye_block.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/squashed/textures/block/compressed_blocks/compressed_andesite_block.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/squashed/textures/block/compressed_andesite_block.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/squashed/textures/block/compressed_blocks/compressed_cobblestone_block.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/squashed/textures/block/compressed_cobblestone_block.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/squashed/textures/block/compressed_blocks/compressed_gravel_block.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/squashed/textures/block/compressed_gravel_block.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/squashed/textures/block/compressed_blocks/compressed_stone_block.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/squashed/textures/block/compressed_stone_block.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/squashed/textures/block/compressed_blocks/compressed_tuff_block.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/squashed/textures/block/compressed_tuff_block.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/squashed/textures/block/compressed_blocks/super_compressed_andesite_block.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/squashed/textures/block/super_compressed_andesite_block.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/squashed/textures/block/compressed_blocks/super_compressed_cobblestone_block.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/squashed/textures/block/super_compressed_cobblestone_block.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/squashed/textures/block/compressed_blocks/super_compressed_gravel_block.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/squashed/textures/block/super_compressed_gravel_block.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/squashed/textures/block/compressed_blocks/super_compressed_stone_block.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/squashed/textures/block/super_compressed_stone_block.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/squashed/textures/block/compressed_blocks/super_compressed_tuff_block.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/squashed/textures/block/super_compressed_tuff_block.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/squashed/textures/block/dye_blocks/black_dye_block.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/squashed/textures/block/black_dye_block.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/squashed/textures/block/dye_blocks/blue_dye_block.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/squashed/textures/block/blue_dye_block.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/squashed/textures/block/dye_blocks/brown_dye_block.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/squashed/textures/block/brown_dye_block.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/squashed/textures/block/dye_blocks/cyan_dye_block.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/squashed/textures/block/cyan_dye_block.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/squashed/textures/block/dye_blocks/gray_dye_block.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/squashed/textures/block/gray_dye_block.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/squashed/textures/block/dye_blocks/green_dye_block.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/squashed/textures/block/green_dye_block.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/squashed/textures/block/dye_blocks/light_blue_dye_block.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/squashed/textures/block/light_blue_dye_block.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/squashed/textures/block/dye_blocks/light_gray_dye_block.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/squashed/textures/block/light_gray_dye_block.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/squashed/textures/block/dye_blocks/lime_dye_block.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/squashed/textures/block/lime_dye_block.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/squashed/textures/block/dye_blocks/magenta_dye_block.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/squashed/textures/block/magenta_dye_block.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/squashed/textures/block/dye_blocks/orange_dye_block.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/squashed/textures/block/orange_dye_block.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/squashed/textures/block/dye_blocks/pink_dye_block.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/squashed/textures/block/pink_dye_block.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/squashed/textures/block/dye_blocks/purple_dye_block.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/squashed/textures/block/purple_dye_block.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/squashed/textures/block/dye_blocks/red_dye_block.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/squashed/textures/block/red_dye_block.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/squashed/textures/block/dye_blocks/white_dye_block.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/squashed/textures/block/white_dye_block.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/squashed/textures/block/dye_blocks/yellow_dye_block.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/squashed/textures/block/yellow_dye_block.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/squashed/textures/block/leather_block/leather_block_01.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/squashed/textures/block/leather_block_01.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/squashed/textures/block/leather_block/leather_block_2345.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/squashed/textures/block/leather_block_2345.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/squashed/textures/block/misc_blocks/blaze_powder_block.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/squashed/textures/block/blaze_powder_block.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/squashed/textures/block/misc_blocks/book_block.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/squashed/textures/block/book_block.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/squashed/textures/block/misc_blocks/crystalized_ghast_tear.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/squashed/textures/block/crystalized_ghast_tear.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/squashed/textures/block/misc_blocks/fire_charge_block.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/squashed/textures/block/fire_charge_block.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/squashed/textures/block/misc_blocks/magma_cream_block.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/squashed/textures/block/magma_cream_block.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/squashed/textures/block/misc_blocks/phantom_membrane_block.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/squashed/textures/block/phantom_membrane_block.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/squashed/textures/block/seed_blocks/beetroot_seed_block.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/squashed/textures/block/beetroot_seed_block.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/squashed/textures/block/seed_blocks/cocoa_bean_block.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/squashed/textures/block/cocoa_bean_block.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/squashed/textures/block/seed_blocks/melon_seed_block.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/squashed/textures/block/melon_seed_block.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/squashed/textures/block/seed_blocks/pumpkin_seed_block.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/squashed/textures/block/pumpkin_seed_block.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/squashed/textures/block/seed_blocks/wheat_seed_block.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/squashed/textures/block/wheat_seed_block.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/leafenzo/squashed/block/AllBlocks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/leafenzo/squashed/block/ModBlocks.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/leafenzo/squashed/item/AllItems.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/leafenzo/squashed/item/ModItems.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/leafenzo/squashed/item/ItemGroups.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/leafenzo/squashed/item/ModItemGroups.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/fabric.mod.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fabric.mod.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -84,6 +47,17 @@
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="Squashed" type="f1a62948:ProjectNode" />
               </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Squashed" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Squashed" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="fabric" type="c8890929:TasksNode$1" />
+              </path>
             </expand>
             <select />
           </tree_state>
@@ -102,6 +76,10 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="jar://$PROJECT_DIR$/.gradle/loom-cache/minecraftMaven/net/minecraft/minecraft-merged-project-root/1.19.3-net.fabricmc.yarn.1_19_3.1.19.3+build.5-v2/minecraft-merged-project-root-1.19.3-net.fabricmc.yarn.1_19_3.1.19.3+build.5-v2-sources.jar!/net/minecraft/data/client/BlockStateModelGenerator.java" root0="SKIP_INSPECTION" />
+    <setting file="jar://$PROJECT_DIR$/.gradle/loom-cache/minecraftMaven/net/minecraft/minecraft-merged-project-root/1.19.3-net.fabricmc.yarn.1_19_3.1.19.3+build.5-v2/minecraft-merged-project-root-1.19.3-net.fabricmc.yarn.1_19_3.1.19.3+build.5-v2-sources.jar!/net/minecraft/data/client/TexturedModel.java" root0="SKIP_INSPECTION" />
+    <setting file="jar://$PROJECT_DIR$/.gradle/loom-cache/minecraftMaven/net/minecraft/minecraft-merged-project-root/1.19.3-net.fabricmc.yarn.1_19_3.1.19.3+build.5-v2/minecraft-merged-project-root-1.19.3-net.fabricmc.yarn.1_19_3.1.19.3+build.5-v2-sources.jar!/net/minecraft/data/server/recipe/RecipeProvider.java" root0="SKIP_INSPECTION" />
+    <setting file="jar://$PROJECT_DIR$/.gradle/loom-cache/minecraftMaven/net/minecraft/minecraft-merged-project-root/1.19.3-net.fabricmc.yarn.1_19_3.1.19.3+build.5-v2/minecraft-merged-project-root-1.19.3-net.fabricmc.yarn.1_19_3.1.19.3+build.5-v2-sources.jar!/net/minecraft/loot/entry/LootPoolEntry.java" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/src/main/resources/assets/squashed/lang/en_us.json" root0="SKIP_INSPECTION" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -125,6 +103,7 @@
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "run.code.analysis.last.selected.profile": "pProject Default",
     "settings.editor.selected.configurable": "preferences.editor",
     "vue.rearranger.settings.migration": "true"
   }
@@ -271,6 +250,7 @@
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="Application.Data Generation" />
       <item itemvalue="Application.Minecraft Client" />
       <item itemvalue="Application.Minecraft Server" />
       <item itemvalue="Gradle.Squashed [runClient]" />
@@ -306,7 +286,12 @@
       <workItem from="1677722808184" duration="712000" />
       <workItem from="1678073079236" duration="4030000" />
       <workItem from="1678077177855" duration="1915000" />
-      <workItem from="1678129977841" duration="13206000" />
+      <workItem from="1678129977841" duration="13269000" />
+      <workItem from="1678225902628" duration="948000" />
+      <workItem from="1678227516205" duration="3123000" />
+      <workItem from="1678239181826" duration="1930000" />
+      <workItem from="1678406534932" duration="785000" />
+      <workItem from="1678488003043" duration="11372000" />
     </task>
     <servers />
   </component>

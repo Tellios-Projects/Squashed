@@ -6,7 +6,7 @@ import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.leafenzo.squashed.ModInit;
 import net.leafenzo.squashed.Super;
-import net.leafenzo.squashed.item.ItemGroups;
+import net.leafenzo.squashed.item.ModItemGroups;
 import net.minecraft.block.Block;
 import net.minecraft.block.Material;
 import net.minecraft.item.BlockItem;
@@ -17,12 +17,12 @@ import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 
 
-public class AllBlocks {
+public class ModBlocks {
 
     public static final Block CYAN_DYE_BLOCK = registerBlock("cyan_dye_block",
             new Block(FabricBlockSettings.of(Material.SOIL)
                     .strength(4.0f)),
-            ItemGroups.SQUASHED);
+            ModItemGroups.SQUASHED);
 
     public static Block registerBlock(String name, Block block, ItemGroup group) {
         registerBlockItem(name,block,group);

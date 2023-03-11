@@ -9,7 +9,7 @@ import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 
-public class AllItems {
+public class ModItems {
 //    /** Debug Owo */
 //    public static final Item CAT_FOOD = registerItem(
 //            "cat_food",
