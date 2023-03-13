@@ -11,8 +11,8 @@ public class LootTableGenerator extends FabricBlockLootTableProvider {
 
     @Override
     public void generate() {
-        //addDrop(ModBlocks.CYAN_DYE_BLOCK);
-        addDrop(ModBlocks.CYAN_DYE_BLOCK, dropsWithSilkTouchOrShears(ModBlocks.CYAN_DYE_BLOCK, null)); //TODO TESTME
+        addDrop(ModBlocks.CYAN_DYE_BLOCK);
+        //addDrop(ModBlocks.CYAN_DYE_BLOCK, dropsWithSilkTouchOrShears(ModBlocks.CYAN_DYE_BLOCK, null)); //TODO TESTME
     }
 
     //public LootTableGenerator(FabricDataGenerator dataGen) {

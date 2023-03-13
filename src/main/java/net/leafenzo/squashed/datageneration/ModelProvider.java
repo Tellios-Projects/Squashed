@@ -13,10 +13,10 @@ public class ModelProvider extends FabricModelProvider {
 
     @Override
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
-        //blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.CYAN_DYE_BLOCK);
-        blockStateModelGenerator.registerCubeWithCustomTextures(ModBlocks.CYAN_DYE_BLOCK, ee);
-        //blockStateModelGenerator.registerAxisRotated(ModBlocks.CYAN_DYE_BLOCK, );
+        blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.CYAN_DYE_BLOCK);
 
+        //blockStateModelGenerator.registerCubeWithCustomTextures(ModBlocks.CYAN_DYE_BLOCK, ee);
+        //blockStateModelGenerator.registerAxisRotated(ModBlocks.CYAN_DYE_BLOCK, );
     }
 
     @Override

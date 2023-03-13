@@ -5,20 +5,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e439fdee-e774-42a1-be1f-d5f9b9a3f2de" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/leafenzo/squashed/datageneration/DataGenerator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/leafenzo/squashed/datageneration/LootTableGenerator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/leafenzo/squashed/datageneration/ModelProvider.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/leafenzo/squashed/datageneration/RecipeGenerator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/leafenzo/squashed/datageneration/WorldGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/generated/.cache/79dda23a7906b741349628579fadba9afb129a50" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/generated/.cache/8abc72a73af4a585a2b7218a292818d3f93b90e1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/generated/.cache/ab85eee6d28da60a65613429855df873db580e94" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/generated/assets/squashed/blockstates/cyan_dye_block.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/generated/data/sqaushed/advancements/recipes/building_blocks/cyan_dye.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/generated/data/sqaushed/advancements/recipes/misc/cyan_dye_block.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/generated/data/sqaushed/recipes/cyan_dye.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/generated/data/sqaushed/recipes/cyan_dye_block.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/generated/data/squashed/loot_tables/blocks/cyan_dye_block.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gradle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/leafenzo/squashed/ModClientInit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/leafenzo/squashed/ModClientInit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/leafenzo/squashed/ModInit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/leafenzo/squashed/ModInit.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/net/leafenzo/squashed/Super.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/leafenzo/squashed/Super.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/leafenzo/squashed/block/AllBlocks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/leafenzo/squashed/block/ModBlocks.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/leafenzo/squashed/item/AllItems.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/leafenzo/squashed/item/ModItems.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/leafenzo/squashed/item/ItemGroups.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/leafenzo/squashed/item/ModItemGroups.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/leafenzo/squashed/datageneration/DataGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/leafenzo/squashed/datageneration/DataGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/leafenzo/squashed/datageneration/LootTableGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/leafenzo/squashed/datageneration/LootTableGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/leafenzo/squashed/datageneration/ModelProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/leafenzo/squashed/datageneration/ModelProvider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/leafenzo/squashed/datageneration/RecipeGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/leafenzo/squashed/datageneration/RecipeGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/squashed/blockstates/cyan_dye_block.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/squashed/models/block/WIP cyan_dye_block.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/squashed/models/block/cyan_dye_block.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/generated/assets/squashed/models/block/cyan_dye_block.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/squashed/models/item/cat_food.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/squashed/models/item/cyan_dye_block.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/fabric.mod.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fabric.mod.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -55,8 +62,7 @@
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="Squashed" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="fabric" type="c8890929:TasksNode$1" />
+                <item name="Run Configurations" type="7b0102dc:RunConfigurationsNode" />
               </path>
             </expand>
             <select />
@@ -76,10 +82,6 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="jar://$PROJECT_DIR$/.gradle/loom-cache/minecraftMaven/net/minecraft/minecraft-merged-project-root/1.19.3-net.fabricmc.yarn.1_19_3.1.19.3+build.5-v2/minecraft-merged-project-root-1.19.3-net.fabricmc.yarn.1_19_3.1.19.3+build.5-v2-sources.jar!/net/minecraft/data/client/BlockStateModelGenerator.java" root0="SKIP_INSPECTION" />
-    <setting file="jar://$PROJECT_DIR$/.gradle/loom-cache/minecraftMaven/net/minecraft/minecraft-merged-project-root/1.19.3-net.fabricmc.yarn.1_19_3.1.19.3+build.5-v2/minecraft-merged-project-root-1.19.3-net.fabricmc.yarn.1_19_3.1.19.3+build.5-v2-sources.jar!/net/minecraft/data/client/TexturedModel.java" root0="SKIP_INSPECTION" />
-    <setting file="jar://$PROJECT_DIR$/.gradle/loom-cache/minecraftMaven/net/minecraft/minecraft-merged-project-root/1.19.3-net.fabricmc.yarn.1_19_3.1.19.3+build.5-v2/minecraft-merged-project-root-1.19.3-net.fabricmc.yarn.1_19_3.1.19.3+build.5-v2-sources.jar!/net/minecraft/data/server/recipe/RecipeProvider.java" root0="SKIP_INSPECTION" />
-    <setting file="jar://$PROJECT_DIR$/.gradle/loom-cache/minecraftMaven/net/minecraft/minecraft-merged-project-root/1.19.3-net.fabricmc.yarn.1_19_3.1.19.3+build.5-v2/minecraft-merged-project-root-1.19.3-net.fabricmc.yarn.1_19_3.1.19.3+build.5-v2-sources.jar!/net/minecraft/loot/entry/LootPoolEntry.java" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/src/main/resources/assets/squashed/lang/en_us.json" root0="SKIP_INSPECTION" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -92,27 +94,28 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/leafe/Documents/GitHub/Squashed-externals/Notes/IDs and lang.xlsx",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.editor.selected.configurable": "preferences.editor",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/leafe/Documents/GitHub/Squashed-externals/Notes/IDs and lang.xlsx&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.kotlinCompiler&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\leafe\Documents\GitHub\Squashed\src\main\resources\assets\squashed\models\item" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\leafe\OneDrive\Documents\GitHub\Squashed\src\main\resources\assets\squashed" />
       <recent name="C:\Users\leafe\Documents\GitHub\Squashed\src\main\resources\assets\squashed\textures\block" />
       <recent name="C:\Users\leafe\Documents\GitHub\Squashed\src\main\resources\assets" />
       <recent name="C:\Users\leafe\Documents\GitHub\Squashed\src\main\resources\assets\squashed\models\block" />
@@ -165,6 +168,27 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
+    <configuration name="Squashed [genSourcesWithCfr]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="genSourcesWithCfr" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
     <configuration name="Squashed [genSources]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -177,27 +201,6 @@
         <option name="taskNames">
           <list>
             <option value="genSources" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="Squashed [remapJar]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="remapJar" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -228,7 +231,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="Squashed [testClasses]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="Squashed [runDatagen]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -239,7 +242,7 @@
         </option>
         <option name="taskNames">
           <list>
-            <option value="testClasses" />
+            <option value="runDatagen" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -254,19 +257,19 @@
       <item itemvalue="Application.Minecraft Client" />
       <item itemvalue="Application.Minecraft Server" />
       <item itemvalue="Gradle.Squashed [runClient]" />
+      <item itemvalue="Gradle.Squashed [runDatagen]" />
+      <item itemvalue="Gradle.Squashed [genSourcesWithCfr]" />
       <item itemvalue="Gradle.Squashed [configureClientLaunch]" />
       <item itemvalue="Gradle.Squashed [configureLaunch]" />
       <item itemvalue="Gradle.Squashed [genSources]" />
-      <item itemvalue="Gradle.Squashed [remapJar]" />
-      <item itemvalue="Gradle.Squashed [testClasses]" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.Squashed [runDatagen]" />
+        <item itemvalue="Gradle.Squashed [genSources]" />
+        <item itemvalue="Gradle.Squashed [genSourcesWithCfr]" />
         <item itemvalue="Gradle.Squashed [configureClientLaunch]" />
         <item itemvalue="Gradle.Squashed [configureLaunch]" />
-        <item itemvalue="Gradle.Squashed [testClasses]" />
-        <item itemvalue="Gradle.Squashed [genSources]" />
-        <item itemvalue="Gradle.Squashed [remapJar]" />
       </list>
     </recent_temporary>
   </component>
@@ -292,11 +295,26 @@
       <workItem from="1678239181826" duration="1930000" />
       <workItem from="1678406534932" duration="785000" />
       <workItem from="1678488003043" duration="11372000" />
+      <workItem from="1678590244055" duration="778000" />
+      <workItem from="1678591237068" duration="14000" />
+      <workItem from="1678581112380" duration="3503000" />
+      <workItem from="1678591422943" duration="3682000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
