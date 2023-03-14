@@ -5,28 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e439fdee-e774-42a1-be1f-d5f9b9a3f2de" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/generated/.cache/79dda23a7906b741349628579fadba9afb129a50" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/generated/.cache/8abc72a73af4a585a2b7218a292818d3f93b90e1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/generated/.cache/ab85eee6d28da60a65613429855df873db580e94" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/generated/assets/squashed/blockstates/cyan_dye_block.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/generated/data/sqaushed/advancements/recipes/building_blocks/cyan_dye.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/generated/data/sqaushed/advancements/recipes/misc/cyan_dye_block.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/generated/data/sqaushed/recipes/cyan_dye.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/generated/data/sqaushed/recipes/cyan_dye_block.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/generated/data/squashed/loot_tables/blocks/cyan_dye_block.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/leafenzo/squashed/block/FireChargeBlock.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/leafenzo/squashed/Super.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/leafenzo/squashed/Super.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/leafenzo/squashed/datageneration/DataGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/leafenzo/squashed/datageneration/DataGenerator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/leafenzo/squashed/datageneration/LootTableGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/leafenzo/squashed/datageneration/LootTableGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/leafenzo/squashed/block/ModBlocks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/leafenzo/squashed/block/ModBlocks.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/net/leafenzo/squashed/datageneration/ModelProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/leafenzo/squashed/datageneration/ModelProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/leafenzo/squashed/datageneration/RecipeGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/leafenzo/squashed/datageneration/RecipeGenerator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/squashed/blockstates/cyan_dye_block.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/squashed/models/block/WIP cyan_dye_block.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/squashed/models/block/cyan_dye_block.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/generated/assets/squashed/models/block/cyan_dye_block.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/squashed/models/item/cat_food.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/squashed/models/item/cyan_dye_block.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/fabric.mod.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fabric.mod.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,6 +64,10 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="jar://$PROJECT_DIR$/.gradle/loom-cache/minecraftMaven/net/minecraft/minecraft-merged-project-root/1.19.3-net.fabricmc.yarn.1_19_3.1.19.3+build.5-v2/minecraft-merged-project-root-1.19.3-net.fabricmc.yarn.1_19_3.1.19.3+build.5-v2-sources.jar!/net/minecraft/block/Block.java" root0="SKIP_INSPECTION" />
+    <setting file="jar://$PROJECT_DIR$/.gradle/loom-cache/minecraftMaven/net/minecraft/minecraft-merged-project-root/1.19.3-net.fabricmc.yarn.1_19_3.1.19.3+build.5-v2/minecraft-merged-project-root-1.19.3-net.fabricmc.yarn.1_19_3.1.19.3+build.5-v2-sources.jar!/net/minecraft/block/MagmaBlock.java" root0="SKIP_INSPECTION" />
+    <setting file="jar://$PROJECT_DIR$/.gradle/loom-cache/minecraftMaven/net/minecraft/minecraft-merged-project-root/1.19.3-net.fabricmc.yarn.1_19_3.1.19.3+build.5-v2/minecraft-merged-project-root-1.19.3-net.fabricmc.yarn.1_19_3.1.19.3+build.5-v2-sources.jar!/net/minecraft/data/client/BlockStateModelGenerator.java" root0="SKIP_INSPECTION" />
+    <setting file="jar://$PROJECT_DIR$/.gradle/loom-cache/minecraftMaven/net/minecraft/minecraft-merged-project-root/1.19.3-net.fabricmc.yarn.1_19_3.1.19.3+build.5-v2/minecraft-merged-project-root-1.19.3-net.fabricmc.yarn.1_19_3.1.19.3+build.5-v2-sources.jar!/net/minecraft/loot/entry/LootPoolEntry.java" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/src/main/resources/assets/squashed/lang/en_us.json" root0="SKIP_INSPECTION" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -299,6 +285,9 @@
       <workItem from="1678591237068" duration="14000" />
       <workItem from="1678581112380" duration="3503000" />
       <workItem from="1678591422943" duration="3682000" />
+      <workItem from="1678748000486" duration="1840000" />
+      <workItem from="1678749870123" duration="1409000" />
+      <workItem from="1678771280514" duration="1307000" />
     </task>
     <servers />
   </component>

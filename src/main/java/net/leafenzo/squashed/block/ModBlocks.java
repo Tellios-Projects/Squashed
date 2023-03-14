@@ -24,6 +24,24 @@ public class ModBlocks {
                     .strength(4.0f)),
             ModItemGroups.SQUASHED);
 
+
+
+    public static final Block FIRE_CHARGE_BLOCK = registerBlock("fire_charge_block",
+            new FireChargeBlock(FabricBlockSettings.of(Material.SOIL)
+                    .strength(4.0f)),
+            ModItemGroups.SQUASHED);
+
+
+    /**
+     * Behavior from {@link net.leafenzo.squashed.block.FireChargeBlock}
+     */
+    public static final Block COMPRESSED_MAGMA_BLOCK = registerBlock("compressed_magma_block",
+            new FireChargeBlock(FabricBlockSettings.of(Material.SOIL)
+                    .strength(4.0f)),
+            ModItemGroups.SQUASHED);
+
+
+
     public static Block registerBlock(String name, Block block, ItemGroup group) {
         registerBlockItem(name,block,group);
         return Registry.register(Registries.BLOCK, new Identifier(Super.MOD_ID, name), block);

@@ -16,7 +16,7 @@ public class ModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.CYAN_DYE_BLOCK);
 
         //blockStateModelGenerator.registerCubeWithCustomTextures(ModBlocks.CYAN_DYE_BLOCK, ee);
-        //blockStateModelGenerator.registerAxisRotated(ModBlocks.CYAN_DYE_BLOCK, );
+        //blockStateModelGenerator.registerAxisRotated(ModBlocks.CYAN_DYE_BLOCK, CUBE_COLUMN);
     }
 
     @Override
