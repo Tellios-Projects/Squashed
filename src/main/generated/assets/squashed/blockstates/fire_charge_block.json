@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "squashed:block/fire_charge_block"
+    }
+  }
+}

@@ -6,15 +6,15 @@ import net.leafenzo.squashed.block.ModBlocks;
 import net.minecraft.data.client.BlockStateModelGenerator;
 import net.minecraft.data.client.ItemModelGenerator;
 
-public class ModelProvider extends FabricModelProvider {
-    public ModelProvider(FabricDataOutput output) {
+public class ModModelProvider extends FabricModelProvider {
+    public ModModelProvider(FabricDataOutput output) {
         super(output);
     }
 
     @Override
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.CYAN_DYE_BLOCK);
-
+        blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.FIRE_CHARGE_BLOCK);
         //blockStateModelGenerator.registerCubeWithCustomTextures(ModBlocks.CYAN_DYE_BLOCK, ee);
         //blockStateModelGenerator.registerAxisRotated(ModBlocks.CYAN_DYE_BLOCK, CUBE_COLUMN);
     }

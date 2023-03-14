@@ -3,12 +3,12 @@ package net.leafenzo.squashed.datageneration;
 import net.fabricmc.fabric.api.datagen.v1.DataGeneratorEntrypoint;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
 
-public class DataGenerator implements DataGeneratorEntrypoint {
+public class ModDataGenerator implements DataGeneratorEntrypoint {
     @Override
     public void onInitializeDataGenerator(FabricDataGenerator fabricDataGenerator) {
         FabricDataGenerator.Pack pack = fabricDataGenerator.createPack();
-        pack.addProvider(LootTableGenerator::new);
-        pack.addProvider(RecipeGenerator::new);
-        pack.addProvider(ModelProvider::new);
+        pack.addProvider(ModLootTableGenerator::new);
+        pack.addProvider(ModRecipeProvider::new);
+        pack.addProvider(ModModelProvider::new);
     }
 }

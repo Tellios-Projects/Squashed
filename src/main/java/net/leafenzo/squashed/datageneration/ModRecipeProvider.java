@@ -4,13 +4,21 @@ import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
 import net.leafenzo.squashed.block.ModBlocks;
 import net.minecraft.data.server.recipe.RecipeJsonProvider;
+import net.minecraft.data.server.recipe.ShapelessRecipeJsonBuilder;
+import net.minecraft.item.ItemConvertible;
 import net.minecraft.item.Items;
 import net.minecraft.recipe.book.RecipeCategory;
 
 import java.util.function.Consumer;
 
-public class RecipeGenerator extends FabricRecipeProvider {
-    public RecipeGenerator(FabricDataOutput output) { super(output); }
+
+public class ModRecipeProvider extends FabricRecipeProvider {
+    public ModRecipeProvider(FabricDataOutput output) { super(output); }
+
+    public static void offerCompressedWoolDyeingRecipe(Consumer<RecipeJsonProvider> exporter, ItemConvertible output, ItemConvertible input) {
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, output).input(input).input(ModBlocks.WHITE_COMPRESSED_WOOL).group("wool").criterion(FabricRecipeProvider.hasItem(ModBlocks.WHITE_COMPRESSED_WOOL), FabricRecipeProvider.conditionsFromItem(ModBlocks.WHITE_COMPRESSED_WOOL)).offerTo(exporter);
+    }
+
     @Override
     public void generate(Consumer<RecipeJsonProvider> exporter) {
         offerReversibleCompactingRecipes(exporter, RecipeCategory.BUILDING_BLOCKS, Items.CYAN_DYE, RecipeCategory.MISC, ModBlocks.CYAN_DYE_BLOCK);
@@ -138,7 +146,11 @@ public class RecipeGenerator extends FabricRecipeProvider {
 //        offerReversibleCompactingRecipes(exporter, RecipeCategory.BUILDING_BLOCKS, Items.FLOWERING_AZALEA_LEAVES, RecipeCategory.MISC, COMPRESSED_FLOWERING_AZALEA_LEAVES);
 //        offerReversibleCompactingRecipes(exporter, RecipeCategory.BUILDING_BLOCKS, Items.LEATHER, RecipeCategory.MISC, LEATHER_BLOCK);
 
-//        offerWoolDyeingRecipe(exporter, ModBlocks.ORANGE_COMPRESSED_WOOL, ModBlocks.ORANGE_DYE_BLOCK, RecipeCategory.BUILDING_BLOCKS);
-//        offerWoolDyeingRecipe(exporter, Items.CYAN_WOOL, ModBlocks.CYAN_DYE_BLOCK, RecipeCategory.BUILDING_BLOCKS, );
+          //offerWoolDyeingRecipe(exporter, ModBlocks.ORANGE_COMPRESSED_WOOL, ModBlocks.ORANGE_DYE_BLOCK, RecipeCategory.BUILDING_BLOCKS);
+          //offerSingleOutputShapelessRecipe(exporter, Items.ORANGE_WOOL, Items.CYAN_WOOL, RecipeCategory.MISC);
+
+          //offerCompressedWoolDyeingRecipe(exporter, ModBlocks.);
     }
+
+
 }

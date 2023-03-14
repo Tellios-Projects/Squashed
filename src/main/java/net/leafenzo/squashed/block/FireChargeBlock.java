@@ -5,7 +5,6 @@ import net.minecraft.enchantment.EnchantmentHelper;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.damage.DamageSource;
-import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.particle.ParticleTypes;
 import net.minecraft.registry.tag.FluidTags;
 import net.minecraft.server.world.ServerWorld;
@@ -39,10 +38,10 @@ public class FireChargeBlock extends Block {
 
     @Override
     public void onSteppedOn(World world, BlockPos pos, BlockState state, Entity entity) {
-        if (!entity.bypassesSteppingEffects() && entity instanceof LivingEntity && !EnchantmentHelper.hasFrostWalker((LivingEntity)entity)) {
-            if (entity instanceof PlayerEntity && entity.isSprinting()) { //TODO TESTME
-                entity.damage(DamageSource.HOT_FLOOR, 2.0f);
-            }
+        if (entity instanceof LivingEntity && !EnchantmentHelper.hasFrostWalker((LivingEntity)entity)) {
+            if (entity.hasPlayerRider() && entity.getFirstPassenger().isSprinting()) { /* don't damage */ }
+            else if (entity.isSprinting()) { /* don't damage */ }
+            else {entity.damage(DamageSource.HOT_FLOOR, 2.0f);}
         }
         super.onSteppedOn(world, pos, state, entity);
     }

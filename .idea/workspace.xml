@@ -5,10 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e439fdee-e774-42a1-be1f-d5f9b9a3f2de" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/leafenzo/squashed/block/FireChargeBlock.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/generated/assets/squashed/blockstates/fire_charge_block.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/generated/assets/squashed/models/block/fire_charge_block.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/generated/data/squashed/loot_tables/blocks/fire_charge_block.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/generated/.cache/79dda23a7906b741349628579fadba9afb129a50" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/generated/.cache/79dda23a7906b741349628579fadba9afb129a50" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/generated/.cache/8abc72a73af4a585a2b7218a292818d3f93b90e1" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/generated/.cache/8abc72a73af4a585a2b7218a292818d3f93b90e1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/generated/.cache/ab85eee6d28da60a65613429855df873db580e94" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/generated/.cache/ab85eee6d28da60a65613429855df873db580e94" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/leafenzo/squashed/block/FireChargeBlock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/leafenzo/squashed/block/FireChargeBlock.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/net/leafenzo/squashed/block/ModBlocks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/leafenzo/squashed/block/ModBlocks.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/leafenzo/squashed/datageneration/ModelProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/leafenzo/squashed/datageneration/ModelProvider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/leafenzo/squashed/datageneration/DataGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/leafenzo/squashed/datageneration/ModDataGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/leafenzo/squashed/datageneration/LootTableGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/leafenzo/squashed/datageneration/ModLootTableGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/leafenzo/squashed/datageneration/ModelProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/leafenzo/squashed/datageneration/ModModelProvider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/leafenzo/squashed/datageneration/RecipeGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/leafenzo/squashed/datageneration/ModRecipeProvider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/leafenzo/squashed/datageneration/WorldGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/leafenzo/squashed/datageneration/ModWorldGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/fabric.mod.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fabric.mod.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -288,6 +299,8 @@
       <workItem from="1678748000486" duration="1840000" />
       <workItem from="1678749870123" duration="1409000" />
       <workItem from="1678771280514" duration="1307000" />
+      <workItem from="1678816694471" duration="88000" />
+      <workItem from="1678816827643" duration="9914000" />
     </task>
     <servers />
   </component>
