@@ -16,21 +16,14 @@ import net.minecraft.util.math.random.Random;
 import net.minecraft.world.World;
 import net.minecraft.world.WorldAccess;
 
-
 /**
  * From net.minecraft.block.MagmaBlock
+ * Does not currently create bubble columns
  */
+//If we did want to create bubble columns, we'd need to create a mixin that injects to net.minecraft.block.BubbleColumnBlock.getBubbleState & .canPlaceAt
+//...or maybe there's someway to extend from it? (note Entity.isInsideBubbleColummn references it, among other things most likely)
 public class FireChargeBlock extends Block {
-
-    // Ideas:
-    // Less damage OR
-    // Hits less OR
-    // Only hits when player sprints over it <- GOING WITH THIS ONE
-
-
-    private static final int SCHEDULED_TICK_DELAY = 20; //See if changing this makes the block hit less often
-
-
+    private static final int SCHEDULED_TICK_DELAY = 20;
 
     public FireChargeBlock(AbstractBlock.Settings settings) {
         super(settings);

@@ -5,8 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e439fdee-e774-42a1-be1f-d5f9b9a3f2de" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/leafenzo/squashed/item/PhantomBlockItem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/leafenzo/squashed/item/DeterminableBlockItem.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/leafenzo/squashed/block/FireChargeBlock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/leafenzo/squashed/block/FireChargeBlock.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/leafenzo/squashed/block/ModBlocks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/leafenzo/squashed/block/ModBlocks.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/leafenzo/squashed/datageneration/ModModelProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/leafenzo/squashed/datageneration/ModModelProvider.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,9 +66,12 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="jar://$PROJECT_DIR$/.gradle/loom-cache/minecraftMaven/net/minecraft/minecraft-merged-project-root/1.19.3-net.fabricmc.yarn.1_19_3.1.19.3+build.5-v2/minecraft-merged-project-root-1.19.3-net.fabricmc.yarn.1_19_3.1.19.3+build.5-v2-sources.jar!/net/minecraft/block/Block.java" root0="SKIP_INSPECTION" />
+    <setting file="jar://$PROJECT_DIR$/.gradle/loom-cache/minecraftMaven/net/minecraft/minecraft-merged-project-root/1.19.3-net.fabricmc.yarn.1_19_3.1.19.3+build.5-v2/minecraft-merged-project-root-1.19.3-net.fabricmc.yarn.1_19_3.1.19.3+build.5-v2-sources.jar!/net/minecraft/block/Blocks.java" root0="SKIP_INSPECTION" />
     <setting file="jar://$PROJECT_DIR$/.gradle/loom-cache/minecraftMaven/net/minecraft/minecraft-merged-project-root/1.19.3-net.fabricmc.yarn.1_19_3.1.19.3+build.5-v2/minecraft-merged-project-root-1.19.3-net.fabricmc.yarn.1_19_3.1.19.3+build.5-v2-sources.jar!/net/minecraft/block/MagmaBlock.java" root0="SKIP_INSPECTION" />
+    <setting file="jar://$PROJECT_DIR$/.gradle/loom-cache/minecraftMaven/net/minecraft/minecraft-merged-project-root/1.19.3-net.fabricmc.yarn.1_19_3.1.19.3+build.5-v2/minecraft-merged-project-root-1.19.3-net.fabricmc.yarn.1_19_3.1.19.3+build.5-v2-sources.jar!/net/minecraft/block/MapColor.java" root0="SKIP_INSPECTION" />
     <setting file="jar://$PROJECT_DIR$/.gradle/loom-cache/minecraftMaven/net/minecraft/minecraft-merged-project-root/1.19.3-net.fabricmc.yarn.1_19_3.1.19.3+build.5-v2/minecraft-merged-project-root-1.19.3-net.fabricmc.yarn.1_19_3.1.19.3+build.5-v2-sources.jar!/net/minecraft/data/client/BlockStateModelGenerator.java" root0="SKIP_INSPECTION" />
     <setting file="jar://$PROJECT_DIR$/.gradle/loom-cache/minecraftMaven/net/minecraft/minecraft-merged-project-root/1.19.3-net.fabricmc.yarn.1_19_3.1.19.3+build.5-v2/minecraft-merged-project-root-1.19.3-net.fabricmc.yarn.1_19_3.1.19.3+build.5-v2-sources.jar!/net/minecraft/loot/entry/LootPoolEntry.java" root0="SKIP_INSPECTION" />
+    <setting file="jar://$PROJECT_DIR$/.gradle/loom-cache/minecraftMaven/net/minecraft/minecraft-merged-project-root/1.19.3-net.fabricmc.yarn.1_19_3.1.19.3+build.5-v2/minecraft-merged-project-root-1.19.3-net.fabricmc.yarn.1_19_3.1.19.3+build.5-v2.jar!/assets/minecraft/blockstates/brown_mushroom_block.json" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/src/main/resources/assets/squashed/lang/en_us.json" root0="SKIP_INSPECTION" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -290,6 +296,10 @@
       <workItem from="1678816827643" duration="9914000" />
       <workItem from="1678839583368" duration="1691000" />
       <workItem from="1678847145421" duration="1053000" />
+      <workItem from="1678917714720" duration="148000" />
+      <workItem from="1678922775544" duration="594000" />
+      <workItem from="1678928673194" duration="7642000" />
+      <workItem from="1678944227009" duration="997000" />
     </task>
     <servers />
   </component>
