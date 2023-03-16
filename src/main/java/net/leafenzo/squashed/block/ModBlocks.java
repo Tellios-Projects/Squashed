@@ -31,7 +31,9 @@ public class ModBlocks {
 
     public static final Block FIRE_CHARGE_BLOCK = registerBlock("fire_charge_block",
             new FireChargeBlock(FabricBlockSettings.of(Material.SOIL)
-                    .strength(4.0f)),
+                    .strength(4.0f)
+                    //.sounds(BlockSoundGroup)
+            ),
             ModItemGroups.SQUASHED);
 
 //    /**
