@@ -20,7 +20,7 @@ import net.minecraft.util.Identifier;
 public class ModBlocks {
 
     public static final Block CYAN_DYE_BLOCK = registerBlock("cyan_dye_block",
-            new Block(FabricBlockSettings.of(Material.SOIL)
+            new CompressedPufferfishBlock(FabricBlockSettings.of(Material.SOIL)
                     .strength(4.0f)),
             ModItemGroups.SQUASHED);
 
