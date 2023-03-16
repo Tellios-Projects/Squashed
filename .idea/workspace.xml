@@ -5,11 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e439fdee-e774-42a1-be1f-d5f9b9a3f2de" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/leafenzo/squashed/item/DeterminableBlockItem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/leafenzo/squashed/block/CompressedPufferfishBlock.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/leafenzo/squashed/block/GunpowderWireBlock.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/leafenzo/squashed/block/FireChargeBlock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/leafenzo/squashed/block/FireChargeBlock.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/net/leafenzo/squashed/block/ModBlocks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/leafenzo/squashed/block/ModBlocks.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/leafenzo/squashed/datageneration/ModModelProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/leafenzo/squashed/datageneration/ModModelProvider.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -300,6 +299,7 @@
       <workItem from="1678922775544" duration="594000" />
       <workItem from="1678928673194" duration="7642000" />
       <workItem from="1678944227009" duration="997000" />
+      <workItem from="1679003914871" duration="5706000" />
     </task>
     <servers />
   </component>
