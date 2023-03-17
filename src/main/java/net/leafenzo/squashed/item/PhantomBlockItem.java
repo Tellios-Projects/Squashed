@@ -141,19 +141,6 @@ public class ItemAngelBlock extends XUItemBlock {
 		return ActionResult.newResult(EnumActionResult.SUCCESS, itemStackIn);
 	}
 }
-Footer
-© 2023 GitHub, Inc.
-Footer navigation
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training
-Blog
-About
-Extra-Utilities-2-Source/ItemAngelBlock.java at 9e478a1f48b559c404747c663cbb29bd8acf93d9 · rwtema/Extra-Utilities-2-Source
- */
+// Sources:
+// rwtema | https://github.com/rwtema/Extra-Utilities-2-Source/blob/9e478a1f48b559c404747c663cbb29bd8acf93d9/1.10.2/src/main/java/com/rwtema/extrautils2/items/ItemAngelBlock.java
+*/
