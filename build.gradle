@@ -46,13 +46,25 @@ def dataOutput = 'src/main/generated'
 loom {
 	runs {
 		datagen {
-			server()
+			//server()
+			inherit(client)
 
 			name "Data Generation"
 			vmArg "-Dfabric-api.datagen"
 			vmArg "-Dfabric-api.datagen.output-dir=${file(dataOutput)}"
+			vmArg('-Dfabric-api.datagen.strict-validation=true')
 
 			runDir "build/datagen"
+		}
+	}
+}
+
+sourceSets {
+	main {
+		resources {
+			srcDirs += [
+					'src/main/generated'
+			]
 		}
 	}
 }
@@ -91,3 +103,6 @@ publishing {
 		// retrieving dependencies.
 	}
 }
+
+//Sources:
+//https://github.com/ApexModder/MultiPlatform-Template/blob/master/fabric/build.gradle

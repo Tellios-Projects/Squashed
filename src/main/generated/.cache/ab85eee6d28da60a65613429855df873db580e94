@@ -1,5 +1,7 @@
-// 1.19.3	2023-03-14T14:09:15.1276161	Squashed/Model Definitions
+// 1.19.3	2023-03-17T18:13:09.3402651	Squashed/Model Definitions
+caa5ba4c213bf7f6ab3637a64c44b10c180a486e assets\squashed\blockstates\cyan_dye_block.json
+5efd7d7187b3e6a93a0bae9fe2cc19d3d30cc562 assets\squashed\models\item\cyan_dye_block.json
 d41c33a1535f5cc1a656301f910efa017e69009f assets\squashed\models\block\cyan_dye_block.json
 6f7c1dfbe1af74fec74efb289159f143e8b0b8e6 assets\squashed\blockstates\fire_charge_block.json
 37278489a80195c9a6f9b7d3363fb263eb14fb56 assets\squashed\models\block\fire_charge_block.json
-caa5ba4c213bf7f6ab3637a64c44b10c180a486e assets\squashed\blockstates\cyan_dye_block.json
+bf9ca3692d46359ffab084ab90f6fcddfd7985dc assets\squashed\models\item\fire_charge_block.json
