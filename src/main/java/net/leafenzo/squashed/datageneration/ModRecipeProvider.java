@@ -21,7 +21,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
 
     @Override
     public void generate(Consumer<RecipeJsonProvider> exporter) {
-        offerReversibleCompactingRecipes(exporter, RecipeCategory.BUILDING_BLOCKS, Items.CYAN_DYE, RecipeCategory.MISC, ModBlocks.CYAN_DYE_BLOCK);
+        offerReversibleCompactingRecipes(exporter,  RecipeCategory.MISC, Items.CYAN_DYE, RecipeCategory.BUILDING_BLOCKS, ModBlocks.CYAN_DYE_BLOCK);
 //        offerReversibleCompactingRecipes(exporter, RecipeCategory.BUILDING_BLOCKS, Items.BLAZE_ROD, RecipeCategory.MISC, BLAZE_ROD_BLOCK);
 //        offerReversibleCompactingRecipes(exporter, RecipeCategory.BUILDING_BLOCKS, Items.INK_SAC, RecipeCategory.MISC, INK_SAC_BLOCK);
 //        offerReversibleCompactingRecipes(exporter, RecipeCategory.BUILDING_BLOCKS, Items.STICK, RecipeCategory.MISC, STICK_BLOCK);

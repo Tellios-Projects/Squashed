@@ -1,5 +1,5 @@
-// 1.19.3	2023-03-14T14:09:15.1236064	Squashed/Recipes
-10eaeecfe03089707234d5503d23bb97b58a1376 data\sqaushed\recipes\cyan_dye.json
-73d49fa2f283d37f61dd7f0672dc7e126ab96d1e data\sqaushed\recipes\cyan_dye_block.json
-3f0e1769c22669ac398d11fc1798c5305ff6b52f data\sqaushed\advancements\recipes\misc\cyan_dye_block.json
-3d3819dce2f89ebc0e17069a8ab908de31b4a9d6 data\sqaushed\advancements\recipes\building_blocks\cyan_dye.json
+// 1.19.3	2023-03-17T18:13:09.3362642	Squashed/Recipes
+3f0e1769c22669ac398d11fc1798c5305ff6b52f data\sqaushed\advancements\recipes\building_blocks\cyan_dye_block.json
+01c8a8b00c8d43f79806fbc124be71be3d8170d1 data\sqaushed\recipes\cyan_dye_block.json
+242b66a562f83e5a5bd34d8ad1b1d1fbdcc41bc8 data\sqaushed\recipes\cyan_dye.json
+3d3819dce2f89ebc0e17069a8ab908de31b4a9d6 data\sqaushed\advancements\recipes\misc\cyan_dye.json
