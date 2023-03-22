@@ -11,9 +11,9 @@ Currently in development :D
 <br><br>
 <br> ₊ㆍ┈ㆍ┈ㆍ✿ㆍ┈ㆍ┈ㆍ┈ ✿ㆍ┈ㆍ┈ㆍ┈ ✿ㆍ┈ㆍ┈ㆍ₊ <br>
 ✩ Created By ✩ <br>
-&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Tellio(Textures)<a href ="https://twitter.com/tellioaridoitsu"><img src="https://img.shields.io/twitter/url?color=0d1117&label=%20&logo=twitter&style=flat-square&url=https%3A%2F%2Ftwitter.com%2Fleafenzio"></a>    
+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Eliza(Textures)<a href ="https://twitter.com/tellioaridoitsu"><img src="https://img.shields.io/twitter/url?color=0d1117&label=%20&logo=twitter&style=flat-square&url=https%3A%2F%2Ftwitter.com%2Fleafenzio"></a>    
 Leah(Programming)<a href ="https://twitter.com/leafenzio"><img src="https://img.shields.io/twitter/url?color=0d1117&label=%20&logo=twitter&style=flat-square&url=https%3A%2F%2Ftwitter.com%2Fleafenzio"></a>
-Merp(Texture Help)<a href ="https://twitter.com/I_Am_Merp"><img src="https://img.shields.io/twitter/url?color=0d1117&label=%20&logo=twitter&style=flat-square&url=https%3A%2F%2Ftwitter.com%2Fleafenzio"></a>
+Merp(Textures)<a href ="https://twitter.com/I_Am_Merp"><img src="https://img.shields.io/twitter/url?color=0d1117&label=%20&logo=twitter&style=flat-square&url=https%3A%2F%2Ftwitter.com%2Fleafenzio"></a>
 
 <br> ⁺ㆍ┈ㆍ┈ㆍ✿ㆍ┈ㆍ┈ㆍ┈ ✿ㆍ┈ㆍ┈ㆍ┈ ✿ㆍ┈ㆍ┈ㆍ⁺
 </h4>
