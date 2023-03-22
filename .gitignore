@@ -45,3 +45,4 @@ local.properties
 /linkie-cache/
 
 .DS_Store
+*.csv~
