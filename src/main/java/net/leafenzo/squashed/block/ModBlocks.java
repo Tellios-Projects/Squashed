@@ -76,6 +76,8 @@ public class ModBlocks {
     public static final Block SUPER_COMPRESSED_OBSIDIAN = registerBlock("super_compressed_obsidian", new Block(FabricBlockSettings.of(Material.STONE).strength(4.0f)),ModItemGroups.SQUASHED);
     public static final Block COMPRESSED_DEEPSLATE = registerBlock("compressed_deepslate", new PillarBlock(FabricBlockSettings.of(Material.STONE).strength(4.0f)),ModItemGroups.SQUASHED);
     public static final Block SUPER_COMPRESSED_DEEPSLATE = registerBlock("super_compressed_deepslate", new PillarBlock(FabricBlockSettings.of(Material.STONE).strength(4.0f)),ModItemGroups.SQUASHED);
+    public static final Block COMPRESSED_COBBLED_DEEPSLATE = registerBlock("compressed_cobbled_deepslate", new Block(FabricBlockSettings.of(Material.STONE).strength(4.0f)),ModItemGroups.SQUASHED);
+    public static final Block SUPER_COMPRESSED_COBBLED_DEEPSLATE = registerBlock("super_compressed_cobbled_deepslate", new Block(FabricBlockSettings.of(Material.STONE).strength(4.0f)),ModItemGroups.SQUASHED);
     public static final Block COMPRESSED_NETHERRACK = registerBlock("compressed_netherrack", new Block(FabricBlockSettings.of(Material.STONE).strength(4.0f)),ModItemGroups.SQUASHED);
     public static final Block SUPER_COMPRESSED_NETHERRACK = registerBlock("super_compressed_netherrack", new Block(FabricBlockSettings.of(Material.STONE).strength(4.0f)),ModItemGroups.SQUASHED);
     public static final Block COMPRESSED_END_STONE = registerBlock("compressed_end_stone", new Block(FabricBlockSettings.of(Material.STONE).strength(4.0f)),ModItemGroups.SQUASHED);
@@ -112,8 +114,8 @@ public class ModBlocks {
     public static final Block GREEN_DYE_BLOCK = registerBlock("green_dye_block", new Block(FabricBlockSettings.of(Material.STONE).strength(4.0f)),ModItemGroups.SQUASHED);
     public static final Block RED_DYE_BLOCK = registerBlock("red_dye_block", new Block(FabricBlockSettings.of(Material.STONE).strength(4.0f)),ModItemGroups.SQUASHED);
     public static final Block BLACK_DYE_BLOCK = registerBlock("black_dye_block", new Block(FabricBlockSettings.of(Material.STONE).strength(4.0f)),ModItemGroups.SQUASHED);
-    public static final Block COMPRESSED_BASALT = registerBlock("compressed_basalt", new Block(FabricBlockSettings.of(Material.STONE).strength(4.0f)),ModItemGroups.SQUASHED);
-    public static final Block SUPER_COMPRESSED_BASALT = registerBlock("super_compressed_basalt", new Block(FabricBlockSettings.of(Material.STONE).strength(4.0f)),ModItemGroups.SQUASHED);
+    public static final Block COMPRESSED_BASALT = registerBlock("compressed_basalt", new PillarBlock(FabricBlockSettings.of(Material.STONE).strength(4.0f)),ModItemGroups.SQUASHED);
+    public static final Block SUPER_COMPRESSED_BASALT = registerBlock("super_compressed_basalt", new PillarBlock(FabricBlockSettings.of(Material.STONE).strength(4.0f)),ModItemGroups.SQUASHED);
     public static final Block WHITE_COMPRESSED_WOOL = registerBlock("white_compressed_wool", new Block(FabricBlockSettings.of(Material.STONE).strength(4.0f)),ModItemGroups.SQUASHED);
     public static final Block ORANGE_COMPRESSED_WOOL = registerBlock("orange_compressed_wool", new Block(FabricBlockSettings.of(Material.STONE).strength(4.0f)),ModItemGroups.SQUASHED);
     public static final Block MAGENTA_COMPRESSED_WOOL = registerBlock("magenta_compressed_wool", new Block(FabricBlockSettings.of(Material.STONE).strength(4.0f)),ModItemGroups.SQUASHED);
@@ -186,7 +188,7 @@ public class ModBlocks {
     public static final Block TROPICAL_FISH_BLOCK_R = registerBlock("tropical_fish_block_r", new Block(FabricBlockSettings.of(Material.STONE).strength(4.0f)),ModItemGroups.SQUASHED);
     public static final Block TROPICAL_FISH_BLOCK_S = registerBlock("tropical_fish_block_s", new Block(FabricBlockSettings.of(Material.STONE).strength(4.0f)),ModItemGroups.SQUASHED);
     public static final Block TROPICAL_FISH_BLOCK_T = registerBlock("tropical_fish_block_t", new Block(FabricBlockSettings.of(Material.STONE).strength(4.0f)),ModItemGroups.SQUASHED);
-    public static final Block PRISMARINE_CRYSTAL_BLOCK = registerBlock("prismarine_crystal_block", new Block(FabricBlockSettings.of(Material.STONE).strength(4.0f)),ModItemGroups.SQUASHED);
+    public static final Block PRISMARINE_CRYSTAL_BLOCK = registerBlock("prismarine_crystal_block", new Block(FabricBlockSettings.of(Material.STONE).strength(4.0f).luminance(state -> 15)),ModItemGroups.SQUASHED);
     public static final Block GLOW_INK_SAC = registerBlock("glow_ink_sac", new Block(FabricBlockSettings.of(Material.STONE).strength(4.0f).luminance(state -> 7)),ModItemGroups.SQUASHED);
     public static final Block SCUTE_BLOCK = registerBlock("scute_block", new Block(FabricBlockSettings.of(Material.STONE).strength(4.0f)),ModItemGroups.SQUASHED);
     public static final Block FEATHER_BLOCK = registerBlock("feather_block", new Block(FabricBlockSettings.of(Material.STONE).strength(4.0f)),ModItemGroups.SQUASHED);
@@ -227,8 +229,6 @@ public class ModBlocks {
     public static final Block ECHO_SHARD_BLOCK = registerBlock("echo_shard_block", new Block(FabricBlockSettings.of(Material.STONE).strength(4.0f)),ModItemGroups.SQUASHED);
     public static final Block COBWEB_BLOCK = registerBlock("cobweb_block", new Block(FabricBlockSettings.of(Material.STONE).strength(4.0f)),ModItemGroups.SQUASHED);
     public static final Block RABBIT_HIDE_BLOCK = registerBlock("rabbit_hide_block", new PillarBlock(FabricBlockSettings.of(Material.STONE).strength(4.0f)),ModItemGroups.SQUASHED);
-    public static final Block COMPRESSED_COBBLED_DEEPSLATE = registerBlock("compressed_cobbled_deepslate", new Block(FabricBlockSettings.of(Material.STONE).strength(4.0f)),ModItemGroups.SQUASHED);
-    public static final Block SUPER_COMPRESSED_COBBLED_DEEPSLATE = registerBlock("super_compressed_cobbled_deepslate", new Block(FabricBlockSettings.of(Material.STONE).strength(4.0f)),ModItemGroups.SQUASHED);
 
     // FOR:1.19.4
     // public static final Block COMPRESSED_CHERRY_LEAVES = registerBlock("compressed_cherry_leaves", new Block(FabricBlockSettings.of(Material.STONE).strength(4.0f)),ModItemGroups.SQUASHED);

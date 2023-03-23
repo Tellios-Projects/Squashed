@@ -3,10 +3,7 @@ package net.leafenzo.squashed.datageneration;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricBlockLootTableProvider;
 import net.leafenzo.squashed.block.ModBlocks;
-import net.minecraft.data.server.loottable.BlockLootTableGenerator;
-import net.minecraft.loot.LootTable;
 import net.minecraft.loot.entry.ItemEntry;
-import net.minecraft.loot.entry.LootTableEntry;
 
 public class ModLootTableGenerator extends FabricBlockLootTableProvider {
     public ModLootTableGenerator(FabricDataOutput dataOutput) {
@@ -31,6 +28,6 @@ public class ModLootTableGenerator extends FabricBlockLootTableProvider {
 
         //TODO
         // Leaves-like only drop with silk touch
-        // Bookshelf-like drop ingredients
+        // Bookshelf-like drop ingredients (these drop all as one lil clump, so it doesn't lag things too crazy for it to be a clump of 9)
     }
 }
