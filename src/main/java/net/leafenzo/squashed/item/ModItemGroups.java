@@ -13,7 +13,7 @@ public class ModItemGroups {
     /** Might place each item in a vanilla category? Not sure if that would make porting back harder*/
     public static final ItemGroup SQUASHED = FabricItemGroup.builder(new Identifier(Super.MOD_ID))
             .displayName(Text.literal("Squashed"))
-            .icon(() -> new ItemStack(ModBlocks.CYAN_DYE_BLOCK))
+            .icon(() -> new ItemStack(ModBlocks.COMPRESSED_STONE))
             .build();
 
 }
