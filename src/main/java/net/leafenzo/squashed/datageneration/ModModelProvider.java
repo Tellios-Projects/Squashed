@@ -125,8 +125,8 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.GREEN_DYE_BLOCK);
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.RED_DYE_BLOCK);
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.BLACK_DYE_BLOCK);
-        blockStateModelGenerator.registerSingleton(ModBlocks.COMPRESSED_BASALT, TexturedModel.CUBE_COLUMN);
-        blockStateModelGenerator.registerSingleton(ModBlocks.SUPER_COMPRESSED_BASALT, TexturedModel.CUBE_COLUMN);
+        blockStateModelGenerator.registerAxisRotated(ModBlocks.COMPRESSED_BASALT, TexturedModel.CUBE_COLUMN);
+        blockStateModelGenerator.registerAxisRotated(ModBlocks.SUPER_COMPRESSED_BASALT, TexturedModel.CUBE_COLUMN);
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.WHITE_COMPRESSED_WOOL);
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.ORANGE_COMPRESSED_WOOL);
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.MAGENTA_COMPRESSED_WOOL);
