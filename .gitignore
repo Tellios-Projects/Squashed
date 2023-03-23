@@ -46,3 +46,4 @@ local.properties
 
 .DS_Store
 *.csv~
+# src/main/generated/.cache/*

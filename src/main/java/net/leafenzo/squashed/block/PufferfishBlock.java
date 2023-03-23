@@ -1,8 +1,8 @@
 package net.leafenzo.squashed.block;
 
-import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
+import net.minecraft.block.HorizontalFacingBlock;
 import net.minecraft.block.ShapeContext;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.LivingEntity;
@@ -21,16 +21,18 @@ import net.minecraft.world.BlockView;
 import net.minecraft.world.World;
 import org.jetbrains.annotations.Nullable;
 
-public class CompressedPufferfishBlock extends Block {
+public class PufferfishBlock extends HorizontalFacingBlock {
     public static final BooleanProperty POWERED = Properties.POWERED;
     protected static final VoxelShape COLLISION_SHAPE = Block.createCuboidShape(0.1, 0.1, 0.1, 15.9, 15.9, 15.9);
     //It worked, but it's a little funky, don't know how to do this in a better way. Probably need to adjust the block model
     protected static final VoxelShape OUTLINE_SHAPE = Block.createCuboidShape(0.0, 0.0, 0.0, 16.0, 16.0, 16.0);
 
-    public CompressedPufferfishBlock(AbstractBlock.Settings settings) {
+    public PufferfishBlock(Settings settings) {
         super(settings);
         this.setDefaultState((BlockState)((BlockState)this.stateManager.getDefaultState()).with(POWERED, false));
+        //this.setDefaultState((BlockState)((BlockState)this.stateManager.getDefaultState()).with(FACING, DirectionProperty. .NORTH));
     }
+
 
     @Override
     @Nullable
