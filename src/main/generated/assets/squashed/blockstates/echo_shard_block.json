@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "squashed:block/echo_shard_block"
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "squashed:block/blaze_rod_block",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "squashed:block/blaze_rod_block"
+    },
+    "axis=z": {
+      "model": "squashed:block/blaze_rod_block",
+      "x": 90
+    }
+  }
+}

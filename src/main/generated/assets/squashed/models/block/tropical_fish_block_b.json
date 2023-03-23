@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "squashed:block/tropical_fish_block_b"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "squashed:block/grass_clippings_block"
+    }
+  }
+}

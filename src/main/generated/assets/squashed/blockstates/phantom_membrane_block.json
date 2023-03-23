@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "squashed:block/phantom_membrane_block"
+    }
+  }
+}

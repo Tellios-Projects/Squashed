@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "squashed:block/lily_pad_block"
+    }
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "squashed:block/blaze_rod_block_top",
+    "side": "squashed:block/blaze_rod_block_side"
+  }
+}

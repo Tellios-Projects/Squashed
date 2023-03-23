@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "powered=false": {
+      "model": "squashed:block/pufferfish_block"
+    },
+    "powered=true": {
+      "model": "squashed:block/pufferfish_block_on"
+    }
+  }
+}
