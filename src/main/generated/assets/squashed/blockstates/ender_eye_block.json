@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "squashed:block/ender_eye_block"
+    }
+  }
+}

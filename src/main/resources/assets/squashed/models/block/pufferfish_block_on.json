@@ -1,0 +1,19 @@
+{
+  "parent": "minecraft:block/cube",
+  "display": {
+    "firstperson_righthand": {
+      "rotation": [ 0, 135, 0 ],
+      "translation": [ 0, 0, 0 ],
+      "scale": [ 0.40, 0.40, 0.40 ]
+    }
+  },
+  "textures": {
+    "particle": "squashed:block/pufferfish_block_top",
+    "down": "squashed:block/pufferfish_block_bottom",
+    "up": "squashed:block/pufferfish_block_top",
+    "north": "squashed:block/pufferfish_block_side1_on",
+    "east": "squashed:block/pufferfish_block_side0",
+    "south": "squashed:block/pufferfish_block_side3",
+    "west": "squashed:block/pufferfish_block_side2"
+  }
+}

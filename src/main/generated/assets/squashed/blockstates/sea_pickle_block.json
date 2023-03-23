@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "waterlogged=false": {
+      "model": "squashed:block/sea_pickle_block"
+    },
+    "waterlogged=true": {
+      "model": "squashed:block/sea_pickle_block_wet"
+    }
+  }
+}
