@@ -5,7 +5,7 @@ import net.minecraft.client.render.RenderLayer;
 
 public class ModRenderLayers {
     public static void registerBlockCutouts() {
-        BlockRenderLayerMap.INSTANCE.putBlocks(RenderLayer.getCutout(),
+        BlockRenderLayerMap.INSTANCE.putBlocks(RenderLayer.getCutoutMipped(),
                 ModBlocks.DENSE_COBWEB_BLOCK,
                 ModBlocks.COMPRESSED_SPONGE
         );

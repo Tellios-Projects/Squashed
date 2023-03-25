@@ -27,6 +27,17 @@ public class CompressedSpongeBlock extends Block {
         super(settings);
     }
 
+
+    @Override
+    public float getAmbientOcclusionLightLevel(BlockState state, BlockView world, BlockPos pos) {
+        return 1.0f;
+    }
+
+    @Override
+    public boolean isTranslucent(BlockState state, BlockView world, BlockPos pos) {
+        return true;
+    }
+
     @Override
     public void onBlockAdded(BlockState state, World world, BlockPos pos, BlockState oldState, boolean notify) {
         if (oldState.isOf(state.getBlock())) {
@@ -47,10 +58,14 @@ public class CompressedSpongeBlock extends Block {
             world.syncWorldEvent(WorldEvents.BLOCK_BROKEN, pos, Block.getRawIdFromState(Blocks.WATER.getDefaultState()));
         }
     }
+
+    /*
     @Override
     public float getAmbientOcclusionLightLevel(BlockState state, BlockView world, BlockPos pos) {
-        return 0.0f;
+        return 999999999f/2.5f;
     }
+    */
+
     private boolean absorbWater(World world, BlockPos pos) {
         LinkedList<Pair<BlockPos, Integer>> queue = Lists.newLinkedList();
         queue.add(new Pair<BlockPos, Integer>(pos, 0));
