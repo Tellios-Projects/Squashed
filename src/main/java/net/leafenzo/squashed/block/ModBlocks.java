@@ -18,13 +18,12 @@ import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 
-
 public class ModBlocks {
     public static final Block BLAZE_ROD_BLOCK = registerBlock("blaze_rod_block", new PillarBlock(FabricBlockSettings.of(Material.STONE).strength(4.0f).luminance(state -> 7)),ModItemGroups.SQUASHED);
     public static final Block INK_SAC_BLOCK = registerBlock("ink_sac_block", new Block(FabricBlockSettings.of(Material.STONE).strength(4.0f)),ModItemGroups.SQUASHED);
     public static final Block STICK_BLOCK = registerBlock("stick_block", new Block(FabricBlockSettings.of(Material.STONE).strength(4.0f)),ModItemGroups.SQUASHED);
     public static final Block FIRE_CHARGE_BLOCK = registerBlock("fire_charge_block", new FireChargeBlock(FabricBlockSettings.of(Material.STONE).strength(4.0f)),ModItemGroups.SQUASHED);
-    public static final Block MAGMA_CREAM_BLOCK = registerBlock("magma_cream_block", new Block(FabricBlockSettings.of(Material.STONE).strength(4.0f)),ModItemGroups.SQUASHED);
+    public static final Block MAGMA_CREAM_BLOCK = registerBlock("magma_cream_block", new FireChargeBlock(FabricBlockSettings.of(Material.STONE).strength(4.0f)),ModItemGroups.SQUASHED);
     public static final Block BLAZE_POWDER_BLOCK = registerBlock("blaze_powder_block", new Block(FabricBlockSettings.of(Material.STONE).strength(4.0f)),ModItemGroups.SQUASHED);
     public static final Block RAW_SALMON_BLOCK = registerBlock("raw_salmon_block", new Block(FabricBlockSettings.of(Material.STONE).strength(4.0f)),ModItemGroups.SQUASHED);
     public static final Block COOKED_SALMON_BLOCK = registerBlock("cooked_salmon_block", new Block(FabricBlockSettings.of(Material.STONE).strength(4.0f)),ModItemGroups.SQUASHED);
@@ -200,7 +199,7 @@ public class ModBlocks {
     public static final Block VINE_BLOCK = registerBlock("vine_block", new Block(FabricBlockSettings.of(Material.STONE).strength(4.0f)),ModItemGroups.SQUASHED);
     public static final Block EGG_BLOCK = registerBlock("egg_block", new Block(FabricBlockSettings.of(Material.STONE).strength(4.0f)),ModItemGroups.SQUASHED);
     public static final Block PUFFERFISH_BLOCK = registerBlock("pufferfish_block", new PufferfishBlock(FabricBlockSettings.of(Material.STONE).strength(4.0f)),ModItemGroups.SQUASHED);
-    public static final Block COMPRESSED_SPONGE = registerBlock("compressed_sponge", new Block(FabricBlockSettings.of(Material.STONE).strength(4.0f)),ModItemGroups.SQUASHED);
+    public static final Block COMPRESSED_SPONGE = registerBlock("compressed_sponge", new CompressedSpongeBlock(FabricBlockSettings.of(ModMaterial.COMPRESSED_SPONGE).strength(4.0f).nonOpaque()),ModItemGroups.SQUASHED);
     public static final Block COMPRESSED_BONE = registerBlock("compressed_bone", new PillarBlock(FabricBlockSettings.of(Material.STONE).strength(4.0f)),ModItemGroups.SQUASHED);
     public static final Block PAPER_BLOCK = registerBlock("paper_block", new Block(FabricBlockSettings.of(Material.STONE).strength(4.0f)),ModItemGroups.SQUASHED);
     public static final Block COMPRESSED_SCAFFOLDING = registerBlock("compressed_scaffolding", new PillarBlock(FabricBlockSettings.of(Material.STONE).strength(4.0f)),ModItemGroups.SQUASHED);
@@ -227,8 +226,10 @@ public class ModBlocks {
     public static final Block ENDER_EYE_BLOCK = registerBlock("ender_eye_block", new Block(FabricBlockSettings.of(Material.STONE).strength(4.0f)),ModItemGroups.SQUASHED);
     public static final Block ENDER_PEARL_BLOCK = registerBlock("ender_pearl_block", new Block(FabricBlockSettings.of(Material.STONE).strength(4.0f)),ModItemGroups.SQUASHED);
     public static final Block ECHO_SHARD_BLOCK = registerBlock("echo_shard_block", new Block(FabricBlockSettings.of(Material.STONE).strength(4.0f)),ModItemGroups.SQUASHED);
-    public static final Block COBWEB_BLOCK = registerBlock("cobweb_block", new Block(FabricBlockSettings.of(Material.STONE).strength(4.0f)),ModItemGroups.SQUASHED);
+    public static final Block DENSE_COBWEB_BLOCK = registerBlock("dense_cobweb_block", new DenseCobwebBlock(FabricBlockSettings.of(ModMaterial.DENSE_COBWEB).strength(4.0f).dynamicBounds().nonOpaque()),ModItemGroups.SQUASHED);
     public static final Block RABBIT_HIDE_BLOCK = registerBlock("rabbit_hide_block", new PillarBlock(FabricBlockSettings.of(Material.STONE).strength(4.0f)),ModItemGroups.SQUASHED);
+
+
 
     // FOR:1.19.4
     // public static final Block COMPRESSED_CHERRY_LEAVES = registerBlock("compressed_cherry_leaves", new Block(FabricBlockSettings.of(Material.STONE).strength(4.0f)),ModItemGroups.SQUASHED);
@@ -238,6 +239,7 @@ public class ModBlocks {
 
     public static Block registerBlock(String name, Block block, ItemGroup group) {
         registerBlockItem(name,block,group);
+        //if(block.getDefaultState().isOpaque()) { ModRenderLayers.registerCutout(block);  }
         return Registry.register(Registries.BLOCK, new Identifier(Super.MOD_ID, name), block);
     }
 
