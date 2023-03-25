@@ -30,6 +30,20 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.blockStateCollector.accept(VariantsBlockStateSupplier.create(ModBlocks.SEA_PICKLE_BLOCK).coordinate(BlockStateModelGenerator.createBooleanModelMap(Properties.WATERLOGGED, identifier2, identifier)));
     }
 
+    /*
+    protected static void registerDenseCobwebBlock(BlockStateModelGenerator blockStateModelGenerator) {
+        Identifier identifier = ModelIds.getBlockModelId(ModBlocks.DENSE_COBWEB_BLOCK);
+        //blockStateModelGenerator.blockStateCollector.accept(VariantsBlockStateSupplier.create(ModBlocks.DENSE_COBWEB_BLOCK).coordinate(BlockStateModelGenerator.buildBlockStateVariants(Identifier, )));
+        //blockStateModelGenerator.registerStateWithModelReference(ModBlocks.DENSE_COBWEB_BLOCK, ModBlocks.DENSE_COBWEB_BLOCK);
+    }
+
+    protected static void registerCompressedSpongeBlock(BlockStateModelGenerator blockStateModelGenerator) {
+        Identifier identifier = ModelIds.getBlockModelId(ModBlocks.COMPRESSED_SPONGE);
+        blockStateModelGenerator.blockStateCollector.accept(VariantsBlockStateSupplier.create(ModBlocks.COMPRESSED_SPONGE). );
+        //blockStateModelGenerator.registerStateWithModelReference(ModBlocks.COMPRESSED_SPONGE, ModBlocks.COMPRESSED_SPONGE);
+    }
+    */
+
     @Override
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
         // Block Models
@@ -211,7 +225,7 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.VINE_BLOCK);
         blockStateModelGenerator.registerSingleton(ModBlocks.EGG_BLOCK, TexturedModel.CUBE_BOTTOM_TOP);
         registerPufferfishBlock(blockStateModelGenerator);
-        blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.COMPRESSED_SPONGE);
+        //registerCompressedSpongeBlock(blockStateModelGenerator);
         blockStateModelGenerator.registerAxisRotated(ModBlocks.COMPRESSED_BONE, TexturedModel.CUBE_COLUMN);
         blockStateModelGenerator.registerSingleton(ModBlocks.PAPER_BLOCK, TexturedModel.CUBE_COLUMN);
         blockStateModelGenerator.registerAxisRotated(ModBlocks.COMPRESSED_SCAFFOLDING, TexturedModel.CUBE_COLUMN);
@@ -238,7 +252,7 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.ENDER_EYE_BLOCK);
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.ENDER_PEARL_BLOCK);
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.ECHO_SHARD_BLOCK);
-        blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.COBWEB_BLOCK);
+        //registerDenseCobwebBlock(blockStateModelGenerator);
         blockStateModelGenerator.registerAxisRotated(ModBlocks.RABBIT_HIDE_BLOCK, TexturedModel.CUBE_COLUMN);
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.COMPRESSED_COBBLED_DEEPSLATE);
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.SUPER_COMPRESSED_COBBLED_DEEPSLATE);
@@ -458,7 +472,7 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerParentedItemModel(ModBlocks.ENDER_EYE_BLOCK, Super.asResource("block/ender_eye_block"));
         blockStateModelGenerator.registerParentedItemModel(ModBlocks.ENDER_PEARL_BLOCK, Super.asResource("block/ender_pearl_block"));
         blockStateModelGenerator.registerParentedItemModel(ModBlocks.ECHO_SHARD_BLOCK, Super.asResource("block/echo_shard_block"));
-        blockStateModelGenerator.registerParentedItemModel(ModBlocks.COBWEB_BLOCK, Super.asResource("block/cobweb_block"));
+        blockStateModelGenerator.registerParentedItemModel(ModBlocks.DENSE_COBWEB_BLOCK, Super.asResource("block/dense_cobweb_block"));
         blockStateModelGenerator.registerParentedItemModel(ModBlocks.RABBIT_HIDE_BLOCK, Super.asResource("block/rabbit_hide_block"));
         blockStateModelGenerator.registerParentedItemModel(ModBlocks.COMPRESSED_COBBLED_DEEPSLATE, Super.asResource("block/compressed_cobbled_deepslate"));
         blockStateModelGenerator.registerParentedItemModel(ModBlocks.SUPER_COMPRESSED_COBBLED_DEEPSLATE, Super.asResource("block/super_compressed_cobbled_deepslate"));
