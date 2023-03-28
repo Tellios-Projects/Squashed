@@ -18,7 +18,7 @@ import net.minecraft.world.World;
 
 
 /**
- * From net.minecraft.block.PowderedSnowBlock
+ * From net.minecraft.block.PowderSnowBlock
  */
 public class DenseCobwebBlock
 extends TransparentBlock {
@@ -32,19 +32,21 @@ extends TransparentBlock {
 
     public DenseCobwebBlock(AbstractBlock.Settings settings) { super(settings); }
 
+    /*
     @Override
     public boolean isTranslucent(BlockState state, BlockView world, BlockPos pos) {
         return state.getFluidState().isEmpty();
     }
+    */
+
 
     @Override
     public boolean isSideInvisible(BlockState state, BlockState stateFrom, Direction direction) {
         if (stateFrom.isOf(this)) {
-            return true;
+            return false;
         }
         return super.isSideInvisible(state, stateFrom, direction);
     }
-
 
     @Override
     public VoxelShape getCullingShape(BlockState state, BlockView world, BlockPos pos) {
