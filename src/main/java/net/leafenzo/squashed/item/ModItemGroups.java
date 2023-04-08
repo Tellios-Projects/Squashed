@@ -15,5 +15,18 @@ public class ModItemGroups {
             .displayName(Text.literal("Squashed"))
             .icon(() -> new ItemStack(ModBlocks.COMPRESSED_STONE))
             .build();
-
+    /*
+    public static final ItemGroup SQUASHED_BLOCKS = FabricItemGroup.builder(new Identifier(Super.MOD_ID))
+            .displayName(Text.literal("Squashed Blocks"))
+            .icon(() -> new ItemStack(ModBlocks.COMPRESSED_STONE))
+            .build();
+    public static final ItemGroup SQUASHED_COLORED_BLOCKS = FabricItemGroup.builder(new Identifier(Super.MOD_ID))
+            .displayName(Text.literal("Squashed Natural Blocks"))
+            .icon(() -> new ItemStack(ModBlocks.COMPRESSED_STONE))
+            .build();
+    public static final ItemGroup SQUASHED_COMPRESSED = FabricItemGroup.builder(new Identifier(Super.MOD_ID))
+            .displayName(Text.literal("Squashed Compressed Blocks"))
+            .icon(() -> new ItemStack(ModBlocks.COMPRESSED_STONE))
+            .build();
+    */
 }
