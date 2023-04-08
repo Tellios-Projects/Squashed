@@ -1,22 +1,26 @@
 package net.leafenzo.squashed.block;
 
 
+import net.fabricmc.fabric.api.block.v1.FabricBlock;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
+import net.fabricmc.fabric.api.block.v1.FabricBlock.*;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.leafenzo.squashed.ModInit;
 import net.leafenzo.squashed.Super;
 import net.leafenzo.squashed.item.ModItemGroups;
-import net.minecraft.block.Block;
-import net.minecraft.block.Material;
-import net.minecraft.block.PillarBlock;
-import net.minecraft.block.RedstoneBlock;
+import net.minecraft.block.*;
+import net.minecraft.entity.EntityType;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
+import net.minecraft.sound.BlockSoundGroup;
+import net.minecraft.util.DyeColor;
 import net.minecraft.util.Identifier;
+import net.minecraft.util.math.BlockPos;
+import net.minecraft.world.BlockView;
 
 public class ModBlocks {
     public static final Block BLAZE_ROD_BLOCK = registerBlock("blaze_rod_block", new PillarBlock(FabricBlockSettings.of(Material.STONE).strength(4.0f).luminance(state -> 7)),ModItemGroups.SQUASHED);
@@ -218,7 +222,7 @@ public class ModBlocks {
     public static final Block COMPRESSED_DIAMOND_BLOCK = registerBlock("compressed_diamond_block", new Block(FabricBlockSettings.of(Material.STONE).strength(4.0f)),ModItemGroups.SQUASHED);
     public static final Block COMPRESSED_EMERALD_BLOCK = registerBlock("compressed_emerald_block", new Block(FabricBlockSettings.of(Material.STONE).strength(4.0f)),ModItemGroups.SQUASHED);
     public static final Block COMPRESSED_LAPIS_BLOCK = registerBlock("compressed_lapis_block", new Block(FabricBlockSettings.of(Material.STONE).strength(4.0f)),ModItemGroups.SQUASHED);
-    public static final Block COMPRESSED_AMETHYST_BLOCK = registerBlock("compressed_amethyst_block", new Block(FabricBlockSettings.of(Material.STONE).strength(4.0f)),ModItemGroups.SQUASHED);
+    public static final Block COMPRESSED_AMETHYST_BLOCK = registerBlock("compressed_amethyst_block", ModBlocks.createStainedGlassBlock(DyeColor.MAGENTA), ModItemGroups.SQUASHED); //TODO Check if color looks ok
     public static final Block COMPRESSED_COPPER_BLOCK = registerBlock("compressed_copper_block", new Block(FabricBlockSettings.of(Material.STONE).strength(4.0f)),ModItemGroups.SQUASHED);
     public static final Block COMPRESSED_EXPOSED_COPPER = registerBlock("compressed_exposed_copper", new Block(FabricBlockSettings.of(Material.STONE).strength(4.0f)),ModItemGroups.SQUASHED);
     public static final Block COMPRESSED_WEATHERED_COPPER = registerBlock("compressed_weathered_copper", new Block(FabricBlockSettings.of(Material.STONE).strength(4.0f)),ModItemGroups.SQUASHED);
@@ -226,10 +230,8 @@ public class ModBlocks {
     public static final Block ENDER_EYE_BLOCK = registerBlock("ender_eye_block", new Block(FabricBlockSettings.of(Material.STONE).strength(4.0f)),ModItemGroups.SQUASHED);
     public static final Block ENDER_PEARL_BLOCK = registerBlock("ender_pearl_block", new Block(FabricBlockSettings.of(Material.STONE).strength(4.0f)),ModItemGroups.SQUASHED);
     public static final Block ECHO_SHARD_BLOCK = registerBlock("echo_shard_block", new Block(FabricBlockSettings.of(Material.STONE).strength(4.0f)),ModItemGroups.SQUASHED);
-    public static final Block DENSE_COBWEB_BLOCK = registerBlock("dense_cobweb_block", new DenseCobwebBlock(FabricBlockSettings.of(ModMaterial.DENSE_COBWEB).strength(4.0f).dynamicBounds().nonOpaque()),ModItemGroups.SQUASHED);
+    public static final Block DENSE_COBWEB_BLOCK = registerBlock("dense_cobweb_block", new DenseCobwebBlock(FabricBlockSettings.of(ModMaterial.DENSE_COBWEB).strength(4.0f).dynamicBounds()),ModItemGroups.SQUASHED);
     public static final Block RABBIT_HIDE_BLOCK = registerBlock("rabbit_hide_block", new PillarBlock(FabricBlockSettings.of(Material.STONE).strength(4.0f)),ModItemGroups.SQUASHED);
-
-
 
     // FOR:1.19.4
     // public static final Block COMPRESSED_CHERRY_LEAVES = registerBlock("compressed_cherry_leaves", new Block(FabricBlockSettings.of(Material.STONE).strength(4.0f)),ModItemGroups.SQUASHED);
@@ -241,6 +243,19 @@ public class ModBlocks {
         registerBlockItem(name,block,group);
         //if(block.getDefaultState().isOpaque()) { ModRenderLayers.registerCutout(block);  }
         return Registry.register(Registries.BLOCK, new Identifier(Super.MOD_ID, name), block);
+    }
+
+    //TODO FIXME
+    private static StainedGlassBlock createStainedGlassBlock(DyeColor color) {
+        return new StainedGlassBlock(color, AbstractBlock.Settings.of(Material.GLASS, color).strength(0.3f).sounds(BlockSoundGroup.GLASS).nonOpaque().allowsSpawning(ModBlocks::never).solidBlock(ModBlocks::never).suffocates(ModBlocks::never).blockVision(ModBlocks::never));
+    }
+
+    private static boolean never(BlockState blockState, BlockView blockView, BlockPos blockPos) {
+        return false;
+    }
+
+    public static boolean never(BlockState state, BlockView world, BlockPos pos, EntityType<?> type) {
+        return false;
     }
 
     private static Item registerBlockItem(String name, Block block, ItemGroup group) {

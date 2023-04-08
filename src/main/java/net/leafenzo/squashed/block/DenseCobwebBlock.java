@@ -1,9 +1,15 @@
 package net.leafenzo.squashed.block;
 
+import net.minecraft.advancement.criterion.LevitationCriterion;
 import net.minecraft.block.*;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.ai.pathing.NavigationType;
+import net.minecraft.entity.effect.StatusEffectInstance;
+import net.minecraft.entity.effect.StatusEffects;
+import net.minecraft.entity.mob.SpiderEntity;
+import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.item.Items;
 import net.minecraft.particle.ParticleTypes;
 import net.minecraft.sound.SoundEvent;
 import net.minecraft.util.math.BlockPos;
@@ -21,7 +27,7 @@ import net.minecraft.world.World;
  * From net.minecraft.block.PowderSnowBlock
  */
 public class DenseCobwebBlock
-extends TransparentBlock {
+extends Block {
     private static final float field_31216 = 0.083333336f;
     private static final float HORIZONTAL_MOVEMENT_MULTIPLIER = 0.9f;
     private static final float VERTICAL_MOVEMENT_MULTIPLIER = 1.5f;
@@ -32,18 +38,11 @@ extends TransparentBlock {
 
     public DenseCobwebBlock(AbstractBlock.Settings settings) { super(settings); }
 
-    /*
-    @Override
-    public boolean isTranslucent(BlockState state, BlockView world, BlockPos pos) {
-        return state.getFluidState().isEmpty();
-    }
-    */
-
-
+    //Overriding is NOT deprecated, only calling directly.
     @Override
     public boolean isSideInvisible(BlockState state, BlockState stateFrom, Direction direction) {
         if (stateFrom.isOf(this)) {
-            return false;
+            return true;
         }
         return super.isSideInvisible(state, stateFrom, direction);
     }
@@ -56,13 +55,24 @@ extends TransparentBlock {
     @Override
     public void onEntityCollision(BlockState state, World world, BlockPos pos, Entity entity) {
         if (!(entity instanceof LivingEntity) || entity.getBlockStateAtPos().isOf(this)) {
-            entity.slowMovement(state, new Vec3d(0.25, 0.05f, 0.25)); //same as CobwebBlock
+            if(entity instanceof SpiderEntity spiderEntity) {
+                spiderEntity.addStatusEffect(new StatusEffectInstance(StatusEffects.LEVITATION, 1, 2, true, false));
+            }
+            else {
+                entity.slowMovement(state, new Vec3d(0.25, 0.05f, 0.25)); //same as CobwebBlock
+                if(entity instanceof LivingEntity livingEntity) {
+                    livingEntity.addStatusEffect(new StatusEffectInstance(StatusEffects.BLINDNESS, 20, 255, true, false));
+                }
+            }
             if (world.isClient) {
                 boolean bl;
                 Random random = world.getRandom();
-                boolean bl2 = bl = entity.lastRenderX != entity.getX() || entity.lastRenderZ != entity.getZ();
+                boolean bl2 = bl = entity.lastRenderX != entity.getX() || entity.lastRenderZ != entity.getZ() || entity.lastRenderZ != entity.getY();
                 if (bl && random.nextBoolean()) {
-                    world.addParticle(ParticleTypes.SNOWFLAKE, entity.getX(), pos.getY() + 1, entity.getZ(), MathHelper.nextBetween(random, -1.0f, 1.0f) * 0.083333336f, 0.05f, MathHelper.nextBetween(random, -1.0f, 1.0f) * 0.083333336f);
+                    //TODO Consider having them swarm around player like a swarm of mini-spiders.
+                    float r1 = MathHelper.nextBetween(random, -1.0f, 1.0f) / 4;
+                    float r2 = MathHelper.nextBetween(random, -1.0f, 1.0f) / 4;
+                    world.addParticle(ParticleTypes.ASH, entity.getX() + r1, pos.getY() + 1, entity.getZ() + r2, r1 * 0.0008f, r2 * 0.0008f, -0.02f);
                 }
             }
         }
