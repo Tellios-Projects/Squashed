@@ -476,9 +476,6 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerParentedItemModel(ModBlocks.RABBIT_HIDE_BLOCK, Super.asResource("block/rabbit_hide_block"));
         blockStateModelGenerator.registerParentedItemModel(ModBlocks.COMPRESSED_COBBLED_DEEPSLATE, Super.asResource("block/compressed_cobbled_deepslate"));
         blockStateModelGenerator.registerParentedItemModel(ModBlocks.SUPER_COMPRESSED_COBBLED_DEEPSLATE, Super.asResource("block/super_compressed_cobbled_deepslate"));
-
-        blockStateModelGenerator.registerParentedItemModel(ModBlocks.IRON_SCAFFOLDING_BLOCK, Super.asResource("block/iron_scaffolding_block"));
-        blockStateModelGenerator.registerParentedItemModel(ModBlocks.NETHERITE_SCAFFOLDING_BLOCK, Super.asResource("block/netherite_scaffolding_block"));
     }
     @Override
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
