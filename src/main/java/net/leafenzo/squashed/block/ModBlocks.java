@@ -161,8 +161,8 @@ public class ModBlocks {
     public static final Block COMPRESSED_AZALEA_SAPLING = registerBlock("compressed_azalea_sapling", new Block(FabricBlockSettings.of(Material.STONE).strength(2.0f).sounds(BlockSoundGroup.ROOTED_DIRT)),ModItemGroups.SQUASHED);
     public static final Block COMPRESSED_FLOWERING_AZALEA_SAPLING = registerBlock("compressed_flowering_azalea_sapling", new Block(FabricBlockSettings.of(Material.STONE).strength(2.0f).sounds(BlockSoundGroup.ROOTED_DIRT)),ModItemGroups.SQUASHED);
     public static final Block COMPRESSED_MANGROVE_PROPAGULE = registerBlock("compressed_mangrove_propagule", new Block(FabricBlockSettings.of(Material.STONE).strength(2.0f).sounds(BlockSoundGroup.ROOTED_DIRT)),ModItemGroups.SQUASHED);
-    public static final Block COMPRESSED_CRIMSON_MUSHROOM = registerBlock("compressed_crimson_mushroom", new Block(FabricBlockSettings.of(Material.STONE).strength(2.0f).sounds(BlockSoundGroup.WART_BLOCK)),ModItemGroups.SQUASHED);
-    public static final Block COMPRESSED_WARPED_MUSHROOM = registerBlock("compressed_warped_mushroom", new Block(FabricBlockSettings.of(Material.STONE).strength(2.0f).sounds(BlockSoundGroup.WART_BLOCK)),ModItemGroups.SQUASHED);
+    public static final Block COMPRESSED_CRIMSON_FUNGUS = registerBlock("compressed_crimson_fungus", new Block(FabricBlockSettings.of(Material.STONE).strength(2.0f).sounds(BlockSoundGroup.WART_BLOCK)),ModItemGroups.SQUASHED);
+    public static final Block COMPRESSED_WARPED_FUNGUS = registerBlock("compressed_warped_fungus", new Block(FabricBlockSettings.of(Material.STONE).strength(2.0f).sounds(BlockSoundGroup.WART_BLOCK)),ModItemGroups.SQUASHED);
     public static final Block CHORUS_FRUIT_BLOCK = registerBlock("chorus_fruit_block", new Block(FabricBlockSettings.of(Material.STONE).strength(2.0f).sounds(BlockSoundGroup.WART_BLOCK)),ModItemGroups.SQUASHED);
     public static final Block COMPRESSED_SEAGRASS = registerBlock("compressed_seagrass", new Block(FabricBlockSettings.of(Material.STONE).strength(2.0f).sounds(BlockSoundGroup.WET_GRASS)),ModItemGroups.SQUASHED);
     public static final Block COMPRESSED_CACTUS = registerBlock("compressed_cactus", new Block(FabricBlockSettings.of(Material.STONE).strength(2.0f).sounds(BlockSoundGroup.WOOL)),ModItemGroups.SQUASHED);
@@ -187,7 +187,7 @@ public class ModBlocks {
     public static final Block TROPICAL_FISH_BLOCK_S = registerBlock("tropical_fish_block_s", new Block(FabricBlockSettings.of(Material.STONE).strength(2.0f).sounds(BlockSoundGroup.MUD)),ModItemGroups.SQUASHED);
     public static final Block TROPICAL_FISH_BLOCK_T = registerBlock("tropical_fish_block_t", new Block(FabricBlockSettings.of(Material.STONE).strength(2.0f).sounds(BlockSoundGroup.MUD)),ModItemGroups.SQUASHED);
     public static final Block PRISMARINE_CRYSTAL_BLOCK = registerBlock("prismarine_crystal_block", new Block(FabricBlockSettings.of(Material.STONE).strength(2.0f).sounds(BlockSoundGroup.GLASS).luminance(state -> 15)),ModItemGroups.SQUASHED);
-    public static final Block GLOW_INK_SAC = registerBlock("glow_ink_sac", new Block(FabricBlockSettings.of(Material.STONE).strength(2.0f).sounds(BlockSoundGroup.MUD).luminance(state -> 7)),ModItemGroups.SQUASHED);
+    public static final Block GLOW_INK_SAC_BLOCK = registerBlock("glow_ink_sac_block", new Block(FabricBlockSettings.of(Material.STONE).strength(2.0f).sounds(BlockSoundGroup.MUD).luminance(state -> 7)),ModItemGroups.SQUASHED);
     public static final Block SCUTE_BLOCK = registerBlock("scute_block", new Block(FabricBlockSettings.of(Material.STONE).strength(2.0f).sounds(BlockSoundGroup.CANDLE)),ModItemGroups.SQUASHED);
     public static final Block FEATHER_BLOCK = registerBlock("feather_block", new Block(FabricBlockSettings.of(Material.STONE).strength(2.0f).sounds(BlockSoundGroup.WOOL)),ModItemGroups.SQUASHED);
     public static final Block GHAST_TEAR_BLOCK = registerBlock("ghast_tear_block", new Block(FabricBlockSettings.of(Material.STONE).strength(2.0f).sounds(BlockSoundGroup.GLASS)),ModItemGroups.SQUASHED);
@@ -241,12 +241,15 @@ public class ModBlocks {
     public static final Block BAKED_POTATO_BLOCK = registerBlock("baked_potato_block", new Block(FabricBlockSettings.of(Material.STONE).strength(2.0f).sounds(BlockSoundGroup.AZALEA)),ModItemGroups.SQUASHED);
     public static final Block BEETROOT_BLOCK = registerBlock("beetroot_block", new Block(FabricBlockSettings.of(Material.STONE).strength(2.0f).sounds(BlockSoundGroup.AZALEA)),ModItemGroups.SQUASHED);
     public static final Block FLINT_BLOCK = registerBlock("flint_block", new Block(FabricBlockSettings.of(Material.STONE).strength(2.0f).sounds(BlockSoundGroup.TUFF)),ModItemGroups.SQUASHED);
+    public static final Block WAXED_COMPRESSED_COPPER_BLOCK = registerBlock("waxed_compressed_copper_block", new Block(AbstractBlock.Settings.copy(COMPRESSED_COPPER_BLOCK)),ModItemGroups.SQUASHED);
+    public static final Block WAXED_COMPRESSED_EXPOSED_COPPER = registerBlock("waxed_compressed_exposed_copper", new Block(AbstractBlock.Settings.copy(COMPRESSED_EXPOSED_COPPER)),ModItemGroups.SQUASHED);
+    public static final Block WAXED_COMPRESSED_WEATHERED_COPPER = registerBlock("waxed_compressed_weathered_copper", new Block(AbstractBlock.Settings.copy(COMPRESSED_WEATHERED_COPPER)),ModItemGroups.SQUASHED);
+    public static final Block WAXED_COMPRESSED_OXIDIZED_COPPER = registerBlock("waxed_compressed_oxidized_copper", new Block(AbstractBlock.Settings.copy(COMPRESSED_OXIDIZED_COPPER)),ModItemGroups.SQUASHED);
 
     // FOR:1.19.4
     // public static final Block COMPRESSED_CHERRY_LEAVES = registerBlock("compressed_cherry_leaves", new Block(FabricBlockSettings.of(Material.STONE).strength(4.0f)),ModItemGroups.SQUASHED);
     // public static final Block COMPRESSED_CHERRY_LOG = registerBlock("compressed_cherry_log", new Block(FabricBlockSettings.of(Material.STONE).strength(4.0f)),ModItemGroups.SQUASHED);
     // public static final Block COMPRESSED_CHERRY_SAPLING = registerBlock("compressed_cherry_sapling", new Block(FabricBlockSettings.of(Material.STONE).strength(4.0f)),ModItemGroups.SQUASHED);
-
 
     public static Block registerBlock(String name, Block block, ItemGroup group) {
         registerBlockItem(name,block,group);
