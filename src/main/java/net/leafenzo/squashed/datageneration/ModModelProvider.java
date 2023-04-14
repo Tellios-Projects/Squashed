@@ -188,8 +188,8 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.COMPRESSED_AZALEA_SAPLING);
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.COMPRESSED_FLOWERING_AZALEA_SAPLING);
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.COMPRESSED_MANGROVE_PROPAGULE);
-        blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.COMPRESSED_CRIMSON_MUSHROOM);
-        blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.COMPRESSED_WARPED_MUSHROOM);
+        blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.COMPRESSED_CRIMSON_FUNGUS);
+        blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.COMPRESSED_WARPED_FUNGUS);
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.CHORUS_FRUIT_BLOCK);
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.COMPRESSED_SEAGRASS);
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.COMPRESSED_CACTUS);
@@ -214,7 +214,7 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.TROPICAL_FISH_BLOCK_S);
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.TROPICAL_FISH_BLOCK_T);
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.PRISMARINE_CRYSTAL_BLOCK);
-        blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.GLOW_INK_SAC);
+        blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.GLOW_INK_SAC_BLOCK);
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.SCUTE_BLOCK);
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.FEATHER_BLOCK);
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.GHAST_TEAR_BLOCK);
@@ -260,6 +260,23 @@ public class ModModelProvider extends FabricModelProvider {
 //        blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.COMPRESSED_CHERRY_LEAVES);
 //        blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.COMPRESSED_CHERRY_LOG);
 //        blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.COMPRESSED_CHERRY_SAPLING);
+        blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.CARROT_BLOCK);
+        blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.GOLDEN_CARROT_BLOCK);
+        blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.APPLE_BLOCK);
+        blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.GOLDEN_APPLE_BLOCK);
+        blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.POTATO_BLOCK);
+        blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.POISONOUS_POTATO_BLOCK);
+        blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.BAKED_POTATO_BLOCK);
+        blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.BEETROOT_BLOCK);
+        blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.FLINT_BLOCK);
+        blockStateModelGenerator.registerParented(ModBlocks.COMPRESSED_COPPER_BLOCK, ModBlocks.WAXED_COMPRESSED_COPPER_BLOCK);
+        blockStateModelGenerator.registerParented(ModBlocks.COMPRESSED_EXPOSED_COPPER, ModBlocks.WAXED_COMPRESSED_EXPOSED_COPPER);
+        blockStateModelGenerator.registerParented(ModBlocks.COMPRESSED_WEATHERED_COPPER, ModBlocks.WAXED_COMPRESSED_WEATHERED_COPPER);
+        blockStateModelGenerator.registerParented(ModBlocks.COMPRESSED_OXIDIZED_COPPER, ModBlocks.WAXED_COMPRESSED_OXIDIZED_COPPER);
+
+
+
+
 
 
         // BlockItem Models
@@ -404,8 +421,8 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerParentedItemModel(ModBlocks.COMPRESSED_AZALEA_SAPLING, Super.asResource("block/compressed_azalea_sapling"));
         blockStateModelGenerator.registerParentedItemModel(ModBlocks.COMPRESSED_FLOWERING_AZALEA_SAPLING, Super.asResource("block/compressed_flowering_azalea_sapling"));
         blockStateModelGenerator.registerParentedItemModel(ModBlocks.COMPRESSED_MANGROVE_PROPAGULE, Super.asResource("block/compressed_mangrove_propagule"));
-        blockStateModelGenerator.registerParentedItemModel(ModBlocks.COMPRESSED_CRIMSON_MUSHROOM, Super.asResource("block/compressed_crimson_mushroom"));
-        blockStateModelGenerator.registerParentedItemModel(ModBlocks.COMPRESSED_WARPED_MUSHROOM, Super.asResource("block/compressed_warped_mushroom"));
+        blockStateModelGenerator.registerParentedItemModel(ModBlocks.COMPRESSED_CRIMSON_FUNGUS, Super.asResource("block/compressed_crimson_mushroom"));
+        blockStateModelGenerator.registerParentedItemModel(ModBlocks.COMPRESSED_WARPED_FUNGUS, Super.asResource("block/compressed_warped_mushroom"));
         blockStateModelGenerator.registerParentedItemModel(ModBlocks.CHORUS_FRUIT_BLOCK, Super.asResource("block/chorus_fruit_block"));
         blockStateModelGenerator.registerParentedItemModel(ModBlocks.COMPRESSED_SEAGRASS, Super.asResource("block/compressed_seagrass"));
         blockStateModelGenerator.registerParentedItemModel(ModBlocks.COMPRESSED_CACTUS, Super.asResource("block/compressed_cactus"));
@@ -430,7 +447,7 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerParentedItemModel(ModBlocks.TROPICAL_FISH_BLOCK_S, Super.asResource("block/tropical_fish_block_s"));
         blockStateModelGenerator.registerParentedItemModel(ModBlocks.TROPICAL_FISH_BLOCK_T, Super.asResource("block/tropical_fish_block_t"));
         blockStateModelGenerator.registerParentedItemModel(ModBlocks.PRISMARINE_CRYSTAL_BLOCK, Super.asResource("block/prismarine_crystal_block"));
-        blockStateModelGenerator.registerParentedItemModel(ModBlocks.GLOW_INK_SAC, Super.asResource("block/glow_ink_sac"));
+        blockStateModelGenerator.registerParentedItemModel(ModBlocks.GLOW_INK_SAC_BLOCK, Super.asResource("block/glow_ink_sac"));
         blockStateModelGenerator.registerParentedItemModel(ModBlocks.SCUTE_BLOCK, Super.asResource("block/scute_block"));
         blockStateModelGenerator.registerParentedItemModel(ModBlocks.FEATHER_BLOCK, Super.asResource("block/feather_block"));
         blockStateModelGenerator.registerParentedItemModel(ModBlocks.GHAST_TEAR_BLOCK, Super.asResource("block/ghast_tear_block"));
@@ -476,6 +493,15 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerParentedItemModel(ModBlocks.RABBIT_HIDE_BLOCK, Super.asResource("block/rabbit_hide_block"));
         blockStateModelGenerator.registerParentedItemModel(ModBlocks.COMPRESSED_COBBLED_DEEPSLATE, Super.asResource("block/compressed_cobbled_deepslate"));
         blockStateModelGenerator.registerParentedItemModel(ModBlocks.SUPER_COMPRESSED_COBBLED_DEEPSLATE, Super.asResource("block/super_compressed_cobbled_deepslate"));
+        blockStateModelGenerator.registerParentedItemModel(ModBlocks.CARROT_BLOCK, Super.asResource("block/carrot_block"));
+        blockStateModelGenerator.registerParentedItemModel(ModBlocks.GOLDEN_CARROT_BLOCK, Super.asResource("block/golden_carrot_block"));
+        blockStateModelGenerator.registerParentedItemModel(ModBlocks.APPLE_BLOCK, Super.asResource("block/apple_block"));
+        blockStateModelGenerator.registerParentedItemModel(ModBlocks.GOLDEN_APPLE_BLOCK, Super.asResource("block/golden_apple_block"));
+        blockStateModelGenerator.registerParentedItemModel(ModBlocks.POTATO_BLOCK, Super.asResource("block/potato_block"));
+        blockStateModelGenerator.registerParentedItemModel(ModBlocks.POISONOUS_POTATO_BLOCK, Super.asResource("block/poisonous_potato_block"));
+        blockStateModelGenerator.registerParentedItemModel(ModBlocks.BAKED_POTATO_BLOCK, Super.asResource("block/baked_potato_block"));
+        blockStateModelGenerator.registerParentedItemModel(ModBlocks.BEETROOT_BLOCK, Super.asResource("block/beetroot_block"));
+        blockStateModelGenerator.registerParentedItemModel(ModBlocks.FLINT_BLOCK, Super.asResource("block/flint_block"));
     }
     @Override
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
