@@ -211,7 +211,7 @@ public class ModBlocks {
     public static final Block COMPRESSED_IRON_BLOCK = registerBlock("compressed_iron_block", new Block(FabricBlockSettings.of(Material.STONE).strength(2.0f).sounds(BlockSoundGroup.NETHERITE)),ModItemGroups.SQUASHED);
     public static final Block COMPRESSED_REDSTONE_BLOCK = registerBlock("compressed_redstone_block", new RedstoneBlock(FabricBlockSettings.of(Material.STONE).strength(2.0f).sounds(BlockSoundGroup.STONE).luminance(state -> 9)),ModItemGroups.SQUASHED);
     public static final Block COMPRESSED_COAL_BLOCK = registerBlock("compressed_coal_block", new Block(FabricBlockSettings.of(Material.STONE).strength(2.0f).sounds(BlockSoundGroup.DEEPSLATE)),ModItemGroups.SQUASHED);
-    public static final Block COMPRESSED_QUARTZ_BLOCK = registerBlock("compressed_quartz_block", new Block(FabricBlockSettings.of(Material.STONE).strength(2.0f).sounds(BlockSoundGroup.GLASS)),ModItemGroups.SQUASHED);
+    public static final Block COMPRESSED_QUARTZ_BLOCK = registerBlock("compressed_quartz_block", ModBlocks.createCompressedQuartzBlock(DyeColor.WHITE), ModItemGroups.SQUASHED);
     public static final Block COMPRESSED_NETHERITE_BLOCK = registerBlock("compressed_netherite_block", new Block(FabricBlockSettings.of(Material.STONE).strength(2.0f).sounds(BlockSoundGroup.NETHERITE)),ModItemGroups.SQUASHED);
     public static final Block COMPRESSED_GOLD_BLOCK = registerBlock("compressed_gold_block", new Block(FabricBlockSettings.of(Material.STONE).strength(2.0f).sounds(BlockSoundGroup.NETHERITE)),ModItemGroups.SQUASHED);
     public static final Block COMPRESSED_DIAMOND_BLOCK = registerBlock("compressed_diamond_block", new Block(FabricBlockSettings.of(Material.STONE).strength(2.0f).sounds(BlockSoundGroup.GLASS)),ModItemGroups.SQUASHED);
@@ -254,9 +254,13 @@ public class ModBlocks {
         return Registry.register(Registries.BLOCK, new Identifier(Super.MOD_ID, name), block);
     }
 
-    //TODO FIXME
+
     private static StainedGlassBlock createCompressedAmethystBlock(DyeColor color) {
-        return new StainedGlassBlock(color, AbstractBlock.Settings.of(Material.GLASS, color).strength(0.3f).sounds(BlockSoundGroup.AMETHYST_BLOCK).nonOpaque().allowsSpawning(ModBlocks::never).solidBlock(ModBlocks::never).suffocates(ModBlocks::never).blockVision(ModBlocks::never));
+        return new StainedGlassBlock(color, AbstractBlock.Settings.of(Material.GLASS, color).strength(0.5f).sounds(BlockSoundGroup.AMETHYST_BLOCK).nonOpaque().allowsSpawning(ModBlocks::never).solidBlock(ModBlocks::never).suffocates(ModBlocks::never).blockVision(ModBlocks::never));
+    }
+
+    private static StainedGlassBlock createCompressedQuartzBlock(DyeColor color) {
+        return new StainedGlassBlock(color, AbstractBlock.Settings.of(Material.GLASS, color).strength(0.5f).sounds(BlockSoundGroup.GLASS).nonOpaque().allowsSpawning(ModBlocks::never).solidBlock(ModBlocks::never).suffocates(ModBlocks::never).blockVision(ModBlocks::never));
     }
 
     private static boolean never(BlockState blockState, BlockView blockView, BlockPos blockPos) {

@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "squashed:compressed_iron_block",
+    "squashed:compressed_gold_block",
+    "squashed:compressed_diamond_block",
+    "squashed:compressed_emerald_block",
+    "squashed:compressed_netherite_block"
+  ]
+}
