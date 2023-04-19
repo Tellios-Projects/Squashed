@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "squashed:compressed_flowering_azalea_sapling"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "minecraft:flowering_azalea"
+  }
+}

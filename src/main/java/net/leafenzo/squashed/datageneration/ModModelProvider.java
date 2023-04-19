@@ -30,7 +30,7 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.blockStateCollector.accept(VariantsBlockStateSupplier.create(ModBlocks.SEA_PICKLE_BLOCK).coordinate(BlockStateModelGenerator.createBooleanModelMap(Properties.WATERLOGGED, identifier2, identifier)));
     }
 
-    /*
+
     protected static void registerDenseCobwebBlock(BlockStateModelGenerator blockStateModelGenerator) {
         Identifier identifier = ModelIds.getBlockModelId(ModBlocks.DENSE_COBWEB_BLOCK);
         //blockStateModelGenerator.blockStateCollector.accept(VariantsBlockStateSupplier.create(ModBlocks.DENSE_COBWEB_BLOCK).coordinate(BlockStateModelGenerator.buildBlockStateVariants(Identifier, )));
@@ -39,10 +39,10 @@ public class ModModelProvider extends FabricModelProvider {
 
     protected static void registerCompressedSpongeBlock(BlockStateModelGenerator blockStateModelGenerator) {
         Identifier identifier = ModelIds.getBlockModelId(ModBlocks.COMPRESSED_SPONGE);
-        blockStateModelGenerator.blockStateCollector.accept(VariantsBlockStateSupplier.create(ModBlocks.COMPRESSED_SPONGE). );
+        blockStateModelGenerator.blockStateCollector.accept(VariantsBlockStateSupplier.create(ModBlocks.COMPRESSED_SPONGE));
         //blockStateModelGenerator.registerStateWithModelReference(ModBlocks.COMPRESSED_SPONGE, ModBlocks.COMPRESSED_SPONGE);
     }
-    */
+
 
     @Override
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
@@ -421,8 +421,8 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerParentedItemModel(ModBlocks.COMPRESSED_AZALEA_SAPLING, Super.asResource("block/compressed_azalea_sapling"));
         blockStateModelGenerator.registerParentedItemModel(ModBlocks.COMPRESSED_FLOWERING_AZALEA_SAPLING, Super.asResource("block/compressed_flowering_azalea_sapling"));
         blockStateModelGenerator.registerParentedItemModel(ModBlocks.COMPRESSED_MANGROVE_PROPAGULE, Super.asResource("block/compressed_mangrove_propagule"));
-        blockStateModelGenerator.registerParentedItemModel(ModBlocks.COMPRESSED_CRIMSON_FUNGUS, Super.asResource("block/compressed_crimson_mushroom"));
-        blockStateModelGenerator.registerParentedItemModel(ModBlocks.COMPRESSED_WARPED_FUNGUS, Super.asResource("block/compressed_warped_mushroom"));
+        blockStateModelGenerator.registerParentedItemModel(ModBlocks.COMPRESSED_CRIMSON_FUNGUS, Super.asResource("block/compressed_crimson_fungus"));
+        blockStateModelGenerator.registerParentedItemModel(ModBlocks.COMPRESSED_WARPED_FUNGUS, Super.asResource("block/compressed_warped_fungus"));
         blockStateModelGenerator.registerParentedItemModel(ModBlocks.CHORUS_FRUIT_BLOCK, Super.asResource("block/chorus_fruit_block"));
         blockStateModelGenerator.registerParentedItemModel(ModBlocks.COMPRESSED_SEAGRASS, Super.asResource("block/compressed_seagrass"));
         blockStateModelGenerator.registerParentedItemModel(ModBlocks.COMPRESSED_CACTUS, Super.asResource("block/compressed_cactus"));
@@ -447,7 +447,7 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerParentedItemModel(ModBlocks.TROPICAL_FISH_BLOCK_S, Super.asResource("block/tropical_fish_block_s"));
         blockStateModelGenerator.registerParentedItemModel(ModBlocks.TROPICAL_FISH_BLOCK_T, Super.asResource("block/tropical_fish_block_t"));
         blockStateModelGenerator.registerParentedItemModel(ModBlocks.PRISMARINE_CRYSTAL_BLOCK, Super.asResource("block/prismarine_crystal_block"));
-        blockStateModelGenerator.registerParentedItemModel(ModBlocks.GLOW_INK_SAC_BLOCK, Super.asResource("block/glow_ink_sac"));
+        blockStateModelGenerator.registerParentedItemModel(ModBlocks.GLOW_INK_SAC_BLOCK, Super.asResource("block/glow_ink_sac_block"));
         blockStateModelGenerator.registerParentedItemModel(ModBlocks.SCUTE_BLOCK, Super.asResource("block/scute_block"));
         blockStateModelGenerator.registerParentedItemModel(ModBlocks.FEATHER_BLOCK, Super.asResource("block/feather_block"));
         blockStateModelGenerator.registerParentedItemModel(ModBlocks.GHAST_TEAR_BLOCK, Super.asResource("block/ghast_tear_block"));

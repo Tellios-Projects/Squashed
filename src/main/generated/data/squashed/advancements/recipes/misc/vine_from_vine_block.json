@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:vine_from_vine_block"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_vine_block": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "squashed:vine_block"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_vine_block",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:vine_from_vine_block"
+    ]
+  }
+}
