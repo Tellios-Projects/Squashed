@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "squashed:block/poisonous_potato_block"
+    }
+  }
+}

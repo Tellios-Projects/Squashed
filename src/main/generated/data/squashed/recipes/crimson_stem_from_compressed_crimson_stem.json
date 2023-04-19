@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "squashed:compressed_crimson_stem"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "minecraft:crimson_stem"
+  }
+}

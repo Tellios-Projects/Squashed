@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "squashed:super_compressed_tuff"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "squashed:compressed_tuff"
+  }
+}

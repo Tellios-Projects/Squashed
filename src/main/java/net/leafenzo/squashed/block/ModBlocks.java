@@ -198,7 +198,7 @@ public class ModBlocks {
     public static final Block VINE_BLOCK = registerBlock("vine_block", new Block(FabricBlockSettings.of(Material.STONE).strength(2.0f).sounds(BlockSoundGroup.MOSS_BLOCK)),ModItemGroups.SQUASHED);
     public static final Block EGG_BLOCK = registerBlock("egg_block", new Block(FabricBlockSettings.of(Material.STONE).strength(2.0f).sounds(BlockSoundGroup.CANDLE)),ModItemGroups.SQUASHED);
     public static final Block PUFFERFISH_BLOCK = registerBlock("pufferfish_block", new PufferfishBlock(FabricBlockSettings.of(Material.STONE).strength(2.0f).sounds(BlockSoundGroup.CORAL)),ModItemGroups.SQUASHED);
-    public static final Block COMPRESSED_SPONGE = registerBlock("compressed_sponge", new Block(FabricBlockSettings.of(ModMaterial.COMPRESSED_SPONGE).strength(2.0f).sounds(BlockSoundGroup.CANDLE).nonOpaque()),ModItemGroups.SQUASHED);
+    public static final Block COMPRESSED_SPONGE = registerBlock("compressed_sponge", new CompressedSpongeBlock(FabricBlockSettings.of(ModMaterial.COMPRESSED_SPONGE).strength(2.0f).sounds(BlockSoundGroup.CANDLE).nonOpaque()),ModItemGroups.SQUASHED);
     public static final Block COMPRESSED_BONE = registerBlock("compressed_bone", new PillarBlock(FabricBlockSettings.of(Material.STONE).strength(2.0f).sounds(BlockSoundGroup.BONE)),ModItemGroups.SQUASHED);
     public static final Block PAPER_BLOCK = registerBlock("paper_block", new Block(FabricBlockSettings.of(Material.STONE).strength(2.0f).sounds(BlockSoundGroup.BIG_DRIPLEAF)),ModItemGroups.SQUASHED);
     public static final Block COMPRESSED_SCAFFOLDING = registerBlock("compressed_scaffolding", new PillarBlock(FabricBlockSettings.of(Material.STONE).strength(2.0f).sounds(BlockSoundGroup.SCAFFOLDING)),ModItemGroups.SQUASHED);
