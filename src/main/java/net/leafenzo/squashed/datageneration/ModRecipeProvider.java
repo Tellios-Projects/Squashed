@@ -217,7 +217,8 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         offerReversibleCompactingRecipes(exporter, RecipeCategory.MISC, Items.WARPED_WART_BLOCK, RecipeCategory.BUILDING_BLOCKS, ModBlocks.COMPRESSED_WARPED_WART_BLOCK);
         offerReversibleCompactingRecipes(exporter, RecipeCategory.MISC, Items.MANGROVE_ROOTS, RecipeCategory.BUILDING_BLOCKS, ModBlocks.MANGROVE_ROOTS_BLOCK);
         offerReversibleCompactingRecipes(exporter, RecipeCategory.MISC, Items.VINE, RecipeCategory.BUILDING_BLOCKS, ModBlocks.VINE_BLOCK);
-        offerReversibleCompactingRecipes(exporter, RecipeCategory.MISC, Items.EGG, RecipeCategory.BUILDING_BLOCKS, ModBlocks.EGG_BLOCK);
+
+        offerCompactingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, Items.EGG, ModBlocks.EGG_BLOCK);
 
 
         offerReversibleCompactingRecipes(exporter, RecipeCategory.MISC, Items.BONE, RecipeCategory.BUILDING_BLOCKS, ModBlocks.COMPRESSED_BONE);
