@@ -2,6 +2,7 @@
   "replace": false,
   "values": [
     "squashed:compressed_netherrack",
-    "squashed:super_compressed_netherrack"
+    "squashed:super_compressed_netherrack",
+    "squashed:blaze_rod_block"
   ]
 }
