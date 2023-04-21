@@ -1,0 +1,18 @@
+{
+  "replace": false,
+  "values": [
+    "squashed:white_compressed_wool",
+    "squashed:orange_compressed_wool",
+    "squashed:magenta_compressed_wool",
+    "squashed:light_blue_compressed_wool",
+    "squashed:yellow_compressed_wool",
+    "squashed:lime_compressed_wool",
+    "squashed:pink_compressed_wool",
+    "squashed:gray_compressed_wool",
+    "squashed:light_gray_compressed_wool",
+    "squashed:cyan_compressed_wool",
+    "squashed:purple_compressed_wool",
+    "squashed:blue_compressed_wool",
+    "squashed:brown_compressed_wool"
+  ]
+}
