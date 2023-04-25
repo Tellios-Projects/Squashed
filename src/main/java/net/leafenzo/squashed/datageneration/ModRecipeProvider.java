@@ -39,16 +39,11 @@ public class ModRecipeProvider extends FabricRecipeProvider {
     }
 
 
+
     @Override
     public void generate(Consumer<RecipeJsonProvider> exporter) {
 
-//        ShapelessRecipeJsonBuilder.create(RecipeCategory.FOOD, Items.RABBIT_STEW)
-//        .input(Items.BAKED_POTATO, 9)
-//        .input(Items.COOKED_RABBIT)
-//                .input(Items.BOWL)
-//                .input(Items.CARROT)
-//                .input(Blocks.BROWN_MUSHROOM)
-//                .group("rabbit_stew").criterion("has_cooked_rabbit", VanillaRecipeProvider.conditionsFromItem(Items.COOKED_RABBIT)).offerTo(exporter, VanillaRecipeProvider.convertBetween(Items.RABBIT_STEW, Items.BROWN_MUSHROOM));
+        // ShapelessRecipeJsonBuilder.create(RecipeCategory.FOOD, Items.RABBIT_STEW).input(Items.BAKED_POTATO, 9).input(Items.COOKED_RABBIT).input(Items.BOWL).input(Items.CARROT).input(Blocks.BROWN_MUSHROOM).group("rabbit_stew").criterion("has_cooked_rabbit", VanillaRecipeProvider.conditionsFromItem(Items.COOKED_RABBIT)).offerTo(exporter, VanillaRecipeProvider.convertBetween(Items.RABBIT_STEW, Items.BROWN_MUSHROOM));
 
         offerReversibleCompactingRecipes(exporter, RecipeCategory.MISC, Items.BLAZE_ROD, RecipeCategory.BUILDING_BLOCKS, ModBlocks.BLAZE_ROD_BLOCK);
         offerReversibleCompactingRecipes(exporter, RecipeCategory.MISC, Items.INK_SAC, RecipeCategory.BUILDING_BLOCKS, ModBlocks.INK_SAC_BLOCK);
