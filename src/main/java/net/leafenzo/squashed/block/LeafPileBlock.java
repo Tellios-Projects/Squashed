@@ -1,12 +1,13 @@
 package net.leafenzo.squashed.block;
 
-import net.leafenzo.squashed.util.ModProperties;
+import net.leafenzo.squashed.state.ModProperties;
 import net.minecraft.block.*;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.ai.pathing.NavigationType;
 import net.minecraft.item.ItemPlacementContext;
 import net.minecraft.sound.SoundEvent;
+import net.minecraft.state.StateManager;
 import net.minecraft.state.property.BooleanProperty;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Direction;
@@ -16,10 +17,9 @@ import net.minecraft.world.BlockView;
 import net.minecraft.world.World;
 import org.jetbrains.annotations.Nullable;
 
-public class LeafPileBlock extends LeavesBlock  {
-
-    public static final BooleanProperty SOLID = BooleanProperty.create("solid");
-
+public class LeafPileBlock
+extends Block {
+    public static final BooleanProperty SOLID = ModProperties.SOLID;
     protected static final VoxelShape COLLISION_SHAPE = Block.createCuboidShape(0.0, 0.0, 0.0, 16.0, 14.0, 16.0);
     private static final float field_31216 = 0.083333336f;
     private static final float HORIZONTAL_MOVEMENT_MULTIPLIER = 0.9f;
@@ -31,10 +31,19 @@ public class LeafPileBlock extends LeavesBlock  {
 
     private static final int SCHEDULED_TICK_DELAY = 20;
 
+
     public LeafPileBlock(AbstractBlock.Settings settings) {
         super(settings);
-        this.setDefaultState((BlockState)this.getDefaultState().with(SOLID, false));
+        this.setDefaultState(this.getDefaultState().with(SOLID, false));
     }
+
+
+    @Override
+    @Nullable
+    protected void appendProperties(StateManager.Builder<Block, BlockState> builder) {
+        builder.add(SOLID);
+    }
+
 
     //Overriding is NOT deprecated, only calling directly.
     @Override
@@ -49,24 +58,27 @@ public class LeafPileBlock extends LeavesBlock  {
     @Nullable
     public BlockState getPlacementState(ItemPlacementContext ctx) {
         BlockState blockBeneath = ctx.getWorld().getBlockState((ctx.getBlockPos().add(0,-1,0))); //TODO TESTME
-        return (BlockState)this.getDefaultState().with(SOLID, blockBeneath.isOf(this) || blockBeneath.isAir() );
+        return this.getDefaultState().with(SOLID, blockBeneath.isOf(this) || blockBeneath.isAir() );
     }
 
+    /*
     @Override
     public void neighborUpdate(BlockState state, World world, BlockPos pos, Block sourceBlock, BlockPos sourcePos, boolean notify) {
         if (world.isClient) {
             return;
         }
-        boolean solid = state.get(SOLID);
+        boolean solid = state.get(this.SOLID);
         BlockState blockBeneath = world.getBlockState((pos.add(0,-1,0)));
         if (solid == blockBeneath.isOf(this) || solid == blockBeneath.isAir()) {
             if (solid) {
                 world.scheduleBlockTick(pos, this, 4);
             } else {
-                world.setBlockState(pos, (BlockState)state.cycle(SOLID), Block.NOTIFY_LISTENERS);
+                world.setBlockState(pos, state.cycle(SOLID), Block.NOTIFY_LISTENERS);
             }
         }
     }
+    */
+
 
 
     @Override
@@ -76,10 +88,9 @@ public class LeafPileBlock extends LeavesBlock  {
 
     @Override
     public void onLandedUpon(World world, BlockState state, BlockPos pos, Entity entity, float fallDistance) {
-        if ((double)fallDistance < 4.0 || !(entity instanceof LivingEntity)) {
+        if ((double)fallDistance < 4.0 || !(entity instanceof LivingEntity livingEntity)) {
             return;
         }
-        LivingEntity livingEntity = (LivingEntity)entity;
         LivingEntity.FallSounds fallSounds = livingEntity.getFallSounds();
         SoundEvent soundEvent = (double)fallDistance < 7.0 ? fallSounds.small() : fallSounds.big();
         entity.playSound(soundEvent, 1.0f, 1.0f);
@@ -119,8 +130,7 @@ public class LeafPileBlock extends LeavesBlock  {
 
     @Override
     public boolean canPathfindThrough(BlockState state, BlockView world, BlockPos pos, NavigationType type) {
-        if(state.get(SOLID)) {  return true; }
-        return false;
+        return state.get(SOLID);
     }
 }
 
