@@ -1,4 +1,4 @@
-package net.leafenzo.squashed.util;
+package net.leafenzo.squashed.state;
 
 import net.minecraft.state.property.BooleanProperty;
 
