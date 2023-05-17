@@ -1,20 +1,15 @@
 package net.leafenzo.squashed.block;
 
 import net.leafenzo.squashed.state.ModProperties;
-import net.minecraft.block.*;
-import net.minecraft.entity.Entity;
-import net.minecraft.entity.LivingEntity;
-import net.minecraft.entity.ai.pathing.NavigationType;
+import net.minecraft.block.AbstractBlock;
+import net.minecraft.block.Block;
+import net.minecraft.block.BlockState;
 import net.minecraft.item.ItemPlacementContext;
-import net.minecraft.sound.SoundEvent;
 import net.minecraft.state.StateManager;
 import net.minecraft.state.property.BooleanProperty;
-import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Direction;
 import net.minecraft.util.shape.VoxelShape;
 import net.minecraft.util.shape.VoxelShapes;
-import net.minecraft.world.BlockView;
-import net.minecraft.world.World;
 import org.jetbrains.annotations.Nullable;
 
 public class LeafPileBlock
@@ -81,57 +76,57 @@ extends Block {
 
 
 
-    @Override
-    public VoxelShape getCullingShape(BlockState state, BlockView world, BlockPos pos) {
-        return VoxelShapes.empty();
-    }
+//    @Override
+//    public VoxelShape getCullingShape(BlockState state, BlockView world, BlockPos pos) {
+//        return VoxelShapes.empty();
+//    }
 
-    @Override
-    public void onLandedUpon(World world, BlockState state, BlockPos pos, Entity entity, float fallDistance) {
-        if ((double)fallDistance < 4.0 || !(entity instanceof LivingEntity livingEntity)) {
-            return;
-        }
-        LivingEntity.FallSounds fallSounds = livingEntity.getFallSounds();
-        SoundEvent soundEvent = (double)fallDistance < 7.0 ? fallSounds.small() : fallSounds.big();
-        entity.playSound(soundEvent, 1.0f, 1.0f);
-    }
-
-    @Override
-    public VoxelShape getCollisionShape(BlockState state, BlockView world, BlockPos pos, ShapeContext context) {
-        if(state.get(SOLID)) {
-            EntityShapeContext entityShapeContext;
-            Entity entity;
-            if (context instanceof EntityShapeContext && (entity = (entityShapeContext = (EntityShapeContext) context).getEntity()) != null) {
-                if (entity.fallDistance > 2.5f) {
-                    return FALLING_SHAPE;
-                }
-            /*
-            boolean bl = entity instanceof FallingBlockEntity;
-            if (bl || PowderSnowBlock.canWalkOnPowderSnow(entity) && context.isAbove(VoxelShapes.fullCube(), pos, false) && !context.isDescending()) {
-                return super.getCollisionShape(state, world, pos, context);
-            }
-            */
-            }
-            return VoxelShapes.empty();
-        }
-        else { return COLLISION_SHAPE; }
-    }
-
-
-    @Override
-    public VoxelShape getSidesShape(BlockState state, BlockView world, BlockPos pos) {
-        return VoxelShapes.fullCube();
-    }
-
-    @Override
-    public VoxelShape getCameraCollisionShape(BlockState state, BlockView world, BlockPos pos, ShapeContext context) {
-        return VoxelShapes.fullCube();
-    }
-
-    @Override
-    public boolean canPathfindThrough(BlockState state, BlockView world, BlockPos pos, NavigationType type) {
-        return state.get(SOLID);
-    }
+//    @Override
+//    public void onLandedUpon(World world, BlockState state, BlockPos pos, Entity entity, float fallDistance) {
+//        if ((double)fallDistance < 4.0 || !(entity instanceof LivingEntity livingEntity)) {
+//            return;
+//        }
+//        LivingEntity.FallSounds fallSounds = livingEntity.getFallSounds();
+//        SoundEvent soundEvent = (double)fallDistance < 7.0 ? fallSounds.small() : fallSounds.big();
+//        entity.playSound(soundEvent, 1.0f, 1.0f);
+//    }
+//
+//    @Override
+//    public VoxelShape getCollisionShape(BlockState state, BlockView world, BlockPos pos, ShapeContext context) {
+//        if(state.get(SOLID)) {
+//            EntityShapeContext entityShapeContext;
+//            Entity entity;
+//            if (context instanceof EntityShapeContext && (entity = (entityShapeContext = (EntityShapeContext) context).getEntity()) != null) {
+//                if (entity.fallDistance > 2.5f) {
+//                    return FALLING_SHAPE;
+//                }
+//            /*
+//            boolean bl = entity instanceof FallingBlockEntity;
+//            if (bl || PowderSnowBlock.canWalkOnPowderSnow(entity) && context.isAbove(VoxelShapes.fullCube(), pos, false) && !context.isDescending()) {
+//                return super.getCollisionShape(state, world, pos, context);
+//            }
+//            */
+//            }
+//            return VoxelShapes.empty();
+//        }
+//        else { return COLLISION_SHAPE; }
+//    }
+//
+//
+//    @Override
+//    public VoxelShape getSidesShape(BlockState state, BlockView world, BlockPos pos) {
+//        return VoxelShapes.fullCube();
+//    }
+//
+//    @Override
+//    public VoxelShape getCameraCollisionShape(BlockState state, BlockView world, BlockPos pos, ShapeContext context) {
+//        return VoxelShapes.fullCube();
+//    }
+//
+//    @Override
+//    public boolean canPathfindThrough(BlockState state, BlockView world, BlockPos pos, NavigationType type) {
+//        return state.get(SOLID);
+//    }
 }
 
 
