@@ -1,7 +1,8 @@
 {
-  "parent": "minecraft:block/cube_column",
+  "parent": "minecraft:block/orientable",
   "textures": {
-    "end": "squashed:block/blaze_rod_block_top",
-    "side": "squashed:block/blaze_rod_block_side"
+    "front": "squashed:block/blaze_rod_block_front",
+    "side": "squashed:block/blaze_rod_block_side",
+    "top": "squashed:block/blaze_rod_block_top"
   }
 }
