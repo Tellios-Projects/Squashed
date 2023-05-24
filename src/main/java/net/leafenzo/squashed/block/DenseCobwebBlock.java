@@ -1,6 +1,5 @@
 package net.leafenzo.squashed.block;
 
-import net.minecraft.advancement.criterion.LevitationCriterion;
 import net.minecraft.block.*;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.LivingEntity;
@@ -8,8 +7,6 @@ import net.minecraft.entity.ai.pathing.NavigationType;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.entity.mob.SpiderEntity;
-import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.item.Items;
 import net.minecraft.particle.ParticleTypes;
 import net.minecraft.sound.SoundEvent;
 import net.minecraft.util.math.BlockPos;
@@ -60,9 +57,17 @@ extends Block {
             }
             else {
                 entity.slowMovement(state, new Vec3d(0.25, 0.05f, 0.25)); //same as CobwebBlock
-                if(entity instanceof LivingEntity livingEntity) {
-                    livingEntity.addStatusEffect(new StatusEffectInstance(StatusEffects.BLINDNESS, 20, 255, true, false));
-                }
+//            if(entity instanceof LivingEntity livingEntity){
+//            livingEntity.addStatusEffect(new StatusEffectInstance(StatusEffects.BLINDNESS, 20, 255, true, false));
+//            }
+//                if(entity instanceof PlayerEntity playerEntity)
+//                    if( world.getBlockState(pos.add(0,1,0)).isOf(this)  //if block above is the same
+//                        && entity.getPos().y <= pos.getY()+1.6f // and if head is below
+//                    ){
+//                        playerEntity.addStatusEffect(new StatusEffectInstance(StatusEffects.BLINDNESS, 20, 255, true, false));
+//                } else if (entity instanceof LivingEntity livingEntity) {
+//                        livingEntity.addStatusEffect(new StatusEffectInstance(StatusEffects.BLINDNESS, 20, 255, true, false));
+//                }
             }
             if (world.isClient) {
                 boolean bl;
