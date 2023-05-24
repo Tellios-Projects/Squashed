@@ -5,7 +5,6 @@ import net.fabricmc.fabric.api.datagen.v1.provider.FabricBlockLootTableProvider;
 import net.leafenzo.squashed.block.ModBlocks;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
-import net.minecraft.data.server.loottable.BlockLootTableGenerator;
 import net.minecraft.item.Items;
 import net.minecraft.loot.provider.number.ConstantLootNumberProvider;
 
@@ -282,9 +281,7 @@ public class ModLootTableGenerator extends FabricBlockLootTableProvider {
         //addDropWithSilkTouch(ModBlocks.FIRE_CHARGE_BLOCK);
         //leavesDrops()
 
-
         //TODO
         // Leaves-like only drop with silk touch
-        // Bookshelf-like drop ingredients (these drop all as one lil clump, so it doesn't lag things too crazy for it to be a clump of 9)
     }
 }
