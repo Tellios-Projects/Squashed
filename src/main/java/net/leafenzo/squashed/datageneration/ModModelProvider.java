@@ -91,8 +91,8 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.DEAD_BUSH_BLOCK);
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.GLOW_BERRIES_BLOCK);
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.SWEET_BERRIES_BLOCK);
-        blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.GRASS_CLIPPINGS_BLOCK);
-        blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.FERN_BLOCK);
+        blockStateModelGenerator.registerSingleton(ModBlocks.GRASS_CLIPPINGS_BLOCK, TexturedModel.LEAVES);
+        blockStateModelGenerator.registerSingleton(ModBlocks.FERN_BLOCK, TexturedModel.LEAVES);
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.GLOW_LICHEN_BLOCK);
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.PUMPKIN_PILE);
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.HAY_PILE);
@@ -287,8 +287,6 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerParented(ModBlocks.COMPRESSED_EXPOSED_COPPER, ModBlocks.WAXED_COMPRESSED_EXPOSED_COPPER);
         blockStateModelGenerator.registerParented(ModBlocks.COMPRESSED_WEATHERED_COPPER, ModBlocks.WAXED_COMPRESSED_WEATHERED_COPPER);
         blockStateModelGenerator.registerParented(ModBlocks.COMPRESSED_OXIDIZED_COPPER, ModBlocks.WAXED_COMPRESSED_OXIDIZED_COPPER);
-
-
 
 
 
