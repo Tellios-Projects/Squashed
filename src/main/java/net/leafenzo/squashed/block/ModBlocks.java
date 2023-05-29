@@ -52,8 +52,8 @@ public class ModBlocks {
     public static final Block DEAD_BUSH_BLOCK = registerBlock("dead_bush_block", new Block(FabricBlockSettings.of(Material.STONE).strength(2.0f).sounds(BlockSoundGroup.WOOD)),ModItemGroups.SQUASHED);
     public static final Block GLOW_BERRIES_BLOCK = registerBlock("glow_berries_block", new Block(FabricBlockSettings.of(Material.STONE).strength(2.0f).sounds(BlockSoundGroup.GRASS).luminance(state -> 7)),ModItemGroups.SQUASHED);
     public static final Block SWEET_BERRIES_BLOCK = registerBlock("sweet_berries_block", new Block(FabricBlockSettings.of(Material.STONE).strength(2.0f).sounds(BlockSoundGroup.SWEET_BERRY_BUSH)),ModItemGroups.SQUASHED);
-    public static final Block GRASS_CLIPPINGS_BLOCK = registerBlock("grass_clippings_block", new Block(FabricBlockSettings.of(Material.STONE).strength(2.0f).sounds(BlockSoundGroup.MOSS_BLOCK)),ModItemGroups.SQUASHED);
-    public static final Block FERN_BLOCK = registerBlock("fern_block", new Block(FabricBlockSettings.of(Material.STONE).strength(2.0f).sounds(BlockSoundGroup.MOSS_BLOCK)),ModItemGroups.SQUASHED);
+    public static final Block GRASS_CLIPPINGS_BLOCK = registerBlock("grass_clippings_block", new FallingBlock(FabricBlockSettings.of(Material.STONE).strength(2.0f).sounds(BlockSoundGroup.MOSS_BLOCK)),ModItemGroups.SQUASHED);
+    public static final Block FERN_BLOCK = registerBlock("fern_block", new FallingBlock(FabricBlockSettings.of(Material.STONE).strength(2.0f).sounds(BlockSoundGroup.MOSS_BLOCK)),ModItemGroups.SQUASHED);
     public static final Block GLOW_LICHEN_BLOCK = registerBlock("glow_lichen_block", new Block(FabricBlockSettings.of(Material.STONE).strength(2.0f).sounds(BlockSoundGroup.MOSS_BLOCK).luminance(state -> 7)),ModItemGroups.SQUASHED);
     public static final Block PUMPKIN_PILE = registerBlock("pumpkin_pile", new Block(FabricBlockSettings.of(Material.STONE).strength(2.0f).sounds(BlockSoundGroup.WOOD)),ModItemGroups.SQUASHED);
     public static final Block HAY_PILE = registerBlock("hay_pile", new Block(FabricBlockSettings.of(Material.STONE).strength(2.0f).sounds(BlockSoundGroup.GRASS)),ModItemGroups.SQUASHED);
