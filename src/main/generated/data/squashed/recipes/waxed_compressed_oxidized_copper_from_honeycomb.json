@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "waxed_compressed_oxidized_copper",
+  "ingredients": [
+    {
+      "item": "squashed:compressed_oxidized_copper"
+    },
+    {
+      "item": "minecraft:honeycomb"
+    }
+  ],
+  "result": {
+    "item": "squashed:waxed_compressed_oxidized_copper"
+  }
+}

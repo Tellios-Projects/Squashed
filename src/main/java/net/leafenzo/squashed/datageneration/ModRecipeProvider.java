@@ -38,13 +38,10 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         ShapedRecipeJsonBuilder.create(compactingCategory, compactItem).input(Character.valueOf('#'), baseItem).pattern("###").pattern("###").pattern("###").group(compactingGroup).criterion(RecipeProvider.hasItem(baseItem), RecipeProvider.conditionsFromItem(baseItem)).offerTo(exporter, new Identifier(compactingId+"_from_"+reverseId));
     }
 
-
-
     @Override
     public void generate(Consumer<RecipeJsonProvider> exporter) {
-
-        // ShapelessRecipeJsonBuilder.create(RecipeCategory.FOOD, Items.RABBIT_STEW).input(Items.BAKED_POTATO, 9).input(Items.COOKED_RABBIT).input(Items.BOWL).input(Items.CARROT).input(Blocks.BROWN_MUSHROOM).group("rabbit_stew").criterion("has_cooked_rabbit", VanillaRecipeProvider.conditionsFromItem(Items.COOKED_RABBIT)).offerTo(exporter, VanillaRecipeProvider.convertBetween(Items.RABBIT_STEW, Items.BROWN_MUSHROOM));
-
+        offerWaxingRecipes(exporter);
+        // From the Sheet:
         offerReversibleCompactingRecipes(exporter, RecipeCategory.MISC, Items.BLAZE_ROD, RecipeCategory.BUILDING_BLOCKS, ModBlocks.BLAZE_ROD_BLOCK);
         offerReversibleCompactingRecipes(exporter, RecipeCategory.MISC, Items.INK_SAC, RecipeCategory.BUILDING_BLOCKS, ModBlocks.INK_SAC_BLOCK);
         offerReversibleCompactingRecipes(exporter, RecipeCategory.MISC, Items.STICK, RecipeCategory.BUILDING_BLOCKS, ModBlocks.STICK_BLOCK);
