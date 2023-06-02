@@ -9,8 +9,5 @@ public class ModClientInit implements ClientModInitializer {
     public void onInitializeClient() {
         ModRenderLayers.registerBlockCutouts();
         ModColorHandler.registerBlockColorProviders();
-
-        //ModItems.registerModItems();
-        //ModBlocks.registerModBlocks();
     }
 }

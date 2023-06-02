@@ -61,7 +61,7 @@ public class ModModelProvider extends FabricModelProvider {
     @Override
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
         // Block Models
-        registerNorthDefaultRotatable(blockStateModelGenerator, ModBlocks.BLAZE_ROD_BLOCK, TexturedModel.ORIENTABLE);
+        //registerNorthDefaultRotatable(blockStateModelGenerator, ModBlocks.BLAZE_ROD_BLOCK, TexturedModel.ORIENTABLE); //TODO FIXME
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.INK_SAC_BLOCK);
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.STICK_BLOCK);
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.FIRE_CHARGE_BLOCK);
@@ -236,7 +236,7 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.COMPRESSED_NETHER_WART_BLOCK);
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.COMPRESSED_WARPED_WART_BLOCK);
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.MANGROVE_ROOTS_BLOCK);
-        blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.VINE_BLOCK);
+        blockStateModelGenerator.registerSingleton(ModBlocks.VINE_BLOCK, TexturedModel.LEAVES);
         blockStateModelGenerator.registerSingleton(ModBlocks.EGG_BLOCK, TexturedModel.CUBE_BOTTOM_TOP);
         //registerPufferfishBlock(blockStateModelGenerator);
         //registerCompressedSpongeBlock(blockStateModelGenerator);
