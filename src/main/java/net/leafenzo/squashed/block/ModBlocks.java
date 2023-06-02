@@ -4,6 +4,7 @@ package net.leafenzo.squashed.block;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
+import net.fabricmc.fabric.api.registry.OxidizableBlocksRegistry;
 import net.leafenzo.squashed.ModInit;
 import net.leafenzo.squashed.Super;
 import net.leafenzo.squashed.item.ModItemGroups;
@@ -22,7 +23,7 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.BlockView;
 
 public class ModBlocks {
-    public static final Block BLAZE_ROD_BLOCK = registerBlock("blaze_rod_block", new ReversiblePillarBlock(FabricBlockSettings.of(Material.STONE).strength(4.0f).sounds(BlockSoundGroup.SHROOMLIGHT).luminance(state -> 7)),ModItemGroups.SQUASHED);
+    public static final Block BLAZE_ROD_BLOCK = registerBlock("blaze_rod_block", new Block(FabricBlockSettings.of(Material.STONE).strength(4.0f).sounds(BlockSoundGroup.SHROOMLIGHT).luminance(state -> 7)),ModItemGroups.SQUASHED);
     public static final Block INK_SAC_BLOCK = registerBlock("ink_sac_block", new Block(FabricBlockSettings.of(Material.STONE).strength(2.0f).sounds(BlockSoundGroup.MUD)),ModItemGroups.SQUASHED);
     public static final Block STICK_BLOCK = registerBlock("stick_block", new Block(FabricBlockSettings.of(Material.STONE).strength(2.0f).sounds(BlockSoundGroup.BAMBOO_WOOD)),ModItemGroups.SQUASHED);
     public static final Block FIRE_CHARGE_BLOCK = registerBlock("fire_charge_block", new FireChargeBlock(FabricBlockSettings.of(Material.STONE).strength(2.0f).sounds(BlockSoundGroup.GRAVEL)),ModItemGroups.SQUASHED);
@@ -223,12 +224,6 @@ public class ModBlocks {
     public static final Block COMPRESSED_EXPOSED_COPPER = registerBlock("compressed_exposed_copper", new OxidizableBlock(Oxidizable.OxidationLevel.EXPOSED, FabricBlockSettings.of(Material.STONE).strength(2.0f).sounds(BlockSoundGroup.COPPER)),ModItemGroups.SQUASHED);
     public static final Block COMPRESSED_WEATHERED_COPPER = registerBlock("compressed_weathered_copper", new OxidizableBlock(Oxidizable.OxidationLevel.WEATHERED, FabricBlockSettings.of(Material.STONE).strength(2.0f).sounds(BlockSoundGroup.COPPER)),ModItemGroups.SQUASHED);
     public static final Block COMPRESSED_OXIDIZED_COPPER = registerBlock("compressed_oxidized_copper", new OxidizableBlock(Oxidizable.OxidationLevel.OXIDIZED, FabricBlockSettings.of(Material.STONE).strength(2.0f).sounds(BlockSoundGroup.COPPER)),ModItemGroups.SQUASHED);
-
-//    public static final Block OXIDIZED_COPPER = Blocks.register("oxidized_copper", new OxidizableBlock(Oxidizable.OxidationLevel.OXIDIZED, AbstractBlock.Settings.of(Material.METAL, MapColor.TEAL).requiresTool().strength(3.0f, 6.0f).sounds(BlockSoundGroup.COPPER)));
-//    public static final Block WEATHERED_COPPER = Blocks.register("weathered_copper", new OxidizableBlock(Oxidizable.OxidationLevel.WEATHERED, AbstractBlock.Settings.of(Material.METAL, MapColor.DARK_AQUA).requiresTool().strength(3.0f, 6.0f).sounds(BlockSoundGroup.COPPER)));
-//    public static final Block EXPOSED_COPPER = Blocks.register("exposed_copper", new OxidizableBlock(Oxidizable.OxidationLevel.EXPOSED, AbstractBlock.Settings.of(Material.METAL, MapColor.TERRACOTTA_LIGHT_GRAY).requiresTool().strength(3.0f, 6.0f).sounds(BlockSoundGroup.COPPER)));
-//    public static final Block COPPER_BLOCK = Blocks.register("copper_block", new OxidizableBlock(Oxidizable.OxidationLevel.UNAFFECTED, AbstractBlock.Settings.of(Material.METAL, MapColor.ORANGE).requiresTool().strength(3.0f, 6.0f).sounds(BlockSoundGroup.COPPER)));
-
 
     //public static final Block COMPRESSED_CHERRY_LEAVES = registerBlock("compressed_cherry_leaves", new Block(FabricBlockSettings.of(Material.STONE).strength(2.0f).sounds(BlockSoundGroup.AZALEA_LEAVES)),ModItemGroups.SQUASHED);
     //public static final Block COMPRESSED_CHERRY_LOG = registerBlock("compressed_cherry_log", new PillarBlock(FabricBlockSettings.of(Material.STONE).strength(2.0f).sounds(BlockSoundGroup.WOOD)),ModItemGroups.SQUASHED);

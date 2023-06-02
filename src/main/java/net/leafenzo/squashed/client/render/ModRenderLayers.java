@@ -1,4 +1,4 @@
-package net.leafenzo.squashed.block;
+package net.leafenzo.squashed.client.render;
 
 import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
 import net.leafenzo.squashed.block.ModBlocks;

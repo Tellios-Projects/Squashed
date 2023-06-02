@@ -3,6 +3,7 @@ package net.leafenzo.squashed;
 import net.fabricmc.api.ModInitializer;
 import net.leafenzo.squashed.block.ModBlocks;
 import net.leafenzo.squashed.item.ModItems;
+import net.leafenzo.squashed.registries.ModFabricRegistries;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -18,6 +19,7 @@ public class ModInit implements ModInitializer {
 
         ModItems.registerModItems();
         ModBlocks.registerModBlocks();
+        ModFabricRegistries.registerOxidizableBlocks();
     }
 }
 

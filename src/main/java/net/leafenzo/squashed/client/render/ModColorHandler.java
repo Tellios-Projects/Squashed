@@ -8,7 +8,7 @@ import net.minecraft.client.color.world.GrassColors;
 import net.minecraft.item.BlockItem;
 
 public class ModColorHandler {
-    public static void RegisterBlockColorProviders() {
+    public static void registerBlockColorProviders() {
         ColorProviderRegistry.BLOCK.register((state, world, pos, tintIndex) -> pos != null && world != null ? BiomeColors.getGrassColor(world, pos) : GrassColors.getColor(0.5, 1.0), //0.5 and 1.0 are the defaults for grass color (Source: BlockColors line 49)
                 ModBlocks.GRASS_CLIPPINGS_BLOCK,
                 ModBlocks.FERN_BLOCK
