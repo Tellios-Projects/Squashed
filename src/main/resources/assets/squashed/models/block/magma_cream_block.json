@@ -1,5 +1,5 @@
 {
-  "parent": "minecraft:block/cube_all",
+  "parent": "squashed:block/cube_mirrored_all",
   "textures": {
     "all": "squashed:block/magma_cream_block"
   }
