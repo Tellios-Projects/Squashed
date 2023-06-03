@@ -4,7 +4,6 @@ package net.leafenzo.squashed.block;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
-import net.fabricmc.fabric.api.registry.OxidizableBlocksRegistry;
 import net.leafenzo.squashed.ModInit;
 import net.leafenzo.squashed.Super;
 import net.leafenzo.squashed.item.ModItemGroups;
@@ -23,7 +22,7 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.BlockView;
 
 public class ModBlocks {
-    public static final Block BLAZE_ROD_BLOCK = registerBlock("blaze_rod_block", new Block(FabricBlockSettings.of(Material.STONE).strength(4.0f).sounds(BlockSoundGroup.SHROOMLIGHT).luminance(state -> 7)),ModItemGroups.SQUASHED);
+    public static final Block BLAZE_ROD_BLOCK = registerBlock("blaze_rod_block", new ReversiblePillarBlock(FabricBlockSettings.of(Material.STONE).strength(4.0f).sounds(BlockSoundGroup.SHROOMLIGHT).luminance(state -> 7)),ModItemGroups.SQUASHED);
     public static final Block INK_SAC_BLOCK = registerBlock("ink_sac_block", new Block(FabricBlockSettings.of(Material.STONE).strength(2.0f).sounds(BlockSoundGroup.MUD)),ModItemGroups.SQUASHED);
     public static final Block STICK_BLOCK = registerBlock("stick_block", new Block(FabricBlockSettings.of(Material.STONE).strength(2.0f).sounds(BlockSoundGroup.BAMBOO_WOOD)),ModItemGroups.SQUASHED);
     public static final Block FIRE_CHARGE_BLOCK = registerBlock("fire_charge_block", new FireChargeBlock(FabricBlockSettings.of(Material.STONE).strength(2.0f).sounds(BlockSoundGroup.GRAVEL)),ModItemGroups.SQUASHED);

@@ -19,17 +19,10 @@ extends FacingBlock {
     public BlockState getPlacementState(ItemPlacementContext ctx) {
         return this.getDefaultState().with(FACING, ctx.getSide());
     }
-
     @Override
     public BlockState rotate(BlockState state, BlockRotation rotation) {
         return state.with(FACING, rotation.rotate(state.get(FACING)));
     }
-
-    // Don't know what this is for:
-//    @Override
-//    public BlockState mirror(BlockState state, BlockMirror mirror) {
-//        return state.rotate(mirror.getRotation(state.get(FACING)));
-//    }
     @Override
     protected void appendProperties(StateManager.Builder<Block, BlockState> builder) {
         builder.add(FACING);

@@ -58,14 +58,19 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.blockStateCollector.accept(VariantsBlockStateSupplier.create(block).coordinate(BlockStateModelGenerator.createNorthDefaultRotationStates()));
     }
 
+    private void registerOrientable(BlockStateModelGenerator blockStateModelGenerator, Block block, TexturedModel.Factory modelFactory) {
+        Identifier identifier = modelFactory.upload(block, blockStateModelGenerator.modelCollector);
+        blockStateModelGenerator.blockStateCollector.accept(VariantsBlockStateSupplier.create(block).coordinate(BlockStateModelGenerator.createNorthDefaultRotationStates()));
+    }
+
     @Override
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
         // Block Models
-        //registerNorthDefaultRotatable(blockStateModelGenerator, ModBlocks.BLAZE_ROD_BLOCK, TexturedModel.ORIENTABLE); //TODO FIXME
+        registerOrientable(blockStateModelGenerator, ModBlocks.BLAZE_ROD_BLOCK, TexturedModel.CUBE_COLUMN);
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.INK_SAC_BLOCK);
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.STICK_BLOCK);
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.FIRE_CHARGE_BLOCK);
-        blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.MAGMA_CREAM_BLOCK);
+        //blockStateModelGenerator.registerBuiltin(Super.asResource("block/cube_mirrored_all"), ModBlocks.MAGMA_CREAM_BLOCK); //TODO FIXME
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.BLAZE_POWDER_BLOCK);
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.RAW_SALMON_BLOCK);
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.COOKED_SALMON_BLOCK);
