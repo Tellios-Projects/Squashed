@@ -11,6 +11,7 @@ public class ModRenderLayers {
                 ModBlocks.COMPRESSED_SPONGE
         );
         BlockRenderLayerMap.INSTANCE.putBlocks(RenderLayer.getTranslucent(),
+                ModBlocks.MAGMA_CREAM_BLOCK,
                 ModBlocks.COMPRESSED_AMETHYST_BLOCK,
                 ModBlocks.COMPRESSED_QUARTZ_BLOCK
         );
