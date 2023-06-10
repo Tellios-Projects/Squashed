@@ -8,7 +8,8 @@ public class ModRenderLayers {
     public static void registerBlockCutouts() {
         BlockRenderLayerMap.INSTANCE.putBlocks(RenderLayer.getCutoutMipped(),
                 ModBlocks.DENSE_COBWEB_BLOCK,
-                ModBlocks.COMPRESSED_SPONGE
+                ModBlocks.COMPRESSED_SPONGE,
+                ModBlocks.SEA_PICKLE_BLOCK
         );
         BlockRenderLayerMap.INSTANCE.putBlocks(RenderLayer.getTranslucent(),
                 ModBlocks.MAGMA_CREAM_BLOCK,

@@ -2,6 +2,7 @@ package net.leafenzo.squashed.block;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
+import net.minecraft.block.Waterloggable;
 import net.minecraft.fluid.FluidState;
 import net.minecraft.fluid.Fluids;
 import net.minecraft.item.ItemPlacementContext;
@@ -13,7 +14,7 @@ import net.minecraft.util.math.Direction;
 import net.minecraft.world.WorldAccess;
 import org.jetbrains.annotations.Nullable;
 
-public class SeaPickleBlock extends Block {
+public class SeaPickleBlock extends Block implements Waterloggable {
     private static final BooleanProperty WATERLOGGED = Properties.WATERLOGGED;
 
     public SeaPickleBlock(Settings settings) {
