@@ -25,11 +25,11 @@ public class ModModelProvider extends FabricModelProvider {
         );
     }
 
-    protected static void registerSeaPickleBlock(BlockStateModelGenerator blockStateModelGenerator) {
-        Identifier identifier = ModelIds.getBlockModelId(ModBlocks.SEA_PICKLE_BLOCK);
-        Identifier identifier2 = ModelIds.getBlockSubModelId(ModBlocks.SEA_PICKLE_BLOCK, "_wet");
-        blockStateModelGenerator.blockStateCollector.accept(VariantsBlockStateSupplier.create(ModBlocks.SEA_PICKLE_BLOCK).coordinate(BlockStateModelGenerator.createBooleanModelMap(Properties.WATERLOGGED, identifier2, identifier)));
-    }
+//    protected static void registerSeaPickleBlock(BlockStateModelGenerator blockStateModelGenerator) {
+//        Identifier identifier = ModelIds.getBlockModelId(ModBlocks.SEA_PICKLE_BLOCK);
+//        Identifier identifier2 = ModelIds.getBlockSubModelId(ModBlocks.SEA_PICKLE_BLOCK, "_wet");
+//        blockStateModelGenerator.blockStateCollector.accept(VariantsBlockStateSupplier.create(ModBlocks.SEA_PICKLE_BLOCK).coordinate(BlockStateModelGenerator.createBooleanModelMap(Properties.WATERLOGGED, identifier2, identifier)));
+//    }
 
     protected static void registerDenseCobwebBlock(BlockStateModelGenerator blockStateModelGenerator) {
         Identifier identifier = ModelIds.getBlockModelId(ModBlocks.DENSE_COBWEB_BLOCK);
@@ -103,7 +103,7 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.HAY_PILE);
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.MELON_PILE);
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.SUGARCANE_BLOCK);
-        registerSeaPickleBlock(blockStateModelGenerator);
+//        registerSeaPickleBlock(blockStateModelGenerator);
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.COMPRESSED_SOUL_SAND);
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.SUPER_COMPRESSED_SOUL_SAND);
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.COMPRESSED_COBBLESTONE);

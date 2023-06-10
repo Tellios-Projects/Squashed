@@ -16,10 +16,14 @@ import net.minecraft.item.ItemGroup;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.sound.BlockSoundGroup;
+import net.minecraft.state.property.BooleanProperty;
+import net.minecraft.state.property.Properties;
 import net.minecraft.util.DyeColor;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.BlockView;
+
+import java.util.function.ToIntFunction;
 
 public class ModBlocks {
     public static final Block BLAZE_ROD_BLOCK = registerBlock("blaze_rod_block", new ReversiblePillarBlock(FabricBlockSettings.of(Material.STONE).strength(4.0f).sounds(BlockSoundGroup.SHROOMLIGHT).luminance(state -> 7)),ModItemGroups.SQUASHED);
@@ -59,7 +63,7 @@ public class ModBlocks {
     public static final Block HAY_PILE = registerBlock("hay_pile", new Block(FabricBlockSettings.of(Material.STONE).strength(2.0f).sounds(BlockSoundGroup.GRASS)),ModItemGroups.SQUASHED);
     public static final Block MELON_PILE = registerBlock("melon_pile", new Block(FabricBlockSettings.of(Material.STONE).strength(2.0f).sounds(BlockSoundGroup.WOOD)),ModItemGroups.SQUASHED);
     public static final Block SUGARCANE_BLOCK = registerBlock("sugarcane_block", new Block(FabricBlockSettings.of(Material.STONE).strength(2.0f).sounds(BlockSoundGroup.BAMBOO_WOOD)),ModItemGroups.SQUASHED);
-    public static final Block SEA_PICKLE_BLOCK = registerBlock("sea_pickle_block", new SeaPickleBlock(FabricBlockSettings.of(Material.STONE).strength(2.0f).sounds(BlockSoundGroup.CORAL)),ModItemGroups.SQUASHED);
+    public static final Block SEA_PICKLE_BLOCK = registerBlock("sea_pickle_block", new SeaPickleBlock(FabricBlockSettings.of(Material.STONE).luminance(ModBlocks.createLightLevelFromProperty(7, Properties.WATERLOGGED)).strength(2.0f).sounds(BlockSoundGroup.CORAL)),ModItemGroups.SQUASHED);
     public static final Block COMPRESSED_SOUL_SAND = registerBlock("compressed_soul_sand", new Block(FabricBlockSettings.of(Material.STONE).strength(2.0f).sounds(BlockSoundGroup.SOUL_SOIL).luminance(state -> 15)),ModItemGroups.SQUASHED);
     public static final Block SUPER_COMPRESSED_SOUL_SAND = registerBlock("super_compressed_soul_sand", new Block(FabricBlockSettings.of(Material.STONE).strength(2.0f).sounds(BlockSoundGroup.SHROOMLIGHT)),ModItemGroups.SQUASHED);
     public static final Block COMPRESSED_COBBLESTONE = registerBlock("compressed_cobblestone", new Block(FabricBlockSettings.of(Material.STONE).strength(2.0f).sounds(BlockSoundGroup.STONE)),ModItemGroups.SQUASHED);
@@ -274,6 +278,10 @@ public class ModBlocks {
 
     public static boolean never(BlockState state, BlockView world, BlockPos pos, EntityType<?> type) {
         return false;
+    }
+
+    private static ToIntFunction<BlockState> createLightLevelFromProperty(int litLevel, BooleanProperty property) {
+        return state -> state.get(property) != false ? litLevel : 0;
     }
 
     private static Item registerBlockItem(String name, Block block, ItemGroup group) {
