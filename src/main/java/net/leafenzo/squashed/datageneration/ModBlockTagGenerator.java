@@ -81,6 +81,7 @@ public class ModBlockTagGenerator extends FabricTagProvider<Block> {
                 .add(ModBlocks.COMPRESSED_GOLD_BLOCK)
                 .add(ModBlocks.COMPRESSED_RAW_GOLD_BLOCK);
 
+
         //getOrCreateTagBuilder(.GRASS)
 
 
