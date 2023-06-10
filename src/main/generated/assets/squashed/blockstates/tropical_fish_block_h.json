@@ -1,7 +1,16 @@
 {
   "variants": {
-    "": {
+    "axis=x": {
+      "model": "squashed:block/tropical_fish_block_h",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
       "model": "squashed:block/tropical_fish_block_h"
+    },
+    "axis=z": {
+      "model": "squashed:block/tropical_fish_block_h",
+      "x": 90
     }
   }
 }
