@@ -2,8 +2,8 @@
   "parent": "minecraft:block/cube",
   "textures": {
     "particle": "squashed:block/sea_pickle_block_side",
-    "down": "squashed:block/sea_pickle_block_side",
-    "up": "squashed:block/sea_pickle_block",
+    "down": "squashed:block/sea_pickle_block_bottom",
+    "up": "squashed:block/sea_pickle_block_top",
     "north": "squashed:block/sea_pickle_block_side",
     "east": "squashed:block/sea_pickle_block_side",
     "south": "squashed:block/sea_pickle_block_side",
