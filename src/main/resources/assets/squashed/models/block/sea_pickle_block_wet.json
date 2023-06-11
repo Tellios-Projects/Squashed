@@ -2,10 +2,11 @@
   "credit": "Made with Blockbench",
   "parent": "minecraft:block/cube",
   "textures": {
-    "2": "squashed:block/sea_pickle_block_wet",
-    "3": "squashed:block/sea_pickle_block_side",
+    "2": "squashed:block/sea_pickle_block_top_wet",
+    "3": "squashed:block/sea_pickle_block_side_wet",
     "4": "squashed:block/sea_pickle_block_fx",
-    "particle": "squashed:block/sea_pickle_side"
+    "5": "squashed:block/sea_pickle_block_bottom",
+    "particle": "squashed:block/sea_pickle_block_side"
   },
   "elements": [
     {
@@ -17,7 +18,7 @@
         "south": {"uv": [0, 0, 16, 16], "texture": "#3", "cullface": "south"},
         "west": {"uv": [0, 0, 16, 16], "texture": "#3", "cullface": "west"},
         "up": {"uv": [0, 0, 16, 16], "texture": "#2", "cullface": "up"},
-        "down": {"uv": [0, 0, 16, 16], "texture": "#3", "cullface": "down"}
+        "down": {"uv": [0, 0, 16, 16], "texture": "#5", "cullface": "down"}
       }
     },
     {
