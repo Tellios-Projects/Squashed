@@ -1,6 +1,12 @@
 {
-  "parent": "minecraft:block/cube_all",
+  "parent": "minecraft:block/cube_directional",
   "textures": {
-    "all": "squashed:block/compressed_spruce_log"
+    "down": "squashed:block/compressed_spruce_log_top",
+    "east": "squashed:block/compressed_spruce_log_bottom",
+    "north": "squashed:block/compressed_spruce_log_side",
+    "particle": "squashed:block/compressed_spruce_log_side",
+    "south": "squashed:block/compressed_spruce_log_side",
+    "up": "squashed:block/compressed_spruce_log_top",
+    "west": "squashed:block/compressed_spruce_log_bottom"
   }
 }
