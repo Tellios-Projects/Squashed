@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "squashed:compressed_sand",
+    "squashed:super_compressed_sand",
+    "squashed:compressed_red_sand",
+    "squashed:super_compressed_red_sand"
+  ]
+}
