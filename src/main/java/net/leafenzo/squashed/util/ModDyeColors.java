@@ -12,7 +12,7 @@ import java.util.Arrays;
 import java.util.function.IntFunction;
 import java.util.stream.Collectors;
 
-//TODO REPLACEME
+// UNUSED
 public enum ModDyeColors implements StringIdentifiable {
     AMETHYST(0, "amethyst", 0xa678f1, MapColor.WHITE, 0xa678f1, 0xa678f1);
     private static final IntFunction<DyeColor> BY_ID;

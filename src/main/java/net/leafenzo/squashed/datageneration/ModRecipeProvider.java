@@ -268,8 +268,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         //offerWoolDyeingRecipe(exporter, ModBlocks.ORANGE_COMPRESSED_WOOL, ModBlocks.ORANGE_DYE_BLOCK, RecipeCategory.BUILDING_BLOCKS);
           //offerSingleOutputShapelessRecipe(exporter, Items.ORANGE_WOOL, Items.CYAN_WOOL, RecipeCategory.MISC);
 
-          //offerCompressedWoolDyeingRecipe(exporter, ModBlocks.);
+        offerReversibleCompactingRecipes(exporter, RecipeCategory.MISC, Items.SUGAR, RecipeCategory.BUILDING_BLOCKS, ModBlocks.SUGAR_BLOCK);
+        offerReversibleCompactingRecipes(exporter, RecipeCategory.MISC, Items.GUNPOWDER, RecipeCategory.BUILDING_BLOCKS, ModBlocks.GUNPOWDER_BLOCK);
     }
-
-
 }

@@ -22,7 +22,7 @@ public class DenseCobwebHudOverlay implements HudRenderCallback {
             scaledWidth= client.getWindow().getScaledWidth();
             scaledHeight= client.getWindow().getScaledHeight();
 
-            //this.renderDenseCobwebOverlay(DENSE_COBWEB_OUTLINE, 0.5f);  //TODO FIXME
+            this.renderDenseCobwebOverlay(DENSE_COBWEB_OUTLINE, 0.5f);  //TODO FIXME
             //TODO Make sure this is displayed AFTER pumpkin fx!
         }
     }

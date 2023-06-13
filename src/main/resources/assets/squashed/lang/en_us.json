@@ -219,5 +219,11 @@
   "block.squashed.poisonous_potato_block": "Pile of Poisonous Potatoes",
   "block.squashed.baked_potato_block": "Pile of Baked Potatoes",
   "block.squashed.beetroot_block": "Pile of Beetroot",
-  "block.squashed.flint_block": "Pile of Flint"
+  "block.squashed.flint_block": "Pile of Flint",
+  "block.squashed.waxed_compressed_copper_block": "Waxed Compressed Copper Block",
+  "block.squashed.waxed_compressed_exposed_copper": "Waxed Compressed Exposed Copper",
+  "block.squashed.waxed_compressed_weathered_copper": "Waxed Compressed Weathered Copper",
+  "block.squashed.waxed_compressed_oxidized_copper": "Waxed Compressed Oxidized Copper",
+  "block.squashed.sugar_block": "Sugar Block",
+  "block.squashed.gunpowder_block": "Gunpowder Block"
 }
