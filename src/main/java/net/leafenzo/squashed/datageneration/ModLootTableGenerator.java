@@ -136,18 +136,18 @@ public class ModLootTableGenerator extends FabricBlockLootTableProvider {
         this.addDrop(ModBlocks.GREEN_COMPRESSED_WOOL);
         this.addDrop(ModBlocks.RED_COMPRESSED_WOOL);
         this.addDrop(ModBlocks.BLACK_COMPRESSED_WOOL);
-        this.addDrop(ModBlocks.BOOK_BLOCK, (Block block) -> this.drops((Block)block, Items.BOOK, ConstantLootNumberProvider.create(9.0f)));;
+        this.addDrop(ModBlocks.BOOK_BLOCK, (Block block) -> this.drops((Block)block, Items.BOOK, ConstantLootNumberProvider.create(9.0f)));
         this.addDrop(ModBlocks.COMPRESSED_OAK_LEAVES);
-        this.addDrop(ModBlocks.COMPRESSED_SPRUCE_LEAVES, (Block block) -> this.leavesDrops((Block)block, Blocks.OAK_SAPLING, SAPLING_DROP_CHANCE));;
-        this.addDrop(ModBlocks.COMPRESSED_BIRCH_LEAVES, (Block block) -> this.leavesDrops((Block)block, Blocks.SPRUCE_SAPLING, SAPLING_DROP_CHANCE));;
-        this.addDrop(ModBlocks.COMPRESSED_JUNGLE_LEAVES, (Block block) -> this.leavesDrops((Block)block, Blocks.BIRCH_SAPLING, SAPLING_DROP_CHANCE));;
-        this.addDrop(ModBlocks.COMPRESSED_ACACIA_LEAVES, (Block block) -> this.leavesDrops((Block)block, Blocks.JUNGLE_SAPLING, SAPLING_DROP_CHANCE));;
-        this.addDrop(ModBlocks.COMPRESSED_DARK_OAK_LEAVES, (Block block) -> this.leavesDrops((Block)block, Blocks.ACACIA_SAPLING, SAPLING_DROP_CHANCE));;
-        this.addDrop(ModBlocks.COMPRESSED_MANGROVE_LEAVES, (Block block) -> this.leavesDrops((Block)block, Blocks.DARK_OAK_SAPLING, SAPLING_DROP_CHANCE));;
-        this.addDrop(ModBlocks.COMPRESSED_AZALEA_LEAVES, (Block block) -> this.leavesDrops((Block)block, Blocks.AZALEA, SAPLING_DROP_CHANCE));;
-        this.addDrop(ModBlocks.COMPRESSED_FLOWERING_AZALEA_LEAVES, (Block block) -> this.leavesDrops((Block)block, Blocks.FLOWERING_AZALEA, SAPLING_DROP_CHANCE));;
+        this.addDrop(ModBlocks.COMPRESSED_SPRUCE_LEAVES, (Block block) -> this.leavesDrops((Block)block, Blocks.OAK_SAPLING, SAPLING_DROP_CHANCE));
+        this.addDrop(ModBlocks.COMPRESSED_BIRCH_LEAVES, (Block block) -> this.leavesDrops((Block)block, Blocks.SPRUCE_SAPLING, SAPLING_DROP_CHANCE));
+        this.addDrop(ModBlocks.COMPRESSED_JUNGLE_LEAVES, (Block block) -> this.leavesDrops((Block)block, Blocks.BIRCH_SAPLING, SAPLING_DROP_CHANCE));
+        this.addDrop(ModBlocks.COMPRESSED_ACACIA_LEAVES, (Block block) -> this.leavesDrops((Block)block, Blocks.JUNGLE_SAPLING, SAPLING_DROP_CHANCE));
+        this.addDrop(ModBlocks.COMPRESSED_DARK_OAK_LEAVES, (Block block) -> this.leavesDrops((Block)block, Blocks.ACACIA_SAPLING, SAPLING_DROP_CHANCE));
+        this.addDrop(ModBlocks.COMPRESSED_MANGROVE_LEAVES, (Block block) -> this.leavesDrops((Block)block, Blocks.DARK_OAK_SAPLING, SAPLING_DROP_CHANCE));
+        this.addDrop(ModBlocks.COMPRESSED_AZALEA_LEAVES, (Block block) -> this.leavesDrops((Block)block, Blocks.AZALEA, SAPLING_DROP_CHANCE));
+        this.addDrop(ModBlocks.COMPRESSED_FLOWERING_AZALEA_LEAVES, (Block block) -> this.leavesDrops((Block)block, Blocks.FLOWERING_AZALEA, SAPLING_DROP_CHANCE));
         this.addDrop(ModBlocks.LEATHER_BLOCK);
-        // this.addDrop(ModBlocks.CHOIR_BLOCK);
+//
         this.addDrop(ModBlocks.COMPRESSED_OAK_LOG);
         this.addDrop(ModBlocks.COMPRESSED_SPRUCE_LOG);
         this.addDrop(ModBlocks.COMPRESSED_BIRCH_LOG);
@@ -202,7 +202,7 @@ public class ModLootTableGenerator extends FabricBlockLootTableProvider {
         this.addDrop(ModBlocks.COMPRESSED_WARPED_WART_BLOCK);
         this.addDrop(ModBlocks.MANGROVE_ROOTS_BLOCK);
         this.addDrop(ModBlocks.VINE_BLOCK);
-        this.addDrop(ModBlocks.EGG_BLOCK, (Block block) -> this.drops((Block)block));;
+        this.addDrop(ModBlocks.EGG_BLOCK, (Block block) -> this.drops((Block)block)); //Drops Nothing
         this.addDrop(ModBlocks.PUFFERFISH_BLOCK);
         this.addDrop(ModBlocks.COMPRESSED_SPONGE);
         this.addDrop(ModBlocks.COMPRESSED_BONE);
@@ -228,9 +228,9 @@ public class ModLootTableGenerator extends FabricBlockLootTableProvider {
         this.addDrop(ModBlocks.COMPRESSED_EXPOSED_COPPER);
         this.addDrop(ModBlocks.COMPRESSED_WEATHERED_COPPER);
         this.addDrop(ModBlocks.COMPRESSED_OXIDIZED_COPPER);
-//        this.addDrop(ModBlocks.COMPRESSED_CHERRY_LEAVES);
-//        this.addDrop(ModBlocks.COMPRESSED_CHERRY_LOG);
-//        this.addDrop(ModBlocks.COMPRESSED_CHERRY_SAPLING);
+        this.addDrop(ModBlocks.COMPRESSED_CHERRY_LEAVES); //1.20
+        this.addDrop(ModBlocks.COMPRESSED_CHERRY_LOG); //1.20
+        this.addDrop(ModBlocks.COMPRESSED_CHERRY_SAPLING); //1.20
         this.addDrop(ModBlocks.ENDER_EYE_BLOCK);
         this.addDrop(ModBlocks.ENDER_PEARL_BLOCK);
         this.addDrop(ModBlocks.ECHO_SHARD_BLOCK);
@@ -251,6 +251,9 @@ public class ModLootTableGenerator extends FabricBlockLootTableProvider {
         this.addDrop(ModBlocks.WAXED_COMPRESSED_EXPOSED_COPPER);
         this.addDrop(ModBlocks.WAXED_COMPRESSED_WEATHERED_COPPER);
         this.addDrop(ModBlocks.WAXED_COMPRESSED_OXIDIZED_COPPER);
+        this.addDrop(ModBlocks.SUGAR_BLOCK);
+        this.addDrop(ModBlocks.GUNPOWDER_BLOCK);
+
 
 
 
