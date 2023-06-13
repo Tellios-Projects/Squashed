@@ -13,6 +13,9 @@
     "squashed:cyan_compressed_wool",
     "squashed:purple_compressed_wool",
     "squashed:blue_compressed_wool",
-    "squashed:brown_compressed_wool"
+    "squashed:brown_compressed_wool",
+    "squashed:leather_block",
+    "squashed:dense_cobweb_block",
+    "squashed:rabbit_hide_block"
   ]
 }

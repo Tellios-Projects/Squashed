@@ -1,0 +1,19 @@
+{
+  "replace": false,
+  "values": [
+    "squashed:compressed_oak_leaves",
+    "squashed:compressed_spruce_leaves",
+    "squashed:compressed_birch_leaves",
+    "squashed:compressed_jungle_leaves",
+    "squashed:compressed_acacia_leaves",
+    "squashed:compressed_dark_oak_leaves",
+    "squashed:compressed_mangrove_leaves",
+    "squashed:compressed_azalea_leaves",
+    "squashed:compressed_flowering_azalea_leaves",
+    "squashed:compressed_seagrass",
+    "squashed:vine_block",
+    "squashed:kelp_block",
+    "squashed:lily_pad_block",
+    "squashed:compressed_cherry_leaves"
+  ]
+}

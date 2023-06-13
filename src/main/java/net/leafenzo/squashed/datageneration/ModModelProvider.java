@@ -294,9 +294,7 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerParented(ModBlocks.COMPRESSED_OXIDIZED_COPPER, ModBlocks.WAXED_COMPRESSED_OXIDIZED_COPPER);
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.SUGAR_BLOCK);
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.GUNPOWDER_BLOCK);
-
-
-
+        blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.COMPRESSED_PRISMARINE);
 
         // BlockItem Models
         blockStateModelGenerator.registerParentedItemModel(ModBlocks.BLAZE_ROD_BLOCK, Super.asResource("block/blaze_rod_block"));
@@ -522,6 +520,7 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerParentedItemModel(ModBlocks.FLINT_BLOCK, Super.asResource("block/flint_block"));
         blockStateModelGenerator.registerParentedItemModel(ModBlocks.SUGAR_BLOCK, Super.asResource("block/sugar_block"));
         blockStateModelGenerator.registerParentedItemModel(ModBlocks.GUNPOWDER_BLOCK, Super.asResource("block/gunpowder_block"));
+        blockStateModelGenerator.registerParentedItemModel(ModBlocks.COMPRESSED_PRISMARINE, Super.asResource("block/compressed_prismarine"));
 
     }
     @Override

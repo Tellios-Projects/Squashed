@@ -3,6 +3,7 @@ package net.leafenzo.squashed.datageneration;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
 import net.leafenzo.squashed.block.ModBlocks;
+import net.leafenzo.squashed.util.ModBlockTags;
 import net.minecraft.block.Block;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.RegistryWrapper;
@@ -78,14 +79,60 @@ public class ModBlockTagGenerator extends FabricTagProvider<Block> {
                 .add(ModBlocks.COMPRESSED_OBSIDIAN)
                 .add(ModBlocks.SUPER_COMPRESSED_OBSIDIAN);
 
+        getOrCreateTagBuilder(ModBlockTags.ANY_MINABLE)
+                .add(ModBlocks.RAW_SALMON_BLOCK)
+                .add(ModBlocks.COOKED_SALMON_BLOCK)
+                .add(ModBlocks.RAW_COD_BLOCK)
+                .add(ModBlocks.COOKED_COD_BLOCK)
+                .add(ModBlocks.RAW_RABBIT_BLOCK)
+                .add(ModBlocks.COOKED_RABBIT_BLOCK)
+                .add(ModBlocks.RAW_MUTTON_BLOCK)
+                .add(ModBlocks.COOKED_MUTTON_BLOCK)
+                .add(ModBlocks.RAW_CHICKEN_BLOCK)
+                .add(ModBlocks.COOKED_CHICKEN_BLOCK)
+                .add(ModBlocks.RAW_BEEF_BLOCK)
+                .add(ModBlocks.COOKED_BEEF_BLOCK)
+                .add(ModBlocks.RAW_PORK_BLOCK)
+                .add(ModBlocks.COOKED_PORK_BLOCK)
+                .add(ModBlocks.ROTTEN_FLESH_BLOCK)
+                .add(ModBlocks.SPIDER_EYE_BLOCK)
+                .add(ModBlocks.TROPICAL_FISH_BLOCK_A)
+                .add(ModBlocks.TROPICAL_FISH_BLOCK_B)
+                .add(ModBlocks.TROPICAL_FISH_BLOCK_C)
+                .add(ModBlocks.TROPICAL_FISH_BLOCK_D)
+                .add(ModBlocks.TROPICAL_FISH_BLOCK_E)
+                .add(ModBlocks.TROPICAL_FISH_BLOCK_F)
+                .add(ModBlocks.TROPICAL_FISH_BLOCK_G)
+                .add(ModBlocks.TROPICAL_FISH_BLOCK_H)
+                .add(ModBlocks.TROPICAL_FISH_BLOCK_I)
+                .add(ModBlocks.TROPICAL_FISH_BLOCK_J)
+                .add(ModBlocks.TROPICAL_FISH_BLOCK_K)
+                .add(ModBlocks.TROPICAL_FISH_BLOCK_L)
+                .add(ModBlocks.TROPICAL_FISH_BLOCK_M)
+                .add(ModBlocks.TROPICAL_FISH_BLOCK_N)
+                .add(ModBlocks.TROPICAL_FISH_BLOCK_O)
+                .add(ModBlocks.TROPICAL_FISH_BLOCK_P)
+                .add(ModBlocks.TROPICAL_FISH_BLOCK_Q)
+                .add(ModBlocks.TROPICAL_FISH_BLOCK_R)
+                .add(ModBlocks.TROPICAL_FISH_BLOCK_S)
+                .add(ModBlocks.TROPICAL_FISH_BLOCK_T)
+                .add(ModBlocks.GLOW_INK_SAC_BLOCK)
+                .add(ModBlocks.EGG_BLOCK)
+                .add(ModBlocks.PUFFERFISH_BLOCK)
+                .add(ModBlocks.COMPRESSED_SPONGE)
+                .add(ModBlocks.PAPER_BLOCK)
+                .add(ModBlocks.ENDER_EYE_BLOCK)
+                .add(ModBlocks.ENDER_PEARL_BLOCK);
+
+
         getOrCreateTagBuilder(BlockTags.AXE_MINEABLE)
+                .addTag(ModBlockTags.ANY_MINABLE)
                 .add(ModBlocks.STICK_BLOCK)
                 .add(ModBlocks.DEAD_BUSH_BLOCK)
                 .add(ModBlocks.PUMPKIN_PILE)
                 .add(ModBlocks.MELON_PILE)
                 .add(ModBlocks.SUGARCANE_BLOCK)
                 .add(ModBlocks.BOOK_BLOCK)
-                .add(ModBlocks.LEATHER_BLOCK)
                 .add(ModBlocks.COMPRESSED_OAK_LOG)
                 .add(ModBlocks.COMPRESSED_SPRUCE_LOG)
                 .add(ModBlocks.COMPRESSED_BIRCH_LOG)
@@ -105,6 +152,7 @@ public class ModBlockTagGenerator extends FabricTagProvider<Block> {
                 .add(ModBlocks.COMPRESSED_CHERRY_LOG);
 
         getOrCreateTagBuilder(BlockTags.HOE_MINEABLE)
+                .addTag(ModBlockTags.ANY_MINABLE)
                 .add(ModBlocks.COMPRESSED_MOSS)
                 .add(ModBlocks.CARROT_BLOCK)
                 .add(ModBlocks.GOLDEN_CARROT_BLOCK)
@@ -116,6 +164,8 @@ public class ModBlockTagGenerator extends FabricTagProvider<Block> {
                 .add(ModBlocks.BEETROOT_BLOCK);
 
         getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE)
+                .addTag(ModBlockTags.ANY_MINABLE)
+                .add(ModBlocks.BLAZE_ROD_BLOCK)
                 .add(ModBlocks.FIRE_CHARGE_BLOCK)
                 .add(ModBlocks.SUPER_COMPRESSED_SOUL_SAND)
                 .add(ModBlocks.COMPRESSED_COBBLESTONE)
@@ -170,9 +220,16 @@ public class ModBlockTagGenerator extends FabricTagProvider<Block> {
                 .add(ModBlocks.COMPRESSED_OXIDIZED_COPPER)
                 .add(ModBlocks.ECHO_SHARD_BLOCK)
                 .add(ModBlocks.COMPRESSED_COBBLED_DEEPSLATE)
-                .add(ModBlocks.SUPER_COMPRESSED_COBBLED_DEEPSLATE);
+                .add(ModBlocks.SUPER_COMPRESSED_COBBLED_DEEPSLATE)
+                .add(ModBlocks.WAXED_COMPRESSED_COPPER_BLOCK)
+                .add(ModBlocks.WAXED_COMPRESSED_EXPOSED_COPPER)
+                .add(ModBlocks.WAXED_COMPRESSED_WEATHERED_COPPER)
+                .add(ModBlocks.WAXED_COMPRESSED_OXIDIZED_COPPER)
+                .add(ModBlocks.COMPRESSED_PRISMARINE);
 
         getOrCreateTagBuilder(BlockTags.SHOVEL_MINEABLE)
+                .addTag(ModBlockTags.ANY_MINABLE)
+                .add(ModBlocks.BLAZE_POWDER_BLOCK)
                 .add(ModBlocks.WHEAT_SEED_BLOCK)
                 .add(ModBlocks.PUMPKIN_SEED_BLOCK)
                 .add(ModBlocks.BEETROOT_SEED_BLOCK)
@@ -188,6 +245,22 @@ public class ModBlockTagGenerator extends FabricTagProvider<Block> {
                 .add(ModBlocks.COMPRESSED_MUD)
                 .add(ModBlocks.COMPRESSED_RED_SAND)
                 .add(ModBlocks.SUPER_COMPRESSED_RED_SAND)
+                .add(ModBlocks.WHITE_DYE_BLOCK)
+                .add(ModBlocks.ORANGE_DYE_BLOCK)
+                .add(ModBlocks.MAGENTA_DYE_BLOCK)
+                .add(ModBlocks.LIGHT_BLUE_DYE_BLOCK)
+                .add(ModBlocks.YELLOW_DYE_BLOCK)
+                .add(ModBlocks.LIME_DYE_BLOCK)
+                .add(ModBlocks.PINK_DYE_BLOCK)
+                .add(ModBlocks.GRAY_DYE_BLOCK)
+                .add(ModBlocks.LIGHT_GRAY_DYE_BLOCK)
+                .add(ModBlocks.CYAN_DYE_BLOCK)
+                .add(ModBlocks.PURPLE_DYE_BLOCK)
+                .add(ModBlocks.BLUE_DYE_BLOCK)
+                .add(ModBlocks.BROWN_DYE_BLOCK)
+                .add(ModBlocks.GREEN_DYE_BLOCK)
+                .add(ModBlocks.RED_DYE_BLOCK)
+                .add(ModBlocks.BLACK_DYE_BLOCK)
                 .add(ModBlocks.COMPRESSED_OAK_SAPLING)
                 .add(ModBlocks.COMPRESSED_SPRUCE_SAPLING)
                 .add(ModBlocks.COMPRESSED_BIRCH_SAPLING)
@@ -238,6 +311,7 @@ public class ModBlockTagGenerator extends FabricTagProvider<Block> {
                     .add(ModBlocks.BROWN_COMPRESSED_WOOL)
 
                     //just so that shears can mine it easier
+                    .add(ModBlocks.LEATHER_BLOCK)
                     .add(ModBlocks.DENSE_COBWEB_BLOCK)
                     .add(ModBlocks.RABBIT_HIDE_BLOCK);
 

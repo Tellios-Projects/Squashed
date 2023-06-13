@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "#minecraft:any_minable",
+    "squashed:compressed_moss",
+    "squashed:carrot_block",
+    "squashed:golden_carrot_block",
+    "squashed:apple_block",
+    "squashed:golden_apple_block",
+    "squashed:potato_block",
+    "squashed:poisonous_potato_block",
+    "squashed:baked_potato_block",
+    "squashed:beetroot_block"
+  ]
+}

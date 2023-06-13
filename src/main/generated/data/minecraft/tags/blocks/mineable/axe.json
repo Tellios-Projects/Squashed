@@ -1,0 +1,29 @@
+{
+  "replace": false,
+  "values": [
+    "#minecraft:any_minable",
+    "squashed:stick_block",
+    "squashed:dead_bush_block",
+    "squashed:pumpkin_pile",
+    "squashed:melon_pile",
+    "squashed:sugarcane_block",
+    "squashed:book_block",
+    "squashed:compressed_oak_log",
+    "squashed:compressed_spruce_log",
+    "squashed:compressed_birch_log",
+    "squashed:compressed_jungle_log",
+    "squashed:compressed_acacia_log",
+    "squashed:compressed_dark_oak_log",
+    "squashed:compressed_mangrove_log",
+    "squashed:compressed_crimson_stem",
+    "squashed:compressed_warped_stem",
+    "squashed:compressed_bamboo",
+    "squashed:chorus_fruit_block",
+    "squashed:compressed_cactus",
+    "squashed:compressed_nether_wart_block",
+    "squashed:compressed_warped_wart_block",
+    "squashed:mangrove_roots_block",
+    "squashed:compressed_scaffolding",
+    "squashed:compressed_cherry_log"
+  ]
+}
