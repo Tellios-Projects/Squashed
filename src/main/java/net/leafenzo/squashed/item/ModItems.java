@@ -1,6 +1,5 @@
 package net.leafenzo.squashed.item;
 
-import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.leafenzo.squashed.ModInit;
 import net.leafenzo.squashed.Super;
 import net.minecraft.item.Item;
@@ -19,7 +18,7 @@ public class ModItems {
 
     /** .name must not contain uppercase letters or special characters */
     private static Item registerItem(String name, Item item, ItemGroup group) {
-        ItemGroupEvents.modifyEntriesEvent(group).register(entries -> entries.add(item));
+        //ItemGroupEvents.modifyEntriesEvent(group).register(entries -> entries.add(item));
         return Registry.register(Registries.ITEM, new Identifier(Super.MOD_ID, name), item);
     }
     public static void registerModItems() {
