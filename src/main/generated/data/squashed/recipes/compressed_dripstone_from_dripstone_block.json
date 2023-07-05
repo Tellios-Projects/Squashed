@@ -13,5 +13,6 @@
   ],
   "result": {
     "item": "squashed:compressed_dripstone"
-  }
+  },
+  "show_notification": true
 }

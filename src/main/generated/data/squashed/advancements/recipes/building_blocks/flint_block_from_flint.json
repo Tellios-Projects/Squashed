@@ -30,5 +30,6 @@
     "recipes": [
       "minecraft:flint_block_from_flint"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

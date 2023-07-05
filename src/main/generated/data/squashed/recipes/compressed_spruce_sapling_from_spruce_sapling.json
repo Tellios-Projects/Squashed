@@ -13,5 +13,6 @@
   ],
   "result": {
     "item": "squashed:compressed_spruce_sapling"
-  }
+  },
+  "show_notification": true
 }

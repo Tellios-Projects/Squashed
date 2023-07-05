@@ -30,5 +30,6 @@
     "recipes": [
       "minecraft:oak_log_from_compressed_oak_log"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

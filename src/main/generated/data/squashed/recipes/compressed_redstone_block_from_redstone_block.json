@@ -13,5 +13,6 @@
   ],
   "result": {
     "item": "squashed:compressed_redstone_block"
-  }
+  },
+  "show_notification": true
 }

@@ -30,5 +30,6 @@
     "recipes": [
       "minecraft:scute_from_scute_block"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

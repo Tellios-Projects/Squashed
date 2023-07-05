@@ -30,5 +30,6 @@
     "recipes": [
       "minecraft:compressed_prismarine_from_prismarine"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

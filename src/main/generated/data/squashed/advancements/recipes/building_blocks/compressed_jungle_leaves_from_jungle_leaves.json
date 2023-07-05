@@ -30,5 +30,6 @@
     "recipes": [
       "minecraft:compressed_jungle_leaves_from_jungle_leaves"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

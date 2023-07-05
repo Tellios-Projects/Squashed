@@ -30,5 +30,6 @@
     "recipes": [
       "minecraft:compressed_basalt_from_basalt"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

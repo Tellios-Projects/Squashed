@@ -30,5 +30,6 @@
     "recipes": [
       "minecraft:compressed_seagrass_from_seagrass"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

@@ -13,5 +13,6 @@
   ],
   "result": {
     "item": "squashed:ghast_tear_block"
-  }
+  },
+  "show_notification": true
 }

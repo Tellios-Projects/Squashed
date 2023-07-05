@@ -30,5 +30,6 @@
     "recipes": [
       "minecraft:compressed_cactus_from_cactus"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

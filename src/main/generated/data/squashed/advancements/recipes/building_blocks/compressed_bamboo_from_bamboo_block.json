@@ -30,5 +30,6 @@
     "recipes": [
       "minecraft:compressed_bamboo_from_bamboo_block"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

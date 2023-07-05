@@ -13,5 +13,6 @@
   ],
   "result": {
     "item": "squashed:compressed_mangrove_log"
-  }
+  },
+  "show_notification": true
 }

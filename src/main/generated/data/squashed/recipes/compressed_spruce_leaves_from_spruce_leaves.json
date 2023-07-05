@@ -13,5 +13,6 @@
   ],
   "result": {
     "item": "squashed:compressed_spruce_leaves"
-  }
+  },
+  "show_notification": true
 }

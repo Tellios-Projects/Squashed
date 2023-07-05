@@ -30,5 +30,6 @@
     "recipes": [
       "minecraft:paper_from_paper_block"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

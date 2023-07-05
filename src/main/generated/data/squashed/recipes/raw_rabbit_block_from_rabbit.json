@@ -13,5 +13,6 @@
   ],
   "result": {
     "item": "squashed:raw_rabbit_block"
-  }
+  },
+  "show_notification": true
 }

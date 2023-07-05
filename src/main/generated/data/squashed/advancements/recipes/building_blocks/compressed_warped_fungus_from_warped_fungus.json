@@ -30,5 +30,6 @@
     "recipes": [
       "minecraft:compressed_warped_fungus_from_warped_fungus"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

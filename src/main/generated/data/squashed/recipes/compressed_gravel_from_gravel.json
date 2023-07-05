@@ -13,5 +13,6 @@
   ],
   "result": {
     "item": "squashed:compressed_gravel"
-  }
+  },
+  "show_notification": true
 }

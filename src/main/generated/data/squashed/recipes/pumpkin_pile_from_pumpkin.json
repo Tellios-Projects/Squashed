@@ -13,5 +13,6 @@
   ],
   "result": {
     "item": "squashed:pumpkin_pile"
-  }
+  },
+  "show_notification": true
 }

@@ -30,5 +30,6 @@
     "recipes": [
       "minecraft:glow_berries_block_from_glow_berries"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

@@ -13,5 +13,6 @@
   ],
   "result": {
     "item": "squashed:compressed_quartz_block"
-  }
+  },
+  "show_notification": true
 }

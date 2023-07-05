@@ -13,5 +13,6 @@
   ],
   "result": {
     "item": "squashed:dense_cobweb_block"
-  }
+  },
+  "show_notification": true
 }

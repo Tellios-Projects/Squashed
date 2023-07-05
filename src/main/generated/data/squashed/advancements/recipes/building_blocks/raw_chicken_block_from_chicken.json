@@ -30,5 +30,6 @@
     "recipes": [
       "minecraft:raw_chicken_block_from_chicken"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

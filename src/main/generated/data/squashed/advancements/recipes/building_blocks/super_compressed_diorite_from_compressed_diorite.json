@@ -30,5 +30,6 @@
     "recipes": [
       "minecraft:super_compressed_diorite_from_compressed_diorite"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

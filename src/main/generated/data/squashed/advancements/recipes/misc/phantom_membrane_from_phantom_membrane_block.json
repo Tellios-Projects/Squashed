@@ -30,5 +30,6 @@
     "recipes": [
       "minecraft:phantom_membrane_from_phantom_membrane_block"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

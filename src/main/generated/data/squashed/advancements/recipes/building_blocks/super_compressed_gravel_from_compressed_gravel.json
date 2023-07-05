@@ -30,5 +30,6 @@
     "recipes": [
       "minecraft:super_compressed_gravel_from_compressed_gravel"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

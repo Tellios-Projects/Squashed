@@ -30,5 +30,6 @@
     "recipes": [
       "minecraft:compressed_mud_from_mud"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

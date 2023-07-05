@@ -13,5 +13,6 @@
   ],
   "result": {
     "item": "squashed:compressed_calcite"
-  }
+  },
+  "show_notification": true
 }

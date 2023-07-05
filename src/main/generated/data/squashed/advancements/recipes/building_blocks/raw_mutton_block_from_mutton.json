@@ -30,5 +30,6 @@
     "recipes": [
       "minecraft:raw_mutton_block_from_mutton"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

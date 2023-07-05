@@ -30,5 +30,6 @@
     "recipes": [
       "minecraft:compressed_lapis_block_from_lapis_block"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

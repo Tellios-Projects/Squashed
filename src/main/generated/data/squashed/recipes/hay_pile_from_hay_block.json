@@ -13,5 +13,6 @@
   ],
   "result": {
     "item": "squashed:hay_pile"
-  }
+  },
+  "show_notification": true
 }

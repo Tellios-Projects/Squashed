@@ -13,5 +13,6 @@
   ],
   "result": {
     "item": "squashed:dead_bush_block"
-  }
+  },
+  "show_notification": true
 }

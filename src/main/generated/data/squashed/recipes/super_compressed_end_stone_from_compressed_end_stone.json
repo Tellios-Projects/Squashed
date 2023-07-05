@@ -13,5 +13,6 @@
   ],
   "result": {
     "item": "squashed:super_compressed_end_stone"
-  }
+  },
+  "show_notification": true
 }

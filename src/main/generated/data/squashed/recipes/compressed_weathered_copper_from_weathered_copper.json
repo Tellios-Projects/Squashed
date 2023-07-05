@@ -13,5 +13,6 @@
   ],
   "result": {
     "item": "squashed:compressed_weathered_copper"
-  }
+  },
+  "show_notification": true
 }

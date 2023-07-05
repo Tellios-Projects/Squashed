@@ -30,5 +30,6 @@
     "recipes": [
       "minecraft:glow_ink_sac_block_from_glow_ink_sac"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

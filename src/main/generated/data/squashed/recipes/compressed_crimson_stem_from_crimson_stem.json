@@ -13,5 +13,6 @@
   ],
   "result": {
     "item": "squashed:compressed_crimson_stem"
-  }
+  },
+  "show_notification": true
 }

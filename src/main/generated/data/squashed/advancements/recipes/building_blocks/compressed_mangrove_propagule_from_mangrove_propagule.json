@@ -30,5 +30,6 @@
     "recipes": [
       "minecraft:compressed_mangrove_propagule_from_mangrove_propagule"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

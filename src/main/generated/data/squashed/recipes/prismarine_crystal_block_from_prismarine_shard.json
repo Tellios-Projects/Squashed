@@ -13,5 +13,6 @@
   ],
   "result": {
     "item": "squashed:prismarine_crystal_block"
-  }
+  },
+  "show_notification": true
 }

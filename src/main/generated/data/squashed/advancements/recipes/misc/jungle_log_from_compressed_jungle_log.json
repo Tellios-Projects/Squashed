@@ -30,5 +30,6 @@
     "recipes": [
       "minecraft:jungle_log_from_compressed_jungle_log"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

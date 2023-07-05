@@ -13,5 +13,6 @@
   ],
   "result": {
     "item": "squashed:glow_ink_sac_block"
-  }
+  },
+  "show_notification": true
 }

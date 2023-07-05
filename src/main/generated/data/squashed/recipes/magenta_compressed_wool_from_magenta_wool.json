@@ -13,5 +13,6 @@
   ],
   "result": {
     "item": "squashed:magenta_compressed_wool"
-  }
+  },
+  "show_notification": true
 }

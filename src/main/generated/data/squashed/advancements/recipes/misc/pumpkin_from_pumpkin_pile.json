@@ -30,5 +30,6 @@
     "recipes": [
       "minecraft:pumpkin_from_pumpkin_pile"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

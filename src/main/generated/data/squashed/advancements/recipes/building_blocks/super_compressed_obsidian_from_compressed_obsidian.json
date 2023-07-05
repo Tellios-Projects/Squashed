@@ -30,5 +30,6 @@
     "recipes": [
       "minecraft:super_compressed_obsidian_from_compressed_obsidian"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

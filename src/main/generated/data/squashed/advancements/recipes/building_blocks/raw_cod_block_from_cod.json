@@ -30,5 +30,6 @@
     "recipes": [
       "minecraft:raw_cod_block_from_cod"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

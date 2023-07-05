@@ -13,5 +13,6 @@
   ],
   "result": {
     "item": "squashed:light_blue_compressed_wool"
-  }
+  },
+  "show_notification": true
 }

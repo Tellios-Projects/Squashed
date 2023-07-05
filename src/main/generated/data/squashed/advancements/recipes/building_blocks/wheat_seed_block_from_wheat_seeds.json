@@ -30,5 +30,6 @@
     "recipes": [
       "minecraft:wheat_seed_block_from_wheat_seeds"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

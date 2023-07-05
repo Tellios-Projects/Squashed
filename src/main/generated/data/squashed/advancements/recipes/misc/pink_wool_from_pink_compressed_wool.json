@@ -30,5 +30,6 @@
     "recipes": [
       "minecraft:pink_wool_from_pink_compressed_wool"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

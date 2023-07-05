@@ -30,5 +30,6 @@
     "recipes": [
       "minecraft:beef_from_raw_beef_block"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

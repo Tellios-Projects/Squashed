@@ -30,5 +30,6 @@
     "recipes": [
       "minecraft:compressed_warped_stem_from_warped_stem"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

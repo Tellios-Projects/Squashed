@@ -13,5 +13,6 @@
   ],
   "result": {
     "item": "squashed:super_compressed_cobbled_deepslate"
-  }
+  },
+  "show_notification": true
 }

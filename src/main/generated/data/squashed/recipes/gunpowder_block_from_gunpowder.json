@@ -13,5 +13,6 @@
   ],
   "result": {
     "item": "squashed:gunpowder_block"
-  }
+  },
+  "show_notification": true
 }

@@ -13,5 +13,6 @@
   ],
   "result": {
     "item": "squashed:compressed_exposed_copper"
-  }
+  },
+  "show_notification": true
 }

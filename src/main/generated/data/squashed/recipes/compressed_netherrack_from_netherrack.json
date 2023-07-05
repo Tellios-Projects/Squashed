@@ -13,5 +13,6 @@
   ],
   "result": {
     "item": "squashed:compressed_netherrack"
-  }
+  },
+  "show_notification": true
 }

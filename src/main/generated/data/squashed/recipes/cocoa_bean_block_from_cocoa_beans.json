@@ -13,5 +13,6 @@
   ],
   "result": {
     "item": "squashed:cocoa_bean_block"
-  }
+  },
+  "show_notification": true
 }

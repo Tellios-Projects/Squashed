@@ -13,5 +13,6 @@
   ],
   "result": {
     "item": "squashed:fire_charge_block"
-  }
+  },
+  "show_notification": true
 }

@@ -30,5 +30,6 @@
     "recipes": [
       "minecraft:compressed_emerald_block_from_emerald_block"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

@@ -13,5 +13,6 @@
   ],
   "result": {
     "item": "squashed:super_compressed_obsidian"
-  }
+  },
+  "show_notification": true
 }

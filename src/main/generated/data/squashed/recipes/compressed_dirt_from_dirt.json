@@ -13,5 +13,6 @@
   ],
   "result": {
     "item": "squashed:compressed_dirt"
-  }
+  },
+  "show_notification": true
 }
