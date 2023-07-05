@@ -226,5 +226,7 @@
   "block.squashed.waxed_compressed_oxidized_copper": "Waxed Compressed Oxidized Copper",
   "block.squashed.sugar_block": "Sugar Block",
   "block.squashed.gunpowder_block": "Gunpowder Block",
-  "block.squashed.compressed_prismarine": "Compressed Prismarine"
+  "block.squashed.compressed_prismarine": "Compressed Prismarine",
+
+  "itemgroup.squashed": "Squashed"
 }
