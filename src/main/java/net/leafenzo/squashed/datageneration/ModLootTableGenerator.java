@@ -232,9 +232,9 @@ public class ModLootTableGenerator extends FabricBlockLootTableProvider {
         this.addDrop(ModBlocks.COMPRESSED_EXPOSED_COPPER);
         this.addDrop(ModBlocks.COMPRESSED_WEATHERED_COPPER);
         this.addDrop(ModBlocks.COMPRESSED_OXIDIZED_COPPER);
-        this.addDrop(ModBlocks.COMPRESSED_CHERRY_LEAVES); //1.20
-        this.addDrop(ModBlocks.COMPRESSED_CHERRY_LOG); //1.20
-        this.addDrop(ModBlocks.COMPRESSED_CHERRY_SAPLING); //1.20
+//        this.addDrop(ModBlocks.COMPRESSED_CHERRY_LEAVES); //1.20
+//        this.addDrop(ModBlocks.COMPRESSED_CHERRY_LOG); //1.20
+//        this.addDrop(ModBlocks.COMPRESSED_CHERRY_SAPLING); //1.20
         this.addDrop(ModBlocks.ENDER_EYE_BLOCK);
         this.addDrop(ModBlocks.ENDER_PEARL_BLOCK);
         this.addDrop(ModBlocks.ECHO_SHARD_BLOCK);

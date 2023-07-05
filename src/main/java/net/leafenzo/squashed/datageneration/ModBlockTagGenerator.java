@@ -148,8 +148,8 @@ public class ModBlockTagGenerator extends FabricTagProvider<Block> {
                 .add(ModBlocks.COMPRESSED_NETHER_WART_BLOCK)
                 .add(ModBlocks.COMPRESSED_WARPED_WART_BLOCK)
                 .add(ModBlocks.MANGROVE_ROOTS_BLOCK)
-                .add(ModBlocks.COMPRESSED_SCAFFOLDING)
-                .add(ModBlocks.COMPRESSED_CHERRY_LOG);
+                .add(ModBlocks.COMPRESSED_SCAFFOLDING);
+//                .add(ModBlocks.COMPRESSED_CHERRY_LOG);
 
         getOrCreateTagBuilder(BlockTags.HOE_MINEABLE)
                 .addTag(ModBlockTags.ANY_MINABLE)
@@ -272,7 +272,7 @@ public class ModBlockTagGenerator extends FabricTagProvider<Block> {
                 .add(ModBlocks.COMPRESSED_MANGROVE_PROPAGULE)
                 .add(ModBlocks.COMPRESSED_CRIMSON_FUNGUS)
                 .add(ModBlocks.COMPRESSED_WARPED_FUNGUS)
-                .add(ModBlocks.COMPRESSED_CHERRY_SAPLING)
+//                .add(ModBlocks.COMPRESSED_CHERRY_SAPLING)
                 .add(ModBlocks.FLINT_BLOCK)
                 .add(ModBlocks.SUGAR_BLOCK)
                 .add(ModBlocks.GUNPOWDER_BLOCK);
@@ -292,8 +292,8 @@ public class ModBlockTagGenerator extends FabricTagProvider<Block> {
                 .add(ModBlocks.COMPRESSED_SEAGRASS)
                 .add(ModBlocks.VINE_BLOCK)
                 .add(ModBlocks.KELP_BLOCK)
-                .add(ModBlocks.LILY_PAD_BLOCK)
-                .add(ModBlocks.COMPRESSED_CHERRY_LEAVES);
+                .add(ModBlocks.LILY_PAD_BLOCK);
+//                .add(ModBlocks.COMPRESSED_CHERRY_LEAVES);
 
         getOrCreateTagBuilder(BlockTags.WOOL)
                     .add(ModBlocks.WHITE_COMPRESSED_WOOL)
