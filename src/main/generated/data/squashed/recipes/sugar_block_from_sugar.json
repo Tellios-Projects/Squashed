@@ -13,5 +13,6 @@
   ],
   "result": {
     "item": "squashed:sugar_block"
-  }
+  },
+  "show_notification": true
 }

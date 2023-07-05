@@ -30,5 +30,6 @@
     "recipes": [
       "minecraft:fire_charge_block_from_fire_charge"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

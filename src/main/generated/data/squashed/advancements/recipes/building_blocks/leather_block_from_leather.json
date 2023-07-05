@@ -30,5 +30,6 @@
     "recipes": [
       "minecraft:leather_block_from_leather"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

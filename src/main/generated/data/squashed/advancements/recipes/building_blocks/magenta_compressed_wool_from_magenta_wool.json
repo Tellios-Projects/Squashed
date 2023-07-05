@@ -30,5 +30,6 @@
     "recipes": [
       "minecraft:magenta_compressed_wool_from_magenta_wool"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

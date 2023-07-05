@@ -30,5 +30,6 @@
     "recipes": [
       "minecraft:compressed_red_sand_from_red_sand"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

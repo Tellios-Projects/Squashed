@@ -30,5 +30,6 @@
     "recipes": [
       "minecraft:cocoa_bean_block_from_cocoa_beans"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

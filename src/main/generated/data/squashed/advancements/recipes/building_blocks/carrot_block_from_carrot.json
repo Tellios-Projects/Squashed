@@ -30,5 +30,6 @@
     "recipes": [
       "minecraft:carrot_block_from_carrot"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

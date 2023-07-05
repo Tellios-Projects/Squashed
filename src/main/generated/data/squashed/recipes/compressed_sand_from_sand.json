@@ -13,5 +13,6 @@
   ],
   "result": {
     "item": "squashed:compressed_sand"
-  }
+  },
+  "show_notification": true
 }

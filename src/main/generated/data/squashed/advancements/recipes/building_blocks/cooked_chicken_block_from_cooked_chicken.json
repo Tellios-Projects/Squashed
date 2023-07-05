@@ -30,5 +30,6 @@
     "recipes": [
       "minecraft:cooked_chicken_block_from_cooked_chicken"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

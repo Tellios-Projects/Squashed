@@ -13,5 +13,6 @@
   ],
   "result": {
     "item": "squashed:compressed_crimson_fungus"
-  }
+  },
+  "show_notification": true
 }

@@ -30,5 +30,6 @@
     "recipes": [
       "minecraft:cooked_rabbit_block_from_cooked_rabbit"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

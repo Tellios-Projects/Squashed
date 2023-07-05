@@ -30,5 +30,6 @@
     "recipes": [
       "minecraft:sugar_cane_from_sugarcane_block"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

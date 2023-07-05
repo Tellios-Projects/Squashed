@@ -13,5 +13,6 @@
   ],
   "result": {
     "item": "squashed:super_compressed_diorite"
-  }
+  },
+  "show_notification": true
 }

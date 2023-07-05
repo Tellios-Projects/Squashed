@@ -30,5 +30,6 @@
     "recipes": [
       "minecraft:chorus_fruit_from_chorus_fruit_block"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

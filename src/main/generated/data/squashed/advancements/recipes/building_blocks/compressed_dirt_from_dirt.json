@@ -30,5 +30,6 @@
     "recipes": [
       "minecraft:compressed_dirt_from_dirt"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

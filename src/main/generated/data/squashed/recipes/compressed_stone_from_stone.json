@@ -13,5 +13,6 @@
   ],
   "result": {
     "item": "squashed:compressed_stone"
-  }
+  },
+  "show_notification": true
 }

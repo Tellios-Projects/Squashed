@@ -13,5 +13,6 @@
   ],
   "result": {
     "item": "squashed:raw_beef_block"
-  }
+  },
+  "show_notification": true
 }

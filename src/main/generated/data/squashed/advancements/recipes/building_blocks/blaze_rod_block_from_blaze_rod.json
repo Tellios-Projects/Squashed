@@ -30,5 +30,6 @@
     "recipes": [
       "minecraft:blaze_rod_block_from_blaze_rod"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

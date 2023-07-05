@@ -30,5 +30,6 @@
     "recipes": [
       "minecraft:rabbit_from_raw_rabbit_block"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

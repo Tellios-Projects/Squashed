@@ -30,5 +30,6 @@
     "recipes": [
       "minecraft:compressed_flowering_azalea_sapling_from_flowering_azalea"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

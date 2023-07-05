@@ -13,5 +13,6 @@
   ],
   "result": {
     "item": "squashed:feather_block"
-  }
+  },
+  "show_notification": true
 }

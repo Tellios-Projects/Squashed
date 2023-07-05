@@ -13,5 +13,6 @@
   ],
   "result": {
     "item": "squashed:ender_eye_block"
-  }
+  },
+  "show_notification": true
 }

@@ -30,5 +30,6 @@
     "recipes": [
       "minecraft:moss_block_from_compressed_moss"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

@@ -13,5 +13,6 @@
   ],
   "result": {
     "item": "squashed:compressed_warped_stem"
-  }
+  },
+  "show_notification": true
 }

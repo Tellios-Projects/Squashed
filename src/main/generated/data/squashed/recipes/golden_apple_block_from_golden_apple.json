@@ -13,5 +13,6 @@
   ],
   "result": {
     "item": "squashed:golden_apple_block"
-  }
+  },
+  "show_notification": true
 }

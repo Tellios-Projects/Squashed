@@ -30,5 +30,6 @@
     "recipes": [
       "minecraft:compressed_gold_block_from_gold_block"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

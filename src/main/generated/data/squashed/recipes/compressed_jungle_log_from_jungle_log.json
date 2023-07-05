@@ -13,5 +13,6 @@
   ],
   "result": {
     "item": "squashed:compressed_jungle_log"
-  }
+  },
+  "show_notification": true
 }

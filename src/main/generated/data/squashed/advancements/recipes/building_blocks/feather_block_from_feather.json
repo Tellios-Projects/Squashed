@@ -30,5 +30,6 @@
     "recipes": [
       "minecraft:feather_block_from_feather"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

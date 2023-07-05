@@ -13,5 +13,6 @@
   ],
   "result": {
     "item": "squashed:vine_block"
-  }
+  },
+  "show_notification": true
 }

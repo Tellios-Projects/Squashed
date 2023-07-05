@@ -30,5 +30,6 @@
     "recipes": [
       "minecraft:raw_pork_block_from_porkchop"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

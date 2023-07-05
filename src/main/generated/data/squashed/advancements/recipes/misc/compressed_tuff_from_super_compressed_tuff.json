@@ -30,5 +30,6 @@
     "recipes": [
       "minecraft:compressed_tuff_from_super_compressed_tuff"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

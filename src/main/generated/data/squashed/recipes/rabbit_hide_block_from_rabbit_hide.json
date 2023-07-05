@@ -13,5 +13,6 @@
   ],
   "result": {
     "item": "squashed:rabbit_hide_block"
-  }
+  },
+  "show_notification": true
 }

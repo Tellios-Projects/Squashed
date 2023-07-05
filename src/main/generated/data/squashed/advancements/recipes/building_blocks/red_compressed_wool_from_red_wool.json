@@ -30,5 +30,6 @@
     "recipes": [
       "minecraft:red_compressed_wool_from_red_wool"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

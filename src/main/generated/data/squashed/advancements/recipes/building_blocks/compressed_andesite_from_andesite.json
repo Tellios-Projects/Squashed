@@ -30,5 +30,6 @@
     "recipes": [
       "minecraft:compressed_andesite_from_andesite"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

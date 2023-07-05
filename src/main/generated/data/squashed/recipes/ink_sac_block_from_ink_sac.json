@@ -13,5 +13,6 @@
   ],
   "result": {
     "item": "squashed:ink_sac_block"
-  }
+  },
+  "show_notification": true
 }

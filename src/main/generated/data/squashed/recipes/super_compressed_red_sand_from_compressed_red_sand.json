@@ -13,5 +13,6 @@
   ],
   "result": {
     "item": "squashed:super_compressed_red_sand"
-  }
+  },
+  "show_notification": true
 }

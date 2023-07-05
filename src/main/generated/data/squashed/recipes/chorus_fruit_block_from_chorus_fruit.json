@@ -13,5 +13,6 @@
   ],
   "result": {
     "item": "squashed:chorus_fruit_block"
-  }
+  },
+  "show_notification": true
 }

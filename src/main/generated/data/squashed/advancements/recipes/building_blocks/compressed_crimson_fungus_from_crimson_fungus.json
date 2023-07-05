@@ -30,5 +30,6 @@
     "recipes": [
       "minecraft:compressed_crimson_fungus_from_crimson_fungus"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

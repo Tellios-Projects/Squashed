@@ -13,5 +13,6 @@
   ],
   "result": {
     "item": "squashed:red_compressed_wool"
-  }
+  },
+  "show_notification": true
 }

@@ -13,5 +13,6 @@
   ],
   "result": {
     "item": "squashed:brown_dye_block"
-  }
+  },
+  "show_notification": true
 }

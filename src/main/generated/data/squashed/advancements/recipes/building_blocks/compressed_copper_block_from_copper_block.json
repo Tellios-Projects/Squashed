@@ -30,5 +30,6 @@
     "recipes": [
       "minecraft:compressed_copper_block_from_copper_block"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

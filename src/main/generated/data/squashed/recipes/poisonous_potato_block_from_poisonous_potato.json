@@ -13,5 +13,6 @@
   ],
   "result": {
     "item": "squashed:poisonous_potato_block"
-  }
+  },
+  "show_notification": true
 }

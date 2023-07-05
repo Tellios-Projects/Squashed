@@ -30,5 +30,6 @@
     "recipes": [
       "minecraft:blaze_powder_block_from_blaze_powder"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

@@ -13,5 +13,6 @@
   ],
   "result": {
     "item": "squashed:sea_pickle_block"
-  }
+  },
+  "show_notification": true
 }

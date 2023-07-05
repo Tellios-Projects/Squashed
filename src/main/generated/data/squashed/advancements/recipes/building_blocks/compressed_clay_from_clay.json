@@ -30,5 +30,6 @@
     "recipes": [
       "minecraft:compressed_clay_from_clay"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

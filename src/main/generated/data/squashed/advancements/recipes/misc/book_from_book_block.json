@@ -30,5 +30,6 @@
     "recipes": [
       "minecraft:book_from_book_block"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

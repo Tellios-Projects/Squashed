@@ -13,5 +13,6 @@
   ],
   "result": {
     "item": "squashed:sweet_berries_block"
-  }
+  },
+  "show_notification": true
 }

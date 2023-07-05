@@ -13,5 +13,6 @@
   ],
   "result": {
     "item": "squashed:super_compressed_granite"
-  }
+  },
+  "show_notification": true
 }

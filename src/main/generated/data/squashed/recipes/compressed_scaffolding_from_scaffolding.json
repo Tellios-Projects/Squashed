@@ -13,5 +13,6 @@
   ],
   "result": {
     "item": "squashed:compressed_scaffolding"
-  }
+  },
+  "show_notification": true
 }

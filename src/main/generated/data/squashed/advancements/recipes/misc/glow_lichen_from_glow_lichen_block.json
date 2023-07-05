@@ -30,5 +30,6 @@
     "recipes": [
       "minecraft:glow_lichen_from_glow_lichen_block"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

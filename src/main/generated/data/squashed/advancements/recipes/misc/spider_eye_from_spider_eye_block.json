@@ -30,5 +30,6 @@
     "recipes": [
       "minecraft:spider_eye_from_spider_eye_block"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

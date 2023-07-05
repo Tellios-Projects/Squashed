@@ -13,5 +13,6 @@
   ],
   "result": {
     "item": "squashed:cooked_cod_block"
-  }
+  },
+  "show_notification": true
 }

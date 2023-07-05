@@ -30,5 +30,6 @@
     "recipes": [
       "minecraft:compressed_spruce_sapling_from_spruce_sapling"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

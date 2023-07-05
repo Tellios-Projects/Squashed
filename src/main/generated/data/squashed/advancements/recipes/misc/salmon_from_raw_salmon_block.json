@@ -30,5 +30,6 @@
     "recipes": [
       "minecraft:salmon_from_raw_salmon_block"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

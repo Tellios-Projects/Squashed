@@ -30,5 +30,6 @@
     "recipes": [
       "minecraft:apple_block_from_apple"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

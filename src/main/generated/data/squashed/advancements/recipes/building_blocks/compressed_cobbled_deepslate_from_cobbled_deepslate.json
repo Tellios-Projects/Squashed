@@ -30,5 +30,6 @@
     "recipes": [
       "minecraft:compressed_cobbled_deepslate_from_cobbled_deepslate"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

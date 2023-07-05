@@ -30,5 +30,6 @@
     "recipes": [
       "minecraft:cobblestone_from_compressed_cobblestone"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

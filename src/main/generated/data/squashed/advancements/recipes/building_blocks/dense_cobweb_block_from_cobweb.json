@@ -30,5 +30,6 @@
     "recipes": [
       "minecraft:dense_cobweb_block_from_cobweb"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

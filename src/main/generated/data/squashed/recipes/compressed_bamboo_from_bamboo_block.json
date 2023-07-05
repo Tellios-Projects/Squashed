@@ -13,5 +13,6 @@
   ],
   "result": {
     "item": "squashed:compressed_bamboo"
-  }
+  },
+  "show_notification": true
 }
