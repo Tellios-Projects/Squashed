@@ -292,8 +292,8 @@ public class ModBlockTagGenerator extends FabricTagProvider<Block> {
                 .add(ModBlocks.COMPRESSED_SEAGRASS)
                 .add(ModBlocks.VINE_BLOCK)
                 .add(ModBlocks.KELP_BLOCK)
-                .add(ModBlocks.LILY_PAD_BLOCK)
-                .add(ModBlocks.COMPRESSED_CHERRY_LEAVES);
+                .add(ModBlocks.LILY_PAD_BLOCK);
+//                .add(ModBlocks.COMPRESSED_CHERRY_LEAVES);
 
         getOrCreateTagBuilder(BlockTags.WOOL)
                     .add(ModBlocks.WHITE_COMPRESSED_WOOL)

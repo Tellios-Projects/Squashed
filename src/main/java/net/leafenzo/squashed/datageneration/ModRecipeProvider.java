@@ -246,8 +246,8 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         offerReversibleCompactingRecipes(exporter, RecipeCategory.MISC, Items.WEATHERED_COPPER, RecipeCategory.BUILDING_BLOCKS, ModBlocks.COMPRESSED_WEATHERED_COPPER);
         offerReversibleCompactingRecipes(exporter, RecipeCategory.MISC, Items.OXIDIZED_COPPER, RecipeCategory.BUILDING_BLOCKS, ModBlocks.COMPRESSED_OXIDIZED_COPPER);
         //offerReversibleCompactingRecipes(exporter, RecipeCategory.MISC, Items.CHERRY_LEAVES, RecipeCategory.BUILDING_BLOCKS, ModBlocks.COMPRESSED_CHERRY_LEAVES);
-        //offerReversibleCompactingRecipes(exporter, RecipeCategory.MISC, Items.CHERRY_LOG, RecipeCategory.BUILDING_BLOCKS, ModBlocks.COMPRESSED_CHERRY_LOG);
-        //offerReversibleCompactingRecipes(exporter, RecipeCategory.MISC, Items.CHERRY_SAPLING, RecipeCategory.BUILDING_BLOCKS, ModBlocks.COMPRESSED_CHERRY_SAPLING);
+        offerReversibleCompactingRecipes(exporter, RecipeCategory.MISC, Items.CHERRY_LOG, RecipeCategory.BUILDING_BLOCKS, ModBlocks.COMPRESSED_CHERRY_LOG);
+        offerReversibleCompactingRecipes(exporter, RecipeCategory.MISC, Items.CHERRY_SAPLING, RecipeCategory.BUILDING_BLOCKS, ModBlocks.COMPRESSED_CHERRY_SAPLING);
         offerReversibleCompactingRecipes(exporter, RecipeCategory.MISC, Items.ENDER_EYE, RecipeCategory.BUILDING_BLOCKS, ModBlocks.ENDER_EYE_BLOCK);
         offerReversibleCompactingRecipes(exporter, RecipeCategory.MISC, Items.ENDER_PEARL, RecipeCategory.BUILDING_BLOCKS, ModBlocks.ENDER_PEARL_BLOCK);
         offerReversibleCompactingRecipes(exporter, RecipeCategory.MISC, Items.ECHO_SHARD, RecipeCategory.BUILDING_BLOCKS, ModBlocks.ECHO_SHARD_BLOCK);
