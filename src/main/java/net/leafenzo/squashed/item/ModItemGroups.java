@@ -219,7 +219,7 @@ public class ModItemGroups {
                      entries.add(ModBlocks.COMPRESSED_EXPOSED_COPPER);
                      entries.add(ModBlocks.COMPRESSED_WEATHERED_COPPER);
                      entries.add(ModBlocks.COMPRESSED_OXIDIZED_COPPER);
-                     entries.add(ModBlocks.COMPRESSED_CHERRY_LEAVES);
+                     //entries.add(ModBlocks.COMPRESSED_CHERRY_LEAVES);
                      entries.add(ModBlocks.COMPRESSED_CHERRY_LOG);
                      entries.add(ModBlocks.COMPRESSED_CHERRY_SAPLING);
                      entries.add(ModBlocks.ENDER_EYE_BLOCK);
