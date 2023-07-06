@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "wool",
+  "ingredients": [
+    {
+      "item": "minecraft:brown_dye"
+    },
+    {
+      "item": "squashed:white_compressed_wool"
+    }
+  ],
+  "result": {
+    "item": "squashed:brown_compressed_wool"
+  }
+}
