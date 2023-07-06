@@ -3,6 +3,7 @@ package net.leafenzo.squashed.datageneration;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
 import net.leafenzo.squashed.block.ModBlocks;
+import net.minecraft.block.Blocks;
 import net.minecraft.data.server.recipe.RecipeJsonProvider;
 import net.minecraft.data.server.recipe.RecipeProvider;
 import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
@@ -19,8 +20,12 @@ import java.util.function.Consumer;
 public class ModRecipeProvider extends FabricRecipeProvider {
     public ModRecipeProvider(FabricDataOutput output) { super(output); }
 
-    public static void offerCompressedWoolDyeingRecipe(Consumer<RecipeJsonProvider> exporter, ItemConvertible output, ItemConvertible input) {
-        ShapelessRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, output).input(input).input(ModBlocks.WHITE_COMPRESSED_WOOL).group("wool").criterion(FabricRecipeProvider.hasItem(ModBlocks.WHITE_COMPRESSED_WOOL), FabricRecipeProvider.conditionsFromItem(ModBlocks.WHITE_COMPRESSED_WOOL)).offerTo(exporter);
+    public static void offerCompressedWoolDyeingRecipe(Consumer<RecipeJsonProvider> exporter, ItemConvertible output, ItemConvertible dye) {
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, output).input(dye).input(ModBlocks.WHITE_COMPRESSED_WOOL).group("wool").criterion(FabricRecipeProvider.hasItem(ModBlocks.WHITE_COMPRESSED_WOOL), FabricRecipeProvider.conditionsFromItem(ModBlocks.WHITE_COMPRESSED_WOOL)).offerTo(exporter);
+    }
+
+    public static void offerWoolDyeingRecipe(Consumer<RecipeJsonProvider> exporter, ItemConvertible output, ItemConvertible input) {
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, output).input(input).input(Blocks.WHITE_WOOL).group("wool").criterion("has_white_wool", RecipeProvider.conditionsFromItem(Blocks.WHITE_WOOL)).offerTo(exporter);
     }
 
 
@@ -265,11 +270,28 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         offerReversibleCompactingRecipes(exporter, RecipeCategory.MISC, Items.BEETROOT, RecipeCategory.BUILDING_BLOCKS, ModBlocks.BEETROOT_BLOCK);
         offerReversibleCompactingRecipes(exporter, RecipeCategory.MISC, Items.FLINT, RecipeCategory.BUILDING_BLOCKS, ModBlocks.FLINT_BLOCK);
 
-        //offerWoolDyeingRecipe(exporter, ModBlocks.ORANGE_COMPRESSED_WOOL, ModBlocks.ORANGE_DYE_BLOCK, RecipeCategory.BUILDING_BLOCKS);
-          //offerSingleOutputShapelessRecipe(exporter, Items.ORANGE_WOOL, Items.CYAN_WOOL, RecipeCategory.MISC);
+
 
         offerReversibleCompactingRecipes(exporter, RecipeCategory.MISC, Items.SUGAR, RecipeCategory.BUILDING_BLOCKS, ModBlocks.SUGAR_BLOCK);
         offerReversibleCompactingRecipes(exporter, RecipeCategory.MISC, Items.GUNPOWDER, RecipeCategory.BUILDING_BLOCKS, ModBlocks.GUNPOWDER_BLOCK);
         offerReversibleCompactingRecipes(exporter, RecipeCategory.MISC, Items.PRISMARINE, RecipeCategory.BUILDING_BLOCKS, ModBlocks.COMPRESSED_PRISMARINE);
+
+        offerCompressedWoolDyeingRecipe(exporter, ModBlocks.WHITE_COMPRESSED_WOOL, Items.WHITE_DYE);
+        offerCompressedWoolDyeingRecipe(exporter, ModBlocks.ORANGE_COMPRESSED_WOOL, Items.ORANGE_DYE);
+        offerCompressedWoolDyeingRecipe(exporter, ModBlocks.MAGENTA_COMPRESSED_WOOL, Items.MAGENTA_DYE);
+        offerCompressedWoolDyeingRecipe(exporter, ModBlocks.LIGHT_BLUE_COMPRESSED_WOOL, Items.LIGHT_BLUE_DYE);
+        offerCompressedWoolDyeingRecipe(exporter, ModBlocks.YELLOW_COMPRESSED_WOOL, Items.YELLOW_DYE);
+        offerCompressedWoolDyeingRecipe(exporter, ModBlocks.LIME_COMPRESSED_WOOL, Items.LIME_DYE);
+        offerCompressedWoolDyeingRecipe(exporter, ModBlocks.PINK_COMPRESSED_WOOL, Items.PINK_DYE);
+        offerCompressedWoolDyeingRecipe(exporter, ModBlocks.GRAY_COMPRESSED_WOOL, Items.GRAY_DYE);
+        offerCompressedWoolDyeingRecipe(exporter, ModBlocks.LIGHT_GRAY_COMPRESSED_WOOL, Items.LIGHT_GRAY_DYE);
+        offerCompressedWoolDyeingRecipe(exporter, ModBlocks.CYAN_COMPRESSED_WOOL, Items.CYAN_DYE);
+        offerCompressedWoolDyeingRecipe(exporter, ModBlocks.PURPLE_COMPRESSED_WOOL, Items.PURPLE_DYE);
+        offerCompressedWoolDyeingRecipe(exporter, ModBlocks.BLUE_COMPRESSED_WOOL, Items.BLUE_DYE);
+        offerCompressedWoolDyeingRecipe(exporter, ModBlocks.BROWN_COMPRESSED_WOOL, Items.BROWN_DYE);
+        offerCompressedWoolDyeingRecipe(exporter, ModBlocks.GREEN_COMPRESSED_WOOL, Items.GREEN_DYE);
+        offerCompressedWoolDyeingRecipe(exporter, ModBlocks.RED_COMPRESSED_WOOL, Items.RED_DYE);
+        offerCompressedWoolDyeingRecipe(exporter, ModBlocks.BLACK_COMPRESSED_WOOL, Items.BLACK_DYE);
     }
 }
+
