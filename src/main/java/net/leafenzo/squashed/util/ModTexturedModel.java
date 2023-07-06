@@ -1,30 +1,22 @@
 package net.leafenzo.squashed.util;
 
 import net.minecraft.block.Block;
-import net.minecraft.data.client.*;
-import net.minecraft.util.Identifier;
-
-import java.util.Optional;
+import net.minecraft.data.client.TextureKey;
+import net.minecraft.data.client.TextureMap;
+import net.minecraft.data.client.TexturedModel;
 
 public class ModTexturedModel {
-    public static final TexturedModel.Factory LOG_PILE = TexturedModel.makeFactory(ModTexturedModel::logPile, Models.CUBE_DIRECTIONAL);
-
-    public static final Model CUBE_DIRECTIONAL_DOWN_ROTATED = ModTexturedModel.block("minecraft:block/cube_directional", TextureKey.PARTICLE, TextureKey.NORTH, TextureKey.SOUTH, TextureKey.EAST, TextureKey.WEST, TextureKey.UP, TextureKey.DOWN);
-
-    private static Model block(String path, TextureKey ... requiredTextureKeys) {
-        return new Model(Optional.of(new Identifier(path)), Optional.empty(), requiredTextureKeys);
-    }
-
+    public static final TexturedModel.Factory LOG_PILE = TexturedModel.makeFactory(ModTexturedModel::logPile, ModModels.CUBE_DIRECTIONAL_DOWN_ROTATED);
 
     public static TextureMap logPile(Block block) {
         return  new TextureMap()
                 .put(TextureKey.PARTICLE, TextureMap.getSubId(block, "_side"))
-                .put(TextureKey.NORTH, TextureMap.getSubId(block, "_side"))
-                .put(TextureKey.SOUTH, TextureMap.getSubId(block, "_side"))
-                .put(TextureKey.EAST, TextureMap.getSubId(block, "_bottom"))
-                .put(TextureKey.WEST, TextureMap.getSubId(block, "_bottom"))
-                .put(TextureKey.UP, TextureMap.getSubId(block, "_top"))
-                .put(TextureKey.DOWN, TextureMap.getSubId(block, "_top"))
+                .put(TextureKey.NORTH, TextureMap.getSubId(block,    "_side"))
+                .put(TextureKey.SOUTH, TextureMap.getSubId(block,    "_side"))
+                .put(TextureKey.EAST, TextureMap.getSubId(block,     "_top"))
+                .put(TextureKey.WEST, TextureMap.getSubId(block,     "_bottom"))
+                .put(TextureKey.UP, TextureMap.getSubId(block,       "_bottom"))
+                .put(TextureKey.DOWN, TextureMap.getSubId(block,     "_top"))
                 ;
     }
 }
