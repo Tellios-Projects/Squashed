@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:block/cube_all",
-  "textures": {
-    "all": "squashed:block/compressed_cherry_log"
-  }
-}

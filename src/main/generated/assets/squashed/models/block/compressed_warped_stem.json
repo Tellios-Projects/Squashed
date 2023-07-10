@@ -1,12 +1,12 @@
 {
-  "parent": "minecraft:block/cube_directional",
+  "parent": "squashed:block/cube_directional_down_rotated",
   "textures": {
     "down": "squashed:block/compressed_warped_stem_top",
-    "east": "squashed:block/compressed_warped_stem_bottom",
+    "east": "squashed:block/compressed_warped_stem_top",
     "north": "squashed:block/compressed_warped_stem_side",
     "particle": "squashed:block/compressed_warped_stem_side",
     "south": "squashed:block/compressed_warped_stem_side",
-    "up": "squashed:block/compressed_warped_stem_top",
+    "up": "squashed:block/compressed_warped_stem_bottom",
     "west": "squashed:block/compressed_warped_stem_bottom"
   }
 }

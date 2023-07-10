@@ -13,7 +13,6 @@
     "squashed:compressed_seagrass",
     "squashed:vine_block",
     "squashed:kelp_block",
-    "squashed:lily_pad_block",
-    "squashed:compressed_cherry_leaves"
+    "squashed:lily_pad_block"
   ]
 }
