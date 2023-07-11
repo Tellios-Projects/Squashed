@@ -15,17 +15,20 @@ public class ModModelProvider extends FabricModelProvider {
     public ModModelProvider(FabricDataOutput output) {
         super(output);
     }
+    protected static void registerPufferfishBlock(BlockStateModelGenerator blockStateModelGenerator) {
+        Identifier off_model = ModelIds.getBlockModelId(ModBlocks.PUFFERFISH_BLOCK);
+        Identifier on_model = ModelIds.getBlockSubModelId(ModBlocks.PUFFERFISH_BLOCK, "_on");
+        blockStateModelGenerator.blockStateCollector.accept(VariantsBlockStateSupplier.create(ModBlocks.PUFFERFISH_BLOCK)
+                .coordinate(BlockStateModelGenerator.createBooleanModelMap(Properties.POWERED, on_model, off_model))
+                .coordinate(BlockStateModelGenerator.createNorthDefaultHorizontalRotationStates())
+        );
+    }
+    private void registereUpDefaultOrientable(BlockStateModelGenerator blockStateModelGenerator, Block block, TexturedModel.Factory modelFactory) {
+        Identifier identifier = modelFactory.upload(block, blockStateModelGenerator.modelCollector);
+        blockStateModelGenerator.blockStateCollector.accept(VariantsBlockStateSupplier.create(block, BlockStateVariant.create().put(VariantSettings.MODEL, identifier)).coordinate(this.createUpDefaultRotationStates()));
+        //blockStateModelGenerator.blockStateCollector.accept(VariantsBlockStateSupplier.create(block).coordinate(BlockStateModelGenerator.createNorthDefaultRotationStates(), identifier));
+    }
 
-    //TODO : HORIZONTAL ORIENTATION
-//    protected static void registerPufferfishBlock(BlockStateModelGenerator blockStateModelGenerator) {
-//        //Identifier identifier = Models.ORIENTABLE.upload(ModBlocks.PUFFERFISH_BLOCK, TextureMap.of(TextureKey.of("side1"), TextureMap.getId(ModBlocks.PUFFERFISH_BLOCK)), blockStateModelGenerator.modelCollector);
-//        Identifier identifier = ModelIds.getBlockModelId(ModBlocks.PUFFERFISH_BLOCK);
-//        Identifier identifier2 = ModelIds.getBlockSubModelId(ModBlocks.PUFFERFISH_BLOCK, "_on");
-//        blockStateModelGenerator.blockStateCollector.accept(VariantsBlockStateSupplier.create(ModBlocks.PUFFERFISH_BLOCK)
-//                //.coordinate(BlockStateModelGenerator.createNorthDefaultHorizontalRotationStates())
-//                .coordinate(BlockStateModelGenerator.createBooleanModelMap(Properties.POWERED, identifier2, identifier))
-//        );
-//    }
 //    protected static void registerDenseCobwebBlock(BlockStateModelGenerator blockStateModelGenerator) {
 //        Identifier identifier = ModelIds.getBlockModelId(ModBlocks.DENSE_COBWEB_BLOCK);
 //        //blockStateModelGenerator.blockStateCollector.accept(VariantsBlockStateSupplier.create(ModBlocks.DENSE_COBWEB_BLOCK).coordinate(BlockStateModelGenerator.buildBlockStateVariants(Identifier, )));
@@ -254,7 +257,7 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.MANGROVE_ROOTS_BLOCK);
         blockStateModelGenerator.registerSingleton(ModBlocks.VINE_BLOCK, TexturedModel.LEAVES);
         blockStateModelGenerator.registerSingleton(ModBlocks.EGG_BLOCK, TexturedModel.CUBE_BOTTOM_TOP);
-        //registerPufferfishBlock(blockStateModelGenerator);
+        registerPufferfishBlock(blockStateModelGenerator);
         //registerCompressedSpongeBlock(blockStateModelGenerator);
         blockStateModelGenerator.registerAxisRotated(ModBlocks.COMPRESSED_BONE, TexturedModel.CUBE_COLUMN);
         blockStateModelGenerator.registerSingleton(ModBlocks.PAPER_BLOCK, TexturedModel.CUBE_COLUMN);
