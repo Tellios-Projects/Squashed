@@ -1,0 +1,38 @@
+{
+  "blaze_rod_block.break": {
+    "subtitle": "squashed.sounds.blaze_rod_block.break",
+    "sounds": [
+      "squashed:blaze_rod_block/break_1",
+      "squashed:blaze_rod_block/break_2"
+    ]
+  },
+  "blaze_rod_block.step": {
+    "subtitle": "squashed.sounds.blaze_rod_block.step",
+    "sounds": [
+      "squashed:blaze_rod_block/step_1",
+      "squashed:blaze_rod_block/step_2",
+      "squashed:blaze_rod_block/step_3",
+      "squashed:blaze_rod_block/step_4"
+    ]
+  },
+  "blaze_rod_block.place": {
+    "subtitle": "squashed.sounds.blaze_rod_block.place",
+    "sounds": [
+      "squashed:blaze_rod_block/place_1",
+      "squashed:blaze_rod_block/place_2"
+    ]
+  },
+  "blaze_rod_block.hit": {
+    "subtitle": "squashed.sounds.blaze_rod_block.hit",
+    "sounds": [
+      "squashed:blaze_rod_block/hit_1",
+      "squashed:blaze_rod_block/hit_2"
+    ]
+  },
+  "blaze_rod_block.fall": {
+    "subtitle": "squashed.sounds.blaze_rod_block.fall",
+    "sounds": [
+      "squashed:blaze_rod_block/step_2"
+    ]
+  }
+}
