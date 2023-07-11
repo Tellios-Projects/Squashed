@@ -287,8 +287,8 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.COMPRESSED_COBBLED_DEEPSLATE);
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.SUPER_COMPRESSED_COBBLED_DEEPSLATE);
         //blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.COMPRESSED_CHERRY_LEAVES); //1.20
-        blockStateModelGenerator.registerAxisRotated(ModBlocks.COMPRESSED_CHERRY_LOG, ModTexturedModel.LOG_PILE); //1.20
-        blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.COMPRESSED_CHERRY_SAPLING); //1.20
+        //blockStateModelGenerator.registerAxisRotated(ModBlocks.COMPRESSED_CHERRY_LOG, ModTexturedModel.LOG_PILE); //1.20
+        //blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.COMPRESSED_CHERRY_SAPLING); //1.20
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.CARROT_BLOCK);
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.GOLDEN_CARROT_BLOCK);
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.APPLE_BLOCK);
@@ -510,8 +510,8 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerParentedItemModel(ModBlocks.COMPRESSED_WEATHERED_COPPER, Super.asResource("block/compressed_weathered_copper"));
         blockStateModelGenerator.registerParentedItemModel(ModBlocks.COMPRESSED_OXIDIZED_COPPER, Super.asResource("block/compressed_oxidized_copper"));
         //blockStateModelGenerator.registerParentedItemModel(ModBlocks.COMPRESSED_CHERRY_LEAVES, Super.asResource("block/compressed_cherry_leaves")); //1.20
-        blockStateModelGenerator.registerParentedItemModel(ModBlocks.COMPRESSED_CHERRY_LOG, Super.asResource("block/compressed_cherry_log")); //1.20
-        blockStateModelGenerator.registerParentedItemModel(ModBlocks.COMPRESSED_CHERRY_SAPLING, Super.asResource("block/compressed_cherry_sapling")); //1.20
+        //blockStateModelGenerator.registerParentedItemModel(ModBlocks.COMPRESSED_CHERRY_LOG, Super.asResource("block/compressed_cherry_log")); //1.20
+        //blockStateModelGenerator.registerParentedItemModel(ModBlocks.COMPRESSED_CHERRY_SAPLING, Super.asResource("block/compressed_cherry_sapling")); //1.20
         blockStateModelGenerator.registerParentedItemModel(ModBlocks.ENDER_EYE_BLOCK, Super.asResource("block/ender_eye_block"));
         blockStateModelGenerator.registerParentedItemModel(ModBlocks.ENDER_PEARL_BLOCK, Super.asResource("block/ender_pearl_block"));
         blockStateModelGenerator.registerParentedItemModel(ModBlocks.ECHO_SHARD_BLOCK, Super.asResource("block/echo_shard_block"));
