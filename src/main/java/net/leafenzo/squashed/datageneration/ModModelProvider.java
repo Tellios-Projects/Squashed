@@ -226,8 +226,8 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.CHORUS_FRUIT_BLOCK);
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.COMPRESSED_SEAGRASS);
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.COMPRESSED_CACTUS);
-        registerUpDefaultOrientable(blockStateModelGenerator, ModBlocks.TROPICAL_FISH_BLOCK_A, TexturedModel.CUBE_COLUMN);
-        registerUpDefaultOrientable(blockStateModelGenerator, ModBlocks.TROPICAL_FISH_BLOCK_B, TexturedModel.CUBE_COLUMN);
+        blockStateModelGenerator.registerSingleton(ModBlocks.TROPICAL_FISH_BLOCK_A, TexturedModel.CUBE_COLUMN);
+        registerUpDefaultOrientable(blockStateModelGenerator, ModBlocks.TROPICAL_FISH_BLOCK_B, TexturedModel.CUBE_ALL);
         registerUpDefaultOrientable(blockStateModelGenerator, ModBlocks.TROPICAL_FISH_BLOCK_C, TexturedModel.CUBE_COLUMN);
         registerUpDefaultOrientable(blockStateModelGenerator, ModBlocks.TROPICAL_FISH_BLOCK_D, TexturedModel.CUBE_COLUMN);
         registerUpDefaultOrientable(blockStateModelGenerator, ModBlocks.TROPICAL_FISH_BLOCK_E, TexturedModel.CUBE_COLUMN);
