@@ -2,11 +2,11 @@
   "parent": "squashed:block/cube_directional_down_rotated",
   "textures": {
     "down": "squashed:block/compressed_acacia_log_top",
-    "east": "squashed:block/compressed_acacia_log_top",
+    "east": "squashed:block/compressed_acacia_log_bottom",
     "north": "squashed:block/compressed_acacia_log_side",
     "particle": "squashed:block/compressed_acacia_log_side",
     "south": "squashed:block/compressed_acacia_log_side",
-    "up": "squashed:block/compressed_acacia_log_bottom",
+    "up": "squashed:block/compressed_acacia_log_top",
     "west": "squashed:block/compressed_acacia_log_bottom"
   }
 }

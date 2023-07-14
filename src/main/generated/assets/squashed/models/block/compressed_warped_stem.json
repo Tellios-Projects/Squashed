@@ -2,11 +2,11 @@
   "parent": "squashed:block/cube_directional_down_rotated",
   "textures": {
     "down": "squashed:block/compressed_warped_stem_top",
-    "east": "squashed:block/compressed_warped_stem_top",
+    "east": "squashed:block/compressed_warped_stem_bottom",
     "north": "squashed:block/compressed_warped_stem_side",
     "particle": "squashed:block/compressed_warped_stem_side",
     "south": "squashed:block/compressed_warped_stem_side",
-    "up": "squashed:block/compressed_warped_stem_bottom",
+    "up": "squashed:block/compressed_warped_stem_top",
     "west": "squashed:block/compressed_warped_stem_bottom"
   }
 }

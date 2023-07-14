@@ -4,7 +4,7 @@ import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
 import net.leafenzo.squashed.Super;
 import net.leafenzo.squashed.block.ModBlocks;
-import net.leafenzo.squashed.util.ModTexturedModel;
+import net.leafenzo.squashed.data.client.ModTexturedModel;
 import net.minecraft.block.Block;
 import net.minecraft.data.client.*;
 import net.minecraft.state.property.Properties;
@@ -23,10 +23,17 @@ public class ModModelProvider extends FabricModelProvider {
                 .coordinate(BlockStateModelGenerator.createNorthDefaultHorizontalRotationStates())
         );
     }
-    private void registereUpDefaultOrientable(BlockStateModelGenerator blockStateModelGenerator, Block block, TexturedModel.Factory modelFactory) {
+
+    public void registerLogPile(BlockStateModelGenerator blockStateModelGenerator, Block block, TexturedModel.Factory modelFactory) {
         Identifier identifier = modelFactory.upload(block, blockStateModelGenerator.modelCollector);
-        blockStateModelGenerator.blockStateCollector.accept(VariantsBlockStateSupplier.create(block, BlockStateVariant.create().put(VariantSettings.MODEL, identifier)).coordinate(this.createUpDefaultRotationStates()));
-        //blockStateModelGenerator.blockStateCollector.accept(VariantsBlockStateSupplier.create(block).coordinate(BlockStateModelGenerator.createNorthDefaultRotationStates(), identifier));
+        blockStateModelGenerator.blockStateCollector.accept(createLogPileBlockState(block, identifier));
+    }
+    public static BlockStateSupplier createLogPileBlockState(Block block, Identifier modelId) {
+            return VariantsBlockStateSupplier.create(block, BlockStateVariant.create().put(VariantSettings.MODEL, modelId)).coordinate(createLogPileVariantMap());
+    }
+    public static BlockStateVariantMap createLogPileVariantMap() {
+        //X and Z states are swapped, because this is a way to make these place so that the lines on the north face lead away from the player when it's places on those axis. Not the only way of doing this, hacky fix.
+            return BlockStateVariantMap.create(Properties.AXIS).register(Direction.Axis.Y, BlockStateVariant.create()).register(Direction.Axis.Z, BlockStateVariant.create().put(VariantSettings.X, VariantSettings.Rotation.R90).put(VariantSettings.Y, VariantSettings.Rotation.R90)).register(Direction.Axis.X, BlockStateVariant.create().put(VariantSettings.X, VariantSettings.Rotation.R90));
     }
 
 //    protected static void registerDenseCobwebBlock(BlockStateModelGenerator blockStateModelGenerator) {
@@ -202,16 +209,16 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.COMPRESSED_FLOWERING_AZALEA_LEAVES);
         blockStateModelGenerator.registerAxisRotated(ModBlocks.LEATHER_BLOCK, TexturedModel.CUBE_COLUMN);
 //
-        blockStateModelGenerator.registerAxisRotated(ModBlocks.COMPRESSED_OAK_LOG, ModTexturedModel.LOG_PILE);
-        blockStateModelGenerator.registerAxisRotated(ModBlocks.COMPRESSED_SPRUCE_LOG, ModTexturedModel.LOG_PILE);
-        blockStateModelGenerator.registerAxisRotated(ModBlocks.COMPRESSED_BIRCH_LOG, ModTexturedModel.LOG_PILE);
-        blockStateModelGenerator.registerAxisRotated(ModBlocks.COMPRESSED_JUNGLE_LOG, ModTexturedModel.LOG_PILE);
-        blockStateModelGenerator.registerAxisRotated(ModBlocks.COMPRESSED_ACACIA_LOG, ModTexturedModel.LOG_PILE);
-        blockStateModelGenerator.registerAxisRotated(ModBlocks.COMPRESSED_DARK_OAK_LOG, ModTexturedModel.LOG_PILE);
-        blockStateModelGenerator.registerAxisRotated(ModBlocks.COMPRESSED_MANGROVE_LOG, ModTexturedModel.LOG_PILE);
-        blockStateModelGenerator.registerAxisRotated(ModBlocks.COMPRESSED_CRIMSON_STEM, ModTexturedModel.LOG_PILE);
-        blockStateModelGenerator.registerAxisRotated(ModBlocks.COMPRESSED_WARPED_STEM, ModTexturedModel.LOG_PILE);
-        blockStateModelGenerator.registerAxisRotated(ModBlocks.COMPRESSED_BAMBOO, ModTexturedModel.LOG_PILE);
+        registerLogPile(blockStateModelGenerator, ModBlocks.COMPRESSED_OAK_LOG, ModTexturedModel.LOG_PILE);
+        registerLogPile(blockStateModelGenerator, ModBlocks.COMPRESSED_SPRUCE_LOG, ModTexturedModel.LOG_PILE);
+        registerLogPile(blockStateModelGenerator, ModBlocks.COMPRESSED_BIRCH_LOG, ModTexturedModel.LOG_PILE);
+        registerLogPile(blockStateModelGenerator, ModBlocks.COMPRESSED_JUNGLE_LOG, ModTexturedModel.LOG_PILE);
+        registerLogPile(blockStateModelGenerator, ModBlocks.COMPRESSED_ACACIA_LOG, ModTexturedModel.LOG_PILE);
+        registerLogPile(blockStateModelGenerator, ModBlocks.COMPRESSED_DARK_OAK_LOG, ModTexturedModel.LOG_PILE);
+        registerLogPile(blockStateModelGenerator, ModBlocks.COMPRESSED_MANGROVE_LOG, ModTexturedModel.LOG_PILE);
+        registerLogPile(blockStateModelGenerator, ModBlocks.COMPRESSED_CRIMSON_STEM, ModTexturedModel.LOG_PILE);
+        registerLogPile(blockStateModelGenerator, ModBlocks.COMPRESSED_WARPED_STEM, ModTexturedModel.LOG_PILE);
+        registerLogPile(blockStateModelGenerator, ModBlocks.COMPRESSED_BAMBOO, ModTexturedModel.LOG_PILE);
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.COMPRESSED_OAK_SAPLING);
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.COMPRESSED_SPRUCE_SAPLING);
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.COMPRESSED_BIRCH_SAPLING);
@@ -290,7 +297,7 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.COMPRESSED_COBBLED_DEEPSLATE);
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.SUPER_COMPRESSED_COBBLED_DEEPSLATE);
         //blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.COMPRESSED_CHERRY_LEAVES); //1.20
-        //blockStateModelGenerator.registerAxisRotated(ModBlocks.COMPRESSED_CHERRY_LOG, ModTexturedModel.LOG_PILE); //1.20
+        //registerLogPile(blockStateModelGenerator, ModBlocks.COMPRESSED_CHERRY_LOG, ModTexturedModel.LOG_PILE); //1.20
         //blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.COMPRESSED_CHERRY_SAPLING); //1.20
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.CARROT_BLOCK);
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.GOLDEN_CARROT_BLOCK);
