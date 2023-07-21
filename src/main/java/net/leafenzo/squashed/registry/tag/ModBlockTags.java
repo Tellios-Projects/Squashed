@@ -1,4 +1,4 @@
-package net.leafenzo.squashed.util;
+package net.leafenzo.squashed.registry.tag;
 
 import net.minecraft.block.Block;
 import net.minecraft.registry.RegistryKeys;

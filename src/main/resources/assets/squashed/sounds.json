@@ -1,0 +1,43 @@
+{
+  "blaze_rod_block.break": {
+    "subtitle": "subtitles.block.generic.break",
+    "sounds": [
+      "squashed:block/metal_sticks_break_1",
+      "squashed:block/metal_sticks_break_2",
+      "squashed:block/metal_sticks_break_3",
+      "squashed:block/metal_sticks_break_4"
+    ]
+  },
+  "blaze_rod_block.step": {
+    "subtitle": "subtitles.block.generic.footsteps",
+    "sounds": [
+      "squashed:block/metal_sticks_footsteps_1",
+      "squashed:block/metal_sticks_footsteps_2",
+      "squashed:block/metal_sticks_footsteps_3",
+      "squashed:block/metal_sticks_footsteps_4"
+    ]
+  },
+  "blaze_rod_block.place": {
+    "subtitle": "subtitles.block.generic.place",
+    "sounds": [
+      "squashed:block/metal_sticks_place_1",
+      "squashed:block/metal_sticks_place_2",
+      "squashed:block/metal_sticks_place_3",
+      "squashed:block/metal_sticks_place_4"
+    ]
+  },
+  "blaze_rod_block.hit": {
+    "subtitle": "subtitles.block.generic.hit",
+    "sounds": [
+      "squashed:block/metal_sticks_hit_1",
+      "squashed:block/metal_sticks_hit_2",
+      "squashed:block/metal_sticks_hit_3"
+    ]
+  },
+  "blaze_rod_block.fall": {
+    "subtitle": "subtitles.block.generic.fall",
+    "sounds": [
+      "squashed:block/metal_sticks_fall_1"
+    ]
+  }
+}

@@ -2,15 +2,15 @@
   "variants": {
     "axis=x": {
       "model": "squashed:block/compressed_acacia_log",
-      "x": 90,
-      "y": 90
+      "x": 90
     },
     "axis=y": {
       "model": "squashed:block/compressed_acacia_log"
     },
     "axis=z": {
       "model": "squashed:block/compressed_acacia_log",
-      "x": 90
+      "x": 90,
+      "y": 90
     }
   }
 }

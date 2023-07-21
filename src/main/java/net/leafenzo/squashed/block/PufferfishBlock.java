@@ -15,6 +15,7 @@ import net.minecraft.state.StateManager;
 import net.minecraft.state.property.BooleanProperty;
 import net.minecraft.state.property.Properties;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.math.Direction;
 import net.minecraft.util.math.random.Random;
 import net.minecraft.util.shape.VoxelShape;
 import net.minecraft.world.BlockView;
@@ -30,14 +31,15 @@ public class PufferfishBlock extends HorizontalFacingBlock {
     public PufferfishBlock(Settings settings) {
         super(settings);
         this.setDefaultState((BlockState)((BlockState)this.stateManager.getDefaultState()).with(POWERED, false));
-        //this.setDefaultState((BlockState)((BlockState)this.stateManager.getDefaultState()).with(FACING, DirectionProperty. .NORTH));
+        this.setDefaultState((BlockState)((BlockState)this.stateManager.getDefaultState()).with(FACING, Direction.NORTH));
     }
-
 
     @Override
     @Nullable
     public BlockState getPlacementState(ItemPlacementContext ctx) {
-        return (BlockState)this.getDefaultState().with(POWERED, ctx.getWorld().isReceivingRedstonePower(ctx.getBlockPos()));
+        return (BlockState)this.getDefaultState()
+                .with(POWERED, ctx.getWorld().isReceivingRedstonePower(ctx.getBlockPos()))
+                .with(FACING, ctx.getHorizontalPlayerFacing().getOpposite());
     }
 
     public void neighborUpdate(BlockState state, World world, BlockPos pos, Block sourceBlock, BlockPos sourcePos, boolean notify) {
@@ -64,6 +66,7 @@ public class PufferfishBlock extends HorizontalFacingBlock {
     @Override
     protected void appendProperties(StateManager.Builder<Block, BlockState> builder) {
         builder.add(POWERED);
+        builder.add(FACING);
     }
 
     @Override

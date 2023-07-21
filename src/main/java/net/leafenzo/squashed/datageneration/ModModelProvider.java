@@ -4,46 +4,48 @@ import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
 import net.leafenzo.squashed.Super;
 import net.leafenzo.squashed.block.ModBlocks;
-import net.leafenzo.squashed.util.ModTexturedModel;
+import net.leafenzo.squashed.data.client.ModTexturedModel;
 import net.minecraft.block.Block;
 import net.minecraft.data.client.*;
 import net.minecraft.state.property.Properties;
 import net.minecraft.util.Identifier;
+import net.minecraft.util.math.Direction;
 
 public class ModModelProvider extends FabricModelProvider {
     public ModModelProvider(FabricDataOutput output) {
         super(output);
     }
-
-    //TODO : HORIZONTAL ORIENTATION
     protected static void registerPufferfishBlock(BlockStateModelGenerator blockStateModelGenerator) {
-        //Identifier identifier = Models.ORIENTABLE.upload(ModBlocks.PUFFERFISH_BLOCK, TextureMap.of(TextureKey.of("side1"), TextureMap.getId(ModBlocks.PUFFERFISH_BLOCK)), blockStateModelGenerator.modelCollector);
-        Identifier identifier = ModelIds.getBlockModelId(ModBlocks.PUFFERFISH_BLOCK);
-        Identifier identifier2 = ModelIds.getBlockSubModelId(ModBlocks.PUFFERFISH_BLOCK, "_on");
+        Identifier off_model = ModelIds.getBlockModelId(ModBlocks.PUFFERFISH_BLOCK);
+        Identifier on_model = ModelIds.getBlockSubModelId(ModBlocks.PUFFERFISH_BLOCK, "_on");
         blockStateModelGenerator.blockStateCollector.accept(VariantsBlockStateSupplier.create(ModBlocks.PUFFERFISH_BLOCK)
-                //.coordinate(BlockStateModelGenerator.createNorthDefaultHorizontalRotationStates())
-                .coordinate(BlockStateModelGenerator.createBooleanModelMap(Properties.POWERED, identifier2, identifier))
+                .coordinate(BlockStateModelGenerator.createBooleanModelMap(Properties.POWERED, on_model, off_model))
+                .coordinate(BlockStateModelGenerator.createNorthDefaultHorizontalRotationStates())
         );
     }
 
-//    protected static void registerSeaPickleBlock(BlockStateModelGenerator blockStateModelGenerator) {
-//        Identifier identifier = ModelIds.getBlockModelId(ModBlocks.SEA_PICKLE_BLOCK);
-//        Identifier identifier2 = ModelIds.getBlockSubModelId(ModBlocks.SEA_PICKLE_BLOCK, "_wet");
-//        blockStateModelGenerator.blockStateCollector.accept(VariantsBlockStateSupplier.create(ModBlocks.SEA_PICKLE_BLOCK).coordinate(BlockStateModelGenerator.createBooleanModelMap(Properties.WATERLOGGED, identifier2, identifier)));
+    public void registerLogPile(BlockStateModelGenerator blockStateModelGenerator, Block block, TexturedModel.Factory modelFactory) {
+        Identifier identifier = modelFactory.upload(block, blockStateModelGenerator.modelCollector);
+        blockStateModelGenerator.blockStateCollector.accept(createLogPileBlockState(block, identifier));
+    }
+    public static BlockStateSupplier createLogPileBlockState(Block block, Identifier modelId) {
+            return VariantsBlockStateSupplier.create(block, BlockStateVariant.create().put(VariantSettings.MODEL, modelId)).coordinate(createLogPileVariantMap());
+    }
+    public static BlockStateVariantMap createLogPileVariantMap() {
+        //X and Z states are swapped, because this is a way to make these place so that the lines on the north face lead away from the player when it's places on those axis. Not the only way of doing this, hacky fix.
+            return BlockStateVariantMap.create(Properties.AXIS).register(Direction.Axis.Y, BlockStateVariant.create()).register(Direction.Axis.Z, BlockStateVariant.create().put(VariantSettings.X, VariantSettings.Rotation.R90).put(VariantSettings.Y, VariantSettings.Rotation.R90)).register(Direction.Axis.X, BlockStateVariant.create().put(VariantSettings.X, VariantSettings.Rotation.R90));
+    }
+
+//    protected static void registerDenseCobwebBlock(BlockStateModelGenerator blockStateModelGenerator) {
+//        Identifier identifier = ModelIds.getBlockModelId(ModBlocks.DENSE_COBWEB_BLOCK);
+//        //blockStateModelGenerator.blockStateCollector.accept(VariantsBlockStateSupplier.create(ModBlocks.DENSE_COBWEB_BLOCK).coordinate(BlockStateModelGenerator.buildBlockStateVariants(Identifier, )));
+//        //blockStateModelGenerator.registerStateWithModelReference(ModBlocks.DENSE_COBWEB_BLOCK, ModBlocks.DENSE_COBWEB_BLOCK);
 //    }
-
-    protected static void registerDenseCobwebBlock(BlockStateModelGenerator blockStateModelGenerator) {
-        Identifier identifier = ModelIds.getBlockModelId(ModBlocks.DENSE_COBWEB_BLOCK);
-        //blockStateModelGenerator.blockStateCollector.accept(VariantsBlockStateSupplier.create(ModBlocks.DENSE_COBWEB_BLOCK).coordinate(BlockStateModelGenerator.buildBlockStateVariants(Identifier, )));
-        //blockStateModelGenerator.registerStateWithModelReference(ModBlocks.DENSE_COBWEB_BLOCK, ModBlocks.DENSE_COBWEB_BLOCK);
-    }
-
-    protected static void registerCompressedSpongeBlock(BlockStateModelGenerator blockStateModelGenerator) {
-        Identifier identifier = ModelIds.getBlockModelId(ModBlocks.COMPRESSED_SPONGE);
-        blockStateModelGenerator.blockStateCollector.accept(VariantsBlockStateSupplier.create(ModBlocks.COMPRESSED_SPONGE));
-        //blockStateModelGenerator.registerStateWithModelReference(ModBlocks.COMPRESSED_SPONGE, ModBlocks.COMPRESSED_SPONGE);
-    }
-
+//    protected static void registerCompressedSpongeBlock(BlockStateModelGenerator blockStateModelGenerator) {
+//        Identifier identifier = ModelIds.getBlockModelId(ModBlocks.COMPRESSED_SPONGE);
+//        blockStateModelGenerator.blockStateCollector.accept(VariantsBlockStateSupplier.create(ModBlocks.COMPRESSED_SPONGE));
+//        //blockStateModelGenerator.registerStateWithModelReference(ModBlocks.COMPRESSED_SPONGE, ModBlocks.COMPRESSED_SPONGE);
+//    }
 //    protected static void registerRotatable(BlockStateModelGenerator blockStateModelGenerator, Block block, TexturedModel.Factory modelFactory) {
 //        Identifier identifier = modelFactory.upload(block, blockStateModelGenerator.modelCollector);
 //        blockStateModelGenerator.blockStateCollector.accept(BlockStateModelGenerator.createBlockStateWithRandomHorizontalRotations(block, identifier));
@@ -53,21 +55,39 @@ public class ModModelProvider extends FabricModelProvider {
 //        Identifier identifier = modelFactory.upload(block, blockStateModelGenerator.modelCollector);
 //        blockStateModelGenerator.blockStateCollector.accept(VariantsBlockStateSupplier.create(block, BlockStateVariant.create().put(VariantSettings.MODEL, identifier)).coordinate(BlockStateModelGenerator.createSouthDefaultHorizontalRotationStates()));
 //    }
+//    private void registerNorthDefaultRotatable(BlockStateModelGenerator blockStateModelGenerator, Block block, TexturedModel.Factory modelFactory) {
+//        Identifier identifier = modelFactory.upload(block, blockStateModelGenerator.modelCollector);
+//        blockStateModelGenerator.blockStateCollector.accept(VariantsBlockStateSupplier.create(block).coordinate(BlockStateModelGenerator.createNorthDefaultRotationStates()));
+//    }
 
-    private void registerNorthDefaultRotatable(BlockStateModelGenerator blockStateModelGenerator, Block block, TexturedModel.Factory modelFactory) {
+    //    protected static void registerSeaPickleBlock(BlockStateModelGenerator blockStateModelGenerator) {
+//        Identifier identifier = ModelIds.getBlockModelId(ModBlocks.SEA_PICKLE_BLOCK);
+//        Identifier identifier2 = ModelIds.getBlockSubModelId(ModBlocks.SEA_PICKLE_BLOCK, "_wet");
+//        blockStateModelGenerator.blockStateCollector.accept(VariantsBlockStateSupplier.create(ModBlocks.SEA_PICKLE_BLOCK).coordinate(BlockStateModelGenerator.createBooleanModelMap(Properties.WATERLOGGED, identifier2, identifier)));
+//    }
+
+
+    private void registerNorthDefaultOrientable(BlockStateModelGenerator blockStateModelGenerator, Block block, TexturedModel.Factory modelFactory) {
         Identifier identifier = modelFactory.upload(block, blockStateModelGenerator.modelCollector);
-        blockStateModelGenerator.blockStateCollector.accept(VariantsBlockStateSupplier.create(block).coordinate(BlockStateModelGenerator.createNorthDefaultRotationStates()));
+        blockStateModelGenerator.blockStateCollector.accept(VariantsBlockStateSupplier.create(block, BlockStateVariant.create().put(VariantSettings.MODEL, identifier)).coordinate(BlockStateModelGenerator.createNorthDefaultRotationStates()));
+        //blockStateModelGenerator.blockStateCollector.accept(VariantsBlockStateSupplier.create(block).coordinate(BlockStateModelGenerator.createNorthDefaultRotationStates(), identifier));
     }
 
-    private void registerOrientable(BlockStateModelGenerator blockStateModelGenerator, Block block, TexturedModel.Factory modelFactory) {
+    private void registerUpDefaultOrientable(BlockStateModelGenerator blockStateModelGenerator, Block block, TexturedModel.Factory modelFactory) {
         Identifier identifier = modelFactory.upload(block, blockStateModelGenerator.modelCollector);
-        blockStateModelGenerator.blockStateCollector.accept(VariantsBlockStateSupplier.create(block).coordinate(BlockStateModelGenerator.createNorthDefaultRotationStates()));
+        blockStateModelGenerator.blockStateCollector.accept(VariantsBlockStateSupplier.create(block, BlockStateVariant.create().put(VariantSettings.MODEL, identifier)).coordinate(this.createUpDefaultRotationStates()));
+        //blockStateModelGenerator.blockStateCollector.accept(VariantsBlockStateSupplier.create(block).coordinate(BlockStateModelGenerator.createNorthDefaultRotationStates(), identifier));
     }
+
+    private static BlockStateVariantMap createUpDefaultRotationStates() {
+        return BlockStateVariantMap.create(Properties.FACING).register(Direction.DOWN, BlockStateVariant.create().put(VariantSettings.X, VariantSettings.Rotation.R180)).register(Direction.UP, BlockStateVariant.create()).register(Direction.NORTH, BlockStateVariant.create().put(VariantSettings.X, VariantSettings.Rotation.R90)).register(Direction.SOUTH, BlockStateVariant.create().put(VariantSettings.X, VariantSettings.Rotation.R90).put(VariantSettings.Y, VariantSettings.Rotation.R180)).register(Direction.WEST, BlockStateVariant.create().put(VariantSettings.X, VariantSettings.Rotation.R90).put(VariantSettings.Y, VariantSettings.Rotation.R270)).register(Direction.EAST, BlockStateVariant.create().put(VariantSettings.X, VariantSettings.Rotation.R90).put(VariantSettings.Y, VariantSettings.Rotation.R90));
+    }
+
 
     @Override
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
         // Block Models
-        registerOrientable(blockStateModelGenerator, ModBlocks.BLAZE_ROD_BLOCK, TexturedModel.CUBE_COLUMN);
+        registerUpDefaultOrientable(blockStateModelGenerator, ModBlocks.BLAZE_ROD_BLOCK, TexturedModel.CUBE_COLUMN);
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.INK_SAC_BLOCK);
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.STICK_BLOCK);
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.FIRE_CHARGE_BLOCK);
@@ -189,16 +209,16 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.COMPRESSED_FLOWERING_AZALEA_LEAVES);
         blockStateModelGenerator.registerAxisRotated(ModBlocks.LEATHER_BLOCK, TexturedModel.CUBE_COLUMN);
 //
-        blockStateModelGenerator.registerAxisRotated(ModBlocks.COMPRESSED_OAK_LOG, ModTexturedModel.LOG_PILE);
-        blockStateModelGenerator.registerAxisRotated(ModBlocks.COMPRESSED_SPRUCE_LOG, ModTexturedModel.LOG_PILE);
-        blockStateModelGenerator.registerAxisRotated(ModBlocks.COMPRESSED_BIRCH_LOG, ModTexturedModel.LOG_PILE);
-        blockStateModelGenerator.registerAxisRotated(ModBlocks.COMPRESSED_JUNGLE_LOG, ModTexturedModel.LOG_PILE);
-        blockStateModelGenerator.registerAxisRotated(ModBlocks.COMPRESSED_ACACIA_LOG, ModTexturedModel.LOG_PILE);
-        blockStateModelGenerator.registerAxisRotated(ModBlocks.COMPRESSED_DARK_OAK_LOG, ModTexturedModel.LOG_PILE);
-        blockStateModelGenerator.registerAxisRotated(ModBlocks.COMPRESSED_MANGROVE_LOG, ModTexturedModel.LOG_PILE);
-        blockStateModelGenerator.registerAxisRotated(ModBlocks.COMPRESSED_CRIMSON_STEM, ModTexturedModel.LOG_PILE);
-        blockStateModelGenerator.registerAxisRotated(ModBlocks.COMPRESSED_WARPED_STEM, ModTexturedModel.LOG_PILE);
-        blockStateModelGenerator.registerAxisRotated(ModBlocks.COMPRESSED_BAMBOO, ModTexturedModel.LOG_PILE);
+        registerLogPile(blockStateModelGenerator, ModBlocks.COMPRESSED_OAK_LOG, ModTexturedModel.LOG_PILE);
+        registerLogPile(blockStateModelGenerator, ModBlocks.COMPRESSED_SPRUCE_LOG, ModTexturedModel.LOG_PILE);
+        registerLogPile(blockStateModelGenerator, ModBlocks.COMPRESSED_BIRCH_LOG, ModTexturedModel.LOG_PILE);
+        registerLogPile(blockStateModelGenerator, ModBlocks.COMPRESSED_JUNGLE_LOG, ModTexturedModel.LOG_PILE);
+        registerLogPile(blockStateModelGenerator, ModBlocks.COMPRESSED_ACACIA_LOG, ModTexturedModel.LOG_PILE);
+        registerLogPile(blockStateModelGenerator, ModBlocks.COMPRESSED_DARK_OAK_LOG, ModTexturedModel.LOG_PILE);
+        registerLogPile(blockStateModelGenerator, ModBlocks.COMPRESSED_MANGROVE_LOG, ModTexturedModel.LOG_PILE);
+        registerLogPile(blockStateModelGenerator, ModBlocks.COMPRESSED_CRIMSON_STEM, ModTexturedModel.LOG_PILE);
+        registerLogPile(blockStateModelGenerator, ModBlocks.COMPRESSED_WARPED_STEM, ModTexturedModel.LOG_PILE);
+        registerLogPile(blockStateModelGenerator, ModBlocks.COMPRESSED_BAMBOO, ModTexturedModel.LOG_PILE);
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.COMPRESSED_OAK_SAPLING);
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.COMPRESSED_SPRUCE_SAPLING);
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.COMPRESSED_BIRCH_SAPLING);
@@ -213,26 +233,26 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.CHORUS_FRUIT_BLOCK);
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.COMPRESSED_SEAGRASS);
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.COMPRESSED_CACTUS);
-        blockStateModelGenerator.registerAxisRotated(ModBlocks.TROPICAL_FISH_BLOCK_A, TexturedModel.CUBE_COLUMN);
-        blockStateModelGenerator.registerAxisRotated(ModBlocks.TROPICAL_FISH_BLOCK_B, TexturedModel.CUBE_COLUMN);
-        blockStateModelGenerator.registerAxisRotated(ModBlocks.TROPICAL_FISH_BLOCK_C, TexturedModel.CUBE_COLUMN);
-        blockStateModelGenerator.registerAxisRotated(ModBlocks.TROPICAL_FISH_BLOCK_D, TexturedModel.CUBE_COLUMN);
-        blockStateModelGenerator.registerAxisRotated(ModBlocks.TROPICAL_FISH_BLOCK_E, TexturedModel.CUBE_COLUMN);
-        blockStateModelGenerator.registerAxisRotated(ModBlocks.TROPICAL_FISH_BLOCK_F, TexturedModel.CUBE_BOTTOM_TOP);
-        blockStateModelGenerator.registerAxisRotated(ModBlocks.TROPICAL_FISH_BLOCK_G, TexturedModel.CUBE_COLUMN);
-        blockStateModelGenerator.registerAxisRotated(ModBlocks.TROPICAL_FISH_BLOCK_H, TexturedModel.CUBE_COLUMN);
-        blockStateModelGenerator.registerAxisRotated(ModBlocks.TROPICAL_FISH_BLOCK_I, TexturedModel.CUBE_COLUMN);
-        blockStateModelGenerator.registerAxisRotated(ModBlocks.TROPICAL_FISH_BLOCK_J, TexturedModel.CUBE_COLUMN);
-        blockStateModelGenerator.registerAxisRotated(ModBlocks.TROPICAL_FISH_BLOCK_K, TexturedModel.CUBE_COLUMN);
-        blockStateModelGenerator.registerAxisRotated(ModBlocks.TROPICAL_FISH_BLOCK_L, TexturedModel.CUBE_COLUMN);
-        blockStateModelGenerator.registerAxisRotated(ModBlocks.TROPICAL_FISH_BLOCK_M, TexturedModel.CUBE_COLUMN);
-        blockStateModelGenerator.registerAxisRotated(ModBlocks.TROPICAL_FISH_BLOCK_N, TexturedModel.CUBE_COLUMN);
-        blockStateModelGenerator.registerAxisRotated(ModBlocks.TROPICAL_FISH_BLOCK_O, TexturedModel.CUBE_COLUMN);
-        blockStateModelGenerator.registerAxisRotated(ModBlocks.TROPICAL_FISH_BLOCK_P, TexturedModel.CUBE_COLUMN);
-        blockStateModelGenerator.registerAxisRotated(ModBlocks.TROPICAL_FISH_BLOCK_Q, TexturedModel.CUBE_COLUMN);
-        blockStateModelGenerator.registerAxisRotated(ModBlocks.TROPICAL_FISH_BLOCK_R, TexturedModel.CUBE_COLUMN);
-        blockStateModelGenerator.registerAxisRotated(ModBlocks.TROPICAL_FISH_BLOCK_S, TexturedModel.CUBE_COLUMN);
-        blockStateModelGenerator.registerAxisRotated(ModBlocks.TROPICAL_FISH_BLOCK_T, TexturedModel.CUBE_COLUMN);
+        blockStateModelGenerator.registerSingleton(ModBlocks.TROPICAL_FISH_BLOCK_A, TexturedModel.CUBE_COLUMN);
+        registerUpDefaultOrientable(blockStateModelGenerator, ModBlocks.TROPICAL_FISH_BLOCK_B, TexturedModel.CUBE_ALL);
+        registerUpDefaultOrientable(blockStateModelGenerator, ModBlocks.TROPICAL_FISH_BLOCK_C, TexturedModel.CUBE_COLUMN);
+        registerUpDefaultOrientable(blockStateModelGenerator, ModBlocks.TROPICAL_FISH_BLOCK_D, TexturedModel.CUBE_COLUMN);
+        registerUpDefaultOrientable(blockStateModelGenerator, ModBlocks.TROPICAL_FISH_BLOCK_E, TexturedModel.CUBE_COLUMN);
+        registerUpDefaultOrientable(blockStateModelGenerator, ModBlocks.TROPICAL_FISH_BLOCK_F, TexturedModel.CUBE_BOTTOM_TOP);
+        registerUpDefaultOrientable(blockStateModelGenerator, ModBlocks.TROPICAL_FISH_BLOCK_G, TexturedModel.CUBE_COLUMN);
+        registerUpDefaultOrientable(blockStateModelGenerator, ModBlocks.TROPICAL_FISH_BLOCK_H, TexturedModel.CUBE_COLUMN);
+        registerUpDefaultOrientable(blockStateModelGenerator, ModBlocks.TROPICAL_FISH_BLOCK_I, TexturedModel.CUBE_COLUMN);
+        registerUpDefaultOrientable(blockStateModelGenerator, ModBlocks.TROPICAL_FISH_BLOCK_J, TexturedModel.CUBE_COLUMN);
+        registerUpDefaultOrientable(blockStateModelGenerator, ModBlocks.TROPICAL_FISH_BLOCK_K, TexturedModel.CUBE_COLUMN);
+        registerUpDefaultOrientable(blockStateModelGenerator, ModBlocks.TROPICAL_FISH_BLOCK_L, TexturedModel.CUBE_COLUMN);
+        registerUpDefaultOrientable(blockStateModelGenerator, ModBlocks.TROPICAL_FISH_BLOCK_M, TexturedModel.CUBE_COLUMN);
+        registerUpDefaultOrientable(blockStateModelGenerator, ModBlocks.TROPICAL_FISH_BLOCK_N, TexturedModel.CUBE_COLUMN);
+        registerUpDefaultOrientable(blockStateModelGenerator, ModBlocks.TROPICAL_FISH_BLOCK_O, TexturedModel.CUBE_COLUMN);
+        registerUpDefaultOrientable(blockStateModelGenerator, ModBlocks.TROPICAL_FISH_BLOCK_P, TexturedModel.CUBE_COLUMN);
+        registerUpDefaultOrientable(blockStateModelGenerator, ModBlocks.TROPICAL_FISH_BLOCK_Q, TexturedModel.CUBE_COLUMN);
+        registerUpDefaultOrientable(blockStateModelGenerator, ModBlocks.TROPICAL_FISH_BLOCK_R, TexturedModel.CUBE_COLUMN);
+        registerUpDefaultOrientable(blockStateModelGenerator, ModBlocks.TROPICAL_FISH_BLOCK_S, TexturedModel.CUBE_COLUMN);
+        registerUpDefaultOrientable(blockStateModelGenerator, ModBlocks.TROPICAL_FISH_BLOCK_T, TexturedModel.CUBE_COLUMN);
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.PRISMARINE_CRYSTAL_BLOCK);
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.GLOW_INK_SAC_BLOCK);
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.SCUTE_BLOCK);
@@ -244,7 +264,7 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.MANGROVE_ROOTS_BLOCK);
         blockStateModelGenerator.registerSingleton(ModBlocks.VINE_BLOCK, TexturedModel.LEAVES);
         blockStateModelGenerator.registerSingleton(ModBlocks.EGG_BLOCK, TexturedModel.CUBE_BOTTOM_TOP);
-        //registerPufferfishBlock(blockStateModelGenerator);
+        registerPufferfishBlock(blockStateModelGenerator);
         //registerCompressedSpongeBlock(blockStateModelGenerator);
         blockStateModelGenerator.registerAxisRotated(ModBlocks.COMPRESSED_BONE, TexturedModel.CUBE_COLUMN);
         blockStateModelGenerator.registerSingleton(ModBlocks.PAPER_BLOCK, TexturedModel.CUBE_COLUMN);
@@ -277,7 +297,7 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.COMPRESSED_COBBLED_DEEPSLATE);
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.SUPER_COMPRESSED_COBBLED_DEEPSLATE);
         //blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.COMPRESSED_CHERRY_LEAVES); //1.20
-        blockStateModelGenerator.registerAxisRotated(ModBlocks.COMPRESSED_CHERRY_LOG, ModTexturedModel.LOG_PILE); //1.20
+        registerLogPile(blockStateModelGenerator, ModBlocks.COMPRESSED_CHERRY_LOG, ModTexturedModel.LOG_PILE); //1.20
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.COMPRESSED_CHERRY_SAPLING); //1.20
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.CARROT_BLOCK);
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.GOLDEN_CARROT_BLOCK);

@@ -1,19 +1,29 @@
 {
   "variants": {
     "facing=down": {
-      "x": 90
+      "model": "squashed:block/blaze_rod_block",
+      "x": 180
     },
     "facing=east": {
+      "model": "squashed:block/blaze_rod_block",
+      "x": 90,
       "y": 90
     },
-    "facing=north": {},
+    "facing=north": {
+      "model": "squashed:block/blaze_rod_block",
+      "x": 90
+    },
     "facing=south": {
+      "model": "squashed:block/blaze_rod_block",
+      "x": 90,
       "y": 180
     },
     "facing=up": {
-      "x": 270
+      "model": "squashed:block/blaze_rod_block"
     },
     "facing=west": {
+      "model": "squashed:block/blaze_rod_block",
+      "x": 90,
       "y": 270
     }
   }
