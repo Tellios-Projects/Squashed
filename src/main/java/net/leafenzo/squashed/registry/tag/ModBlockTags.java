@@ -8,12 +8,10 @@ import net.minecraft.util.Identifier;
 
 public class ModBlockTags {
     public static final TagKey<Block> ANY_MINABLE = ModBlockTags.of("any_minable");
-
-
+    public static final TagKey<Block> CAT_PLAYS_WITH = ModBlockTags.of("cat_plays_with");
 
     private ModBlockTags() {
     }
-
     private static TagKey<Block> of(String id) {
         return TagKey.of(RegistryKeys.BLOCK, new Identifier(id));
     }
