@@ -1,6 +1,12 @@
 {
-  "parent": "minecraft:block/cube_all",
+  "parent": "minecraft:block/cube",
   "textures": {
-    "all": "squashed:block/lime_compressed_wool"
+    "down": "squashed:block/compressed_wool_top",
+    "east": "squashed:block/lime_compressed_wool_side",
+    "north": "squashed:block/lime_compressed_wool_side",
+    "particle": "squashed:block/lime_compressed_wool_side",
+    "south": "squashed:block/lime_compressed_wool_side",
+    "up": "squashed:block/compressed_wool_top",
+    "west": "squashed:block/lime_compressed_wool_side"
   }
 }
