@@ -295,6 +295,21 @@ public class ModBlockTagGenerator extends FabricTagProvider<Block> {
                 .add(ModBlocks.LILY_PAD_BLOCK);
 //                .add(ModBlocks.COMPRESSED_CHERRY_LEAVES);
 
+        getOrCreateTagBuilder(ModBlockTags.CAT_PLAYS_WITH)
+                .add(ModBlocks.WHITE_COMPRESSED_WOOL)
+                .add(ModBlocks.ORANGE_COMPRESSED_WOOL)
+                .add(ModBlocks.MAGENTA_COMPRESSED_WOOL)
+                .add(ModBlocks.LIGHT_BLUE_COMPRESSED_WOOL)
+                .add(ModBlocks.YELLOW_COMPRESSED_WOOL)
+                .add(ModBlocks.LIME_COMPRESSED_WOOL)
+                .add(ModBlocks.PINK_COMPRESSED_WOOL)
+                .add(ModBlocks.GRAY_COMPRESSED_WOOL)
+                .add(ModBlocks.LIGHT_GRAY_COMPRESSED_WOOL)
+                .add(ModBlocks.CYAN_COMPRESSED_WOOL)
+                .add(ModBlocks.PURPLE_COMPRESSED_WOOL)
+                .add(ModBlocks.BLUE_COMPRESSED_WOOL)
+                .add(ModBlocks.BROWN_COMPRESSED_WOOL);
+
         getOrCreateTagBuilder(BlockTags.WOOL)
                     .add(ModBlocks.WHITE_COMPRESSED_WOOL)
                     .add(ModBlocks.ORANGE_COMPRESSED_WOOL)
