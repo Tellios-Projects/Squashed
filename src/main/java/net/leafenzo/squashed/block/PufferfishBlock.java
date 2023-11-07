@@ -9,6 +9,7 @@ import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.ai.pathing.NavigationType;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
+import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemPlacementContext;
 import net.minecraft.server.world.ServerWorld;
 import net.minecraft.state.StateManager;
@@ -69,11 +70,26 @@ public class PufferfishBlock extends HorizontalFacingBlock {
         builder.add(FACING);
     }
 
+
+    //private boolean hasBeenCollidedWith;
     @Override
     public void onEntityCollision(BlockState state, World world, BlockPos pos, Entity entity) {
-        if(state.get(POWERED) && entity instanceof LivingEntity livingEntity) {
-            livingEntity.addStatusEffect(new StatusEffectInstance(StatusEffects.POISON, 100));
+        if (world.isClient) {
+            return;
         }
+        if(state.get(POWERED) && entity instanceof LivingEntity livingEntity) {
+            if(entity instanceof PlayerEntity playerEntity && playerEntity.getAbilities().creativeMode) { // do not do anything if they are a player in creative mode
+                return;
+            }
+            livingEntity.addStatusEffect(new StatusEffectInstance(StatusEffects.POISON, 100));
+            //livingEntity.damage(world.getDamageSources().sweetBerryBush(), 0.0f); // Still does damage for some reason
+
+            if (!entity.isSilent()) {
+                //TODO FIXME!
+                //world.playSound(null, entity.getX(), entity.getY(), entity.getZ(), SoundEvents.ENTITY_PLAYER_HURT_SWEET_BERRY_BUSH, SoundCategory.BLOCKS, 1.0f, 1.0f); // plays sound every tick :(
+            }
+        }
+        //hasBeenCollidedWith = true;
     }
 
     @Override
