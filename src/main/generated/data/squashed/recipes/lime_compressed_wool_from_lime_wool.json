@@ -1,6 +1,7 @@
 {
   "type": "minecraft:crafting_shaped",
   "category": "building",
+  "group": "squashed:lime_wool",
   "key": {
     "#": {
       "item": "minecraft:lime_wool"

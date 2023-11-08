@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "squashed:Block{minecraft:obsidian}",
+  "key": {
+    "#": {
+      "item": "squashed:compressed_obsidian"
+    }
+  },
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "result": {
+    "item": "squashed:crammed_obsidian"
+  },
+  "show_notification": true
+}

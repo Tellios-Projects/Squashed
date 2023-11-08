@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "squashed:Block{minecraft:raw_iron_block}",
+  "key": {
+    "#": {
+      "item": "squashed:dense_raw_iron_block"
+    }
+  },
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "result": {
+    "item": "squashed:squashed_raw_iron_block"
+  },
+  "show_notification": true
+}

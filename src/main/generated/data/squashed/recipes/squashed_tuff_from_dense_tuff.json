@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "squashed:Block{minecraft:tuff}",
+  "key": {
+    "#": {
+      "item": "squashed:dense_tuff"
+    }
+  },
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "result": {
+    "item": "squashed:squashed_tuff"
+  },
+  "show_notification": true
+}

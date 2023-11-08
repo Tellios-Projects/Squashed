@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "squashed:Block{minecraft:end_stone}",
+  "key": {
+    "#": {
+      "item": "squashed:crammed_end_stone"
+    }
+  },
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "result": {
+    "item": "squashed:dense_end_stone"
+  },
+  "show_notification": true
+}

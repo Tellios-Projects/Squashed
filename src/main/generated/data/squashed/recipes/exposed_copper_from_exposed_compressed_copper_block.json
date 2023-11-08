@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "squashed:exposed_copper_reverse",
+  "ingredients": [
+    {
+      "item": "squashed:exposed_compressed_copper_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "minecraft:exposed_copper"
+  }
+}

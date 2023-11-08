@@ -1,6 +1,9 @@
 {
   "replace": false,
   "values": [
-    "squashed:compressed_amethyst_block"
+    "squashed:compressed_amethyst_block",
+    "squashed:crammed_amethyst_block",
+    "squashed:dense_amethyst_block",
+    "squashed:squashed_amethyst_block"
   ]
 }

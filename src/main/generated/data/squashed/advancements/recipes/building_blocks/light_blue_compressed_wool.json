@@ -30,5 +30,6 @@
     "recipes": [
       "squashed:light_blue_compressed_wool"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

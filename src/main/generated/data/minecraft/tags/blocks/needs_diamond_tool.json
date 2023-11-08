@@ -2,6 +2,12 @@
   "replace": false,
   "values": [
     "squashed:compressed_obsidian",
-    "squashed:super_compressed_obsidian"
+    "squashed:crammed_obsidian",
+    "squashed:dense_obsidian",
+    "squashed:squashed_obsidian",
+    "squashed:compressed_netherite_block",
+    "squashed:crammed_netherite_block",
+    "squashed:dense_netherite_block",
+    "squashed:squashed_netherite_block"
   ]
 }

@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_dense_soul_sand": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "squashed:dense_soul_sand"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:crammed_soul_sand_from_dense_soul_sand"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_dense_soul_sand",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:crammed_soul_sand_from_dense_soul_sand"
+    ]
+  },
+  "sends_telemetry_event": false
+}

@@ -2,6 +2,8 @@
   "replace": false,
   "values": [
     "squashed:compressed_dirt",
-    "squashed:super_compressed_dirt"
+    "squashed:crammed_dirt",
+    "squashed:dense_dirt",
+    "squashed:squashed_dirt"
   ]
 }

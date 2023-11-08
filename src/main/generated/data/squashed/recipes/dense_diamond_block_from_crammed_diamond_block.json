@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "squashed:Block{minecraft:diamond_block}",
+  "key": {
+    "#": {
+      "item": "squashed:crammed_diamond_block"
+    }
+  },
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "result": {
+    "item": "squashed:dense_diamond_block"
+  },
+  "show_notification": true
+}

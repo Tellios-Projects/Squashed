@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "squashed:Block{minecraft:andesite}",
+  "key": {
+    "#": {
+      "item": "squashed:crammed_andesite"
+    }
+  },
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "result": {
+    "item": "squashed:dense_andesite"
+  },
+  "show_notification": true
+}

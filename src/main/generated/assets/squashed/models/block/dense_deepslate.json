@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_top",
+  "textures": {
+    "side": "squashed:block/dense_deepslate_side",
+    "top": "squashed:block/dense_deepslate_top"
+  }
+}

@@ -2,9 +2,24 @@
   "replace": false,
   "values": [
     "squashed:compressed_iron_block",
+    "squashed:crammed_iron_block",
+    "squashed:dense_iron_block",
+    "squashed:squashed_iron_block",
+    "squashed:compressed_netherite_block",
+    "squashed:crammed_netherite_block",
+    "squashed:dense_netherite_block",
+    "squashed:squashed_netherite_block",
     "squashed:compressed_gold_block",
+    "squashed:crammed_gold_block",
+    "squashed:dense_gold_block",
+    "squashed:squashed_gold_block",
     "squashed:compressed_diamond_block",
+    "squashed:crammed_diamond_block",
+    "squashed:dense_diamond_block",
+    "squashed:squashed_diamond_block",
     "squashed:compressed_emerald_block",
-    "squashed:compressed_netherite_block"
+    "squashed:crammed_emerald_block",
+    "squashed:dense_emerald_block",
+    "squashed:squashed_emerald_block"
   ]
 }

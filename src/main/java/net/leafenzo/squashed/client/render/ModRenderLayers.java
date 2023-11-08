@@ -13,8 +13,8 @@ public class ModRenderLayers {
         );
         BlockRenderLayerMap.INSTANCE.putBlocks(RenderLayer.getTranslucent(),
                 ModBlocks.MAGMA_CREAM_BLOCK,
-                ModBlocks.COMPRESSED_AMETHYST_BLOCK,
-                ModBlocks.COMPRESSED_QUARTZ_BLOCK
+                ModBlocks.COMPACTED_QUARTZ_BLOCKS[1],
+                ModBlocks.COMPACTED_AMETHYST_BLOCKS[1]
         );
     }
 }

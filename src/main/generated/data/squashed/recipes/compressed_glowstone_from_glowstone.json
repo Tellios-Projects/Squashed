@@ -1,6 +1,7 @@
 {
   "type": "minecraft:crafting_shaped",
   "category": "building",
+  "group": "squashed:Block{minecraft:glowstone}",
   "key": {
     "#": {
       "item": "minecraft:glowstone"

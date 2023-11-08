@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "squashed:block/dense_netherite_block"
+    }
+  }
+}
