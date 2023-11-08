@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "tropicalFishFromTropicalFishBlock",
+  "ingredients": [
+    {
+      "item": "squashed:tropical_fish_block_s"
+    }
+  ],
+  "result": {
+    "count": 4,
+    "item": "minecraft:tropical_fish"
+  }
+}

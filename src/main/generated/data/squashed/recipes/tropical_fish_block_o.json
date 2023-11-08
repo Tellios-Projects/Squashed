@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "tropical_fish_block_variant",
+  "key": {
+    "F": {
+      "item": "squashed:tropical_fish_block_a"
+    },
+    "I": {
+      "item": "minecraft:flint"
+    }
+  },
+  "pattern": [
+    "FFF",
+    "FIF",
+    "FFF"
+  ],
+  "result": {
+    "count": 8,
+    "item": "squashed:tropical_fish_block_o"
+  },
+  "show_notification": true
+}
