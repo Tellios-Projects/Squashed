@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "squashed:Block{minecraft:snow_block}",
+  "key": {
+    "#": {
+      "item": "squashed:dense_snow_block"
+    }
+  },
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "result": {
+    "item": "squashed:squashed_snow_block"
+  },
+  "show_notification": true
+}

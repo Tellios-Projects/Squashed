@@ -1,6 +1,7 @@
 {
   "type": "minecraft:crafting_shapeless",
   "category": "misc",
+  "group": "squashed:Block{minecraft:mud}_reverse",
   "ingredients": [
     {
       "item": "squashed:compressed_mud"

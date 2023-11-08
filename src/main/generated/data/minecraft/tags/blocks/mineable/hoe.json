@@ -1,8 +1,11 @@
 {
   "replace": false,
   "values": [
+    "squashed:compressed_moss_block",
+    "squashed:crammed_moss_block",
+    "squashed:dense_moss_block",
+    "squashed:squashed_moss_block",
     "#minecraft:any_minable",
-    "squashed:compressed_moss",
     "squashed:carrot_block",
     "squashed:golden_carrot_block",
     "squashed:apple_block",

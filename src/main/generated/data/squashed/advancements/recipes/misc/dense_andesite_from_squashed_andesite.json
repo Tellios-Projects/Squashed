@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_squashed_andesite": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "squashed:squashed_andesite"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:dense_andesite_from_squashed_andesite"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_squashed_andesite",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:dense_andesite_from_squashed_andesite"
+    ]
+  },
+  "sends_telemetry_event": false
+}

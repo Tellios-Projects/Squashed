@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "squashed:Block{minecraft:raw_copper_block}",
+  "key": {
+    "#": {
+      "item": "squashed:crammed_raw_copper_block"
+    }
+  },
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "result": {
+    "item": "squashed:dense_raw_copper_block"
+  },
+  "show_notification": true
+}

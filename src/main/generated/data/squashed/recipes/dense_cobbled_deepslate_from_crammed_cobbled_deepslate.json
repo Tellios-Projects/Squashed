@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "squashed:Block{minecraft:cobbled_deepslate}",
+  "key": {
+    "#": {
+      "item": "squashed:crammed_cobbled_deepslate"
+    }
+  },
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "result": {
+    "item": "squashed:dense_cobbled_deepslate"
+  },
+  "show_notification": true
+}

@@ -1,12 +1,7 @@
 {
-  "parent": "minecraft:block/cube_directional",
+  "parent": "minecraft:block/cube_column",
   "textures": {
-    "down": "squashed:block/compressed_crimson_stem_top",
-    "east": "squashed:block/compressed_crimson_stem_bottom",
-    "north": "squashed:block/compressed_crimson_stem_side",
-    "particle": "squashed:block/compressed_crimson_stem_side",
-    "south": "squashed:block/compressed_crimson_stem_side",
-    "up": "squashed:block/compressed_crimson_stem_top",
-    "west": "squashed:block/compressed_crimson_stem_bottom"
+    "end": "squashed:block/compressed_crimson_stem_top",
+    "side": "squashed:block/compressed_crimson_stem_side"
   }
 }

@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_crammed_andesite": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "squashed:crammed_andesite"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:compressed_andesite_from_crammed_andesite"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_crammed_andesite",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:compressed_andesite_from_crammed_andesite"
+    ]
+  },
+  "sends_telemetry_event": false
+}

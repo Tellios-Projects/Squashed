@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "squashed:Block{minecraft:magma_block}_reverse",
+  "ingredients": [
+    {
+      "item": "squashed:crammed_magma_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "squashed:compressed_magma_block"
+  }
+}

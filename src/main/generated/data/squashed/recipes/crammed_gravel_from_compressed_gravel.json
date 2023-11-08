@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "squashed:Block{minecraft:gravel}",
+  "key": {
+    "#": {
+      "item": "squashed:compressed_gravel"
+    }
+  },
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "result": {
+    "item": "squashed:crammed_gravel"
+  },
+  "show_notification": true
+}

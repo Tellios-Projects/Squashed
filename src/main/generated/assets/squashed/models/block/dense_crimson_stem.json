@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "squashed:block/dense_crimson_stem_top",
+    "side": "squashed:block/dense_crimson_stem_side"
+  }
+}

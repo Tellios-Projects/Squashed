@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "squashed:block/weathered_compressed_copper_block"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "squashed:block/exposed_compressed_copper_block"
+    }
+  }
+}

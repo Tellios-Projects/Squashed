@@ -1,0 +1,26 @@
+// 1.20.1	2023-11-08T06:44:24.4119583	Squashed/Tags for minecraft:block
+0a05e8849cff66216d82dcb88fde208d01839023 data\minecraft\tags\blocks\cat_plays_with.json
+a5e54b16a211e7d44a05ce24faf7f4c79bb3eeef data\minecraft\tags\blocks\mineable\hoe.json
+db6d603e6024be28ebfe95b51ac6651540a81ab6 data\minecraft\tags\blocks\mineable\axe.json
+10d9afd34804775018dd13402fa8d1266c4ec19b data\minecraft\tags\blocks\dirt.json
+8a23702b05296c8af5014d6aa6e9265ded85c7d9 data\minecraft\tags\blocks\any_minable.json
+67c409eafeb62334961b267a675c29fb1c5fc137 data\minecraft\tags\blocks\soul_speed_blocks.json
+0fb6014d0d82bf13b436760d32a1785998fe6d32 data\minecraft\tags\blocks\sand.json
+63f7e3d854b6f79139ff7b65308db8a7dba1f494 data\minecraft\tags\blocks\infiniburn_overworld.json
+ac851500bf00117c095c329c6c2bd84f53ba97ff data\minecraft\tags\blocks\guarded_by_piglins.json
+b8615125ae21cd908f5e7580af4771f8117b1cb3 data\minecraft\tags\blocks\climbable.json
+41e5b9012a8b7ba6d3aa5c22f45631e1640ed9b4 data\minecraft\tags\blocks\wither_immune.json
+eab8ace4c46953c8ee356e44c9bfe50bb6d7e5c8 data\minecraft\tags\blocks\mineable\pickaxe.json
+efc303578b85b0aa1ed9200cf45bcba651837b55 data\minecraft\tags\blocks\logs_that_burn.json
+4ed236677b334ffaf2d298dedba576650ca36a40 data\minecraft\tags\blocks\logs.json
+67c409eafeb62334961b267a675c29fb1c5fc137 data\minecraft\tags\blocks\soul_fire_base_blocks.json
+a90d4e33ce412a63016104ec9cfaf73e845115b3 data\minecraft\tags\blocks\needs_diamond_tool.json
+dccf9a4749b2f6f65b3a2501b46fc2e6472a8bfd data\minecraft\tags\blocks\beacon_base_blocks.json
+188d795c689064a3b2cbcbd965d08cd4f608b84e data\minecraft\tags\blocks\crystal_sound_blocks.json
+9da4ea1c349857a54c968b58183a7e8a00df8fb7 data\minecraft\tags\blocks\mineable\shovel.json
+e5d506f42a07fdc56d00f7de31b7749b8f0abe2f data\minecraft\tags\blocks\dead_bush_may_place_on.json
+1474251d9c4d6769eb1baab21e8c202334314049 data\minecraft\tags\blocks\leaves.json
+030479fcf4c9850a67a78ceb22bec2c6c6b11c78 data\minecraft\tags\blocks\needs_iron_tool.json
+c6e011e129c04155a4678735495208e8e7a09043 data\minecraft\tags\blocks\wool.json
+67c409eafeb62334961b267a675c29fb1c5fc137 data\minecraft\tags\blocks\wither_summon_base_blocks.json
+35c23f3c1fa2b487b2a9de1838c051067b20c8f7 data\minecraft\tags\blocks\needs_stone_tool.json

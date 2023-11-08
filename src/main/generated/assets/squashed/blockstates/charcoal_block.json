@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "squashed:block/charcoal_block",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "squashed:block/charcoal_block"
+    },
+    "axis=z": {
+      "model": "squashed:block/charcoal_block",
+      "x": 90
+    }
+  }
+}

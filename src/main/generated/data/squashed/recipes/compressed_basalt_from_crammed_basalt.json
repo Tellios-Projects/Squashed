@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "squashed:Block{minecraft:basalt}_reverse",
+  "ingredients": [
+    {
+      "item": "squashed:crammed_basalt"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "squashed:compressed_basalt"
+  }
+}

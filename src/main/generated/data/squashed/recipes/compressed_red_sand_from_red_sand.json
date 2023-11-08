@@ -1,6 +1,7 @@
 {
   "type": "minecraft:crafting_shaped",
   "category": "building",
+  "group": "squashed:Block{minecraft:red_sand}",
   "key": {
     "#": {
       "item": "minecraft:red_sand"

@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "squashed:Block{minecraft:granite}",
+  "key": {
+    "#": {
+      "item": "squashed:crammed_granite"
+    }
+  },
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "result": {
+    "item": "squashed:dense_granite"
+  },
+  "show_notification": true
+}

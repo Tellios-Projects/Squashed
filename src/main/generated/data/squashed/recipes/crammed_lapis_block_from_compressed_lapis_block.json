@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "squashed:Block{minecraft:lapis_block}",
+  "key": {
+    "#": {
+      "item": "squashed:compressed_lapis_block"
+    }
+  },
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "result": {
+    "item": "squashed:crammed_lapis_block"
+  },
+  "show_notification": true
+}

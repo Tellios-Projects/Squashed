@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_compressed_calcite": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "squashed:compressed_calcite"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:crammed_calcite_from_compressed_calcite"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_compressed_calcite",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:crammed_calcite_from_compressed_calcite"
+    ]
+  },
+  "sends_telemetry_event": false
+}
