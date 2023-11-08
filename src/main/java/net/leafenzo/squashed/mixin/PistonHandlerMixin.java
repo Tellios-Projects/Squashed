@@ -27,13 +27,13 @@ public class PistonHandlerMixin {
         if(state.isOf(Blocks.HONEY_BLOCK) && adjacentState.isOf(ModBlocks.MAGMA_CREAM_BLOCK)) {
             cir.setReturnValue(false);
         }
+        if(state.isOf(ModBlocks.MAGMA_CREAM_BLOCK) && adjacentState.isOf(Blocks.HONEY_BLOCK) ) {
+            cir.setReturnValue(false);
+        }
         if(state.isOf(Blocks.SLIME_BLOCK) && adjacentState.isOf(ModBlocks.MAGMA_CREAM_BLOCK)) {
             cir.setReturnValue(false);
         }
         if(state.isOf(ModBlocks.MAGMA_CREAM_BLOCK) && adjacentState.isOf(Blocks.SLIME_BLOCK)) {
-            cir.setReturnValue(false);
-        }
-        if(state.isOf(ModBlocks.MAGMA_CREAM_BLOCK) && adjacentState.isOf(Blocks.HONEY_BLOCK) ) {
             cir.setReturnValue(false);
         }
     }
