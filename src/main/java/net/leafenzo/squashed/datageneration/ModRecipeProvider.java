@@ -32,6 +32,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
     public static void offerReversibleCompactingRecipes(Consumer<RecipeJsonProvider> exporter, RecipeCategory reverseCategory, ItemConvertible baseItem, RecipeCategory compactingCategory, ItemConvertible compactItem) {
         ModRecipeProvider.offerReversibleCompactingRecipes(exporter, reverseCategory, baseItem, compactingCategory, compactItem, RecipeProvider.getRecipeName(compactItem), null, RecipeProvider.getRecipeName(baseItem), null);
     }
+
     public static void offerReversibleCompactingRecipesWithCompactingRecipeGroup(Consumer<RecipeJsonProvider> exporter, RecipeCategory reverseCategory, ItemConvertible baseItem, RecipeCategory compactingCategory, ItemConvertible compactItem, String compactingId, String compactingGroup) {
         ModRecipeProvider.offerReversibleCompactingRecipes(exporter, reverseCategory, baseItem, compactingCategory, compactItem, compactingId, compactingGroup, RecipeProvider.getRecipeName(baseItem), null);
     }
@@ -42,6 +43,20 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         ShapelessRecipeJsonBuilder.create(reverseCategory, baseItem, 9).input(compactItem).group(reverseGroup).criterion(RecipeProvider.hasItem(compactItem), RecipeProvider.conditionsFromItem(compactItem)).offerTo(exporter, new Identifier(reverseId+"_from_"+compactingId));
         ShapedRecipeJsonBuilder.create(compactingCategory, compactItem).input(Character.valueOf('#'), baseItem).pattern("###").pattern("###").pattern("###").group(compactingGroup).criterion(RecipeProvider.hasItem(baseItem), RecipeProvider.conditionsFromItem(baseItem)).offerTo(exporter, new Identifier(compactingId+"_from_"+reverseId));
     }
+
+    public static void offerTropicalFishBlockVariantRecipe(Consumer<RecipeJsonProvider> exporter, ItemConvertible output, ItemConvertible input) {
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, output, 8)
+                .input(Character.valueOf('F'), ModBlocks.TROPICAL_FISH_BLOCK_A)
+                .input(Character.valueOf('I'), input)
+                .pattern("FFF")
+                .pattern("FIF")
+                .pattern("FFF")
+                .criterion("has_tropical_fish_block", FabricRecipeProvider.conditionsFromItem(ModBlocks.TROPICAL_FISH_BLOCK_A))
+                .criterion("has_" + input.toString(), FabricRecipeProvider.conditionsFromItem(input))
+                .group("tropical_fish_block_variant")
+                .offerTo(exporter);
+    }
+
 
     @Override
     public void generate(Consumer<RecipeJsonProvider> exporter) {
@@ -197,8 +212,53 @@ public class ModRecipeProvider extends FabricRecipeProvider {
 
 
 
+        // Non-Reversible 2x2 Compacting Recipe
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.TROPICAL_FISH_BLOCK_A, 1)
+                .input(Character.valueOf('F'), Items.TROPICAL_FISH)
+                .pattern("FF")
+                .pattern("FF")
+                .criterion("has_tropical_fish", FabricRecipeProvider.conditionsFromItem(Items.TROPICAL_FISH))
+                .offerTo(exporter);
+        offerShapelessRecipe(exporter, Items.TROPICAL_FISH, ModBlocks.TROPICAL_FISH_BLOCK_A, "tropicalFishFromTropicalFishBlock" ,4);
+        offerShapelessRecipe(exporter, Items.TROPICAL_FISH, ModBlocks.TROPICAL_FISH_BLOCK_B, "tropicalFishFromTropicalFishBlock" ,4);
+        offerShapelessRecipe(exporter, Items.TROPICAL_FISH, ModBlocks.TROPICAL_FISH_BLOCK_C, "tropicalFishFromTropicalFishBlock" ,4);
+        offerShapelessRecipe(exporter, Items.TROPICAL_FISH, ModBlocks.TROPICAL_FISH_BLOCK_D, "tropicalFishFromTropicalFishBlock" ,4);
+        offerShapelessRecipe(exporter, Items.TROPICAL_FISH, ModBlocks.TROPICAL_FISH_BLOCK_E, "tropicalFishFromTropicalFishBlock" ,4);
+        offerShapelessRecipe(exporter, Items.TROPICAL_FISH, ModBlocks.TROPICAL_FISH_BLOCK_F, "tropicalFishFromTropicalFishBlock" ,4);
+        offerShapelessRecipe(exporter, Items.TROPICAL_FISH, ModBlocks.TROPICAL_FISH_BLOCK_G, "tropicalFishFromTropicalFishBlock" ,4);
+        offerShapelessRecipe(exporter, Items.TROPICAL_FISH, ModBlocks.TROPICAL_FISH_BLOCK_H, "tropicalFishFromTropicalFishBlock" ,4);
+        offerShapelessRecipe(exporter, Items.TROPICAL_FISH, ModBlocks.TROPICAL_FISH_BLOCK_I, "tropicalFishFromTropicalFishBlock" ,4);
+        offerShapelessRecipe(exporter, Items.TROPICAL_FISH, ModBlocks.TROPICAL_FISH_BLOCK_J, "tropicalFishFromTropicalFishBlock" ,4);
+        offerShapelessRecipe(exporter, Items.TROPICAL_FISH, ModBlocks.TROPICAL_FISH_BLOCK_K, "tropicalFishFromTropicalFishBlock" ,4);
+        offerShapelessRecipe(exporter, Items.TROPICAL_FISH, ModBlocks.TROPICAL_FISH_BLOCK_L, "tropicalFishFromTropicalFishBlock" ,4);
+        offerShapelessRecipe(exporter, Items.TROPICAL_FISH, ModBlocks.TROPICAL_FISH_BLOCK_M, "tropicalFishFromTropicalFishBlock" ,4);
+        offerShapelessRecipe(exporter, Items.TROPICAL_FISH, ModBlocks.TROPICAL_FISH_BLOCK_N, "tropicalFishFromTropicalFishBlock" ,4);
+        offerShapelessRecipe(exporter, Items.TROPICAL_FISH, ModBlocks.TROPICAL_FISH_BLOCK_O, "tropicalFishFromTropicalFishBlock" ,4);
+        offerShapelessRecipe(exporter, Items.TROPICAL_FISH, ModBlocks.TROPICAL_FISH_BLOCK_P, "tropicalFishFromTropicalFishBlock" ,4);
+        offerShapelessRecipe(exporter, Items.TROPICAL_FISH, ModBlocks.TROPICAL_FISH_BLOCK_Q, "tropicalFishFromTropicalFishBlock" ,4);
+        offerShapelessRecipe(exporter, Items.TROPICAL_FISH, ModBlocks.TROPICAL_FISH_BLOCK_R, "tropicalFishFromTropicalFishBlock" ,4);
+        offerShapelessRecipe(exporter, Items.TROPICAL_FISH, ModBlocks.TROPICAL_FISH_BLOCK_S, "tropicalFishFromTropicalFishBlock" ,4);
+        offerShapelessRecipe(exporter, Items.TROPICAL_FISH, ModBlocks.TROPICAL_FISH_BLOCK_T, "tropicalFishFromTropicalFishBlock" ,4);
 
-
+        offerTropicalFishBlockVariantRecipe(exporter, ModBlocks.TROPICAL_FISH_BLOCK_B, Items.COPPER_INGOT);
+        offerTropicalFishBlockVariantRecipe(exporter, ModBlocks.TROPICAL_FISH_BLOCK_C, Items.PORKCHOP);
+        offerTropicalFishBlockVariantRecipe(exporter, ModBlocks.TROPICAL_FISH_BLOCK_D, Blocks.SEAGRASS);
+        offerTropicalFishBlockVariantRecipe(exporter, ModBlocks.TROPICAL_FISH_BLOCK_E, Items.GOLD_NUGGET);
+        offerTropicalFishBlockVariantRecipe(exporter, ModBlocks.TROPICAL_FISH_BLOCK_F, Items.NETHER_WART);
+        offerTropicalFishBlockVariantRecipe(exporter, ModBlocks.TROPICAL_FISH_BLOCK_G, Items.SUGAR);
+        offerTropicalFishBlockVariantRecipe(exporter, ModBlocks.TROPICAL_FISH_BLOCK_H, Items.LAPIS_LAZULI);
+        offerTropicalFishBlockVariantRecipe(exporter, ModBlocks.TROPICAL_FISH_BLOCK_I, Items.CHORUS_FRUIT);
+        offerTropicalFishBlockVariantRecipe(exporter, ModBlocks.TROPICAL_FISH_BLOCK_J, Items.COOKIE);
+        offerTropicalFishBlockVariantRecipe(exporter, ModBlocks.TROPICAL_FISH_BLOCK_K, Items.IRON_NUGGET);
+        offerTropicalFishBlockVariantRecipe(exporter, ModBlocks.TROPICAL_FISH_BLOCK_L, Items.ENDER_PEARL);
+        offerTropicalFishBlockVariantRecipe(exporter, ModBlocks.TROPICAL_FISH_BLOCK_M, Items.CACTUS);
+        offerTropicalFishBlockVariantRecipe(exporter, ModBlocks.TROPICAL_FISH_BLOCK_N, Items.REDSTONE);
+        offerTropicalFishBlockVariantRecipe(exporter, ModBlocks.TROPICAL_FISH_BLOCK_O, Items.FLINT);
+        offerTropicalFishBlockVariantRecipe(exporter, ModBlocks.TROPICAL_FISH_BLOCK_P, Items.GLOWSTONE_DUST);
+        offerTropicalFishBlockVariantRecipe(exporter, ModBlocks.TROPICAL_FISH_BLOCK_Q, Items.KELP);
+        offerTropicalFishBlockVariantRecipe(exporter, ModBlocks.TROPICAL_FISH_BLOCK_R, Items.AMETHYST_SHARD);
+        offerTropicalFishBlockVariantRecipe(exporter, ModBlocks.TROPICAL_FISH_BLOCK_S, Items.CLAY_BALL);
+        offerTropicalFishBlockVariantRecipe(exporter, ModBlocks.TROPICAL_FISH_BLOCK_T, Items.BAMBOO);
 
 
 
