@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    "squashed:compressed_crimson_stem",
+    "squashed:crammed_crimson_stem",
+    "squashed:dense_crimson_stem",
+    "squashed:squashed_crimson_stem",
+    "squashed:compressed_warped_stem",
+    "squashed:crammed_warped_stem",
+    "squashed:dense_warped_stem",
+    "squashed:squashed_warped_stem"
+  ]
+}

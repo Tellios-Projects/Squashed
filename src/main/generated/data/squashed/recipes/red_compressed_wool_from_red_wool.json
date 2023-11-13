@@ -1,6 +1,7 @@
 {
   "type": "minecraft:crafting_shaped",
   "category": "building",
+  "group": "squashed:red_wool",
   "key": {
     "#": {
       "item": "minecraft:red_wool"

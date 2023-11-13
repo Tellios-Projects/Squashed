@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "squashed:Block{minecraft:diorite}",
+  "key": {
+    "#": {
+      "item": "squashed:compressed_diorite"
+    }
+  },
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "result": {
+    "item": "squashed:crammed_diorite"
+  },
+  "show_notification": true
+}

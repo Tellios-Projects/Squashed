@@ -1,6 +1,7 @@
 {
   "type": "minecraft:crafting_shaped",
   "category": "building",
+  "group": "squashed:gray_wool",
   "key": {
     "#": {
       "item": "minecraft:gray_wool"

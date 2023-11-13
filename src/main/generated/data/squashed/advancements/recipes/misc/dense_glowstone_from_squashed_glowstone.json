@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_squashed_glowstone": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "squashed:squashed_glowstone"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:dense_glowstone_from_squashed_glowstone"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_squashed_glowstone",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:dense_glowstone_from_squashed_glowstone"
+    ]
+  },
+  "sends_telemetry_event": false
+}

@@ -6,7 +6,6 @@ import net.minecraft.data.client.Models;
 import net.minecraft.data.client.TextureKey;
 import net.minecraft.data.client.TextureMap;
 import net.minecraft.data.client.TexturedModel;
-import net.minecraft.util.Identifier;
 
 public class ModTexturedModel {
     public static final TexturedModel.Factory LOG_PILE = TexturedModel.makeFactory(ModTexturedModel::logPile, ModModels.CUBE_DIRECTIONAL_DOWN_ROTATED);

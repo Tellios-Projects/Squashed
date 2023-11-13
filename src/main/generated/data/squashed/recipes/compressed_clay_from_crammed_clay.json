@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "squashed:Block{minecraft:clay}_reverse",
+  "ingredients": [
+    {
+      "item": "squashed:crammed_clay"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "squashed:compressed_clay"
+  }
+}

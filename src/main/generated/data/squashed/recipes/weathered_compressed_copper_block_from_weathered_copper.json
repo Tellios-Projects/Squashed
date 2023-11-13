@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "squashed:weathered_copper",
+  "key": {
+    "#": {
+      "item": "minecraft:weathered_copper"
+    }
+  },
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "result": {
+    "item": "squashed:weathered_compressed_copper_block"
+  },
+  "show_notification": true
+}

@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "squashed:oxidized_copper_reverse",
+  "ingredients": [
+    {
+      "item": "squashed:oxidized_compressed_copper_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "minecraft:oxidized_copper"
+  }
+}

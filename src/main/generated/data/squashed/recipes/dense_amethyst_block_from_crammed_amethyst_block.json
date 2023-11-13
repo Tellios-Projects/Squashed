@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "squashed:Block{minecraft:amethyst_block}",
+  "key": {
+    "#": {
+      "item": "squashed:crammed_amethyst_block"
+    }
+  },
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "result": {
+    "item": "squashed:dense_amethyst_block"
+  },
+  "show_notification": true
+}

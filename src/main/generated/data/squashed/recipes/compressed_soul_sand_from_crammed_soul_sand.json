@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "squashed:Block{minecraft:soul_sand}_reverse",
+  "ingredients": [
+    {
+      "item": "squashed:crammed_soul_sand"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "squashed:compressed_soul_sand"
+  }
+}

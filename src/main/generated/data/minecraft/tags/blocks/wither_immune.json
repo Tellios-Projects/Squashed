@@ -2,13 +2,8 @@
   "replace": false,
   "values": [
     "squashed:compressed_obsidian",
-    "squashed:super_compressed_obsidian",
-    "squashed:super_compressed_tuff",
-    "squashed:super_compressed_deepslate",
-    "squashed:super_compressed_netherrack",
-    "squashed:super_compressed_end_stone",
-    "squashed:super_compressed_diorite",
-    "squashed:super_compressed_granite",
-    "squashed:super_compressed_cobbled_deepslate"
+    "squashed:crammed_obsidian",
+    "squashed:dense_obsidian",
+    "squashed:squashed_obsidian"
   ]
 }

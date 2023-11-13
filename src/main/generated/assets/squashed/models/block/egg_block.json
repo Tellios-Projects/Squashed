@@ -1,8 +1,6 @@
 {
-  "parent": "minecraft:block/cube_bottom_top",
+  "parent": "minecraft:block/cube_all",
   "textures": {
-    "bottom": "squashed:block/egg_block_bottom",
-    "side": "squashed:block/egg_block_side",
-    "top": "squashed:block/egg_block_top"
+    "all": "squashed:block/egg_block"
   }
 }

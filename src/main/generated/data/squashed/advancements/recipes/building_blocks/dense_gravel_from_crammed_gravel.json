@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_crammed_gravel": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "squashed:crammed_gravel"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:dense_gravel_from_crammed_gravel"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_crammed_gravel",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:dense_gravel_from_crammed_gravel"
+    ]
+  },
+  "sends_telemetry_event": false
+}

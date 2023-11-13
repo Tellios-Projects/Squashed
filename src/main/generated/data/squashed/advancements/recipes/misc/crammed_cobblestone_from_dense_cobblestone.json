@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_dense_cobblestone": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "squashed:dense_cobblestone"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:crammed_cobblestone_from_dense_cobblestone"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_dense_cobblestone",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:crammed_cobblestone_from_dense_cobblestone"
+    ]
+  },
+  "sends_telemetry_event": false
+}

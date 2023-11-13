@@ -30,5 +30,6 @@
     "recipes": [
       "squashed:lime_compressed_wool"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

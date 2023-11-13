@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "squashed:Block{minecraft:amethyst_block}_reverse",
+  "ingredients": [
+    {
+      "item": "squashed:squashed_amethyst_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "squashed:dense_amethyst_block"
+  }
+}

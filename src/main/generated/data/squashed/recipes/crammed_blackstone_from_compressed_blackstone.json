@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "squashed:Block{minecraft:blackstone}",
+  "key": {
+    "#": {
+      "item": "squashed:compressed_blackstone"
+    }
+  },
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "result": {
+    "item": "squashed:crammed_blackstone"
+  },
+  "show_notification": true
+}

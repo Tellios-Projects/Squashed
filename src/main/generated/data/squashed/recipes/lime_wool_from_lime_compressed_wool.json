@@ -1,6 +1,7 @@
 {
   "type": "minecraft:crafting_shapeless",
   "category": "misc",
+  "group": "squashed:lime_wool_reverse",
   "ingredients": [
     {
       "item": "squashed:lime_compressed_wool"

@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "squashed:Block{minecraft:dripstone_block}",
+  "key": {
+    "#": {
+      "item": "minecraft:dripstone_block"
+    }
+  },
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "result": {
+    "item": "squashed:compressed_dripstone_block"
+  },
+  "show_notification": true
+}

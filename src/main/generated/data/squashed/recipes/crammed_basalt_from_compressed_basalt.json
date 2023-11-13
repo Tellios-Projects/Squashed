@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "squashed:Block{minecraft:basalt}",
+  "key": {
+    "#": {
+      "item": "squashed:compressed_basalt"
+    }
+  },
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "result": {
+    "item": "squashed:crammed_basalt"
+  },
+  "show_notification": true
+}

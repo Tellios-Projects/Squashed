@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "squashed:Block{minecraft:diorite}_reverse",
+  "ingredients": [
+    {
+      "item": "squashed:crammed_diorite"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "squashed:compressed_diorite"
+  }
+}

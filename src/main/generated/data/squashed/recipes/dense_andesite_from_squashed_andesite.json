@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "squashed:Block{minecraft:andesite}_reverse",
+  "ingredients": [
+    {
+      "item": "squashed:squashed_andesite"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "squashed:dense_andesite"
+  }
+}
