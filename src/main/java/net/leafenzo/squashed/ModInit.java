@@ -22,6 +22,7 @@ public class ModInit implements ModInitializer {
         ModFabricRegistries.registerOxidizableBlocks();
         ModFabricRegistries.registerFlammableBlocks();
         ModFabricRegistries.registerFuels();
+        ModFabricRegistries.registerCompostingChances();
     }
 }
 
