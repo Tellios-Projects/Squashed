@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_name_tag": {
+    "has_bundled_arrows": {
       "conditions": {
         "items": [
           {
             "items": [
-              "minecraft:name_tag"
+              "squashed:bundled_arrows"
             ]
           }
         ]
@@ -15,20 +15,20 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:bundled_nametags"
+        "recipe": "minecraft:arrow_from_bundled_arrows"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
   },
   "requirements": [
     [
-      "has_name_tag",
+      "has_bundled_arrows",
       "has_the_recipe"
     ]
   ],
   "rewards": {
     "recipes": [
-      "minecraft:bundled_nametags"
+      "minecraft:arrow_from_bundled_arrows"
     ]
   },
   "sends_telemetry_event": false

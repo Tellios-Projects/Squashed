@@ -70,6 +70,20 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         offerReversibleStackingRecipes(exporter, reverseCategory, baseItem, compactingCategory, compactItem, RecipeProvider.getRecipeName(compactItem), Super.MOD_ID + ":" + baseItem.toString(), RecipeProvider.getRecipeName(baseItem), Super.MOD_ID + ":" + baseItem.toString() + "_reverse");
     }
 
+    public static void offerReversible2x2CompactingRecipes(Consumer<RecipeJsonProvider> exporter, RecipeCategory reverseCategory, ItemConvertible baseItem, RecipeCategory compactingCategory, ItemConvertible compactItem, String compactingId, @Nullable String compactingGroup, String reverseId, @Nullable String reverseGroup) {
+        ShapelessRecipeJsonBuilder.create(reverseCategory, baseItem, 4).input(compactItem).group(reverseGroup).criterion(RecipeProvider.hasItem(compactItem), RecipeProvider.conditionsFromItem(compactItem)).offerTo(exporter, new Identifier(reverseId+"_from_"+compactingId));
+        ShapedRecipeJsonBuilder.create(compactingCategory, compactItem)
+                .input(Character.valueOf('#'), baseItem)
+                .pattern("##")
+                .pattern("##")
+                .group(compactingGroup)
+                .criterion(RecipeProvider.hasItem(baseItem), RecipeProvider.conditionsFromItem(baseItem))
+                .offerTo(exporter, new Identifier(compactingId+"_from_"+reverseId));
+    }
+    public static void offerReversible2x2CompactingRecipes(Consumer<RecipeJsonProvider> exporter, RecipeCategory reverseCategory, ItemConvertible baseItem, RecipeCategory compactingCategory, ItemConvertible compactItem) {
+        offerReversible2x2CompactingRecipes(exporter, reverseCategory, baseItem, compactingCategory, compactItem, RecipeProvider.getRecipeName(compactItem), Super.MOD_ID + ":" + baseItem.toString(), RecipeProvider.getRecipeName(baseItem), Super.MOD_ID + ":" + baseItem.toString() + "_reverse");
+    }
+
 //    public static void offerReversibleCompactingRecipes(Consumer<RecipeJsonProvider> exporter, ItemConvertible baseItem, ItemConvertible compactItem) {
 //        offerReversibleCompactingRecipes(exporter, RecipeCategory.MISC, baseItem, RecipeCategory.BUILDING_BLOCKS, compactItem, RecipeProvider.getRecipeName(compactItem), Super.MOD_ID + ":" + baseItem.toString(), RecipeProvider.getRecipeName(baseItem), Super.MOD_ID + ":" + baseItem.toString() + "_reverse");
 //    }
@@ -364,25 +378,12 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         offerReversibleCompactingRecipes(exporter, RecipeCategory.MISC, Items.AMETHYST_SHARD, RecipeCategory.BUILDING_BLOCKS, ModBlocks.AMETHYST_SHARD_BLOCK);
         offerReversibleCompactingRecipes(exporter, RecipeCategory.MISC, Items.QUARTZ, RecipeCategory.BUILDING_BLOCKS, ModBlocks.CRYSTAL_QUARTZ_BLOCK);
 
-        offerReversibleCompactingRecipes(exporter, RecipeCategory.MISC, Items.ARROW, RecipeCategory.MISC, ModItems.BUNDLED_ARROWS);
-        offerReversibleCompactingRecipes(exporter, RecipeCategory.MISC, Items.GLASS_BOTTLE, RecipeCategory.MISC, ModItems.BUNDLED_BOTTLES);
-        offerReversibleCompactingRecipes(exporter, RecipeCategory.MISC, Items.LEAD, RecipeCategory.MISC, ModItems.BUNDLED_LEADS);
-        offerReversibleCompactingRecipes(exporter, RecipeCategory.MISC, Items.NAME_TAG, RecipeCategory.MISC, ModItems.BUNDLED_NAMETAGS);
-        offerReversibleCompactingRecipes(exporter, RecipeCategory.MISC, Items.SPECTRAL_ARROW, RecipeCategory.MISC, ModItems.BUNDLED_SPECTRAL_ARROWS);
-//        offerReversibleCompactingRecipes(exporter, RecipeCategory.MISC, Items.STICK, RecipeCategory.MISC, ModItems.BUNDLED_STICKS);
-        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.BUNDLED_STICKS, 1)
-                .input(Character.valueOf('T'), Items.STICK)
-                .input(Character.valueOf('S'), Items.STRING)
-                .pattern("TST")
-                .pattern("TTT")
-                .pattern("TTT")
-                .criterion("has_stick", FabricRecipeProvider.conditionsFromItem(Items.STICK))
-                .criterion("has_string", FabricRecipeProvider.conditionsFromItem(Items.STRING))
-                .offerTo(exporter);
-        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, Items.STICK, 8)
-                .input(ModItems.BUNDLED_STICKS)
-                .criterion("has_bundled_sticks", FabricRecipeProvider.conditionsFromItem(ModItems.BUNDLED_STICKS))
-                .offerTo(exporter, getItemId(Items.STICK).getPath() + "_from_" + getItemId(ModItems.BUNDLED_STICKS).getPath());
+        offerReversible2x2CompactingRecipes(exporter, RecipeCategory.MISC, Items.ARROW, RecipeCategory.MISC, ModItems.BUNDLED_ARROWS);
+        offerReversible2x2CompactingRecipes(exporter, RecipeCategory.MISC, Items.GLASS_BOTTLE, RecipeCategory.MISC, ModItems.BUNDLED_BOTTLES);
+        offerReversible2x2CompactingRecipes(exporter, RecipeCategory.MISC, Items.LEAD, RecipeCategory.MISC, ModItems.BUNDLED_LEADS);
+        offerReversible2x2CompactingRecipes(exporter, RecipeCategory.MISC, Items.NAME_TAG, RecipeCategory.MISC, ModItems.BUNDLED_NAMETAGS);
+        offerReversible2x2CompactingRecipes(exporter, RecipeCategory.MISC, Items.SPECTRAL_ARROW, RecipeCategory.MISC, ModItems.BUNDLED_SPECTRAL_ARROWS);
+        offerReversible2x2CompactingRecipes(exporter, RecipeCategory.MISC, Items.STICK, RecipeCategory.MISC, ModItems.BUNDLED_STICKS);
 
         offerReversibleStackingRecipes(exporter, RecipeCategory.MISC, Items.BOWL, RecipeCategory.MISC, ModItems.STACKED_BOWLS);
         offerReversibleStackingRecipes(exporter, RecipeCategory.MISC, Items.BUCKET, RecipeCategory.MISC, ModItems.STACKED_BUCKETS);

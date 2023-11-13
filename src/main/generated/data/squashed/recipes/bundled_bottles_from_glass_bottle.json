@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "squashed:glass_bottle",
+  "key": {
+    "#": {
+      "item": "minecraft:glass_bottle"
+    }
+  },
+  "pattern": [
+    "##",
+    "##"
+  ],
+  "result": {
+    "item": "squashed:bundled_bottles"
+  },
+  "show_notification": true
+}

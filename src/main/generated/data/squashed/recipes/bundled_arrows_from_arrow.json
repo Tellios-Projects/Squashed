@@ -1,18 +1,18 @@
 {
   "type": "minecraft:crafting_shaped",
   "category": "misc",
+  "group": "squashed:arrow",
   "key": {
     "#": {
-      "item": "minecraft:spectral_arrow"
+      "item": "minecraft:arrow"
     }
   },
   "pattern": [
-    "###",
-    "###",
-    "###"
+    "##",
+    "##"
   ],
   "result": {
-    "item": "squashed:bundled_spectral_arrows"
+    "item": "squashed:bundled_arrows"
   },
   "show_notification": true
 }

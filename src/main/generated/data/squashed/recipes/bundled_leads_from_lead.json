@@ -1,18 +1,18 @@
 {
   "type": "minecraft:crafting_shaped",
   "category": "misc",
+  "group": "squashed:lead",
   "key": {
     "#": {
-      "item": "minecraft:arrow"
+      "item": "minecraft:lead"
     }
   },
   "pattern": [
-    "###",
-    "###",
-    "###"
+    "##",
+    "##"
   ],
   "result": {
-    "item": "squashed:bundled_arrows"
+    "item": "squashed:bundled_leads"
   },
   "show_notification": true
 }

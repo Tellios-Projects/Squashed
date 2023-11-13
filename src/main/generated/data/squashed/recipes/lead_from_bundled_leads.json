@@ -1,13 +1,14 @@
 {
   "type": "minecraft:crafting_shapeless",
   "category": "misc",
+  "group": "squashed:lead_reverse",
   "ingredients": [
     {
       "item": "squashed:bundled_leads"
     }
   ],
   "result": {
-    "count": 9,
+    "count": 4,
     "item": "minecraft:lead"
   }
 }

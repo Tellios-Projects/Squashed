@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_lead": {
+    "has_stick": {
       "conditions": {
         "items": [
           {
             "items": [
-              "minecraft:lead"
+              "minecraft:stick"
             ]
           }
         ]
@@ -15,20 +15,20 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:bundled_leads"
+        "recipe": "minecraft:bundled_sticks_from_stick"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
   },
   "requirements": [
     [
-      "has_lead",
+      "has_stick",
       "has_the_recipe"
     ]
   ],
   "rewards": {
     "recipes": [
-      "minecraft:bundled_leads"
+      "minecraft:bundled_sticks_from_stick"
     ]
   },
   "sends_telemetry_event": false

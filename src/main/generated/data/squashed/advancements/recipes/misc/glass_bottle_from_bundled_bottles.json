@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_glass_bottle": {
+    "has_bundled_bottles": {
       "conditions": {
         "items": [
           {
             "items": [
-              "minecraft:glass_bottle"
+              "squashed:bundled_bottles"
             ]
           }
         ]
@@ -15,20 +15,20 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:bundled_bottles"
+        "recipe": "minecraft:glass_bottle_from_bundled_bottles"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
   },
   "requirements": [
     [
-      "has_glass_bottle",
+      "has_bundled_bottles",
       "has_the_recipe"
     ]
   ],
   "rewards": {
     "recipes": [
-      "minecraft:bundled_bottles"
+      "minecraft:glass_bottle_from_bundled_bottles"
     ]
   },
   "sends_telemetry_event": false

@@ -1,13 +1,14 @@
 {
   "type": "minecraft:crafting_shapeless",
   "category": "misc",
+  "group": "squashed:glass_bottle_reverse",
   "ingredients": [
     {
       "item": "squashed:bundled_bottles"
     }
   ],
   "result": {
-    "count": 9,
+    "count": 4,
     "item": "minecraft:glass_bottle"
   }
 }
