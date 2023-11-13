@@ -141,7 +141,7 @@ public class ModModelProvider extends FabricModelProvider {
         for(Block block : ModBlocks.COMPACTED_TUFF) { blockStateModelGenerator.registerCubeAllModelTexturePool(block); }
         for(Block block : ModBlocks.COMPACTED_BLACKSTONE) { blockStateModelGenerator.registerCubeAllModelTexturePool(block); }
         for(Block block : ModBlocks.COMPACTED_OBSIDIAN) { blockStateModelGenerator.registerCubeAllModelTexturePool(block); }
-        for(Block block : ModBlocks.COMPACTED_DEEPSLATE) { blockStateModelGenerator.registerAxisRotated(block, TexturedModel.CUBE_TOP); }
+        for(Block block : ModBlocks.COMPACTED_DEEPSLATE) { blockStateModelGenerator.registerCubeAllModelTexturePool(block); }
         for(Block block : ModBlocks.COMPACTED_NETHERRACK) { blockStateModelGenerator.registerCubeAllModelTexturePool(block); }
         for(Block block : ModBlocks.COMPACTED_END_STONE) { blockStateModelGenerator.registerCubeAllModelTexturePool(block); }
         for(Block block : ModBlocks.COMPACTED_DIORITE) { blockStateModelGenerator.registerCubeAllModelTexturePool(block); }
@@ -172,6 +172,7 @@ public class ModModelProvider extends FabricModelProvider {
         for(Block block : ModBlocks.COMPACTED_EMERALD_BLOCKS) { blockStateModelGenerator.registerCubeAllModelTexturePool(block); }
         for(Block block : ModBlocks.COMPACTED_LAPIS_BLOCKS) { blockStateModelGenerator.registerCubeAllModelTexturePool(block); }
         for(Block block : ModBlocks.COMPACTED_AMETHYST_BLOCKS) { blockStateModelGenerator.registerCubeAllModelTexturePool(block); }
+        for(Block block : ModBlocks.COMPACTED_BONE_BLOCKS) { blockStateModelGenerator.registerCubeAllModelTexturePool(block); }
         for(Block block : ModBlocks.COMPACTED_COPPER_BLOCKS) { blockStateModelGenerator.registerCubeAllModelTexturePool(block); }
         //blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.COMPRESSED_COPPER_BLOCK); // covered by compressed copper blocks
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.EXPOSED_COMPRESSED_COPPER_BLOCK);
@@ -238,7 +239,7 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.COMPRESSED_WARPED_FUNGUS);
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.CHORUS_FRUIT_BLOCK);
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.COMPRESSED_SEAGRASS);
-        blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.COMPRESSED_CACTUS);
+        blockStateModelGenerator.registerAxisRotated(ModBlocks.COMPRESSED_CACTUS, TexturedModel.CUBE_COLUMN);
 
 
         blockStateModelGenerator.registerSingleton(ModBlocks.TROPICAL_FISH_BLOCK_A, TexturedModel.CUBE_COLUMN);
@@ -282,9 +283,9 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.PHANTOM_MEMBRANE_BLOCK);
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.COMPRESSED_NETHER_WART_BLOCK);
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.COMPRESSED_WARPED_WART_BLOCK);
-        blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.MANGROVE_ROOTS_BLOCK);
+        blockStateModelGenerator.registerAxisRotated(ModBlocks.MANGROVE_ROOTS_BLOCK, TexturedModel.CUBE_COLUMN);
         blockStateModelGenerator.registerSingleton(ModBlocks.VINE_BLOCK, TexturedModel.LEAVES);
-        blockStateModelGenerator.registerSingleton(ModBlocks.EGG_BLOCK, TexturedModel.CUBE_BOTTOM_TOP);
+        blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.EGG_BLOCK);
         registerPufferfishBlock(blockStateModelGenerator);
         blockStateModelGenerator.registerAxisRotated(ModBlocks.BONES_BLOCK, TexturedModel.CUBE_COLUMN);
         blockStateModelGenerator.registerSingleton(ModBlocks.PAPER_BLOCK, TexturedModel.CUBE_COLUMN);
@@ -308,232 +309,16 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.GUNPOWDER_BLOCK);
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.COMPRESSED_PRISMARINE);
         blockStateModelGenerator.registerAxisRotated(ModBlocks.CHARCOAL_BLOCK, TexturedModel.CUBE_COLUMN);
+        blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.SNOWBALL_BLOCK);
+        registerUpDefaultOrientable(blockStateModelGenerator, ModBlocks.AMETHYST_SHARD_BLOCK, TexturedModel.CUBE_COLUMN);
+        registerUpDefaultOrientable(blockStateModelGenerator, ModBlocks.CRYSTAL_QUARTZ_BLOCK, TexturedModel.CUBE_COLUMN);
 
         // BlockItem Models  // For anything that does not use datagen to supply models elsewhere
-//        blockStateModelGenerator.registerParentedItemModel(ModBlocks.BLAZE_ROD_BLOCK, Super.asResource("block/blaze_rod_block"));
-//        blockStateModelGenerator.registerParentedItemModel(ModBlocks.INK_SAC_BLOCK, Super.asResource("block/ink_sac_block"));
-//        blockStateModelGenerator.registerParentedItemModel(ModBlocks.STICK_BLOCK, Super.asResource("block/stick_block"));
-//        blockStateModelGenerator.registerParentedItemModel(ModBlocks.FIRE_CHARGE_BLOCK, Super.asResource("block/fire_charge_block"));
         blockStateModelGenerator.registerParentedItemModel(ModBlocks.MAGMA_CREAM_BLOCK, Super.asResource("block/magma_cream_block"));
-//        blockStateModelGenerator.registerParentedItemModel(ModBlocks.BLAZE_POWDER_BLOCK, Super.asResource("block/blaze_powder_block"));
-//        blockStateModelGenerator.registerParentedItemModel(ModBlocks.RAW_SALMON_BLOCK, Super.asResource("block/raw_salmon_block"));
-//        blockStateModelGenerator.registerParentedItemModel(ModBlocks.COOKED_SALMON_BLOCK, Super.asResource("block/cooked_salmon_block"));
-//        blockStateModelGenerator.registerParentedItemModel(ModBlocks.RAW_COD_BLOCK, Super.asResource("block/raw_cod_block"));
-//        blockStateModelGenerator.registerParentedItemModel(ModBlocks.COOKED_COD_BLOCK, Super.asResource("block/cooked_cod_block"));
-//        blockStateModelGenerator.registerParentedItemModel(ModBlocks.RAW_RABBIT_BLOCK, Super.asResource("block/raw_rabbit_block"));
-//        blockStateModelGenerator.registerParentedItemModel(ModBlocks.COOKED_RABBIT_BLOCK, Super.asResource("block/cooked_rabbit_block"));
-//        blockStateModelGenerator.registerParentedItemModel(ModBlocks.RAW_MUTTON_BLOCK, Super.asResource("block/raw_mutton_block"));
-//        blockStateModelGenerator.registerParentedItemModel(ModBlocks.COOKED_MUTTON_BLOCK, Super.asResource("block/cooked_mutton_block"));
-//        blockStateModelGenerator.registerParentedItemModel(ModBlocks.RAW_CHICKEN_BLOCK, Super.asResource("block/raw_chicken_block"));
-//        blockStateModelGenerator.registerParentedItemModel(ModBlocks.COOKED_CHICKEN_BLOCK, Super.asResource("block/cooked_chicken_block"));
-//        blockStateModelGenerator.registerParentedItemModel(ModBlocks.RAW_BEEF_BLOCK, Super.asResource("block/raw_beef_block"));
-//        blockStateModelGenerator.registerParentedItemModel(ModBlocks.COOKED_BEEF_BLOCK, Super.asResource("block/cooked_beef_block"));
-//        blockStateModelGenerator.registerParentedItemModel(ModBlocks.RAW_PORK_BLOCK, Super.asResource("block/raw_pork_block"));
-//        blockStateModelGenerator.registerParentedItemModel(ModBlocks.COOKED_PORK_BLOCK, Super.asResource("block/cooked_pork_block"));
-//        blockStateModelGenerator.registerParentedItemModel(ModBlocks.ROTTEN_FLESH_BLOCK, Super.asResource("block/rotten_flesh_block"));
-//        blockStateModelGenerator.registerParentedItemModel(ModBlocks.SPIDER_EYE_BLOCK, Super.asResource("block/spider_eye_block"));
-//        blockStateModelGenerator.registerParentedItemModel(ModBlocks.WHEAT_SEED_BLOCK, Super.asResource("block/wheat_seed_block"));
-//        blockStateModelGenerator.registerParentedItemModel(ModBlocks.PUMPKIN_SEED_BLOCK, Super.asResource("block/pumpkin_seed_block"));
-//        blockStateModelGenerator.registerParentedItemModel(ModBlocks.BEETROOT_SEED_BLOCK, Super.asResource("block/beetroot_seed_block"));
-//        blockStateModelGenerator.registerParentedItemModel(ModBlocks.MELON_SEED_BLOCK, Super.asResource("block/melon_seed_block"));
-//        blockStateModelGenerator.registerParentedItemModel(ModBlocks.COCOA_BEAN_BLOCK, Super.asResource("block/cocoa_bean_block"));
-//        blockStateModelGenerator.registerParentedItemModel(ModBlocks.DEAD_BUSH_BLOCK, Super.asResource("block/dead_bush_block"));
-//        blockStateModelGenerator.registerParentedItemModel(ModBlocks.GLOW_BERRIES_BLOCK, Super.asResource("block/glow_berries_block"));
-//        blockStateModelGenerator.registerParentedItemModel(ModBlocks.SWEET_BERRIES_BLOCK, Super.asResource("block/sweet_berries_block"));
-//        blockStateModelGenerator.registerParentedItemModel(ModBlocks.GRASS_CLIPPINGS_BLOCK, Super.asResource("block/grass_clippings_block"));
-//        blockStateModelGenerator.registerParentedItemModel(ModBlocks.FERN_BLOCK, Super.asResource("block/fern_block"));
-//        blockStateModelGenerator.registerParentedItemModel(ModBlocks.GLOW_LICHEN_BLOCK, Super.asResource("block/glow_lichen_block"));
-//        blockStateModelGenerator.registerParentedItemModel(ModBlocks.COMPRESSED_PUMPKIN, Super.asResource("block/pumpkin_pile"));
-//        blockStateModelGenerator.registerParentedItemModel(ModBlocks.COMPRESSED_HAY_BLOCK, Super.asResource("block/hay_pile"));
-//        blockStateModelGenerator.registerParentedItemModel(ModBlocks.COMPRESSED_MELON, Super.asResource("block/melon_pile"));
-//        blockStateModelGenerator.registerParentedItemModel(ModBlocks.SUGARCANE_BLOCK, Super.asResource("block/sugarcane_block"));
         blockStateModelGenerator.registerParentedItemModel(ModBlocks.SEA_PICKLE_BLOCK, Super.asResource("block/sea_pickle_block"));
-//        blockStateModelGenerator.registerParentedItemModel(ModBlocks.COMPRESSED_SOUL_SAND, Super.asResource("block/compressed_soul_sand"));
-//        blockStateModelGenerator.registerParentedItemModel(ModBlocks.SQUASHED_SOUL_SAND, Super.asResource("block/super_compressed_soul_sand"));
-//        blockStateModelGenerator.registerParentedItemModel(ModBlocks.COMPRESSED_COBBLESTONE, Super.asResource("block/compressed_cobblestone"));
-//        blockStateModelGenerator.registerParentedItemModel(ModBlocks.SQUASHED_COBBLESTONE, Super.asResource("block/super_compressed_cobblestone"));
-//        blockStateModelGenerator.registerParentedItemModel(ModBlocks.COMPRESSED_STONE, Super.asResource("block/compressed_stone"));
-//        blockStateModelGenerator.registerParentedItemModel(ModBlocks.SQUASHED_STONE, Super.asResource("block/super_compressed_stone"));
-//        blockStateModelGenerator.registerParentedItemModel(ModBlocks.COMPRESSED_ANDESITE, Super.asResource("block/compressed_andesite"));
-//        blockStateModelGenerator.registerParentedItemModel(ModBlocks.SQUASHED_ANDESITE, Super.asResource("block/super_compressed_andesite"));
-//        blockStateModelGenerator.registerParentedItemModel(ModBlocks.COMPRESSED_GRAVEL, Super.asResource("block/compressed_gravel"));
-//        blockStateModelGenerator.registerParentedItemModel(ModBlocks.SQUASHED_GRAVEL, Super.asResource("block/super_compressed_gravel"));
-//        blockStateModelGenerator.registerParentedItemModel(ModBlocks.COMPRESSED_TUFF, Super.asResource("block/compressed_tuff"));
-//        blockStateModelGenerator.registerParentedItemModel(ModBlocks.SQUASHED_TUFF, Super.asResource("block/super_compressed_tuff"));
-//        blockStateModelGenerator.registerParentedItemModel(ModBlocks.COMPRESSED_BLACKSTONE, Super.asResource("block/compressed_blackstone"));
-//        blockStateModelGenerator.registerParentedItemModel(ModBlocks.SQUASHED_BLACKSTONE, Super.asResource("block/super_compressed_blackstone"));
-//        blockStateModelGenerator.registerParentedItemModel(ModBlocks.COMPRESSED_OBSIDIAN, Super.asResource("block/compressed_obsidian"));
-//        blockStateModelGenerator.registerParentedItemModel(ModBlocks.SQUASHED_OBSIDIAN, Super.asResource("block/super_compressed_obsidian"));
-//        blockStateModelGenerator.registerParentedItemModel(ModBlocks.COMPRESSED_DEEPSLATE, Super.asResource("block/compressed_deepslate"));
-//        blockStateModelGenerator.registerParentedItemModel(ModBlocks.SQUASHED_DEEPSLATE, Super.asResource("block/super_compressed_deepslate"));
-//        blockStateModelGenerator.registerParentedItemModel(ModBlocks.COMPRESSED_NETHERRACK, Super.asResource("block/compressed_netherrack"));
-//        blockStateModelGenerator.registerParentedItemModel(ModBlocks.SQUASHED_NETHERRACK, Super.asResource("block/super_compressed_netherrack"));
-//        blockStateModelGenerator.registerParentedItemModel(ModBlocks.COMPRESSED_END_STONE, Super.asResource("block/compressed_end_stone"));
-//        blockStateModelGenerator.registerParentedItemModel(ModBlocks.SQUASHED_END_STONE, Super.asResource("block/super_compressed_end_stone"));
-//        blockStateModelGenerator.registerParentedItemModel(ModBlocks.COMPRESSED_DIORITE, Super.asResource("block/compressed_diorite"));
-//        blockStateModelGenerator.registerParentedItemModel(ModBlocks.SQUASHED_DIORITE, Super.asResource("block/super_compressed_diorite"));
-//        blockStateModelGenerator.registerParentedItemModel(ModBlocks.COMPRESSED_GRANITE, Super.asResource("block/compressed_granite"));
-//        blockStateModelGenerator.registerParentedItemModel(ModBlocks.SQUASHED_GRANITE, Super.asResource("block/super_compressed_granite"));
-//        blockStateModelGenerator.registerParentedItemModel(ModBlocks.COMPRESSED_DIRT, Super.asResource("block/compressed_dirt"));
-//        blockStateModelGenerator.registerParentedItemModel(ModBlocks.SQUASHED_DIRT, Super.asResource("block/super_compressed_dirt"));
-//        blockStateModelGenerator.registerParentedItemModel(ModBlocks.COMPRESSED_SAND, Super.asResource("block/compressed_sand"));
-//        blockStateModelGenerator.registerParentedItemModel(ModBlocks.SQUASHED_SAND, Super.asResource("block/super_compressed_sand"));
-//        blockStateModelGenerator.registerParentedItemModel(ModBlocks.COMPRESSED_DRIPSTONE, Super.asResource("block/compressed_dripstone"));
-//        blockStateModelGenerator.registerParentedItemModel(ModBlocks.SQUASHED_CALCITE, Super.asResource("block/compressed_calcite"));
-//        blockStateModelGenerator.registerParentedItemModel(ModBlocks.COMPRESSED_MUD, Super.asResource("block/compressed_mud"));
-//        blockStateModelGenerator.registerParentedItemModel(ModBlocks.COMPRESSED_MOSS, Super.asResource("block/compressed_moss"));
-//        blockStateModelGenerator.registerParentedItemModel(ModBlocks.COMPRESSED_CLAY, Super.asResource("block/compressed_clay"));
-//        blockStateModelGenerator.registerParentedItemModel(ModBlocks.COMPRESSED_RED_SAND, Super.asResource("block/compressed_red_sand"));
-//        blockStateModelGenerator.registerParentedItemModel(ModBlocks.SQUASHED_RED_SAND, Super.asResource("block/super_compressed_red_sand"));
-//        blockStateModelGenerator.registerParentedItemModel(ModBlocks.COMPRESSED_MAGMA_BLOCK, Super.asResource("block/compressed_magma_block"));
-//        blockStateModelGenerator.registerParentedItemModel(ModBlocks.WHITE_DYE_BLOCK, Super.asResource("block/white_dye_block"));
-//        blockStateModelGenerator.registerParentedItemModel(ModBlocks.ORANGE_DYE_BLOCK, Super.asResource("block/orange_dye_block"));
-//        blockStateModelGenerator.registerParentedItemModel(ModBlocks.MAGENTA_DYE_BLOCK, Super.asResource("block/magenta_dye_block"));
-//        blockStateModelGenerator.registerParentedItemModel(ModBlocks.LIGHT_BLUE_DYE_BLOCK, Super.asResource("block/light_blue_dye_block"));
-//        blockStateModelGenerator.registerParentedItemModel(ModBlocks.YELLOW_DYE_BLOCK, Super.asResource("block/yellow_dye_block"));
-//        blockStateModelGenerator.registerParentedItemModel(ModBlocks.LIME_DYE_BLOCK, Super.asResource("block/lime_dye_block"));
-//        blockStateModelGenerator.registerParentedItemModel(ModBlocks.PINK_DYE_BLOCK, Super.asResource("block/pink_dye_block"));
-//        blockStateModelGenerator.registerParentedItemModel(ModBlocks.GRAY_DYE_BLOCK, Super.asResource("block/gray_dye_block"));
-//        blockStateModelGenerator.registerParentedItemModel(ModBlocks.LIGHT_GRAY_DYE_BLOCK, Super.asResource("block/light_gray_dye_block"));
-//        blockStateModelGenerator.registerParentedItemModel(ModBlocks.CYAN_DYE_BLOCK, Super.asResource("block/cyan_dye_block"));
-//        blockStateModelGenerator.registerParentedItemModel(ModBlocks.PURPLE_DYE_BLOCK, Super.asResource("block/purple_dye_block"));
-//        blockStateModelGenerator.registerParentedItemModel(ModBlocks.BLUE_DYE_BLOCK, Super.asResource("block/blue_dye_block"));
-//        blockStateModelGenerator.registerParentedItemModel(ModBlocks.BROWN_DYE_BLOCK, Super.asResource("block/brown_dye_block"));
-//        blockStateModelGenerator.registerParentedItemModel(ModBlocks.GREEN_DYE_BLOCK, Super.asResource("block/green_dye_block"));
-//        blockStateModelGenerator.registerParentedItemModel(ModBlocks.RED_DYE_BLOCK, Super.asResource("block/red_dye_block"));
-//        blockStateModelGenerator.registerParentedItemModel(ModBlocks.BLACK_DYE_BLOCK, Super.asResource("block/black_dye_block"));
-//        blockStateModelGenerator.registerParentedItemModel(ModBlocks.COMPRESSED_BASALT, Super.asResource("block/compressed_basalt"));
-//        blockStateModelGenerator.registerParentedItemModel(ModBlocks.SUPER_COMPRESSED_BASALT, Super.asResource("block/super_compressed_basalt"));
-//        blockStateModelGenerator.registerParentedItemModel(ModBlocks.WHITE_COMPRESSED_WOOL, Super.asResource("block/white_compressed_wool"));
-//        blockStateModelGenerator.registerParentedItemModel(ModBlocks.ORANGE_COMPRESSED_WOOL, Super.asResource("block/orange_compressed_wool"));
-//        blockStateModelGenerator.registerParentedItemModel(ModBlocks.MAGENTA_COMPRESSED_WOOL, Super.asResource("block/magenta_compressed_wool"));
-//        blockStateModelGenerator.registerParentedItemModel(ModBlocks.LIGHT_BLUE_COMPRESSED_WOOL, Super.asResource("block/light_blue_compressed_wool"));
-//        blockStateModelGenerator.registerParentedItemModel(ModBlocks.YELLOW_COMPRESSED_WOOL, Super.asResource("block/yellow_compressed_wool"));
-//        blockStateModelGenerator.registerParentedItemModel(ModBlocks.LIME_COMPRESSED_WOOL, Super.asResource("block/lime_compressed_wool"));
-//        blockStateModelGenerator.registerParentedItemModel(ModBlocks.PINK_COMPRESSED_WOOL, Super.asResource("block/pink_compressed_wool"));
-//        blockStateModelGenerator.registerParentedItemModel(ModBlocks.GRAY_COMPRESSED_WOOL, Super.asResource("block/gray_compressed_wool"));
-//        blockStateModelGenerator.registerParentedItemModel(ModBlocks.LIGHT_GRAY_COMPRESSED_WOOL, Super.asResource("block/light_gray_compressed_wool"));
-//        blockStateModelGenerator.registerParentedItemModel(ModBlocks.CYAN_COMPRESSED_WOOL, Super.asResource("block/cyan_compressed_wool"));
-//        blockStateModelGenerator.registerParentedItemModel(ModBlocks.PURPLE_COMPRESSED_WOOL, Super.asResource("block/purple_compressed_wool"));
-//        blockStateModelGenerator.registerParentedItemModel(ModBlocks.BLUE_COMPRESSED_WOOL, Super.asResource("block/blue_compressed_wool"));
-//        blockStateModelGenerator.registerParentedItemModel(ModBlocks.BROWN_COMPRESSED_WOOL, Super.asResource("block/brown_compressed_wool"));
-//        blockStateModelGenerator.registerParentedItemModel(ModBlocks.GREEN_COMPRESSED_WOOL, Super.asResource("block/green_compressed_wool"));
-//        blockStateModelGenerator.registerParentedItemModel(ModBlocks.RED_COMPRESSED_WOOL, Super.asResource("block/red_compressed_wool"));
-//        blockStateModelGenerator.registerParentedItemModel(ModBlocks.BLACK_COMPRESSED_WOOL, Super.asResource("block/black_compressed_wool"));
-//        blockStateModelGenerator.registerParentedItemModel(ModBlocks.BOOK_BLOCK, Super.asResource("block/book_block"));
-//        blockStateModelGenerator.registerParentedItemModel(ModBlocks.COMPRESSED_OAK_LEAVES, Super.asResource("block/compressed_oak_leaves"));
-//        blockStateModelGenerator.registerParentedItemModel(ModBlocks.COMPRESSED_SPRUCE_LEAVES, Super.asResource("block/compressed_spruce_leaves"));
-//        blockStateModelGenerator.registerParentedItemModel(ModBlocks.COMPRESSED_BIRCH_LEAVES, Super.asResource("block/compressed_birch_leaves"));
-//        blockStateModelGenerator.registerParentedItemModel(ModBlocks.COMPRESSED_JUNGLE_LEAVES, Super.asResource("block/compressed_jungle_leaves"));
-//        blockStateModelGenerator.registerParentedItemModel(ModBlocks.COMPRESSED_ACACIA_LEAVES, Super.asResource("block/compressed_acacia_leaves"));
-//        blockStateModelGenerator.registerParentedItemModel(ModBlocks.COMPRESSED_DARK_OAK_LEAVES, Super.asResource("block/compressed_dark_oak_leaves"));
-//        blockStateModelGenerator.registerParentedItemModel(ModBlocks.COMPRESSED_MANGROVE_LEAVES, Super.asResource("block/compressed_mangrove_leaves"));
-//        blockStateModelGenerator.registerParentedItemModel(ModBlocks.COMPRESSED_AZALEA_LEAVES, Super.asResource("block/compressed_azalea_leaves"));
-//        blockStateModelGenerator.registerParentedItemModel(ModBlocks.COMPRESSED_FLOWERING_AZALEA_LEAVES, Super.asResource("block/compressed_flowering_azalea_leaves"));
-//        blockStateModelGenerator.registerParentedItemModel(ModBlocks.LEATHER_BLOCK, Super.asResource("block/leather_block"));
-//        //blockStateModelGenerator.registerParentedItemModel(ModBlocks.CHOIR_BLOCK, Super.asResource("block/choir_block")); //UNUSED
-//        blockStateModelGenerator.registerParentedItemModel(ModBlocks.COMPRESSED_OAK_LOG, Super.asResource("block/compressed_oak_log"));
-//        blockStateModelGenerator.registerParentedItemModel(ModBlocks.COMPRESSED_SPRUCE_LOG, Super.asResource("block/compressed_spruce_log"));
-//        blockStateModelGenerator.registerParentedItemModel(ModBlocks.COMPRESSED_BIRCH_LOG, Super.asResource("block/compressed_birch_log"));
-//        blockStateModelGenerator.registerParentedItemModel(ModBlocks.COMPRESSED_JUNGLE_LOG, Super.asResource("block/compressed_jungle_log"));
-//        blockStateModelGenerator.registerParentedItemModel(ModBlocks.COMPRESSED_ACACIA_LOG, Super.asResource("block/compressed_acacia_log"));
-//        blockStateModelGenerator.registerParentedItemModel(ModBlocks.COMPRESSED_DARK_OAK_LOG, Super.asResource("block/compressed_dark_oak_log"));
-//        blockStateModelGenerator.registerParentedItemModel(ModBlocks.COMPRESSED_MANGROVE_LOG, Super.asResource("block/compressed_mangrove_log"));
-//        blockStateModelGenerator.registerParentedItemModel(ModBlocks.COMPRESSED_CRIMSON_STEM, Super.asResource("block/compressed_crimson_stem"));
-//        blockStateModelGenerator.registerParentedItemModel(ModBlocks.COMPRESSED_WARPED_STEM, Super.asResource("block/compressed_warped_stem"));
-//        blockStateModelGenerator.registerParentedItemModel(ModBlocks.COMPRESSED_BAMBOO, Super.asResource("block/compressed_bamboo"));
-//        blockStateModelGenerator.registerParentedItemModel(ModBlocks.COMPRESSED_OAK_SAPLING, Super.asResource("block/compressed_oak_sapling"));
-//        blockStateModelGenerator.registerParentedItemModel(ModBlocks.COMPRESSED_SPRUCE_SAPLING, Super.asResource("block/compressed_spruce_sapling"));
-//        blockStateModelGenerator.registerParentedItemModel(ModBlocks.COMPRESSED_BIRCH_SAPLING, Super.asResource("block/compressed_birch_sapling"));
-//        blockStateModelGenerator.registerParentedItemModel(ModBlocks.COMPRESSED_JUNGLE_SAPLING, Super.asResource("block/compressed_jungle_sapling"));
-//        blockStateModelGenerator.registerParentedItemModel(ModBlocks.COMPRESSED_ACACIA_SAPLING, Super.asResource("block/compressed_acacia_sapling"));
-//        blockStateModelGenerator.registerParentedItemModel(ModBlocks.COMPRESSED_DARK_OAK_SAPLING, Super.asResource("block/compressed_dark_oak_sapling"));
-//        blockStateModelGenerator.registerParentedItemModel(ModBlocks.COMPRESSED_AZALEA_SAPLING, Super.asResource("block/compressed_azalea_sapling"));
-//        blockStateModelGenerator.registerParentedItemModel(ModBlocks.COMPRESSED_FLOWERING_AZALEA_SAPLING, Super.asResource("block/compressed_flowering_azalea_sapling"));
-//        blockStateModelGenerator.registerParentedItemModel(ModBlocks.COMPRESSED_MANGROVE_PROPAGULE, Super.asResource("block/compressed_mangrove_propagule"));
-//        blockStateModelGenerator.registerParentedItemModel(ModBlocks.COMPRESSED_CRIMSON_FUNGUS, Super.asResource("block/compressed_crimson_fungus"));
-//        blockStateModelGenerator.registerParentedItemModel(ModBlocks.COMPRESSED_WARPED_FUNGUS, Super.asResource("block/compressed_warped_fungus"));
-//        blockStateModelGenerator.registerParentedItemModel(ModBlocks.CHORUS_FRUIT_BLOCK, Super.asResource("block/chorus_fruit_block"));
-//        blockStateModelGenerator.registerParentedItemModel(ModBlocks.COMPRESSED_SEAGRASS, Super.asResource("block/compressed_seagrass"));
-//        blockStateModelGenerator.registerParentedItemModel(ModBlocks.COMPRESSED_CACTUS, Super.asResource("block/compressed_cactus"));
-//        blockStateModelGenerator.registerParentedItemModel(ModBlocks.TROPICAL_FISH_BLOCK_A, Super.asResource("block/tropical_fish_block_a"));
-//        blockStateModelGenerator.registerParentedItemModel(ModBlocks.TROPICAL_FISH_BLOCK_B, Super.asResource("block/tropical_fish_block_b"));
-//        blockStateModelGenerator.registerParentedItemModel(ModBlocks.TROPICAL_FISH_BLOCK_C, Super.asResource("block/tropical_fish_block_c"));
-//        blockStateModelGenerator.registerParentedItemModel(ModBlocks.TROPICAL_FISH_BLOCK_D, Super.asResource("block/tropical_fish_block_d"));
-//        blockStateModelGenerator.registerParentedItemModel(ModBlocks.TROPICAL_FISH_BLOCK_E, Super.asResource("block/tropical_fish_block_e"));
-//        blockStateModelGenerator.registerParentedItemModel(ModBlocks.TROPICAL_FISH_BLOCK_F, Super.asResource("block/tropical_fish_block_f"));
-//        blockStateModelGenerator.registerParentedItemModel(ModBlocks.TROPICAL_FISH_BLOCK_G, Super.asResource("block/tropical_fish_block_g"));
-//        blockStateModelGenerator.registerParentedItemModel(ModBlocks.TROPICAL_FISH_BLOCK_H, Super.asResource("block/tropical_fish_block_h"));
-//        blockStateModelGenerator.registerParentedItemModel(ModBlocks.TROPICAL_FISH_BLOCK_I, Super.asResource("block/tropical_fish_block_i"));
-//        blockStateModelGenerator.registerParentedItemModel(ModBlocks.TROPICAL_FISH_BLOCK_J, Super.asResource("block/tropical_fish_block_j"));
-//        blockStateModelGenerator.registerParentedItemModel(ModBlocks.TROPICAL_FISH_BLOCK_K, Super.asResource("block/tropical_fish_block_k"));
-//        blockStateModelGenerator.registerParentedItemModel(ModBlocks.TROPICAL_FISH_BLOCK_L, Super.asResource("block/tropical_fish_block_l"));
-//        blockStateModelGenerator.registerParentedItemModel(ModBlocks.TROPICAL_FISH_BLOCK_M, Super.asResource("block/tropical_fish_block_m"));
-//        blockStateModelGenerator.registerParentedItemModel(ModBlocks.TROPICAL_FISH_BLOCK_N, Super.asResource("block/tropical_fish_block_n"));
-//        blockStateModelGenerator.registerParentedItemModel(ModBlocks.TROPICAL_FISH_BLOCK_O, Super.asResource("block/tropical_fish_block_o"));
-//        blockStateModelGenerator.registerParentedItemModel(ModBlocks.TROPICAL_FISH_BLOCK_P, Super.asResource("block/tropical_fish_block_p"));
-//        blockStateModelGenerator.registerParentedItemModel(ModBlocks.TROPICAL_FISH_BLOCK_Q, Super.asResource("block/tropical_fish_block_q"));
-//        blockStateModelGenerator.registerParentedItemModel(ModBlocks.TROPICAL_FISH_BLOCK_R, Super.asResource("block/tropical_fish_block_r"));
-//        blockStateModelGenerator.registerParentedItemModel(ModBlocks.TROPICAL_FISH_BLOCK_S, Super.asResource("block/tropical_fish_block_s"));
-//        blockStateModelGenerator.registerParentedItemModel(ModBlocks.TROPICAL_FISH_BLOCK_T, Super.asResource("block/tropical_fish_block_t"));
-//        blockStateModelGenerator.registerParentedItemModel(ModBlocks.PRISMARINE_CRYSTAL_BLOCK, Super.asResource("block/prismarine_crystal_block"));
-//        blockStateModelGenerator.registerParentedItemModel(ModBlocks.GLOW_INK_SAC_BLOCK, Super.asResource("block/glow_ink_sac_block"));
-//        blockStateModelGenerator.registerParentedItemModel(ModBlocks.SCUTE_BLOCK, Super.asResource("block/scute_block"));
-//        blockStateModelGenerator.registerParentedItemModel(ModBlocks.FEATHER_BLOCK, Super.asResource("block/feather_block"));
-//        blockStateModelGenerator.registerParentedItemModel(ModBlocks.GHAST_TEAR_BLOCK, Super.asResource("block/ghast_tear_block"));
-//        blockStateModelGenerator.registerParentedItemModel(ModBlocks.PHANTOM_MEMBRANE_BLOCK, Super.asResource("block/phantom_membrane_block"));
-//        blockStateModelGenerator.registerParentedItemModel(ModBlocks.COMPRESSED_NETHER_WART_BLOCK, Super.asResource("block/compressed_nether_wart_block"));
-//        blockStateModelGenerator.registerParentedItemModel(ModBlocks.COMPRESSED_WARPED_WART_BLOCK, Super.asResource("block/compressed_warped_wart_block"));
-//        blockStateModelGenerator.registerParentedItemModel(ModBlocks.MANGROVE_ROOTS_BLOCK, Super.asResource("block/mangrove_roots_block"));
-//        blockStateModelGenerator.registerParentedItemModel(ModBlocks.VINE_BLOCK, Super.asResource("block/vine_block"));
-//        blockStateModelGenerator.registerParentedItemModel(ModBlocks.EGG_BLOCK, Super.asResource("block/egg_block"));
         blockStateModelGenerator.registerParentedItemModel(ModBlocks.PUFFERFISH_BLOCK, Super.asResource("block/pufferfish_block_on"));
         blockStateModelGenerator.registerParentedItemModel(ModBlocks.COMPRESSED_SPONGE, Super.asResource("block/compressed_sponge"));
-//        blockStateModelGenerator.registerParentedItemModel(ModBlocks.BONES_BLOCK, Super.asResource("block/compressed_bone"));
-//        blockStateModelGenerator.registerParentedItemModel(ModBlocks.PAPER_BLOCK, Super.asResource("block/paper_block"));
-//        blockStateModelGenerator.registerParentedItemModel(ModBlocks.COMPRESSED_SCAFFOLDING, Super.asResource("block/compressed_scaffolding"));
-//        blockStateModelGenerator.registerParentedItemModel(ModBlocks.KELP_BLOCK, Super.asResource("block/kelp_block"));
-//        blockStateModelGenerator.registerParentedItemModel(ModBlocks.LILY_PAD_BLOCK, Super.asResource("block/lily_pad_block"));
-//        blockStateModelGenerator.registerParentedItemModel(ModBlocks.COMPRESSED_GLOWSTONE, Super.asResource("block/compressed_glowstone"));
-//        blockStateModelGenerator.registerParentedItemModel(ModBlocks.COMPRESSED_RAW_IRON_BLOCK, Super.asResource("block/compressed_raw_iron_block"));
-//        blockStateModelGenerator.registerParentedItemModel(ModBlocks.COMPRESSED_RAW_GOLD_BLOCK, Super.asResource("block/compressed_raw_gold_block"));
-//        blockStateModelGenerator.registerParentedItemModel(ModBlocks.COMPRESSED_RAW_COPPER_BLOCK, Super.asResource("block/compressed_raw_copper_block"));
-//        blockStateModelGenerator.registerParentedItemModel(ModBlocks.COMPRESSED_IRON_BLOCK, Super.asResource("block/compressed_iron_block"));
-//        blockStateModelGenerator.registerParentedItemModel(ModBlocks.COMPRESSED_REDSTONE_BLOCK, Super.asResource("block/compressed_redstone_block"));
-//        blockStateModelGenerator.registerParentedItemModel(ModBlocks.COMPRESSED_COAL_BLOCK, Super.asResource("block/compressed_coal_block"));
-//        blockStateModelGenerator.registerParentedItemModel(ModBlocks.COMPRESSED_QUARTZ_BLOCK, Super.asResource("block/compressed_quartz_block"));
-//        blockStateModelGenerator.registerParentedItemModel(ModBlocks.COMPRESSED_NETHERITE_BLOCK, Super.asResource("block/compressed_netherite_block"));
-//        blockStateModelGenerator.registerParentedItemModel(ModBlocks.COMPRESSED_GOLD_BLOCK, Super.asResource("block/compressed_gold_block"));
-//        blockStateModelGenerator.registerParentedItemModel(ModBlocks.COMPRESSED_DIAMOND_BLOCK, Super.asResource("block/compressed_diamond_block"));
-//        blockStateModelGenerator.registerParentedItemModel(ModBlocks.COMPRESSED_EMERALD_BLOCK, Super.asResource("block/compressed_emerald_block"));
-//        blockStateModelGenerator.registerParentedItemModel(ModBlocks.COMPRESSED_LAPIS_BLOCK, Super.asResource("block/compressed_lapis_block"));
-//        blockStateModelGenerator.registerParentedItemModel(ModBlocks.COMPRESSED_AMETHYST_BLOCK, Super.asResource("block/compressed_amethyst_block"));
-//        blockStateModelGenerator.registerParentedItemModel(ModBlocks.COMPRESSED_COPPER_BLOCK, Super.asResource("block/compressed_copper_block"));
-//        blockStateModelGenerator.registerParentedItemModel(ModBlocks.COMPRESSED_EXPOSED_COPPER, Super.asResource("block/compressed_exposed_copper"));
-//        blockStateModelGenerator.registerParentedItemModel(ModBlocks.WEATHERED_COMPRESSED_COPPER_BLOCK, Super.asResource("block/compressed_weathered_copper"));
-//        blockStateModelGenerator.registerParentedItemModel(ModBlocks.OXIDIZED_COMPRESSED_COPPER_BLOCK, Super.asResource("block/compressed_oxidized_copper"));
-//        //blockStateModelGenerator.registerParentedItemModel(ModBlocks.COMPRESSED_CHERRY_LEAVES, Super.asResource("block/compressed_cherry_leaves")); //1.20
-//        blockStateModelGenerator.registerParentedItemModel(ModBlocks.COMPRESSED_CHERRY_LOG, Super.asResource("block/compressed_cherry_log")); //1.20
-//        blockStateModelGenerator.registerParentedItemModel(ModBlocks.COMPRESSED_CHERRY_SAPLING, Super.asResource("block/compressed_cherry_sapling")); //1.20
-//        blockStateModelGenerator.registerParentedItemModel(ModBlocks.ENDER_EYE_BLOCK, Super.asResource("block/ender_eye_block"));
-//        blockStateModelGenerator.registerParentedItemModel(ModBlocks.ENDER_PEARL_BLOCK, Super.asResource("block/ender_pearl_block"));
-//        blockStateModelGenerator.registerParentedItemModel(ModBlocks.ECHO_SHARD_BLOCK, Super.asResource("block/echo_shard_block"));
         blockStateModelGenerator.registerParentedItemModel(ModBlocks.DENSE_COBWEB_BLOCK, Super.asResource("block/dense_cobweb_block"));
-//        blockStateModelGenerator.registerParentedItemModel(ModBlocks.RABBIT_HIDE_BLOCK, Super.asResource("block/rabbit_hide_block"));
-//        blockStateModelGenerator.registerParentedItemModel(ModBlocks.COMPRESSED_COBBLED_DEEPSLATE, Super.asResource("block/compressed_cobbled_deepslate"));
-//        blockStateModelGenerator.registerParentedItemModel(ModBlocks.SUPER_COMPRESSED_COBBLED_DEEPSLATE, Super.asResource("block/super_compressed_cobbled_deepslate"));
-//        blockStateModelGenerator.registerParentedItemModel(ModBlocks.CARROT_BLOCK, Super.asResource("block/carrot_block"));
-//        blockStateModelGenerator.registerParentedItemModel(ModBlocks.GOLDEN_CARROT_BLOCK, Super.asResource("block/golden_carrot_block"));
-//        blockStateModelGenerator.registerParentedItemModel(ModBlocks.APPLE_BLOCK, Super.asResource("block/apple_block"));
-//        blockStateModelGenerator.registerParentedItemModel(ModBlocks.GOLDEN_APPLE_BLOCK, Super.asResource("block/golden_apple_block"));
-//        blockStateModelGenerator.registerParentedItemModel(ModBlocks.POTATO_BLOCK, Super.asResource("block/potato_block"));
-//        blockStateModelGenerator.registerParentedItemModel(ModBlocks.POISONOUS_POTATO_BLOCK, Super.asResource("block/poisonous_potato_block"));
-//        blockStateModelGenerator.registerParentedItemModel(ModBlocks.BAKED_POTATO_BLOCK, Super.asResource("block/baked_potato_block"));
-//        blockStateModelGenerator.registerParentedItemModel(ModBlocks.BEETROOT_BLOCK, Super.asResource("block/beetroot_block"));
-//        blockStateModelGenerator.registerParentedItemModel(ModBlocks.FLINT_BLOCK, Super.asResource("block/flint_block"));
-//        blockStateModelGenerator.registerParentedItemModel(ModBlocks.SUGAR_BLOCK, Super.asResource("block/sugar_block"));
-//        blockStateModelGenerator.registerParentedItemModel(ModBlocks.GUNPOWDER_BLOCK, Super.asResource("block/gunpowder_block"));
-//        blockStateModelGenerator.registerParentedItemModel(ModBlocks.COMPRESSED_PRISMARINE, Super.asResource("block/compressed_prismarine"));
     }
     @Override
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {

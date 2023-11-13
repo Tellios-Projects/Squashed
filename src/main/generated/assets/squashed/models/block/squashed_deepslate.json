@@ -1,7 +1,6 @@
 {
-  "parent": "minecraft:block/cube_top",
+  "parent": "minecraft:block/cube_all",
   "textures": {
-    "side": "squashed:block/squashed_deepslate_side",
-    "top": "squashed:block/squashed_deepslate_top"
+    "all": "squashed:block/squashed_deepslate"
   }
 }

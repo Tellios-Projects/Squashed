@@ -174,6 +174,10 @@ public class ModBlockTagGenerator extends FabricTagProvider<Block> {
             getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE).add(block);
             getOrCreateTagBuilder(BlockTags.NEEDS_STONE_TOOL).add(block);
             getOrCreateTagBuilder(BlockTags.CRYSTAL_SOUND_BLOCKS).add(block);
+            getOrCreateTagBuilder(BlockTags.VIBRATION_RESONATORS).add(block);
+        }
+        for(Block block : ModBlocks.COMPACTED_BONE_BLOCKS) {
+            getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE).add(block);
         }
         for(Block block : ModBlocks.COMPACTED_COPPER_BLOCKS) {
             getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE).add(block);
@@ -234,9 +238,6 @@ public class ModBlockTagGenerator extends FabricTagProvider<Block> {
     for(Block block : ModBlocks.DYE_BLOCKS) {
         getOrCreateTagBuilder(BlockTags.SHOVEL_MINEABLE).add(block);
     }
-
-
-
         getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE)
                 .addTag(ModBlockTags.ANY_MINABLE)
 //             .add(ModBlocks.COMPRESSED_COPPER_BLOCK) // covered by compressed copper blocks
@@ -256,6 +257,8 @@ public class ModBlockTagGenerator extends FabricTagProvider<Block> {
                 .add(ModBlocks.BONES_BLOCK)
                 .add(ModBlocks.ECHO_SHARD_BLOCK)
                 .add(ModBlocks.COMPRESSED_PRISMARINE)
+                .add(ModBlocks.AMETHYST_SHARD_BLOCK)
+                .add(ModBlocks.CRYSTAL_QUARTZ_BLOCK)
         ;
 
         getOrCreateTagBuilder(BlockTags.NEEDS_STONE_TOOL)
@@ -328,7 +331,6 @@ public class ModBlockTagGenerator extends FabricTagProvider<Block> {
                 .add(ModBlocks.BEETROOT_SEED_BLOCK)
                 .add(ModBlocks.MELON_SEED_BLOCK)
                 .add(ModBlocks.COCOA_BEAN_BLOCK)
-
                 .add(ModBlocks.COMPRESSED_OAK_SAPLING)
                 .add(ModBlocks.COMPRESSED_SPRUCE_SAPLING)
                 .add(ModBlocks.COMPRESSED_BIRCH_SAPLING)
@@ -343,7 +345,8 @@ public class ModBlockTagGenerator extends FabricTagProvider<Block> {
                 .add(ModBlocks.COMPRESSED_CHERRY_SAPLING)
                 .add(ModBlocks.FLINT_BLOCK)
                 .add(ModBlocks.SUGAR_BLOCK)
-                .add(ModBlocks.GUNPOWDER_BLOCK);
+                .add(ModBlocks.GUNPOWDER_BLOCK)
+                .add(ModBlocks.SNOWBALL_BLOCK);
 
         getOrCreateTagBuilder(BlockTags.LEAVES)
                 .add(ModBlocks.COMPRESSED_OAK_LEAVES)
@@ -355,13 +358,14 @@ public class ModBlockTagGenerator extends FabricTagProvider<Block> {
                 .add(ModBlocks.COMPRESSED_MANGROVE_LEAVES)
                 .add(ModBlocks.COMPRESSED_AZALEA_LEAVES)
                 .add(ModBlocks.COMPRESSED_FLOWERING_AZALEA_LEAVES)
+//                .add(ModBlocks.COMPRESSED_CHERRY_LEAVES);
 
                 //just so that shears can mine it easier
                 .add(ModBlocks.COMPRESSED_SEAGRASS)
                 .add(ModBlocks.VINE_BLOCK)
-                .add(ModBlocks.KELP_BLOCK)
-                .add(ModBlocks.LILY_PAD_BLOCK);
-//                .add(ModBlocks.COMPRESSED_CHERRY_LEAVES);
+                .add(ModBlocks.KELP_BLOCK);
+//                .add(ModBlocks.LILY_PAD_BLOCK);
+
 
         getOrCreateTagBuilder(ModBlockTags.CAT_PLAYS_WITH)
                 .add(ModBlocks.WHITE_COMPRESSED_WOOL)
@@ -393,6 +397,12 @@ public class ModBlockTagGenerator extends FabricTagProvider<Block> {
         getOrCreateTagBuilder(BlockTags.DEAD_BUSH_MAY_PLACE_ON)
                 .add(ModBlocks.RAW_COD_BLOCK) //because it looks a bit like desert ground, for builders really
                 .add(ModBlocks.DEAD_BUSH_BLOCK);
+
+        getOrCreateTagBuilder(BlockTags.CRYSTAL_SOUND_BLOCKS)
+                .add(ModBlocks.AMETHYST_SHARD_BLOCK);
+
+        getOrCreateTagBuilder(BlockTags.VIBRATION_RESONATORS)
+                .add(ModBlocks.AMETHYST_SHARD_BLOCK);
     }
 }
 

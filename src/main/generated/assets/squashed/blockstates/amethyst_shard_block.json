@@ -1,0 +1,30 @@
+{
+  "variants": {
+    "facing=down": {
+      "model": "squashed:block/amethyst_shard_block",
+      "x": 180
+    },
+    "facing=east": {
+      "model": "squashed:block/amethyst_shard_block",
+      "x": 90,
+      "y": 90
+    },
+    "facing=north": {
+      "model": "squashed:block/amethyst_shard_block",
+      "x": 90
+    },
+    "facing=south": {
+      "model": "squashed:block/amethyst_shard_block",
+      "x": 90,
+      "y": 180
+    },
+    "facing=up": {
+      "model": "squashed:block/amethyst_shard_block"
+    },
+    "facing=west": {
+      "model": "squashed:block/amethyst_shard_block",
+      "x": 90,
+      "y": 270
+    }
+  }
+}

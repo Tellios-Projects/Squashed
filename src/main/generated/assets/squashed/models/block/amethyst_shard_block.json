@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "squashed:block/amethyst_shard_block_top",
+    "side": "squashed:block/amethyst_shard_block_side"
+  }
+}

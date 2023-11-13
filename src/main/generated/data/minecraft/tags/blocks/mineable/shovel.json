@@ -66,6 +66,7 @@
     "squashed:compressed_cherry_sapling",
     "squashed:flint_block",
     "squashed:sugar_block",
-    "squashed:gunpowder_block"
+    "squashed:gunpowder_block",
+    "squashed:snowball_block"
   ]
 }
