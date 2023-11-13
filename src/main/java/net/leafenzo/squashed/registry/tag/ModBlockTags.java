@@ -8,7 +8,7 @@ import net.minecraft.util.Identifier;
 
 public class ModBlockTags {
     public static final TagKey<Block> ANY_MINABLE = ModBlockTags.of("any_minable");
-    public static final TagKey<Block> CAT_PLAYS_WITH = ModBlockTags.of("cat_plays_with");
+    public static final TagKey<Block> CAT_PLAYS_WITH = ModBlockTags.of("cat_plays_with"); //TODO make use of me! (currently unsused)
 
     private ModBlockTags() {
     }

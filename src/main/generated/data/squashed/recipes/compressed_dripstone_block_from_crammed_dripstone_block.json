@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "squashed:Block{minecraft:dripstone_block}_reverse",
+  "ingredients": [
+    {
+      "item": "squashed:crammed_dripstone_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "squashed:compressed_dripstone_block"
+  }
+}

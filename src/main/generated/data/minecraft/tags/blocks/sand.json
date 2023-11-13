@@ -2,8 +2,12 @@
   "replace": false,
   "values": [
     "squashed:compressed_sand",
-    "squashed:super_compressed_sand",
+    "squashed:crammed_sand",
+    "squashed:dense_sand",
+    "squashed:squashed_sand",
     "squashed:compressed_red_sand",
-    "squashed:super_compressed_red_sand"
+    "squashed:crammed_red_sand",
+    "squashed:dense_red_sand",
+    "squashed:squashed_red_sand"
   ]
 }

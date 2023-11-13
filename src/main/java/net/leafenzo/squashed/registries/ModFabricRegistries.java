@@ -1,42 +1,57 @@
 package net.leafenzo.squashed.registries;
 
 import net.fabricmc.fabric.api.registry.FlammableBlockRegistry;
+import net.fabricmc.fabric.api.registry.FuelRegistry;
 import net.fabricmc.fabric.api.registry.OxidizableBlocksRegistry;
+import net.leafenzo.squashed.ModInit;
+import net.leafenzo.squashed.Super;
 import net.leafenzo.squashed.block.ModBlocks;
+import net.minecraft.block.Block;
+import net.minecraft.item.ItemConvertible;
 
 
 public class ModFabricRegistries {
     public static void registerOxidizableBlocks() {
-        OxidizableBlocksRegistry.registerOxidizableBlockPair(ModBlocks.COMPRESSED_COPPER_BLOCK, ModBlocks.COMPRESSED_EXPOSED_COPPER);
-        OxidizableBlocksRegistry.registerOxidizableBlockPair(ModBlocks.COMPRESSED_EXPOSED_COPPER, ModBlocks.COMPRESSED_WEATHERED_COPPER);
-        OxidizableBlocksRegistry.registerOxidizableBlockPair(ModBlocks.COMPRESSED_WEATHERED_COPPER, ModBlocks.COMPRESSED_OXIDIZED_COPPER);
+        ModInit.LOGGER.debug("Registering Oxidizable Blocks for " + Super.MOD_ID);
+
+        OxidizableBlocksRegistry.registerOxidizableBlockPair(ModBlocks.COMPRESSED_COPPER_BLOCK, ModBlocks.EXPOSED_COMPRESSED_COPPER_BLOCK);
+        OxidizableBlocksRegistry.registerOxidizableBlockPair(ModBlocks.EXPOSED_COMPRESSED_COPPER_BLOCK, ModBlocks.WEATHERED_COMPRESSED_COPPER_BLOCK);
+        OxidizableBlocksRegistry.registerOxidizableBlockPair(ModBlocks.WEATHERED_COMPRESSED_COPPER_BLOCK, ModBlocks.OXIDIZED_COMPRESSED_COPPER_BLOCK);
 
         OxidizableBlocksRegistry.registerWaxableBlockPair(ModBlocks.COMPRESSED_COPPER_BLOCK, ModBlocks.WAXED_COMPRESSED_COPPER_BLOCK);
-        OxidizableBlocksRegistry.registerWaxableBlockPair(ModBlocks.COMPRESSED_EXPOSED_COPPER, ModBlocks.WAXED_COMPRESSED_EXPOSED_COPPER);
-        OxidizableBlocksRegistry.registerWaxableBlockPair(ModBlocks.COMPRESSED_WEATHERED_COPPER, ModBlocks.WAXED_COMPRESSED_WEATHERED_COPPER);
-        OxidizableBlocksRegistry.registerWaxableBlockPair(ModBlocks.COMPRESSED_OXIDIZED_COPPER, ModBlocks.WAXED_COMPRESSED_OXIDIZED_COPPER);
+        OxidizableBlocksRegistry.registerWaxableBlockPair(ModBlocks.EXPOSED_COMPRESSED_COPPER_BLOCK, ModBlocks.WAXED_EXPOSED_COMPRESSED_COPPER_BLOCK);
+        OxidizableBlocksRegistry.registerWaxableBlockPair(ModBlocks.WEATHERED_COMPRESSED_COPPER_BLOCK, ModBlocks.WAXED_WEATHERED_COMPRESSED_COPPER_BLOCK);
+        OxidizableBlocksRegistry.registerWaxableBlockPair(ModBlocks.OXIDIZED_COMPRESSED_COPPER_BLOCK, ModBlocks.WAXED_OXIDIZED_COMPRESSED_COPPER_BLOCK);
     }
 
     public static void registerFlammableBlocks() {
+        ModInit.LOGGER.debug("Registering Flammable Blocks for " + Super.MOD_ID);
         FlammableBlockRegistry registry = FlammableBlockRegistry.getDefaultInstance();
         registry.add(ModBlocks.BLAZE_POWDER_BLOCK, 65536, 65536);
-        registry.add(ModBlocks.WHITE_COMPRESSED_WOOL, 60, 30);
-        registry.add(ModBlocks.ORANGE_COMPRESSED_WOOL, 60, 30);
-        registry.add(ModBlocks.MAGENTA_COMPRESSED_WOOL, 60, 30);
-        registry.add(ModBlocks.LIGHT_BLUE_COMPRESSED_WOOL, 60, 30);
-        registry.add(ModBlocks.YELLOW_COMPRESSED_WOOL, 60, 30);
-        registry.add(ModBlocks.LIME_COMPRESSED_WOOL, 60, 30);
-        registry.add(ModBlocks.PINK_COMPRESSED_WOOL, 60, 30);
-        registry.add(ModBlocks.GRAY_COMPRESSED_WOOL, 60, 30);
-        registry.add(ModBlocks.LIGHT_GRAY_COMPRESSED_WOOL, 60, 30);
-        registry.add(ModBlocks.CYAN_COMPRESSED_WOOL, 60, 30);
-        registry.add(ModBlocks.PURPLE_COMPRESSED_WOOL, 60, 30);
-        registry.add(ModBlocks.BLUE_COMPRESSED_WOOL, 60, 30);
-        registry.add(ModBlocks.BROWN_COMPRESSED_WOOL, 60, 30);
-        registry.add(ModBlocks.GREEN_COMPRESSED_WOOL, 60, 30);
-        registry.add(ModBlocks.RED_COMPRESSED_WOOL, 60, 30);
-        registry.add(ModBlocks.BLACK_COMPRESSED_WOOL, 60, 30);
+
+        for(Block block : ModBlocks.COMPRESSED_WOOL_BLOCKS) {
+            registry.add(block, 60, 30);
+        }
+
         registry.add(ModBlocks.BOOK_BLOCK, 20, 30);
+        registry.add(ModBlocks.PAPER_BLOCK, 20, 30);
+        registry.add(ModBlocks.FEATHER_BLOCK, 50, 100);
+
+        registry.add(ModBlocks.COMPRESSED_CACTUS, 5, 5);
+        registry.add(ModBlocks.VINE_BLOCK, 50, 15);
+        registry.add(ModBlocks.GRASS_CLIPPINGS_BLOCK, 75, 80);
+        registry.add(ModBlocks.COMPRESSED_SCAFFOLDING, 20, 5);
+
+        registry.add(ModBlocks.DEAD_BUSH_BLOCK, 60, 30);
+        registry.add(ModBlocks.COMPRESSED_HAY_BLOCK, 60, 20);
+
+
+        registry.add(ModBlocks.GLOW_BERRIES_BLOCK, 75, 80);
+        registry.add(ModBlocks.SWEET_BERRIES_BLOCK, 75, 80);
+
+        registry.add(ModBlocks.SUGAR_BLOCK, 20, 5);
+        registry.add(ModBlocks.SUGARCANE_BLOCK, 20, 5);
+
         registry.add(ModBlocks.COMPRESSED_OAK_LEAVES, 75, 80);
         registry.add(ModBlocks.COMPRESSED_SPRUCE_LEAVES, 75, 80);
         registry.add(ModBlocks.COMPRESSED_BIRCH_LEAVES, 75, 80);
@@ -46,22 +61,80 @@ public class ModFabricRegistries {
         registry.add(ModBlocks.COMPRESSED_MANGROVE_LEAVES, 75, 80);
         registry.add(ModBlocks.COMPRESSED_AZALEA_LEAVES, 75, 80);
         registry.add(ModBlocks.COMPRESSED_FLOWERING_AZALEA_LEAVES, 60, 60);
-        registry.add(ModBlocks.COMPRESSED_OAK_LOG, 5, 5);
-        registry.add(ModBlocks.COMPRESSED_SPRUCE_LOG, 5, 5);
-        registry.add(ModBlocks.COMPRESSED_BIRCH_LOG, 5, 5);
-        registry.add(ModBlocks.COMPRESSED_JUNGLE_LOG, 5, 5);
-        registry.add(ModBlocks.COMPRESSED_ACACIA_LOG, 5, 5);
-        registry.add(ModBlocks.COMPRESSED_DARK_OAK_LOG, 5, 5);
-        registry.add(ModBlocks.COMPRESSED_MANGROVE_LOG, 5, 5);
-        registry.add(ModBlocks.COMPRESSED_BAMBOO, 20, 5);
-        registry.add(ModBlocks.COMPRESSED_OAK_SAPLING, 20, 5);
-        registry.add(ModBlocks.COMPRESSED_SPRUCE_SAPLING, 20, 5);
-        registry.add(ModBlocks.COMPRESSED_BIRCH_SAPLING, 20, 5);
-        registry.add(ModBlocks.COMPRESSED_JUNGLE_SAPLING, 20, 5);
-        registry.add(ModBlocks.COMPRESSED_ACACIA_SAPLING, 20, 5);
-        registry.add(ModBlocks.COMPRESSED_DARK_OAK_SAPLING, 20, 5);
-        registry.add(ModBlocks.COMPRESSED_AZALEA_SAPLING, 20, 5);
+
+        for(Block block : ModBlocks.COMPACTED_OAK_LOGS) { registry.add(block, 5, 5);  }
+        for(Block block : ModBlocks.COMPACTED_SPRUCE_LOGS) { registry.add(block, 5, 5);  }
+        for(Block block : ModBlocks.COMPACTED_BIRCH_LOGS) { registry.add(block, 5, 5);  }
+        for(Block block : ModBlocks.COMPACTED_JUNGLE_LOGS) { registry.add(block, 5, 5);  }
+        for(Block block : ModBlocks.COMPACTED_ACACIA_LOGS) { registry.add(block, 5, 5);  }
+        for(Block block : ModBlocks.COMPACTED_DARK_OAK_LOGS) { registry.add(block, 5, 5);  }
+        for(Block block : ModBlocks.COMPACTED_MANGROVE_LOGS) { registry.add(block, 5, 5);  }
+        for(Block block : ModBlocks.COMPACTED_CHERRY_LOGS) { registry.add(block, 5, 5); }
+        for(Block block : ModBlocks.COMPACTED_BAMBOO_BLOCKS) { registry.add(block, 20, 5); }
+
+        registry.add(ModBlocks.COMPRESSED_OAK_SAPLING, 10, 5);
+        registry.add(ModBlocks.COMPRESSED_SPRUCE_SAPLING, 10, 5);
+        registry.add(ModBlocks.COMPRESSED_BIRCH_SAPLING, 10, 5);
+        registry.add(ModBlocks.COMPRESSED_JUNGLE_SAPLING, 10, 5);
+        registry.add(ModBlocks.COMPRESSED_ACACIA_SAPLING, 10, 5);
+        registry.add(ModBlocks.COMPRESSED_DARK_OAK_SAPLING, 10, 5);
+        registry.add(ModBlocks.COMPRESSED_AZALEA_SAPLING, 10, 5);
         registry.add(ModBlocks.COMPRESSED_FLOWERING_AZALEA_SAPLING, 20, 5);
-        registry.add(ModBlocks.COMPRESSED_COAL_BLOCK, 1, 12);
+
+        for(Block block : ModBlocks.COMPACTED_COAL_BLOCKS) { registry.add(block, 1, 12); }
+        registry.add(ModBlocks.CHARCOAL_BLOCK, 1, 5); // lower burn chance in case we ever get around to doing that tree burning mixin
+    }
+
+    public static void registerFuels() {
+        ModInit.LOGGER.debug("Registering Smelting Fuels for " + Super.MOD_ID);
+        FuelRegistry registry = FuelRegistry.INSTANCE;
+
+        for(ItemConvertible item : ModBlocks.COMPRESSED_WOOL_BLOCKS) {
+            registry.add(item, 300);
+        }
+
+        registry.add(ModBlocks.CHARCOAL_BLOCK, 800);
+        // registerCompactedFuels(registry, ModBlocks.COMPACTED_COAL_BLOCKS, 16000); //7200 S (2 hours), 64800 S (18 hours), 583200 S (6.75 days), 5248800 S (60 days) // fabric doesn't allow it :(
+                                                        //coal block =  13.33 minutes
+        registry.add(ModBlocks.COMPACTED_COAL_BLOCKS[0], 144000); //2 hours
+        registry.add(ModBlocks.COMPACTED_COAL_BLOCKS[1], 655340); //9 hours
+        //registry.add(ModBlocks.COMPACTED_COAL_BLOCKS[2], 655340); //9 hours //Don't let people waste it if it doesn't actually improve nothin. //TODO ask el about this
+        //registry.add(ModBlocks.COMPACTED_COAL_BLOCKS[3], 655340); //9 hours
+
+        registerCompactedFuels(registry, ModBlocks.COMPACTED_OAK_LOGS, 300); //135 S (2 minutes), 1215 S (20 minutes), 10935 S (3 hours), 98415 S (1 day)
+        registerCompactedFuels(registry, ModBlocks.COMPACTED_SPRUCE_LOGS, 300);
+        registerCompactedFuels(registry, ModBlocks.COMPACTED_BIRCH_LOGS, 300);
+        registerCompactedFuels(registry, ModBlocks.COMPACTED_JUNGLE_LOGS, 300);
+        registerCompactedFuels(registry, ModBlocks.COMPACTED_ACACIA_LOGS, 300);
+        registerCompactedFuels(registry, ModBlocks.COMPACTED_DARK_OAK_LOGS, 300);
+        registerCompactedFuels(registry, ModBlocks.COMPACTED_MANGROVE_LOGS, 300);
+        registerCompactedFuels(registry, ModBlocks.COMPACTED_CHERRY_LOGS, 300);
+        registerCompactedFuels(registry, ModBlocks.COMPACTED_BAMBOO_BLOCKS, 300);
+
+        registry.add(ModBlocks.COMPRESSED_CHERRY_SAPLING, 900);
+        registry.add(ModBlocks.COMPRESSED_OAK_SAPLING, 900);
+        registry.add(ModBlocks.COMPRESSED_SPRUCE_SAPLING, 900);
+        registry.add(ModBlocks.COMPRESSED_BIRCH_SAPLING, 900);
+        registry.add(ModBlocks.COMPRESSED_JUNGLE_SAPLING, 900);
+        registry.add(ModBlocks.COMPRESSED_ACACIA_SAPLING, 900);
+        registry.add(ModBlocks.COMPRESSED_DARK_OAK_SAPLING, 900);
+        registry.add(ModBlocks.COMPRESSED_AZALEA_SAPLING, 900);
+        registry.add(ModBlocks.COMPRESSED_FLOWERING_AZALEA_SAPLING, 900);
+        registry.add(ModBlocks.COMPRESSED_MANGROVE_PROPAGULE, 900);
+        registry.add(ModBlocks.FEATHER_BLOCK, 100);
+        registry.add(ModBlocks.MANGROVE_ROOTS_BLOCK, 2700);
+        registry.add(ModBlocks.PAPER_BLOCK, 200);
+        registry.add(ModBlocks.COMPRESSED_SCAFFOLDING, 300);
+        registry.add(ModBlocks.SUGARCANE_BLOCK, 300);
+        registry.add(ModBlocks.DEAD_BUSH_BLOCK, 300);
+        registry.add(ModBlocks.GRASS_CLIPPINGS_BLOCK, 300);
+    }
+
+    private static void registerCompactedFuels(FuelRegistry registry, ItemConvertible[] compactedItems, int burnTimePerOne) {
+        for (int i = 0; i < compactedItems.length; i++) {
+            int t = Math.max(burnTimePerOne * (9 * (i+1)), 32767);
+//                System.out.println("registering burn time of: " + t + " ticks for " + compactedItems[i].asItem().getName());
+            registry.add(compactedItems[i], t);
+        }
     }
 }

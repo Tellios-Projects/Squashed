@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "squashed:block/dense_jungle_log_top",
+    "side": "squashed:block/dense_jungle_log_side"
+  }
+}

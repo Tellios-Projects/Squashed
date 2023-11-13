@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "squashed:Block{minecraft:cobblestone}_reverse",
+  "ingredients": [
+    {
+      "item": "squashed:crammed_cobblestone"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "squashed:compressed_cobblestone"
+  }
+}

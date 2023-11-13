@@ -2,6 +2,8 @@
   "replace": false,
   "values": [
     "squashed:compressed_soul_sand",
-    "squashed:super_compressed_soul_sand"
+    "squashed:crammed_soul_sand",
+    "squashed:dense_soul_sand",
+    "squashed:squashed_soul_sand"
   ]
 }

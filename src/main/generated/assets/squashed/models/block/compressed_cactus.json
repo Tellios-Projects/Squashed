@@ -1,6 +1,7 @@
 {
-  "parent": "minecraft:block/cube_all",
+  "parent": "minecraft:block/cube_column",
   "textures": {
-    "all": "squashed:block/compressed_cactus"
+    "end": "squashed:block/compressed_cactus_top",
+    "side": "squashed:block/compressed_cactus_side"
   }
 }

@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "squashed:Block{minecraft:mud}",
+  "key": {
+    "#": {
+      "item": "squashed:crammed_mud"
+    }
+  },
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "result": {
+    "item": "squashed:dense_mud"
+  },
+  "show_notification": true
+}

@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "squashed:Block{minecraft:glowstone}_reverse",
+  "ingredients": [
+    {
+      "item": "squashed:squashed_glowstone"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "squashed:dense_glowstone"
+  }
+}

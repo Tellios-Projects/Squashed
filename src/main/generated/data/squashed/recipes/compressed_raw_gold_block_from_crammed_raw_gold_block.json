@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "squashed:Block{minecraft:raw_gold_block}_reverse",
+  "ingredients": [
+    {
+      "item": "squashed:crammed_raw_gold_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "squashed:compressed_raw_gold_block"
+  }
+}

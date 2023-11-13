@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "squashed:Block{minecraft:magma_block}",
+  "key": {
+    "#": {
+      "item": "squashed:crammed_magma_block"
+    }
+  },
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "result": {
+    "item": "squashed:dense_magma_block"
+  },
+  "show_notification": true
+}

@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "squashed:Block{minecraft:quartz_block}",
+  "key": {
+    "#": {
+      "item": "squashed:crammed_quartz_block"
+    }
+  },
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "result": {
+    "item": "squashed:dense_quartz_block"
+  },
+  "show_notification": true
+}

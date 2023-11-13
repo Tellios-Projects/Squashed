@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "squashed:Block{minecraft:sand}_reverse",
+  "ingredients": [
+    {
+      "item": "squashed:squashed_sand"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "squashed:dense_sand"
+  }
+}

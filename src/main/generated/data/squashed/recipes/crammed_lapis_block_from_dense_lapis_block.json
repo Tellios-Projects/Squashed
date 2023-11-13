@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "squashed:Block{minecraft:lapis_block}_reverse",
+  "ingredients": [
+    {
+      "item": "squashed:dense_lapis_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "squashed:crammed_lapis_block"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "squashed:Block{minecraft:cobblestone}",
+  "key": {
+    "#": {
+      "item": "squashed:crammed_cobblestone"
+    }
+  },
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "result": {
+    "item": "squashed:dense_cobblestone"
+  },
+  "show_notification": true
+}
