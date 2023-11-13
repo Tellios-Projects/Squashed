@@ -1,5 +1,6 @@
 package net.leafenzo.squashed.registries;
 
+import net.fabricmc.fabric.api.registry.CompostingChanceRegistry;
 import net.fabricmc.fabric.api.registry.FlammableBlockRegistry;
 import net.fabricmc.fabric.api.registry.FuelRegistry;
 import net.fabricmc.fabric.api.registry.OxidizableBlocksRegistry;
@@ -136,5 +137,64 @@ public class ModFabricRegistries {
 //                System.out.println("registering burn time of: " + t + " ticks for " + compactedItems[i].asItem().getName());
             registry.add(compactedItems[i], t);
         }
+    }
+
+    public static void registerCompostingChances() {
+        ModInit.LOGGER.debug("Registering composting chances for " + Super.MOD_ID);
+        CompostingChanceRegistry compostingChanceRegistry = CompostingChanceRegistry.INSTANCE;
+
+        //1.0 - 0.3 = 0.7
+        //0.7 ^ 9 = 0.000019683 //chances of getting all losses in row if a 30% chance win is repeated nine times.
+        //1 - ans = ~0.99998
+        compostingChanceRegistry.add(ModBlocks.WHEAT_SEED_BLOCK, 0.95964f);
+        compostingChanceRegistry.add(ModBlocks.BEETROOT_SEED_BLOCK, 0.95964f);
+        compostingChanceRegistry.add(ModBlocks.MELON_SEED_BLOCK, 0.95964f);
+        compostingChanceRegistry.add(ModBlocks.PUMPKIN_SEED_BLOCK, 0.95964f);
+        compostingChanceRegistry.add(ModBlocks.GRASS_CLIPPINGS_BLOCK, 0.95964f);
+        compostingChanceRegistry.add(ModBlocks.FERN_BLOCK, 0.95964f);
+        compostingChanceRegistry.add(ModBlocks.KELP_BLOCK, 0.95964f);
+        compostingChanceRegistry.add(ModBlocks.COMPRESSED_SEAGRASS, 0.95964f);
+        compostingChanceRegistry.add(ModBlocks.SWEET_BERRIES_BLOCK, 0.95964f);
+        compostingChanceRegistry.add(ModBlocks.GLOW_BERRIES_BLOCK, 0.95964f);
+        compostingChanceRegistry.add(ModBlocks.COMPRESSED_OAK_LEAVES, 0.95964f);
+        compostingChanceRegistry.add(ModBlocks.COMPRESSED_SPRUCE_LEAVES, 0.95964f);
+        compostingChanceRegistry.add(ModBlocks.COMPRESSED_BIRCH_LEAVES, 0.95964f);
+        compostingChanceRegistry.add(ModBlocks.COMPRESSED_JUNGLE_LEAVES, 0.95964f);
+        compostingChanceRegistry.add(ModBlocks.COMPRESSED_ACACIA_LEAVES, 0.95964f);
+        compostingChanceRegistry.add(ModBlocks.COMPRESSED_DARK_OAK_LEAVES, 0.95964f);
+        compostingChanceRegistry.add(ModBlocks.COMPRESSED_MANGROVE_LEAVES, 0.95964f);
+        compostingChanceRegistry.add(ModBlocks.COMPRESSED_AZALEA_LEAVES, 0.95964f);
+        compostingChanceRegistry.add(ModBlocks.COMPRESSED_FLOWERING_AZALEA_LEAVES, 0.95964f);
+        compostingChanceRegistry.add(ModBlocks.COMPRESSED_CHERRY_SAPLING, 0.95964f);
+        compostingChanceRegistry.add(ModBlocks.COMPRESSED_OAK_SAPLING, 0.95964f);
+        compostingChanceRegistry.add(ModBlocks.COMPRESSED_SPRUCE_SAPLING, 0.95964f);
+        compostingChanceRegistry.add(ModBlocks.COMPRESSED_BIRCH_SAPLING, 0.95964f);
+        compostingChanceRegistry.add(ModBlocks.COMPRESSED_JUNGLE_SAPLING, 0.95964f);
+        compostingChanceRegistry.add(ModBlocks.COMPRESSED_ACACIA_SAPLING, 0.95964f);
+        compostingChanceRegistry.add(ModBlocks.COMPRESSED_DARK_OAK_SAPLING, 0.95964f);
+        compostingChanceRegistry.add(ModBlocks.COMPRESSED_AZALEA_SAPLING, 0.95964f);
+        compostingChanceRegistry.add(ModBlocks.COMPRESSED_FLOWERING_AZALEA_SAPLING, 0.95964f);
+        compostingChanceRegistry.add(ModBlocks.COMPRESSED_MANGROVE_PROPAGULE, 0.95964f);
+
+        //0.5 ^ 9 = ~0.99805
+        compostingChanceRegistry.add(ModBlocks.VINE_BLOCK, 0.99805f);
+        compostingChanceRegistry.add(ModBlocks.COMPRESSED_CACTUS, 0.99805f);
+        compostingChanceRegistry.add(ModBlocks.GLOW_LICHEN_BLOCK, 0.99805f);
+        compostingChanceRegistry.add(ModBlocks.SUGARCANE_BLOCK, 0.99805f);
+
+        // ideally these ones would fill up more than one... but I don't really have the time to figure out how to program that at the moment //TODO come back to this maybe?
+        compostingChanceRegistry.add(ModBlocks.COMPRESSED_MELON, 1.0f);
+        compostingChanceRegistry.add(ModBlocks.COMPRESSED_PUMPKIN, 1.0f);
+        compostingChanceRegistry.add(ModBlocks.COMPRESSED_HAY_BLOCK, 1.0f);
+        compostingChanceRegistry.add(ModBlocks.COMPRESSED_NETHER_WART_BLOCK, 1.0f);
+        compostingChanceRegistry.add(ModBlocks.COMPRESSED_WARPED_WART_BLOCK, 1.0f);
+        compostingChanceRegistry.add(ModBlocks.COMPRESSED_CRIMSON_FUNGUS, 1.0f);
+        compostingChanceRegistry.add(ModBlocks.COMPRESSED_WARPED_FUNGUS, 1.0f);
+        compostingChanceRegistry.add(ModBlocks.POTATO_BLOCK, 1.0f);
+        compostingChanceRegistry.add(ModBlocks.CARROT_BLOCK, 1.0f);
+        compostingChanceRegistry.add(ModBlocks.APPLE_BLOCK, 1.0f);
+        compostingChanceRegistry.add(ModBlocks.BEETROOT_BLOCK, 1.0f);
+        compostingChanceRegistry.add(ModBlocks.SEA_PICKLE_BLOCK, 1.0f);
+        compostingChanceRegistry.add(ModBlocks.COMPACTED_MOSS_BLOCKS[0], 1.0f); // not going past compression tier one for this in case someone accidentally right click's a composter with an entire endangered wetland ecosystem's worth of moss in their hand
     }
 }
