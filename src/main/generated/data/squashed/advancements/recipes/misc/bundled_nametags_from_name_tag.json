@@ -1,24 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_stick": {
+    "has_name_tag": {
       "conditions": {
         "items": [
           {
             "items": [
-              "minecraft:stick"
-            ]
-          }
-        ]
-      },
-      "trigger": "minecraft:inventory_changed"
-    },
-    "has_string": {
-      "conditions": {
-        "items": [
-          {
-            "items": [
-              "minecraft:string"
+              "minecraft:name_tag"
             ]
           }
         ]
@@ -27,21 +15,20 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "squashed:bundled_sticks"
+        "recipe": "minecraft:bundled_nametags_from_name_tag"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
   },
   "requirements": [
     [
-      "has_stick",
-      "has_string",
+      "has_name_tag",
       "has_the_recipe"
     ]
   ],
   "rewards": {
     "recipes": [
-      "squashed:bundled_sticks"
+      "minecraft:bundled_nametags_from_name_tag"
     ]
   },
   "sends_telemetry_event": false

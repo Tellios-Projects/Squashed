@@ -1,13 +1,14 @@
 {
   "type": "minecraft:crafting_shapeless",
   "category": "misc",
+  "group": "squashed:spectral_arrow_reverse",
   "ingredients": [
     {
       "item": "squashed:bundled_spectral_arrows"
     }
   ],
   "result": {
-    "count": 9,
+    "count": 4,
     "item": "minecraft:spectral_arrow"
   }
 }

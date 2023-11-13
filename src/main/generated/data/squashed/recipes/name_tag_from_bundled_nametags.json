@@ -1,13 +1,14 @@
 {
   "type": "minecraft:crafting_shapeless",
   "category": "misc",
+  "group": "squashed:name_tag_reverse",
   "ingredients": [
     {
       "item": "squashed:bundled_nametags"
     }
   ],
   "result": {
-    "count": 9,
+    "count": 4,
     "item": "minecraft:name_tag"
   }
 }

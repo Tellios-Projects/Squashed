@@ -15,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:bundled_spectral_arrows"
+        "recipe": "minecraft:bundled_spectral_arrows_from_spectral_arrow"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -28,7 +28,7 @@
   ],
   "rewards": {
     "recipes": [
-      "minecraft:bundled_spectral_arrows"
+      "minecraft:bundled_spectral_arrows_from_spectral_arrow"
     ]
   },
   "sends_telemetry_event": false

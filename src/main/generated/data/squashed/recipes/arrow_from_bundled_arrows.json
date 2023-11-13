@@ -1,13 +1,14 @@
 {
   "type": "minecraft:crafting_shapeless",
   "category": "misc",
+  "group": "squashed:arrow_reverse",
   "ingredients": [
     {
       "item": "squashed:bundled_arrows"
     }
   ],
   "result": {
-    "count": 9,
+    "count": 4,
     "item": "minecraft:arrow"
   }
 }

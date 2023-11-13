@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_saddle": {
+    "has_glass_bottle": {
       "conditions": {
         "items": [
           {
             "items": [
-              "minecraft:saddle"
+              "minecraft:glass_bottle"
             ]
           }
         ]
@@ -15,20 +15,20 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:stacked_saddles_from_saddle"
+        "recipe": "minecraft:bundled_bottles_from_glass_bottle"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
   },
   "requirements": [
     [
-      "has_saddle",
+      "has_glass_bottle",
       "has_the_recipe"
     ]
   ],
   "rewards": {
     "recipes": [
-      "minecraft:stacked_saddles_from_saddle"
+      "minecraft:bundled_bottles_from_glass_bottle"
     ]
   },
   "sends_telemetry_event": false

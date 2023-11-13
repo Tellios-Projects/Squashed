@@ -1,18 +1,18 @@
 {
   "type": "minecraft:crafting_shaped",
   "category": "misc",
+  "group": "squashed:stick",
   "key": {
     "#": {
-      "item": "minecraft:name_tag"
+      "item": "minecraft:stick"
     }
   },
   "pattern": [
-    "###",
-    "###",
-    "###"
+    "##",
+    "##"
   ],
   "result": {
-    "item": "squashed:bundled_nametags"
+    "item": "squashed:bundled_sticks"
   },
   "show_notification": true
 }
