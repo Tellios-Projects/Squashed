@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "squashed:bowl",
+  "key": {
+    "#": {
+      "item": "minecraft:bowl"
+    }
+  },
+  "pattern": [
+    " # ",
+    " # ",
+    " # "
+  ],
+  "result": {
+    "item": "squashed:stacked_bowls"
+  },
+  "show_notification": true
+}

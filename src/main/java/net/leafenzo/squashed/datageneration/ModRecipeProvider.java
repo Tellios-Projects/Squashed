@@ -4,6 +4,7 @@ import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
 import net.leafenzo.squashed.Super;
 import net.leafenzo.squashed.block.ModBlocks;
+import net.leafenzo.squashed.item.ModItems;
 import net.leafenzo.squashed.util.ModUtil;
 import net.minecraft.block.Blocks;
 import net.minecraft.data.server.recipe.RecipeJsonProvider;
@@ -13,6 +14,7 @@ import net.minecraft.data.server.recipe.ShapelessRecipeJsonBuilder;
 import net.minecraft.item.ItemConvertible;
 import net.minecraft.item.Items;
 import net.minecraft.recipe.book.RecipeCategory;
+import net.minecraft.registry.Registries;
 import net.minecraft.util.Identifier;
 import org.jetbrains.annotations.Nullable;
 
@@ -52,6 +54,25 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         ShapelessRecipeJsonBuilder.create(reverseCategory, baseItem, 9).input(compactItem).group(reverseGroup).criterion(RecipeProvider.hasItem(compactItem), RecipeProvider.conditionsFromItem(compactItem)).offerTo(exporter, new Identifier(reverseId+"_from_"+compactingId));
         ShapedRecipeJsonBuilder.create(compactingCategory, compactItem).input(Character.valueOf('#'), baseItem).pattern("###").pattern("###").pattern("###").group(compactingGroup).criterion(RecipeProvider.hasItem(baseItem), RecipeProvider.conditionsFromItem(baseItem)).offerTo(exporter, new Identifier(compactingId+"_from_"+reverseId));
     }
+
+    public static void offerReversibleStackingRecipes(Consumer<RecipeJsonProvider> exporter, RecipeCategory reverseCategory, ItemConvertible baseItem, RecipeCategory compactingCategory, ItemConvertible compactItem, String compactingId, @Nullable String compactingGroup, String reverseId, @Nullable String reverseGroup) {
+        ShapelessRecipeJsonBuilder.create(reverseCategory, baseItem, 3).input(compactItem).group(reverseGroup).criterion(RecipeProvider.hasItem(compactItem), RecipeProvider.conditionsFromItem(compactItem)).offerTo(exporter, new Identifier(reverseId+"_from_"+compactingId));
+        ShapedRecipeJsonBuilder.create(compactingCategory, compactItem)
+                .input(Character.valueOf('#'), baseItem)
+                .pattern(" # ")
+                .pattern(" # ")
+                .pattern(" # ")
+                .group(compactingGroup)
+                .criterion(RecipeProvider.hasItem(baseItem), RecipeProvider.conditionsFromItem(baseItem))
+                .offerTo(exporter, new Identifier(compactingId+"_from_"+reverseId));
+    }
+    public static void offerReversibleStackingRecipes(Consumer<RecipeJsonProvider> exporter, RecipeCategory reverseCategory, ItemConvertible baseItem, RecipeCategory compactingCategory, ItemConvertible compactItem) {
+        offerReversibleStackingRecipes(exporter, reverseCategory, baseItem, compactingCategory, compactItem, RecipeProvider.getRecipeName(compactItem), Super.MOD_ID + ":" + baseItem.toString(), RecipeProvider.getRecipeName(baseItem), Super.MOD_ID + ":" + baseItem.toString() + "_reverse");
+    }
+
+//    public static void offerReversibleCompactingRecipes(Consumer<RecipeJsonProvider> exporter, ItemConvertible baseItem, ItemConvertible compactItem) {
+//        offerReversibleCompactingRecipes(exporter, RecipeCategory.MISC, baseItem, RecipeCategory.BUILDING_BLOCKS, compactItem, RecipeProvider.getRecipeName(compactItem), Super.MOD_ID + ":" + baseItem.toString(), RecipeProvider.getRecipeName(baseItem), Super.MOD_ID + ":" + baseItem.toString() + "_reverse");
+//    }
 
     public static void offerTropicalFishBlockVariantRecipe(Consumer<RecipeJsonProvider> exporter, ItemConvertible output, ItemConvertible input) {
         ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, output, 8)
@@ -342,6 +363,37 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         offerReversibleCompactingRecipes(exporter, RecipeCategory.MISC, Items.SNOWBALL, RecipeCategory.BUILDING_BLOCKS, ModBlocks.SNOWBALL_BLOCK);
         offerReversibleCompactingRecipes(exporter, RecipeCategory.MISC, Items.AMETHYST_SHARD, RecipeCategory.BUILDING_BLOCKS, ModBlocks.AMETHYST_SHARD_BLOCK);
         offerReversibleCompactingRecipes(exporter, RecipeCategory.MISC, Items.QUARTZ, RecipeCategory.BUILDING_BLOCKS, ModBlocks.CRYSTAL_QUARTZ_BLOCK);
+
+        offerReversibleCompactingRecipes(exporter, RecipeCategory.MISC, Items.ARROW, RecipeCategory.MISC, ModItems.BUNDLED_ARROWS);
+        offerReversibleCompactingRecipes(exporter, RecipeCategory.MISC, Items.GLASS_BOTTLE, RecipeCategory.MISC, ModItems.BUNDLED_BOTTLES);
+        offerReversibleCompactingRecipes(exporter, RecipeCategory.MISC, Items.LEAD, RecipeCategory.MISC, ModItems.BUNDLED_LEADS);
+        offerReversibleCompactingRecipes(exporter, RecipeCategory.MISC, Items.NAME_TAG, RecipeCategory.MISC, ModItems.BUNDLED_NAMETAGS);
+        offerReversibleCompactingRecipes(exporter, RecipeCategory.MISC, Items.SPECTRAL_ARROW, RecipeCategory.MISC, ModItems.BUNDLED_SPECTRAL_ARROWS);
+//        offerReversibleCompactingRecipes(exporter, RecipeCategory.MISC, Items.STICK, RecipeCategory.MISC, ModItems.BUNDLED_STICKS);
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.BUNDLED_STICKS, 1)
+                .input(Character.valueOf('T'), Items.STICK)
+                .input(Character.valueOf('S'), Items.STRING)
+                .pattern("TST")
+                .pattern("TTT")
+                .pattern("TTT")
+                .criterion("has_stick", FabricRecipeProvider.conditionsFromItem(Items.STICK))
+                .criterion("has_string", FabricRecipeProvider.conditionsFromItem(Items.STRING))
+                .offerTo(exporter);
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, Items.STICK, 8)
+                .input(ModItems.BUNDLED_STICKS)
+                .criterion("has_bundled_sticks", FabricRecipeProvider.conditionsFromItem(ModItems.BUNDLED_STICKS))
+                .offerTo(exporter, getItemId(Items.STICK).getPath() + "_from_" + getItemId(ModItems.BUNDLED_STICKS).getPath());
+
+        offerReversibleStackingRecipes(exporter, RecipeCategory.MISC, Items.BOWL, RecipeCategory.MISC, ModItems.STACKED_BOWLS);
+        offerReversibleStackingRecipes(exporter, RecipeCategory.MISC, Items.BUCKET, RecipeCategory.MISC, ModItems.STACKED_BUCKETS);
+        offerReversibleStackingRecipes(exporter, RecipeCategory.MISC, Items.MINECART, RecipeCategory.MISC, ModItems.STACKED_MINECARTS);
+        offerReversibleStackingRecipes(exporter, RecipeCategory.MISC, Items.POWERED_RAIL, RecipeCategory.MISC, ModItems.STACKED_POWERED_RAILS);
+        offerReversibleStackingRecipes(exporter, RecipeCategory.MISC, Items.RAIL, RecipeCategory.MISC, ModItems.STACKED_RAILS);
+//        offerReversibleStackingRecipes(exporter, RecipeCategory.MISC, Items.SADDLE, RecipeCategory.MISC, ModItems.STACKED_SADDLES); //TODO if we are going to add me, find a way so that three items aren't forced into an item stack for what should be a non-stackable item when these are uncrafted. Such as spitting them all into the player's inventory at once.
+    }
+
+    private static Identifier getItemId(ItemConvertible item) {
+        return Registries.ITEM.getId(item.asItem());
     }
 }
 

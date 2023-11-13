@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_stacked_bowls": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "squashed:stacked_bowls"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:bowl_from_stacked_bowls"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_stacked_bowls",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:bowl_from_stacked_bowls"
+    ]
+  },
+  "sends_telemetry_event": false
+}

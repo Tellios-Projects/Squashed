@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "squashed:rail",
+  "key": {
+    "#": {
+      "item": "minecraft:rail"
+    }
+  },
+  "pattern": [
+    " # ",
+    " # ",
+    " # "
+  ],
+  "result": {
+    "item": "squashed:stacked_rails"
+  },
+  "show_notification": true
+}

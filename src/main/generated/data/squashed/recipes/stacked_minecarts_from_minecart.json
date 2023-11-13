@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "squashed:minecart",
+  "key": {
+    "#": {
+      "item": "minecraft:minecart"
+    }
+  },
+  "pattern": [
+    " # ",
+    " # ",
+    " # "
+  ],
+  "result": {
+    "item": "squashed:stacked_minecarts"
+  },
+  "show_notification": true
+}
