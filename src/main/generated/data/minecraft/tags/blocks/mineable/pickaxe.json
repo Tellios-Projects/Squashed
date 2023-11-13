@@ -125,6 +125,10 @@
     "squashed:crammed_amethyst_block",
     "squashed:dense_amethyst_block",
     "squashed:squashed_amethyst_block",
+    "squashed:compressed_bone_block",
+    "squashed:crammed_bone_block",
+    "squashed:dense_bone_block",
+    "squashed:squashed_bone_block",
     "squashed:compressed_copper_block",
     "squashed:crammed_copper_block",
     "squashed:dense_copper_block",
@@ -145,6 +149,8 @@
     "squashed:ghast_tear_block",
     "squashed:bones_block",
     "squashed:echo_shard_block",
-    "squashed:compressed_prismarine"
+    "squashed:compressed_prismarine",
+    "squashed:amethyst_shard_block",
+    "squashed:crystal_quartz_block"
   ]
 }

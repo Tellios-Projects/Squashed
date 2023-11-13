@@ -151,6 +151,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         offerReversibleCompactingRecipes(exporter, Blocks.EMERALD_BLOCK, ModBlocks.COMPACTED_EMERALD_BLOCKS);
         offerReversibleCompactingRecipes(exporter, Blocks.LAPIS_BLOCK, ModBlocks.COMPACTED_LAPIS_BLOCKS);
         offerReversibleCompactingRecipes(exporter, Blocks.AMETHYST_BLOCK, ModBlocks.COMPACTED_AMETHYST_BLOCKS);
+        offerReversibleCompactingRecipes(exporter, Blocks.BONE_BLOCK, ModBlocks.COMPACTED_BONE_BLOCKS);
         offerReversibleCompactingRecipes(exporter, Blocks.COPPER_BLOCK, ModBlocks.COMPACTED_COPPER_BLOCKS);
         //offerReversibleCompactingRecipes(exporter, Items.COPPER_BLOCK, ModBlocks.COMPRESSED_COPPER_BLOCK);
         offerReversibleCompactingRecipes(exporter, Items.EXPOSED_COPPER, ModBlocks.EXPOSED_COMPRESSED_COPPER_BLOCK);
@@ -338,6 +339,9 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         offerReversibleCompactingRecipes(exporter, RecipeCategory.MISC, Items.GUNPOWDER, RecipeCategory.BUILDING_BLOCKS, ModBlocks.GUNPOWDER_BLOCK);
         offerReversibleCompactingRecipes(exporter, RecipeCategory.MISC, Items.PRISMARINE, RecipeCategory.BUILDING_BLOCKS, ModBlocks.COMPRESSED_PRISMARINE);
         offerReversibleCompactingRecipes(exporter, RecipeCategory.MISC, Items.CHARCOAL, RecipeCategory.BUILDING_BLOCKS, ModBlocks.CHARCOAL_BLOCK);
+        offerReversibleCompactingRecipes(exporter, RecipeCategory.MISC, Items.SNOWBALL, RecipeCategory.BUILDING_BLOCKS, ModBlocks.SNOWBALL_BLOCK);
+        offerReversibleCompactingRecipes(exporter, RecipeCategory.MISC, Items.AMETHYST_SHARD, RecipeCategory.BUILDING_BLOCKS, ModBlocks.AMETHYST_SHARD_BLOCK);
+        offerReversibleCompactingRecipes(exporter, RecipeCategory.MISC, Items.QUARTZ, RecipeCategory.BUILDING_BLOCKS, ModBlocks.CRYSTAL_QUARTZ_BLOCK);
     }
 }
 

@@ -91,6 +91,7 @@ public class ModLootTableGenerator extends FabricBlockLootTableProvider {
         for(Block block : ModBlocks.COMPACTED_EMERALD_BLOCKS) { this.addDrop(block); }
         for(Block block : ModBlocks.COMPACTED_LAPIS_BLOCKS) { this.addDrop(block); }
         for(Block block : ModBlocks.COMPACTED_AMETHYST_BLOCKS) { this.addDrop(block); }
+        for(Block block : ModBlocks.COMPACTED_BONE_BLOCKS) { this.addDrop(block); }
         for(Block block : ModBlocks.COMPACTED_COPPER_BLOCKS) { this.addDrop(block); }
         this.addDrop(ModBlocks.EXPOSED_COMPRESSED_COPPER_BLOCK);
         this.addDrop(ModBlocks.WEATHERED_COMPRESSED_COPPER_BLOCK);
@@ -156,7 +157,7 @@ public class ModLootTableGenerator extends FabricBlockLootTableProvider {
         this.addDrop(ModBlocks.PAPER_BLOCK);
         this.addDrop(ModBlocks.COMPRESSED_SCAFFOLDING);
         this.addDrop(ModBlocks.KELP_BLOCK);
-        this.addDrop(ModBlocks.LILY_PAD_BLOCK);
+//        this.addDrop(ModBlocks.LILY_PAD_BLOCK);
         this.addDrop(ModBlocks.ENDER_EYE_BLOCK);
         this.addDrop(ModBlocks.ENDER_PEARL_BLOCK);
         this.addDrop(ModBlocks.ECHO_SHARD_BLOCK);
