@@ -50,6 +50,8 @@ public class ModFabricRegistries {
         registry.add(ModBlocks.GLOW_BERRIES_BLOCK, 75, 80);
         registry.add(ModBlocks.SWEET_BERRIES_BLOCK, 75, 80);
 
+        registry.add(ModBlocks.GUNPOWDER_BLOCK, 10, 80);
+
         registry.add(ModBlocks.SUGAR_BLOCK, 20, 5);
         registry.add(ModBlocks.SUGARCANE_BLOCK, 20, 5);
 

@@ -1,9 +1,6 @@
 package net.leafenzo.squashed.block;
 
-import net.minecraft.block.Block;
-import net.minecraft.block.BlockState;
-import net.minecraft.block.Blocks;
-import net.minecraft.block.FallingBlock;
+import net.minecraft.block.*;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
@@ -11,9 +8,10 @@ import net.minecraft.entity.projectile.ProjectileEntity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
-import net.minecraft.sound.SoundCategory;
-import net.minecraft.sound.SoundEvents;
 import net.minecraft.stat.Stats;
+import net.minecraft.state.StateManager;
+import net.minecraft.state.property.BooleanProperty;
+import net.minecraft.state.property.Properties;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.Hand;
 import net.minecraft.util.hit.BlockHitResult;
@@ -24,8 +22,11 @@ import net.minecraft.world.explosion.Explosion;
 import org.jetbrains.annotations.Nullable;
 
 public class GunpowderBlock extends FallingBlock {
+    public static final BooleanProperty UNSTABLE = Properties.UNSTABLE;
+
     public GunpowderBlock(Settings settings) {
         super(settings);
+        this.setDefaultState((BlockState)this.getDefaultState().with(UNSTABLE, false));
     }
 
     @Override
@@ -40,16 +41,23 @@ public class GunpowderBlock extends FallingBlock {
         explode(world, pos); //TODO make this not crash so easily with large amounts of these
     }
 
-
-    private void primeExplosion(World world, BlockPos pos, @Nullable LivingEntity igniter) {
+    public void primeExplosion(World world, BlockPos pos, @Nullable LivingEntity igniter) {
         if (world.isClient) {
             return;
         }
 //        TntEntity tntEntity = new TntEntity(world, (double)pos.getX() + 0.5, pos.getY(), (double)pos.getZ() + 0.5, igniter);
 //        world.spawnEntity(tntEntity);
-        world.playSound(null, pos.getX(), pos.getY(), pos.getZ(), SoundEvents.ENTITY_TNT_PRIMED, SoundCategory.BLOCKS, 1.0f, 1.0f);
-        world.emitGameEvent((Entity)igniter, GameEvent.PRIME_FUSE, pos);
+//        world.playSound(null, pos.getX(), pos.getY(), pos.getZ(), SoundEvents.ENTITY_TNT_PRIMED, SoundCategory.BLOCKS, 1.0f, 1.0f);
+        world.emitGameEvent((Entity)igniter, GameEvent.PRIME_FUSE, pos); // not entirely sure what this is used for, but it might be important so I'm keeping it even if I'm not keeping the sound
         explode(world, pos);
+    }
+
+    @Override
+    public void onBreak(World world, BlockPos pos, BlockState state, PlayerEntity player) {
+        if (!world.isClient() && !player.isCreative() && state.get(UNSTABLE).booleanValue()) {
+            TntBlock.primeTnt(world, pos);
+        }
+        super.onBreak(world, pos, state, player);
     }
 
     @Override
@@ -91,6 +99,11 @@ public class GunpowderBlock extends FallingBlock {
     @Override
     public boolean shouldDropItemsOnExplosion(Explosion explosion) {
         return false;
+    }
+
+    @Override
+    protected void appendProperties(StateManager.Builder<Block, BlockState> builder) {
+        builder.add(UNSTABLE);
     }
 
     // TODO figure out how to make this explode when it's caught fire from any source
