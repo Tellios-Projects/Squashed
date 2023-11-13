@@ -314,9 +314,9 @@ public class ModBlocks {
     );
     public static final Block[] COMPACTED_BONE_BLOCKS = registerCompactedBlockSet("bone_block",
             new Block(FabricBlockSettings.copyOf(Blocks.BONE_BLOCK).requiresTool().instrument(Instrument.XYLOPHONE)),
-            new Block(FabricBlockSettings.copyOf(Blocks.BONE_BLOCK).requiresTool().instrument(Instrument.SKELETON)),
-            new Block(FabricBlockSettings.copyOf(Blocks.BONE_BLOCK).requiresTool().instrument(Instrument.SKELETON)),
-            new Block(FabricBlockSettings.copyOf(Blocks.BONE_BLOCK).requiresTool().instrument(Instrument.SKELETON))
+            new Block(FabricBlockSettings.copyOf(Blocks.BONE_BLOCK).requiresTool().instrument(Instrument.XYLOPHONE)),
+            new Block(FabricBlockSettings.copyOf(Blocks.BONE_BLOCK).requiresTool().instrument(Instrument.XYLOPHONE)),
+            new Block(FabricBlockSettings.copyOf(Blocks.BONE_BLOCK).requiresTool().instrument(Instrument.XYLOPHONE)) //.instrument(Instrument.SKELETON) <- sadly this instrument only works when the block is placed above the noteblock
     );
     public static final Block[] COMPACTED_COPPER_BLOCKS = registerCompactedBlockSet("copper_block",
             new OxidizableBlock(Oxidizable.OxidationLevel.UNAFFECTED, FabricBlockSettings.copyOf(Blocks.STONE).mapColor(MapColor.ORANGE).requiresTool().strength(1.5f,6.0f).sounds(BlockSoundGroup.COPPER)),
@@ -500,7 +500,7 @@ public class ModBlocks {
     public static final Block EGG_BLOCK = registerBlock("egg_block", new Block(FabricBlockSettings.copyOf(Blocks.STONE).mapColor(MapColor.PALE_YELLOW).strength(0.5f).sounds(BlockSoundGroup.CANDLE)),ModItemGroups.SQUASHED);
     public static final Block PUFFERFISH_BLOCK = registerBlock("pufferfish_block", new PufferfishBlock(FabricBlockSettings.copyOf(Blocks.STONE).mapColor(MapColor.YELLOW).strength(0.5f).sounds(BlockSoundGroup.CORAL)),ModItemGroups.SQUASHED);
     public static final Block COMPRESSED_SPONGE = registerBlock("compressed_sponge", new CompressedSpongeBlock(FabricBlockSettings.copyOf(Blocks.POWDER_SNOW).mapColor(MapColor.YELLOW).strength(0.6f).sounds(BlockSoundGroup.CANDLE).nonOpaque().pistonBehavior(PistonBehavior.NORMAL)),ModItemGroups.SQUASHED);
-    public static final Block BONES_BLOCK = registerBlock("bones_block", new PillarBlock(FabricBlockSettings.copyOf(Blocks.STONE).mapColor(MapColor.OFF_WHITE).strength(1.5f,6.0f).sounds(BlockSoundGroup.BONE)),ModItemGroups.SQUASHED);
+    public static final Block BONES_BLOCK = registerBlock("bones_block", new PillarBlock(FabricBlockSettings.copyOf(Blocks.STONE).mapColor(MapColor.OFF_WHITE).strength(1.5f,6.0f).instrument(Instrument.XYLOPHONE).sounds(BlockSoundGroup.BONE)),ModItemGroups.SQUASHED);
     public static final Block PAPER_BLOCK = registerBlock("paper_block", new Block(FabricBlockSettings.copyOf(Blocks.STONE).mapColor(MapColor.OFF_WHITE).strength(0.5f).sounds(BlockSoundGroup.BIG_DRIPLEAF).burnable()),ModItemGroups.SQUASHED);
     public static final Block COMPRESSED_SCAFFOLDING = registerBlock("compressed_scaffolding", new PillarBlock(FabricBlockSettings.copyOf(Blocks.STONE).mapColor(MapColor.PALE_YELLOW).strength(2.0f).sounds(BlockSoundGroup.SCAFFOLDING).burnable()),ModItemGroups.SQUASHED);
     public static final Block KELP_BLOCK = registerBlock("kelp_block", new Block(FabricBlockSettings.copyOf(Blocks.STONE).mapColor(MapColor.DARK_GREEN).strength(0.2f).sounds(BlockSoundGroup.WET_GRASS)),ModItemGroups.SQUASHED);
