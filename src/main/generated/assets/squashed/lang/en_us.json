@@ -368,5 +368,17 @@
   "block.squashed.white_dye_block": "White Dye Block",
   "block.squashed.yellow_compressed_wool": "Yellow Packed Wool",
   "block.squashed.yellow_dye_block": "Yellow Dye Block",
+  "item.squashed.bundled_arrows": "Bundled Arrows",
+  "item.squashed.bundled_bottles": "Bundled Bottles",
+  "item.squashed.bundled_leads": "Bundled Leads",
+  "item.squashed.bundled_nametags": "Bundled Nametags",
+  "item.squashed.bundled_spectral_arrows": "Bundled Spectral Arrows",
+  "item.squashed.bundled_sticks": "Bundled Sticks",
+  "item.squashed.stacked_bowls": "Stacked Bowls",
+  "item.squashed.stacked_buckets": "Stacked Buckets",
+  "item.squashed.stacked_minecarts": "Stacked Minecarts",
+  "item.squashed.stacked_powered_rails": "Stacked Powered Rails",
+  "item.squashed.stacked_rails": "Stacked Rails",
+  "item.squashed.stacked_saddles": "Stacked Saddles",
   "itemgroup.squashed": "Squashed"
 }

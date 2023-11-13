@@ -5,6 +5,7 @@ import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
 import net.leafenzo.squashed.Super;
 import net.leafenzo.squashed.block.ModBlocks;
 import net.leafenzo.squashed.data.client.ModTexturedModel;
+import net.leafenzo.squashed.item.ModItems;
 import net.minecraft.block.Block;
 import net.minecraft.data.client.*;
 import net.minecraft.state.property.Properties;
@@ -322,6 +323,17 @@ public class ModModelProvider extends FabricModelProvider {
     }
     @Override
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
-
+        itemModelGenerator.register(ModItems.BUNDLED_ARROWS, Models.GENERATED);
+        itemModelGenerator.register(ModItems.BUNDLED_BOTTLES, Models.GENERATED);
+        itemModelGenerator.register(ModItems.BUNDLED_LEADS, Models.GENERATED);
+        itemModelGenerator.register(ModItems.BUNDLED_NAMETAGS, Models.GENERATED);
+        itemModelGenerator.register(ModItems.BUNDLED_SPECTRAL_ARROWS, Models.GENERATED);
+        itemModelGenerator.register(ModItems.BUNDLED_STICKS, Models.GENERATED);
+        itemModelGenerator.register(ModItems.STACKED_BOWLS, Models.GENERATED);
+        itemModelGenerator.register(ModItems.STACKED_BUCKETS, Models.GENERATED);
+        itemModelGenerator.register(ModItems.STACKED_MINECARTS, Models.GENERATED);
+        itemModelGenerator.register(ModItems.STACKED_POWERED_RAILS, Models.GENERATED);
+        itemModelGenerator.register(ModItems.STACKED_RAILS, Models.GENERATED);
+        itemModelGenerator.register(ModItems.STACKED_SADDLES, Models.GENERATED);
     }
 }

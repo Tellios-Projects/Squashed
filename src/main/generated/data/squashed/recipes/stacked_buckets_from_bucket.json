@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "squashed:bucket",
+  "key": {
+    "#": {
+      "item": "minecraft:bucket"
+    }
+  },
+  "pattern": [
+    " # ",
+    " # ",
+    " # "
+  ],
+  "result": {
+    "item": "squashed:stacked_buckets"
+  },
+  "show_notification": true
+}

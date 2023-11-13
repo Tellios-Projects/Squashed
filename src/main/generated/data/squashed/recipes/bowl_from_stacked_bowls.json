@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "squashed:bowl_reverse",
+  "ingredients": [
+    {
+      "item": "squashed:stacked_bowls"
+    }
+  ],
+  "result": {
+    "count": 3,
+    "item": "minecraft:bowl"
+  }
+}

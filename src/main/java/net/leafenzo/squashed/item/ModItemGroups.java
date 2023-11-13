@@ -21,9 +21,8 @@ public class ModItemGroups {
                     .icon(() -> new ItemStack(ModBlocks.COMPRESSED_SPONGE)).entries((displayContext, entries) -> {
 
                         //TODO REPLACEME!! this is just a quick lil thing so i can debug stuff- it's NOT optimized
-                        for(Identifier id : ModUtil.allBlockIdsInNamespace(Super.MOD_ID)) {
-                            entries.add(Registries.BLOCK.get(id));
-                        }
+                        //for(Identifier id : ModUtil.allBlockIdsInNamespace(Super.MOD_ID)) entries.add(Registries.BLOCK.get(id));
+                        for(Identifier id : ModUtil.allItemIdsInNamespace(Super.MOD_ID)) entries.add(Registries.ITEM.get(id));
 
                     }).build());
 
