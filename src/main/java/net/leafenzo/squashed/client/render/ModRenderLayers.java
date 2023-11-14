@@ -1,11 +1,15 @@
 package net.leafenzo.squashed.client.render;
 
 import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
+import net.leafenzo.squashed.ModInit;
+import net.leafenzo.squashed.Super;
 import net.leafenzo.squashed.block.ModBlocks;
 import net.minecraft.client.render.RenderLayer;
 
 public class ModRenderLayers {
-    public static void registerBlockCutouts() {
+    public static void registerRenderLayers() {
+        ModInit.LOGGER.debug("Registering render layers for " + Super.MOD_ID);
+
         BlockRenderLayerMap.INSTANCE.putBlocks(RenderLayer.getCutoutMipped(),
                 ModBlocks.DENSE_COBWEB_BLOCK,
                 ModBlocks.COMPRESSED_SPONGE,

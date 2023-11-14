@@ -616,6 +616,6 @@ public class ModBlocks {
     }
 
     public static void registerModBlocks() {
-        ModInit.LOGGER.debug("Registering mod blocks for " + Super.MOD_ID);
+        ModInit.LOGGER.debug("Registering blocks for " + Super.MOD_ID);
     }
 }
