@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_stacked_saddles": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "squashed:stacked_saddles"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:saddle_from_stacked_saddles"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_stacked_saddles",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:saddle_from_stacked_saddles"
+    ]
+  },
+  "sends_telemetry_event": false
+}

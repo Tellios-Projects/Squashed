@@ -390,7 +390,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         offerReversibleStackingRecipes(exporter, RecipeCategory.MISC, Items.MINECART, RecipeCategory.MISC, ModItems.STACKED_MINECARTS);
         offerReversibleStackingRecipes(exporter, RecipeCategory.MISC, Items.POWERED_RAIL, RecipeCategory.MISC, ModItems.STACKED_POWERED_RAILS);
         offerReversibleStackingRecipes(exporter, RecipeCategory.MISC, Items.RAIL, RecipeCategory.MISC, ModItems.STACKED_RAILS);
-//        offerReversibleStackingRecipes(exporter, RecipeCategory.MISC, Items.SADDLE, RecipeCategory.MISC, ModItems.STACKED_SADDLES); //TODO if we are going to add me, find a way so that three items aren't forced into an item stack for what should be a non-stackable item when these are uncrafted. Such as spitting them all into the player's inventory at once.
+        offerReversibleStackingRecipes(exporter, RecipeCategory.MISC, Items.SADDLE, RecipeCategory.MISC, ModItems.STACKED_SADDLES); //TODO if we are going to add me, find a way so that three items aren't forced into an item stack for what should be a non-stackable item when these are uncrafted. Such as spitting them all into the player's inventory at once. // nvm eliza said she doesnt care im just throwing it in
     }
 
     private static Identifier getItemId(ItemConvertible item) {

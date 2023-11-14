@@ -1,5 +1,6 @@
 package net.leafenzo.squashed.block;
 
+import net.leafenzo.squashed.entity.GunpowderBlockEntity;
 import net.minecraft.block.*;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.LivingEntity;
@@ -35,21 +36,23 @@ public class GunpowderBlock extends FallingBlock {
             return;
         }
 //        TntEntity tntEntity = new TntEntity(world, (double)pos.getX() + 0.5, pos.getY(), (double)pos.getZ() + 0.5, explosion.getCausingEntity());
-//        int i = tntEntity.getFuse();
-//        tntEntity.setFuse((short)(world.random.nextInt(i / 4) + i / 8));
-//        world.spawnEntity(tntEntity);
-        explode(world, pos); //TODO make this not crash so easily with large amounts of these
+//
+        GunpowderBlockEntity gunpowderBlockEntity = new GunpowderBlockEntity(world, (double)pos.getX() + 0.5, pos.getY(), (double)pos.getZ() + 0.5, explosion.getCausingEntity());
+        int i = gunpowderBlockEntity.getFuse();
+        gunpowderBlockEntity.setFuse((short)(world.random.nextInt(i / 4) + i / 8));
+        world.spawnEntity(gunpowderBlockEntity);
+        //explode(world, pos); //TODO make this not crash so easily with large amounts of these
     }
 
     public void primeExplosion(World world, BlockPos pos, @Nullable LivingEntity igniter) {
         if (world.isClient) {
             return;
         }
-//        TntEntity tntEntity = new TntEntity(world, (double)pos.getX() + 0.5, pos.getY(), (double)pos.getZ() + 0.5, igniter);
-//        world.spawnEntity(tntEntity);
+        GunpowderBlockEntity gunpowderBlockEntity = new GunpowderBlockEntity(world, (double)pos.getX() + 0.5, pos.getY(), (double)pos.getZ() + 0.5, igniter);
+        world.spawnEntity(gunpowderBlockEntity);
 //        world.playSound(null, pos.getX(), pos.getY(), pos.getZ(), SoundEvents.ENTITY_TNT_PRIMED, SoundCategory.BLOCKS, 1.0f, 1.0f);
         world.emitGameEvent((Entity)igniter, GameEvent.PRIME_FUSE, pos); // not entirely sure what this is used for, but it might be important so I'm keeping it even if I'm not keeping the sound
-        explode(world, pos);
+        //explode(world, pos);
     }
 
     @Override

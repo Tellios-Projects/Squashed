@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "squashed:saddle",
+  "key": {
+    "#": {
+      "item": "minecraft:saddle"
+    }
+  },
+  "pattern": [
+    " # ",
+    " # ",
+    " # "
+  ],
+  "result": {
+    "item": "squashed:stacked_saddles"
+  },
+  "show_notification": true
+}
