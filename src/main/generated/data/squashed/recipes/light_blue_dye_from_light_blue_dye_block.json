@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "squashed:light_blue_dye_reverse",
+  "ingredients": [
+    {
+      "item": "squashed:light_blue_dye_block"
+    }
+  ],
+  "result": {
+    "count": 4,
+    "item": "minecraft:light_blue_dye"
+  }
+}

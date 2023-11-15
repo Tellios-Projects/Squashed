@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "squashed:lime_dye_reverse",
+  "ingredients": [
+    {
+      "item": "squashed:lime_dye_block"
+    }
+  ],
+  "result": {
+    "count": 4,
+    "item": "minecraft:lime_dye"
+  }
+}

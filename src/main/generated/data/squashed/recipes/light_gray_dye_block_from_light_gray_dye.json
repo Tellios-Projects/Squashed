@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "squashed:light_gray_dye",
+  "key": {
+    "#": {
+      "item": "minecraft:light_gray_dye"
+    }
+  },
+  "pattern": [
+    "##",
+    "##"
+  ],
+  "result": {
+    "item": "squashed:light_gray_dye_block"
+  },
+  "show_notification": true
+}

@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "squashed:cooked_cod",
+  "key": {
+    "#": {
+      "item": "minecraft:cooked_cod"
+    }
+  },
+  "pattern": [
+    "##",
+    "##"
+  ],
+  "result": {
+    "item": "squashed:cooked_cod_block"
+  },
+  "show_notification": true
+}

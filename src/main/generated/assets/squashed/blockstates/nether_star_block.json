@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "squashed:block/nether_star_block"
+    }
+  }
+}

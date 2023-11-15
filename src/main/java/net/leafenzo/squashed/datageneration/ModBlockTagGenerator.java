@@ -38,6 +38,12 @@ public class ModBlockTagGenerator extends FabricTagProvider<Block> {
             getOrCreateTagBuilder(BlockTags.SOUL_SPEED_BLOCKS).add(block);
             getOrCreateTagBuilder(BlockTags.SOUL_FIRE_BASE_BLOCKS).add(block);
         }
+        for(Block block : ModBlocks.COMPACTED_SOUL_SOIL) {
+            getOrCreateTagBuilder(BlockTags.SHOVEL_MINEABLE).add(block);
+            getOrCreateTagBuilder(BlockTags.WITHER_SUMMON_BASE_BLOCKS).add(block);
+            getOrCreateTagBuilder(BlockTags.SOUL_SPEED_BLOCKS).add(block);
+            getOrCreateTagBuilder(BlockTags.SOUL_FIRE_BASE_BLOCKS).add(block);
+        }
         for(Block block : ModBlocks.COMPACTED_COBBLESTONE) {
             getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE).add(block);
         }
@@ -260,6 +266,11 @@ public class ModBlockTagGenerator extends FabricTagProvider<Block> {
                 .add(ModBlocks.COMPRESSED_PRISMARINE)
                 .add(ModBlocks.AMETHYST_SHARD_BLOCK)
                 .add(ModBlocks.CRYSTAL_QUARTZ_BLOCK)
+                .add(ModBlocks.HEART_OF_THE_SEA_BLOCK)
+                .add(ModBlocks.NAUTILUS_SHELL_BLOCK)
+                .add(ModBlocks.NETHER_STAR_BLOCK)
+                .add(ModBlocks.BRICKS_BLOCK)
+                .add(ModBlocks.NETHER_BRICKS_BLOCK)
         ;
 
         getOrCreateTagBuilder(BlockTags.NEEDS_STONE_TOOL)
@@ -310,6 +321,8 @@ public class ModBlockTagGenerator extends FabricTagProvider<Block> {
                 .add(ModBlocks.COMPRESSED_WARPED_WART_BLOCK)
                 .add(ModBlocks.MANGROVE_ROOTS_BLOCK)
                 .add(ModBlocks.COMPRESSED_SCAFFOLDING)
+                .add(ModBlocks.FERMENTED_SPIDER_EYE_BLOCK)
+                .add(ModBlocks.GLISTERING_MELON_BLOCK)
         ;
 
         getOrCreateTagBuilder(BlockTags.HOE_MINEABLE)
@@ -331,7 +344,7 @@ public class ModBlockTagGenerator extends FabricTagProvider<Block> {
                 .add(ModBlocks.PUMPKIN_SEED_BLOCK)
                 .add(ModBlocks.BEETROOT_SEED_BLOCK)
                 .add(ModBlocks.MELON_SEED_BLOCK)
-                .add(ModBlocks.COCOA_BEAN_BLOCK)
+                .add(ModBlocks.COCOA_BEANS_BLOCK)
                 .add(ModBlocks.COMPRESSED_OAK_SAPLING)
                 .add(ModBlocks.COMPRESSED_SPRUCE_SAPLING)
                 .add(ModBlocks.COMPRESSED_BIRCH_SAPLING)

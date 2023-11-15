@@ -151,6 +151,11 @@
     "squashed:echo_shard_block",
     "squashed:compressed_prismarine",
     "squashed:amethyst_shard_block",
-    "squashed:crystal_quartz_block"
+    "squashed:crystal_quartz_block",
+    "squashed:heart_of_the_sea_block",
+    "squashed:nautilus_shell_block",
+    "squashed:nether_star_block",
+    "squashed:bricks_block",
+    "squashed:nether_bricks_block"
   ]
 }

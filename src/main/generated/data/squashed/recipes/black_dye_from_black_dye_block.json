@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "squashed:black_dye_reverse",
+  "ingredients": [
+    {
+      "item": "squashed:black_dye_block"
+    }
+  ],
+  "result": {
+    "count": 4,
+    "item": "minecraft:black_dye"
+  }
+}

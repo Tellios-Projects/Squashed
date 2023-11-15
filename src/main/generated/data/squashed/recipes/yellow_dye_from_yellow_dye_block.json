@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "squashed:yellow_dye_reverse",
+  "ingredients": [
+    {
+      "item": "squashed:yellow_dye_block"
+    }
+  ],
+  "result": {
+    "count": 4,
+    "item": "minecraft:yellow_dye"
+  }
+}

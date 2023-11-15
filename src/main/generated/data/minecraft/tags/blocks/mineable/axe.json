@@ -100,6 +100,8 @@
     "squashed:compressed_nether_wart_block",
     "squashed:compressed_warped_wart_block",
     "squashed:mangrove_roots_block",
-    "squashed:compressed_scaffolding"
+    "squashed:compressed_scaffolding",
+    "squashed:fermented_spider_eye_block",
+    "squashed:glistering_melon_block"
   ]
 }

@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "squashed:cooked_cod_reverse",
+  "ingredients": [
+    {
+      "item": "squashed:cooked_cod_block"
+    }
+  ],
+  "result": {
+    "count": 4,
+    "item": "minecraft:cooked_cod"
+  }
+}

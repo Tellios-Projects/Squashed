@@ -11,9 +11,10 @@ public class ModTexturedModel {
     public static final TexturedModel.Factory LOG_PILE = TexturedModel.makeFactory(ModTexturedModel::logPile, ModModels.CUBE_DIRECTIONAL_DOWN_ROTATED);
     public static final TexturedModel.Factory CUBE_COLUME_SIDE_DOUBLE_FRONT = TexturedModel.makeFactory(ModTexturedModel::cubeColumnSideDoubleFront, Models.CUBE);
     public static final TexturedModel.Factory COMPRESSED_WOOL = TexturedModel.makeFactory(ModTexturedModel::compressedWool, Models.CUBE);
+    public static final TexturedModel.Factory CUBE_COLUMN_DEFAULT_TO_SIDE = TexturedModel.makeFactory(ModTexturedModel::cubeColumnDefaultToSide, ModModels.CUBE_DOWN_UP_ROTATED);
 
-    public static TextureMap logPile(Block block) {
-        return  new TextureMap()
+    private static TextureMap logPile(Block block) {
+        return new TextureMap()
                 .put(TextureKey.PARTICLE, TextureMap.getSubId(block, "_side"))
                 .put(TextureKey.NORTH, TextureMap.getSubId(block, "_side"))
                 .put(TextureKey.SOUTH, TextureMap.getSubId(block, "_side"))
@@ -24,8 +25,8 @@ public class ModTexturedModel {
                 ;
     }
 
-    public static TextureMap cubeColumnSideDoubleFront(Block block) {
-        return  new TextureMap()
+    private static TextureMap cubeColumnSideDoubleFront(Block block) {
+        return new TextureMap()
                 .put(TextureKey.PARTICLE, TextureMap.getSubId(block, "_side"))
                 .put(TextureKey.NORTH, TextureMap.getSubId(block, "_side"))
                 .put(TextureKey.SOUTH, TextureMap.getSubId(block, "_side"))
@@ -36,8 +37,8 @@ public class ModTexturedModel {
                 ;
     }
 
-    public static TextureMap compressedWool(Block block) {
-        return  new TextureMap()
+    private static TextureMap compressedWool(Block block) {
+        return new TextureMap()
                 .put(TextureKey.PARTICLE, TextureMap.getSubId(block, "_side"))
                 .put(TextureKey.NORTH, TextureMap.getSubId(block, "_side"))
                 .put(TextureKey.SOUTH, TextureMap.getSubId(block, "_side"))
@@ -45,6 +46,18 @@ public class ModTexturedModel {
                 .put(TextureKey.WEST, TextureMap.getSubId(block, "_side"))
                 .put(TextureKey.UP, Super.asResource("block/compressed_wool_top"))
                 .put(TextureKey.DOWN, Super.asResource("block/compressed_wool_top"))
+                ;
+    }
+
+    private static TextureMap cubeColumnDefaultToSide(Block block) {
+        return new TextureMap()
+                .put(TextureKey.PARTICLE, TextureMap.getSubId(block, "_side"))
+                .put(TextureKey.NORTH, TextureMap.getSubId(block, "_end"))
+                .put(TextureKey.SOUTH, TextureMap.getSubId(block, "_end"))
+                .put(TextureKey.EAST, TextureMap.getSubId(block, "_side"))
+                .put(TextureKey.WEST, TextureMap.getSubId(block, "_side"))
+                .put(TextureKey.UP, TextureMap.getSubId(block, "_side"))
+                .put(TextureKey.DOWN, TextureMap.getSubId(block, "_side"))
                 ;
     }
 }

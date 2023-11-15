@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "squashed:red_dye",
+  "key": {
+    "#": {
+      "item": "minecraft:red_dye"
+    }
+  },
+  "pattern": [
+    "##",
+    "##"
+  ],
+  "result": {
+    "item": "squashed:red_dye_block"
+  },
+  "show_notification": true
+}

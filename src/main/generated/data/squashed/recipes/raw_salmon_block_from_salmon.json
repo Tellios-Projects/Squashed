@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "squashed:salmon",
+  "key": {
+    "#": {
+      "item": "minecraft:salmon"
+    }
+  },
+  "pattern": [
+    "##",
+    "##"
+  ],
+  "result": {
+    "item": "squashed:raw_salmon_block"
+  },
+  "show_notification": true
+}

@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "squashed:cooked_porkchop_reverse",
+  "ingredients": [
+    {
+      "item": "squashed:cooked_pork_block"
+    }
+  ],
+  "result": {
+    "count": 4,
+    "item": "minecraft:cooked_porkchop"
+  }
+}

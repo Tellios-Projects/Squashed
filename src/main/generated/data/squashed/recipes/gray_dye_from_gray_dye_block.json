@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "squashed:gray_dye_reverse",
+  "ingredients": [
+    {
+      "item": "squashed:gray_dye_block"
+    }
+  ],
+  "result": {
+    "count": 4,
+    "item": "minecraft:gray_dye"
+  }
+}
