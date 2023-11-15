@@ -555,7 +555,7 @@ public class ModBlocks {
     public static Block[] registerCompactedBlockSet(String name, Block... blocks) {
         for (int i = 0; i < blocks.length; i++) {
             String newName = compressionTierNames[i] + "_" + name;
-                System.out.println("registering compacted block with name: " + newName + " and compression tier of " + i);
+//                System.out.println("registering compacted block with name: " + newName + " and compression tier of " + i);
             registerBlockWithCompressionTier(newName, i, blocks[i]);
         }
         return blocks;
