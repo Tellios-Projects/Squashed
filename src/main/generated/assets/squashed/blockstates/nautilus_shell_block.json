@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "squashed:block/nautilus_shell_block"
+    }
+  }
+}

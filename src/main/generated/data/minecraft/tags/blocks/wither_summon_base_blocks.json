@@ -4,6 +4,10 @@
     "squashed:compressed_soul_sand",
     "squashed:crammed_soul_sand",
     "squashed:dense_soul_sand",
-    "squashed:squashed_soul_sand"
+    "squashed:squashed_soul_sand",
+    "squashed:compressed_soul_soil",
+    "squashed:crammed_soul_soil",
+    "squashed:dense_soul_soil",
+    "squashed:squashed_soul_soil"
   ]
 }

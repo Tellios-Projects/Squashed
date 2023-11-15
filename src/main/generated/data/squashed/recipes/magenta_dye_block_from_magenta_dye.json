@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "squashed:magenta_dye",
+  "key": {
+    "#": {
+      "item": "minecraft:magenta_dye"
+    }
+  },
+  "pattern": [
+    "##",
+    "##"
+  ],
+  "result": {
+    "item": "squashed:magenta_dye_block"
+  },
+  "show_notification": true
+}

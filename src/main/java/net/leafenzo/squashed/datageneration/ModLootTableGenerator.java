@@ -41,7 +41,7 @@ public class ModLootTableGenerator extends FabricBlockLootTableProvider {
         this.addDrop(ModBlocks.PUMPKIN_SEED_BLOCK);
         this.addDrop(ModBlocks.BEETROOT_SEED_BLOCK);
         this.addDrop(ModBlocks.MELON_SEED_BLOCK);
-        this.addDrop(ModBlocks.COCOA_BEAN_BLOCK);
+        this.addDrop(ModBlocks.COCOA_BEANS_BLOCK);
         this.addDrop(ModBlocks.DEAD_BUSH_BLOCK);
         this.addDrop(ModBlocks.GLOW_BERRIES_BLOCK);
         this.addDrop(ModBlocks.SWEET_BERRIES_BLOCK);
@@ -54,6 +54,7 @@ public class ModLootTableGenerator extends FabricBlockLootTableProvider {
         this.addDrop(ModBlocks.SUGARCANE_BLOCK);
         this.addDrop(ModBlocks.SEA_PICKLE_BLOCK);
         for(Block block : ModBlocks.COMPACTED_SOUL_SAND) { this.addDrop(block); }
+        for(Block block : ModBlocks.COMPACTED_SOUL_SOIL) { this.addDrop(block); }
         for(Block block : ModBlocks.COMPACTED_COBBLESTONE) { this.addDrop(block); }
         for(Block block : ModBlocks.COMPACTED_STONE) { this.addDrop(block); }
         for(Block block : ModBlocks.COMPACTED_ANDESITE) { this.addDrop(block); }
@@ -176,5 +177,15 @@ public class ModLootTableGenerator extends FabricBlockLootTableProvider {
         this.addDrop(ModBlocks.GUNPOWDER_BLOCK);
         this.addDrop(ModBlocks.COMPRESSED_PRISMARINE);
         this.addDrop(ModBlocks.CHARCOAL_BLOCK);
+        this.addDrop(ModBlocks.SNOWBALL_BLOCK);
+        this.addDrop(ModBlocks.AMETHYST_SHARD_BLOCK);
+        this.addDrop(ModBlocks.CRYSTAL_QUARTZ_BLOCK);
+        this.addDrop(ModBlocks.HEART_OF_THE_SEA_BLOCK);
+        this.addDrop(ModBlocks.NAUTILUS_SHELL_BLOCK);
+        this.addDrop(ModBlocks.NETHER_STAR_BLOCK);
+        this.addDrop(ModBlocks.BRICKS_BLOCK);
+        this.addDrop(ModBlocks.NETHER_BRICKS_BLOCK);
+        this.addDrop(ModBlocks.FERMENTED_SPIDER_EYE_BLOCK);
+        this.addDrop(ModBlocks.GLISTERING_MELON_BLOCK);
     }
 }

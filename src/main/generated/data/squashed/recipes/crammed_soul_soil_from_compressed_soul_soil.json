@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "squashed:Block{minecraft:soul_soil}",
+  "key": {
+    "#": {
+      "item": "squashed:compressed_soul_soil"
+    }
+  },
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "result": {
+    "item": "squashed:crammed_soul_soil"
+  },
+  "show_notification": true
+}

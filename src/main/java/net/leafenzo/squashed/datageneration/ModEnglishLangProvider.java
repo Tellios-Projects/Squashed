@@ -3,9 +3,11 @@ package net.leafenzo.squashed.datageneration;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricLanguageProvider;
 import net.leafenzo.squashed.Super;
+import net.leafenzo.squashed.item.ModItemGroups;
 import net.leafenzo.squashed.util.ModUtil;
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemGroup;
 import net.minecraft.registry.Registries;
 import net.minecraft.util.Identifier;
 import net.leafenzo.squashed.block.ModBlocks;
@@ -35,6 +37,9 @@ public class ModEnglishLangProvider extends FabricLanguageProvider {
     }
     private void generateTranslation(TranslationBuilder translationBuilder, Item item, String translation) {
         generateTranslation(translationBuilder, item.getTranslationKey(), translation);
+    }
+    private void generateTranslation(TranslationBuilder translationBuilder, ItemGroup itemGroup, String translation) {
+        generateTranslation(translationBuilder, "itemgroup." + Registries.ITEM_GROUP.getId(itemGroup).getPath(), translation);
     }
     private void generatePotionTranslation(TranslationBuilder translationBuilder,  String subKey, String effectName) {
         String potionKey = "item.minecraft.potion.effect." + subKey;
@@ -66,6 +71,26 @@ public class ModEnglishLangProvider extends FabricLanguageProvider {
     @Override
     public void generateTranslations(TranslationBuilder translationBuilder) {
         //Manual
+        generateTranslation(translationBuilder, ModItemGroups.SQUASHED_BLOCKS, "Squashed!");
+        generateTranslation(translationBuilder, ModItemGroups.SQUASHED_COMPACTED, "Squashed! - Compacted Blocks");
+
+        generateTranslation(translationBuilder, ModBlocks.WHITE_COMPRESSED_WOOL, "Loomed White Wool");
+        generateTranslation(translationBuilder, ModBlocks.LIGHT_GRAY_COMPRESSED_WOOL, "Loomed Light Gray Wool");
+        generateTranslation(translationBuilder, ModBlocks.GRAY_COMPRESSED_WOOL, "Loomed Gray Wool");
+        generateTranslation(translationBuilder, ModBlocks.BLACK_COMPRESSED_WOOL, "Loomed Black Wool");
+        generateTranslation(translationBuilder, ModBlocks.BROWN_COMPRESSED_WOOL, "Loomed Brown Wool");
+        generateTranslation(translationBuilder, ModBlocks.RED_COMPRESSED_WOOL, "Loomed Red Wool");
+        generateTranslation(translationBuilder, ModBlocks.ORANGE_COMPRESSED_WOOL, "Loomed Orange Wool");
+        generateTranslation(translationBuilder, ModBlocks.YELLOW_COMPRESSED_WOOL, "Loomed Yellow Wool");
+        generateTranslation(translationBuilder, ModBlocks.LIME_COMPRESSED_WOOL, "Loomed Lime Wool");
+        generateTranslation(translationBuilder, ModBlocks.GREEN_COMPRESSED_WOOL, "Loomed Green Wool");
+        generateTranslation(translationBuilder, ModBlocks.CYAN_COMPRESSED_WOOL, "Loomed Cyan Wool");
+        generateTranslation(translationBuilder, ModBlocks.LIGHT_BLUE_COMPRESSED_WOOL, "Loomed Light Blue Wool");
+        generateTranslation(translationBuilder, ModBlocks.BLUE_COMPRESSED_WOOL, "Loomed Blue Wool");
+        generateTranslation(translationBuilder, ModBlocks.PURPLE_COMPRESSED_WOOL, "Loomed Purple Wool");
+        generateTranslation(translationBuilder, ModBlocks.MAGENTA_COMPRESSED_WOOL, "Loomed Magenta Wool");
+        generateTranslation(translationBuilder, ModBlocks.PINK_COMPRESSED_WOOL, "Loomed Pink Wool");
+
         generateTranslation(translationBuilder, ModBlocks.COMPACTED_REDSTONE_BLOCKS[0], "Critical Redstone Block");
         generateTranslation(translationBuilder, ModBlocks.COMPACTED_REDSTONE_BLOCKS[1], "Supercritical Redstone Block");
 
@@ -82,6 +107,7 @@ public class ModEnglishLangProvider extends FabricLanguageProvider {
 
         generateTranslation(translationBuilder, ModBlocks.ROTTEN_FLESH_BLOCK, "Heap of Rotten Flesh");
         generateTranslation(translationBuilder, ModBlocks.SPIDER_EYE_BLOCK, "Heap of Spider Eyes");
+        generateTranslation(translationBuilder, ModBlocks.FERMENTED_SPIDER_EYE_BLOCK, "Heap of Fermented Spider Eyes");
         generateTranslation(translationBuilder, ModBlocks.ENDER_PEARL_BLOCK, "Heap of Ender Pearls");
         generateTranslation(translationBuilder, ModBlocks.ENDER_EYE_BLOCK, "Heap of Ender Eyes");
 
@@ -103,6 +129,8 @@ public class ModEnglishLangProvider extends FabricLanguageProvider {
         generateTranslationUsingPileNamingScheme(translationBuilder, ModBlocks.COMPRESSED_AZALEA_LEAVES);
         generateTranslationUsingPileNamingScheme(translationBuilder, ModBlocks.COMPRESSED_FLOWERING_AZALEA_LEAVES);
 
+        generateTranslation(translationBuilder, ModBlocks.COMPRESSED_SPONGE, "Menger Sponge");
+
         generateTranslation(translationBuilder, ModBlocks.BOOK_BLOCK, "Pile of Books");
         generateTranslation(translationBuilder, ModBlocks.COMPRESSED_PUMPKIN, "Pile of Pumpkins");
         generateTranslation(translationBuilder, ModBlocks.COMPRESSED_MELON, "Pile of Melons");
@@ -112,6 +140,8 @@ public class ModEnglishLangProvider extends FabricLanguageProvider {
         generateTranslation(translationBuilder, ModBlocks.FERN_BLOCK, "Pile of Fern Clippings");
         generateTranslation(translationBuilder, ModBlocks.COMPRESSED_SEAGRASS, "Pile of Seagrass");
         generateTranslation(translationBuilder, ModBlocks.KELP_BLOCK, "Pile of Wet Kelp");
+
+        generateTranslation(translationBuilder, ModBlocks.COCOA_BEANS_BLOCK, "Pile of Cocoa Beans");
 
         generateTranslation(translationBuilder, ModBlocks.WHEAT_SEED_BLOCK, "Pile of Wheat Seeds");
         generateTranslation(translationBuilder, ModBlocks.PUMPKIN_SEED_BLOCK, "Pile of Pumpkin Seeds");
@@ -131,6 +161,8 @@ public class ModEnglishLangProvider extends FabricLanguageProvider {
         generateTranslation(translationBuilder, ModBlocks.PAPER_BLOCK, "Pile of Paper");
         generateTranslation(translationBuilder, ModBlocks.BONES_BLOCK, "Pile of Bones");
         generateTranslation(translationBuilder, ModBlocks.ECHO_SHARD_BLOCK, "Pile of Echo Shards");
+        generateTranslation(translationBuilder, ModBlocks.BRICKS_BLOCK, "Pile of Bricks");
+        generateTranslation(translationBuilder, ModBlocks.NETHER_BRICKS_BLOCK, "Pile of Nether Bricks");
 
         //Automatic
         for(Identifier id : ModUtil.allBlockIdsInNamespace(Super.MOD_ID)) {

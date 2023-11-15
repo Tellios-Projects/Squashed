@@ -122,7 +122,7 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.PUMPKIN_SEED_BLOCK);
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.BEETROOT_SEED_BLOCK);
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.MELON_SEED_BLOCK);
-        blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.COCOA_BEAN_BLOCK);
+        blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.COCOA_BEANS_BLOCK);
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.DEAD_BUSH_BLOCK);
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.GLOW_BERRIES_BLOCK);
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.SWEET_BERRIES_BLOCK);
@@ -135,6 +135,7 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.SUGARCANE_BLOCK);
 
         for(Block block : ModBlocks.COMPACTED_SOUL_SAND) { blockStateModelGenerator.registerCubeAllModelTexturePool(block); }
+        for(Block block : ModBlocks.COMPACTED_SOUL_SOIL) { blockStateModelGenerator.registerCubeAllModelTexturePool(block); }
         for(Block block : ModBlocks.COMPACTED_COBBLESTONE) { blockStateModelGenerator.registerCubeAllModelTexturePool(block); }
         for(Block block : ModBlocks.COMPACTED_STONE) { blockStateModelGenerator.registerCubeAllModelTexturePool(block); }
         for(Block block : ModBlocks.COMPACTED_ANDESITE) { blockStateModelGenerator.registerCubeAllModelTexturePool(block); }
@@ -312,7 +313,14 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerAxisRotated(ModBlocks.CHARCOAL_BLOCK, TexturedModel.CUBE_COLUMN);
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.SNOWBALL_BLOCK);
         registerUpDefaultOrientable(blockStateModelGenerator, ModBlocks.AMETHYST_SHARD_BLOCK, TexturedModel.CUBE_COLUMN);
-        registerUpDefaultOrientable(blockStateModelGenerator, ModBlocks.CRYSTAL_QUARTZ_BLOCK, TexturedModel.CUBE_COLUMN);
+        blockStateModelGenerator.registerSingleton(ModBlocks.CRYSTAL_QUARTZ_BLOCK, TexturedModel.CUBE_COLUMN);
+        blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.HEART_OF_THE_SEA_BLOCK);
+        blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.NAUTILUS_SHELL_BLOCK);
+        blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.NETHER_STAR_BLOCK);
+        blockStateModelGenerator.registerSingleton(ModBlocks.BRICKS_BLOCK, ModTexturedModel.CUBE_COLUMN_DEFAULT_TO_SIDE);
+        blockStateModelGenerator.registerSingleton(ModBlocks.NETHER_BRICKS_BLOCK, ModTexturedModel.CUBE_COLUMN_DEFAULT_TO_SIDE);
+        blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.FERMENTED_SPIDER_EYE_BLOCK);
+        blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.GLISTERING_MELON_BLOCK);
 
         // BlockItem Models  // For anything that does not use datagen to supply models elsewhere
         blockStateModelGenerator.registerParentedItemModel(ModBlocks.MAGMA_CREAM_BLOCK, Super.asResource("block/magma_cream_block"));

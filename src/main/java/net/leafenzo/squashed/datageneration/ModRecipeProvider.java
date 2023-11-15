@@ -112,27 +112,27 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         offerReversibleCompactingRecipes(exporter, RecipeCategory.MISC, Items.FIRE_CHARGE, RecipeCategory.BUILDING_BLOCKS, ModBlocks.FIRE_CHARGE_BLOCK);
         offerReversibleCompactingRecipes(exporter, RecipeCategory.MISC, Items.MAGMA_CREAM, RecipeCategory.BUILDING_BLOCKS, ModBlocks.MAGMA_CREAM_BLOCK);
         offerReversibleCompactingRecipes(exporter, RecipeCategory.MISC, Items.BLAZE_POWDER, RecipeCategory.BUILDING_BLOCKS, ModBlocks.BLAZE_POWDER_BLOCK);
-        offerReversibleCompactingRecipes(exporter, RecipeCategory.MISC, Items.SALMON, RecipeCategory.BUILDING_BLOCKS, ModBlocks.RAW_SALMON_BLOCK);
-        offerReversibleCompactingRecipes(exporter, RecipeCategory.MISC, Items.COOKED_SALMON, RecipeCategory.BUILDING_BLOCKS, ModBlocks.COOKED_SALMON_BLOCK);
-        offerReversibleCompactingRecipes(exporter, RecipeCategory.MISC, Items.COD, RecipeCategory.BUILDING_BLOCKS, ModBlocks.RAW_COD_BLOCK);
-        offerReversibleCompactingRecipes(exporter, RecipeCategory.MISC, Items.COOKED_COD, RecipeCategory.BUILDING_BLOCKS, ModBlocks.COOKED_COD_BLOCK);
-        offerReversibleCompactingRecipes(exporter, RecipeCategory.MISC, Items.RABBIT, RecipeCategory.BUILDING_BLOCKS, ModBlocks.RAW_RABBIT_BLOCK);
-        offerReversibleCompactingRecipes(exporter, RecipeCategory.MISC, Items.COOKED_RABBIT, RecipeCategory.BUILDING_BLOCKS, ModBlocks.COOKED_RABBIT_BLOCK);
-        offerReversibleCompactingRecipes(exporter, RecipeCategory.MISC, Items.MUTTON, RecipeCategory.BUILDING_BLOCKS, ModBlocks.RAW_MUTTON_BLOCK);
-        offerReversibleCompactingRecipes(exporter, RecipeCategory.MISC, Items.COOKED_MUTTON, RecipeCategory.BUILDING_BLOCKS, ModBlocks.COOKED_MUTTON_BLOCK);
-        offerReversibleCompactingRecipes(exporter, RecipeCategory.MISC, Items.CHICKEN, RecipeCategory.BUILDING_BLOCKS, ModBlocks.RAW_CHICKEN_BLOCK);
-        offerReversibleCompactingRecipes(exporter, RecipeCategory.MISC, Items.COOKED_CHICKEN, RecipeCategory.BUILDING_BLOCKS, ModBlocks.COOKED_CHICKEN_BLOCK);
-        offerReversibleCompactingRecipes(exporter, RecipeCategory.MISC, Items.BEEF, RecipeCategory.BUILDING_BLOCKS, ModBlocks.RAW_BEEF_BLOCK);
-        offerReversibleCompactingRecipes(exporter, RecipeCategory.MISC, Items.COOKED_BEEF, RecipeCategory.BUILDING_BLOCKS, ModBlocks.COOKED_BEEF_BLOCK);
-        offerReversibleCompactingRecipes(exporter, RecipeCategory.MISC, Items.PORKCHOP, RecipeCategory.BUILDING_BLOCKS, ModBlocks.RAW_PORK_BLOCK);
-        offerReversibleCompactingRecipes(exporter, RecipeCategory.MISC, Items.COOKED_PORKCHOP, RecipeCategory.BUILDING_BLOCKS, ModBlocks.COOKED_PORK_BLOCK);
+        offerReversible2x2CompactingRecipes(exporter, RecipeCategory.MISC, Items.SALMON, RecipeCategory.BUILDING_BLOCKS, ModBlocks.RAW_SALMON_BLOCK);
+        offerReversible2x2CompactingRecipes(exporter, RecipeCategory.MISC, Items.COOKED_SALMON, RecipeCategory.BUILDING_BLOCKS, ModBlocks.COOKED_SALMON_BLOCK);
+        offerReversible2x2CompactingRecipes(exporter, RecipeCategory.MISC, Items.COD, RecipeCategory.BUILDING_BLOCKS, ModBlocks.RAW_COD_BLOCK);
+        offerReversible2x2CompactingRecipes(exporter, RecipeCategory.MISC, Items.COOKED_COD, RecipeCategory.BUILDING_BLOCKS, ModBlocks.COOKED_COD_BLOCK);
+        offerReversible2x2CompactingRecipes(exporter, RecipeCategory.MISC, Items.RABBIT, RecipeCategory.BUILDING_BLOCKS, ModBlocks.RAW_RABBIT_BLOCK);
+        offerReversible2x2CompactingRecipes(exporter, RecipeCategory.MISC, Items.COOKED_RABBIT, RecipeCategory.BUILDING_BLOCKS, ModBlocks.COOKED_RABBIT_BLOCK);
+        offerReversible2x2CompactingRecipes(exporter, RecipeCategory.MISC, Items.MUTTON, RecipeCategory.BUILDING_BLOCKS, ModBlocks.RAW_MUTTON_BLOCK);
+        offerReversible2x2CompactingRecipes(exporter, RecipeCategory.MISC, Items.COOKED_MUTTON, RecipeCategory.BUILDING_BLOCKS, ModBlocks.COOKED_MUTTON_BLOCK);
+        offerReversible2x2CompactingRecipes(exporter, RecipeCategory.MISC, Items.CHICKEN, RecipeCategory.BUILDING_BLOCKS, ModBlocks.RAW_CHICKEN_BLOCK);
+        offerReversible2x2CompactingRecipes(exporter, RecipeCategory.MISC, Items.COOKED_CHICKEN, RecipeCategory.BUILDING_BLOCKS, ModBlocks.COOKED_CHICKEN_BLOCK);
+        offerReversible2x2CompactingRecipes(exporter, RecipeCategory.MISC, Items.BEEF, RecipeCategory.BUILDING_BLOCKS, ModBlocks.RAW_BEEF_BLOCK);
+        offerReversible2x2CompactingRecipes(exporter, RecipeCategory.MISC, Items.COOKED_BEEF, RecipeCategory.BUILDING_BLOCKS, ModBlocks.COOKED_BEEF_BLOCK);
+        offerReversible2x2CompactingRecipes(exporter, RecipeCategory.MISC, Items.PORKCHOP, RecipeCategory.BUILDING_BLOCKS, ModBlocks.RAW_PORK_BLOCK);
+        offerReversible2x2CompactingRecipes(exporter, RecipeCategory.MISC, Items.COOKED_PORKCHOP, RecipeCategory.BUILDING_BLOCKS, ModBlocks.COOKED_PORK_BLOCK);
         offerReversibleCompactingRecipes(exporter, RecipeCategory.MISC, Items.ROTTEN_FLESH, RecipeCategory.BUILDING_BLOCKS, ModBlocks.ROTTEN_FLESH_BLOCK);
         offerReversibleCompactingRecipes(exporter, RecipeCategory.MISC, Items.SPIDER_EYE, RecipeCategory.BUILDING_BLOCKS, ModBlocks.SPIDER_EYE_BLOCK);
         offerReversibleCompactingRecipes(exporter, RecipeCategory.MISC, Items.WHEAT_SEEDS, RecipeCategory.BUILDING_BLOCKS, ModBlocks.WHEAT_SEED_BLOCK);
         offerReversibleCompactingRecipes(exporter, RecipeCategory.MISC, Items.PUMPKIN_SEEDS, RecipeCategory.BUILDING_BLOCKS, ModBlocks.PUMPKIN_SEED_BLOCK);
         offerReversibleCompactingRecipes(exporter, RecipeCategory.MISC, Items.BEETROOT_SEEDS, RecipeCategory.BUILDING_BLOCKS, ModBlocks.BEETROOT_SEED_BLOCK);
         offerReversibleCompactingRecipes(exporter, RecipeCategory.MISC, Items.MELON_SEEDS, RecipeCategory.BUILDING_BLOCKS, ModBlocks.MELON_SEED_BLOCK);
-        offerReversibleCompactingRecipes(exporter, RecipeCategory.MISC, Items.COCOA_BEANS, RecipeCategory.BUILDING_BLOCKS, ModBlocks.COCOA_BEAN_BLOCK);
+        offerReversibleCompactingRecipes(exporter, RecipeCategory.MISC, Items.COCOA_BEANS, RecipeCategory.BUILDING_BLOCKS, ModBlocks.COCOA_BEANS_BLOCK);
         offerReversibleCompactingRecipes(exporter, RecipeCategory.MISC, Items.DEAD_BUSH, RecipeCategory.BUILDING_BLOCKS, ModBlocks.DEAD_BUSH_BLOCK);
         offerReversibleCompactingRecipes(exporter, RecipeCategory.MISC, Items.GLOW_BERRIES, RecipeCategory.BUILDING_BLOCKS, ModBlocks.GLOW_BERRIES_BLOCK);
         offerReversibleCompactingRecipes(exporter, RecipeCategory.MISC, Items.SWEET_BERRIES, RecipeCategory.BUILDING_BLOCKS, ModBlocks.SWEET_BERRIES_BLOCK);
@@ -148,6 +148,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
 
 
         offerReversibleCompactingRecipes(exporter, Blocks.SOUL_SAND, ModBlocks.COMPACTED_SOUL_SAND);
+        offerReversibleCompactingRecipes(exporter, Blocks.SOUL_SOIL, ModBlocks.COMPACTED_SOUL_SOIL);
         offerReversibleCompactingRecipes(exporter, Blocks.COBBLESTONE, ModBlocks.COMPACTED_COBBLESTONE);
         offerReversibleCompactingRecipes(exporter, Blocks.STONE, ModBlocks.COMPACTED_STONE);
         offerReversibleCompactingRecipes(exporter, Blocks.ANDESITE, ModBlocks.COMPACTED_ANDESITE);
@@ -193,22 +194,22 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         offerReversibleCompactingRecipes(exporter, Items.WEATHERED_COPPER, ModBlocks.WEATHERED_COMPRESSED_COPPER_BLOCK);
         offerReversibleCompactingRecipes(exporter, Items.OXIDIZED_COPPER, ModBlocks.OXIDIZED_COMPRESSED_COPPER_BLOCK);
 
-        offerReversibleCompactingRecipes(exporter, RecipeCategory.MISC, Items.WHITE_DYE, RecipeCategory.BUILDING_BLOCKS, ModBlocks.WHITE_DYE_BLOCK);
-        offerReversibleCompactingRecipes(exporter, RecipeCategory.MISC, Items.ORANGE_DYE, RecipeCategory.BUILDING_BLOCKS, ModBlocks.ORANGE_DYE_BLOCK);
-        offerReversibleCompactingRecipes(exporter, RecipeCategory.MISC, Items.MAGENTA_DYE, RecipeCategory.BUILDING_BLOCKS, ModBlocks.MAGENTA_DYE_BLOCK);
-        offerReversibleCompactingRecipes(exporter, RecipeCategory.MISC, Items.LIGHT_BLUE_DYE, RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIGHT_BLUE_DYE_BLOCK);
-        offerReversibleCompactingRecipes(exporter, RecipeCategory.MISC, Items.YELLOW_DYE, RecipeCategory.BUILDING_BLOCKS, ModBlocks.YELLOW_DYE_BLOCK);
-        offerReversibleCompactingRecipes(exporter, RecipeCategory.MISC, Items.LIME_DYE, RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIME_DYE_BLOCK);
-        offerReversibleCompactingRecipes(exporter, RecipeCategory.MISC, Items.PINK_DYE, RecipeCategory.BUILDING_BLOCKS, ModBlocks.PINK_DYE_BLOCK);
-        offerReversibleCompactingRecipes(exporter, RecipeCategory.MISC, Items.GRAY_DYE, RecipeCategory.BUILDING_BLOCKS, ModBlocks.GRAY_DYE_BLOCK);
-        offerReversibleCompactingRecipes(exporter, RecipeCategory.MISC, Items.LIGHT_GRAY_DYE, RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIGHT_GRAY_DYE_BLOCK);
-        offerReversibleCompactingRecipes(exporter, RecipeCategory.MISC, Items.CYAN_DYE, RecipeCategory.BUILDING_BLOCKS, ModBlocks.CYAN_DYE_BLOCK);
-        offerReversibleCompactingRecipes(exporter, RecipeCategory.MISC, Items.PURPLE_DYE, RecipeCategory.BUILDING_BLOCKS, ModBlocks.PURPLE_DYE_BLOCK);
-        offerReversibleCompactingRecipes(exporter, RecipeCategory.MISC, Items.BLUE_DYE, RecipeCategory.BUILDING_BLOCKS, ModBlocks.BLUE_DYE_BLOCK);
-        offerReversibleCompactingRecipes(exporter, RecipeCategory.MISC, Items.BROWN_DYE, RecipeCategory.BUILDING_BLOCKS, ModBlocks.BROWN_DYE_BLOCK);
-        offerReversibleCompactingRecipes(exporter, RecipeCategory.MISC, Items.GREEN_DYE, RecipeCategory.BUILDING_BLOCKS, ModBlocks.GREEN_DYE_BLOCK);
-        offerReversibleCompactingRecipes(exporter, RecipeCategory.MISC, Items.RED_DYE, RecipeCategory.BUILDING_BLOCKS, ModBlocks.RED_DYE_BLOCK);
-        offerReversibleCompactingRecipes(exporter, RecipeCategory.MISC, Items.BLACK_DYE, RecipeCategory.BUILDING_BLOCKS, ModBlocks.BLACK_DYE_BLOCK);
+        offerReversible2x2CompactingRecipes(exporter, RecipeCategory.MISC, Items.WHITE_DYE, RecipeCategory.BUILDING_BLOCKS, ModBlocks.WHITE_DYE_BLOCK);
+        offerReversible2x2CompactingRecipes(exporter, RecipeCategory.MISC, Items.ORANGE_DYE, RecipeCategory.BUILDING_BLOCKS, ModBlocks.ORANGE_DYE_BLOCK);
+        offerReversible2x2CompactingRecipes(exporter, RecipeCategory.MISC, Items.MAGENTA_DYE, RecipeCategory.BUILDING_BLOCKS, ModBlocks.MAGENTA_DYE_BLOCK);
+        offerReversible2x2CompactingRecipes(exporter, RecipeCategory.MISC, Items.LIGHT_BLUE_DYE, RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIGHT_BLUE_DYE_BLOCK);
+        offerReversible2x2CompactingRecipes(exporter, RecipeCategory.MISC, Items.YELLOW_DYE, RecipeCategory.BUILDING_BLOCKS, ModBlocks.YELLOW_DYE_BLOCK);
+        offerReversible2x2CompactingRecipes(exporter, RecipeCategory.MISC, Items.LIME_DYE, RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIME_DYE_BLOCK);
+        offerReversible2x2CompactingRecipes(exporter, RecipeCategory.MISC, Items.PINK_DYE, RecipeCategory.BUILDING_BLOCKS, ModBlocks.PINK_DYE_BLOCK);
+        offerReversible2x2CompactingRecipes(exporter, RecipeCategory.MISC, Items.GRAY_DYE, RecipeCategory.BUILDING_BLOCKS, ModBlocks.GRAY_DYE_BLOCK);
+        offerReversible2x2CompactingRecipes(exporter, RecipeCategory.MISC, Items.LIGHT_GRAY_DYE, RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIGHT_GRAY_DYE_BLOCK);
+        offerReversible2x2CompactingRecipes(exporter, RecipeCategory.MISC, Items.CYAN_DYE, RecipeCategory.BUILDING_BLOCKS, ModBlocks.CYAN_DYE_BLOCK);
+        offerReversible2x2CompactingRecipes(exporter, RecipeCategory.MISC, Items.PURPLE_DYE, RecipeCategory.BUILDING_BLOCKS, ModBlocks.PURPLE_DYE_BLOCK);
+        offerReversible2x2CompactingRecipes(exporter, RecipeCategory.MISC, Items.BLUE_DYE, RecipeCategory.BUILDING_BLOCKS, ModBlocks.BLUE_DYE_BLOCK);
+        offerReversible2x2CompactingRecipes(exporter, RecipeCategory.MISC, Items.BROWN_DYE, RecipeCategory.BUILDING_BLOCKS, ModBlocks.BROWN_DYE_BLOCK);
+        offerReversible2x2CompactingRecipes(exporter, RecipeCategory.MISC, Items.GREEN_DYE, RecipeCategory.BUILDING_BLOCKS, ModBlocks.GREEN_DYE_BLOCK);
+        offerReversible2x2CompactingRecipes(exporter, RecipeCategory.MISC, Items.RED_DYE, RecipeCategory.BUILDING_BLOCKS, ModBlocks.RED_DYE_BLOCK);
+        offerReversible2x2CompactingRecipes(exporter, RecipeCategory.MISC, Items.BLACK_DYE, RecipeCategory.BUILDING_BLOCKS, ModBlocks.BLACK_DYE_BLOCK);
 
         offerReversibleCompactingRecipes(exporter, Items.WHITE_WOOL, ModBlocks.WHITE_COMPRESSED_WOOL);
         offerReversibleCompactingRecipes(exporter, Items.ORANGE_WOOL, ModBlocks.ORANGE_COMPRESSED_WOOL);
@@ -268,7 +269,6 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         offerReversibleCompactingRecipes(exporter, RecipeCategory.MISC, Items.SEAGRASS, RecipeCategory.BUILDING_BLOCKS, ModBlocks.COMPRESSED_SEAGRASS);
         offerReversibleCompactingRecipes(exporter, RecipeCategory.MISC, Items.CACTUS, RecipeCategory.BUILDING_BLOCKS, ModBlocks.COMPRESSED_CACTUS);
 
-
         // Non-Reversible 2x2 Compacting Recipe
         ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.TROPICAL_FISH_BLOCK_A, 1)
                 .input(Character.valueOf('F'), Items.TROPICAL_FISH)
@@ -317,19 +317,6 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         offerTropicalFishBlockVariantRecipe(exporter, ModBlocks.TROPICAL_FISH_BLOCK_S, Items.CLAY_BALL);
         offerTropicalFishBlockVariantRecipe(exporter, ModBlocks.TROPICAL_FISH_BLOCK_T, Items.BAMBOO);
 
-
-
-
-
-
-
-
-
-
-
-
-
-
         offerReversibleCompactingRecipes(exporter, RecipeCategory.MISC, Items.PRISMARINE_SHARD, RecipeCategory.BUILDING_BLOCKS, ModBlocks.PRISMARINE_CRYSTAL_BLOCK);
         offerReversibleCompactingRecipes(exporter, RecipeCategory.MISC, Items.GLOW_INK_SAC, RecipeCategory.BUILDING_BLOCKS, ModBlocks.GLOW_INK_SAC_BLOCK);
         offerReversibleCompactingRecipes(exporter, RecipeCategory.MISC, Items.SCUTE, RecipeCategory.BUILDING_BLOCKS, ModBlocks.SCUTE_BLOCK);
@@ -376,6 +363,13 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         offerReversibleCompactingRecipes(exporter, RecipeCategory.MISC, Items.SNOWBALL, RecipeCategory.BUILDING_BLOCKS, ModBlocks.SNOWBALL_BLOCK);
         offerReversibleCompactingRecipes(exporter, RecipeCategory.MISC, Items.AMETHYST_SHARD, RecipeCategory.BUILDING_BLOCKS, ModBlocks.AMETHYST_SHARD_BLOCK);
         offerReversibleCompactingRecipes(exporter, RecipeCategory.MISC, Items.QUARTZ, RecipeCategory.BUILDING_BLOCKS, ModBlocks.CRYSTAL_QUARTZ_BLOCK);
+        offerReversibleCompactingRecipes(exporter, RecipeCategory.MISC, Items.HEART_OF_THE_SEA, RecipeCategory.BUILDING_BLOCKS, ModBlocks.HEART_OF_THE_SEA_BLOCK);
+        offerReversibleCompactingRecipes(exporter, RecipeCategory.MISC, Items.NAUTILUS_SHELL, RecipeCategory.BUILDING_BLOCKS, ModBlocks.NAUTILUS_SHELL_BLOCK);
+        offerReversibleCompactingRecipes(exporter, RecipeCategory.MISC, Items.NETHER_STAR, RecipeCategory.BUILDING_BLOCKS, ModBlocks.NETHER_STAR_BLOCK);
+        offerReversibleCompactingRecipes(exporter, RecipeCategory.MISC, Items.BRICK, RecipeCategory.BUILDING_BLOCKS, ModBlocks.BRICKS_BLOCK);
+        offerReversibleCompactingRecipes(exporter, RecipeCategory.MISC, Items.NETHER_BRICK, RecipeCategory.BUILDING_BLOCKS, ModBlocks.NETHER_BRICKS_BLOCK);
+        offerReversibleCompactingRecipes(exporter, RecipeCategory.MISC, Items.FERMENTED_SPIDER_EYE, RecipeCategory.BUILDING_BLOCKS, ModBlocks.FERMENTED_SPIDER_EYE_BLOCK);
+        offerReversibleCompactingRecipes(exporter, RecipeCategory.MISC, Items.GLISTERING_MELON_SLICE, RecipeCategory.BUILDING_BLOCKS, ModBlocks.GLISTERING_MELON_BLOCK);
 
         offerReversible2x2CompactingRecipes(exporter, RecipeCategory.MISC, Items.ARROW, RecipeCategory.MISC, ModItems.BUNDLED_ARROWS);
         offerReversible2x2CompactingRecipes(exporter, RecipeCategory.MISC, Items.GLASS_BOTTLE, RecipeCategory.MISC, ModItems.BUNDLED_BOTTLES);

@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "squashed:light_blue_dye",
+  "key": {
+    "#": {
+      "item": "minecraft:light_blue_dye"
+    }
+  },
+  "pattern": [
+    "##",
+    "##"
+  ],
+  "result": {
+    "item": "squashed:light_blue_dye_block"
+  },
+  "show_notification": true
+}

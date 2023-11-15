@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "squashed:orange_dye",
+  "key": {
+    "#": {
+      "item": "minecraft:orange_dye"
+    }
+  },
+  "pattern": [
+    "##",
+    "##"
+  ],
+  "result": {
+    "item": "squashed:orange_dye_block"
+  },
+  "show_notification": true
+}

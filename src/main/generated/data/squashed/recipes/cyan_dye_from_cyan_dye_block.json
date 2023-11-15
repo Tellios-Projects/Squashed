@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "squashed:cyan_dye_reverse",
+  "ingredients": [
+    {
+      "item": "squashed:cyan_dye_block"
+    }
+  ],
+  "result": {
+    "count": 4,
+    "item": "minecraft:cyan_dye"
+  }
+}

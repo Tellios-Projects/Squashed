@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_cocoa_bean_block": {
+    "has_cocoa_beans_block": {
       "conditions": {
         "items": [
           {
             "items": [
-              "squashed:cocoa_bean_block"
+              "squashed:cocoa_beans_block"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_cocoa_bean_block",
+      "has_cocoa_beans_block",
       "has_the_recipe"
     ]
   ],

@@ -1,0 +1,12 @@
+{
+  "parent": "squashed:block/cube_down_up_rotated",
+  "textures": {
+    "down": "squashed:block/nether_bricks_block_side",
+    "east": "squashed:block/nether_bricks_block_side",
+    "north": "squashed:block/nether_bricks_block_end",
+    "particle": "squashed:block/nether_bricks_block_side",
+    "south": "squashed:block/nether_bricks_block_end",
+    "up": "squashed:block/nether_bricks_block_side",
+    "west": "squashed:block/nether_bricks_block_side"
+  }
+}
