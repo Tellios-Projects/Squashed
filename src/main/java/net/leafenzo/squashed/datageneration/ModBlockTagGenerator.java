@@ -137,6 +137,7 @@ public class ModBlockTagGenerator extends FabricTagProvider<Block> {
         }
         for(Block block : ModBlocks.COMPACTED_COAL_BLOCKS) {
             getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE).add(block);
+            getOrCreateTagBuilder(BlockTags.INFINIBURN_OVERWORLD).add(block); //TODO Make sure we want this!
         }
         for(Block block : ModBlocks.COMPACTED_QUARTZ_BLOCKS) {
             getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE).add(block);
@@ -389,7 +390,8 @@ public class ModBlockTagGenerator extends FabricTagProvider<Block> {
                     .add(ModBlocks.RABBIT_HIDE_BLOCK);
 
         getOrCreateTagBuilder(BlockTags.INFINIBURN_OVERWORLD)
-                .add(ModBlocks.BLAZE_ROD_BLOCK);
+                .add(ModBlocks.BLAZE_ROD_BLOCK)
+                .add(ModBlocks.CHARCOAL_BLOCK);
 
         getOrCreateTagBuilder(BlockTags.CLIMBABLE)
                 .add(ModBlocks.DENSE_COBWEB_BLOCK);
@@ -403,6 +405,9 @@ public class ModBlockTagGenerator extends FabricTagProvider<Block> {
 
         getOrCreateTagBuilder(BlockTags.VIBRATION_RESONATORS)
                 .add(ModBlocks.AMETHYST_SHARD_BLOCK);
+
+        getOrCreateTagBuilder(BlockTags.ENCHANTMENT_POWER_PROVIDER)
+                .add(ModBlocks.BOOK_BLOCK);
     }
 }
 

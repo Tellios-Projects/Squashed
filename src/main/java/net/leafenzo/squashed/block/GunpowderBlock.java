@@ -36,7 +36,7 @@ public class GunpowderBlock extends FallingBlock {
             return;
         }
 //        TntEntity tntEntity = new TntEntity(world, (double)pos.getX() + 0.5, pos.getY(), (double)pos.getZ() + 0.5, explosion.getCausingEntity());
-//
+
         GunpowderBlockEntity gunpowderBlockEntity = new GunpowderBlockEntity(world, (double)pos.getX() + 0.5, pos.getY(), (double)pos.getZ() + 0.5, explosion.getCausingEntity());
         int i = gunpowderBlockEntity.getFuse();
         gunpowderBlockEntity.setFuse((short)(world.random.nextInt(i / 4) + i / 8));
@@ -93,10 +93,6 @@ public class GunpowderBlock extends FallingBlock {
                 world.removeBlock(blockPos, false);
             }
         }
-    }
-
-    private void explode(World world, BlockPos pos) {
-        world.createExplosion(null, pos.getX(), pos.getY() + 0.0625, pos.getZ(), 4.0f, World.ExplosionSourceType.BLOCK);
     }
 
     @Override

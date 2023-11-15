@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_gunpowder": {
+    "has_sponge": {
       "conditions": {
         "items": [
           {
             "items": [
-              "minecraft:gunpowder"
+              "minecraft:sponge"
             ]
           }
         ]
@@ -15,20 +15,20 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:gunpowder_block"
+        "recipe": "minecraft:compressed_sponge"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
   },
   "requirements": [
     [
-      "has_gunpowder",
+      "has_sponge",
       "has_the_recipe"
     ]
   ],
   "rewards": {
     "recipes": [
-      "minecraft:gunpowder_block"
+      "minecraft:compressed_sponge"
     ]
   },
   "sends_telemetry_event": false
