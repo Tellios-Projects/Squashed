@@ -1,13 +1,14 @@
 {
   "type": "minecraft:crafting_shapeless",
   "category": "misc",
+  "group": "squashed:gunpowder_reverse",
   "ingredients": [
     {
       "item": "squashed:gunpowder_block"
     }
   ],
   "result": {
-    "count": 9,
+    "count": 4,
     "item": "minecraft:gunpowder"
   }
 }

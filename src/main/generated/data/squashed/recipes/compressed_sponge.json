@@ -3,7 +3,7 @@
   "category": "building",
   "key": {
     "#": {
-      "item": "minecraft:gunpowder"
+      "item": "minecraft:sponge"
     }
   },
   "pattern": [
@@ -12,7 +12,7 @@
     "###"
   ],
   "result": {
-    "item": "squashed:gunpowder_block"
+    "item": "squashed:compressed_sponge"
   },
   "show_notification": true
 }

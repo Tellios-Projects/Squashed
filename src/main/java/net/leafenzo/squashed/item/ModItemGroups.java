@@ -24,6 +24,9 @@ public class ModItemGroups {
                         //for(Identifier id : ModUtil.allBlockIdsInNamespace(Super.MOD_ID)) entries.add(Registries.BLOCK.get(id));
                         for(Identifier id : ModUtil.allItemIdsInNamespace(Super.MOD_ID)) entries.add(Registries.ITEM.get(id));
 
+                        // DO NOT INCLUDE PUFFERFISH BLOCK
+
+
                     }).build());
 
     /*

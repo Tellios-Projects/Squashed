@@ -84,8 +84,11 @@ public class ModFabricRegistries {
         registry.add(ModBlocks.COMPRESSED_AZALEA_SAPLING, 10, 5);
         registry.add(ModBlocks.COMPRESSED_FLOWERING_AZALEA_SAPLING, 20, 5);
 
-        for(Block block : ModBlocks.COMPACTED_COAL_BLOCKS) { registry.add(block, 1, 12); }
-        registry.add(ModBlocks.CHARCOAL_BLOCK, 1, 5); // lower burn chance in case we ever get around to doing that tree burning mixin
+//        for(Block block : ModBlocks.COMPACTED_COAL_BLOCKS) { registry.add(block, 0, 12); }
+//        registry.add(ModBlocks.CHARCOAL_BLOCK,  0, 12);
+
+//        for(Block block : ModBlocks.COMPACTED_COAL_BLOCKS) { registry.add(block, 1, 12); }
+//        registry.add(ModBlocks.CHARCOAL_BLOCK,  1, 5);
     }
 
     public static void registerFuels() {
@@ -99,8 +102,8 @@ public class ModFabricRegistries {
         registry.add(ModBlocks.CHARCOAL_BLOCK, 800);
         // registerCompactedFuels(registry, ModBlocks.COMPACTED_COAL_BLOCKS, 16000); //7200 S (2 hours), 64800 S (18 hours), 583200 S (6.75 days), 5248800 S (60 days) // fabric doesn't allow it :(
                                                         //coal block =  13.33 minutes
-        registry.add(ModBlocks.COMPACTED_COAL_BLOCKS[0], 144000); //2 hours
-        registry.add(ModBlocks.COMPACTED_COAL_BLOCKS[1], 655340); //9 hours
+        registry.add(ModBlocks.COMPACTED_COAL_BLOCKS[0], 7200); //2 hours
+        registry.add(ModBlocks.COMPACTED_COAL_BLOCKS[1], 32767); //9 hours
         //registry.add(ModBlocks.COMPACTED_COAL_BLOCKS[2], 655340); //9 hours //Don't let people waste it if it doesn't actually improve nothin. //TODO ask el about this
         //registry.add(ModBlocks.COMPACTED_COAL_BLOCKS[3], 655340); //9 hours
 

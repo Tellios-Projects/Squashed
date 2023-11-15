@@ -343,13 +343,12 @@ public class ModRecipeProvider extends FabricRecipeProvider {
 
         offerCompactingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.EGG_BLOCK, Items.EGG);
 
+        offerReversibleCompactingRecipes(exporter, RecipeCategory.MISC, Blocks.SPONGE, RecipeCategory.BUILDING_BLOCKS, ModBlocks.COMPRESSED_SPONGE);
 
         offerReversibleCompactingRecipes(exporter, RecipeCategory.MISC, Items.BONE, RecipeCategory.BUILDING_BLOCKS, ModBlocks.BONES_BLOCK);
         offerReversibleCompactingRecipes(exporter, RecipeCategory.MISC, Items.PAPER, RecipeCategory.BUILDING_BLOCKS, ModBlocks.PAPER_BLOCK);
         offerReversibleCompactingRecipes(exporter, RecipeCategory.MISC, Items.SCAFFOLDING, RecipeCategory.BUILDING_BLOCKS, ModBlocks.COMPRESSED_SCAFFOLDING);
         offerReversibleCompactingRecipes(exporter, RecipeCategory.MISC, Items.KELP, RecipeCategory.BUILDING_BLOCKS, ModBlocks.KELP_BLOCK);
-
-
 
         //offerReversibleCompactingRecipes(exporter, RecipeCategory.MISC, Items.CHERRY_LEAVES, RecipeCategory.BUILDING_BLOCKS, ModBlocks.COMPRESSED_CHERRY_LEAVES);
         offerReversibleCompactingRecipes(exporter, RecipeCategory.MISC, Items.CHERRY_SAPLING, RecipeCategory.BUILDING_BLOCKS, ModBlocks.COMPRESSED_CHERRY_SAPLING);
@@ -371,7 +370,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         offerReversibleCompactingRecipes(exporter, RecipeCategory.MISC, Items.FLINT, RecipeCategory.BUILDING_BLOCKS, ModBlocks.FLINT_BLOCK);
 
         offerReversibleCompactingRecipes(exporter, RecipeCategory.MISC, Items.SUGAR, RecipeCategory.BUILDING_BLOCKS, ModBlocks.SUGAR_BLOCK);
-        offerReversibleCompactingRecipes(exporter, RecipeCategory.MISC, Items.GUNPOWDER, RecipeCategory.BUILDING_BLOCKS, ModBlocks.GUNPOWDER_BLOCK);
+        offerReversible2x2CompactingRecipes(exporter, RecipeCategory.MISC, Items.GUNPOWDER, RecipeCategory.BUILDING_BLOCKS, ModBlocks.GUNPOWDER_BLOCK);
         offerReversibleCompactingRecipes(exporter, RecipeCategory.MISC, Items.PRISMARINE, RecipeCategory.BUILDING_BLOCKS, ModBlocks.COMPRESSED_PRISMARINE);
         offerReversibleCompactingRecipes(exporter, RecipeCategory.MISC, Items.CHARCOAL, RecipeCategory.BUILDING_BLOCKS, ModBlocks.CHARCOAL_BLOCK);
         offerReversibleCompactingRecipes(exporter, RecipeCategory.MISC, Items.SNOWBALL, RecipeCategory.BUILDING_BLOCKS, ModBlocks.SNOWBALL_BLOCK);
