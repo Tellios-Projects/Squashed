@@ -22,7 +22,16 @@ public class BubbleColumnBlockMixin {
     @Inject(method = "canPlaceAt", at = @At(value = "RETURN"), cancellable = true)
     private void canPlaceAt(BlockState state, WorldView world, BlockPos pos, CallbackInfoReturnable<Boolean> cir) {
         BlockState blockState = world.getBlockState(pos.down());
-        if(blockState.isOf(ModBlocks.COMPACTED_SOUL_SAND[0]) || blockState.isOf(ModBlocks.COMPACTED_SOUL_SAND[1]) || blockState.isOf(ModBlocks.COMPACTED_SOUL_SAND[2]))  {
+        if (
+                blockState.isOf(ModBlocks.COMPACTED_SOUL_SAND[0])
+                || blockState.isOf(ModBlocks.COMPACTED_SOUL_SAND[1])
+                || blockState.isOf(ModBlocks.COMPACTED_SOUL_SAND[2])
+                || blockState.isOf(ModBlocks.COMPACTED_SOUL_SAND[3])
+                || blockState.isOf(ModBlocks.COMPACTED_MAGMA_BLOCKS[0])
+                || blockState.isOf(ModBlocks.COMPACTED_MAGMA_BLOCKS[1])
+                || blockState.isOf(ModBlocks.COMPACTED_MAGMA_BLOCKS[2])
+                || blockState.isOf(ModBlocks.COMPACTED_MAGMA_BLOCKS[3])
+        ) {
             cir.setReturnValue(true);
         }
     }
@@ -30,8 +39,17 @@ public class BubbleColumnBlockMixin {
     //sadly it would take a while to program it so that entities are shot up at speeds depending what compactness of soul sand we use- we would need to make an interface with the new float property, and mixin to the entity class's onBubbleColumnCollision() as well. I know how to do this I should just ask el before putting the time in. //TODO ask el about this
     @Inject(method = "getBubbleState", at = @At(value = "RETURN"), cancellable = true)
     private static void getBubbleState(BlockState state, CallbackInfoReturnable<BlockState> cir) {
-        if (state.isOf(ModBlocks.COMPACTED_SOUL_SAND[0]) || state.isOf(ModBlocks.COMPACTED_SOUL_SAND[1]) || state.isOf(ModBlocks.COMPACTED_SOUL_SAND[2])) {
+        if (    state.isOf(ModBlocks.COMPACTED_SOUL_SAND[0])
+             || state.isOf(ModBlocks.COMPACTED_SOUL_SAND[1])
+             || state.isOf(ModBlocks.COMPACTED_SOUL_SAND[2])
+             || state.isOf(ModBlocks.COMPACTED_SOUL_SAND[3])) {
             cir.setReturnValue((BlockState)Blocks.BUBBLE_COLUMN.getDefaultState().with(DRAG, false));
+        }
+        else if (  state.isOf(ModBlocks.COMPACTED_MAGMA_BLOCKS[0])
+                || state.isOf(ModBlocks.COMPACTED_MAGMA_BLOCKS[1])
+                || state.isOf(ModBlocks.COMPACTED_MAGMA_BLOCKS[2])
+                || state.isOf(ModBlocks.COMPACTED_MAGMA_BLOCKS[3])) {
+            cir.setReturnValue((BlockState)Blocks.BUBBLE_COLUMN.getDefaultState().with(DRAG, true));
         }
     }
 }
