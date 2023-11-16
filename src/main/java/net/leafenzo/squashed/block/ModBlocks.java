@@ -5,6 +5,7 @@ import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.leafenzo.squashed.ModInit;
 import net.leafenzo.squashed.Super;
+import net.leafenzo.squashed.item.PhantomBlockItem;
 import net.leafenzo.squashed.sound.ModBlockSoundGroup;
 import net.minecraft.block.*;
 import net.minecraft.block.enums.Instrument;
@@ -509,7 +510,9 @@ public class ModBlocks {
     public static final Block SCUTE_BLOCK = registerBlock("scute_block", new Block(FabricBlockSettings.copyOf(Blocks.STONE).mapColor(MapColor.DARK_GREEN).strength(1.5f,6.0f).sounds(BlockSoundGroup.CANDLE))/*,ModItemGroups.SQUASHED*/);
     public static final Block FEATHER_BLOCK = registerBlock("feather_block", new FeatherBlock(FabricBlockSettings.copyOf(Blocks.STONE).mapColor(MapColor.OFF_WHITE).instrument(Instrument.BANJO).strength(0.2f).sounds(BlockSoundGroup.WOOL).burnable())/*,ModItemGroups.SQUASHED*/);
     public static final Block GHAST_TEAR_BLOCK = registerBlock("ghast_tear_block", new Block(FabricBlockSettings.copyOf(Blocks.STONE).mapColor(MapColor.OFF_WHITE).strength(3.0f, 6.0f).sounds(BlockSoundGroup.TUFF))/*,ModItemGroups.SQUASHED*/);
-    public static final Block PHANTOM_MEMBRANE_BLOCK = registerBlock("phantom_membrane_block", new Block(FabricBlockSettings.copyOf(Blocks.STONE).mapColor(MapColor.PALE_YELLOW).strength(0.5f).sounds(BlockSoundGroup.CORAL))/*,ModItemGroups.SQUASHED*/);
+    public static final Block PHANTOM_MEMBRANE_BLOCK = registerBlockWithoutBlockItem("phantom_membrane_block", new Block(FabricBlockSettings.copyOf(Blocks.STONE).mapColor(MapColor.PALE_YELLOW).strength(0.5f).sounds(BlockSoundGroup.CORAL))/*,ModItemGroups.SQUASHED*/);
+    static { Registry.register(Registries.ITEM, new Identifier(Super.MOD_ID, "phantom_membrane_block"), new PhantomBlockItem(PHANTOM_MEMBRANE_BLOCK, new FabricItemSettings())); }
+
     public static final Block COMPRESSED_NETHER_WART_BLOCK = registerBlock("compressed_nether_wart_block", new Block(FabricBlockSettings.copyOf(Blocks.STONE).mapColor(MapColor.DULL_RED).strength(0.5f).sounds(BlockSoundGroup.WART_BLOCK))/*,ModItemGroups.SQUASHED*/);
     public static final Block COMPRESSED_WARPED_WART_BLOCK = registerBlock("compressed_warped_wart_block", new Block(FabricBlockSettings.copyOf(Blocks.STONE).mapColor(MapColor.BRIGHT_TEAL).strength(0.5f).sounds(BlockSoundGroup.WART_BLOCK))/*,ModItemGroups.SQUASHED*/);
     public static final Block MANGROVE_ROOTS_BLOCK = registerBlock("mangrove_roots_block", new PillarBlock(FabricBlockSettings.copyOf(Blocks.STONE).mapColor(MapColor.TERRACOTTA_GRAY).strength(2.0f).sounds(BlockSoundGroup.MUDDY_MANGROVE_ROOTS).burnable())/*,ModItemGroups.SQUASHED*/);
@@ -563,7 +566,18 @@ public class ModBlocks {
         registerBlockItem(name,block);
         return Registry.register(Registries.BLOCK, new Identifier(Super.MOD_ID, name), block);
     }
-
+    public static Block registerBlockWithoutBlockItem(String name, Block block) {
+        return Registry.register(Registries.BLOCK, new Identifier(Super.MOD_ID, name), block);
+    }
+    private static Item registerBlockItem(String name, Block block, ItemGroup group) {
+        BlockItem blockItem = new BlockItem(block, new FabricItemSettings());
+        //ItemGroupEvents.modifyEntriesEvent(group).register(entries -> entries.add(blockItem));
+        return Registry.register(Registries.ITEM, new Identifier(Super.MOD_ID, name), blockItem);
+    }
+    private static Item registerBlockItem(String name, Block block) {
+        BlockItem blockItem = new BlockItem(block, new FabricItemSettings());
+        return Registry.register(Registries.ITEM, new Identifier(Super.MOD_ID, name), blockItem);
+    }
     public static Block[] registerCompactedBlockSet(String name, Block... blocks) {
         for (int i = 0; i < blocks.length; i++) {
             String newName = compressionTierNames[i] + "_" + name;
@@ -624,23 +638,11 @@ public class ModBlocks {
         return true;
     }
 
-
     private static ToIntFunction<BlockState> createLightLevelFromProperty(int litLevel, BooleanProperty property) {
         return state -> state.get(property) != false ? litLevel : 0;
     }
 
-    private static Item registerBlockItem(String name, Block block, ItemGroup group) {
-        BlockItem blockItem = new BlockItem(block, new FabricItemSettings());
-        //ItemGroupEvents.modifyEntriesEvent(group).register(entries -> entries.add(blockItem));
-        return Registry.register(Registries.ITEM, new Identifier(Super.MOD_ID, name), blockItem);
-    }
-
-    private static Item registerBlockItem(String name, Block block) {
-        BlockItem blockItem = new BlockItem(block, new FabricItemSettings());
-        return Registry.register(Registries.ITEM, new Identifier(Super.MOD_ID, name), blockItem);
-    }
-
     public static void registerModBlocks() {
-        ModInit.LOGGER.debug("Registering blocks for " + Super.MOD_ID);
+        ModInit.LOGGER.debug("Registering blocks and blockItems for " + Super.MOD_ID);
     }
 }
