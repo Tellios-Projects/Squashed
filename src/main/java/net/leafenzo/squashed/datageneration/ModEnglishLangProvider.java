@@ -164,6 +164,28 @@ public class ModEnglishLangProvider extends FabricLanguageProvider {
         generateTranslation(translationBuilder, ModBlocks.BRICKS_BLOCK, "Pile of Bricks");
         generateTranslation(translationBuilder, ModBlocks.NETHER_BRICKS_BLOCK, "Pile of Nether Bricks");
 
+        //TODO figure out a naming convention here that makes these easier to search for in the creative menu, you should ask el for ideas about this
+        generateTranslation(translationBuilder, ModBlocks.TROPICAL_FISH_BLOCK_A, "Ocellaris Clownfish Block");
+        generateTranslation(translationBuilder, ModBlocks.TROPICAL_FISH_BLOCK_B, "Peacock Cichlid Block");
+        generateTranslation(translationBuilder, ModBlocks.TROPICAL_FISH_BLOCK_C, "Emperor Red Snapper Block");
+        generateTranslation(translationBuilder, ModBlocks.TROPICAL_FISH_BLOCK_D, "Lake Kutubu Rainbowfish Block");
+        generateTranslation(translationBuilder, ModBlocks.TROPICAL_FISH_BLOCK_E, "Goldfish Block");
+        generateTranslation(translationBuilder, ModBlocks.TROPICAL_FISH_BLOCK_F, "Red Snapper Block");
+        generateTranslation(translationBuilder, ModBlocks.TROPICAL_FISH_BLOCK_G, "Cotton Candy Betta Block");
+        generateTranslation(translationBuilder, ModBlocks.TROPICAL_FISH_BLOCK_H, "Blue Tang Block");
+        generateTranslation(translationBuilder, ModBlocks.TROPICAL_FISH_BLOCK_I, "Splendid Dottyback Block");
+        generateTranslation(translationBuilder, ModBlocks.TROPICAL_FISH_BLOCK_J, "Gray Triggerfish Block");
+        generateTranslation(translationBuilder, ModBlocks.TROPICAL_FISH_BLOCK_K, "Yellowtail Parrotfish Block");
+        generateTranslation(translationBuilder, ModBlocks.TROPICAL_FISH_BLOCK_L, "Purple Tang Block");
+        generateTranslation(translationBuilder, ModBlocks.TROPICAL_FISH_BLOCK_M, "Green Sunfish Block");
+        generateTranslation(translationBuilder, ModBlocks.TROPICAL_FISH_BLOCK_N, "Red Lipped Blenny Block");
+        generateTranslation(translationBuilder, ModBlocks.TROPICAL_FISH_BLOCK_O, "Moorish Idol Block");
+        generateTranslation(translationBuilder, ModBlocks.TROPICAL_FISH_BLOCK_P, "Starry Rockfish Block");
+        generateTranslation(translationBuilder, ModBlocks.TROPICAL_FISH_BLOCK_Q, "Largemouth Bass Block");
+        generateTranslation(translationBuilder, ModBlocks.TROPICAL_FISH_BLOCK_R, "Orchid Dottyback Block");
+        generateTranslation(translationBuilder, ModBlocks.TROPICAL_FISH_BLOCK_S, "Flying Fish Block");
+        generateTranslation(translationBuilder, ModBlocks.TROPICAL_FISH_BLOCK_T, "Mahi-Mahi Block");
+
         //Automatic
         for(Identifier id : ModUtil.allBlockIdsInNamespace(Super.MOD_ID)) {
             String key = Registries.BLOCK.get(id).getTranslationKey();
