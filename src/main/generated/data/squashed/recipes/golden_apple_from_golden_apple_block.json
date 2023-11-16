@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "squashed:golden_apple_reverse",
+  "ingredients": [
+    {
+      "item": "squashed:golden_apple_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "minecraft:golden_apple"
+  }
+}

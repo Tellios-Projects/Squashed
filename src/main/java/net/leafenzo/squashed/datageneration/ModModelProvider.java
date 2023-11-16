@@ -111,7 +111,7 @@ public class ModModelProvider extends FabricModelProvider {
         // Block Models
         registerUpDefaultOrientable(blockStateModelGenerator, ModBlocks.BLAZE_ROD_BLOCK, TexturedModel.CUBE_COLUMN);
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.INK_SAC_BLOCK);
-        blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.STICK_BLOCK);
+        blockStateModelGenerator.registerAxisRotated(ModBlocks.STICK_BLOCK, TexturedModel.CUBE_ALL);
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.FIRE_CHARGE_BLOCK);
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.BLAZE_POWDER_BLOCK);
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.RAW_SALMON_BLOCK);
@@ -337,6 +337,7 @@ public class ModModelProvider extends FabricModelProvider {
 
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.FERMENTED_SPIDER_EYE_BLOCK);
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.GLISTERING_MELON_BLOCK);
+        blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.COMPRESSED_GLISTERING_MELON_BLOCK);
 
         // BlockItem Models  // For anything that does not use datagen to supply models elsewhere
         blockStateModelGenerator.registerParentedItemModel(ModBlocks.MAGMA_CREAM_BLOCK, Super.asResource("block/magma_cream_block"));

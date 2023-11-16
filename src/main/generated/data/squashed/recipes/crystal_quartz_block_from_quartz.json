@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "squashed:quartz",
+  "key": {
+    "#": {
+      "item": "minecraft:quartz"
+    }
+  },
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "result": {
+    "item": "squashed:crystal_quartz_block"
+  },
+  "show_notification": true
+}

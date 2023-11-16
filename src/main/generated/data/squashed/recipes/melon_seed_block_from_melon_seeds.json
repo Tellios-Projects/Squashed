@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "squashed:melon_seeds",
+  "key": {
+    "#": {
+      "item": "minecraft:melon_seeds"
+    }
+  },
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "result": {
+    "item": "squashed:melon_seed_block"
+  },
+  "show_notification": true
+}

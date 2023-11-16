@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "squashed:jungle_sapling_reverse",
+  "ingredients": [
+    {
+      "item": "squashed:compressed_jungle_sapling"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "minecraft:jungle_sapling"
+  }
+}

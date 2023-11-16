@@ -72,6 +72,7 @@ public class ModItemGroups {
                             entries.add(ModBlocks.COMPRESSED_PUMPKIN);
                             entries.add(ModBlocks.GLISTERING_MELON_BLOCK);
                             entries.add(ModBlocks.COMPRESSED_HAY_BLOCK);
+                            entries.add(ModBlocks.COMPRESSED_SCAFFOLDING);
                             entries.add(ModBlocks.CHARCOAL_BLOCK);
                             entries.add(ModBlocks.CRYSTAL_QUARTZ_BLOCK);
                             entries.add(ModBlocks.AMETHYST_SHARD_BLOCK);

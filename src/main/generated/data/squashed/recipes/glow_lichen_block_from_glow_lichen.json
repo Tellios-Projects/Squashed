@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "squashed:glow_lichen",
+  "key": {
+    "#": {
+      "item": "minecraft:glow_lichen"
+    }
+  },
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "result": {
+    "item": "squashed:glow_lichen_block"
+  },
+  "show_notification": true
+}

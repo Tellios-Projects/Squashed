@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "squashed:Block{squashed:glistering_melon_block}",
+  "key": {
+    "#": {
+      "item": "squashed:glistering_melon_block"
+    }
+  },
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "result": {
+    "item": "squashed:compressed_glistering_melon_block"
+  },
+  "show_notification": true
+}

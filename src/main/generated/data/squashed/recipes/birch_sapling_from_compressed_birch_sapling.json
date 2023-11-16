@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "squashed:birch_sapling_reverse",
+  "ingredients": [
+    {
+      "item": "squashed:compressed_birch_sapling"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "minecraft:birch_sapling"
+  }
+}

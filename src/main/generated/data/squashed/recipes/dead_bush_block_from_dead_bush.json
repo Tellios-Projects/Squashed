@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "squashed:dead_bush",
+  "key": {
+    "#": {
+      "item": "minecraft:dead_bush"
+    }
+  },
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "result": {
+    "item": "squashed:dead_bush_block"
+  },
+  "show_notification": true
+}

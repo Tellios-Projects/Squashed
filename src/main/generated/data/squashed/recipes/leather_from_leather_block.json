@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "squashed:leather_reverse",
+  "ingredients": [
+    {
+      "item": "squashed:leather_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "minecraft:leather"
+  }
+}

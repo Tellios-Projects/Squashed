@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "squashed:scute",
+  "key": {
+    "#": {
+      "item": "minecraft:scute"
+    }
+  },
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "result": {
+    "item": "squashed:scute_block"
+  },
+  "show_notification": true
+}

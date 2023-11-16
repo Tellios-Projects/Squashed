@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "squashed:cobweb",
+  "key": {
+    "#": {
+      "item": "minecraft:cobweb"
+    }
+  },
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "result": {
+    "item": "squashed:dense_cobweb_block"
+  },
+  "show_notification": true
+}

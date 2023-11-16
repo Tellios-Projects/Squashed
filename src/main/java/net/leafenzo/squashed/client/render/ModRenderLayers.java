@@ -21,7 +21,8 @@ public class ModRenderLayers {
                 ModBlocks.COMPACTED_DIAMOND_BLOCKS[0],
                 ModBlocks.COMPACTED_EMERALD_BLOCKS[0],
                 ModBlocks.COMPACTED_AMETHYST_BLOCKS[0],
-                ModBlocks.COMPACTED_OBSIDIAN[0]
+                ModBlocks.COMPACTED_OBSIDIAN[0],
+                ModBlocks.NETHER_STAR_BLOCK
         );
     }
 }

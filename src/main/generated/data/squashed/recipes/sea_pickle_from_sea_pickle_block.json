@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "squashed:sea_pickle_reverse",
+  "ingredients": [
+    {
+      "item": "squashed:sea_pickle_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "minecraft:sea_pickle"
+  }
+}

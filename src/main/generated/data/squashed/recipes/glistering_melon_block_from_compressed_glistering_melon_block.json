@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "squashed:Block{squashed:glistering_melon_block}_reverse",
+  "ingredients": [
+    {
+      "item": "squashed:compressed_glistering_melon_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "squashed:glistering_melon_block"
+  }
+}

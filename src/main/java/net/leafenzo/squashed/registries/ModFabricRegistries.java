@@ -34,6 +34,8 @@ public class ModFabricRegistries {
             registry.add(block, 60, 30);
         }
 
+        registry.add(ModBlocks.STICK_BLOCK, 20, 5);
+
         registry.add(ModBlocks.BOOK_BLOCK, 20, 30);
         registry.add(ModBlocks.PAPER_BLOCK, 20, 30);
         registry.add(ModBlocks.FEATHER_BLOCK, 50, 100);
@@ -41,6 +43,7 @@ public class ModFabricRegistries {
         registry.add(ModBlocks.COMPRESSED_CACTUS, 5, 5);
         registry.add(ModBlocks.VINE_BLOCK, 50, 15);
         registry.add(ModBlocks.GRASS_CLIPPINGS_BLOCK, 75, 80);
+        registry.add(ModBlocks.FERN_BLOCK, 75, 80);
         registry.add(ModBlocks.COMPRESSED_SCAFFOLDING, 20, 5);
 
         registry.add(ModBlocks.DEAD_BUSH_BLOCK, 60, 30);

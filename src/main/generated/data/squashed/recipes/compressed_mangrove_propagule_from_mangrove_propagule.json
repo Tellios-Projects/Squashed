@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "squashed:mangrove_propagule",
+  "key": {
+    "#": {
+      "item": "minecraft:mangrove_propagule"
+    }
+  },
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "result": {
+    "item": "squashed:compressed_mangrove_propagule"
+  },
+  "show_notification": true
+}

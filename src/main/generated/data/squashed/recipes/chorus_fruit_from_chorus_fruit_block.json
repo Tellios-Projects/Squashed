@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "squashed:chorus_fruit_reverse",
+  "ingredients": [
+    {
+      "item": "squashed:chorus_fruit_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "minecraft:chorus_fruit"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "squashed:magma_cream",
+  "key": {
+    "#": {
+      "item": "minecraft:magma_cream"
+    }
+  },
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "result": {
+    "item": "squashed:magma_cream_block"
+  },
+  "show_notification": true
+}

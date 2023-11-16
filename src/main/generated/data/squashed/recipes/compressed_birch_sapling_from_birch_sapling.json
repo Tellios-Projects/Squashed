@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "squashed:birch_sapling",
+  "key": {
+    "#": {
+      "item": "minecraft:birch_sapling"
+    }
+  },
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "result": {
+    "item": "squashed:compressed_birch_sapling"
+  },
+  "show_notification": true
+}

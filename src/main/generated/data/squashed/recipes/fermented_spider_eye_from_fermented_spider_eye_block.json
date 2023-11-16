@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "squashed:fermented_spider_eye_reverse",
+  "ingredients": [
+    {
+      "item": "squashed:fermented_spider_eye_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "minecraft:fermented_spider_eye"
+  }
+}

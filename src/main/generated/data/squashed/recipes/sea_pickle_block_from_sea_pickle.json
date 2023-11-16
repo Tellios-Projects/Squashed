@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "squashed:sea_pickle",
+  "key": {
+    "#": {
+      "item": "minecraft:sea_pickle"
+    }
+  },
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "result": {
+    "item": "squashed:sea_pickle_block"
+  },
+  "show_notification": true
+}

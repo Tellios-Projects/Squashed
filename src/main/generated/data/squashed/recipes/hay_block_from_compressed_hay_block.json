@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "squashed:hay_block_reverse",
+  "ingredients": [
+    {
+      "item": "squashed:compressed_hay_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "minecraft:hay_block"
+  }
+}

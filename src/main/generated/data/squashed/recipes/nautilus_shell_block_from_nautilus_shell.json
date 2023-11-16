@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "squashed:nautilus_shell",
+  "key": {
+    "#": {
+      "item": "minecraft:nautilus_shell"
+    }
+  },
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "result": {
+    "item": "squashed:nautilus_shell_block"
+  },
+  "show_notification": true
+}

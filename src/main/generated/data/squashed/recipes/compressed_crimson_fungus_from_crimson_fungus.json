@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "squashed:crimson_fungus",
+  "key": {
+    "#": {
+      "item": "minecraft:crimson_fungus"
+    }
+  },
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "result": {
+    "item": "squashed:compressed_crimson_fungus"
+  },
+  "show_notification": true
+}

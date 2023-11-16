@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "squashed:baked_potato",
+  "key": {
+    "#": {
+      "item": "minecraft:baked_potato"
+    }
+  },
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "result": {
+    "item": "squashed:baked_potato_block"
+  },
+  "show_notification": true
+}

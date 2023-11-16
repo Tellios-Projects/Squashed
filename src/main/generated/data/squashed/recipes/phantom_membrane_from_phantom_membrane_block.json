@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "squashed:phantom_membrane_reverse",
+  "ingredients": [
+    {
+      "item": "squashed:phantom_membrane_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "minecraft:phantom_membrane"
+  }
+}

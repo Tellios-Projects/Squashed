@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "squashed:jungle_leaves_reverse",
+  "ingredients": [
+    {
+      "item": "squashed:compressed_jungle_leaves"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "minecraft:jungle_leaves"
+  }
+}

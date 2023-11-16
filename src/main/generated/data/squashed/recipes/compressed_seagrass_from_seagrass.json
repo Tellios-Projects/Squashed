@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "squashed:seagrass",
+  "key": {
+    "#": {
+      "item": "minecraft:seagrass"
+    }
+  },
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "result": {
+    "item": "squashed:compressed_seagrass"
+  },
+  "show_notification": true
+}

@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "squashed:Block{minecraft:sponge}",
+  "key": {
+    "#": {
+      "item": "minecraft:sponge"
+    }
+  },
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "result": {
+    "item": "squashed:compressed_sponge"
+  },
+  "show_notification": true
+}

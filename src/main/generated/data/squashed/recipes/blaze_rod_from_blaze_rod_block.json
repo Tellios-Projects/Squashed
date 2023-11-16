@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "squashed:blaze_rod_reverse",
+  "ingredients": [
+    {
+      "item": "squashed:blaze_rod_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "minecraft:blaze_rod"
+  }
+}

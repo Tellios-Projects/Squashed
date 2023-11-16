@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "squashed:oak_sapling",
+  "key": {
+    "#": {
+      "item": "minecraft:oak_sapling"
+    }
+  },
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "result": {
+    "item": "squashed:compressed_oak_sapling"
+  },
+  "show_notification": true
+}

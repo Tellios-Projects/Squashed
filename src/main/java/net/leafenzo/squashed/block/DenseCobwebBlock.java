@@ -23,7 +23,7 @@ import net.minecraft.world.World;
 /**
  * From net.minecraft.block.PowderSnowBlock
  */
-public class DenseCobwebBlock
+public class DenseCobwebBlock //TODO Polish my visuals! - also once that's done switch net/leafenzo/squashed/block/ModBlocks.java:517 back to being this type of block
 extends Block {
     private static final float field_31216 = 0.083333336f;
     private static final float HORIZONTAL_MOVEMENT_MULTIPLIER = 0.9f;

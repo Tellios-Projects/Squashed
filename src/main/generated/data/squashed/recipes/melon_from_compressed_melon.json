@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "squashed:melon_reverse",
+  "ingredients": [
+    {
+      "item": "squashed:compressed_melon"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "minecraft:melon"
+  }
+}

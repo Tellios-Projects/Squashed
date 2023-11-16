@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "squashed:phantom_membrane",
+  "key": {
+    "#": {
+      "item": "minecraft:phantom_membrane"
+    }
+  },
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "result": {
+    "item": "squashed:phantom_membrane_block"
+  },
+  "show_notification": true
+}

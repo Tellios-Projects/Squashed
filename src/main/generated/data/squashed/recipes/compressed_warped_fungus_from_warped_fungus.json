@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "squashed:warped_fungus",
+  "key": {
+    "#": {
+      "item": "minecraft:warped_fungus"
+    }
+  },
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "result": {
+    "item": "squashed:compressed_warped_fungus"
+  },
+  "show_notification": true
+}

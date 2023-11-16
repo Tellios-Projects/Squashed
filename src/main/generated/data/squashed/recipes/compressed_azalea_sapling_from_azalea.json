@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "squashed:azalea",
+  "key": {
+    "#": {
+      "item": "minecraft:azalea"
+    }
+  },
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "result": {
+    "item": "squashed:compressed_azalea_sapling"
+  },
+  "show_notification": true
+}

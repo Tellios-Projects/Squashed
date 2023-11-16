@@ -74,22 +74,22 @@ public class ModEnglishLangProvider extends FabricLanguageProvider {
         generateTranslation(translationBuilder, ModItemGroups.SQUASHED_BLOCKS, "Squashed!");
         generateTranslation(translationBuilder, ModItemGroups.SQUASHED_COMPACTED, "Squashed! - Compacted Blocks");
 
-        generateTranslation(translationBuilder, ModBlocks.WHITE_COMPRESSED_WOOL, "Loomed White Wool");
-        generateTranslation(translationBuilder, ModBlocks.LIGHT_GRAY_COMPRESSED_WOOL, "Loomed Light Gray Wool");
-        generateTranslation(translationBuilder, ModBlocks.GRAY_COMPRESSED_WOOL, "Loomed Gray Wool");
-        generateTranslation(translationBuilder, ModBlocks.BLACK_COMPRESSED_WOOL, "Loomed Black Wool");
-        generateTranslation(translationBuilder, ModBlocks.BROWN_COMPRESSED_WOOL, "Loomed Brown Wool");
-        generateTranslation(translationBuilder, ModBlocks.RED_COMPRESSED_WOOL, "Loomed Red Wool");
-        generateTranslation(translationBuilder, ModBlocks.ORANGE_COMPRESSED_WOOL, "Loomed Orange Wool");
-        generateTranslation(translationBuilder, ModBlocks.YELLOW_COMPRESSED_WOOL, "Loomed Yellow Wool");
-        generateTranslation(translationBuilder, ModBlocks.LIME_COMPRESSED_WOOL, "Loomed Lime Wool");
-        generateTranslation(translationBuilder, ModBlocks.GREEN_COMPRESSED_WOOL, "Loomed Green Wool");
-        generateTranslation(translationBuilder, ModBlocks.CYAN_COMPRESSED_WOOL, "Loomed Cyan Wool");
-        generateTranslation(translationBuilder, ModBlocks.LIGHT_BLUE_COMPRESSED_WOOL, "Loomed Light Blue Wool");
-        generateTranslation(translationBuilder, ModBlocks.BLUE_COMPRESSED_WOOL, "Loomed Blue Wool");
-        generateTranslation(translationBuilder, ModBlocks.PURPLE_COMPRESSED_WOOL, "Loomed Purple Wool");
-        generateTranslation(translationBuilder, ModBlocks.MAGENTA_COMPRESSED_WOOL, "Loomed Magenta Wool");
-        generateTranslation(translationBuilder, ModBlocks.PINK_COMPRESSED_WOOL, "Loomed Pink Wool");
+        generateTranslation(translationBuilder, ModBlocks.WHITE_COMPRESSED_WOOL, "Spool of White Wool");
+        generateTranslation(translationBuilder, ModBlocks.LIGHT_GRAY_COMPRESSED_WOOL, "Spool of Light Gray Wool");
+        generateTranslation(translationBuilder, ModBlocks.GRAY_COMPRESSED_WOOL, "Spool of Gray Wool");
+        generateTranslation(translationBuilder, ModBlocks.BLACK_COMPRESSED_WOOL, "Spool of Black Wool");
+        generateTranslation(translationBuilder, ModBlocks.BROWN_COMPRESSED_WOOL, "Spool of Brown Wool");
+        generateTranslation(translationBuilder, ModBlocks.RED_COMPRESSED_WOOL, "Spool of Red Wool");
+        generateTranslation(translationBuilder, ModBlocks.ORANGE_COMPRESSED_WOOL, "Spool of Orange Wool");
+        generateTranslation(translationBuilder, ModBlocks.YELLOW_COMPRESSED_WOOL, "Spool of Yellow Wool");
+        generateTranslation(translationBuilder, ModBlocks.LIME_COMPRESSED_WOOL, "Spool of Lime Wool");
+        generateTranslation(translationBuilder, ModBlocks.GREEN_COMPRESSED_WOOL, "Spool of Green Wool");
+        generateTranslation(translationBuilder, ModBlocks.CYAN_COMPRESSED_WOOL, "Spool of Cyan Wool");
+        generateTranslation(translationBuilder, ModBlocks.LIGHT_BLUE_COMPRESSED_WOOL, "Spool of Light Blue Wool");
+        generateTranslation(translationBuilder, ModBlocks.BLUE_COMPRESSED_WOOL, "Spool of Blue Wool");
+        generateTranslation(translationBuilder, ModBlocks.PURPLE_COMPRESSED_WOOL, "Spool of Purple Wool");
+        generateTranslation(translationBuilder, ModBlocks.MAGENTA_COMPRESSED_WOOL, "Spool of Magenta Wool");
+        generateTranslation(translationBuilder, ModBlocks.PINK_COMPRESSED_WOOL, "Spool of Pink Wool");
 
         generateTranslation(translationBuilder, ModBlocks.COMPACTED_REDSTONE_BLOCKS[0], "Critical Redstone Block");
         generateTranslation(translationBuilder, ModBlocks.COMPACTED_REDSTONE_BLOCKS[1], "Supercritical Redstone Block");

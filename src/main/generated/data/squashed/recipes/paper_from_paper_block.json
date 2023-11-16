@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "squashed:paper_reverse",
+  "ingredients": [
+    {
+      "item": "squashed:paper_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "minecraft:paper"
+  }
+}

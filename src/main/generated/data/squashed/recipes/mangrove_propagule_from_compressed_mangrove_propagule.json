@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "squashed:mangrove_propagule_reverse",
+  "ingredients": [
+    {
+      "item": "squashed:compressed_mangrove_propagule"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "minecraft:mangrove_propagule"
+  }
+}

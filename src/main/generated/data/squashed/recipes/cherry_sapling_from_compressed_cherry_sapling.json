@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "squashed:cherry_sapling_reverse",
+  "ingredients": [
+    {
+      "item": "squashed:compressed_cherry_sapling"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "minecraft:cherry_sapling"
+  }
+}

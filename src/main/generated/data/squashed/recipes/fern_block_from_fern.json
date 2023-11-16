@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "squashed:fern",
+  "key": {
+    "#": {
+      "item": "minecraft:fern"
+    }
+  },
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "result": {
+    "item": "squashed:fern_block"
+  },
+  "show_notification": true
+}

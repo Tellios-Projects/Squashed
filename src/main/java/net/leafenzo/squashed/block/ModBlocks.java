@@ -18,6 +18,7 @@ import net.minecraft.registry.Registry;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.state.property.BooleanProperty;
 import net.minecraft.state.property.Properties;
+import net.minecraft.util.DyeColor;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.BlockView;
@@ -34,12 +35,12 @@ public class ModBlocks {
     public static final ArrayList<Block> COMPRESSED_WOOL_BLOCKS = new ArrayList<Block>();
 
 
-    public static final Block BLAZE_ROD_BLOCK = registerBlock("blaze_rod_block", new ReversiblePillarBlock(FabricBlockSettings.copyOf(Blocks.STONE).mapColor(MapColor.TERRACOTTA_YELLOW).requiresTool().strength(2.0f).sounds(ModBlockSoundGroup.BLAZE_ROD_BLOCK).luminance(state -> 7))/*,ModItemGroups.SQUASHED*/);
+    public static final Block BLAZE_ROD_BLOCK = registerBlock("blaze_rod_block", new ReversiblePillarBlock(FabricBlockSettings.copyOf(Blocks.STONE).mapColor(MapColor.TERRACOTTA_YELLOW).requiresTool().strength(2.0f).sounds(ModBlockSoundGroup.BLAZE_ROD_BLOCK).luminance(state -> 15))/*,ModItemGroups.SQUASHED*/);
     public static final Block INK_SAC_BLOCK = registerBlock("ink_sac_block", new Block(FabricBlockSettings.copyOf(Blocks.STONE).mapColor(MapColor.BLACK).strength(0.5f).sounds(BlockSoundGroup.MUD))/*,ModItemGroups.SQUASHED*/);
-    public static final Block STICK_BLOCK = registerBlock("stick_block", new Block(FabricBlockSettings.copyOf(Blocks.STONE).mapColor(MapColor.OAK_TAN).strength(2.0f).sounds(BlockSoundGroup.BAMBOO_WOOD))/*,ModItemGroups.SQUASHED*/);
+    public static final Block STICK_BLOCK = registerBlock("stick_block", new PillarBlock(FabricBlockSettings.copyOf(Blocks.STONE).mapColor(MapColor.OAK_TAN).strength(2.0f).sounds(BlockSoundGroup.BAMBOO_WOOD).burnable())/*,ModItemGroups.SQUASHED*/);
     public static final Block FIRE_CHARGE_BLOCK = registerBlock("fire_charge_block", new FireChargeBlock(FabricBlockSettings.copyOf(Blocks.STONE).mapColor(MapColor.GRAY).strength(0.5f).sounds(BlockSoundGroup.GRAVEL))/*,ModItemGroups.SQUASHED*/);
-    public static final Block MAGMA_CREAM_BLOCK = registerBlock("magma_cream_block", new MagmaCreamBlock(FabricBlockSettings.copyOf(Blocks.SLIME_BLOCK).mapColor(MapColor.YELLOW).slipperiness(0.8f).sounds(BlockSoundGroup.HONEY).nonOpaque())/*,ModItemGroups.SQUASHED*/);
-    public static final Block BLAZE_POWDER_BLOCK = registerBlock("blaze_powder_block", new Block(FabricBlockSettings.copyOf(Blocks.STONE).mapColor(MapColor.TERRACOTTA_YELLOW).strength(0.5f).sounds(BlockSoundGroup.SNOW))/*,ModItemGroups.SQUASHED*/);
+    public static final Block MAGMA_CREAM_BLOCK = registerBlock("magma_cream_block", new MagmaCreamBlock(FabricBlockSettings.create().mapColor(MapColor.ORANGE).sounds(BlockSoundGroup.HONEY).nonOpaque().luminance(state -> 7))/*,ModItemGroups.SQUASHED*/);
+    public static final Block BLAZE_POWDER_BLOCK = registerBlock("blaze_powder_block", new FallingBlock(FabricBlockSettings.copyOf(Blocks.STONE).mapColor(MapColor.TERRACOTTA_YELLOW).strength(0.5f).sounds(BlockSoundGroup.SNOW).luminance(state -> 11))/*,ModItemGroups.SQUASHED*/);
     public static final Block RAW_SALMON_BLOCK = registerBlock("raw_salmon_block", new Block(FabricBlockSettings.copyOf(Blocks.STONE).mapColor(MapColor.TERRACOTTA_PINK).strength(0.5f).sounds(BlockSoundGroup.MUD))/*,ModItemGroups.SQUASHED*/);
     public static final Block COOKED_SALMON_BLOCK = registerBlock("cooked_salmon_block", new Block(FabricBlockSettings.copyOf(Blocks.STONE).mapColor(MapColor.BRIGHT_RED).strength(0.5f).sounds(BlockSoundGroup.FUNGUS))/*,ModItemGroups.SQUASHED*/);
     public static final Block RAW_COD_BLOCK = registerBlock("raw_cod_block", new Block(FabricBlockSettings.copyOf(Blocks.STONE).mapColor(MapColor.PALE_YELLOW).strength(0.5f).sounds(BlockSoundGroup.MUD))/*,ModItemGroups.SQUASHED*/);
@@ -65,11 +66,11 @@ public class ModBlocks {
     public static final Block GLOW_BERRIES_BLOCK = registerBlock("glow_berries_block", new Block(FabricBlockSettings.copyOf(Blocks.STONE).mapColor(MapColor.GREEN).strength(0.2f).sounds(BlockSoundGroup.GRASS).luminance(state -> 7).burnable())/*,ModItemGroups.SQUASHED*/);
     public static final Block SWEET_BERRIES_BLOCK = registerBlock("sweet_berries_block", new Block(FabricBlockSettings.copyOf(Blocks.STONE).mapColor(MapColor.GREEN).strength(0.2f).sounds(BlockSoundGroup.SWEET_BERRY_BUSH).burnable())/*,ModItemGroups.SQUASHED*/);
     public static final Block GRASS_CLIPPINGS_BLOCK = registerBlock("grass_clippings_block", new FallingBlock(FabricBlockSettings.copyOf(Blocks.STONE).mapColor(MapColor.PALE_GREEN).strength(0.2f).sounds(BlockSoundGroup.MOSS_BLOCK).burnable())/*,ModItemGroups.SQUASHED*/);
-    public static final Block FERN_BLOCK = registerBlock("fern_block", new FallingBlock(FabricBlockSettings.copyOf(Blocks.STONE).mapColor(MapColor.PALE_GREEN).strength(0.2f).sounds(BlockSoundGroup.MOSS_BLOCK))/*,ModItemGroups.SQUASHED*/);
+    public static final Block FERN_BLOCK = registerBlock("fern_block", new FallingBlock(FabricBlockSettings.copyOf(Blocks.STONE).mapColor(MapColor.PALE_GREEN).strength(0.2f).burnable().sounds(BlockSoundGroup.MOSS_BLOCK))/*,ModItemGroups.SQUASHED*/);
     public static final Block GLOW_LICHEN_BLOCK = registerBlock("glow_lichen_block", new Block(FabricBlockSettings.copyOf(Blocks.STONE).mapColor(MapColor.LICHEN_GREEN).strength(0.2f).sounds(BlockSoundGroup.MOSS_BLOCK).luminance(state -> 7))/*,ModItemGroups.SQUASHED*/);
-    public static final Block COMPRESSED_PUMPKIN = registerBlock("compressed_pumpkin", new Block(FabricBlockSettings.copyOf(Blocks.STONE).mapColor(MapColor.ORANGE).strength(2.0f).sounds(BlockSoundGroup.WOOD))/*,ModItemGroups.SQUASHED*/);
+    public static final Block COMPRESSED_PUMPKIN = registerBlock("compressed_pumpkin", new FallingBlock(FabricBlockSettings.copyOf(Blocks.STONE).mapColor(MapColor.ORANGE).strength(2.0f).sounds(BlockSoundGroup.WOOD))/*,ModItemGroups.SQUASHED*/);
     public static final Block COMPRESSED_HAY_BLOCK = registerBlock("compressed_hay_block", new HayBlock(FabricBlockSettings.copyOf(Blocks.STONE).mapColor(MapColor.PALE_YELLOW).strength(0.2f).sounds(BlockSoundGroup.GRASS).burnable())/*,ModItemGroups.SQUASHED*/);
-    public static final Block COMPRESSED_MELON = registerBlock("compressed_melon", new Block(FabricBlockSettings.copyOf(Blocks.STONE).mapColor(MapColor.PALE_GREEN).strength(2.0f).sounds(BlockSoundGroup.WOOD))/*,ModItemGroups.SQUASHED*/);
+    public static final Block COMPRESSED_MELON = registerBlock("compressed_melon", new FallingBlock(FabricBlockSettings.copyOf(Blocks.STONE).mapColor(MapColor.PALE_GREEN).strength(2.0f).sounds(BlockSoundGroup.WOOD))/*,ModItemGroups.SQUASHED*/);
     public static final Block SUGARCANE_BLOCK = registerBlock("sugarcane_block", new Block(FabricBlockSettings.copyOf(Blocks.STONE).mapColor(MapColor.PALE_GREEN).strength(2.0f).sounds(BlockSoundGroup.BAMBOO_WOOD).burnable())/*,ModItemGroups.SQUASHED*/);
     public static final Block SEA_PICKLE_BLOCK = registerBlock("sea_pickle_block", new SeaPickleBlock(FabricBlockSettings.copyOf(Blocks.STONE).mapColor(MapColor.DARK_GREEN).luminance(ModBlocks.createLightLevelFromProperty(7, Properties.WATERLOGGED)).strength(2.0f).sounds(BlockSoundGroup.CORAL))/*, ModItemGroups.SQUASHED*/);
 
@@ -357,33 +358,33 @@ public class ModBlocks {
     //TODO add mint compat for more dye blocks
 
 
-    public static final Block WHITE_COMPRESSED_WOOL = registerBlock("white_compressed_wool", createPackedWoolBlock(FabricBlockSettings.copyOf(Blocks.STONE).mapColor(MapColor.WHITE).strength(0.8f).sounds(BlockSoundGroup.WOOL))/*,ModItemGroups.SQUASHED*/);
-    public static final Block ORANGE_COMPRESSED_WOOL = registerBlock("orange_compressed_wool", createPackedWoolBlock(FabricBlockSettings.copyOf(Blocks.STONE).mapColor(MapColor.ORANGE).strength(0.8f).sounds(BlockSoundGroup.WOOL))/*,ModItemGroups.SQUASHED*/);
-    public static final Block MAGENTA_COMPRESSED_WOOL = registerBlock("magenta_compressed_wool", createPackedWoolBlock(FabricBlockSettings.copyOf(Blocks.STONE).mapColor(MapColor.MAGENTA).strength(0.8f).sounds(BlockSoundGroup.WOOL))/*,ModItemGroups.SQUASHED*/);
-    public static final Block LIGHT_BLUE_COMPRESSED_WOOL = registerBlock("light_blue_compressed_wool", createPackedWoolBlock(FabricBlockSettings.copyOf(Blocks.STONE).mapColor(MapColor.LIGHT_BLUE).strength(0.8f).sounds(BlockSoundGroup.WOOL))/*,ModItemGroups.SQUASHED*/);
-    public static final Block YELLOW_COMPRESSED_WOOL = registerBlock("yellow_compressed_wool", createPackedWoolBlock(FabricBlockSettings.copyOf(Blocks.STONE).mapColor(MapColor.YELLOW).strength(0.8f).sounds(BlockSoundGroup.WOOL))/*,ModItemGroups.SQUASHED*/);
-    public static final Block LIME_COMPRESSED_WOOL = registerBlock("lime_compressed_wool", createPackedWoolBlock(FabricBlockSettings.copyOf(Blocks.STONE).mapColor(MapColor.LIME).strength(0.8f).sounds(BlockSoundGroup.WOOL))/*,ModItemGroups.SQUASHED*/);
-    public static final Block PINK_COMPRESSED_WOOL = registerBlock("pink_compressed_wool", createPackedWoolBlock(FabricBlockSettings.copyOf(Blocks.STONE).mapColor(MapColor.PINK).strength(0.8f).sounds(BlockSoundGroup.WOOL))/*,ModItemGroups.SQUASHED*/);
-    public static final Block GRAY_COMPRESSED_WOOL = registerBlock("gray_compressed_wool", createPackedWoolBlock(FabricBlockSettings.copyOf(Blocks.STONE).mapColor(MapColor.GRAY).strength(0.8f).sounds(BlockSoundGroup.WOOL))/*,ModItemGroups.SQUASHED*/);
-    public static final Block LIGHT_GRAY_COMPRESSED_WOOL = registerBlock("light_gray_compressed_wool", createPackedWoolBlock(FabricBlockSettings.copyOf(Blocks.STONE).mapColor(MapColor.LIGHT_GRAY).strength(0.8f).sounds(BlockSoundGroup.WOOL))/*,ModItemGroups.SQUASHED*/);
-    public static final Block CYAN_COMPRESSED_WOOL = registerBlock("cyan_compressed_wool", createPackedWoolBlock(FabricBlockSettings.copyOf(Blocks.STONE).mapColor(MapColor.CYAN).strength(0.8f).sounds(BlockSoundGroup.WOOL))/*,ModItemGroups.SQUASHED*/);
-    public static final Block PURPLE_COMPRESSED_WOOL = registerBlock("purple_compressed_wool", createPackedWoolBlock(FabricBlockSettings.copyOf(Blocks.STONE).mapColor(MapColor.PURPLE).strength(0.8f).sounds(BlockSoundGroup.WOOL))/*,ModItemGroups.SQUASHED*/);
-    public static final Block BLUE_COMPRESSED_WOOL = registerBlock("blue_compressed_wool", createPackedWoolBlock(FabricBlockSettings.copyOf(Blocks.STONE).mapColor(MapColor.BLUE).strength(0.8f).sounds(BlockSoundGroup.WOOL))/*,ModItemGroups.SQUASHED*/);
-    public static final Block BROWN_COMPRESSED_WOOL = registerBlock("brown_compressed_wool", createPackedWoolBlock(FabricBlockSettings.copyOf(Blocks.STONE).mapColor(MapColor.BROWN).strength(0.8f).sounds(BlockSoundGroup.WOOL))/*,ModItemGroups.SQUASHED*/);
-    public static final Block GREEN_COMPRESSED_WOOL = registerBlock("green_compressed_wool", createPackedWoolBlock(FabricBlockSettings.copyOf(Blocks.STONE).mapColor(MapColor.GREEN).strength(0.8f).sounds(BlockSoundGroup.WOOL))/*,ModItemGroups.SQUASHED*/);
-    public static final Block RED_COMPRESSED_WOOL = registerBlock("red_compressed_wool", createPackedWoolBlock(FabricBlockSettings.copyOf(Blocks.STONE).mapColor(MapColor.RED).strength(0.8f).sounds(BlockSoundGroup.WOOL))/*,ModItemGroups.SQUASHED*/);
-    public static final Block BLACK_COMPRESSED_WOOL = registerBlock("black_compressed_wool", createPackedWoolBlock(FabricBlockSettings.copyOf(Blocks.STONE).mapColor(MapColor.BLACK).strength(0.8f).sounds(BlockSoundGroup.WOOL))/*,ModItemGroups.SQUASHED*/);
+    public static final Block WHITE_COMPRESSED_WOOL = registerBlock("white_compressed_wool", createCompressedWoolBlock(DyeColor.WHITE)/*,ModItemGroups.SQUASHED*/);
+    public static final Block ORANGE_COMPRESSED_WOOL = registerBlock("orange_compressed_wool", createCompressedWoolBlock(DyeColor.ORANGE)/*,ModItemGroups.SQUASHED*/);
+    public static final Block MAGENTA_COMPRESSED_WOOL = registerBlock("magenta_compressed_wool", createCompressedWoolBlock(DyeColor.MAGENTA)/*,ModItemGroups.SQUASHED*/);
+    public static final Block LIGHT_BLUE_COMPRESSED_WOOL = registerBlock("light_blue_compressed_wool", createCompressedWoolBlock(DyeColor.LIGHT_BLUE)/*,ModItemGroups.SQUASHED*/);
+    public static final Block YELLOW_COMPRESSED_WOOL = registerBlock("yellow_compressed_wool", createCompressedWoolBlock(DyeColor.YELLOW)/*,ModItemGroups.SQUASHED*/);
+    public static final Block LIME_COMPRESSED_WOOL = registerBlock("lime_compressed_wool", createCompressedWoolBlock(DyeColor.LIME)/*,ModItemGroups.SQUASHED*/);
+    public static final Block PINK_COMPRESSED_WOOL = registerBlock("pink_compressed_wool", createCompressedWoolBlock(DyeColor.PINK)/*,ModItemGroups.SQUASHED*/);
+    public static final Block GRAY_COMPRESSED_WOOL = registerBlock("gray_compressed_wool", createCompressedWoolBlock(DyeColor.GRAY)/*,ModItemGroups.SQUASHED*/);
+    public static final Block LIGHT_GRAY_COMPRESSED_WOOL = registerBlock("light_gray_compressed_wool", createCompressedWoolBlock(DyeColor.LIGHT_GRAY)/*,ModItemGroups.SQUASHED*/);
+    public static final Block CYAN_COMPRESSED_WOOL = registerBlock("cyan_compressed_wool", createCompressedWoolBlock(DyeColor.CYAN)/*,ModItemGroups.SQUASHED*/);
+    public static final Block PURPLE_COMPRESSED_WOOL = registerBlock("purple_compressed_wool", createCompressedWoolBlock(DyeColor.PURPLE)/*,ModItemGroups.SQUASHED*/);
+    public static final Block BLUE_COMPRESSED_WOOL = registerBlock("blue_compressed_wool", createCompressedWoolBlock(DyeColor.BLUE)/*,ModItemGroups.SQUASHED*/);
+    public static final Block BROWN_COMPRESSED_WOOL = registerBlock("brown_compressed_wool", createCompressedWoolBlock(DyeColor.BROWN)/*,ModItemGroups.SQUASHED*/);
+    public static final Block GREEN_COMPRESSED_WOOL = registerBlock("green_compressed_wool", createCompressedWoolBlock(DyeColor.GREEN)/*,ModItemGroups.SQUASHED*/);
+    public static final Block RED_COMPRESSED_WOOL = registerBlock("red_compressed_wool", createCompressedWoolBlock(DyeColor.RED)/*,ModItemGroups.SQUASHED*/);
+    public static final Block BLACK_COMPRESSED_WOOL = registerBlock("black_compressed_wool", createCompressedWoolBlock(DyeColor.BLACK)/*,ModItemGroups.SQUASHED*/);
 
     public static final Block BOOK_BLOCK = registerBlock("book_block", new Block(FabricBlockSettings.copyOf(Blocks.STONE).mapColor(MapColor.DIRT_BROWN).strength(2.0f).sounds(BlockSoundGroup.NETHER_WOOD).burnable())/*,ModItemGroups.SQUASHED*/);
-    public static final Block COMPRESSED_OAK_LEAVES = registerBlock("compressed_oak_leaves", new LeafPileBlock(FabricBlockSettings.copyOf(Blocks.STONE).mapColor(MapColor.ORANGE).strength(0.2f).sounds(BlockSoundGroup.AZALEA_LEAVES))/*,ModItemGroups.SQUASHED*/);
-    public static final Block COMPRESSED_SPRUCE_LEAVES = registerBlock("compressed_spruce_leaves", new LeafPileBlock(FabricBlockSettings.copyOf(Blocks.STONE).mapColor(MapColor.TERRACOTTA_RED).strength(0.2f).sounds(BlockSoundGroup.FLOWERING_AZALEA))/*,ModItemGroups.SQUASHED*/);
-    public static final Block COMPRESSED_BIRCH_LEAVES = registerBlock("compressed_birch_leaves", new LeafPileBlock(FabricBlockSettings.copyOf(Blocks.STONE).mapColor(MapColor.TERRACOTTA_YELLOW).strength(0.2f).sounds(BlockSoundGroup.AZALEA_LEAVES))/*,ModItemGroups.SQUASHED*/);
-    public static final Block COMPRESSED_JUNGLE_LEAVES = registerBlock("compressed_jungle_leaves", new LeafPileBlock(FabricBlockSettings.copyOf(Blocks.STONE).mapColor(MapColor.PALE_GREEN).strength(0.2f).sounds(BlockSoundGroup.AZALEA_LEAVES))/*,ModItemGroups.SQUASHED*/);
-    public static final Block COMPRESSED_ACACIA_LEAVES = registerBlock("compressed_acacia_leaves", new LeafPileBlock(FabricBlockSettings.copyOf(Blocks.STONE).mapColor(MapColor.TERRACOTTA_LIGHT_GRAY).strength(0.2f).sounds(BlockSoundGroup.AZALEA_LEAVES))/*,ModItemGroups.SQUASHED*/);
-    public static final Block COMPRESSED_DARK_OAK_LEAVES = registerBlock("compressed_dark_oak_leaves", new LeafPileBlock(FabricBlockSettings.copyOf(Blocks.STONE).mapColor(MapColor.TERRACOTTA_BROWN).strength(0.2f).sounds(BlockSoundGroup.AZALEA_LEAVES))/*,ModItemGroups.SQUASHED*/);
-    public static final Block COMPRESSED_MANGROVE_LEAVES = registerBlock("compressed_mangrove_leaves", new LeafPileBlock(FabricBlockSettings.copyOf(Blocks.STONE).mapColor(MapColor.DARK_RED).strength(0.2f).sounds(BlockSoundGroup.AZALEA_LEAVES))/*,ModItemGroups.SQUASHED*/);
-    public static final Block COMPRESSED_AZALEA_LEAVES = registerBlock("compressed_azalea_leaves", new LeafPileBlock(FabricBlockSettings.copyOf(Blocks.STONE).mapColor(MapColor.DULL_PINK).strength(0.2f).sounds(BlockSoundGroup.AZALEA_LEAVES))/*,ModItemGroups.SQUASHED*/);
-    public static final Block COMPRESSED_FLOWERING_AZALEA_LEAVES = registerBlock("compressed_flowering_azalea_leaves", new Block(FabricBlockSettings.copyOf(Blocks.STONE).mapColor(MapColor.MAGENTA).strength(0.2f).sounds(BlockSoundGroup.AZALEA_LEAVES))/*,ModItemGroups.SQUASHED*/);
+    public static final Block COMPRESSED_OAK_LEAVES = registerBlock("compressed_oak_leaves", new LeafPileBlock(FabricBlockSettings.copyOf(Blocks.STONE).mapColor(MapColor.ORANGE).nonOpaque().strength(0.2f).sounds(BlockSoundGroup.AZALEA_LEAVES))/*,ModItemGroups.SQUASHED*/);
+    public static final Block COMPRESSED_SPRUCE_LEAVES = registerBlock("compressed_spruce_leaves", new LeafPileBlock(FabricBlockSettings.copyOf(Blocks.STONE).mapColor(MapColor.TERRACOTTA_RED).nonOpaque().strength(0.2f).sounds(BlockSoundGroup.FLOWERING_AZALEA))/*,ModItemGroups.SQUASHED*/);
+    public static final Block COMPRESSED_BIRCH_LEAVES = registerBlock("compressed_birch_leaves", new LeafPileBlock(FabricBlockSettings.copyOf(Blocks.STONE).mapColor(MapColor.TERRACOTTA_YELLOW).nonOpaque().strength(0.2f).sounds(BlockSoundGroup.AZALEA_LEAVES))/*,ModItemGroups.SQUASHED*/);
+    public static final Block COMPRESSED_JUNGLE_LEAVES = registerBlock("compressed_jungle_leaves", new LeafPileBlock(FabricBlockSettings.copyOf(Blocks.STONE).mapColor(MapColor.PALE_GREEN).nonOpaque().strength(0.2f).sounds(BlockSoundGroup.AZALEA_LEAVES))/*,ModItemGroups.SQUASHED*/);
+    public static final Block COMPRESSED_ACACIA_LEAVES = registerBlock("compressed_acacia_leaves", new LeafPileBlock(FabricBlockSettings.copyOf(Blocks.STONE).mapColor(MapColor.TERRACOTTA_LIGHT_GRAY).nonOpaque().strength(0.2f).sounds(BlockSoundGroup.AZALEA_LEAVES))/*,ModItemGroups.SQUASHED*/);
+    public static final Block COMPRESSED_DARK_OAK_LEAVES = registerBlock("compressed_dark_oak_leaves", new LeafPileBlock(FabricBlockSettings.copyOf(Blocks.STONE).mapColor(MapColor.TERRACOTTA_BROWN).nonOpaque().strength(0.2f).sounds(BlockSoundGroup.AZALEA_LEAVES))/*,ModItemGroups.SQUASHED*/);
+    public static final Block COMPRESSED_MANGROVE_LEAVES = registerBlock("compressed_mangrove_leaves", new LeafPileBlock(FabricBlockSettings.copyOf(Blocks.STONE).mapColor(MapColor.DARK_RED).nonOpaque().strength(0.2f).sounds(BlockSoundGroup.AZALEA_LEAVES))/*,ModItemGroups.SQUASHED*/);
+    public static final Block COMPRESSED_AZALEA_LEAVES = registerBlock("compressed_azalea_leaves", new LeafPileBlock(FabricBlockSettings.copyOf(Blocks.STONE).mapColor(MapColor.DULL_PINK).nonOpaque().strength(0.2f).sounds(BlockSoundGroup.AZALEA_LEAVES))/*,ModItemGroups.SQUASHED*/);
+    public static final Block COMPRESSED_FLOWERING_AZALEA_LEAVES = registerBlock("compressed_flowering_azalea_leaves", new Block(FabricBlockSettings.copyOf(Blocks.STONE).mapColor(MapColor.MAGENTA).nonOpaque().strength(0.2f).sounds(BlockSoundGroup.AZALEA_LEAVES))/*,ModItemGroups.SQUASHED*/);
     public static final Block LEATHER_BLOCK = registerBlock("leather_block", new PillarBlock(FabricBlockSettings.copyOf(Blocks.STONE).mapColor(MapColor.TERRACOTTA_ORANGE).strength(0.8f).sounds(BlockSoundGroup.FUNGUS))/*,ModItemGroups.SQUASHED*/);
 
     public static final Block[] COMPACTED_OAK_LOGS = registerCompactedBlockSet("oak_log",
@@ -492,17 +493,17 @@ public class ModBlocks {
     public static final Block TROPICAL_FISH_BLOCK_S = registerBlock("tropical_fish_block_s", createTropicalFishBlock(FabricBlockSettings.copyOf(Blocks.STONE).mapColor(MapColor.ORANGE).strength(0.5f).sounds(ModBlockSoundGroup.TROPICAL_FISH_BLOCK))/*,ModItemGroups.SQUASHED*/);
     public static final Block TROPICAL_FISH_BLOCK_T = registerBlock("tropical_fish_block_t", createTropicalFishBlock(FabricBlockSettings.copyOf(Blocks.STONE).mapColor(MapColor.ORANGE).strength(0.5f).sounds(ModBlockSoundGroup.TROPICAL_FISH_BLOCK))/*,ModItemGroups.SQUASHED*/);
 
-    public static final Block PRISMARINE_CRYSTAL_BLOCK = registerBlock("prismarine_crystal_block", new Block(FabricBlockSettings.copyOf(Blocks.STONE).instrument(Instrument.HAT).mapColor(MapColor.OFF_WHITE).strength(3.0f, 6.0f).sounds(BlockSoundGroup.GLASS).luminance(state -> 15))/*,ModItemGroups.SQUASHED*/);
+    public static final Block PRISMARINE_CRYSTAL_BLOCK = registerBlock("prismarine_crystal_block", new Block(FabricBlockSettings.copyOf(Blocks.STONE).instrument(Instrument.HAT).mapColor(MapColor.OFF_WHITE).strength(3.0f, 6.0f).sounds(BlockSoundGroup.TUFF).luminance(state -> 15))/*,ModItemGroups.SQUASHED*/);
     public static final Block GLOW_INK_SAC_BLOCK = registerBlock("glow_ink_sac_block", new Block(FabricBlockSettings.copyOf(Blocks.STONE).mapColor(MapColor.BRIGHT_TEAL).strength(0.5f).sounds(BlockSoundGroup.MUD).luminance(state -> 7))/*,ModItemGroups.SQUASHED*/);
     public static final Block SCUTE_BLOCK = registerBlock("scute_block", new Block(FabricBlockSettings.copyOf(Blocks.STONE).mapColor(MapColor.DARK_GREEN).strength(1.5f,6.0f).sounds(BlockSoundGroup.CANDLE))/*,ModItemGroups.SQUASHED*/);
-    public static final Block FEATHER_BLOCK = registerBlock("feather_block", new HayBlock(FabricBlockSettings.copyOf(Blocks.STONE).mapColor(MapColor.OFF_WHITE).instrument(Instrument.BANJO).strength(0.2f).sounds(BlockSoundGroup.WOOL).burnable())/*,ModItemGroups.SQUASHED*/);
-    public static final Block GHAST_TEAR_BLOCK = registerBlock("ghast_tear_block", new Block(FabricBlockSettings.copyOf(Blocks.STONE).mapColor(MapColor.OFF_WHITE).strength(3.0f, 6.0f).sounds(BlockSoundGroup.GLASS))/*,ModItemGroups.SQUASHED*/);
+    public static final Block FEATHER_BLOCK = registerBlock("feather_block", new FeatherBlock(FabricBlockSettings.copyOf(Blocks.STONE).mapColor(MapColor.OFF_WHITE).instrument(Instrument.BANJO).strength(0.2f).sounds(BlockSoundGroup.WOOL).burnable())/*,ModItemGroups.SQUASHED*/);
+    public static final Block GHAST_TEAR_BLOCK = registerBlock("ghast_tear_block", new Block(FabricBlockSettings.copyOf(Blocks.STONE).mapColor(MapColor.OFF_WHITE).strength(3.0f, 6.0f).sounds(BlockSoundGroup.TUFF))/*,ModItemGroups.SQUASHED*/);
     public static final Block PHANTOM_MEMBRANE_BLOCK = registerBlock("phantom_membrane_block", new Block(FabricBlockSettings.copyOf(Blocks.STONE).mapColor(MapColor.PALE_YELLOW).strength(0.5f).sounds(BlockSoundGroup.CORAL))/*,ModItemGroups.SQUASHED*/);
     public static final Block COMPRESSED_NETHER_WART_BLOCK = registerBlock("compressed_nether_wart_block", new Block(FabricBlockSettings.copyOf(Blocks.STONE).mapColor(MapColor.DULL_RED).strength(0.5f).sounds(BlockSoundGroup.WART_BLOCK))/*,ModItemGroups.SQUASHED*/);
     public static final Block COMPRESSED_WARPED_WART_BLOCK = registerBlock("compressed_warped_wart_block", new Block(FabricBlockSettings.copyOf(Blocks.STONE).mapColor(MapColor.BRIGHT_TEAL).strength(0.5f).sounds(BlockSoundGroup.WART_BLOCK))/*,ModItemGroups.SQUASHED*/);
     public static final Block MANGROVE_ROOTS_BLOCK = registerBlock("mangrove_roots_block", new PillarBlock(FabricBlockSettings.copyOf(Blocks.STONE).mapColor(MapColor.TERRACOTTA_GRAY).strength(2.0f).sounds(BlockSoundGroup.MUDDY_MANGROVE_ROOTS).burnable())/*,ModItemGroups.SQUASHED*/);
     public static final Block VINE_BLOCK = registerBlock("vine_block", new Block(FabricBlockSettings.copyOf(Blocks.STONE).mapColor(MapColor.DARK_GREEN).strength(0.2f).sounds(BlockSoundGroup.MOSS_BLOCK).burnable())/*,ModItemGroups.SQUASHED*/);
-    public static final Block EGG_BLOCK = registerBlock("egg_block", new Block(FabricBlockSettings.copyOf(Blocks.STONE).mapColor(MapColor.PALE_YELLOW).strength(0.5f).sounds(BlockSoundGroup.CANDLE))/*,ModItemGroups.SQUASHED*/);
+    public static final Block EGG_BLOCK = registerBlock("egg_block", new EggsBlock(FabricBlockSettings.copyOf(Blocks.STONE).mapColor(MapColor.PALE_YELLOW).strength(0.5f).sounds(BlockSoundGroup.CANDLE))/*,ModItemGroups.SQUASHED*/);
     public static final Block PUFFERFISH_BLOCK = registerBlock("pufferfish_block", new PufferfishBlock(FabricBlockSettings.copyOf(Blocks.STONE).mapColor(MapColor.YELLOW).strength(0.5f).sounds(BlockSoundGroup.CORAL))/*,ModItemGroups.SQUASHED*/);
     public static final Block COMPRESSED_SPONGE = registerBlock("compressed_sponge", new CompressedSpongeBlock(FabricBlockSettings.copyOf(Blocks.POWDER_SNOW).mapColor(MapColor.YELLOW).strength(0.6f).sounds(BlockSoundGroup.CANDLE).nonOpaque().allowsSpawning(ModBlocks::never).solidBlock(ModBlocks::never).suffocates(ModBlocks::never).blockVision(ModBlocks::never).pistonBehavior(PistonBehavior.NORMAL))/*,ModItemGroups.SQUASHED*/);
     public static final Block BONES_BLOCK = registerBlock("bones_block", new PillarBlock(FabricBlockSettings.copyOf(Blocks.STONE).mapColor(MapColor.OFF_WHITE).strength(1.5f,6.0f).instrument(Instrument.XYLOPHONE).sounds(BlockSoundGroup.BONE))/*,ModItemGroups.SQUASHED*/);
@@ -513,7 +514,7 @@ public class ModBlocks {
     public static final Block ENDER_EYE_BLOCK = registerBlock("ender_eye_block", new Block(FabricBlockSettings.copyOf(Blocks.STONE).mapColor(MapColor.BRIGHT_TEAL).strength(0.5f).sounds(BlockSoundGroup.FROGLIGHT))/*,ModItemGroups.SQUASHED*/);
     public static final Block ENDER_PEARL_BLOCK = registerBlock("ender_pearl_block", new Block(FabricBlockSettings.copyOf(Blocks.STONE).mapColor(MapColor.BRIGHT_TEAL).strength(0.5f).sounds(BlockSoundGroup.FROGLIGHT))/*,ModItemGroups.SQUASHED*/);
     public static final Block ECHO_SHARD_BLOCK = registerBlock("echo_shard_block", new Block(FabricBlockSettings.copyOf(Blocks.STONE).mapColor(MapColor.TERRACOTTA_GRAY).strength(0.5f).sounds(BlockSoundGroup.SCULK_CATALYST))/*,ModItemGroups.SQUASHED*/);
-    public static final Block DENSE_COBWEB_BLOCK = registerBlock("dense_cobweb_block", new DenseCobwebBlock(FabricBlockSettings.copyOf(Blocks.POWDER_SNOW).mapColor(MapColor.OFF_WHITE).strength(4.0f).sounds(BlockSoundGroup.WOOL).dynamicBounds().nonOpaque().notSolid())/*,ModItemGroups.SQUASHED*/);
+    public static final Block DENSE_COBWEB_BLOCK = registerBlock("dense_cobweb_block", new /*DenseCobwebBlock*/Block(FabricBlockSettings.copyOf(Blocks.POWDER_SNOW).mapColor(MapColor.OFF_WHITE).strength(4.0f).sounds(BlockSoundGroup.WOOL).dynamicBounds().nonOpaque().notSolid())/*,ModItemGroups.SQUASHED*/);
     public static final Block RABBIT_HIDE_BLOCK = registerBlock("rabbit_hide_block", new PillarBlock(FabricBlockSettings.copyOf(Blocks.STONE).mapColor(MapColor.PALE_YELLOW).strength(0.5f).sounds(BlockSoundGroup.FUNGUS))/*,ModItemGroups.SQUASHED*/);
     //TODO add to composting registry
     public static final Block CARROT_BLOCK = registerBlock("carrot_block", new Block(FabricBlockSettings.copyOf(Blocks.STONE).mapColor(MapColor.ORANGE).strength(0.5f).sounds(BlockSoundGroup.AZALEA))/*,ModItemGroups.SQUASHED*/);
@@ -532,13 +533,14 @@ public class ModBlocks {
     public static final Block SNOWBALL_BLOCK = registerBlock("snowball_block", new FallingBlock(FabricBlockSettings.copyOf(Blocks.SNOW_BLOCK))/*,ModItemGroups.SQUASHED*/);
     public static final Block AMETHYST_SHARD_BLOCK = registerBlock("amethyst_shard_block", new AmethystShardBlock(FabricBlockSettings.copyOf(Blocks.AMETHYST_BLOCK))/*, ModItemGroups.SQUASHED*/);
     public static final Block CRYSTAL_QUARTZ_BLOCK = registerBlock("crystal_quartz_block", new ReversiblePillarBlock(FabricBlockSettings.create().instrument(Instrument.SNARE).strength(0.75f))/*, ModItemGroups.SQUASHED*/);
-    public static final Block HEART_OF_THE_SEA_BLOCK = registerBlock("heart_of_the_sea_block", new Block(FabricBlockSettings.create().mapColor(MapColor.DIAMOND_BLUE).strength(1.2f).requiresTool().sounds(BlockSoundGroup.STONE))/*, ModItemGroups.SQUASHED*/);
-    public static final Block NAUTILUS_SHELL_BLOCK = registerBlock("nautilus_shell_block", new Block(FabricBlockSettings.create().mapColor(MapColor.OFF_WHITE).sounds(BlockSoundGroup.SUSPICIOUS_SAND).strength(0.75f))/*, ModItemGroups.SQUASHED*/);
-    public static final Block NETHER_STAR_BLOCK = registerBlock("nether_star_block", new Block(FabricBlockSettings.create().mapColor(MapColor.PALE_YELLOW).sounds(BlockSoundGroup.GLASS).requiresTool().strength(3.0f).luminance(state -> 15))/*, ModItemGroups.SQUASHED*/);
+    public static final Block HEART_OF_THE_SEA_BLOCK = registerBlock("heart_of_the_sea_block", new Block(FabricBlockSettings.create().mapColor(MapColor.DIAMOND_BLUE).strength(1.2f).requiresTool().sounds(BlockSoundGroup.TUFF))/*, ModItemGroups.SQUASHED*/);
+    public static final Block NAUTILUS_SHELL_BLOCK = registerBlock("nautilus_shell_block", new FallingBlock(FabricBlockSettings.create().mapColor(MapColor.OFF_WHITE).sounds(BlockSoundGroup.SUSPICIOUS_SAND).strength(0.75f))/*, ModItemGroups.SQUASHED*/);
+    public static final Block NETHER_STAR_BLOCK = registerBlock("nether_star_block", new GlassBlock(FabricBlockSettings.copyOf(Blocks.GLASS).instrument(Instrument.HAT).nonOpaque().allowsSpawning(ModBlocks::never).solidBlock(ModBlocks::never).suffocates(ModBlocks::never).blockVision(ModBlocks::never).mapColor(MapColor.PALE_YELLOW).sounds(BlockSoundGroup.GLASS).requiresTool().strength(3.0f).luminance(state -> 15))/*, ModItemGroups.SQUASHED*/);
     public static final Block BRICKS_BLOCK = registerBlock("bricks_block", new BricksBlock(FabricBlockSettings.copyOf(Blocks.BRICKS).requiresTool().strength(1.2f).sounds(BlockSoundGroup.NETHER_BRICKS))/*, ModItemGroups.SQUASHED*/);
     public static final Block NETHER_BRICKS_BLOCK = registerBlock("nether_bricks_block", new BricksBlock(FabricBlockSettings.copyOf(Blocks.NETHER_BRICKS).requiresTool().strength(1.2f))/*, ModItemGroups.SQUASHED*/);
     public static final Block FERMENTED_SPIDER_EYE_BLOCK = registerBlock("fermented_spider_eye_block", new Block(FabricBlockSettings.copyOf(ModBlocks.SPIDER_EYE_BLOCK))/*, ModItemGroups.SQUASHED*/);
-    public static final Block GLISTERING_MELON_BLOCK = registerBlock("glistering_melon_block", new Block(FabricBlockSettings.copyOf(ModBlocks.COMPRESSED_MELON))/*, ModItemGroups.SQUASHED*/);
+    public static final Block GLISTERING_MELON_BLOCK = registerBlock("glistering_melon_block", new Block(FabricBlockSettings.copyOf(Blocks.MELON))/*, ModItemGroups.SQUASHED*/);
+    public static final Block COMPRESSED_GLISTERING_MELON_BLOCK = registerBlock("compressed_glistering_melon_block", new FallingBlock(FabricBlockSettings.copyOf(ModBlocks.COMPRESSED_MELON))/*, ModItemGroups.SQUASHED*/);
     //public static final Block BREAD_BLOCK = registerBlock("bread_block", new BreadBlock(FabricBlockSettings.copyOf(Blocks.CAKE))/*, ModItemGroups.SQUASHED*/); //TODO ADDME
     //public static final Block COOKIE_BLOCK = registerBlock("cookie_block", new CookieBlock(FabricBlockSettings.copyOf(Blocks.CAKE))/*, ModItemGroups.SQUASHED*/); //TODO ADDME
 
@@ -585,8 +587,8 @@ public class ModBlocks {
         return block;
     }
 
-    private static PillarBlock createPackedWoolBlock(FabricBlockSettings settings) {
-        PillarBlock block = new PillarBlock(settings);
+    private static PillarBlock createCompressedWoolBlock(DyeColor color) {
+        PillarBlock block = new PillarBlock(FabricBlockSettings.copyOf(Blocks.WHITE_WOOL).mapColor(color).burnable().strength(0.8f).sounds(BlockSoundGroup.CHISELED_BOOKSHELF));
         COMPRESSED_WOOL_BLOCKS.add(block);
         return block;
     }

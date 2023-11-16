@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "squashed:glow_ink_sac",
+  "key": {
+    "#": {
+      "item": "minecraft:glow_ink_sac"
+    }
+  },
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "result": {
+    "item": "squashed:glow_ink_sac_block"
+  },
+  "show_notification": true
+}

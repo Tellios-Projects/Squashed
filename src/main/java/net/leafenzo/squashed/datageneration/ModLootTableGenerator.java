@@ -187,5 +187,6 @@ public class ModLootTableGenerator extends FabricBlockLootTableProvider {
         this.addDrop(ModBlocks.NETHER_BRICKS_BLOCK);
         this.addDrop(ModBlocks.FERMENTED_SPIDER_EYE_BLOCK);
         this.addDrop(ModBlocks.GLISTERING_MELON_BLOCK);
+        this.addDrop(ModBlocks.COMPRESSED_GLISTERING_MELON_BLOCK);
     }
 }

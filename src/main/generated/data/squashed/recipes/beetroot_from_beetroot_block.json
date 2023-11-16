@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "squashed:beetroot_reverse",
+  "ingredients": [
+    {
+      "item": "squashed:beetroot_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "minecraft:beetroot"
+  }
+}

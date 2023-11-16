@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "squashed:fire_charge",
+  "key": {
+    "#": {
+      "item": "minecraft:fire_charge"
+    }
+  },
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "result": {
+    "item": "squashed:fire_charge_block"
+  },
+  "show_notification": true
+}

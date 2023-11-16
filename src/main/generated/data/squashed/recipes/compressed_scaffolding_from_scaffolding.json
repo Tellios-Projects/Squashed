@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "squashed:scaffolding",
+  "key": {
+    "#": {
+      "item": "minecraft:scaffolding"
+    }
+  },
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "result": {
+    "item": "squashed:compressed_scaffolding"
+  },
+  "show_notification": true
+}

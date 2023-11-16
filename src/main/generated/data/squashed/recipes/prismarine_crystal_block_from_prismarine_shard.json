@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "squashed:prismarine_shard",
+  "key": {
+    "#": {
+      "item": "minecraft:prismarine_shard"
+    }
+  },
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "result": {
+    "item": "squashed:prismarine_crystal_block"
+  },
+  "show_notification": true
+}

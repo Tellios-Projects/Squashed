@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "squashed:rabbit_hide_reverse",
+  "ingredients": [
+    {
+      "item": "squashed:rabbit_hide_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "minecraft:rabbit_hide"
+  }
+}

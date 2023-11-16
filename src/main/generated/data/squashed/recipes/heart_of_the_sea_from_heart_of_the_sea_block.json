@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "squashed:heart_of_the_sea_reverse",
+  "ingredients": [
+    {
+      "item": "squashed:heart_of_the_sea_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "minecraft:heart_of_the_sea"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "squashed:golden_carrot",
+  "key": {
+    "#": {
+      "item": "minecraft:golden_carrot"
+    }
+  },
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "result": {
+    "item": "squashed:golden_carrot_block"
+  },
+  "show_notification": true
+}

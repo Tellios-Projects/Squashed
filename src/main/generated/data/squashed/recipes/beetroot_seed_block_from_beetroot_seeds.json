@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "squashed:beetroot_seeds",
+  "key": {
+    "#": {
+      "item": "minecraft:beetroot_seeds"
+    }
+  },
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "result": {
+    "item": "squashed:beetroot_seed_block"
+  },
+  "show_notification": true
+}

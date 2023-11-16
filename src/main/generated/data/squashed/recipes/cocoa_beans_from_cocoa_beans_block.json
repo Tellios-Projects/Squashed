@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "squashed:cocoa_beans_reverse",
+  "ingredients": [
+    {
+      "item": "squashed:cocoa_beans_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "minecraft:cocoa_beans"
+  }
+}

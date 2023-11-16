@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "squashed:book",
+  "key": {
+    "#": {
+      "item": "minecraft:book"
+    }
+  },
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "result": {
+    "item": "squashed:book_block"
+  },
+  "show_notification": true
+}

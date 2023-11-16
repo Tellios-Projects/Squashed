@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "squashed:sugar_cane_reverse",
+  "ingredients": [
+    {
+      "item": "squashed:sugarcane_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "minecraft:sugar_cane"
+  }
+}
