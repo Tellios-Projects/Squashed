@@ -76,12 +76,24 @@ public class ModModelProvider extends FabricModelProvider {
 
     private void registerUpDefaultOrientable(BlockStateModelGenerator blockStateModelGenerator, Block block, TexturedModel.Factory modelFactory) {
         Identifier identifier = modelFactory.upload(block, blockStateModelGenerator.modelCollector);
-        blockStateModelGenerator.blockStateCollector.accept(VariantsBlockStateSupplier.create(block, BlockStateVariant.create().put(VariantSettings.MODEL, identifier)).coordinate(this.createUpDefaultRotationStates()));
+        blockStateModelGenerator.blockStateCollector.accept(VariantsBlockStateSupplier.create(block, BlockStateVariant.create().put(VariantSettings.MODEL, identifier)).coordinate(createUpDefaultRotationStates()));
+        //blockStateModelGenerator.blockStateCollector.accept(VariantsBlockStateSupplier.create(block).coordinate(BlockStateModelGenerator.createNorthDefaultRotationStates(), identifier));
+    }
+
+    private void registerHorizontalAxisRotated(BlockStateModelGenerator blockStateModelGenerator, Block block, TexturedModel.Factory modelFactory) {
+        Identifier identifier = modelFactory.upload(block, blockStateModelGenerator.modelCollector);
+        blockStateModelGenerator.blockStateCollector.accept(VariantsBlockStateSupplier.create(block, BlockStateVariant.create().put(VariantSettings.MODEL, identifier)).coordinate(createHorizontalAxisRotationStates()));
         //blockStateModelGenerator.blockStateCollector.accept(VariantsBlockStateSupplier.create(block).coordinate(BlockStateModelGenerator.createNorthDefaultRotationStates(), identifier));
     }
 
     private static BlockStateVariantMap createUpDefaultRotationStates() {
         return BlockStateVariantMap.create(Properties.FACING).register(Direction.DOWN, BlockStateVariant.create().put(VariantSettings.X, VariantSettings.Rotation.R180)).register(Direction.UP, BlockStateVariant.create()).register(Direction.NORTH, BlockStateVariant.create().put(VariantSettings.X, VariantSettings.Rotation.R90)).register(Direction.SOUTH, BlockStateVariant.create().put(VariantSettings.X, VariantSettings.Rotation.R90).put(VariantSettings.Y, VariantSettings.Rotation.R180)).register(Direction.WEST, BlockStateVariant.create().put(VariantSettings.X, VariantSettings.Rotation.R90).put(VariantSettings.Y, VariantSettings.Rotation.R270)).register(Direction.EAST, BlockStateVariant.create().put(VariantSettings.X, VariantSettings.Rotation.R90).put(VariantSettings.Y, VariantSettings.Rotation.R90));
+    }
+
+    private static BlockStateVariantMap createHorizontalAxisRotationStates() {
+        return BlockStateVariantMap.create(Properties.HORIZONTAL_AXIS)
+                .register(Direction.Axis.X, BlockStateVariant.create().put(VariantSettings.Y, VariantSettings.Rotation.R90))
+                .register(Direction.Axis.Z, BlockStateVariant.create());
     }
 
     //Because the last one is just the texture with the insignia on it
@@ -317,8 +329,12 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.HEART_OF_THE_SEA_BLOCK);
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.NAUTILUS_SHELL_BLOCK);
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.NETHER_STAR_BLOCK);
-        blockStateModelGenerator.registerSingleton(ModBlocks.BRICKS_BLOCK, ModTexturedModel.CUBE_COLUMN_DEFAULT_TO_SIDE);
-        blockStateModelGenerator.registerSingleton(ModBlocks.NETHER_BRICKS_BLOCK, ModTexturedModel.CUBE_COLUMN_DEFAULT_TO_SIDE);
+
+        registerHorizontalAxisRotated(blockStateModelGenerator, ModBlocks.BRICKS_BLOCK, ModTexturedModel.CUBE_COLUMN_DEFAULT_TO_SIDE);
+        registerHorizontalAxisRotated(blockStateModelGenerator, ModBlocks.NETHER_BRICKS_BLOCK, ModTexturedModel.CUBE_COLUMN_DEFAULT_TO_SIDE);
+//        blockStateModelGenerator.registerSingleton(ModBlocks.BRICKS_BLOCK, ModTexturedModel.CUBE_COLUMN_DEFAULT_TO_SIDE);
+//        blockStateModelGenerator.registerSingleton(ModBlocks.NETHER_BRICKS_BLOCK, ModTexturedModel.CUBE_COLUMN_DEFAULT_TO_SIDE);
+
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.FERMENTED_SPIDER_EYE_BLOCK);
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.GLISTERING_MELON_BLOCK);
 
