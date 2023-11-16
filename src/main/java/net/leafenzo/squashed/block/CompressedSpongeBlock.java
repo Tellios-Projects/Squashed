@@ -25,11 +25,15 @@ public class CompressedSpongeBlock extends Block {
         super(settings);
     }
 
-
     @Override
     public float getAmbientOcclusionLightLevel(BlockState state, BlockView world, BlockPos pos) {
-        return 1.0f;
+        return 0.2f;
     }
+
+//    @Override
+//    public boolean isTransparent(BlockState state, BlockView world, BlockPos pos) {
+//        return true;
+//    }
 
 //    @Override
 //    public boolean isTranslucent(BlockState state, BlockView world, BlockPos pos) {
