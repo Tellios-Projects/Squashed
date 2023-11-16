@@ -4,11 +4,11 @@
   "group": "squashed:Block{minecraft:prismarine}_reverse",
   "ingredients": [
     {
-      "item": "squashed:compressed_prismarine"
+      "item": "squashed:dense_prismarine"
     }
   ],
   "result": {
     "count": 9,
-    "item": "minecraft:prismarine"
+    "item": "squashed:crammed_prismarine"
   }
 }

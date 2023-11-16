@@ -4,7 +4,7 @@
   "group": "squashed:Block{minecraft:prismarine}",
   "key": {
     "#": {
-      "item": "minecraft:prismarine"
+      "item": "squashed:dense_prismarine"
     }
   },
   "pattern": [
@@ -13,7 +13,7 @@
     "###"
   ],
   "result": {
-    "item": "squashed:compressed_prismarine"
+    "item": "squashed:squashed_prismarine"
   },
   "show_notification": true
 }

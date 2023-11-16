@@ -78,6 +78,8 @@ public class ModLootTableGenerator extends FabricBlockLootTableProvider {
         for(Block block : ModBlocks.COMPACTED_MAGMA_BLOCKS) { this.addDrop(block); }
         for(Block block : ModBlocks.COMPACTED_BASALT) { this.addDrop(block); }
         for(Block block : ModBlocks.COMPACTED_COBBLED_DEEPSLATE) { this.addDrop(block); }
+        for(Block block : ModBlocks.COMPACTED_SCULK) { this.addDrop(block); }
+        for(Block block : ModBlocks.COMPACTED_PRISMARINE) { this.addDrop(block); }
         for(Block block : ModBlocks.COMPACTED_GLOWSTONE_BLOCKS) { this.addDrop(block); }
         for(Block block : ModBlocks.COMPACTED_RAW_IRON_BLOCKS) { this.addDrop(block); }
         for(Block block : ModBlocks.COMPACTED_RAW_GOLD_BLOCKS) { this.addDrop(block); }
@@ -175,7 +177,6 @@ public class ModLootTableGenerator extends FabricBlockLootTableProvider {
         this.addDrop(ModBlocks.FLINT_BLOCK);
         this.addDrop(ModBlocks.SUGAR_BLOCK);
         this.addDrop(ModBlocks.GUNPOWDER_BLOCK);
-        this.addDrop(ModBlocks.COMPRESSED_PRISMARINE);
         this.addDrop(ModBlocks.CHARCOAL_BLOCK);
         this.addDrop(ModBlocks.SNOWBALL_BLOCK);
         this.addDrop(ModBlocks.AMETHYST_SHARD_BLOCK);

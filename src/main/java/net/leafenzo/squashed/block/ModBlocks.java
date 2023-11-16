@@ -102,25 +102,25 @@ public class ModBlocks {
             new Block(FabricBlockSettings.copyOf(Blocks.ANDESITE).strength(1.5f,6.0f).requiresTool().instrument(Instrument.BASEDRUM)),
             new Block(FabricBlockSettings.copyOf(Blocks.ANDESITE).strength(1.5f,6.0f).requiresTool().instrument(Instrument.BASEDRUM)),
             new Block(FabricBlockSettings.copyOf(Blocks.ANDESITE).strength(1.5f,6.0f).requiresTool().instrument(Instrument.BASEDRUM)),
-            new Block(FabricBlockSettings.copyOf(Blocks.ANDESITE).strength(1.5f,6.0f).requiresTool().instrument(Instrument.BASEDRUM))
+            new Block(FabricBlockSettings.copyOf(Blocks.ANDESITE).strength(2.0f,6.0f).requiresTool().instrument(Instrument.BASEDRUM))
     );
     public static final Block[] COMPACTED_GRAVEL = registerCompactedBlockSet("gravel",
             new FallingBlock(FabricBlockSettings.copyOf(Blocks.GRAVEL).strength(0.8f).instrument(Instrument.SNARE)),
-            new FallingBlock(FabricBlockSettings.copyOf(Blocks.GRAVEL).strength(0.8f).instrument(Instrument.SNARE)),
-            new FallingBlock(FabricBlockSettings.copyOf(Blocks.GRAVEL).strength(0.8f).instrument(Instrument.SNARE)),
-            new FallingBlock(FabricBlockSettings.copyOf(Blocks.GRAVEL).strength(0.8f).instrument(Instrument.SNARE))
+            new FallingBlock(FabricBlockSettings.copyOf(Blocks.GRAVEL).strength(1.2f).instrument(Instrument.SNARE)),
+            new Block(FabricBlockSettings.copyOf(Blocks.GRAVEL).strength(1.2f).instrument(Instrument.SNARE).requiresTool().sounds(BlockSoundGroup.STONE)),
+            new Block(FabricBlockSettings.copyOf(Blocks.GRAVEL).strength(2.0f).instrument(Instrument.SNARE).requiresTool().sounds(BlockSoundGroup.STONE))
     );
     public static final Block[] COMPACTED_TUFF = registerCompactedBlockSet("tuff",
             new Block(FabricBlockSettings.copyOf(Blocks.TUFF).strength(1.5f,6.0f).requiresTool().instrument(Instrument.BASEDRUM)),
             new Block(FabricBlockSettings.copyOf(Blocks.TUFF).strength(1.5f,6.0f).requiresTool().instrument(Instrument.BASEDRUM)),
             new Block(FabricBlockSettings.copyOf(Blocks.TUFF).strength(1.5f,6.0f).requiresTool().instrument(Instrument.BASEDRUM)),
-            new Block(FabricBlockSettings.copyOf(Blocks.TUFF).strength(1.5f,6.0f).requiresTool().instrument(Instrument.BASEDRUM))
+            new Block(FabricBlockSettings.copyOf(Blocks.TUFF).strength(2.0f,6.0f).requiresTool().instrument(Instrument.BASEDRUM))
     );
     public static final Block[] COMPACTED_BLACKSTONE = registerCompactedBlockSet("blackstone",
             new Block(FabricBlockSettings.copyOf(Blocks.BLACKSTONE).strength(1.5f,6.0f).requiresTool().instrument(Instrument.BASEDRUM)),
             new Block(FabricBlockSettings.copyOf(Blocks.BLACKSTONE).strength(1.5f,6.0f).requiresTool().instrument(Instrument.BASEDRUM)),
             new Block(FabricBlockSettings.copyOf(Blocks.BLACKSTONE).strength(1.5f,6.0f).requiresTool().instrument(Instrument.BASEDRUM)),
-            new Block(FabricBlockSettings.copyOf(Blocks.BLACKSTONE).strength(1.5f,6.0f).requiresTool().instrument(Instrument.BASEDRUM))
+            new Block(FabricBlockSettings.copyOf(Blocks.BLACKSTONE).strength(2.0f,6.0f).requiresTool().instrument(Instrument.BASEDRUM))
     );
     public static final Block[] COMPACTED_OBSIDIAN = registerCompactedBlockSet("obsidian",
             new TintedGlassBlock(FabricBlockSettings.copyOf(Blocks.OBSIDIAN).strength(25.0f,600.0f).requiresTool().instrument(Instrument.BASEDRUM).nonOpaque().allowsSpawning(ModBlocks::never).solidBlock(ModBlocks::never).suffocates(ModBlocks::never).blockVision(ModBlocks::never)),
@@ -132,55 +132,55 @@ public class ModBlocks {
             new PillarBlock(FabricBlockSettings.copyOf(Blocks.DEEPSLATE).strength(1.5f,6.0f).requiresTool().instrument(Instrument.BASEDRUM)),
             new PillarBlock(FabricBlockSettings.copyOf(Blocks.DEEPSLATE).strength(1.5f,6.0f).requiresTool().instrument(Instrument.BASEDRUM)),
             new PillarBlock(FabricBlockSettings.copyOf(Blocks.DEEPSLATE).strength(1.5f,6.0f).requiresTool().instrument(Instrument.BASEDRUM)),
-            new PillarBlock(FabricBlockSettings.copyOf(Blocks.DEEPSLATE).strength(1.5f,6.0f).requiresTool().instrument(Instrument.BASEDRUM))
+            new PillarBlock(FabricBlockSettings.copyOf(Blocks.DEEPSLATE).strength(2.0f,6.0f).requiresTool().instrument(Instrument.BASEDRUM))
     );
     public static final Block[] COMPACTED_NETHERRACK = registerCompactedBlockSet("netherrack",
             new Block(FabricBlockSettings.copyOf(Blocks.NETHERRACK).strength(1.2f).requiresTool().instrument(Instrument.BASEDRUM)),
             new Block(FabricBlockSettings.copyOf(Blocks.NETHERRACK).strength(1.2f).requiresTool().instrument(Instrument.BASEDRUM)),
-            new Block(FabricBlockSettings.copyOf(Blocks.NETHERRACK).strength(1.2f).requiresTool().instrument(Instrument.BASEDRUM)),
-            new Block(FabricBlockSettings.copyOf(Blocks.NETHERRACK).strength(1.2f).requiresTool().instrument(Instrument.BASEDRUM))
+            new Block(FabricBlockSettings.copyOf(Blocks.NETHERRACK).strength(1.5f).requiresTool().instrument(Instrument.BASEDRUM)),
+            new Block(FabricBlockSettings.copyOf(Blocks.NETHERRACK).strength(2.0f).requiresTool().instrument(Instrument.BASEDRUM))
     );
     public static final Block[] COMPACTED_END_STONE = registerCompactedBlockSet("end_stone",
             new Block(FabricBlockSettings.copyOf(Blocks.END_STONE).strength(1.5f,6.0f).requiresTool().instrument(Instrument.BASEDRUM)),
             new Block(FabricBlockSettings.copyOf(Blocks.END_STONE).strength(1.5f,6.0f).requiresTool().instrument(Instrument.BASEDRUM)),
             new Block(FabricBlockSettings.copyOf(Blocks.END_STONE).strength(1.5f,6.0f).requiresTool().instrument(Instrument.BASEDRUM)),
-            new Block(FabricBlockSettings.copyOf(Blocks.END_STONE).strength(1.5f,6.0f).requiresTool().instrument(Instrument.BASEDRUM))
+            new Block(FabricBlockSettings.copyOf(Blocks.END_STONE).strength(2.0f,6.0f).requiresTool().instrument(Instrument.BASEDRUM))
     );
     public static final Block[] COMPACTED_DIORITE = registerCompactedBlockSet("diorite",
             new Block(FabricBlockSettings.copyOf(Blocks.DIORITE).strength(1.5f,6.0f).requiresTool().instrument(Instrument.BASEDRUM)),
             new Block(FabricBlockSettings.copyOf(Blocks.DIORITE).strength(1.5f,6.0f).requiresTool().instrument(Instrument.BASEDRUM)),
             new Block(FabricBlockSettings.copyOf(Blocks.DIORITE).strength(1.5f,6.0f).requiresTool().instrument(Instrument.BASEDRUM)),
-            new Block(FabricBlockSettings.copyOf(Blocks.DIORITE).strength(1.5f,6.0f).requiresTool().instrument(Instrument.BASEDRUM))
+            new Block(FabricBlockSettings.copyOf(Blocks.DIORITE).strength(2.0f,6.0f).requiresTool().instrument(Instrument.BASEDRUM))
     );
     public static final Block[] COMPACTED_GRANITE = registerCompactedBlockSet("granite",
             new Block(FabricBlockSettings.copyOf(Blocks.GRANITE).strength(1.5f,6.0f).requiresTool().instrument(Instrument.BASEDRUM)),
             new Block(FabricBlockSettings.copyOf(Blocks.GRANITE).strength(1.5f,6.0f).requiresTool().instrument(Instrument.BASEDRUM)),
             new Block(FabricBlockSettings.copyOf(Blocks.GRANITE).strength(1.5f,6.0f).requiresTool().instrument(Instrument.BASEDRUM)),
-            new Block(FabricBlockSettings.copyOf(Blocks.GRANITE).strength(1.5f,6.0f).requiresTool().instrument(Instrument.BASEDRUM))
+            new Block(FabricBlockSettings.copyOf(Blocks.GRANITE).strength(2.0f,6.0f).requiresTool().instrument(Instrument.BASEDRUM))
     );
     public static final Block[] COMPACTED_DIRT = registerCompactedBlockSet("dirt",
             new Block(FabricBlockSettings.copyOf(Blocks.DIRT).strength(0.8f)),
             new Block(FabricBlockSettings.copyOf(Blocks.DIRT).strength(0.8f)),
-            new Block(FabricBlockSettings.copyOf(Blocks.DIRT).strength(0.8f)),
-            new Block(FabricBlockSettings.copyOf(Blocks.DIRT).strength(0.8f))
+            new Block(FabricBlockSettings.copyOf(Blocks.DIRT).strength(1.0f)),
+            new Block(FabricBlockSettings.copyOf(Blocks.DIRT).strength(1.2f))
     );
     public static final Block[] COMPACTED_SAND = registerCompactedBlockSet("sand",
-            new FallingBlock(FabricBlockSettings.copyOf(Blocks.SAND).strength(0.8f).instrument(Instrument.SNARE)),
-            new FallingBlock(FabricBlockSettings.copyOf(Blocks.SAND).strength(0.8f).instrument(Instrument.SNARE)),
-            new FallingBlock(FabricBlockSettings.copyOf(Blocks.SAND).strength(0.8f).instrument(Instrument.SNARE)),
-            new FallingBlock(FabricBlockSettings.copyOf(Blocks.SAND).strength(0.8f).instrument(Instrument.SNARE))
+            new Block(FabricBlockSettings.copyOf(Blocks.SAND).strength(0.8f).instrument(Instrument.SNARE).requiresTool().sounds(BlockSoundGroup.STONE)),
+            new Block(FabricBlockSettings.copyOf(Blocks.SAND).strength(1.2f).instrument(Instrument.SNARE).requiresTool().sounds(BlockSoundGroup.STONE)),
+            new Block(FabricBlockSettings.copyOf(Blocks.SAND).strength(1.2f).instrument(Instrument.SNARE).requiresTool().sounds(BlockSoundGroup.STONE)),
+            new Block(FabricBlockSettings.copyOf(Blocks.SAND).strength(2.0f).instrument(Instrument.SNARE).requiresTool().sounds(BlockSoundGroup.STONE))
     );
     public static final Block[] COMPACTED_RED_SAND = registerCompactedBlockSet("red_sand",
-            new FallingBlock(FabricBlockSettings.copyOf(Blocks.RED_SAND).strength(0.8f).instrument(Instrument.SNARE)),
-            new FallingBlock(FabricBlockSettings.copyOf(Blocks.RED_SAND).strength(0.8f).instrument(Instrument.SNARE)),
-            new FallingBlock(FabricBlockSettings.copyOf(Blocks.RED_SAND).strength(0.8f).instrument(Instrument.SNARE)),
-            new FallingBlock(FabricBlockSettings.copyOf(Blocks.RED_SAND).strength(0.8f).instrument(Instrument.SNARE))
+            new Block(FabricBlockSettings.copyOf(Blocks.RED_SAND).strength(0.8f).instrument(Instrument.SNARE).requiresTool().sounds(BlockSoundGroup.STONE)),
+            new Block(FabricBlockSettings.copyOf(Blocks.RED_SAND).strength(1.2f).instrument(Instrument.SNARE).requiresTool().sounds(BlockSoundGroup.STONE)),
+            new Block(FabricBlockSettings.copyOf(Blocks.RED_SAND).strength(1.2f).instrument(Instrument.SNARE).requiresTool().sounds(BlockSoundGroup.STONE)),
+            new Block(FabricBlockSettings.copyOf(Blocks.RED_SAND).strength(2.0f).instrument(Instrument.SNARE).requiresTool().sounds(BlockSoundGroup.STONE))
     );
     public static final Block[] COMPACTED_DRIPSTONE_BLOCKS = registerCompactedBlockSet("dripstone_block",
             new Block(FabricBlockSettings.copyOf(Blocks.DRIPSTONE_BLOCK).strength(1.2f).requiresTool().instrument(Instrument.BASEDRUM)),
-            new Block(FabricBlockSettings.copyOf(Blocks.DRIPSTONE_BLOCK).strength(1.2f).requiresTool().instrument(Instrument.BASEDRUM)),
-            new Block(FabricBlockSettings.copyOf(Blocks.DRIPSTONE_BLOCK).strength(1.2f).requiresTool().instrument(Instrument.BASEDRUM)),
-            new Block(FabricBlockSettings.copyOf(Blocks.DRIPSTONE_BLOCK).strength(1.2f).requiresTool().instrument(Instrument.BASEDRUM))
+            new Block(FabricBlockSettings.copyOf(Blocks.DRIPSTONE_BLOCK).strength(1.5f).requiresTool().instrument(Instrument.BASEDRUM)),
+            new Block(FabricBlockSettings.copyOf(Blocks.DRIPSTONE_BLOCK).strength(1.5f).requiresTool().instrument(Instrument.BASEDRUM)),
+            new Block(FabricBlockSettings.copyOf(Blocks.DRIPSTONE_BLOCK).strength(2.0f).requiresTool().instrument(Instrument.BASEDRUM))
     );
     public static final Block[] COMPACTED_CALCITE = registerCompactedBlockSet("calcite",
             new Block(FabricBlockSettings.copyOf(Blocks.CALCITE).strength(1.5f,6.0f).requiresTool().instrument(Instrument.BASEDRUM)),
@@ -189,10 +189,10 @@ public class ModBlocks {
             new Block(FabricBlockSettings.copyOf(Blocks.CALCITE).strength(1.5f,6.0f).requiresTool().instrument(Instrument.BASEDRUM))
     );
     public static final Block[] COMPACTED_MUD = registerCompactedBlockSet("mud",
-            new MudBlock(FabricBlockSettings.copyOf(Blocks.MUD).strength(0.8f)),
-            new MudBlock(FabricBlockSettings.copyOf(Blocks.MUD).strength(0.8f)),
-            new MudBlock(FabricBlockSettings.copyOf(Blocks.MUD).strength(0.8f)),
-            new MudBlock(FabricBlockSettings.copyOf(Blocks.MUD).strength(0.8f))
+            new MudBlock(FabricBlockSettings.copyOf(Blocks.MUD).strength(1.0f)),
+            new MudBlock(FabricBlockSettings.copyOf(Blocks.MUD).strength(1.0f)),
+            new MudBlock(FabricBlockSettings.copyOf(Blocks.MUD).strength(1.0f)),
+            new MudBlock(FabricBlockSettings.copyOf(Blocks.MUD).strength(1.2f))
     );
     public static final Block[] COMPACTED_MOSS_BLOCKS = registerCompactedBlockSet("moss_block",
             new MossBlock(FabricBlockSettings.copyOf(Blocks.MOSS_BLOCK).strength(0.8f)),
@@ -201,10 +201,10 @@ public class ModBlocks {
             new MossBlock(FabricBlockSettings.copyOf(Blocks.MOSS_BLOCK).strength(0.8f))
     );
     public static final Block[] COMPACTED_CLAY = registerCompactedBlockSet("clay",
-            new Block(FabricBlockSettings.copyOf(Blocks.CLAY).strength(0.8f).instrument(Instrument.FLUTE)),
-            new Block(FabricBlockSettings.copyOf(Blocks.CLAY).strength(0.8f).instrument(Instrument.FLUTE)),
-            new Block(FabricBlockSettings.copyOf(Blocks.CLAY).strength(0.8f).instrument(Instrument.FLUTE)),
-            new Block(FabricBlockSettings.copyOf(Blocks.CLAY).strength(0.8f).instrument(Instrument.FLUTE))
+            new Block(FabricBlockSettings.copyOf(Blocks.CLAY).strength(1.2f).instrument(Instrument.FLUTE)),
+            new Block(FabricBlockSettings.copyOf(Blocks.CLAY).strength(1.4f).instrument(Instrument.FLUTE)),
+            new Block(FabricBlockSettings.copyOf(Blocks.CLAY).strength(1.4f).instrument(Instrument.FLUTE).requiresTool().sounds(BlockSoundGroup.STONE)),
+            new Block(FabricBlockSettings.copyOf(Blocks.CLAY).strength(2.0f).instrument(Instrument.FLUTE).requiresTool().sounds(BlockSoundGroup.STONE))
     );
     public static final Block[] COMPACTED_MAGMA_BLOCKS = registerCompactedBlockSet("magma_block",
             new MagmaBlock(FabricBlockSettings.copyOf(Blocks.MAGMA_BLOCK).strength(1.2f).instrument(Instrument.BASEDRUM)),
@@ -218,7 +218,6 @@ public class ModBlocks {
             new Block(FabricBlockSettings.copyOf(Blocks.SNOW_BLOCK)),
             new Block(FabricBlockSettings.copyOf(Blocks.SNOW_BLOCK))
     );
-    //  \/ Notably, not a pillar block
     public static final Block[] COMPACTED_BASALT = registerCompactedBlockSet("basalt",
             new Block(FabricBlockSettings.copyOf(Blocks.BASALT).requiresTool().instrument(Instrument.BASEDRUM)),
             new Block(FabricBlockSettings.copyOf(Blocks.BASALT).requiresTool().instrument(Instrument.BASEDRUM)),
@@ -230,6 +229,18 @@ public class ModBlocks {
             new Block(FabricBlockSettings.copyOf(Blocks.COBBLED_DEEPSLATE).requiresTool()),
             new Block(FabricBlockSettings.copyOf(Blocks.COBBLED_DEEPSLATE).requiresTool()),
             new Block(FabricBlockSettings.copyOf(Blocks.COBBLED_DEEPSLATE).requiresTool())
+    );
+    public static final Block[] COMPACTED_SCULK = registerCompactedBlockSet("sculk",
+            new CompactedSculkBlock(FabricBlockSettings.copyOf(Blocks.SCULK).mapColor(MapColor.BLACK).strength(0.4f).sounds(BlockSoundGroup.SCULK).luminance(state -> 15)),
+            new CompactedSculkBlock(FabricBlockSettings.copyOf(Blocks.SCULK).mapColor(MapColor.BLACK).strength(0.4f).sounds(BlockSoundGroup.SCULK)),
+            new CompactedSculkBlock(FabricBlockSettings.copyOf(Blocks.SCULK).mapColor(MapColor.BLACK).strength(1.2f).sounds(BlockSoundGroup.SCULK)),
+            new CompactedSculkBlock(FabricBlockSettings.copyOf(Blocks.SCULK).mapColor(MapColor.BLACK).strength(2.0f).sounds(BlockSoundGroup.SCULK))
+    );
+    public static final Block[] COMPACTED_PRISMARINE = registerCompactedBlockSet("prismarine",
+            new Block(FabricBlockSettings.copyOf(Blocks.PRISMARINE).mapColor(MapColor.CYAN).instrument(Instrument.BASEDRUM).requiresTool().strength(1.5f,6.0f).sounds(BlockSoundGroup.STONE)),
+            new Block(FabricBlockSettings.copyOf(Blocks.PRISMARINE).mapColor(MapColor.CYAN).instrument(Instrument.BASEDRUM).requiresTool().strength(1.5f,6.0f).sounds(BlockSoundGroup.STONE)),
+            new Block(FabricBlockSettings.copyOf(Blocks.PRISMARINE).mapColor(MapColor.CYAN).instrument(Instrument.BASEDRUM).requiresTool().strength(2.0f,6.0f).sounds(BlockSoundGroup.DEEPSLATE)),
+            new Block(FabricBlockSettings.copyOf(Blocks.PRISMARINE).mapColor(MapColor.CYAN).instrument(Instrument.BASEDRUM).requiresTool().strength(3.0f,6.0f).sounds(BlockSoundGroup.DEEPSLATE))
     );
 
     // TODO (maybe) custom block behavior that allows these to illuminate a much larger area that would typically be allowed
@@ -528,7 +539,6 @@ public class ModBlocks {
     public static final Block FLINT_BLOCK = registerBlock("flint_block", new FallingBlock(FabricBlockSettings.copyOf(Blocks.STONE).mapColor(MapColor.GRAY).strength(1.5f,6.0f).sounds(BlockSoundGroup.TUFF))/*,ModItemGroups.SQUASHED*/);
     public static final Block SUGAR_BLOCK = registerBlock("sugar_block", new FallingBlock(FabricBlockSettings.copyOf(Blocks.STONE).mapColor(MapColor.OFF_WHITE).strength(0.5f).sounds(BlockSoundGroup.SAND).burnable())/*,ModItemGroups.SQUASHED*/);
     public static final Block GUNPOWDER_BLOCK = registerBlock("gunpowder_block", new GunpowderBlock(FabricBlockSettings.copyOf(Blocks.STONE).mapColor(MapColor.LIGHT_GRAY).strength(0.5f).sounds(BlockSoundGroup.SAND).burnable())/*,ModItemGroups.SQUASHED*/);
-    public static final Block COMPRESSED_PRISMARINE = registerBlock("compressed_prismarine", new Block(FabricBlockSettings.copyOf(Blocks.STONE).mapColor(MapColor.CYAN).instrument(Instrument.BASEDRUM).requiresTool().strength(1.5f,6.0f).sounds(BlockSoundGroup.STONE).mapColor(MapColor.CYAN))/*,ModItemGroups.SQUASHED*/);
     public static final Block CHARCOAL_BLOCK = registerBlock("charcoal_block", new PillarBlock(FabricBlockSettings.copyOf(Blocks.COAL_BLOCK).burnable()));
     public static final Block SNOWBALL_BLOCK = registerBlock("snowball_block", new FallingBlock(FabricBlockSettings.copyOf(Blocks.SNOW_BLOCK))/*,ModItemGroups.SQUASHED*/);
     public static final Block AMETHYST_SHARD_BLOCK = registerBlock("amethyst_shard_block", new AmethystShardBlock(FabricBlockSettings.copyOf(Blocks.AMETHYST_BLOCK))/*, ModItemGroups.SQUASHED*/);

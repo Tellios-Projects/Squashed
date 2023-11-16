@@ -177,6 +177,8 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         offerNamingSafeReversibleCompactingRecipes(exporter, Blocks.SNOW_BLOCK, ModBlocks.COMPACTED_SNOW_BLOCKS);
         offerNamingSafeReversibleCompactingRecipes(exporter, Blocks.BASALT, ModBlocks.COMPACTED_BASALT);
         offerNamingSafeReversibleCompactingRecipes(exporter, Blocks.COBBLED_DEEPSLATE, ModBlocks.COMPACTED_COBBLED_DEEPSLATE);
+        offerNamingSafeReversibleCompactingRecipes(exporter, Blocks.SCULK, ModBlocks.COMPACTED_SCULK);
+        offerNamingSafeReversibleCompactingRecipes(exporter, Blocks.PRISMARINE, ModBlocks.COMPACTED_PRISMARINE);
         offerNamingSafeReversibleCompactingRecipes(exporter, Blocks.GLOWSTONE, ModBlocks.COMPACTED_GLOWSTONE_BLOCKS);
         offerNamingSafeReversibleCompactingRecipes(exporter, Blocks.RAW_IRON_BLOCK, ModBlocks.COMPACTED_RAW_IRON_BLOCKS);
         offerNamingSafeReversibleCompactingRecipes(exporter, Blocks.RAW_GOLD_BLOCK, ModBlocks.COMPACTED_RAW_GOLD_BLOCKS);
@@ -359,7 +361,6 @@ public class ModRecipeProvider extends FabricRecipeProvider {
 
         offerNamingSafeReversibleCompactingRecipes(exporter, RecipeCategory.MISC, Items.SUGAR, RecipeCategory.BUILDING_BLOCKS, ModBlocks.SUGAR_BLOCK);
         offerReversible2x2CompactingRecipes(exporter, RecipeCategory.MISC, Items.GUNPOWDER, RecipeCategory.BUILDING_BLOCKS, ModBlocks.GUNPOWDER_BLOCK);
-        offerNamingSafeReversibleCompactingRecipes(exporter, RecipeCategory.MISC, Items.PRISMARINE, RecipeCategory.BUILDING_BLOCKS, ModBlocks.COMPRESSED_PRISMARINE);
         offerNamingSafeReversibleCompactingRecipes(exporter, RecipeCategory.MISC, Items.CHARCOAL, RecipeCategory.BUILDING_BLOCKS, ModBlocks.CHARCOAL_BLOCK);
         offerNamingSafeReversibleCompactingRecipes(exporter, RecipeCategory.MISC, Items.SNOWBALL, RecipeCategory.BUILDING_BLOCKS, ModBlocks.SNOWBALL_BLOCK);
         offerNamingSafeReversibleCompactingRecipes(exporter, RecipeCategory.MISC, Items.AMETHYST_SHARD, RecipeCategory.BUILDING_BLOCKS, ModBlocks.AMETHYST_SHARD_BLOCK);

@@ -9,6 +9,7 @@ import net.minecraft.registry.Registries;
 import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.registry.tag.BlockTags;
 
+import java.util.Arrays;
 import java.util.concurrent.CompletableFuture;
 
 public class ModBlockTagGenerator extends FabricTagProvider<Block> {
@@ -53,8 +54,11 @@ public class ModBlockTagGenerator extends FabricTagProvider<Block> {
         for(Block block : ModBlocks.COMPACTED_ANDESITE) {
             getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE).add(block);
         }
-        for(Block block : ModBlocks.COMPACTED_GRAVEL) {
+        for(Block block : Arrays.stream(ModBlocks.COMPACTED_GRAVEL).toList().subList(0,1)) {
             getOrCreateTagBuilder(BlockTags.SHOVEL_MINEABLE).add(block);
+        }
+        for(Block block : Arrays.stream(ModBlocks.COMPACTED_GRAVEL).toList().subList(2,3)) {
+            getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE).add(block);
         }
         for(Block block : ModBlocks.COMPACTED_TUFF) {
             getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE).add(block);
@@ -88,11 +92,11 @@ public class ModBlockTagGenerator extends FabricTagProvider<Block> {
             getOrCreateTagBuilder(BlockTags.DIRT).add(block);
         }
         for(Block block : ModBlocks.COMPACTED_SAND) {
-            getOrCreateTagBuilder(BlockTags.SHOVEL_MINEABLE).add(block);
+            getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE).add(block);
             getOrCreateTagBuilder(BlockTags.SAND).add(block);
         }
         for(Block block : ModBlocks.COMPACTED_RED_SAND) {
-            getOrCreateTagBuilder(BlockTags.SHOVEL_MINEABLE).add(block);
+            getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE).add(block);
             getOrCreateTagBuilder(BlockTags.SAND).add(block);
         }
         for(Block block : ModBlocks.COMPACTED_DRIPSTONE_BLOCKS) {
@@ -108,8 +112,11 @@ public class ModBlockTagGenerator extends FabricTagProvider<Block> {
         for(Block block : ModBlocks.COMPACTED_MOSS_BLOCKS) {
             getOrCreateTagBuilder(BlockTags.HOE_MINEABLE).add(block);
         }
-        for(Block block : ModBlocks.COMPACTED_CLAY) {
+        for(Block block : Arrays.stream(ModBlocks.COMPACTED_CLAY).toList().subList(0,1)) {
             getOrCreateTagBuilder(BlockTags.SHOVEL_MINEABLE).add(block);
+        }
+        for(Block block : Arrays.stream(ModBlocks.COMPACTED_CLAY).toList().subList(2,3)) {
+            getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE).add(block);
         }
         for(Block block : ModBlocks.COMPACTED_MAGMA_BLOCKS) {
             getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE).add(block);
@@ -122,6 +129,12 @@ public class ModBlockTagGenerator extends FabricTagProvider<Block> {
             getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE).add(block);
         }
         for(Block block : ModBlocks.COMPACTED_COBBLED_DEEPSLATE) {
+            getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE).add(block);
+        }
+        for(Block block : ModBlocks.COMPACTED_SCULK) {
+            getOrCreateTagBuilder(BlockTags.HOE_MINEABLE).add(block);
+        }
+        for(Block block : ModBlocks.COMPACTED_PRISMARINE) {
             getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE).add(block);
         }
 //        for(Block block : ModBlocks.COMPACTED_GLOWSTONE_BLOCKS) { }
@@ -263,7 +276,6 @@ public class ModBlockTagGenerator extends FabricTagProvider<Block> {
                 .add(ModBlocks.GHAST_TEAR_BLOCK)
                 .add(ModBlocks.BONES_BLOCK)
                 .add(ModBlocks.ECHO_SHARD_BLOCK)
-                .add(ModBlocks.COMPRESSED_PRISMARINE)
                 .add(ModBlocks.AMETHYST_SHARD_BLOCK)
                 .add(ModBlocks.CRYSTAL_QUARTZ_BLOCK)
                 .add(ModBlocks.HEART_OF_THE_SEA_BLOCK)

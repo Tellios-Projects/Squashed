@@ -1,10 +1,10 @@
 {
   "type": "minecraft:crafting_shaped",
   "category": "building",
-  "group": "squashed:Block{minecraft:prismarine}",
+  "group": "squashed:Block{minecraft:sculk}",
   "key": {
     "#": {
-      "item": "minecraft:prismarine"
+      "item": "squashed:compressed_sculk"
     }
   },
   "pattern": [
@@ -13,7 +13,7 @@
     "###"
   ],
   "result": {
-    "item": "squashed:compressed_prismarine"
+    "item": "squashed:crammed_sculk"
   },
   "show_notification": true
 }

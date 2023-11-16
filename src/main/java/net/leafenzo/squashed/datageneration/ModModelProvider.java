@@ -172,6 +172,8 @@ public class ModModelProvider extends FabricModelProvider {
         for(Block block : ModBlocks.COMPACTED_SNOW_BLOCKS) { blockStateModelGenerator.registerCubeAllModelTexturePool(block); }
         for(Block block : ModBlocks.COMPACTED_BASALT) { blockStateModelGenerator.registerCubeAllModelTexturePool(block); }
         for(Block block : ModBlocks.COMPACTED_COBBLED_DEEPSLATE) { blockStateModelGenerator.registerCubeAllModelTexturePool(block); }
+        for(Block block : ModBlocks.COMPACTED_SCULK) { blockStateModelGenerator.registerCubeAllModelTexturePool(block); }
+        for(Block block : ModBlocks.COMPACTED_PRISMARINE) { blockStateModelGenerator.registerCubeAllModelTexturePool(block); }
         for(Block block : ModBlocks.COMPACTED_GLOWSTONE_BLOCKS) { blockStateModelGenerator.registerCubeAllModelTexturePool(block); }
         for(Block block : ModBlocks.COMPACTED_RAW_IRON_BLOCKS) { blockStateModelGenerator.registerCubeAllModelTexturePool(block); }
         for(Block block : ModBlocks.COMPACTED_RAW_GOLD_BLOCKS) { blockStateModelGenerator.registerCubeAllModelTexturePool(block); }
@@ -321,7 +323,6 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.FLINT_BLOCK);
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.SUGAR_BLOCK);
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.GUNPOWDER_BLOCK);
-        blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.COMPRESSED_PRISMARINE);
         blockStateModelGenerator.registerAxisRotated(ModBlocks.CHARCOAL_BLOCK, TexturedModel.CUBE_COLUMN);
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.SNOWBALL_BLOCK);
         registerUpDefaultOrientable(blockStateModelGenerator, ModBlocks.AMETHYST_SHARD_BLOCK, TexturedModel.CUBE_COLUMN);

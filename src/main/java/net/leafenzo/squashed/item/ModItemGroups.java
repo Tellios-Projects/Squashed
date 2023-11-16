@@ -88,7 +88,6 @@ public class ModItemGroups {
                             entries.add(ModBlocks.INK_SAC_BLOCK);
                             entries.add(ModBlocks.GLOW_INK_SAC_BLOCK);
                             entries.add(ModBlocks.SCUTE_BLOCK);
-                            entries.add(ModBlocks.COMPRESSED_PRISMARINE);
                             entries.add(ModBlocks.PRISMARINE_CRYSTAL_BLOCK);
                             entries.add(ModBlocks.HEART_OF_THE_SEA_BLOCK);
                             entries.add(ModBlocks.NAUTILUS_SHELL_BLOCK);
@@ -224,6 +223,7 @@ public class ModItemGroups {
                             for(Block block : ModBlocks.COMPACTED_CALCITE) entries.add(block);
                             for(Block block : ModBlocks.COMPACTED_TUFF) entries.add(block);
                             for(Block block : ModBlocks.COMPACTED_DRIPSTONE_BLOCKS) entries.add(block);
+                            for(Block block : ModBlocks.COMPACTED_PRISMARINE) entries.add(block);
                             for(Block block : ModBlocks.COMPACTED_MAGMA_BLOCKS) entries.add(block);
                             for(Block block : ModBlocks.COMPACTED_OBSIDIAN) entries.add(block);
                             for(Block block : ModBlocks.COMPACTED_NETHERRACK) entries.add(block);
@@ -269,6 +269,7 @@ public class ModItemGroups {
                             for(Block block : ModBlocks.COMPACTED_BAMBOO_BLOCKS) entries.add(block);
                             for(Block block : ModBlocks.COMPACTED_CRIMSON_STEMS) entries.add(block);
                             for(Block block : ModBlocks.COMPACTED_WARPED_STEMS) entries.add(block);
+                            for(Block block : ModBlocks.COMPACTED_SCULK) entries.add(block);
                     }).build());
 
     public static void registerModItemGroups() {
