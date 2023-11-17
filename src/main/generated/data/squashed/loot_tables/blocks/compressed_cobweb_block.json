@@ -11,7 +11,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "squashed:dense_cobweb_block"
+          "name": "squashed:compressed_cobweb_block"
         }
       ],
       "rolls": 1.0

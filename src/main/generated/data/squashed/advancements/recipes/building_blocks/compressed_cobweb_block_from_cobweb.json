@@ -15,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:dense_cobweb_block_from_cobweb"
+        "recipe": "minecraft:compressed_cobweb_block_from_cobweb"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -28,7 +28,7 @@
   ],
   "rewards": {
     "recipes": [
-      "minecraft:dense_cobweb_block_from_cobweb"
+      "minecraft:compressed_cobweb_block_from_cobweb"
     ]
   },
   "sends_telemetry_event": false

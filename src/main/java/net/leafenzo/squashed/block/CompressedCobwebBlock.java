@@ -23,7 +23,7 @@ import net.minecraft.world.World;
 /**
  * From net.minecraft.block.PowderSnowBlock
  */
-public class DenseCobwebBlock //TODO Polish my visuals! - also once that's done switch net/leafenzo/squashed/block/ModBlocks.java:517 back to being this type of block
+public class CompressedCobwebBlock //TODO Polish my visuals! - also once that's done switch net/leafenzo/squashed/block/ModBlocks.java:517 back to being this type of block
 extends Block {
     private static final float field_31216 = 0.083333336f;
     private static final float HORIZONTAL_MOVEMENT_MULTIPLIER = 0.9f;
@@ -33,7 +33,7 @@ extends Block {
     private static final double field_36189 = 4.0;
     private static final double SMALL_FALL_SOUND_MAX_DISTANCE = 7.0;
 
-    public DenseCobwebBlock(AbstractBlock.Settings settings) { super(settings); }
+    public CompressedCobwebBlock(AbstractBlock.Settings settings) { super(settings); }
 
     //Overriding is NOT deprecated, only calling directly.
     @Override

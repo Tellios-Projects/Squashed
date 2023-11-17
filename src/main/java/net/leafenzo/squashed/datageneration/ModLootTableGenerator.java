@@ -165,7 +165,7 @@ public class ModLootTableGenerator extends FabricBlockLootTableProvider {
         this.addDrop(ModBlocks.ENDER_EYE_BLOCK);
         this.addDrop(ModBlocks.ENDER_PEARL_BLOCK);
         this.addDrop(ModBlocks.ECHO_SHARD_BLOCK);
-        this.addDrop(ModBlocks.DENSE_COBWEB_BLOCK);
+        this.addDrop(ModBlocks.COMPRESSED_COBWEB_BLOCK);
         this.addDrop(ModBlocks.RABBIT_HIDE_BLOCK);
         this.addDrop(ModBlocks.CARROT_BLOCK);
         this.addDrop(ModBlocks.GOLDEN_CARROT_BLOCK);

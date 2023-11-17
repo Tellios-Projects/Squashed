@@ -79,7 +79,7 @@ public class ModItemGroups {
                             entries.add(ModBlocks.STICK_BLOCK);
                             entries.add(ModBlocks.FLINT_BLOCK);
                             entries.add(ModBlocks.BONES_BLOCK);
-                            entries.add(ModBlocks.DENSE_COBWEB_BLOCK);
+                            entries.add(ModBlocks.COMPRESSED_COBWEB_BLOCK);
                             entries.add(ModBlocks.FEATHER_BLOCK);
                             entries.add(ModBlocks.SNOWBALL_BLOCK);
                             entries.add(ModBlocks.EGG_BLOCK);

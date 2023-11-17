@@ -4,7 +4,7 @@
   "group": "squashed:cobweb_reverse",
   "ingredients": [
     {
-      "item": "squashed:dense_cobweb_block"
+      "item": "squashed:compressed_cobweb_block"
     }
   ],
   "result": {

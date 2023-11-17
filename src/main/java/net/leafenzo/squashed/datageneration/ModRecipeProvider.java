@@ -348,7 +348,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         offerNamingSafeReversibleCompactingRecipes(exporter, RecipeCategory.MISC, Items.ENDER_EYE, RecipeCategory.BUILDING_BLOCKS, ModBlocks.ENDER_EYE_BLOCK);
         offerNamingSafeReversibleCompactingRecipes(exporter, RecipeCategory.MISC, Items.ENDER_PEARL, RecipeCategory.BUILDING_BLOCKS, ModBlocks.ENDER_PEARL_BLOCK);
         offerNamingSafeReversibleCompactingRecipes(exporter, RecipeCategory.MISC, Items.ECHO_SHARD, RecipeCategory.BUILDING_BLOCKS, ModBlocks.ECHO_SHARD_BLOCK);
-        offerNamingSafeReversibleCompactingRecipes(exporter, RecipeCategory.MISC, Items.COBWEB, RecipeCategory.BUILDING_BLOCKS, ModBlocks.DENSE_COBWEB_BLOCK);
+        offerNamingSafeReversibleCompactingRecipes(exporter, RecipeCategory.MISC, Items.COBWEB, RecipeCategory.BUILDING_BLOCKS, ModBlocks.COMPRESSED_COBWEB_BLOCK);
         offerNamingSafeReversibleCompactingRecipes(exporter, RecipeCategory.MISC, Items.RABBIT_HIDE, RecipeCategory.BUILDING_BLOCKS, ModBlocks.RABBIT_HIDE_BLOCK);
 
 

@@ -11,7 +11,7 @@ public class ModRenderLayers {
         ModInit.LOGGER.debug("Registering render layers for " + Super.MOD_ID);
 
         BlockRenderLayerMap.INSTANCE.putBlocks(RenderLayer.getCutoutMipped(),
-                ModBlocks.DENSE_COBWEB_BLOCK,
+                ModBlocks.COMPRESSED_COBWEB_BLOCK,
                 ModBlocks.COMPRESSED_SPONGE,
                 ModBlocks.SEA_PICKLE_BLOCK,
                 ModBlocks.DEAD_BUSH_BLOCK,

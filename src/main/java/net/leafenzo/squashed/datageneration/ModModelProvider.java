@@ -347,7 +347,7 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerParentedItemModel(ModBlocks.SEA_PICKLE_BLOCK, Super.asResource("block/sea_pickle_block"));
         blockStateModelGenerator.registerParentedItemModel(ModBlocks.PUFFERFISH_BLOCK, Super.asResource("block/pufferfish_block_on"));
         blockStateModelGenerator.registerParentedItemModel(ModBlocks.COMPRESSED_SPONGE, Super.asResource("block/compressed_sponge"));
-        blockStateModelGenerator.registerParentedItemModel(ModBlocks.DENSE_COBWEB_BLOCK, Super.asResource("block/dense_cobweb_block"));
+//        blockStateModelGenerator.registerParentedItemModel(ModBlocks.DENSE_COBWEB_BLOCK, Super.asResource("block/dense_cobweb_block")); // unneeded here as it has a custom item model as well
         blockStateModelGenerator.registerParentedItemModel(ModBlocks.FEATHER_BLOCK, Super.asResource("block/feather_block"));
     }
     @Override

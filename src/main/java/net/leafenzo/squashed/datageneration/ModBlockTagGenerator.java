@@ -467,7 +467,7 @@ public class ModBlockTagGenerator extends FabricTagProvider<Block> {
         getOrCreateTagBuilder(BlockTags.WOOL)
                     //just so that shears can mine it easier
                     .add(ModBlocks.LEATHER_BLOCK)
-                    .add(ModBlocks.DENSE_COBWEB_BLOCK)
+                    .add(ModBlocks.COMPRESSED_COBWEB_BLOCK)
                     .add(ModBlocks.RABBIT_HIDE_BLOCK);
 
         getOrCreateTagBuilder(BlockTags.INFINIBURN_OVERWORLD)
@@ -475,7 +475,7 @@ public class ModBlockTagGenerator extends FabricTagProvider<Block> {
                 .add(ModBlocks.CHARCOAL_BLOCK);
 
         getOrCreateTagBuilder(BlockTags.CLIMBABLE)
-                .add(ModBlocks.DENSE_COBWEB_BLOCK);
+                .add(ModBlocks.COMPRESSED_COBWEB_BLOCK);
 
         getOrCreateTagBuilder(BlockTags.DEAD_BUSH_MAY_PLACE_ON)
                 .add(ModBlocks.RAW_COD_BLOCK) //because it looks a bit like desert ground, for builders really

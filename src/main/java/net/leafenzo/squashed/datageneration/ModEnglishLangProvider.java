@@ -119,6 +119,8 @@ public class ModEnglishLangProvider extends FabricLanguageProvider {
         generateTranslation(translationBuilder, ModBlocks.RAW_MUTTON_BLOCK, "Heap of Raw Mutton");
         generateTranslation(translationBuilder, ModBlocks.RAW_RABBIT_BLOCK, "Heap of Raw Rabbit");
 
+        generateTranslation(translationBuilder, ModBlocks.COMPRESSED_COBWEB_BLOCK, "Clump of Cobwebs");
+
         generateTranslation(translationBuilder, ModBlocks.COMPRESSED_CHERRY_SAPLING, "Cherry Mulch");
         generateTranslation(translationBuilder, ModBlocks.COMPRESSED_OAK_SAPLING, "Oak Mulch");
         generateTranslation(translationBuilder, ModBlocks.COMPRESSED_SPRUCE_SAPLING, "Spruce Mulch");

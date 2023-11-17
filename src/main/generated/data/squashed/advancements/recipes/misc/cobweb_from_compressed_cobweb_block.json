@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_dense_cobweb_block": {
+    "has_compressed_cobweb_block": {
       "conditions": {
         "items": [
           {
             "items": [
-              "squashed:dense_cobweb_block"
+              "squashed:compressed_cobweb_block"
             ]
           }
         ]
@@ -15,20 +15,20 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:cobweb_from_dense_cobweb_block"
+        "recipe": "minecraft:cobweb_from_compressed_cobweb_block"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
   },
   "requirements": [
     [
-      "has_dense_cobweb_block",
+      "has_compressed_cobweb_block",
       "has_the_recipe"
     ]
   ],
   "rewards": {
     "recipes": [
-      "minecraft:cobweb_from_dense_cobweb_block"
+      "minecraft:cobweb_from_compressed_cobweb_block"
     ]
   },
   "sends_telemetry_event": false
