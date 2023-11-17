@@ -3,6 +3,7 @@ package net.leafenzo.squashed.block;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
+import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemPlacementContext;
 import net.minecraft.state.StateManager;
 import net.minecraft.state.property.DirectionProperty;
@@ -21,7 +22,15 @@ public class ReversiblePillarBlock
     }
     @Override
     public BlockState getPlacementState(ItemPlacementContext ctx) {
-        return this.getDefaultState().with(FACING, ctx.getSide());
+        PlayerEntity player = ctx.getPlayer();
+        if(player == null) { return this.getDefaultState().with(FACING, ctx.getSide()); } // Don't know what situation there wouldn't be a player doing this, but whatever just in case ig
+
+        if(player.isSneaking()) {
+            return this.getDefaultState().with(FACING, ctx.getSide().getOpposite());
+        }
+        else {
+            return this.getDefaultState().with(FACING, ctx.getSide());
+        }
     }
     @Override
     public BlockState rotate(BlockState state, BlockRotation rotation) {
