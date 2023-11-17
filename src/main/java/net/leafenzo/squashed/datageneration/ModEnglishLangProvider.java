@@ -119,6 +119,18 @@ public class ModEnglishLangProvider extends FabricLanguageProvider {
         generateTranslation(translationBuilder, ModBlocks.RAW_MUTTON_BLOCK, "Heap of Raw Mutton");
         generateTranslation(translationBuilder, ModBlocks.RAW_RABBIT_BLOCK, "Heap of Raw Rabbit");
 
+        generateTranslation(translationBuilder, ModBlocks.COMPRESSED_CHERRY_SAPLING, "Cherry Mulch");
+        generateTranslation(translationBuilder, ModBlocks.COMPRESSED_OAK_SAPLING, "Oak Mulch");
+        generateTranslation(translationBuilder, ModBlocks.COMPRESSED_SPRUCE_SAPLING, "Spruce Mulch");
+        generateTranslation(translationBuilder, ModBlocks.COMPRESSED_BIRCH_SAPLING, "Birch Mulch");
+        generateTranslation(translationBuilder, ModBlocks.COMPRESSED_JUNGLE_SAPLING, "Jungle Mulch");
+        generateTranslation(translationBuilder, ModBlocks.COMPRESSED_ACACIA_SAPLING, "Acacia Mulch");
+        generateTranslation(translationBuilder, ModBlocks.COMPRESSED_DARK_OAK_SAPLING, "Dark Oak Mulch");
+        generateTranslation(translationBuilder, ModBlocks.COMPRESSED_AZALEA_SAPLING, "Azalea Mulch");
+        generateTranslation(translationBuilder, ModBlocks.COMPRESSED_FLOWERING_AZALEA_SAPLING, "Flowering Azalea Mulch");
+        generateTranslation(translationBuilder, ModBlocks.COMPRESSED_MANGROVE_PROPAGULE, "Mangrove Mulch");
+        generateTranslation(translationBuilder, ModBlocks.COMPRESSED_CRIMSON_FUNGUS, "Crimson Mulch");
+        generateTranslation(translationBuilder, ModBlocks.COMPRESSED_WARPED_FUNGUS, "Warped Mulch");
         generateTranslationUsingPileNamingScheme(translationBuilder, ModBlocks.COMPRESSED_OAK_LEAVES);
         generateTranslationUsingPileNamingScheme(translationBuilder, ModBlocks.COMPRESSED_SPRUCE_LEAVES);
         generateTranslationUsingPileNamingScheme(translationBuilder, ModBlocks.COMPRESSED_BIRCH_LEAVES);

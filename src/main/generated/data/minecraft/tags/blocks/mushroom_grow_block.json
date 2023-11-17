@@ -1,10 +1,6 @@
 {
   "replace": false,
   "values": [
-    "squashed:compressed_dirt",
-    "squashed:crammed_dirt",
-    "squashed:dense_dirt",
-    "squashed:squashed_dirt",
     "squashed:compressed_cherry_sapling",
     "squashed:compressed_oak_sapling",
     "squashed:compressed_spruce_sapling",
@@ -17,14 +13,15 @@
     "squashed:compressed_mangrove_propagule",
     "squashed:compressed_crimson_fungus",
     "squashed:compressed_warped_fungus",
-    "squashed:wheat_seed_block",
-    "squashed:pumpkin_seed_block",
-    "squashed:beetroot_seed_block",
-    "squashed:melon_seed_block",
-    "squashed:grass_clippings_block",
-    "squashed:fern_block",
-    "squashed:vine_block",
-    "squashed:glow_lichen_block",
-    "squashed:compressed_hay_block"
+    "squashed:rotten_flesh_block",
+    "squashed:spider_eye_block",
+    "squashed:fermented_spider_eye_block",
+    "squashed:raw_beef_block",
+    "squashed:raw_chicken_block",
+    "squashed:raw_cod_block",
+    "squashed:raw_salmon_block",
+    "squashed:raw_pork_block",
+    "squashed:raw_mutton_block",
+    "squashed:raw_rabbit_block"
   ]
 }
