@@ -137,6 +137,10 @@ public class ModBlockTagGenerator extends FabricTagProvider<Block> {
         for(Block block : ModBlocks.COMPACTED_PRISMARINE) {
             getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE).add(block);
         }
+        for(Block block : ModBlocks.COMPACTED_BLUE_ICE) {
+            getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE).add(block);
+            getOrCreateTagBuilder(BlockTags.ICE).add(block);
+        }
 //        for(Block block : ModBlocks.COMPACTED_GLOWSTONE_BLOCKS) { }
         for(Block block : ModBlocks.COMPACTED_RAW_IRON_BLOCKS) {
             getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE).add(block);

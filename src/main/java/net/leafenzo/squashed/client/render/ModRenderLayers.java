@@ -13,7 +13,10 @@ public class ModRenderLayers {
         BlockRenderLayerMap.INSTANCE.putBlocks(RenderLayer.getCutoutMipped(),
                 ModBlocks.DENSE_COBWEB_BLOCK,
                 ModBlocks.COMPRESSED_SPONGE,
-                ModBlocks.SEA_PICKLE_BLOCK
+                ModBlocks.SEA_PICKLE_BLOCK,
+                ModBlocks.DEAD_BUSH_BLOCK,
+                ModBlocks.GLOW_BERRIES_BLOCK,
+                ModBlocks.SWEET_BERRIES_BLOCK
         );
         BlockRenderLayerMap.INSTANCE.putBlocks(RenderLayer.getTranslucent(),
                 ModBlocks.MAGMA_CREAM_BLOCK,

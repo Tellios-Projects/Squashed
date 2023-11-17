@@ -1,0 +1,30 @@
+{
+  "variants": {
+    "facing=down": {
+      "model": "squashed:block/tropical_fish_block_u",
+      "x": 180
+    },
+    "facing=east": {
+      "model": "squashed:block/tropical_fish_block_u",
+      "x": 90,
+      "y": 90
+    },
+    "facing=north": {
+      "model": "squashed:block/tropical_fish_block_u",
+      "x": 90
+    },
+    "facing=south": {
+      "model": "squashed:block/tropical_fish_block_u",
+      "x": 90,
+      "y": 180
+    },
+    "facing=up": {
+      "model": "squashed:block/tropical_fish_block_u"
+    },
+    "facing=west": {
+      "model": "squashed:block/tropical_fish_block_u",
+      "x": 90,
+      "y": 270
+    }
+  }
+}

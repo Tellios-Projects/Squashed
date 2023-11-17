@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "squashed:Block{minecraft:blue_ice}_reverse",
+  "ingredients": [
+    {
+      "item": "squashed:dense_blue_ice"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "squashed:crammed_blue_ice"
+  }
+}

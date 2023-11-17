@@ -211,6 +211,7 @@ public class ModItemGroups {
                             for(Block block : ModBlocks.COMPACTED_GRAVEL) entries.add(block);
                             for(Block block : ModBlocks.COMPACTED_SAND) entries.add(block);
                             for(Block block : ModBlocks.COMPACTED_RED_SAND) entries.add(block);
+                            for(Block block : ModBlocks.COMPACTED_BLUE_ICE) entries.add(block);
                             for(Block block : ModBlocks.COMPACTED_SNOW_BLOCKS) entries.add(block);
                             for(Block block : ModBlocks.COMPACTED_MOSS_BLOCKS) entries.add(block);
                             for(Block block : ModBlocks.COMPACTED_STONE) entries.add(block);

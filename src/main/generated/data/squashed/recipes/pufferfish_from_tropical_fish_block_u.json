@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "squashed:pufferfish_reverse",
+  "ingredients": [
+    {
+      "item": "squashed:tropical_fish_block_u"
+    }
+  ],
+  "result": {
+    "count": 4,
+    "item": "minecraft:pufferfish"
+  }
+}

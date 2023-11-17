@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "squashed:Block{minecraft:blue_ice}",
+  "key": {
+    "#": {
+      "item": "squashed:compressed_blue_ice"
+    }
+  },
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "result": {
+    "item": "squashed:crammed_blue_ice"
+  },
+  "show_notification": true
+}

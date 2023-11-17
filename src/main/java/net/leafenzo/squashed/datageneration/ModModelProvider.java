@@ -174,6 +174,7 @@ public class ModModelProvider extends FabricModelProvider {
         for(Block block : ModBlocks.COMPACTED_COBBLED_DEEPSLATE) { blockStateModelGenerator.registerCubeAllModelTexturePool(block); }
         for(Block block : ModBlocks.COMPACTED_SCULK) { blockStateModelGenerator.registerCubeAllModelTexturePool(block); }
         for(Block block : ModBlocks.COMPACTED_PRISMARINE) { blockStateModelGenerator.registerCubeAllModelTexturePool(block); }
+        for(Block block : ModBlocks.COMPACTED_BLUE_ICE) { blockStateModelGenerator.registerCubeAllModelTexturePool(block); }
         for(Block block : ModBlocks.COMPACTED_GLOWSTONE_BLOCKS) { blockStateModelGenerator.registerCubeAllModelTexturePool(block); }
         for(Block block : ModBlocks.COMPACTED_RAW_IRON_BLOCKS) { blockStateModelGenerator.registerCubeAllModelTexturePool(block); }
         for(Block block : ModBlocks.COMPACTED_RAW_GOLD_BLOCKS) { blockStateModelGenerator.registerCubeAllModelTexturePool(block); }
@@ -267,7 +268,7 @@ public class ModModelProvider extends FabricModelProvider {
         registerUpDefaultOrientable(blockStateModelGenerator, ModBlocks.TROPICAL_FISH_BLOCK_G, TexturedModel.CUBE_COLUMN);
         registerUpDefaultOrientable(blockStateModelGenerator, ModBlocks.TROPICAL_FISH_BLOCK_H, TexturedModel.CUBE_COLUMN);
         registerUpDefaultOrientable(blockStateModelGenerator, ModBlocks.TROPICAL_FISH_BLOCK_I, TexturedModel.CUBE_COLUMN);
-        registerUpDefaultOrientable(blockStateModelGenerator, ModBlocks.TROPICAL_FISH_BLOCK_J, TexturedModel.CUBE_COLUMN);
+        registerUpDefaultOrientable(blockStateModelGenerator, ModBlocks.TROPICAL_FISH_BLOCK_J, TexturedModel.CUBE_BOTTOM_TOP);
         registerUpDefaultOrientable(blockStateModelGenerator, ModBlocks.TROPICAL_FISH_BLOCK_K, TexturedModel.CUBE_COLUMN);
         registerUpDefaultOrientable(blockStateModelGenerator, ModBlocks.TROPICAL_FISH_BLOCK_L, TexturedModel.CUBE_COLUMN);
         registerUpDefaultOrientable(blockStateModelGenerator, ModBlocks.TROPICAL_FISH_BLOCK_M, TexturedModel.CUBE_COLUMN);
@@ -278,6 +279,7 @@ public class ModModelProvider extends FabricModelProvider {
         registerUpDefaultOrientable(blockStateModelGenerator, ModBlocks.TROPICAL_FISH_BLOCK_R, TexturedModel.CUBE_COLUMN);
         registerUpDefaultOrientable(blockStateModelGenerator, ModBlocks.TROPICAL_FISH_BLOCK_S, TexturedModel.CUBE_COLUMN);
         registerUpDefaultOrientable(blockStateModelGenerator, ModBlocks.TROPICAL_FISH_BLOCK_T, TexturedModel.CUBE_COLUMN);
+        registerUpDefaultOrientable(blockStateModelGenerator, ModBlocks.TROPICAL_FISH_BLOCK_U, TexturedModel.CUBE_BOTTOM_TOP);
 
         for(Block block : ModBlocks.COMPACTED_OAK_LOGS) { registerCompressedLogs(blockStateModelGenerator, block); }
         for(Block block : ModBlocks.COMPACTED_SPRUCE_LOGS) { registerCompressedLogs(blockStateModelGenerator, block); }

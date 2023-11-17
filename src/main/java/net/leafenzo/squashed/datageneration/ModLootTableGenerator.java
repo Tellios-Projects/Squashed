@@ -80,6 +80,7 @@ public class ModLootTableGenerator extends FabricBlockLootTableProvider {
         for(Block block : ModBlocks.COMPACTED_COBBLED_DEEPSLATE) { this.addDrop(block); }
         for(Block block : ModBlocks.COMPACTED_SCULK) { this.addDrop(block); }
         for(Block block : ModBlocks.COMPACTED_PRISMARINE) { this.addDrop(block); }
+        for(Block block : ModBlocks.COMPACTED_BLUE_ICE) { this.addDrop(block); }
         for(Block block : ModBlocks.COMPACTED_GLOWSTONE_BLOCKS) { this.addDrop(block); }
         for(Block block : ModBlocks.COMPACTED_RAW_IRON_BLOCKS) { this.addDrop(block); }
         for(Block block : ModBlocks.COMPACTED_RAW_GOLD_BLOCKS) { this.addDrop(block); }

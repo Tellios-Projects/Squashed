@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/cube_bottom_top",
+  "textures": {
+    "bottom": "squashed:block/tropical_fish_block_u_bottom",
+    "side": "squashed:block/tropical_fish_block_u_side",
+    "top": "squashed:block/tropical_fish_block_u_top"
+  }
+}
