@@ -296,7 +296,7 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.PRISMARINE_CRYSTAL_BLOCK);
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.GLOW_INK_SAC_BLOCK);
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.SCUTE_BLOCK);
-        blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.FEATHER_BLOCK);
+
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.GHAST_TEAR_BLOCK);
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.PHANTOM_MEMBRANE_BLOCK);
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.COMPRESSED_NETHER_WART_BLOCK);
@@ -348,6 +348,7 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerParentedItemModel(ModBlocks.PUFFERFISH_BLOCK, Super.asResource("block/pufferfish_block_on"));
         blockStateModelGenerator.registerParentedItemModel(ModBlocks.COMPRESSED_SPONGE, Super.asResource("block/compressed_sponge"));
         blockStateModelGenerator.registerParentedItemModel(ModBlocks.DENSE_COBWEB_BLOCK, Super.asResource("block/dense_cobweb_block"));
+        blockStateModelGenerator.registerParentedItemModel(ModBlocks.FEATHER_BLOCK, Super.asResource("block/feather_block"));
     }
     @Override
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {

@@ -16,7 +16,8 @@ public class ModRenderLayers {
                 ModBlocks.SEA_PICKLE_BLOCK,
                 ModBlocks.DEAD_BUSH_BLOCK,
                 ModBlocks.GLOW_BERRIES_BLOCK,
-                ModBlocks.SWEET_BERRIES_BLOCK
+                ModBlocks.SWEET_BERRIES_BLOCK,
+                ModBlocks.FEATHER_BLOCK
         );
         BlockRenderLayerMap.INSTANCE.putBlocks(RenderLayer.getTranslucent(),
                 ModBlocks.MAGMA_CREAM_BLOCK,
