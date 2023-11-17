@@ -260,7 +260,7 @@ public class ModModelProvider extends FabricModelProvider {
 
 
         blockStateModelGenerator.registerSingleton(ModBlocks.TROPICAL_FISH_BLOCK_A, TexturedModel.CUBE_COLUMN);
-        registerUpDefaultOrientable(blockStateModelGenerator, ModBlocks.TROPICAL_FISH_BLOCK_B, TexturedModel.CUBE_ALL);
+        registerUpDefaultOrientable(blockStateModelGenerator, ModBlocks.TROPICAL_FISH_BLOCK_B, TexturedModel.CUBE_COLUMN);
         registerUpDefaultOrientable(blockStateModelGenerator, ModBlocks.TROPICAL_FISH_BLOCK_C, TexturedModel.CUBE_COLUMN);
         registerUpDefaultOrientable(blockStateModelGenerator, ModBlocks.TROPICAL_FISH_BLOCK_D, TexturedModel.CUBE_COLUMN);
         registerUpDefaultOrientable(blockStateModelGenerator, ModBlocks.TROPICAL_FISH_BLOCK_E, TexturedModel.CUBE_COLUMN);

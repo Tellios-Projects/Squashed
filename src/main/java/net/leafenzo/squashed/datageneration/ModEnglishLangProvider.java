@@ -199,6 +199,7 @@ public class ModEnglishLangProvider extends FabricLanguageProvider {
         generateTranslation(translationBuilder, ModBlocks.TROPICAL_FISH_BLOCK_R, "Orchid Dottyback Block");
         generateTranslation(translationBuilder, ModBlocks.TROPICAL_FISH_BLOCK_S, "Flying Fish Block");
         generateTranslation(translationBuilder, ModBlocks.TROPICAL_FISH_BLOCK_T, "Mahi-Mahi Block");
+        generateTranslation(translationBuilder, ModBlocks.TROPICAL_FISH_BLOCK_U, "Pufferfish Block");
 
         //Automatic
         for(Identifier id : ModUtil.allBlockIdsInNamespace(Super.MOD_ID)) {

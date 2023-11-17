@@ -188,6 +188,7 @@ public class ModItemGroups {
                             entries.add(ModBlocks.TROPICAL_FISH_BLOCK_R);
                             entries.add(ModBlocks.TROPICAL_FISH_BLOCK_S);
                             entries.add(ModBlocks.TROPICAL_FISH_BLOCK_T);
+                            entries.add(ModBlocks.TROPICAL_FISH_BLOCK_U);
                             entries.add(ModItems.STACKED_RAILS);
                             entries.add(ModItems.STACKED_POWERED_RAILS);
                             entries.add(ModItems.STACKED_MINECARTS);
