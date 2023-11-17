@@ -17,6 +17,7 @@
     "squashed:potato_block",
     "squashed:poisonous_potato_block",
     "squashed:baked_potato_block",
-    "squashed:beetroot_block"
+    "squashed:beetroot_block",
+    "squashed:compressed_shroomlight"
   ]
 }

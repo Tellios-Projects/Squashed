@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "squashed:Block{minecraft:shroomlight}",
+  "key": {
+    "#": {
+      "item": "minecraft:shroomlight"
+    }
+  },
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "result": {
+    "item": "squashed:compressed_shroomlight"
+  },
+  "show_notification": true
+}

@@ -261,6 +261,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         offerNamingSafeReversibleCompactingRecipes(exporter, RecipeCategory.MISC, Items.MANGROVE_LEAVES, RecipeCategory.BUILDING_BLOCKS, ModBlocks.COMPRESSED_MANGROVE_LEAVES);
         offerNamingSafeReversibleCompactingRecipes(exporter, RecipeCategory.MISC, Items.AZALEA_LEAVES, RecipeCategory.BUILDING_BLOCKS, ModBlocks.COMPRESSED_AZALEA_LEAVES);
         offerNamingSafeReversibleCompactingRecipes(exporter, RecipeCategory.MISC, Items.FLOWERING_AZALEA_LEAVES, RecipeCategory.BUILDING_BLOCKS, ModBlocks.COMPRESSED_FLOWERING_AZALEA_LEAVES);
+        offerNamingSafeReversibleCompactingRecipes(exporter, RecipeCategory.MISC, Items.CHERRY_LEAVES, RecipeCategory.BUILDING_BLOCKS, ModBlocks.COMPRESSED_CHERRY_LEAVES);
         offerNamingSafeReversibleCompactingRecipes(exporter, RecipeCategory.MISC, Items.LEATHER, RecipeCategory.BUILDING_BLOCKS, ModBlocks.LEATHER_BLOCK);
         offerNamingSafeReversibleCompactingRecipes(exporter, RecipeCategory.MISC, Items.OAK_SAPLING, RecipeCategory.BUILDING_BLOCKS, ModBlocks.COMPRESSED_OAK_SAPLING);
         offerNamingSafeReversibleCompactingRecipes(exporter, RecipeCategory.MISC, Items.SPRUCE_SAPLING, RecipeCategory.BUILDING_BLOCKS, ModBlocks.COMPRESSED_SPRUCE_SAPLING);
@@ -343,7 +344,6 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         offerNamingSafeReversibleCompactingRecipes(exporter, RecipeCategory.MISC, Items.SCAFFOLDING, RecipeCategory.BUILDING_BLOCKS, ModBlocks.COMPRESSED_SCAFFOLDING);
         offerNamingSafeReversibleCompactingRecipes(exporter, RecipeCategory.MISC, Items.KELP, RecipeCategory.BUILDING_BLOCKS, ModBlocks.KELP_BLOCK);
 
-        //offerNamesafeReversibleCompactingRecipes(exporter, RecipeCategory.MISC, Items.CHERRY_LEAVES, RecipeCategory.BUILDING_BLOCKS, ModBlocks.COMPRESSED_CHERRY_LEAVES);
         offerNamingSafeReversibleCompactingRecipes(exporter, RecipeCategory.MISC, Items.CHERRY_SAPLING, RecipeCategory.BUILDING_BLOCKS, ModBlocks.COMPRESSED_CHERRY_SAPLING);
         offerNamingSafeReversibleCompactingRecipes(exporter, RecipeCategory.MISC, Items.ENDER_EYE, RecipeCategory.BUILDING_BLOCKS, ModBlocks.ENDER_EYE_BLOCK);
         offerNamingSafeReversibleCompactingRecipes(exporter, RecipeCategory.MISC, Items.ENDER_PEARL, RecipeCategory.BUILDING_BLOCKS, ModBlocks.ENDER_PEARL_BLOCK);
@@ -376,6 +376,22 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         offerNamingSafeReversibleCompactingRecipes(exporter, RecipeCategory.MISC, Items.FERMENTED_SPIDER_EYE, RecipeCategory.BUILDING_BLOCKS, ModBlocks.FERMENTED_SPIDER_EYE_BLOCK);
         offerNamingSafeReversibleCompactingRecipes(exporter, RecipeCategory.MISC, Items.GLISTERING_MELON_SLICE, RecipeCategory.BUILDING_BLOCKS, ModBlocks.GLISTERING_MELON_BLOCK);
         offerNamingSafeReversibleCompactingRecipes(exporter, RecipeCategory.MISC, ModBlocks.GLISTERING_MELON_BLOCK, RecipeCategory.BUILDING_BLOCKS, ModBlocks.COMPRESSED_GLISTERING_MELON_BLOCK);
+        offerNamingSafeReversibleCompactingRecipes(exporter, RecipeCategory.MISC, Items.STRING, RecipeCategory.BUILDING_BLOCKS, ModBlocks.STRING_BLOCK);
+        offerNamingSafeReversibleCompactingRecipes(exporter, RecipeCategory.MISC, Blocks.TNT, RecipeCategory.BUILDING_BLOCKS, ModBlocks.COMPRESSED_TNT);
+        offerReversible2x2CompactingRecipes(exporter, RecipeCategory.MISC, Items.GLOWSTONE_DUST, RecipeCategory.MISC, ModBlocks.GLOWSTONE_DUST_BLOCK);
+        offerReversible2x2CompactingRecipes(exporter, RecipeCategory.MISC, Items.REDSTONE, RecipeCategory.MISC, ModBlocks.REDSTONE_DUST_BLOCK);
+        offerNamingSafeReversibleCompactingRecipes(exporter, RecipeCategory.MISC, Blocks.SHROOMLIGHT, RecipeCategory.BUILDING_BLOCKS, ModBlocks.COMPRESSED_SHROOMLIGHT);
+        offerNamingSafeReversibleCompactingRecipes(exporter, RecipeCategory.MISC, Blocks.HONEY_BLOCK, RecipeCategory.BUILDING_BLOCKS, ModBlocks.COMPRESSED_HONEY_BLOCK);
+        offerNamingSafeReversibleCompactingRecipes(exporter, RecipeCategory.MISC, Blocks.SLIME_BLOCK, RecipeCategory.BUILDING_BLOCKS, ModBlocks.COMPRESSED_SLIME_BLOCK);
+        offerNamingSafeReversibleCompactingRecipes(exporter, RecipeCategory.MISC, Items.CLAY_BALL, RecipeCategory.BUILDING_BLOCKS, ModBlocks.CLAY_BALL_BLOCK);
+        offerNamingSafeReversibleCompactingRecipes(exporter, RecipeCategory.MISC, Items.LILY_PAD, RecipeCategory.BUILDING_BLOCKS, ModBlocks.LILY_PAD_BLOCK);
+
+        //TODO try to think of a more survival friendly recipe
+        offerNamingSafeReversibleCompactingRecipes(exporter, RecipeCategory.MISC, Items.EXPERIENCE_BOTTLE, RecipeCategory.BUILDING_BLOCKS, ModBlocks.EXPERIENCE_BLOCK);
+
+        offerNamingSafeReversibleCompactingRecipes(exporter, RecipeCategory.MISC, Items.NETHERITE_SCRAP, RecipeCategory.BUILDING_BLOCKS, ModBlocks.NETHERITE_SCRAP_BLOCK);
+        offerNamingSafeReversibleCompactingRecipes(exporter, RecipeCategory.MISC, Blocks.HONEYCOMB_BLOCK, RecipeCategory.BUILDING_BLOCKS, ModBlocks.COMPRESSED_HONEYCOMB_BLOCK);
+        offerNamingSafeReversibleCompactingRecipes(exporter, RecipeCategory.MISC, Blocks.PINK_PETALS, RecipeCategory.BUILDING_BLOCKS, ModBlocks.PINK_PETAL_BLOCK);
 
         offerReversible2x2CompactingRecipes(exporter, RecipeCategory.MISC, Items.ARROW, RecipeCategory.MISC, ModItems.BUNDLED_ARROWS);
         offerReversible2x2CompactingRecipes(exporter, RecipeCategory.MISC, Items.GLASS_BOTTLE, RecipeCategory.MISC, ModItems.BUNDLED_BOTTLES);

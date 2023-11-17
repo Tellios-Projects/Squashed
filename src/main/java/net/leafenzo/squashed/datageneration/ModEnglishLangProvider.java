@@ -142,6 +142,7 @@ public class ModEnglishLangProvider extends FabricLanguageProvider {
         generateTranslationUsingPileNamingScheme(translationBuilder, ModBlocks.COMPRESSED_MANGROVE_LEAVES);
         generateTranslationUsingPileNamingScheme(translationBuilder, ModBlocks.COMPRESSED_AZALEA_LEAVES);
         generateTranslationUsingPileNamingScheme(translationBuilder, ModBlocks.COMPRESSED_FLOWERING_AZALEA_LEAVES);
+        generateTranslationUsingPileNamingScheme(translationBuilder, ModBlocks.COMPRESSED_CHERRY_LEAVES);
 
         generateTranslation(translationBuilder, ModBlocks.COMPRESSED_SPONGE, "Menger Sponge");
 
@@ -177,6 +178,16 @@ public class ModEnglishLangProvider extends FabricLanguageProvider {
         generateTranslation(translationBuilder, ModBlocks.ECHO_SHARD_BLOCK, "Pile of Echo Shards");
         generateTranslation(translationBuilder, ModBlocks.BRICKS_BLOCK, "Pile of Bricks");
         generateTranslation(translationBuilder, ModBlocks.NETHER_BRICKS_BLOCK, "Pile of Nether Bricks");
+        generateTranslation(translationBuilder, ModBlocks.STRING_BLOCK, "Spool of String");
+        generateTranslation(translationBuilder, ModBlocks.MANGROVE_ROOTS_BLOCK, "Block of Mangrove Roots");
+        generateTranslation(translationBuilder, ModBlocks.COMPRESSED_HONEY_BLOCK, "Coagulated Honey");
+        generateTranslation(translationBuilder, ModBlocks.COMPRESSED_SLIME_BLOCK, "Coagulated Slime");
+
+        generateTranslation(translationBuilder, ModBlocks.EXPERIENCE_BLOCK, "Coagulated Experience");
+        generateTranslation(translationBuilder, ModBlocks.PINK_PETAL_BLOCK, "Pile of Pink Petals");
+
+
+
 
         //TODO figure out a naming convention here that makes these easier to search for in the creative menu, you should ask el for ideas about this
         generateTranslation(translationBuilder, ModBlocks.TROPICAL_FISH_BLOCK_A, "Ocellaris Clownfish Block");

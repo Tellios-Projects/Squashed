@@ -20,6 +20,7 @@
     "squashed:compressed_emerald_block",
     "squashed:crammed_emerald_block",
     "squashed:dense_emerald_block",
-    "squashed:squashed_emerald_block"
+    "squashed:squashed_emerald_block",
+    "squashed:netherite_scrap_block"
   ]
 }

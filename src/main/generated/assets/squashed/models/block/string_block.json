@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "squashed:block/string_block_top",
+    "side": "squashed:block/string_block_side"
+  }
+}

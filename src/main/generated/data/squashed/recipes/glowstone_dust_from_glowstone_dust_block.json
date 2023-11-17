@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "squashed:glowstone_dust_reverse",
+  "ingredients": [
+    {
+      "item": "squashed:glowstone_dust_block"
+    }
+  ],
+  "result": {
+    "count": 4,
+    "item": "minecraft:glowstone_dust"
+  }
+}

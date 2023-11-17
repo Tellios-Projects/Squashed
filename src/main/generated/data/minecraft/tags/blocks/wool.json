@@ -19,6 +19,8 @@
     "squashed:black_compressed_wool",
     "squashed:leather_block",
     "squashed:compressed_cobweb_block",
-    "squashed:rabbit_hide_block"
+    "squashed:rabbit_hide_block",
+    "squashed:string_block",
+    "squashed:feather_block"
   ]
 }

@@ -10,8 +10,11 @@
     "squashed:compressed_mangrove_leaves",
     "squashed:compressed_azalea_leaves",
     "squashed:compressed_flowering_azalea_leaves",
+    "squashed:compressed_cherry_leaves",
     "squashed:compressed_seagrass",
     "squashed:vine_block",
-    "squashed:kelp_block"
+    "squashed:kelp_block",
+    "squashed:pink_petal_block",
+    "squashed:lily_pad_block"
   ]
 }

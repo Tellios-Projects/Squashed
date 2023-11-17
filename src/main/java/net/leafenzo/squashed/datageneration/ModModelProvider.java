@@ -339,8 +339,23 @@ public class ModModelProvider extends FabricModelProvider {
 //        blockStateModelGenerator.registerSingleton(ModBlocks.NETHER_BRICKS_BLOCK, ModTexturedModel.CUBE_COLUMN_DEFAULT_TO_SIDE);
 
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.FERMENTED_SPIDER_EYE_BLOCK);
-        blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.GLISTERING_MELON_BLOCK);
+        blockStateModelGenerator.registerSingleton(ModBlocks.GLISTERING_MELON_BLOCK, TexturedModel.CUBE_COLUMN);
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.COMPRESSED_GLISTERING_MELON_BLOCK);
+        blockStateModelGenerator.registerAxisRotated(ModBlocks.STRING_BLOCK, TexturedModel.CUBE_COLUMN);
+        blockStateModelGenerator.registerSingleton(ModBlocks.COMPRESSED_TNT, TexturedModel.CUBE_COLUMN);
+        blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.GLOWSTONE_DUST_BLOCK);
+        blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.REDSTONE_DUST_BLOCK);
+        blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.COMPRESSED_SHROOMLIGHT);
+        blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.COMPRESSED_HONEY_BLOCK);
+        blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.COMPRESSED_SLIME_BLOCK);
+        blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.CLAY_BALL_BLOCK);
+        blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.EXPERIENCE_BLOCK);
+        blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.NETHERITE_SCRAP_BLOCK);
+        blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.COMPRESSED_HONEYCOMB_BLOCK);
+        blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.PINK_PETAL_BLOCK);
+        blockStateModelGenerator.registerSingleton(ModBlocks.LILY_PAD_BLOCK, TexturedModel.CUBE_COLUMN);
+        blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.COMPRESSED_CHERRY_LEAVES);
+
 
         // BlockItem Models  // For anything that does not use datagen to supply models elsewhere
         blockStateModelGenerator.registerParentedItemModel(ModBlocks.MAGMA_CREAM_BLOCK, Super.asResource("block/magma_cream_block"));

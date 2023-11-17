@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "squashed:Block{minecraft:slime_block}",
+  "key": {
+    "#": {
+      "item": "minecraft:slime_block"
+    }
+  },
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "result": {
+    "item": "squashed:compressed_slime_block"
+  },
+  "show_notification": true
+}

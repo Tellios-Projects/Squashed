@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "squashed:experience_bottle",
+  "key": {
+    "#": {
+      "item": "minecraft:experience_bottle"
+    }
+  },
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "result": {
+    "item": "squashed:experience_block"
+  },
+  "show_notification": true
+}

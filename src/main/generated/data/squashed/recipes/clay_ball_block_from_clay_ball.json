@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "squashed:clay_ball",
+  "key": {
+    "#": {
+      "item": "minecraft:clay_ball"
+    }
+  },
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "result": {
+    "item": "squashed:clay_ball_block"
+  },
+  "show_notification": true
+}

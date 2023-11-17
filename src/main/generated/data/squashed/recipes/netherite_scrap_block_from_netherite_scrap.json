@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "squashed:netherite_scrap",
+  "key": {
+    "#": {
+      "item": "minecraft:netherite_scrap"
+    }
+  },
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "result": {
+    "item": "squashed:netherite_scrap_block"
+  },
+  "show_notification": true
+}

@@ -57,6 +57,9 @@
     "squashed:flint_block",
     "squashed:sugar_block",
     "squashed:gunpowder_block",
-    "squashed:snowball_block"
+    "squashed:snowball_block",
+    "squashed:glowstone_dust_block",
+    "squashed:redstone_dust_block",
+    "squashed:clay_ball_block"
   ]
 }

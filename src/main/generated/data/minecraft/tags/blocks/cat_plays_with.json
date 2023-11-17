@@ -13,6 +13,10 @@
     "squashed:cyan_compressed_wool",
     "squashed:purple_compressed_wool",
     "squashed:blue_compressed_wool",
-    "squashed:brown_compressed_wool"
+    "squashed:brown_compressed_wool",
+    "squashed:green_compressed_wool",
+    "squashed:red_compressed_wool",
+    "squashed:black_compressed_wool",
+    "squashed:string_block"
   ]
 }

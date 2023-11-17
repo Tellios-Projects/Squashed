@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "squashed:Block{minecraft:tnt}_reverse",
+  "ingredients": [
+    {
+      "item": "squashed:compressed_tnt"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "minecraft:tnt"
+  }
+}

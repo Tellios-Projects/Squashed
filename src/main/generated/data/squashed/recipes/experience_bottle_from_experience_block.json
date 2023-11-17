@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "squashed:experience_bottle_reverse",
+  "ingredients": [
+    {
+      "item": "squashed:experience_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "minecraft:experience_bottle"
+  }
+}

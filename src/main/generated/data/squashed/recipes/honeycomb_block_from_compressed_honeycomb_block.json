@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "squashed:Block{minecraft:honeycomb_block}_reverse",
+  "ingredients": [
+    {
+      "item": "squashed:compressed_honeycomb_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "minecraft:honeycomb_block"
+  }
+}

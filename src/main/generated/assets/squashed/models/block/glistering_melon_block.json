@@ -1,6 +1,7 @@
 {
-  "parent": "minecraft:block/cube_all",
+  "parent": "minecraft:block/cube_column",
   "textures": {
-    "all": "squashed:block/glistering_melon_block"
+    "end": "squashed:block/glistering_melon_block_top",
+    "side": "squashed:block/glistering_melon_block_side"
   }
 }

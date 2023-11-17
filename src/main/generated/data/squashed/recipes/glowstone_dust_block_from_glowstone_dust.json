@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "squashed:glowstone_dust",
+  "key": {
+    "#": {
+      "item": "minecraft:glowstone_dust"
+    }
+  },
+  "pattern": [
+    "##",
+    "##"
+  ],
+  "result": {
+    "item": "squashed:glowstone_dust_block"
+  },
+  "show_notification": true
+}

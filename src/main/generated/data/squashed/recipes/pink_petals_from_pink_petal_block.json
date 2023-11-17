@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "squashed:Block{minecraft:pink_petals}_reverse",
+  "ingredients": [
+    {
+      "item": "squashed:pink_petal_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "minecraft:pink_petals"
+  }
+}

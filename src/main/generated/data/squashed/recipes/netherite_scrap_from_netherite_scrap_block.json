@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "squashed:netherite_scrap_reverse",
+  "ingredients": [
+    {
+      "item": "squashed:netherite_scrap_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "minecraft:netherite_scrap"
+  }
+}

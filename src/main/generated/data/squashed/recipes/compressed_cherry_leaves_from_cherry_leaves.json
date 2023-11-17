@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "squashed:cherry_leaves",
+  "key": {
+    "#": {
+      "item": "minecraft:cherry_leaves"
+    }
+  },
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "result": {
+    "item": "squashed:compressed_cherry_leaves"
+  },
+  "show_notification": true
+}

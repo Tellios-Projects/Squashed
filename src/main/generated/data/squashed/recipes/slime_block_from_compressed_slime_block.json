@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "squashed:Block{minecraft:slime_block}_reverse",
+  "ingredients": [
+    {
+      "item": "squashed:compressed_slime_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "minecraft:slime_block"
+  }
+}

@@ -5,13 +5,34 @@ import net.fabricmc.fabric.api.datagen.v1.provider.FabricBlockLootTableProvider;
 import net.leafenzo.squashed.block.ModBlocks;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
+import net.minecraft.block.TntBlock;
+import net.minecraft.data.server.loottable.vanilla.VanillaBlockLootTableGenerator;
+import net.minecraft.enchantment.Enchantments;
+import net.minecraft.item.ItemConvertible;
 import net.minecraft.item.Items;
+import net.minecraft.loot.LootPool;
+import net.minecraft.loot.LootTable;
+import net.minecraft.loot.condition.BlockStatePropertyLootCondition;
+import net.minecraft.loot.entry.ItemEntry;
+import net.minecraft.loot.entry.LeafEntry;
+import net.minecraft.loot.entry.LootPoolEntry;
+import net.minecraft.loot.function.ApplyBonusLootFunction;
+import net.minecraft.loot.function.LimitCountLootFunction;
+import net.minecraft.loot.function.SetCountLootFunction;
+import net.minecraft.loot.operator.BoundedIntUnaryOperator;
 import net.minecraft.loot.provider.number.ConstantLootNumberProvider;
+import net.minecraft.loot.provider.number.UniformLootNumberProvider;
+import net.minecraft.predicate.StatePredicate;
 
 public class ModLootTableGenerator extends FabricBlockLootTableProvider {
     public ModLootTableGenerator(FabricDataOutput dataOutput) {
         super(dataOutput);
     }
+
+    protected static final float[] SAPLING_DROP_CHANCE = new float[]{0.05f, 0.0625f, 0.083333336f, 0.1f};
+    private static final float[] LEAVES_STICK_DROP_CHANCE = new float[]{0.02f, 0.022222223f, 0.025f, 0.033333335f, 0.1f};
+    private static final float[] JUNGLE_SAPLING_DROP_CHANCE = new float[]{0.025f, 0.027777778f, 0.03125f, 0.041666668f, 0.1f};
+    public static final float[] NO_CHANCE_AT_ALL_NOPE = new float[]{0f, 0f, 0f, 0.0000000001f};
 
     @Override
     public void generate() {
@@ -116,6 +137,7 @@ public class ModLootTableGenerator extends FabricBlockLootTableProvider {
         this.addDrop(ModBlocks.COMPRESSED_MANGROVE_LEAVES, (Block block) -> this.leavesDrops((Block)block, Blocks.MANGROVE_PROPAGULE, SAPLING_DROP_CHANCE));
         this.addDrop(ModBlocks.COMPRESSED_AZALEA_LEAVES, (Block block) -> this.leavesDrops((Block)block, Blocks.AZALEA, SAPLING_DROP_CHANCE));
         this.addDrop(ModBlocks.COMPRESSED_FLOWERING_AZALEA_LEAVES, (Block block) -> this.leavesDrops((Block)block, Blocks.FLOWERING_AZALEA, SAPLING_DROP_CHANCE));
+        this.addDrop(ModBlocks.COMPRESSED_CHERRY_LEAVES, (Block block) -> this.leavesDrops((Block)block, Blocks.CHERRY_SAPLING, SAPLING_DROP_CHANCE));
         this.addDrop(ModBlocks.LEATHER_BLOCK);
         for(Block block : ModBlocks.COMPACTED_OAK_LOGS) { this.addDrop(block); }
         for(Block block : ModBlocks.COMPACTED_SPRUCE_LOGS) { this.addDrop(block); }
@@ -161,7 +183,7 @@ public class ModLootTableGenerator extends FabricBlockLootTableProvider {
         this.addDrop(ModBlocks.PAPER_BLOCK);
         this.addDrop(ModBlocks.COMPRESSED_SCAFFOLDING);
         this.addDrop(ModBlocks.KELP_BLOCK);
-//        this.addDrop(ModBlocks.LILY_PAD_BLOCK);
+        this.addDrop(ModBlocks.LILY_PAD_BLOCK);
         this.addDrop(ModBlocks.ENDER_EYE_BLOCK);
         this.addDrop(ModBlocks.ENDER_PEARL_BLOCK);
         this.addDrop(ModBlocks.ECHO_SHARD_BLOCK);
@@ -177,9 +199,9 @@ public class ModLootTableGenerator extends FabricBlockLootTableProvider {
         this.addDrop(ModBlocks.BEETROOT_BLOCK);
         this.addDrop(ModBlocks.FLINT_BLOCK);
         this.addDrop(ModBlocks.SUGAR_BLOCK);
-        this.addDrop(ModBlocks.GUNPOWDER_BLOCK);
+        this.addDrop(ModBlocks.GUNPOWDER_BLOCK, LootTable.builder().pool(this.addSurvivesExplosionCondition(ModBlocks.GUNPOWDER_BLOCK, LootPool.builder().rolls(ConstantLootNumberProvider.create(1.0f)).with((LootPoolEntry.Builder<?>) ItemEntry.builder(ModBlocks.GUNPOWDER_BLOCK).conditionally(BlockStatePropertyLootCondition.builder(ModBlocks.GUNPOWDER_BLOCK).properties(StatePredicate.Builder.create().exactMatch(TntBlock.UNSTABLE, false)))))));
         this.addDrop(ModBlocks.CHARCOAL_BLOCK);
-        this.addDrop(ModBlocks.SNOWBALL_BLOCK);
+        this.addDrop(ModBlocks.SNOWBALL_BLOCK, (Block block) -> this.drops((Block)block, Items.SNOWBALL, UniformLootNumberProvider.create(7.0f, 9.0f)));
         this.addDrop(ModBlocks.AMETHYST_SHARD_BLOCK);
         this.addDrop(ModBlocks.CRYSTAL_QUARTZ_BLOCK);
         this.addDrop(ModBlocks.HEART_OF_THE_SEA_BLOCK);
@@ -188,7 +210,19 @@ public class ModLootTableGenerator extends FabricBlockLootTableProvider {
         this.addDrop(ModBlocks.BRICKS_BLOCK);
         this.addDrop(ModBlocks.NETHER_BRICKS_BLOCK);
         this.addDrop(ModBlocks.FERMENTED_SPIDER_EYE_BLOCK);
-        this.addDrop(ModBlocks.GLISTERING_MELON_BLOCK);
+        this.addDrop(ModBlocks.GLISTERING_MELON_BLOCK, (Block block) -> VanillaBlockLootTableGenerator.dropsWithSilkTouch(block, (LootPoolEntry.Builder)this.applyExplosionDecay((ItemConvertible)block, ((LeafEntry.Builder)((LeafEntry.Builder)ItemEntry.builder(Items.GLISTERING_MELON_SLICE).apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(3.0f, 7.0f)))).apply(ApplyBonusLootFunction.uniformBonusCount(Enchantments.FORTUNE))).apply(LimitCountLootFunction.builder(BoundedIntUnaryOperator.createMax(9))))));
         this.addDrop(ModBlocks.COMPRESSED_GLISTERING_MELON_BLOCK);
+        this.addDrop(ModBlocks.STRING_BLOCK);
+        this.addDrop(ModBlocks.COMPRESSED_TNT, LootTable.builder().pool(this.addSurvivesExplosionCondition(ModBlocks.COMPRESSED_TNT, LootPool.builder().rolls(ConstantLootNumberProvider.create(1.0f)).with((LootPoolEntry.Builder<?>) ItemEntry.builder(ModBlocks.COMPRESSED_TNT).conditionally(BlockStatePropertyLootCondition.builder(ModBlocks.COMPRESSED_TNT).properties(StatePredicate.Builder.create().exactMatch(TntBlock.UNSTABLE, false)))))));
+        this.addDrop(ModBlocks.GLOWSTONE_DUST_BLOCK);
+        this.addDrop(ModBlocks.REDSTONE_DUST_BLOCK);
+        this.addDrop(ModBlocks.COMPRESSED_SHROOMLIGHT);
+        this.addDrop(ModBlocks.COMPRESSED_HONEY_BLOCK);
+        this.addDrop(ModBlocks.COMPRESSED_SLIME_BLOCK);
+        this.addDrop(ModBlocks.CLAY_BALL_BLOCK, (Block block) -> this.drops((Block)block, Items.CLAY_BALL, UniformLootNumberProvider.create(7.0f, 9.0f)));
+        this.addDrop(ModBlocks.EXPERIENCE_BLOCK);
+        this.addDrop(ModBlocks.NETHERITE_SCRAP_BLOCK);
+        this.addDrop(ModBlocks.COMPRESSED_HONEYCOMB_BLOCK);
+        this.addDrop(ModBlocks.PINK_PETAL_BLOCK, (Block block) ->  this.leavesDrops((Block)block, ModBlocks.COMPACTED_NETHERITE_BLOCKS[3], NO_CHANCE_AT_ALL_NOPE));
     }
 }

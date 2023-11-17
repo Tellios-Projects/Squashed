@@ -253,6 +253,7 @@ public class ModBlockTagGenerator extends FabricTagProvider<Block> {
     }
     for(Block block : ModBlocks.COMPRESSED_WOOL_BLOCKS) {
         getOrCreateTagBuilder(BlockTags.WOOL).add(block);
+        getOrCreateTagBuilder(ModBlockTags.CAT_PLAYS_WITH).add(block);
     }
 
     for(Block block : ModBlocks.TROPICAL_FISH_BLOCKS) {
@@ -352,6 +353,7 @@ public class ModBlockTagGenerator extends FabricTagProvider<Block> {
                 .add(ModBlocks.POISONOUS_POTATO_BLOCK)
                 .add(ModBlocks.BAKED_POTATO_BLOCK)
                 .add(ModBlocks.BEETROOT_BLOCK)
+                .add(ModBlocks.COMPRESSED_SHROOMLIGHT)
         ;
 
         getOrCreateTagBuilder(BlockTags.SHOVEL_MINEABLE)
@@ -377,7 +379,17 @@ public class ModBlockTagGenerator extends FabricTagProvider<Block> {
                 .add(ModBlocks.FLINT_BLOCK)
                 .add(ModBlocks.SUGAR_BLOCK)
                 .add(ModBlocks.GUNPOWDER_BLOCK)
-                .add(ModBlocks.SNOWBALL_BLOCK);
+                .add(ModBlocks.SNOWBALL_BLOCK)
+                .add(ModBlocks.GLOWSTONE_DUST_BLOCK)
+                .add(ModBlocks.REDSTONE_DUST_BLOCK)
+                .add(ModBlocks.CLAY_BALL_BLOCK)
+        ;
+
+        getOrCreateTagBuilder(BlockTags.SMALL_DRIPLEAF_PLACEABLE)
+                .add(ModBlocks.CLAY_BALL_BLOCK);
+
+        getOrCreateTagBuilder(BlockTags.BIG_DRIPLEAF_PLACEABLE)
+                .add(ModBlocks.CLAY_BALL_BLOCK);
 
         getOrCreateTagBuilder(BlockTags.DIRT)
                 .add(ModBlocks.COMPRESSED_CHERRY_SAPLING)
@@ -440,35 +452,26 @@ public class ModBlockTagGenerator extends FabricTagProvider<Block> {
                 .add(ModBlocks.COMPRESSED_MANGROVE_LEAVES)
                 .add(ModBlocks.COMPRESSED_AZALEA_LEAVES)
                 .add(ModBlocks.COMPRESSED_FLOWERING_AZALEA_LEAVES)
-//                .add(ModBlocks.COMPRESSED_CHERRY_LEAVES);
+                .add(ModBlocks.COMPRESSED_CHERRY_LEAVES)
 
                 //just so that shears can mine it easier
                 .add(ModBlocks.COMPRESSED_SEAGRASS)
                 .add(ModBlocks.VINE_BLOCK)
-                .add(ModBlocks.KELP_BLOCK);
-//                .add(ModBlocks.LILY_PAD_BLOCK);
+                .add(ModBlocks.KELP_BLOCK)
+                .add(ModBlocks.PINK_PETAL_BLOCK)
+                .add(ModBlocks.LILY_PAD_BLOCK);
 
 
         getOrCreateTagBuilder(ModBlockTags.CAT_PLAYS_WITH)
-                .add(ModBlocks.WHITE_COMPRESSED_WOOL)
-                .add(ModBlocks.ORANGE_COMPRESSED_WOOL)
-                .add(ModBlocks.MAGENTA_COMPRESSED_WOOL)
-                .add(ModBlocks.LIGHT_BLUE_COMPRESSED_WOOL)
-                .add(ModBlocks.YELLOW_COMPRESSED_WOOL)
-                .add(ModBlocks.LIME_COMPRESSED_WOOL)
-                .add(ModBlocks.PINK_COMPRESSED_WOOL)
-                .add(ModBlocks.GRAY_COMPRESSED_WOOL)
-                .add(ModBlocks.LIGHT_GRAY_COMPRESSED_WOOL)
-                .add(ModBlocks.CYAN_COMPRESSED_WOOL)
-                .add(ModBlocks.PURPLE_COMPRESSED_WOOL)
-                .add(ModBlocks.BLUE_COMPRESSED_WOOL)
-                .add(ModBlocks.BROWN_COMPRESSED_WOOL);
+                .add(ModBlocks.STRING_BLOCK);
 
         getOrCreateTagBuilder(BlockTags.WOOL)
                     //just so that shears can mine it easier
                     .add(ModBlocks.LEATHER_BLOCK)
                     .add(ModBlocks.COMPRESSED_COBWEB_BLOCK)
-                    .add(ModBlocks.RABBIT_HIDE_BLOCK);
+                    .add(ModBlocks.RABBIT_HIDE_BLOCK)
+                    .add(ModBlocks.STRING_BLOCK)
+                    .add(ModBlocks.FEATHER_BLOCK);
 
         getOrCreateTagBuilder(BlockTags.INFINIBURN_OVERWORLD)
                 .add(ModBlocks.BLAZE_ROD_BLOCK)
@@ -489,6 +492,9 @@ public class ModBlockTagGenerator extends FabricTagProvider<Block> {
 
         getOrCreateTagBuilder(BlockTags.ENCHANTMENT_POWER_PROVIDER)
                 .add(ModBlocks.BOOK_BLOCK);
+
+        getOrCreateTagBuilder(BlockTags.BEACON_BASE_BLOCKS)
+                .add(ModBlocks.NETHERITE_SCRAP_BLOCK);
     }
 }
 

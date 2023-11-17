@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "squashed:string_reverse",
+  "ingredients": [
+    {
+      "item": "squashed:string_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "minecraft:string"
+  }
+}

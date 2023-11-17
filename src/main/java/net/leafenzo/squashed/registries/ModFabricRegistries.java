@@ -33,6 +33,7 @@ public class ModFabricRegistries {
         for(Block block : ModBlocks.COMPRESSED_WOOL_BLOCKS) {
             registry.add(block, 60, 30);
         }
+        registry.add(ModBlocks.STRING_BLOCK, 60, 30);
 
         registry.add(ModBlocks.STICK_BLOCK, 20, 5);
 
@@ -49,11 +50,11 @@ public class ModFabricRegistries {
         registry.add(ModBlocks.DEAD_BUSH_BLOCK, 60, 30);
         registry.add(ModBlocks.COMPRESSED_HAY_BLOCK, 60, 20);
 
-
         registry.add(ModBlocks.GLOW_BERRIES_BLOCK, 75, 80);
         registry.add(ModBlocks.SWEET_BERRIES_BLOCK, 75, 80);
 
         registry.add(ModBlocks.GUNPOWDER_BLOCK, 10, 80);
+        registry.add(ModBlocks.COMPRESSED_TNT, 10, 80);
 
         registry.add(ModBlocks.SUGAR_BLOCK, 20, 5);
         registry.add(ModBlocks.SUGARCANE_BLOCK, 20, 5);
@@ -67,6 +68,8 @@ public class ModFabricRegistries {
         registry.add(ModBlocks.COMPRESSED_MANGROVE_LEAVES, 75, 80);
         registry.add(ModBlocks.COMPRESSED_AZALEA_LEAVES, 75, 80);
         registry.add(ModBlocks.COMPRESSED_FLOWERING_AZALEA_LEAVES, 60, 60);
+        registry.add(ModBlocks.COMPRESSED_CHERRY_LEAVES, 60, 60);
+        registry.add(ModBlocks.PINK_PETAL_BLOCK, 75, 80);
 
         for(Block block : ModBlocks.COMPACTED_OAK_LOGS) { registry.add(block, 5, 5);  }
         for(Block block : ModBlocks.COMPACTED_SPRUCE_LOGS) { registry.add(block, 5, 5);  }
