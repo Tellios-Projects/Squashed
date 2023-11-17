@@ -144,6 +144,7 @@ public class ModEnglishLangProvider extends FabricLanguageProvider {
         generateTranslationUsingPileNamingScheme(translationBuilder, ModBlocks.COMPRESSED_FLOWERING_AZALEA_LEAVES);
         generateTranslationUsingPileNamingScheme(translationBuilder, ModBlocks.COMPRESSED_CHERRY_LEAVES);
 
+        generateTranslation(translationBuilder, ModBlocks.COMPRESSED_NETHER_WART_BLOCK, "Pile of Nether Wart");
         generateTranslation(translationBuilder, ModBlocks.COMPRESSED_SPONGE, "Menger Sponge");
 
         generateTranslation(translationBuilder, ModBlocks.BOOK_BLOCK, "Pile of Books");
