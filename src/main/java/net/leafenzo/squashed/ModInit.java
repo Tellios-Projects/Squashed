@@ -6,6 +6,7 @@ import net.leafenzo.squashed.block.dispenser.ModDispenserBehaviors;
 import net.leafenzo.squashed.entity.ModEntityTypes;
 import net.leafenzo.squashed.item.ModItems;
 import net.leafenzo.squashed.registries.ModFabricRegistries;
+import net.leafenzo.squashed.registries.ModVillagerTrades;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -27,6 +28,7 @@ public class ModInit implements ModInitializer {
         ModFabricRegistries.registerFuels();
         ModFabricRegistries.registerCompostingChances();
         ModDispenserBehaviors.RegisterDispenserBehaviors();
+        ModVillagerTrades.registerVillagerTrades();
     }
 }
 
