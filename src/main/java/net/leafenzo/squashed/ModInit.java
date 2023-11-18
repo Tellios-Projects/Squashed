@@ -2,6 +2,7 @@ package net.leafenzo.squashed;
 
 import net.fabricmc.api.ModInitializer;
 import net.leafenzo.squashed.block.ModBlocks;
+import net.leafenzo.squashed.block.dispenser.ModDispenserBehaviors;
 import net.leafenzo.squashed.entity.ModEntityTypes;
 import net.leafenzo.squashed.item.ModItems;
 import net.leafenzo.squashed.registries.ModFabricRegistries;
@@ -25,6 +26,7 @@ public class ModInit implements ModInitializer {
         ModFabricRegistries.registerFlammableBlocks();
         ModFabricRegistries.registerFuels();
         ModFabricRegistries.registerCompostingChances();
+        ModDispenserBehaviors.RegisterDispenserBehaviors();
     }
 }
 
