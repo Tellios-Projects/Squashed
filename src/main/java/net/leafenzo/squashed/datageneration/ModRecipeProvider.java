@@ -336,7 +336,10 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         offerReversible2x2CompactingRecipes(exporter, RecipeCategory.MISC, Items.PHANTOM_MEMBRANE, RecipeCategory.BUILDING_BLOCKS, ModBlocks.PHANTOM_MEMBRANE_BLOCK);
         offerReversible2x2CompactingRecipes(exporter, RecipeCategory.MISC, Items.NETHER_WART, RecipeCategory.BUILDING_BLOCKS, ModBlocks.COMPRESSED_NETHER_WART_BLOCK);
         offerNamingSafeReversibleCompactingRecipes(exporter, RecipeCategory.MISC, Items.WARPED_WART_BLOCK, RecipeCategory.BUILDING_BLOCKS, ModBlocks.COMPRESSED_WARPED_WART_BLOCK);
-        offerNamingSafeReversibleCompactingRecipes(exporter, RecipeCategory.MISC, Items.MANGROVE_ROOTS, RecipeCategory.BUILDING_BLOCKS, ModBlocks.MANGROVE_ROOTS_BLOCK);
+
+        offerCompactingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.MANGROVE_ROOTS_BLOCK, Blocks.MANGROVE_ROOTS);
+        offerShapelessRecipe(exporter, Blocks.MANGROVE_PLANKS, ModBlocks.MANGROVE_ROOTS_BLOCK, "tropicalFishFromTropicalFishBlock",4);
+
         offerNamingSafeReversibleCompactingRecipes(exporter, RecipeCategory.MISC, Items.VINE, RecipeCategory.BUILDING_BLOCKS, ModBlocks.VINE_BLOCK);
         offerCompactingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.EGG_BLOCK, Items.EGG); //net/leafenzo/squashed/block/EggsBlock.java:25 | change the number of Chickentries variable if you change how many eggs it takes to craft this
         offerNamingSafeReversibleCompactingRecipes(exporter, RecipeCategory.MISC, Blocks.SPONGE, RecipeCategory.BUILDING_BLOCKS, ModBlocks.COMPRESSED_SPONGE);

@@ -15,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:mangrove_roots_from_mangrove_roots_block"
+        "recipe": "minecraft:mangrove_planks_from_mangrove_roots_block"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -28,7 +28,7 @@
   ],
   "rewards": {
     "recipes": [
-      "minecraft:mangrove_roots_from_mangrove_roots_block"
+      "minecraft:mangrove_planks_from_mangrove_roots_block"
     ]
   },
   "sends_telemetry_event": false
