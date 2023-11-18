@@ -220,7 +220,7 @@ public class ModLootTableGenerator extends FabricBlockLootTableProvider {
         this.addDrop(ModBlocks.COMPRESSED_HONEY_BLOCK);
         this.addDrop(ModBlocks.COMPRESSED_SLIME_BLOCK);
         this.addDrop(ModBlocks.CLAY_BALL_BLOCK, (Block block) -> this.drops((Block)block, Items.CLAY_BALL, UniformLootNumberProvider.create(7.0f, 9.0f)));
-        this.addDrop(ModBlocks.EXPERIENCE_BLOCK);
+        this.addDropWithSilkTouch(ModBlocks.EXPERIENCE_BLOCK);
         this.addDrop(ModBlocks.NETHERITE_SCRAP_BLOCK);
         this.addDrop(ModBlocks.COMPRESSED_HONEYCOMB_BLOCK);
         this.addDrop(ModBlocks.PINK_PETAL_BLOCK, (Block block) ->  this.leavesDrops((Block)block, ModBlocks.COMPACTED_NETHERITE_BLOCKS[3], NO_CHANCE_AT_ALL_NOPE));
