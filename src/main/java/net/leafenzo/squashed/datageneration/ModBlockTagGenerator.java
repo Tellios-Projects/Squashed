@@ -34,17 +34,29 @@ public class ModBlockTagGenerator extends FabricTagProvider<Block> {
         getOrCreateTagBuilder(ModBlockTags.CAT_PLAYS_WITH);
 
         for(Block block : ModBlocks.COMPACTED_SOUL_SAND) {
-            getOrCreateTagBuilder(BlockTags.SHOVEL_MINEABLE).add(block);
             getOrCreateTagBuilder(BlockTags.WITHER_SUMMON_BASE_BLOCKS).add(block);
             getOrCreateTagBuilder(BlockTags.SOUL_SPEED_BLOCKS).add(block);
             getOrCreateTagBuilder(BlockTags.SOUL_FIRE_BASE_BLOCKS).add(block);
         }
+        for(Block block : Arrays.stream(ModBlocks.COMPACTED_SOUL_SAND).toList().subList(0,2)) {
+            getOrCreateTagBuilder(BlockTags.SHOVEL_MINEABLE).add(block);
+        }
+        for(Block block : Arrays.stream(ModBlocks.COMPACTED_SOUL_SAND).toList().subList(2,4)) {
+            getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE).add(block);
+        }
+
         for(Block block : ModBlocks.COMPACTED_SOUL_SOIL) {
-            getOrCreateTagBuilder(BlockTags.SHOVEL_MINEABLE).add(block);
             getOrCreateTagBuilder(BlockTags.WITHER_SUMMON_BASE_BLOCKS).add(block);
             getOrCreateTagBuilder(BlockTags.SOUL_SPEED_BLOCKS).add(block);
             getOrCreateTagBuilder(BlockTags.SOUL_FIRE_BASE_BLOCKS).add(block);
         }
+        for(Block block : Arrays.stream(ModBlocks.COMPACTED_SOUL_SOIL).toList().subList(0,2)) {
+            getOrCreateTagBuilder(BlockTags.SHOVEL_MINEABLE).add(block);
+        }
+        for(Block block : Arrays.stream(ModBlocks.COMPACTED_SOUL_SOIL).toList().subList(2,4)) {
+            getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE).add(block);
+        }
+
         for(Block block : ModBlocks.COMPACTED_COBBLESTONE) {
             getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE).add(block);
         }
@@ -54,10 +66,10 @@ public class ModBlockTagGenerator extends FabricTagProvider<Block> {
         for(Block block : ModBlocks.COMPACTED_ANDESITE) {
             getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE).add(block);
         }
-        for(Block block : Arrays.stream(ModBlocks.COMPACTED_GRAVEL).toList().subList(0,1)) {
+        for(Block block : Arrays.stream(ModBlocks.COMPACTED_GRAVEL).toList().subList(0,2)) {
             getOrCreateTagBuilder(BlockTags.SHOVEL_MINEABLE).add(block);
         }
-        for(Block block : Arrays.stream(ModBlocks.COMPACTED_GRAVEL).toList().subList(2,3)) {
+        for(Block block : Arrays.stream(ModBlocks.COMPACTED_GRAVEL).toList().subList(2,4)) {
             getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE).add(block);
         }
         for(Block block : ModBlocks.COMPACTED_TUFF) {
@@ -106,25 +118,39 @@ public class ModBlockTagGenerator extends FabricTagProvider<Block> {
             getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE).add(block);
             getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE).add(block);
         }
-        for(Block block : ModBlocks.COMPACTED_MUD) {
+//        for(Block block : ModBlocks.COMPACTED_MUD) {
+//            getOrCreateTagBuilder(BlockTags.SHOVEL_MINEABLE).add(block);
+//        }
+        for(Block block : Arrays.stream(ModBlocks.COMPACTED_MUD).toList().subList(0,2)) {
+            getOrCreateTagBuilder(BlockTags.SHOVEL_MINEABLE).add(block);
+        }
+        for(Block block : Arrays.stream(ModBlocks.COMPACTED_MUD).toList().subList(2,4)) {
             getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE).add(block);
         }
+
         for(Block block : ModBlocks.COMPACTED_MOSS_BLOCKS) {
             getOrCreateTagBuilder(BlockTags.HOE_MINEABLE).add(block);
         }
-        for(Block block : Arrays.stream(ModBlocks.COMPACTED_CLAY).toList().subList(0,1)) {
+        for(Block block : Arrays.stream(ModBlocks.COMPACTED_CLAY).toList().subList(0,2)) {
             getOrCreateTagBuilder(BlockTags.SHOVEL_MINEABLE).add(block);
         }
-        for(Block block : Arrays.stream(ModBlocks.COMPACTED_CLAY).toList().subList(2,3)) {
+        for(Block block : Arrays.stream(ModBlocks.COMPACTED_CLAY).toList().subList(2,4)) {
             getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE).add(block);
         }
         for(Block block : ModBlocks.COMPACTED_MAGMA_BLOCKS) {
             getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE).add(block);
         }
-        for(Block block : ModBlocks.COMPACTED_SNOW_BLOCKS) {
+
+//        for(Block block : ModBlocks.COMPACTED_SNOW_BLOCKS) {
+            //getOrCreateTagBuilder(BlockTags.SNOW).add(block); // i have a hunch that all this does it make it melt near light, which would be kinda weird for this
+//        }
+        for(Block block : Arrays.stream(ModBlocks.COMPACTED_SNOW_BLOCKS).toList().subList(0,2)) {
             getOrCreateTagBuilder(BlockTags.SHOVEL_MINEABLE).add(block);
-            //getOrCreateTagBuilder(BlockTags.SNOW).add(block); // i have a hunch that all this does it make it melt near light, which would be kinda weird for something so compacted
         }
+        for(Block block : Arrays.stream(ModBlocks.COMPACTED_SNOW_BLOCKS).toList().subList(2,4)) {
+            getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE).add(block);
+        }
+
         for(Block block : ModBlocks.COMPACTED_BASALT) {
             getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE).add(block);
         }

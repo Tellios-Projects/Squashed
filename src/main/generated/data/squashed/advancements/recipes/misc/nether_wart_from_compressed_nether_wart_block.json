@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_experience_block": {
+    "has_compressed_nether_wart_block": {
       "conditions": {
         "items": [
           {
             "items": [
-              "squashed:experience_block"
+              "squashed:compressed_nether_wart_block"
             ]
           }
         ]
@@ -15,20 +15,20 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:experience_bottle_from_experience_block"
+        "recipe": "minecraft:nether_wart_from_compressed_nether_wart_block"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
   },
   "requirements": [
     [
-      "has_experience_block",
+      "has_compressed_nether_wart_block",
       "has_the_recipe"
     ]
   ],
   "rewards": {
     "recipes": [
-      "minecraft:experience_bottle_from_experience_block"
+      "minecraft:nether_wart_from_compressed_nether_wart_block"
     ]
   },
   "sends_telemetry_event": false

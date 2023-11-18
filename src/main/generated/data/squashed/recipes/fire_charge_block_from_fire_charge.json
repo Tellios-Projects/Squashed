@@ -8,9 +8,8 @@
     }
   },
   "pattern": [
-    "###",
-    "###",
-    "###"
+    "##",
+    "##"
   ],
   "result": {
     "item": "squashed:fire_charge_block"

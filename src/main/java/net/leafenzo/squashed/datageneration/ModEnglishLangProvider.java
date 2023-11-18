@@ -186,6 +186,8 @@ public class ModEnglishLangProvider extends FabricLanguageProvider {
 
         generateTranslation(translationBuilder, ModBlocks.EXPERIENCE_BLOCK, "Coagulated Experience");
         generateTranslation(translationBuilder, ModBlocks.PINK_PETAL_BLOCK, "Pile of Pink Petals");
+        generateTranslation(translationBuilder, ModBlocks.COMPRESSED_SHROOMLIGHT, "Shroomlight Spore Block");
+        generateTranslation(translationBuilder, ModBlocks.COMPRESSED_NETHER_WART_BLOCK, "Pile of Nether Wart");
 
 
 

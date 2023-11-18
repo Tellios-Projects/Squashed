@@ -1,19 +1,18 @@
 {
   "type": "minecraft:crafting_shaped",
   "category": "building",
-  "group": "squashed:experience_bottle",
+  "group": "squashed:nether_wart",
   "key": {
     "#": {
-      "item": "minecraft:experience_bottle"
+      "item": "minecraft:nether_wart"
     }
   },
   "pattern": [
-    "###",
-    "###",
-    "###"
+    "##",
+    "##"
   ],
   "result": {
-    "item": "squashed:experience_block"
+    "item": "squashed:compressed_nether_wart_block"
   },
   "show_notification": true
 }

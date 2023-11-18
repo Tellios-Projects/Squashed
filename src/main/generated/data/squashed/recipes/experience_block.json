@@ -1,10 +1,9 @@
 {
   "type": "minecraft:crafting_shaped",
   "category": "building",
-  "group": "squashed:ghast_tear",
   "key": {
     "#": {
-      "item": "minecraft:ghast_tear"
+      "item": "minecraft:experience_bottle"
     }
   },
   "pattern": [
@@ -12,7 +11,7 @@
     "##"
   ],
   "result": {
-    "item": "squashed:ghast_tear_block"
+    "item": "squashed:experience_block"
   },
   "show_notification": true
 }
