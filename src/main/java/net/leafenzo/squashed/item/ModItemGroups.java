@@ -68,7 +68,7 @@ public class ModItemGroups {
                             entries.add(ModBlocks.BEETROOT_SEED_BLOCK);
                             entries.add(ModBlocks.GLOW_BERRIES_BLOCK);
                             entries.add(ModBlocks.SWEET_BERRIES_BLOCK);
-                            entries.add(ModBlocks.LILY_PAD_BLOCK);
+//                            entries.add(ModBlocks.LILY_PAD_BLOCK);
                             entries.add(ModBlocks.COMPRESSED_SEAGRASS);
                             entries.add(ModBlocks.SEA_PICKLE_BLOCK);
                             entries.add(ModBlocks.KELP_BLOCK);
