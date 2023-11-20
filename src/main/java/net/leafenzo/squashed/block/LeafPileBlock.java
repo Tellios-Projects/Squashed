@@ -1,25 +1,20 @@
 package net.leafenzo.squashed.block;
 
-import net.leafenzo.squashed.state.ModProperties;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.ShapeContext;
 import net.minecraft.entity.Entity;
-import net.minecraft.item.ItemPlacementContext;
-import net.minecraft.state.StateManager;
-import net.minecraft.state.property.BooleanProperty;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Direction;
 import net.minecraft.util.shape.VoxelShape;
 import net.minecraft.util.shape.VoxelShapes;
 import net.minecraft.world.BlockView;
 import net.minecraft.world.World;
-import org.jetbrains.annotations.Nullable;
 
 public class LeafPileBlock
 extends Block {
-    public static final BooleanProperty SOLID = ModProperties.SOLID;
+//    public static final BooleanProperty SOLID = ModProperties.SOLID;
     protected static final VoxelShape COLLISION_SHAPE = Block.createCuboidShape(0.0, 0.0, 0.0, 16.0, 14.0, 16.0);
     private static final float field_31216 = 0.083333336f;
     private static final float HORIZONTAL_MOVEMENT_MULTIPLIER = 0.9f;
@@ -28,16 +23,12 @@ extends Block {
     private static final VoxelShape FALLING_SHAPE = VoxelShapes.cuboid(0.0, 0.0, 0.0, 1.0, 0.9f, 1.0);
     private static final double field_36189 = 4.0;
     private static final double SMALL_FALL_SOUND_MAX_DISTANCE = 7.0;
-
     private static final int SCHEDULED_TICK_DELAY = 20;
-
-
 
     public LeafPileBlock(AbstractBlock.Settings settings) {
         super(settings);
-        this.setDefaultState(this.getDefaultState().with(SOLID, false));
+//        this.setDefaultState(this.getDefaultState().with(SOLID, false));
     }
-
 
     @Override
     public void onLandedUpon(World world, BlockState state, BlockPos pos, Entity entity, float fallDistance) {
@@ -50,11 +41,25 @@ extends Block {
     }
 
     @Override
-    @Nullable
-    protected void appendProperties(StateManager.Builder<Block, BlockState> builder) {
-        builder.add(SOLID);
+    public VoxelShape getSidesShape(BlockState state, BlockView world, BlockPos pos) {
+        return VoxelShapes.fullCube();
     }
 
+    @Override
+    public VoxelShape getCameraCollisionShape(BlockState state, BlockView world, BlockPos pos, ShapeContext context) {
+        return VoxelShapes.fullCube();
+    }
+
+    @Override
+    public float getAmbientOcclusionLightLevel(BlockState state, BlockView world, BlockPos pos) {
+        return 0.2f;
+    }
+
+//    @Override
+//    @Nullable
+//    protected void appendProperties(StateManager.Builder<Block, BlockState> builder) {
+//        builder.add(SOLID);
+//    }
 
     //Overriding is NOT deprecated, only calling directly.
     @Override
@@ -65,12 +70,12 @@ extends Block {
         return super.isSideInvisible(state, stateFrom, direction);
     }
 
-    @Override
-    @Nullable
-    public BlockState getPlacementState(ItemPlacementContext ctx) {
-        BlockState blockBeneath = ctx.getWorld().getBlockState((ctx.getBlockPos().add(0,-1,0))); //TODO TESTME
-        return this.getDefaultState().with(SOLID, blockBeneath.isOf(this) || blockBeneath.isAir() );
-    }
+//    @Override
+//    @Nullable
+//    public BlockState getPlacementState(ItemPlacementContext ctx) {
+//        BlockState blockBeneath = ctx.getWorld().getBlockState((ctx.getBlockPos().add(0,-1,0))); //TODO TESTME
+//        return this.getDefaultState().with(SOLID, blockBeneath.isOf(this) || blockBeneath.isAir() );
+//    }
 
     /*
     @Override
