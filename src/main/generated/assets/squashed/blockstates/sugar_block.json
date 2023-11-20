@@ -1,7 +1,10 @@
 {
   "variants": {
-    "": {
+    "wet=false": {
       "model": "squashed:block/sugar_block"
+    },
+    "wet=true": {
+      "model": "squashed:block/sugar_block_wet"
     }
   }
 }

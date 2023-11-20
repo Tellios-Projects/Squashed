@@ -6,6 +6,7 @@ import net.leafenzo.squashed.Super;
 import net.leafenzo.squashed.block.ModBlocks;
 import net.leafenzo.squashed.data.client.ModTexturedModel;
 import net.leafenzo.squashed.item.ModItems;
+import net.leafenzo.squashed.state.ModProperties;
 import net.minecraft.block.Block;
 import net.minecraft.data.client.*;
 import net.minecraft.state.property.Properties;
@@ -23,6 +24,11 @@ public class ModModelProvider extends FabricModelProvider {
                 .coordinate(BlockStateModelGenerator.createBooleanModelMap(Properties.POWERED, on_model, off_model))
                 .coordinate(BlockStateModelGenerator.createNorthDefaultHorizontalRotationStates())
         );
+    }
+    protected static void registerSugarBlock(BlockStateModelGenerator blockStateModelGenerator) {
+        Identifier identifier =  TexturedModel.CUBE_ALL.upload(ModBlocks.SUGAR_BLOCK, blockStateModelGenerator.modelCollector);
+        Identifier identifier2 = blockStateModelGenerator.createSubModel(ModBlocks.SUGAR_BLOCK, "_wet", Models.CUBE_ALL, TextureMap::all);
+        blockStateModelGenerator.blockStateCollector.accept(VariantsBlockStateSupplier.create(ModBlocks.SUGAR_BLOCK).coordinate(BlockStateModelGenerator.createBooleanModelMap(ModProperties.WET, identifier2, identifier)));
     }
 
     public void registerLogPile(BlockStateModelGenerator blockStateModelGenerator, Block block, TexturedModel.Factory modelFactory) {
@@ -323,7 +329,8 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.BAKED_POTATO_BLOCK);
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.BEETROOT_BLOCK);
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.FLINT_BLOCK);
-        blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.SUGAR_BLOCK);
+//        blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.SUGAR_BLOCK);
+        registerSugarBlock(blockStateModelGenerator);
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.GUNPOWDER_BLOCK);
         blockStateModelGenerator.registerAxisRotated(ModBlocks.CHARCOAL_BLOCK, TexturedModel.CUBE_COLUMN);
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.SNOWBALL_BLOCK);
