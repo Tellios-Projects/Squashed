@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "squashed:Block{minecraft:crimson_stem}",
+  "key": {
+    "#": {
+      "item": "squashed:dense_crimson_stem"
+    }
+  },
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "result": {
+    "item": "squashed:squashed_crimson_stem"
+  },
+  "show_notification": true
+}

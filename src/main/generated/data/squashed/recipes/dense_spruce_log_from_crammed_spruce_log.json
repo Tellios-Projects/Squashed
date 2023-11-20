@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "squashed:Block{minecraft:spruce_log}",
+  "key": {
+    "#": {
+      "item": "squashed:crammed_spruce_log"
+    }
+  },
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "result": {
+    "item": "squashed:dense_spruce_log"
+  },
+  "show_notification": true
+}

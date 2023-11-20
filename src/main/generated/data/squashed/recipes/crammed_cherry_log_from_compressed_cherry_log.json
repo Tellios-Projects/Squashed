@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "squashed:Block{minecraft:cherry_log}",
+  "key": {
+    "#": {
+      "item": "squashed:compressed_cherry_log"
+    }
+  },
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "result": {
+    "item": "squashed:crammed_cherry_log"
+  },
+  "show_notification": true
+}

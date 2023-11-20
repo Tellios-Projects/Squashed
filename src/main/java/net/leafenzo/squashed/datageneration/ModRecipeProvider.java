@@ -208,6 +208,18 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         offerNamingSafeReversibleCompactingRecipes(exporter, Items.WEATHERED_COPPER, ModBlocks.WEATHERED_COMPRESSED_COPPER_BLOCK);
         offerNamingSafeReversibleCompactingRecipes(exporter, Items.OXIDIZED_COPPER, ModBlocks.OXIDIZED_COMPRESSED_COPPER_BLOCK);
 
+        offerNamingSafeReversibleCompactingRecipes(exporter, Blocks.OAK_LOG, ModBlocks.COMPACTED_OAK_LOGS);
+        offerNamingSafeReversibleCompactingRecipes(exporter, Blocks.SPRUCE_LOG, ModBlocks.COMPACTED_SPRUCE_LOGS);
+        offerNamingSafeReversibleCompactingRecipes(exporter, Blocks.BIRCH_LOG, ModBlocks.COMPACTED_BIRCH_LOGS);
+        offerNamingSafeReversibleCompactingRecipes(exporter, Blocks.JUNGLE_LOG, ModBlocks.COMPACTED_JUNGLE_LOGS);
+        offerNamingSafeReversibleCompactingRecipes(exporter, Blocks.ACACIA_LOG, ModBlocks.COMPACTED_ACACIA_LOGS);
+        offerNamingSafeReversibleCompactingRecipes(exporter, Blocks.DARK_OAK_LOG, ModBlocks.COMPACTED_DARK_OAK_LOGS);
+        offerNamingSafeReversibleCompactingRecipes(exporter, Blocks.MANGROVE_LOG, ModBlocks.COMPACTED_MANGROVE_LOGS);
+        offerNamingSafeReversibleCompactingRecipes(exporter, Blocks.CHERRY_LOG, ModBlocks.COMPACTED_CHERRY_LOGS);
+        offerNamingSafeReversibleCompactingRecipes(exporter, Blocks.CRIMSON_STEM, ModBlocks.COMPACTED_CRIMSON_STEMS);
+        offerNamingSafeReversibleCompactingRecipes(exporter, Blocks.WARPED_STEM, ModBlocks.COMPACTED_WARPED_STEMS);
+        offerNamingSafeReversibleCompactingRecipes(exporter, Blocks.BAMBOO_BLOCK, ModBlocks.COMPACTED_BAMBOO_BLOCKS);
+
         offerReversible2x2CompactingRecipes(exporter, RecipeCategory.MISC, Items.WHITE_DYE, RecipeCategory.BUILDING_BLOCKS, ModBlocks.WHITE_DYE_BLOCK);
         offerReversible2x2CompactingRecipes(exporter, RecipeCategory.MISC, Items.ORANGE_DYE, RecipeCategory.BUILDING_BLOCKS, ModBlocks.ORANGE_DYE_BLOCK);
         offerReversible2x2CompactingRecipes(exporter, RecipeCategory.MISC, Items.MAGENTA_DYE, RecipeCategory.BUILDING_BLOCKS, ModBlocks.MAGENTA_DYE_BLOCK);

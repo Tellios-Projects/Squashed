@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "squashed:Block{minecraft:jungle_log}_reverse",
+  "ingredients": [
+    {
+      "item": "squashed:squashed_jungle_log"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "squashed:dense_jungle_log"
+  }
+}

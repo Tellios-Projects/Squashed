@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "squashed:Block{minecraft:warped_stem}_reverse",
+  "ingredients": [
+    {
+      "item": "squashed:compressed_warped_stem"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "minecraft:warped_stem"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "squashed:Block{minecraft:bamboo_block}",
+  "key": {
+    "#": {
+      "item": "squashed:compressed_bamboo_block"
+    }
+  },
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "result": {
+    "item": "squashed:crammed_bamboo_block"
+  },
+  "show_notification": true
+}

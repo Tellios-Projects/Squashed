@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "squashed:Block{minecraft:warped_stem}",
+  "key": {
+    "#": {
+      "item": "squashed:crammed_warped_stem"
+    }
+  },
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "result": {
+    "item": "squashed:dense_warped_stem"
+  },
+  "show_notification": true
+}

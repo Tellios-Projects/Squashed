@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "squashed:Block{minecraft:jungle_log}",
+  "key": {
+    "#": {
+      "item": "minecraft:jungle_log"
+    }
+  },
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "result": {
+    "item": "squashed:compressed_jungle_log"
+  },
+  "show_notification": true
+}

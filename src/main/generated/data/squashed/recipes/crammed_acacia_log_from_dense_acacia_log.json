@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "squashed:Block{minecraft:acacia_log}_reverse",
+  "ingredients": [
+    {
+      "item": "squashed:dense_acacia_log"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "squashed:crammed_acacia_log"
+  }
+}

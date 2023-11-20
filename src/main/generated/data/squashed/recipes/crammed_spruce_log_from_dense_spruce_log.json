@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "squashed:Block{minecraft:spruce_log}_reverse",
+  "ingredients": [
+    {
+      "item": "squashed:dense_spruce_log"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "squashed:crammed_spruce_log"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "squashed:Block{minecraft:mangrove_log}",
+  "key": {
+    "#": {
+      "item": "squashed:compressed_mangrove_log"
+    }
+  },
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "result": {
+    "item": "squashed:crammed_mangrove_log"
+  },
+  "show_notification": true
+}

@@ -34,7 +34,7 @@ public class ModBlocks {
     public static final HashMap<Block, Integer> COMPRESSION_TIER_FROM_BLOCK = new HashMap<Block, Integer>();
     public static final ArrayList<Block> TROPICAL_FISH_BLOCKS = new ArrayList<Block>();
     public static final ArrayList<Block> DYE_BLOCKS = new ArrayList<Block>();
-    public static final ArrayList<Block> COMPRESSED_WOOL_BLOCKS = new ArrayList<Block>();
+    public static final ArrayList<Block> ALL_COMPACTED_WOOL_BLOCKS = new ArrayList<Block>();
 
 
     public static final Block BLAZE_ROD_BLOCK = registerBlock("blaze_rod_block", new ReversiblePillarBlock(FabricBlockSettings.create().mapColor(MapColor.TERRACOTTA_YELLOW).requiresTool().strength(2.0f).sounds(ModBlockSoundGroup.BLAZE_ROD_BLOCK).luminance(state -> 15))/*,ModItemGroups.SQUASHED*/);
@@ -633,7 +633,7 @@ public class ModBlocks {
 
     private static PillarBlock createCompressedWoolBlock(DyeColor color) {
         PillarBlock block = new PillarBlock(FabricBlockSettings.copyOf(Blocks.WHITE_WOOL).mapColor(color).burnable().strength(0.8f).sounds(BlockSoundGroup.CHISELED_BOOKSHELF));
-        COMPRESSED_WOOL_BLOCKS.add(block);
+        ALL_COMPACTED_WOOL_BLOCKS.add(block);
         return block;
     }
 

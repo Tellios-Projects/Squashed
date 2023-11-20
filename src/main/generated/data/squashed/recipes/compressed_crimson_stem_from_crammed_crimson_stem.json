@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "squashed:Block{minecraft:crimson_stem}_reverse",
+  "ingredients": [
+    {
+      "item": "squashed:crammed_crimson_stem"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "squashed:compressed_crimson_stem"
+  }
+}

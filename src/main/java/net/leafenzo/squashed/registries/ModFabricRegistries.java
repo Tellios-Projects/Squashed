@@ -30,7 +30,7 @@ public class ModFabricRegistries {
         FlammableBlockRegistry registry = FlammableBlockRegistry.getDefaultInstance();
         registry.add(ModBlocks.BLAZE_POWDER_BLOCK, 65536, 65536);
 
-        for(Block block : ModBlocks.COMPRESSED_WOOL_BLOCKS) {
+        for(Block block : ModBlocks.ALL_COMPACTED_WOOL_BLOCKS) {
             registry.add(block, 60, 30);
         }
         registry.add(ModBlocks.STRING_BLOCK, 60, 30);
@@ -71,15 +71,43 @@ public class ModFabricRegistries {
         registry.add(ModBlocks.COMPRESSED_CHERRY_LEAVES, 60, 60);
         registry.add(ModBlocks.PINK_PETAL_BLOCK, 75, 80);
 
-        for(Block block : ModBlocks.COMPACTED_OAK_LOGS) { registry.add(block, 5, 5);  }
-        for(Block block : ModBlocks.COMPACTED_SPRUCE_LOGS) { registry.add(block, 5, 5);  }
-        for(Block block : ModBlocks.COMPACTED_BIRCH_LOGS) { registry.add(block, 5, 5);  }
-        for(Block block : ModBlocks.COMPACTED_JUNGLE_LOGS) { registry.add(block, 5, 5);  }
-        for(Block block : ModBlocks.COMPACTED_ACACIA_LOGS) { registry.add(block, 5, 5);  }
-        for(Block block : ModBlocks.COMPACTED_DARK_OAK_LOGS) { registry.add(block, 5, 5);  }
-        for(Block block : ModBlocks.COMPACTED_MANGROVE_LOGS) { registry.add(block, 5, 5);  }
-        for(Block block : ModBlocks.COMPACTED_CHERRY_LOGS) { registry.add(block, 5, 5); }
-        for(Block block : ModBlocks.COMPACTED_BAMBOO_BLOCKS) { registry.add(block, 20, 5); }
+        registry.add(ModBlocks.COMPACTED_OAK_LOGS[0], 3, 5);
+        registry.add(ModBlocks.COMPACTED_OAK_LOGS[1], 1, 5);
+//        registry.add(ModBlocks.COMPACTED_OAK_LOGS[2], 1, 5);
+//      registry.add(  ModBlocks.COMPACTED_OAK_LOGS[3]
+        registry.add(ModBlocks.COMPACTED_SPRUCE_LOGS[0], 3, 5);
+        registry.add(ModBlocks.COMPACTED_SPRUCE_LOGS[1], 1, 5);
+//        registry.add(ModBlocks.COMPACTED_SPRUCE_LOGS[2], 1, 5);
+//      registry.add(  ModBlocks.COMPACTED_SPRUCE_LOGS[3]
+        registry.add(ModBlocks.COMPACTED_BIRCH_LOGS[0], 3, 5);
+        registry.add(ModBlocks.COMPACTED_BIRCH_LOGS[1], 1, 5);
+//        registry.add(ModBlocks.COMPACTED_BIRCH_LOGS[2], 1, 5);
+//      registry.add(  ModBlocks.COMPACTED_BIRCH_LOGS[3]
+        registry.add(ModBlocks.COMPACTED_JUNGLE_LOGS[0], 3, 5);
+        registry.add(ModBlocks.COMPACTED_JUNGLE_LOGS[1], 1, 5);
+//        registry.add(ModBlocks.COMPACTED_JUNGLE_LOGS[2], 1, 5);
+//      registry.add(  ModBlocks.COMPACTED_JUNGLE_LOGS[3]
+        registry.add(ModBlocks.COMPACTED_ACACIA_LOGS[0], 3, 5);
+        registry.add(ModBlocks.COMPACTED_ACACIA_LOGS[1], 1, 5);
+//        registry.add(ModBlocks.COMPACTED_ACACIA_LOGS[2], 1, 5);
+//      registry.add(  ModBlocks.COMPACTED_ACACIA_LOGS[3]
+        registry.add(ModBlocks.COMPACTED_DARK_OAK_LOGS[0], 3, 5);
+        registry.add(ModBlocks.COMPACTED_DARK_OAK_LOGS[1], 1, 5);
+//        registry.add(ModBlocks.COMPACTED_DARK_OAK_LOGS[2], 1, 5);
+//      registry.add(  ModBlocks.COMPACTED_DARK_OAK_LOGS[3]
+        registry.add(ModBlocks.COMPACTED_MANGROVE_LOGS[0], 3, 5);
+        registry.add(ModBlocks.COMPACTED_MANGROVE_LOGS[1], 1, 5);
+//        registry.add(ModBlocks.COMPACTED_MANGROVE_LOGS[2], 1, 5);
+//      registry.add(  ModBlocks.COMPACTED_MANGROVE_LOGS[3]
+        registry.add(ModBlocks.COMPACTED_CHERRY_LOGS[0], 3, 5);
+        registry.add(ModBlocks.COMPACTED_CHERRY_LOGS[1], 1, 5);
+//        registry.add(ModBlocks.COMPACTED_CHERRY_LOGS[2], 1, 5);
+//      registry.add(  ModBlocks.COMPACTED_CHERRY_LOGS[3]
+        registry.add(ModBlocks.COMPACTED_BAMBOO_BLOCKS[0], 3, 5);
+        registry.add(ModBlocks.COMPACTED_BAMBOO_BLOCKS[1], 1, 5);
+//        registry.add(ModBlocks.COMPACTED_BAMBOO_BLOCKS[2], 1, 5);
+//      registry.add(  ModBlocks.COMPACTED_BAMBOO_BLOCKS[3]
+
 
         registry.add(ModBlocks.COMPRESSED_OAK_SAPLING, 10, 5);
         registry.add(ModBlocks.COMPRESSED_SPRUCE_SAPLING, 10, 5);
@@ -101,7 +129,7 @@ public class ModFabricRegistries {
         ModInit.LOGGER.debug("Registering Smelting Fuels for " + Super.MOD_ID);
         FuelRegistry registry = FuelRegistry.INSTANCE;
 
-        for(ItemConvertible item : ModBlocks.COMPRESSED_WOOL_BLOCKS) {
+        for(ItemConvertible item : ModBlocks.ALL_COMPACTED_WOOL_BLOCKS) {
             registry.add(item, 300);
         }
 

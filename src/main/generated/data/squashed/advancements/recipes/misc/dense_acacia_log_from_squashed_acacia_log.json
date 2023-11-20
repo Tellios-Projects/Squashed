@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_squashed_acacia_log": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "squashed:squashed_acacia_log"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:dense_acacia_log_from_squashed_acacia_log"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_squashed_acacia_log",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:dense_acacia_log_from_squashed_acacia_log"
+    ]
+  },
+  "sends_telemetry_event": false
+}

@@ -277,7 +277,7 @@ public class ModBlockTagGenerator extends FabricTagProvider<Block> {
     for(Block block : ModBlocks.COMPACTED_BAMBOO_BLOCKS) {
         getOrCreateTagBuilder(BlockTags.AXE_MINEABLE).add(block);
     }
-    for(Block block : ModBlocks.COMPRESSED_WOOL_BLOCKS) {
+    for(Block block : ModBlocks.ALL_COMPACTED_WOOL_BLOCKS) {
         getOrCreateTagBuilder(BlockTags.WOOL).add(block);
         getOrCreateTagBuilder(ModBlockTags.CAT_PLAYS_WITH).add(block);
     }

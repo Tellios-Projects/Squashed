@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "squashed:Block{minecraft:dark_oak_log}",
+  "key": {
+    "#": {
+      "item": "squashed:crammed_dark_oak_log"
+    }
+  },
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "result": {
+    "item": "squashed:dense_dark_oak_log"
+  },
+  "show_notification": true
+}
