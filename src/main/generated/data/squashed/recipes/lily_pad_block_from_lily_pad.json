@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "squashed:lily_pad",
+  "key": {
+    "#": {
+      "item": "minecraft:lily_pad"
+    }
+  },
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "result": {
+    "item": "squashed:lily_pad_block"
+  },
+  "show_notification": true
+}

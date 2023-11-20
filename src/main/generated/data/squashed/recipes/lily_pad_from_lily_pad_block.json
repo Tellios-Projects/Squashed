@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "squashed:lily_pad_reverse",
+  "ingredients": [
+    {
+      "item": "squashed:lily_pad_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "minecraft:lily_pad"
+  }
+}

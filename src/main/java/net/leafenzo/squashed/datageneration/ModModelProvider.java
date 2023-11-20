@@ -353,7 +353,7 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.NETHERITE_SCRAP_BLOCK);
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.COMPRESSED_HONEYCOMB_BLOCK);
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.PINK_PETAL_BLOCK);
-        blockStateModelGenerator.registerSingleton(ModBlocks.LILY_PAD_BLOCK, TexturedModel.CUBE_COLUMN);
+        blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.LILY_PAD_BLOCK);
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.COMPRESSED_CHERRY_LEAVES);
 
 
