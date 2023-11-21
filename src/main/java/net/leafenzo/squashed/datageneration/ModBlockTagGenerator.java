@@ -314,6 +314,8 @@ public class ModBlockTagGenerator extends FabricTagProvider<Block> {
                 .add(ModBlocks.NETHER_STAR_BLOCK)
                 .add(ModBlocks.BRICKS_BLOCK)
                 .add(ModBlocks.NETHER_BRICKS_BLOCK)
+                .add(ModBlocks.GOLDEN_CARROT_BLOCK)
+                .add(ModBlocks.GOLDEN_APPLE_BLOCK)
         ;
 
         getOrCreateTagBuilder(BlockTags.NEEDS_STONE_TOOL)
@@ -372,9 +374,7 @@ public class ModBlockTagGenerator extends FabricTagProvider<Block> {
         getOrCreateTagBuilder(BlockTags.HOE_MINEABLE)
                 .addTag(ModBlockTags.ANY_MINABLE)
                 .add(ModBlocks.CARROT_BLOCK)
-                .add(ModBlocks.GOLDEN_CARROT_BLOCK)
                 .add(ModBlocks.APPLE_BLOCK)
-                .add(ModBlocks.GOLDEN_APPLE_BLOCK)
                 .add(ModBlocks.POTATO_BLOCK)
                 .add(ModBlocks.POISONOUS_POTATO_BLOCK)
                 .add(ModBlocks.BAKED_POTATO_BLOCK)
