@@ -9,6 +9,7 @@
     "BubbleColumnBlockMixin"
   ],
   "client": [
+    "client.AbstractBlockStateMixin"
   ],
   "injectors": {
     "defaultRequire": 1

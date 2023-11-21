@@ -7,7 +7,6 @@ import net.minecraft.fluid.FluidState;
 import net.minecraft.registry.tag.FluidTags;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Direction;
-import net.minecraft.world.BlockView;
 import net.minecraft.world.World;
 import net.minecraft.world.WorldEvents;
 
@@ -15,7 +14,7 @@ import net.minecraft.world.WorldEvents;
  * From net.minecraft.block.SpongeBlock
  * Does not need to be furnaced
  */
-public class CompressedSpongeBlock extends Block {
+public class CompressedSpongeBlock extends AmbientOcclusionImmuneBlock {
     public static final int field_31250 = 6;
     public static final int field_31251 = 64;
 
@@ -23,11 +22,6 @@ public class CompressedSpongeBlock extends Block {
 
     public CompressedSpongeBlock(Settings settings) {
         super(settings);
-    }
-
-    @Override
-    public float getAmbientOcclusionLightLevel(BlockState state, BlockView world, BlockPos pos) {
-        return 0.2f;
     }
 
 //    @Override

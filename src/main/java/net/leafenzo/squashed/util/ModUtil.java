@@ -1,8 +1,11 @@
 package net.leafenzo.squashed.util;
 
 import net.minecraft.block.Block;
+import net.minecraft.block.BlockState;
 import net.minecraft.registry.Registries;
 import net.minecraft.util.Identifier;
+import net.minecraft.util.math.BlockPos;
+import net.minecraft.world.World;
 
 import java.util.Arrays;
 import java.util.HashSet;
@@ -72,4 +75,14 @@ public class ModUtil {
         return a;
     }
 
+    public static BlockState[] allAdjacentBlockStates(World world, BlockPos pos) {
+        BlockState[] states = new BlockState[5];
+        states[0] = world.getBlockState(pos.up());
+        states[1] = world.getBlockState(pos.down());
+        states[2] = world.getBlockState(pos.north());
+        states[3] = world.getBlockState(pos.south());
+        states[4] = world.getBlockState(pos.east());
+        states[5] = world.getBlockState(pos.west());
+        return states;
+    }
 }
