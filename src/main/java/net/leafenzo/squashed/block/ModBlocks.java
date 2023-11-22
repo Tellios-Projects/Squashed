@@ -74,7 +74,7 @@ public class ModBlocks {
     public static final Block COMPRESSED_HAY_BLOCK = registerBlock("compressed_hay_block", new HayBlock(FabricBlockSettings.create().mapColor(MapColor.PALE_YELLOW).strength(0.2f).sounds(BlockSoundGroup.GRASS).burnable())/*,ModItemGroups.SQUASHED*/);
     public static final Block COMPRESSED_MELON = registerBlock("compressed_melon", new FallingBlock(FabricBlockSettings.create().mapColor(MapColor.PALE_GREEN).strength(2.0f).sounds(BlockSoundGroup.WOOD))/*,ModItemGroups.SQUASHED*/);
     public static final Block SUGARCANE_BLOCK = registerBlock("sugarcane_block", new Block(FabricBlockSettings.create().mapColor(MapColor.PALE_GREEN).strength(2.0f).sounds(BlockSoundGroup.BAMBOO_WOOD).burnable())/*,ModItemGroups.SQUASHED*/);
-    public static final Block SEA_PICKLE_BLOCK = registerBlock("sea_pickle_block", new SeaPickleBlock(FabricBlockSettings.create().mapColor(MapColor.DARK_GREEN).luminance(ModBlocks.createLightLevelFromProperty(7, Properties.WATERLOGGED)).strength(2.0f).sounds(BlockSoundGroup.CORAL))/*, ModItemGroups.SQUASHED*/);
+    public static final Block SEA_PICKLE_BLOCK = registerBlock("sea_pickle_block", new SeaPickleBlock(FabricBlockSettings.create().mapColor(MapColor.DARK_GREEN).luminance(ModBlocks.createLightLevelFromProperty(15, Properties.WATERLOGGED)).strength(2.0f).sounds(BlockSoundGroup.CORAL))/*, ModItemGroups.SQUASHED*/);
 
     public static final Block[] COMPACTED_SOUL_SAND = registerCompactedBlockSet("soul_sand",
             new SoulSandBlock(FabricBlockSettings.copyOf(Blocks.SOUL_SAND).mapColor(MapColor.DIAMOND_BLUE).strength(0.5f).instrument(Instrument.COW_BELL).sounds(BlockSoundGroup.SOUL_SAND).luminance(state -> 7)),
