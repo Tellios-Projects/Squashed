@@ -372,6 +372,7 @@ public class ModBlockTagGenerator extends FabricTagProvider<Block> {
                 .add(ModBlocks.FERMENTED_SPIDER_EYE_BLOCK)
                 .add(ModBlocks.GLISTERING_MELON_BLOCK)
                 .add(ModBlocks.COMPRESSED_GLISTERING_MELON_BLOCK)
+                .add(ModBlocks.CHARCOAL_BLOCK)
         ;
 
         getOrCreateTagBuilder(BlockTags.HOE_MINEABLE)

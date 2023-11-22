@@ -104,6 +104,7 @@
     "squashed:compressed_scaffolding",
     "squashed:fermented_spider_eye_block",
     "squashed:glistering_melon_block",
-    "squashed:compressed_glistering_melon_block"
+    "squashed:compressed_glistering_melon_block",
+    "squashed:charcoal_block"
   ]
 }
