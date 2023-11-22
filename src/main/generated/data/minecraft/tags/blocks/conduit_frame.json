@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "squashed:compressed_prismarine",
+    "squashed:crammed_prismarine",
+    "squashed:dense_prismarine",
+    "squashed:squashed_prismarine"
+  ]
+}

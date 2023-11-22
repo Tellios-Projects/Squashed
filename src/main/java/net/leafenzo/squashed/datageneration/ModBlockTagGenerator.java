@@ -5,6 +5,7 @@ import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
 import net.leafenzo.squashed.block.ModBlocks;
 import net.leafenzo.squashed.registry.tag.ModBlockTags;
 import net.minecraft.block.Block;
+import net.minecraft.block.Blocks;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.registry.tag.BlockTags;
@@ -82,6 +83,7 @@ public class ModBlockTagGenerator extends FabricTagProvider<Block> {
             getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE).add(block);
             getOrCreateTagBuilder(BlockTags.NEEDS_DIAMOND_TOOL).add(block);
             getOrCreateTagBuilder(BlockTags.WITHER_IMMUNE).add(block);
+            getOrCreateTagBuilder(ModBlockTags.NETHER_PORTAL_FRAME).add(block);
         }
         for(Block block : ModBlocks.COMPACTED_DEEPSLATE) {
             getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE).add(block);
@@ -162,6 +164,7 @@ public class ModBlockTagGenerator extends FabricTagProvider<Block> {
         }
         for(Block block : ModBlocks.COMPACTED_PRISMARINE) {
             getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE).add(block);
+            getOrCreateTagBuilder(ModBlockTags.CONDUIT_FRAME).add(block);
         }
         for(Block block : ModBlocks.COMPACTED_BLUE_ICE) {
             getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE).add(block);
@@ -521,6 +524,11 @@ public class ModBlockTagGenerator extends FabricTagProvider<Block> {
 
         getOrCreateTagBuilder(BlockTags.BEACON_BASE_BLOCKS)
                 .add(ModBlocks.NETHERITE_SCRAP_BLOCK);
+
+
+
+        getOrCreateTagBuilder(ModBlockTags.NETHER_PORTAL_FRAME)
+                .add(Blocks.OBSIDIAN);
     }
 }
 

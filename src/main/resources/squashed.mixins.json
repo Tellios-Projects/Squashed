@@ -6,7 +6,9 @@
   "mixins": [
     "FireBlockMixin",
     "PistonHandlerMixin",
-    "BubbleColumnBlockMixin"
+    "BubbleColumnBlockMixin",
+    "NetherPortalMixin",
+    "ConduitBlockEntityMixin"
   ],
   "client": [
   ],

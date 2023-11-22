@@ -179,6 +179,8 @@
     "squashed:nautilus_shell_block",
     "squashed:nether_star_block",
     "squashed:bricks_block",
-    "squashed:nether_bricks_block"
+    "squashed:nether_bricks_block",
+    "squashed:golden_carrot_block",
+    "squashed:golden_apple_block"
   ]
 }

@@ -1,13 +1,17 @@
+/*
+       SOURCES:
+       Avetharun - https://github.com/avetharun/herbiary/blob/7017ddbf6d3fd1adddb451dc4b6ccdf93e72a3c3/remappedSrc/com/avetharun/herbiary/hUtil/alib.java#L208
+ */
+
 package net.leafenzo.squashed.util;
 
 import net.minecraft.block.Block;
 import net.minecraft.registry.Registries;
+import net.minecraft.registry.entry.RegistryEntryList;
+import net.minecraft.registry.tag.TagKey;
 import net.minecraft.util.Identifier;
 
-import java.util.Arrays;
-import java.util.HashSet;
-import java.util.Objects;
-import java.util.Set;
+import java.util.*;
 
 public class ModUtil {
 
@@ -64,12 +68,25 @@ public class ModUtil {
     public static Set<Identifier> allItemGroupIdsInNamespace(String namespace) {
         Set<Identifier> set = Registries.ITEM_GROUP.getIds();
         Set<Identifier> a = new HashSet<>();
-        for(Identifier id : set) {
-            if(Objects.equals(id.getNamespace(), namespace)) {
+        for (Identifier id : set) {
+            if (Objects.equals(id.getNamespace(), namespace)) {
                 a.add(id);
             }
         }
         return a;
     }
 
+
+     /*
+           SOURCE:
+           Avetharun - https://github.com/avetharun/herbiary/blob/7017ddbf6d3fd1adddb451dc4b6ccdf93e72a3c3/remappedSrc/com/avetharun/herbiary/hUtil/alib.java#L208
+     */
+    public static ArrayList<Block> allBlocksInTag(TagKey<Block> tag) {
+        ArrayList<Block> blocks = new ArrayList<>();
+        Optional<RegistryEntryList.Named<Block>> init_BLOCKS = Registries.BLOCK.getEntryList(tag);
+        init_BLOCKS.ifPresent(registryEntries -> registryEntries.forEach(entry -> {
+            blocks.add(entry.value());
+        }));
+        return blocks;
+    }
 }

@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "squashed:compressed_obsidian",
+    "squashed:crammed_obsidian",
+    "squashed:dense_obsidian",
+    "squashed:squashed_obsidian",
+    "minecraft:obsidian"
+  ]
+}
