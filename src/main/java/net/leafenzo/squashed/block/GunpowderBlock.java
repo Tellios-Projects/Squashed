@@ -1,6 +1,6 @@
 package net.leafenzo.squashed.block;
 
-import net.leafenzo.squashed.entity.GunpowderBlockEntity;
+import net.leafenzo.squashed.entity.PrimedGunpowderEntity;
 import net.minecraft.block.*;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.LivingEntity;
@@ -39,10 +39,10 @@ public class GunpowderBlock extends FallingBlock {
         }
 //        TntEntity tntEntity = new TntEntity(world, (double)pos.getX() + 0.5, pos.getY(), (double)pos.getZ() + 0.5, explosion.getCausingEntity());
 
-        GunpowderBlockEntity gunpowderBlockEntity = new GunpowderBlockEntity(world, (double)pos.getX() + 0.5, pos.getY(), (double)pos.getZ() + 0.5, explosion.getCausingEntity());
-        int i = gunpowderBlockEntity.getFuse();
-        gunpowderBlockEntity.setFuse((short)(world.random.nextInt(i / 4) + i / 8));
-        world.spawnEntity(gunpowderBlockEntity);
+        PrimedGunpowderEntity primedGunpowderEntity = new PrimedGunpowderEntity(world, (double)pos.getX() + 0.5, pos.getY(), (double)pos.getZ() + 0.5, explosion.getCausingEntity());
+        int i = primedGunpowderEntity.getFuse();
+        primedGunpowderEntity.setFuse((short)(world.random.nextInt(i / 4) + i / 8));
+        world.spawnEntity(primedGunpowderEntity);
         //explode(world, pos); //TODO make this not crash so easily with large amounts of these
     }
 
@@ -50,8 +50,8 @@ public class GunpowderBlock extends FallingBlock {
         if (world.isClient) {
             return;
         }
-        GunpowderBlockEntity gunpowderBlockEntity = new GunpowderBlockEntity(world, (double)pos.getX() + 0.5, pos.getY(), (double)pos.getZ() + 0.5, igniter);
-        world.spawnEntity(gunpowderBlockEntity);
+        PrimedGunpowderEntity primedGunpowderEntity = new PrimedGunpowderEntity(world, (double)pos.getX() + 0.5, pos.getY(), (double)pos.getZ() + 0.5, igniter);
+        world.spawnEntity(primedGunpowderEntity);
 //        world.playSound(null, pos.getX(), pos.getY(), pos.getZ(), SoundEvents.ENTITY_TNT_PRIMED, SoundCategory.BLOCKS, 1.0f, 1.0f);
 
         world.playSound(null, pos.getX(), pos.getY(), pos.getZ(), SoundEvents.BLOCK_LAVA_EXTINGUISH, SoundCategory.BLOCKS, 0.55f, 2.0f);

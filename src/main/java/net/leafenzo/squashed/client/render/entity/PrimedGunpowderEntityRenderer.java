@@ -3,7 +3,7 @@ package net.leafenzo.squashed.client.render.entity;
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
 import net.leafenzo.squashed.block.ModBlocks;
-import net.leafenzo.squashed.entity.GunpowderBlockEntity;
+import net.leafenzo.squashed.entity.PrimedGunpowderEntity;
 import net.minecraft.client.render.VertexConsumerProvider;
 import net.minecraft.client.render.block.BlockRenderManager;
 import net.minecraft.client.render.entity.EntityRenderer;
@@ -16,20 +16,20 @@ import net.minecraft.util.math.MathHelper;
 import net.minecraft.util.math.RotationAxis;
 
 @Environment(value= EnvType.CLIENT)
-public class GunpowderBlockEntityRenderer extends EntityRenderer<GunpowderBlockEntity> {
+public class PrimedGunpowderEntityRenderer extends EntityRenderer<PrimedGunpowderEntity> {
     private final BlockRenderManager blockRenderManager;
 
-    public GunpowderBlockEntityRenderer(EntityRendererFactory.Context context) {
+    public PrimedGunpowderEntityRenderer(EntityRendererFactory.Context context) {
         super(context);
         this.shadowRadius = 0.5f;
         this.blockRenderManager = context.getBlockRenderManager();
     }
 
     @Override
-    public void render(GunpowderBlockEntity gunpowderBlockEntity, float f, float g, MatrixStack matrixStack, VertexConsumerProvider vertexConsumerProvider, int i) {
+    public void render(PrimedGunpowderEntity primedGunpowderEntity, float f, float g, MatrixStack matrixStack, VertexConsumerProvider vertexConsumerProvider, int i) {
         matrixStack.push();
         matrixStack.translate(0.0f, 0.5f, 0.0f);
-        int j = gunpowderBlockEntity.getFuse();
+        int j = primedGunpowderEntity.getFuse();
         if ((float)j - g + 1.0f < 10.0f) {
             float h = 1.0f - ((float)j - g + 1.0f) / 10.0f;
             h = MathHelper.clamp(h, 0.0f, 1.0f);
@@ -46,11 +46,11 @@ public class GunpowderBlockEntityRenderer extends EntityRenderer<GunpowderBlockE
 //        TntMinecartEntityRenderer.renderFlashingBlock(this.blockRenderManager, ModBlocks.GUNPOWDER_BLOCK.getDefaultState(), matrixStack, vertexConsumerProvider, i, j / flashInterval % 2 == 0);
         TntMinecartEntityRenderer.renderFlashingBlock(this.blockRenderManager, ModBlocks.GUNPOWDER_BLOCK.getDefaultState(), matrixStack, vertexConsumerProvider, i, j < 3);
         matrixStack.pop();
-        super.render(gunpowderBlockEntity, f, g, matrixStack, vertexConsumerProvider, i);
+        super.render(primedGunpowderEntity, f, g, matrixStack, vertexConsumerProvider, i);
     }
 
     @Override
-    public Identifier getTexture(GunpowderBlockEntity entity) {
+    public Identifier getTexture(PrimedGunpowderEntity entity) {
         return SpriteAtlasTexture.BLOCK_ATLAS_TEXTURE;
     }
 }

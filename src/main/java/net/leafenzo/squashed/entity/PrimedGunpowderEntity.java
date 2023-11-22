@@ -8,15 +8,15 @@ import net.minecraft.nbt.NbtCompound;
 import net.minecraft.world.World;
 import org.jetbrains.annotations.Nullable;
 
-public class GunpowderBlockEntity extends Entity implements Ownable {
+public class PrimedGunpowderEntity extends Entity implements Ownable {
     private static final TrackedData<Integer> FUSE;
     private static final int DEFAULT_FUSE = 10;
     @Nullable
     private LivingEntity causingEntity;
-    public GunpowderBlockEntity(EntityType<? extends GunpowderBlockEntity> entityType, World world) {
-        super((EntityType<? extends GunpowderBlockEntity>) entityType, world);
+    public PrimedGunpowderEntity(EntityType<? extends PrimedGunpowderEntity> entityType, World world) {
+        super((EntityType<? extends PrimedGunpowderEntity>) entityType, world);
     }
-    public GunpowderBlockEntity(World world, double x, double y, double z, @Nullable LivingEntity igniter) {
+    public PrimedGunpowderEntity(World world, double x, double y, double z, @Nullable LivingEntity igniter) {
         this(ModEntityTypes.GUNPOWDER_BLOCK_ENTITY, world);
         this.setPosition(x, y, z);
         double d = world.random.nextDouble() * 6.2831854820251465;
@@ -94,6 +94,6 @@ public class GunpowderBlockEntity extends Entity implements Ownable {
     }
 
     static {
-        FUSE = DataTracker.registerData(GunpowderBlockEntity.class, TrackedDataHandlerRegistry.INTEGER);
+        FUSE = DataTracker.registerData(PrimedGunpowderEntity.class, TrackedDataHandlerRegistry.INTEGER);
     }
 }

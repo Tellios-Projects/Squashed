@@ -12,9 +12,9 @@ import net.minecraft.util.Identifier;
 
 
 public class ModEntityTypes {
-    public static final EntityType<GunpowderBlockEntity> GUNPOWDER_BLOCK_ENTITY = Registry.register(
+    public static final EntityType<PrimedGunpowderEntity> GUNPOWDER_BLOCK_ENTITY = Registry.register(
             Registries.ENTITY_TYPE, new Identifier(Super.MOD_ID, "gunpowder_block_entity"),
-            FabricEntityTypeBuilder.<GunpowderBlockEntity>create(SpawnGroup.MISC, GunpowderBlockEntity::new)
+            FabricEntityTypeBuilder.<PrimedGunpowderEntity>create(SpawnGroup.MISC, PrimedGunpowderEntity::new)
                     .dimensions(EntityDimensions.fixed(1.0f, 1.0f))
                     .build()
     );
