@@ -25,9 +25,6 @@ public class ModVillagerTrades {
 
         TradeOfferHelper.registerWanderingTraderOffers(1,
                 factories -> {
-                    //multiple identical experience block trades, otherwise it would be far too rare for someone to ever run into this trade
-                    factories.add(((entity, random) -> new TradeOffer( new ItemStack(Items.EMERALD, 6), new ItemStack(ModBlocks.EXPERIENCE_BLOCK, 1), 16, 5, 0.15f)));
-                    factories.add(((entity, random) -> new TradeOffer( new ItemStack(Items.EMERALD, 6), new ItemStack(ModBlocks.EXPERIENCE_BLOCK, 1), 16, 5, 0.15f)));
                     factories.add(((entity, random) -> new TradeOffer( new ItemStack(Items.EMERALD, 6), new ItemStack(ModBlocks.EXPERIENCE_BLOCK, 1), 16, 5, 0.15f)));
 
                     //six varieties of tropical fish blocks

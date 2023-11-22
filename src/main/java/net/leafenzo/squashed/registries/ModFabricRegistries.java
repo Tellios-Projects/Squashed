@@ -133,7 +133,7 @@ public class ModFabricRegistries {
             registry.add(item, 300);
         }
 
-        registry.add(ModBlocks.CHARCOAL_BLOCK, 800);
+        registry.add(ModBlocks.CHARCOAL_BLOCK, 800);  //THE BELOW NOTES ON TIME ARE FALSE
         // registerCompactedFuels(registry, ModBlocks.COMPACTED_COAL_BLOCKS, 16000); //7200 S (2 hours), 64800 S (18 hours), 583200 S (6.75 days), 5248800 S (60 days) // fabric doesn't allow it :(
                                                         //coal block =  13.33 minutes
         registry.add(ModBlocks.COMPACTED_COAL_BLOCKS[0], 7200); //2 hours
@@ -168,6 +168,7 @@ public class ModFabricRegistries {
         registry.add(ModBlocks.SUGARCANE_BLOCK, 300);
         registry.add(ModBlocks.DEAD_BUSH_BLOCK, 300);
         registry.add(ModBlocks.GRASS_CLIPPINGS_BLOCK, 300);
+        registry.add(ModBlocks.BLAZE_ROD_BLOCK, 21600);
     }
 
     private static void registerCompactedFuels(FuelRegistry registry, ItemConvertible[] compactedItems, int burnTimePerOne) {

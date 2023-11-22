@@ -8,6 +8,7 @@ import net.leafenzo.squashed.util.ModUtil;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.block.TntBlock;
+import net.minecraft.data.server.loottable.BlockLootTableGenerator;
 import net.minecraft.data.server.loottable.vanilla.VanillaBlockLootTableGenerator;
 import net.minecraft.enchantment.Enchantments;
 import net.minecraft.item.ItemConvertible;
@@ -59,6 +60,16 @@ public class ModLootTableGenerator extends FabricBlockLootTableProvider {
         usedBlocks.add(block);
     }
 
+    //GRAAaHH why is this so confusing??
+//    public void addDropWithSilkTouchOrShears(Block block, LootTable.Builder child) {
+//        this.lootTables.put(block.getLootTableId(), dropsWithSilkTouch(block, child));
+//        usedBlocks.add(block);
+//    }
+
+    public LootTable.Builder pinkPetalBlockDrops(Block block, Block drop) {
+        return BlockLootTableGenerator.dropsWithSilkTouchOrShears(block, ((LootPoolEntry.Builder)this.addSurvivesExplosionCondition(block, ItemEntry.builder(drop).apply(SetCountLootFunction.builder(ConstantLootNumberProvider.create(9.0f))))));
+    }
+
     @Override
     public void generate() {
         //Manual
@@ -84,7 +95,8 @@ public class ModLootTableGenerator extends FabricBlockLootTableProvider {
         this.addDrop(ModBlocks.COMPRESSED_TNT, LootTable.builder().pool(this.addSurvivesExplosionCondition(ModBlocks.COMPRESSED_TNT, LootPool.builder().rolls(ConstantLootNumberProvider.create(1.0f)).with((LootPoolEntry.Builder<?>) ItemEntry.builder(ModBlocks.COMPRESSED_TNT).conditionally(BlockStatePropertyLootCondition.builder(ModBlocks.COMPRESSED_TNT).properties(StatePredicate.Builder.create().exactMatch(TntBlock.UNSTABLE, false)))))));
         this.addDrop(ModBlocks.CLAY_BALL_BLOCK, (Block block) -> this.drops((Block)block, Items.CLAY_BALL, UniformLootNumberProvider.create(7.0f, 9.0f)));
         this.addDropWithSilkTouch(ModBlocks.EXPERIENCE_BLOCK);
-        this.addDrop(ModBlocks.PINK_PETAL_BLOCK, (Block block) ->  this.leavesDrops((Block)block, ModBlocks.COMPACTED_NETHERITE_BLOCKS[3], NO_CHANCE_AT_ALL_NOPE));
+        this.addDrop(ModBlocks.PINK_PETAL_BLOCK, (Block block) -> this.pinkPetalBlockDrops(block, Blocks.PINK_PETALS));
+
 
         //Automatic
         for(Identifier id : ModUtil.allBlockIdsInNamespace(Super.MOD_ID)) {
