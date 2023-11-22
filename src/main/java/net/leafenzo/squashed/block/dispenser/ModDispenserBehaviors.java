@@ -12,6 +12,7 @@ public class ModDispenserBehaviors {
         DispenserBlock.registerBehavior(ModBlocks.REDSTONE_DUST_BLOCK, new FallingBlockPlacementDispenserBehavior());
         DispenserBlock.registerBehavior(ModBlocks.GLOWSTONE_DUST_BLOCK, new FallingBlockPlacementDispenserBehavior());
         DispenserBlock.registerBehavior(ModBlocks.GUNPOWDER_BLOCK, new FallingBlockPlacementDispenserBehavior());
+        DispenserBlock.registerBehavior(ModBlocks.EGG_BLOCK, new FallingBlockPlacementDispenserBehavior());
         DispenserBlock.registerBehavior(ModBlocks.COMPRESSED_TNT, new CompressedTntDispenserBehavior());
     }
 }
