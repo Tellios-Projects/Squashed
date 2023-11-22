@@ -33,17 +33,33 @@ public class GunpowderBlock extends FallingBlock {
     }
 
     @Override
+    public void onBlockAdded(BlockState state, World world, BlockPos pos, BlockState oldState, boolean notify) {
+        if (oldState.isOf(state.getBlock())) {
+            return;
+        }
+        if (world.isReceivingRedstonePower(pos)) {
+            this.primeExplosion(world, pos, null);
+            world.removeBlock(pos, false);
+        }
+    }
+
+    @Override
+    public void neighborUpdate(BlockState state, World world, BlockPos pos, Block sourceBlock, BlockPos sourcePos, boolean notify) {
+        if (world.isReceivingRedstonePower(pos)) {
+            this.primeExplosion(world, pos, null);
+            world.removeBlock(pos, false);
+        }
+    }
+
+    @Override
     public void onDestroyedByExplosion(World world, BlockPos pos, Explosion explosion) {
         if (world.isClient) {
             return;
         }
-//        TntEntity tntEntity = new TntEntity(world, (double)pos.getX() + 0.5, pos.getY(), (double)pos.getZ() + 0.5, explosion.getCausingEntity());
-
         PrimedGunpowderEntity primedGunpowderEntity = new PrimedGunpowderEntity(world, (double)pos.getX() + 0.5, pos.getY(), (double)pos.getZ() + 0.5, explosion.getCausingEntity());
         int i = primedGunpowderEntity.getFuse();
         primedGunpowderEntity.setFuse((short)(world.random.nextInt(i / 4) + i / 8));
         world.spawnEntity(primedGunpowderEntity);
-        //explode(world, pos); //TODO make this not crash so easily with large amounts of these
     }
 
     public void primeExplosion(World world, BlockPos pos, @Nullable LivingEntity igniter) {
@@ -52,17 +68,14 @@ public class GunpowderBlock extends FallingBlock {
         }
         PrimedGunpowderEntity primedGunpowderEntity = new PrimedGunpowderEntity(world, (double)pos.getX() + 0.5, pos.getY(), (double)pos.getZ() + 0.5, igniter);
         world.spawnEntity(primedGunpowderEntity);
-//        world.playSound(null, pos.getX(), pos.getY(), pos.getZ(), SoundEvents.ENTITY_TNT_PRIMED, SoundCategory.BLOCKS, 1.0f, 1.0f);
-
         world.playSound(null, pos.getX(), pos.getY(), pos.getZ(), SoundEvents.BLOCK_LAVA_EXTINGUISH, SoundCategory.BLOCKS, 0.55f, 2.0f);
         world.emitGameEvent((Entity)igniter, GameEvent.PRIME_FUSE, pos); // not entirely sure what this is used for, but it might be important so I'm keeping it even if I've changed the sound
-        //explode(world, pos);
     }
 
     @Override
     public void onBreak(World world, BlockPos pos, BlockState state, PlayerEntity player) {
         if (!world.isClient() && !player.isCreative() && state.get(UNSTABLE).booleanValue()) {
-            TntBlock.primeTnt(world, pos);
+            this.primeExplosion(world, pos, null);
         }
         super.onBreak(world, pos, state, player);
     }
