@@ -1,7 +1,7 @@
 {
   "type": "minecraft:crafting_shapeless",
   "category": "misc",
-  "group": "squashed:Block{minecraft:calcite}_reverse",
+  "group": "squashed:calcite_reverse",
   "ingredients": [
     {
       "item": "squashed:dense_calcite"

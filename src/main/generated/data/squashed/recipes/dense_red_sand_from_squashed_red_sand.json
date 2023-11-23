@@ -1,7 +1,7 @@
 {
   "type": "minecraft:crafting_shapeless",
   "category": "misc",
-  "group": "squashed:Block{minecraft:red_sand}_reverse",
+  "group": "squashed:red_sand_reverse",
   "ingredients": [
     {
       "item": "squashed:squashed_red_sand"

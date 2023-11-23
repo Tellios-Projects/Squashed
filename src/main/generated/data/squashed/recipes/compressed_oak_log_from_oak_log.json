@@ -1,7 +1,7 @@
 {
   "type": "minecraft:crafting_shaped",
   "category": "building",
-  "group": "squashed:Block{minecraft:oak_log}",
+  "group": "squashed:oak_log",
   "key": {
     "#": {
       "item": "minecraft:oak_log"

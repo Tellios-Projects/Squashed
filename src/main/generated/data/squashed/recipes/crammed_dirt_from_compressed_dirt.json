@@ -1,7 +1,7 @@
 {
   "type": "minecraft:crafting_shaped",
   "category": "building",
-  "group": "squashed:Block{minecraft:dirt}",
+  "group": "squashed:dirt",
   "key": {
     "#": {
       "item": "squashed:compressed_dirt"

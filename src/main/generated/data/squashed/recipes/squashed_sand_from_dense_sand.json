@@ -1,7 +1,7 @@
 {
   "type": "minecraft:crafting_shaped",
   "category": "building",
-  "group": "squashed:Block{minecraft:sand}",
+  "group": "squashed:sand",
   "key": {
     "#": {
       "item": "squashed:dense_sand"

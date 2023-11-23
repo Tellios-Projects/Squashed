@@ -1,7 +1,7 @@
 {
   "type": "minecraft:crafting_shapeless",
   "category": "misc",
-  "group": "squashed:Block{minecraft:crimson_stem}_reverse",
+  "group": "squashed:crimson_stem_reverse",
   "ingredients": [
     {
       "item": "squashed:dense_crimson_stem"

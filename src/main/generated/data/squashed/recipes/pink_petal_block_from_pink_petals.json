@@ -1,7 +1,7 @@
 {
   "type": "minecraft:crafting_shaped",
   "category": "building",
-  "group": "squashed:Block{minecraft:pink_petals}",
+  "group": "squashed:pink_petals",
   "key": {
     "#": {
       "item": "minecraft:pink_petals"

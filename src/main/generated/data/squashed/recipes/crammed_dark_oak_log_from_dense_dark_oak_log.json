@@ -1,7 +1,7 @@
 {
   "type": "minecraft:crafting_shapeless",
   "category": "misc",
-  "group": "squashed:Block{minecraft:dark_oak_log}_reverse",
+  "group": "squashed:dark_oak_log_reverse",
   "ingredients": [
     {
       "item": "squashed:dense_dark_oak_log"

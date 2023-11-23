@@ -1,7 +1,7 @@
 {
   "type": "minecraft:crafting_shaped",
   "category": "building",
-  "group": "squashed:Block{minecraft:diorite}",
+  "group": "squashed:diorite",
   "key": {
     "#": {
       "item": "minecraft:diorite"

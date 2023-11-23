@@ -1,7 +1,7 @@
 {
   "type": "minecraft:crafting_shapeless",
   "category": "misc",
-  "group": "squashed:Block{minecraft:diamond_block}_reverse",
+  "group": "squashed:diamond_block_reverse",
   "ingredients": [
     {
       "item": "squashed:compressed_diamond_block"

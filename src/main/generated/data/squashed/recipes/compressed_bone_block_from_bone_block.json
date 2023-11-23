@@ -1,7 +1,7 @@
 {
   "type": "minecraft:crafting_shaped",
   "category": "building",
-  "group": "squashed:Block{minecraft:bone_block}",
+  "group": "squashed:bone_block",
   "key": {
     "#": {
       "item": "minecraft:bone_block"

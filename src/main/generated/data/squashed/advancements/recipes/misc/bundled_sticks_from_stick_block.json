@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_stick": {
+    "has_stick_block": {
       "conditions": {
         "items": [
           {
             "items": [
-              "minecraft:stick"
+              "squashed:stick_block"
             ]
           }
         ]
@@ -15,20 +15,20 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:stick_block_from_stick"
+        "recipe": "minecraft:bundled_sticks_from_stick_block"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
   },
   "requirements": [
     [
-      "has_stick",
+      "has_stick_block",
       "has_the_recipe"
     ]
   ],
   "rewards": {
     "recipes": [
-      "minecraft:stick_block_from_stick"
+      "minecraft:bundled_sticks_from_stick_block"
     ]
   },
   "sends_telemetry_event": false

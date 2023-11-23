@@ -1,14 +1,14 @@
 {
   "type": "minecraft:crafting_shapeless",
   "category": "misc",
-  "group": "squashed:stick_reverse",
+  "group": "squashed:bundled_sticks_reverse",
   "ingredients": [
     {
       "item": "squashed:stick_block"
     }
   ],
   "result": {
-    "count": 9,
-    "item": "minecraft:stick"
+    "count": 4,
+    "item": "squashed:bundled_sticks"
   }
 }

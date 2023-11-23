@@ -1,7 +1,7 @@
 {
   "type": "minecraft:crafting_shapeless",
   "category": "misc",
-  "group": "squashed:Block{minecraft:raw_iron_block}_reverse",
+  "group": "squashed:raw_iron_block_reverse",
   "ingredients": [
     {
       "item": "squashed:dense_raw_iron_block"

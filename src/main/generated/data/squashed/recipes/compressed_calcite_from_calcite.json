@@ -1,7 +1,7 @@
 {
   "type": "minecraft:crafting_shaped",
   "category": "building",
-  "group": "squashed:Block{minecraft:calcite}",
+  "group": "squashed:calcite",
   "key": {
     "#": {
       "item": "minecraft:calcite"

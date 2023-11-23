@@ -1,7 +1,7 @@
 {
   "type": "minecraft:crafting_shaped",
   "category": "building",
-  "group": "squashed:Block{minecraft:spruce_log}",
+  "group": "squashed:spruce_log",
   "key": {
     "#": {
       "item": "squashed:crammed_spruce_log"

@@ -1,7 +1,7 @@
 {
   "type": "minecraft:crafting_shapeless",
   "category": "misc",
-  "group": "squashed:Block{minecraft:glowstone}_reverse",
+  "group": "squashed:glowstone_reverse",
   "ingredients": [
     {
       "item": "squashed:compressed_glowstone"

@@ -1,7 +1,7 @@
 {
   "type": "minecraft:crafting_shaped",
   "category": "building",
-  "group": "squashed:Block{minecraft:coal_block}",
+  "group": "squashed:coal_block",
   "key": {
     "#": {
       "item": "squashed:compressed_coal_block"

@@ -1,7 +1,7 @@
 {
   "type": "minecraft:crafting_shapeless",
   "category": "misc",
-  "group": "squashed:Block{minecraft:jungle_log}_reverse",
+  "group": "squashed:jungle_log_reverse",
   "ingredients": [
     {
       "item": "squashed:crammed_jungle_log"

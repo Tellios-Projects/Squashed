@@ -1,7 +1,7 @@
 {
   "type": "minecraft:crafting_shapeless",
   "category": "misc",
-  "group": "squashed:Block{minecraft:blackstone}_reverse",
+  "group": "squashed:blackstone_reverse",
   "ingredients": [
     {
       "item": "squashed:compressed_blackstone"

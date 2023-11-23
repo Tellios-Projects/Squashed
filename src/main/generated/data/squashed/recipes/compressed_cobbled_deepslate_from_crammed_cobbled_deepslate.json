@@ -1,7 +1,7 @@
 {
   "type": "minecraft:crafting_shapeless",
   "category": "misc",
-  "group": "squashed:Block{minecraft:cobbled_deepslate}_reverse",
+  "group": "squashed:cobbled_deepslate_reverse",
   "ingredients": [
     {
       "item": "squashed:crammed_cobbled_deepslate"

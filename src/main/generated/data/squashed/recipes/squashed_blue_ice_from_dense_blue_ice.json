@@ -1,7 +1,7 @@
 {
   "type": "minecraft:crafting_shaped",
   "category": "building",
-  "group": "squashed:Block{minecraft:blue_ice}",
+  "group": "squashed:blue_ice",
   "key": {
     "#": {
       "item": "squashed:dense_blue_ice"

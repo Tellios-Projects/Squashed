@@ -7,7 +7,7 @@ package net.leafenzo.squashed.mixin;
 
 import com.llamalad7.mixinextras.injector.wrapoperation.Operation;
 import com.llamalad7.mixinextras.injector.wrapoperation.WrapOperation;
-import net.leafenzo.squashed.registry.tag.ModBlockTags;
+import net.leafenzo.squashed.registry.tag.ModTags;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.world.dimension.NetherPortal;
@@ -24,7 +24,7 @@ public class NetherPortalMixin {
             )
     )
     private static boolean isOf(BlockState state, Block block, Operation<Boolean> original) {
-        return original.call(state, block) || state.isIn(ModBlockTags.NETHER_PORTAL_FRAME);
+        return original.call(state, block) || state.isIn(ModTags.Blocks.NETHER_PORTAL_FRAME);
     }
 
 

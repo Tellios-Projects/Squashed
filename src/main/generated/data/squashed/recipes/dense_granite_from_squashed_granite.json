@@ -1,7 +1,7 @@
 {
   "type": "minecraft:crafting_shapeless",
   "category": "misc",
-  "group": "squashed:Block{minecraft:granite}_reverse",
+  "group": "squashed:granite_reverse",
   "ingredients": [
     {
       "item": "squashed:squashed_granite"

@@ -1,7 +1,7 @@
 {
   "type": "minecraft:crafting_shapeless",
   "category": "misc",
-  "group": "squashed:Block{minecraft:soul_soil}_reverse",
+  "group": "squashed:soul_soil_reverse",
   "ingredients": [
     {
       "item": "squashed:squashed_soul_soil"

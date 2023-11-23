@@ -1,7 +1,7 @@
 {
   "type": "minecraft:crafting_shaped",
   "category": "building",
-  "group": "squashed:Block{minecraft:mangrove_log}",
+  "group": "squashed:mangrove_log",
   "key": {
     "#": {
       "item": "squashed:compressed_mangrove_log"

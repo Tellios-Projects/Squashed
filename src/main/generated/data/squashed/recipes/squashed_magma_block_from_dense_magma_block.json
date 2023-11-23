@@ -1,7 +1,7 @@
 {
   "type": "minecraft:crafting_shaped",
   "category": "building",
-  "group": "squashed:Block{minecraft:magma_block}",
+  "group": "squashed:magma_block",
   "key": {
     "#": {
       "item": "squashed:dense_magma_block"

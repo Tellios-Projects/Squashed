@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_compressed_honeycomb_block": {
+    "has_grass_clippings_block": {
       "conditions": {
         "items": [
           {
             "items": [
-              "squashed:compressed_honeycomb_block"
+              "squashed:grass_clippings_block"
             ]
           }
         ]
@@ -15,20 +15,20 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:honeycomb_block_from_compressed_honeycomb_block"
+        "recipe": "minecraft:grass_from_grass_clippings_block"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
   },
   "requirements": [
     [
-      "has_compressed_honeycomb_block",
+      "has_grass_clippings_block",
       "has_the_recipe"
     ]
   ],
   "rewards": {
     "recipes": [
-      "minecraft:honeycomb_block_from_compressed_honeycomb_block"
+      "minecraft:grass_from_grass_clippings_block"
     ]
   },
   "sends_telemetry_event": false

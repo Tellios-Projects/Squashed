@@ -1,7 +1,7 @@
 {
   "type": "minecraft:crafting_shapeless",
   "category": "misc",
-  "group": "squashed:Block{minecraft:clay}_reverse",
+  "group": "squashed:clay_reverse",
   "ingredients": [
     {
       "item": "squashed:squashed_clay"

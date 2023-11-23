@@ -1,7 +1,7 @@
 {
   "type": "minecraft:crafting_shaped",
   "category": "building",
-  "group": "squashed:Block{minecraft:raw_iron_block}",
+  "group": "squashed:raw_iron_block",
   "key": {
     "#": {
       "item": "minecraft:raw_iron_block"

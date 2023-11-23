@@ -1,7 +1,7 @@
 {
   "type": "minecraft:crafting_shapeless",
   "category": "misc",
-  "group": "squashed:Block{minecraft:raw_copper_block}_reverse",
+  "group": "squashed:raw_copper_block_reverse",
   "ingredients": [
     {
       "item": "squashed:compressed_raw_copper_block"

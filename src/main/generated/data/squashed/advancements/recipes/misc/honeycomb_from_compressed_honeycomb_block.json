@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_honeycomb_block": {
+    "has_compressed_honeycomb_block": {
       "conditions": {
         "items": [
           {
             "items": [
-              "minecraft:honeycomb_block"
+              "squashed:compressed_honeycomb_block"
             ]
           }
         ]
@@ -15,20 +15,20 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:compressed_honeycomb_block_from_honeycomb_block"
+        "recipe": "minecraft:honeycomb_from_compressed_honeycomb_block"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
   },
   "requirements": [
     [
-      "has_honeycomb_block",
+      "has_compressed_honeycomb_block",
       "has_the_recipe"
     ]
   ],
   "rewards": {
     "recipes": [
-      "minecraft:compressed_honeycomb_block_from_honeycomb_block"
+      "minecraft:honeycomb_from_compressed_honeycomb_block"
     ]
   },
   "sends_telemetry_event": false

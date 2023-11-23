@@ -3,7 +3,7 @@ package net.leafenzo.squashed.datageneration;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
 import net.leafenzo.squashed.block.ModBlocks;
-import net.leafenzo.squashed.registry.tag.ModBlockTags;
+import net.leafenzo.squashed.registry.tag.ModTags;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.registry.Registries;
@@ -31,8 +31,8 @@ public class ModBlockTagGenerator extends FabricTagProvider<Block> {
 
     @Override
     protected void configure(RegistryWrapper.WrapperLookup arg) {
-        getOrCreateTagBuilder(ModBlockTags.ANY_MINABLE);
-        getOrCreateTagBuilder(ModBlockTags.CAT_PLAYS_WITH);
+        getOrCreateTagBuilder(ModTags.Blocks.ANY_MINABLE);
+        getOrCreateTagBuilder(ModTags.Blocks.CAT_PLAYS_WITH);
 
         for(Block block : ModBlocks.COMPACTED_SOUL_SAND) {
             getOrCreateTagBuilder(BlockTags.WITHER_SUMMON_BASE_BLOCKS).add(block);
@@ -83,7 +83,7 @@ public class ModBlockTagGenerator extends FabricTagProvider<Block> {
             getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE).add(block);
             getOrCreateTagBuilder(BlockTags.NEEDS_DIAMOND_TOOL).add(block);
             getOrCreateTagBuilder(BlockTags.WITHER_IMMUNE).add(block);
-            getOrCreateTagBuilder(ModBlockTags.NETHER_PORTAL_FRAME).add(block);
+            getOrCreateTagBuilder(ModTags.Blocks.NETHER_PORTAL_FRAME).add(block);
         }
         for(Block block : ModBlocks.COMPACTED_DEEPSLATE) {
             getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE).add(block);
@@ -164,7 +164,7 @@ public class ModBlockTagGenerator extends FabricTagProvider<Block> {
         }
         for(Block block : ModBlocks.COMPACTED_PRISMARINE) {
             getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE).add(block);
-            getOrCreateTagBuilder(ModBlockTags.CONDUIT_FRAME).add(block);
+            getOrCreateTagBuilder(ModTags.Blocks.CONDUIT_FRAME).add(block);
         }
         for(Block block : ModBlocks.COMPACTED_BLUE_ICE) {
             getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE).add(block);
@@ -282,7 +282,7 @@ public class ModBlockTagGenerator extends FabricTagProvider<Block> {
     }
     for(Block block : ModBlocks.ALL_COMPACTED_WOOL_BLOCKS) {
         getOrCreateTagBuilder(BlockTags.WOOL).add(block);
-        getOrCreateTagBuilder(ModBlockTags.CAT_PLAYS_WITH).add(block);
+        getOrCreateTagBuilder(ModTags.Blocks.CAT_PLAYS_WITH).add(block);
     }
 
     for(Block block : ModBlocks.TROPICAL_FISH_BLOCKS) {
@@ -293,7 +293,7 @@ public class ModBlockTagGenerator extends FabricTagProvider<Block> {
         getOrCreateTagBuilder(BlockTags.SHOVEL_MINEABLE).add(block);
     }
         getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE)
-                .addTag(ModBlockTags.ANY_MINABLE)
+                .addTag(ModTags.Blocks.ANY_MINABLE)
 //             .add(ModBlocks.COMPRESSED_COPPER_BLOCK) // covered by compressed copper blocks
                 .add(ModBlocks.EXPOSED_COMPRESSED_COPPER_BLOCK)
                 .add(ModBlocks.WEATHERED_COMPRESSED_COPPER_BLOCK)
@@ -333,7 +333,7 @@ public class ModBlockTagGenerator extends FabricTagProvider<Block> {
         ;
 
         getOrCreateTagBuilder(BlockTags.AXE_MINEABLE)
-                .addTag(ModBlockTags.ANY_MINABLE)
+                .addTag(ModTags.Blocks.ANY_MINABLE)
                 .add(ModBlocks.RAW_SALMON_BLOCK)
                 .add(ModBlocks.COOKED_SALMON_BLOCK)
                 .add(ModBlocks.RAW_COD_BLOCK)
@@ -376,7 +376,7 @@ public class ModBlockTagGenerator extends FabricTagProvider<Block> {
         ;
 
         getOrCreateTagBuilder(BlockTags.HOE_MINEABLE)
-                .addTag(ModBlockTags.ANY_MINABLE)
+                .addTag(ModTags.Blocks.ANY_MINABLE)
                 .add(ModBlocks.CARROT_BLOCK)
                 .add(ModBlocks.APPLE_BLOCK)
                 .add(ModBlocks.POTATO_BLOCK)
@@ -387,7 +387,7 @@ public class ModBlockTagGenerator extends FabricTagProvider<Block> {
         ;
 
         getOrCreateTagBuilder(BlockTags.SHOVEL_MINEABLE)
-                .addTag(ModBlockTags.ANY_MINABLE)
+                .addTag(ModTags.Blocks.ANY_MINABLE)
                 .add(ModBlocks.BLAZE_POWDER_BLOCK)
                 .add(ModBlocks.WHEAT_SEED_BLOCK)
                 .add(ModBlocks.PUMPKIN_SEED_BLOCK)
@@ -492,7 +492,7 @@ public class ModBlockTagGenerator extends FabricTagProvider<Block> {
                 .add(ModBlocks.LILY_PAD_BLOCK);
 
 
-        getOrCreateTagBuilder(ModBlockTags.CAT_PLAYS_WITH)
+        getOrCreateTagBuilder(ModTags.Blocks.CAT_PLAYS_WITH)
                 .add(ModBlocks.STRING_BLOCK);
 
         getOrCreateTagBuilder(BlockTags.WOOL)
@@ -527,9 +527,10 @@ public class ModBlockTagGenerator extends FabricTagProvider<Block> {
                 .add(ModBlocks.NETHERITE_SCRAP_BLOCK);
 
 
+        getOrCreateTagBuilder(ModTags.Blocks.NETHER_PORTAL_FRAME)
+                .add(Blocks.OBSIDIAN)
+        ;
 
-        getOrCreateTagBuilder(ModBlockTags.NETHER_PORTAL_FRAME)
-                .add(Blocks.OBSIDIAN);
     }
 }
 

@@ -1,7 +1,7 @@
 {
   "type": "minecraft:crafting_shapeless",
   "category": "misc",
-  "group": "squashed:Block{minecraft:mangrove_log}_reverse",
+  "group": "squashed:mangrove_log_reverse",
   "ingredients": [
     {
       "item": "squashed:compressed_mangrove_log"

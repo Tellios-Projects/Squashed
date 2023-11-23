@@ -1,13 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_stick_block": {
+    "has_grass": {
       "conditions": {
         "items": [
           {
-            "items": [
-              "squashed:stick_block"
-            ]
+            "tag": "c:grass"
           }
         ]
       },
@@ -15,20 +13,20 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:stick_from_stick_block"
+        "recipe": "minecraft:grass_clippings_block_from_grass"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
   },
   "requirements": [
     [
-      "has_stick_block",
+      "has_grass",
       "has_the_recipe"
     ]
   ],
   "rewards": {
     "recipes": [
-      "minecraft:stick_from_stick_block"
+      "minecraft:grass_clippings_block_from_grass"
     ]
   },
   "sends_telemetry_event": false

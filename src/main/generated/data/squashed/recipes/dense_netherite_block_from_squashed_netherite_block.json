@@ -1,7 +1,7 @@
 {
   "type": "minecraft:crafting_shapeless",
   "category": "misc",
-  "group": "squashed:Block{minecraft:netherite_block}_reverse",
+  "group": "squashed:netherite_block_reverse",
   "ingredients": [
     {
       "item": "squashed:squashed_netherite_block"

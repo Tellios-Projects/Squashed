@@ -1,7 +1,7 @@
 {
   "type": "minecraft:crafting_shapeless",
   "category": "misc",
-  "group": "squashed:Block{minecraft:tuff}_reverse",
+  "group": "squashed:tuff_reverse",
   "ingredients": [
     {
       "item": "squashed:dense_tuff"

@@ -1,7 +1,7 @@
 {
   "type": "minecraft:crafting_shapeless",
   "category": "misc",
-  "group": "squashed:Block{minecraft:sculk}_reverse",
+  "group": "squashed:sculk_reverse",
   "ingredients": [
     {
       "item": "squashed:squashed_sculk"

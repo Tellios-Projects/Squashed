@@ -1,7 +1,7 @@
 {
   "type": "minecraft:crafting_shapeless",
   "category": "misc",
-  "group": "squashed:Block{minecraft:snow_block}_reverse",
+  "group": "squashed:snow_block_reverse",
   "ingredients": [
     {
       "item": "squashed:dense_snow_block"

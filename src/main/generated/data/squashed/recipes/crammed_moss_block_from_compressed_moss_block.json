@@ -1,7 +1,7 @@
 {
   "type": "minecraft:crafting_shaped",
   "category": "building",
-  "group": "squashed:Block{minecraft:moss_block}",
+  "group": "squashed:moss_block",
   "key": {
     "#": {
       "item": "squashed:compressed_moss_block"

@@ -1,7 +1,7 @@
 {
   "type": "minecraft:crafting_shapeless",
   "category": "misc",
-  "group": "squashed:Block{minecraft:dirt}_reverse",
+  "group": "squashed:dirt_reverse",
   "ingredients": [
     {
       "item": "squashed:compressed_dirt"

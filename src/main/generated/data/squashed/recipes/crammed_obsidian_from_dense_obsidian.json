@@ -1,7 +1,7 @@
 {
   "type": "minecraft:crafting_shapeless",
   "category": "misc",
-  "group": "squashed:Block{minecraft:obsidian}_reverse",
+  "group": "squashed:obsidian_reverse",
   "ingredients": [
     {
       "item": "squashed:dense_obsidian"

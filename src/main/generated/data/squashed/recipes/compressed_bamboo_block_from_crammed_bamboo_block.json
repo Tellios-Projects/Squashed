@@ -1,7 +1,7 @@
 {
   "type": "minecraft:crafting_shapeless",
   "category": "misc",
-  "group": "squashed:Block{minecraft:bamboo_block}_reverse",
+  "group": "squashed:bamboo_block_reverse",
   "ingredients": [
     {
       "item": "squashed:crammed_bamboo_block"

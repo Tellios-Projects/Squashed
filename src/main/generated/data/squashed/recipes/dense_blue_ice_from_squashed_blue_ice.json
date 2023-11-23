@@ -1,7 +1,7 @@
 {
   "type": "minecraft:crafting_shapeless",
   "category": "misc",
-  "group": "squashed:Block{minecraft:blue_ice}_reverse",
+  "group": "squashed:blue_ice_reverse",
   "ingredients": [
     {
       "item": "squashed:squashed_blue_ice"

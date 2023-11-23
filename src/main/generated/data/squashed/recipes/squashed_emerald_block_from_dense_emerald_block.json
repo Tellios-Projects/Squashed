@@ -1,7 +1,7 @@
 {
   "type": "minecraft:crafting_shaped",
   "category": "building",
-  "group": "squashed:Block{minecraft:emerald_block}",
+  "group": "squashed:emerald_block",
   "key": {
     "#": {
       "item": "squashed:dense_emerald_block"

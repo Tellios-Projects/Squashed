@@ -1,7 +1,7 @@
 {
   "type": "minecraft:crafting_shaped",
   "category": "building",
-  "group": "squashed:Block{minecraft:snow_block}",
+  "group": "squashed:snow_block",
   "key": {
     "#": {
       "item": "minecraft:snow_block"

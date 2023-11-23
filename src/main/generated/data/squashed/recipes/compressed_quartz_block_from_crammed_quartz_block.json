@@ -1,7 +1,7 @@
 {
   "type": "minecraft:crafting_shapeless",
   "category": "misc",
-  "group": "squashed:Block{minecraft:quartz_block}_reverse",
+  "group": "squashed:quartz_block_reverse",
   "ingredients": [
     {
       "item": "squashed:crammed_quartz_block"

@@ -1,7 +1,7 @@
 {
   "type": "minecraft:crafting_shapeless",
   "category": "misc",
-  "group": "squashed:Block{minecraft:birch_log}_reverse",
+  "group": "squashed:birch_log_reverse",
   "ingredients": [
     {
       "item": "squashed:dense_birch_log"

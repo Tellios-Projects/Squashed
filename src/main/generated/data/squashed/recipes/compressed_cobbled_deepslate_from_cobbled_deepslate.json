@@ -1,7 +1,7 @@
 {
   "type": "minecraft:crafting_shaped",
   "category": "building",
-  "group": "squashed:Block{minecraft:cobbled_deepslate}",
+  "group": "squashed:cobbled_deepslate",
   "key": {
     "#": {
       "item": "minecraft:cobbled_deepslate"

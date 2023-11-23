@@ -1,7 +1,7 @@
 {
   "type": "minecraft:crafting_shapeless",
   "category": "misc",
-  "group": "squashed:Block{minecraft:end_stone}_reverse",
+  "group": "squashed:end_stone_reverse",
   "ingredients": [
     {
       "item": "squashed:crammed_end_stone"

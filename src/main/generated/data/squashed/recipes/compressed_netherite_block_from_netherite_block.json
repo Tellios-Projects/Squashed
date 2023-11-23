@@ -1,7 +1,7 @@
 {
   "type": "minecraft:crafting_shaped",
   "category": "building",
-  "group": "squashed:Block{minecraft:netherite_block}",
+  "group": "squashed:netherite_block",
   "key": {
     "#": {
       "item": "minecraft:netherite_block"

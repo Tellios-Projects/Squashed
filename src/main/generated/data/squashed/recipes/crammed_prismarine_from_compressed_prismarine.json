@@ -1,7 +1,7 @@
 {
   "type": "minecraft:crafting_shaped",
   "category": "building",
-  "group": "squashed:Block{minecraft:prismarine}",
+  "group": "squashed:prismarine",
   "key": {
     "#": {
       "item": "squashed:compressed_prismarine"
