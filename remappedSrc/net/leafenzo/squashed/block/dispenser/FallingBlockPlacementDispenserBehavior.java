@@ -22,13 +22,13 @@ public class FallingBlockPlacementDispenserBehavior
         this.setSuccess(false);
         Item item = stack.getItem();
         if (item instanceof BlockItem) {
-            Direction direction = pointer.state().get(DispenserBlock.FACING);
+            Direction direction = pointer.getBlockState().get(DispenserBlock.FACING);
             if(direction == Direction.UP) { return stack; } // Don't place block if we are facing straight up
 
-            BlockPos blockPos = pointer.pos().offset(direction);
-            Direction direction2 = pointer.world().isAir(blockPos.down()) ? direction : Direction.UP;
+            BlockPos blockPos = pointer.getPos().offset(direction);
+            Direction direction2 = pointer.getWorld().isAir(blockPos.down()) ? direction : Direction.UP;
             try {
-                this.setSuccess(((BlockItem)item).place(new AutomaticItemPlacementContext((World)pointer.world(), blockPos, direction, stack, direction2)).isAccepted());
+                this.setSuccess(((BlockItem)item).place(new AutomaticItemPlacementContext((World)pointer.getWorld(), blockPos, direction, stack, direction2)).isAccepted());
             } catch (Exception exception) {
                 LOGGER.error("Error trying to place block at {}", (Object)blockPos, (Object)exception); //literally copied this over just
             }

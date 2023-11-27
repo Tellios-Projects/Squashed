@@ -17,9 +17,9 @@ import net.minecraft.world.event.GameEvent;
 public class CompressedTntDispenserBehavior extends ItemDispenserBehavior {
     @Override
     protected ItemStack dispenseSilently(BlockPointer pointer, ItemStack stack) {
-        ServerWorld world = pointer.world();
-        BlockPos pos = pointer.pos().offset(pointer.state().get(DispenserBlock.FACING));
-        Direction direction = pointer.state().get(DispenserBlock.FACING);
+        ServerWorld world = pointer.getWorld();
+        BlockPos pos = pointer.getPos().offset(pointer.getBlockState().get(DispenserBlock.FACING));
+        Direction direction = pointer.getBlockState().get(DispenserBlock.FACING);
 
         Random random = world.random;
 

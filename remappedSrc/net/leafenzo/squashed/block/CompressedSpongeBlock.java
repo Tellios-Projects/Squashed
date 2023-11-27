@@ -84,7 +84,7 @@ public class CompressedSpongeBlock extends Block {
                 return false;
             }
             Block block = blockState.getBlock();
-            if (block instanceof FluidDrainable && !(fluidDrainable = (FluidDrainable)((Object)block)).tryDrainFluid(null, world, (BlockPos)currentPos, blockState).isEmpty()) {
+            if (block instanceof FluidDrainable && !(fluidDrainable = (FluidDrainable)((Object)block)).tryDrainFluid(world, (BlockPos)currentPos, blockState).isEmpty()) {
                 return true;
             }
             if (blockState.getBlock() instanceof FluidBlock) {
