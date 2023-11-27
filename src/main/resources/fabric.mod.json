@@ -6,15 +6,15 @@
   "name": "Squashed",
   "description": "",
   "authors": [
-    "Leah (@leafenzio), Tellio (@tellioaridoitsu), Merp (@I_Am_Merp)"
+    "Leah (@leafenzio), Tellio (@tellioaridoitsu), Merp (@I_Am_Merp), Zucchini (@zucchinibyday)"
   ],
   "contact": {
-    "homepage": "",
+    "homepage": "https://modrinth.com/mod/squashed",
     "sources": "https://github.com/Leafenzo/Squashed"
   },
 
   "license": "MIT License",
-  "icon": "assets/modid/icon.png",
+  "icon": "assets/squashed/icon.png",
 
   "environment": "*",
   "entrypoints": {
