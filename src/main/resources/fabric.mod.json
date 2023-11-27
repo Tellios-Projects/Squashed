@@ -10,10 +10,11 @@
   ],
   "contact": {
     "homepage": "https://modrinth.com/mod/squashed",
-    "sources": "https://github.com/Leafenzo/Squashed"
+    "sources": "https://github.com/Leafenzo/Squashed",
+    "issues": "https://github.com/Tellios-Projects/Squashed/issues"
   },
 
-  "license": "MIT License",
+  "license": "MIT",
   "icon": "assets/squashed/icon.png",
 
   "environment": "*",
