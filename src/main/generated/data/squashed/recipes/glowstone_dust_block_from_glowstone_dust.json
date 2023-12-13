@@ -8,8 +8,9 @@
     }
   },
   "pattern": [
-    "##",
-    "##"
+    "###",
+    "###",
+    "###"
   ],
   "result": {
     "item": "squashed:glowstone_dust_block"
