@@ -436,7 +436,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         offerNamingSafeReversibleCompactingRecipes(exporter, RecipeCategory.MISC, ModBlocks.GLISTERING_MELON_BLOCK, RecipeCategory.BUILDING_BLOCKS, ModBlocks.COMPRESSED_GLISTERING_MELON_BLOCK);
         offerNamingSafeReversibleCompactingRecipes(exporter, RecipeCategory.MISC, Items.STRING, RecipeCategory.BUILDING_BLOCKS, ModBlocks.STRING_BLOCK);
         offerNamingSafeReversibleCompactingRecipes(exporter, RecipeCategory.MISC, Blocks.TNT, RecipeCategory.BUILDING_BLOCKS, ModBlocks.COMPRESSED_TNT);
-        offerReversible2x2CompactingRecipes(exporter, RecipeCategory.MISC, Items.GLOWSTONE_DUST, RecipeCategory.MISC, ModBlocks.GLOWSTONE_DUST_BLOCK);
+        offerNamingSafeReversibleCompactingRecipes(exporter, RecipeCategory.MISC, Items.GLOWSTONE_DUST, RecipeCategory.MISC, ModBlocks.GLOWSTONE_DUST_BLOCK);
         offerReversible2x2CompactingRecipes(exporter, RecipeCategory.MISC, Items.REDSTONE, RecipeCategory.MISC, ModBlocks.REDSTONE_DUST_BLOCK);
         offerNamingSafeReversibleCompactingRecipes(exporter, RecipeCategory.MISC, Blocks.SHROOMLIGHT, RecipeCategory.BUILDING_BLOCKS, ModBlocks.COMPRESSED_SHROOMLIGHT);
         offerNamingSafeReversibleCompactingRecipes(exporter, RecipeCategory.MISC, Blocks.HONEY_BLOCK, RecipeCategory.BUILDING_BLOCKS, ModBlocks.COMPRESSED_HONEY_BLOCK);
