@@ -15,7 +15,6 @@ import net.minecraft.data.server.recipe.ShapelessRecipeJsonBuilder;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemConvertible;
 import net.minecraft.item.Items;
-import net.minecraft.recipe.Ingredient;
 import net.minecraft.recipe.book.RecipeCategory;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.tag.TagKey;
@@ -251,7 +250,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         offerNamingSafeReversibleCompactingRecipes(exporter, Blocks.ACACIA_LOG, ModBlocks.COMPACTED_ACACIA_LOGS);
         offerNamingSafeReversibleCompactingRecipes(exporter, Blocks.DARK_OAK_LOG, ModBlocks.COMPACTED_DARK_OAK_LOGS);
         offerNamingSafeReversibleCompactingRecipes(exporter, Blocks.MANGROVE_LOG, ModBlocks.COMPACTED_MANGROVE_LOGS);
-        offerNamingSafeReversibleCompactingRecipes(exporter, Blocks.CHERRY_LOG, ModBlocks.COMPACTED_CHERRY_LOGS);
+//        offerNamingSafeReversibleCompactingRecipes(exporter, Blocks.CHERRY_LOG, ModBlocks.COMPACTED_CHERRY_LOGS);
         offerNamingSafeReversibleCompactingRecipes(exporter, Blocks.CRIMSON_STEM, ModBlocks.COMPACTED_CRIMSON_STEMS);
         offerNamingSafeReversibleCompactingRecipes(exporter, Blocks.WARPED_STEM, ModBlocks.COMPACTED_WARPED_STEMS);
         offerNamingSafeReversibleCompactingRecipes(exporter, Blocks.BAMBOO_BLOCK, ModBlocks.COMPACTED_BAMBOO_BLOCKS);
@@ -328,7 +327,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         offerReversible2x2CompactingRecipes(exporter, RecipeCategory.MISC, Items.MANGROVE_PROPAGULE, RecipeCategory.BUILDING_BLOCKS, ModBlocks.COMPRESSED_MANGROVE_PROPAGULE);
         offerReversible2x2CompactingRecipes(exporter, RecipeCategory.MISC, Items.CRIMSON_FUNGUS, RecipeCategory.BUILDING_BLOCKS, ModBlocks.COMPRESSED_CRIMSON_FUNGUS);
         offerReversible2x2CompactingRecipes(exporter, RecipeCategory.MISC, Items.WARPED_FUNGUS, RecipeCategory.BUILDING_BLOCKS, ModBlocks.COMPRESSED_WARPED_FUNGUS);
-        offerReversible2x2CompactingRecipes(exporter, RecipeCategory.MISC, Items.CHERRY_SAPLING, RecipeCategory.BUILDING_BLOCKS, ModBlocks.COMPRESSED_CHERRY_SAPLING);
+//        offerReversible2x2CompactingRecipes(exporter, RecipeCategory.MISC, Items.CHERRY_SAPLING, RecipeCategory.BUILDING_BLOCKS, ModBlocks.COMPRESSED_CHERRY_SAPLING);
         offerNamingSafeReversibleCompactingRecipes(exporter, RecipeCategory.MISC, Items.CHORUS_FRUIT, RecipeCategory.BUILDING_BLOCKS, ModBlocks.CHORUS_FRUIT_BLOCK);
         offerNamingSafeReversibleCompactingRecipes(exporter, RecipeCategory.MISC, Items.SEAGRASS, RecipeCategory.BUILDING_BLOCKS, ModBlocks.COMPRESSED_SEAGRASS);
         offerNamingSafeReversibleCompactingRecipes(exporter, RecipeCategory.MISC, Items.CACTUS, RecipeCategory.BUILDING_BLOCKS, ModBlocks.COMPRESSED_CACTUS);
@@ -448,7 +447,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
 
         offerReversible2x2CompactingRecipes(exporter, RecipeCategory.MISC, Items.NETHERITE_SCRAP, RecipeCategory.BUILDING_BLOCKS, ModBlocks.NETHERITE_SCRAP_BLOCK);
         offerNamingSafeReversibleCompactingRecipes(exporter, RecipeCategory.MISC, Items.HONEYCOMB, RecipeCategory.BUILDING_BLOCKS, ModBlocks.COMPRESSED_HONEYCOMB_BLOCK);
-        offerNamingSafeReversibleCompactingRecipes(exporter, RecipeCategory.MISC, Blocks.PINK_PETALS, RecipeCategory.BUILDING_BLOCKS, ModBlocks.PINK_PETAL_BLOCK);
+//        offerNamingSafeReversibleCompactingRecipes(exporter, RecipeCategory.MISC, Blocks.PINK_PETALS, RecipeCategory.BUILDING_BLOCKS, ModBlocks.PINK_PETAL_BLOCK);
 
         offerReversible2x2CompactingRecipes(exporter, RecipeCategory.MISC, Items.ARROW, RecipeCategory.MISC, ModItems.BUNDLED_ARROWS);
         offerReversible2x2CompactingRecipes(exporter, RecipeCategory.MISC, Items.GLASS_BOTTLE, RecipeCategory.MISC, ModItems.BUNDLED_BOTTLES);

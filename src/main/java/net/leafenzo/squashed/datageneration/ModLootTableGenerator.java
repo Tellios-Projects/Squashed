@@ -55,10 +55,10 @@ public class ModLootTableGenerator extends FabricBlockLootTableProvider {
         addDrop(block, block);
         usedBlocks.add(block);
     }
-    public void addDrop(Block block, LootTable.Builder lootTable) {
-        this.lootTables.put(block.getLootTableId(), lootTable);
-        usedBlocks.add(block);
-    }
+//    public void addDrop(Block block, LootTable.Builder lootTable) {
+//        this.lootTables.put(block.getLootTableId(), lootTable);
+//        usedBlocks.add(block);
+//    }
 
     //GRAAaHH why is this so confusing??
 //    public void addDropWithSilkTouchOrShears(Block block, LootTable.Builder child) {
@@ -95,7 +95,7 @@ public class ModLootTableGenerator extends FabricBlockLootTableProvider {
         this.addDrop(ModBlocks.COMPRESSED_TNT, LootTable.builder().pool(this.addSurvivesExplosionCondition(ModBlocks.COMPRESSED_TNT, LootPool.builder().rolls(ConstantLootNumberProvider.create(1.0f)).with((LootPoolEntry.Builder<?>) ItemEntry.builder(ModBlocks.COMPRESSED_TNT).conditionally(BlockStatePropertyLootCondition.builder(ModBlocks.COMPRESSED_TNT).properties(StatePredicate.Builder.create().exactMatch(TntBlock.UNSTABLE, false)))))));
         this.addDrop(ModBlocks.CLAY_BALL_BLOCK, (Block block) -> this.drops((Block)block, Items.CLAY_BALL, UniformLootNumberProvider.create(7.0f, 9.0f)));
         this.addDropWithSilkTouch(ModBlocks.EXPERIENCE_BLOCK);
-        this.addDrop(ModBlocks.PINK_PETAL_BLOCK, (Block block) -> this.pinkPetalBlockDrops(block, Blocks.PINK_PETALS));
+//        this.addDrop(ModBlocks.PINK_PETAL_BLOCK, (Block block) -> this.pinkPetalBlockDrops(block, Blocks.PINK_PETALS));
 
 
         //Automatic

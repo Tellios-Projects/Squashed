@@ -294,7 +294,7 @@ public class ModModelProvider extends FabricModelProvider {
         for(Block block : ModBlocks.COMPACTED_ACACIA_LOGS) { registerCompressedLogs(blockStateModelGenerator, block); }
         for(Block block : ModBlocks.COMPACTED_DARK_OAK_LOGS) { registerCompressedLogs(blockStateModelGenerator, block); }
         for(Block block : ModBlocks.COMPACTED_MANGROVE_LOGS) { registerCompressedLogs(blockStateModelGenerator, block); }
-        for(Block block : ModBlocks.COMPACTED_CHERRY_LOGS) { registerCompressedLogs(blockStateModelGenerator, block); }
+//        for(Block block : ModBlocks.COMPACTED_CHERRY_LOGS) { registerCompressedLogs(blockStateModelGenerator, block); }
         for(Block block : ModBlocks.COMPACTED_CRIMSON_STEMS) { registerCompressedLogs(blockStateModelGenerator, block); }
         for(Block block : ModBlocks.COMPACTED_WARPED_STEMS) { registerCompressedLogs(blockStateModelGenerator, block); }
         for(Block block : ModBlocks.COMPACTED_BAMBOO_BLOCKS) { registerCompressedLogs(blockStateModelGenerator, block); }
@@ -319,7 +319,7 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.ENDER_PEARL_BLOCK);
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.ECHO_SHARD_BLOCK);
         blockStateModelGenerator.registerAxisRotated(ModBlocks.RABBIT_HIDE_BLOCK, TexturedModel.CUBE_COLUMN);
-        blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.COMPRESSED_CHERRY_SAPLING);
+       // blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.COMPRESSED_CHERRY_SAPLING);
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.CARROT_BLOCK);
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.GOLDEN_CARROT_BLOCK);
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.APPLE_BLOCK);
@@ -359,7 +359,7 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.EXPERIENCE_BLOCK);
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.NETHERITE_SCRAP_BLOCK);
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.COMPRESSED_HONEYCOMB_BLOCK);
-        blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.PINK_PETAL_BLOCK);
+//        blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.PINK_PETAL_BLOCK);
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.LILY_PAD_BLOCK);
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.COMPRESSED_CHERRY_LEAVES);
 

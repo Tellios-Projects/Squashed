@@ -65,16 +65,16 @@ public class ModUtil {
         }
         return a;
     }
-    public static Set<Identifier> allItemGroupIdsInNamespace(String namespace) {
-        Set<Identifier> set = Registries.ITEM_GROUP.getIds();
-        Set<Identifier> a = new HashSet<>();
-        for (Identifier id : set) {
-            if (Objects.equals(id.getNamespace(), namespace)) {
-                a.add(id);
-            }
-        }
-        return a;
-    }
+//    public static Set<Identifier> allItemGroupIdsInNamespace(String namespace) {
+//        Set<Identifier> set = Registries.ITEM_GROUP.getIds();
+//        Set<Identifier> a = new HashSet<>();
+//        for (Identifier id : set) {
+//            if (Objects.equals(id.getNamespace(), namespace)) {
+//                a.add(id);
+//            }
+//        }
+//        return a;
+//    }
 
 
      /*

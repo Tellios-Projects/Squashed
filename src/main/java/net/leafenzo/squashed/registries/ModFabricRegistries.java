@@ -69,7 +69,7 @@ public class ModFabricRegistries {
         registry.add(ModBlocks.COMPRESSED_AZALEA_LEAVES, 75, 80);
         registry.add(ModBlocks.COMPRESSED_FLOWERING_AZALEA_LEAVES, 60, 60);
         registry.add(ModBlocks.COMPRESSED_CHERRY_LEAVES, 60, 60);
-        registry.add(ModBlocks.PINK_PETAL_BLOCK, 75, 80);
+//        registry.add(ModBlocks.PINK_PETAL_BLOCK, 75, 80);
 
         registry.add(ModBlocks.COMPACTED_OAK_LOGS[0], 3, 5);
         registry.add(ModBlocks.COMPACTED_OAK_LOGS[1], 1, 5);
@@ -99,8 +99,8 @@ public class ModFabricRegistries {
         registry.add(ModBlocks.COMPACTED_MANGROVE_LOGS[1], 1, 5);
 //        registry.add(ModBlocks.COMPACTED_MANGROVE_LOGS[2], 1, 5);
 //      registry.add(  ModBlocks.COMPACTED_MANGROVE_LOGS[3]
-        registry.add(ModBlocks.COMPACTED_CHERRY_LOGS[0], 3, 5);
-        registry.add(ModBlocks.COMPACTED_CHERRY_LOGS[1], 1, 5);
+//        registry.add(ModBlocks.COMPACTED_CHERRY_LOGS[0], 3, 5);
+//        registry.add(ModBlocks.COMPACTED_CHERRY_LOGS[1], 1, 5);
 //        registry.add(ModBlocks.COMPACTED_CHERRY_LOGS[2], 1, 5);
 //      registry.add(  ModBlocks.COMPACTED_CHERRY_LOGS[3]
         registry.add(ModBlocks.COMPACTED_BAMBOO_BLOCKS[0], 3, 5);
@@ -148,10 +148,10 @@ public class ModFabricRegistries {
         registerCompactedFuels(registry, ModBlocks.COMPACTED_ACACIA_LOGS, 300);
         registerCompactedFuels(registry, ModBlocks.COMPACTED_DARK_OAK_LOGS, 300);
         registerCompactedFuels(registry, ModBlocks.COMPACTED_MANGROVE_LOGS, 300);
-        registerCompactedFuels(registry, ModBlocks.COMPACTED_CHERRY_LOGS, 300);
+//        registerCompactedFuels(registry, ModBlocks.COMPACTED_CHERRY_LOGS, 300);
         registerCompactedFuels(registry, ModBlocks.COMPACTED_BAMBOO_BLOCKS, 300);
 
-        registry.add(ModBlocks.COMPRESSED_CHERRY_SAPLING, 900);
+//        registry.add(ModBlocks.COMPRESSED_CHERRY_SAPLING, 900);
         registry.add(ModBlocks.COMPRESSED_OAK_SAPLING, 900);
         registry.add(ModBlocks.COMPRESSED_SPRUCE_SAPLING, 900);
         registry.add(ModBlocks.COMPRESSED_BIRCH_SAPLING, 900);
@@ -205,7 +205,7 @@ public class ModFabricRegistries {
         compostingChanceRegistry.add(ModBlocks.COMPRESSED_MANGROVE_LEAVES, 0.95964f);
         compostingChanceRegistry.add(ModBlocks.COMPRESSED_AZALEA_LEAVES, 0.95964f);
         compostingChanceRegistry.add(ModBlocks.COMPRESSED_FLOWERING_AZALEA_LEAVES, 0.95964f);
-        compostingChanceRegistry.add(ModBlocks.COMPRESSED_CHERRY_SAPLING, 0.95964f);
+//        compostingChanceRegistry.add(ModBlocks.COMPRESSED_CHERRY_SAPLING, 0.95964f);
         compostingChanceRegistry.add(ModBlocks.COMPRESSED_OAK_SAPLING, 0.95964f);
         compostingChanceRegistry.add(ModBlocks.COMPRESSED_SPRUCE_SAPLING, 0.95964f);
         compostingChanceRegistry.add(ModBlocks.COMPRESSED_BIRCH_SAPLING, 0.95964f);

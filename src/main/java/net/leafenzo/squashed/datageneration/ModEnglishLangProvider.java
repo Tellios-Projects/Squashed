@@ -3,14 +3,12 @@ package net.leafenzo.squashed.datageneration;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricLanguageProvider;
 import net.leafenzo.squashed.Super;
-import net.leafenzo.squashed.item.ModItemGroups;
+import net.leafenzo.squashed.block.ModBlocks;
 import net.leafenzo.squashed.util.ModUtil;
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
-import net.minecraft.item.ItemGroup;
 import net.minecraft.registry.Registries;
 import net.minecraft.util.Identifier;
-import net.leafenzo.squashed.block.ModBlocks;
 import org.apache.http.annotation.Obsolete;
 
 import java.util.HashSet;
@@ -38,9 +36,9 @@ public class ModEnglishLangProvider extends FabricLanguageProvider {
     private void generateTranslation(TranslationBuilder translationBuilder, Item item, String translation) {
         generateTranslation(translationBuilder, item.getTranslationKey(), translation);
     }
-    private void generateTranslation(TranslationBuilder translationBuilder, ItemGroup itemGroup, String translation) {
-        generateTranslation(translationBuilder, "itemgroup." + Registries.ITEM_GROUP.getId(itemGroup).getPath(), translation);
-    }
+//    private void generateTranslation(TranslationBuilder translationBuilder, ItemGroup itemGroup, String translation) {
+//        generateTranslation(translationBuilder, "itemgroup." + Registries.ITEM_GROUP.getId(itemGroup).getPath(), translation);
+//    }
     private void generatePotionTranslation(TranslationBuilder translationBuilder,  String subKey, String effectName) {
         String potionKey = "item.minecraft.potion.effect." + subKey;
         generateTranslation(translationBuilder, potionKey, "Potion of " + effectName);
@@ -71,8 +69,8 @@ public class ModEnglishLangProvider extends FabricLanguageProvider {
     @Override
     public void generateTranslations(TranslationBuilder translationBuilder) {
         //Manual
-        generateTranslation(translationBuilder, ModItemGroups.SQUASHED_BLOCKS, "Squashed!");
-        generateTranslation(translationBuilder, ModItemGroups.SQUASHED_COMPACTED, "Squashed! - Compacted Blocks");
+//        generateTranslation(translationBuilder, ModItemGroups.SQUASHED_BLOCKS, "Squashed!");
+//        generateTranslation(translationBuilder, ModItemGroups.SQUASHED_COMPACTED, "Squashed! - Compacted Blocks");
 
         generateTranslation(translationBuilder, ModBlocks.WHITE_COMPRESSED_WOOL, "Spool of White Wool");
         generateTranslation(translationBuilder, ModBlocks.LIGHT_GRAY_COMPRESSED_WOOL, "Spool of Light Gray Wool");
@@ -121,7 +119,7 @@ public class ModEnglishLangProvider extends FabricLanguageProvider {
 
         generateTranslation(translationBuilder, ModBlocks.COMPRESSED_COBWEB_BLOCK, "Clump of Cobwebs");
 
-        generateTranslation(translationBuilder, ModBlocks.COMPRESSED_CHERRY_SAPLING, "Cherry Mulch");
+//        generateTranslation(translationBuilder, ModBlocks.COMPRESSED_CHERRY_SAPLING, "Cherry Mulch");
         generateTranslation(translationBuilder, ModBlocks.COMPRESSED_OAK_SAPLING, "Oak Mulch");
         generateTranslation(translationBuilder, ModBlocks.COMPRESSED_SPRUCE_SAPLING, "Spruce Mulch");
         generateTranslation(translationBuilder, ModBlocks.COMPRESSED_BIRCH_SAPLING, "Birch Mulch");
@@ -185,7 +183,7 @@ public class ModEnglishLangProvider extends FabricLanguageProvider {
         generateTranslation(translationBuilder, ModBlocks.COMPRESSED_SLIME_BLOCK, "Coagulated Slime");
 
         generateTranslation(translationBuilder, ModBlocks.EXPERIENCE_BLOCK, "Coagulated Experience");
-        generateTranslation(translationBuilder, ModBlocks.PINK_PETAL_BLOCK, "Pile of Pink Petals");
+//        generateTranslation(translationBuilder, ModBlocks.PINK_PETAL_BLOCK, "Pile of Pink Petals");
         generateTranslation(translationBuilder, ModBlocks.COMPRESSED_SHROOMLIGHT, "Shroomlight Spore Block");
         generateTranslation(translationBuilder, ModBlocks.COMPRESSED_NETHER_WART_BLOCK, "Pile of Nether Wart");
         generateTranslation(translationBuilder, ModBlocks.COMPRESSED_HONEYCOMB_BLOCK, "Stacked Honeycomb");
@@ -232,12 +230,12 @@ public class ModEnglishLangProvider extends FabricLanguageProvider {
             usedTranslationKeys.add(key);
             translationBuilder.add(key, toSentanceCase(id.getPath()));
         }
-        for(Identifier id : ModUtil.allItemGroupIdsInNamespace(Super.MOD_ID)) {
-            String key = Registries.ITEM_GROUP.get(id).getDisplayName().getString();
-            if(usedTranslationKeys.contains(key)) { continue; } //Skip over duplicate translation keys
-            usedTranslationKeys.add(key);
-            translationBuilder.add(key, toSentanceCase(id.getPath()));
-        }
+//        for(Identifier id : ModUtil.allItemGroupIdsInNamespace(Super.MOD_ID)) {
+//            String key = Registries.ITEM_GROUP.get(id).getDisplayName().getString();
+//            if(usedTranslationKeys.contains(key)) { continue; } //Skip over duplicate translation keys
+//            usedTranslationKeys.add(key);
+//            translationBuilder.add(key, toSentanceCase(id.getPath()));
+//        }
 //        for(Identifier id : ModUtil.allStatusEffectIdsInNamespace(Super.MOD_ID)) {
 //            String key = Registries.STATUS_EFFECT.get(id).getTranslationKey();
 //            if(usedTranslationKeys.contains(key)) { continue; } //Skip over duplicate translation keys

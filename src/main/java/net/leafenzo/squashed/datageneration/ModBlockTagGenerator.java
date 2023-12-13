@@ -227,7 +227,7 @@ public class ModBlockTagGenerator extends FabricTagProvider<Block> {
             getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE).add(block);
             getOrCreateTagBuilder(BlockTags.NEEDS_STONE_TOOL).add(block);
             getOrCreateTagBuilder(BlockTags.CRYSTAL_SOUND_BLOCKS).add(block);
-            getOrCreateTagBuilder(BlockTags.VIBRATION_RESONATORS).add(block);
+            //getOrCreateTagBuilder(BlockTags.VIBRATION_RESONATORS).add(block);
         }
         for(Block block : ModBlocks.COMPACTED_BONE_BLOCKS) {
             getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE).add(block);
@@ -265,10 +265,10 @@ public class ModBlockTagGenerator extends FabricTagProvider<Block> {
         getOrCreateTagBuilder(BlockTags.AXE_MINEABLE).add(block);
         getOrCreateTagBuilder(BlockTags.LOGS_THAT_BURN).add(block);
     }
-    for(Block block : ModBlocks.COMPACTED_CHERRY_LOGS) {
-        getOrCreateTagBuilder(BlockTags.AXE_MINEABLE).add(block);
-        getOrCreateTagBuilder(BlockTags.LOGS_THAT_BURN).add(block);
-    }
+//    for(Block block : ModBlocks.COMPACTED_CHERRY_LOGS) {
+//        getOrCreateTagBuilder(BlockTags.AXE_MINEABLE).add(block);
+//        getOrCreateTagBuilder(BlockTags.LOGS_THAT_BURN).add(block);
+//    }
     for(Block block : ModBlocks.COMPACTED_CRIMSON_STEMS) {
         getOrCreateTagBuilder(BlockTags.AXE_MINEABLE).add(block);
         getOrCreateTagBuilder(BlockTags.LOGS).add(block);
@@ -405,7 +405,7 @@ public class ModBlockTagGenerator extends FabricTagProvider<Block> {
                 .add(ModBlocks.COMPRESSED_MANGROVE_PROPAGULE)
                 .add(ModBlocks.COMPRESSED_CRIMSON_FUNGUS)
                 .add(ModBlocks.COMPRESSED_WARPED_FUNGUS)
-                .add(ModBlocks.COMPRESSED_CHERRY_SAPLING)
+//                .add(ModBlocks.COMPRESSED_CHERRY_SAPLING)
                 .add(ModBlocks.FLINT_BLOCK)
                 .add(ModBlocks.SUGAR_BLOCK)
                 .add(ModBlocks.GUNPOWDER_BLOCK)
@@ -422,7 +422,7 @@ public class ModBlockTagGenerator extends FabricTagProvider<Block> {
                 .add(ModBlocks.CLAY_BALL_BLOCK);
 
         getOrCreateTagBuilder(BlockTags.DIRT)
-                .add(ModBlocks.COMPRESSED_CHERRY_SAPLING)
+//                .add(ModBlocks.COMPRESSED_CHERRY_SAPLING)
                 .add(ModBlocks.COMPRESSED_OAK_SAPLING)
                 .add(ModBlocks.COMPRESSED_SPRUCE_SAPLING)
                 .add(ModBlocks.COMPRESSED_BIRCH_SAPLING)
@@ -446,7 +446,7 @@ public class ModBlockTagGenerator extends FabricTagProvider<Block> {
         ;
 
         getOrCreateTagBuilder(BlockTags.MUSHROOM_GROW_BLOCK)
-                .add(ModBlocks.COMPRESSED_CHERRY_SAPLING)
+//                .add(ModBlocks.COMPRESSED_CHERRY_SAPLING)
                 .add(ModBlocks.COMPRESSED_OAK_SAPLING)
                 .add(ModBlocks.COMPRESSED_SPRUCE_SAPLING)
                 .add(ModBlocks.COMPRESSED_BIRCH_SAPLING)
@@ -488,7 +488,7 @@ public class ModBlockTagGenerator extends FabricTagProvider<Block> {
                 .add(ModBlocks.COMPRESSED_SEAGRASS)
                 .add(ModBlocks.VINE_BLOCK)
                 .add(ModBlocks.KELP_BLOCK)
-                .add(ModBlocks.PINK_PETAL_BLOCK)
+//                .add(ModBlocks.PINK_PETAL_BLOCK)
                 .add(ModBlocks.LILY_PAD_BLOCK);
 
 
@@ -517,11 +517,11 @@ public class ModBlockTagGenerator extends FabricTagProvider<Block> {
         getOrCreateTagBuilder(BlockTags.CRYSTAL_SOUND_BLOCKS)
                 .add(ModBlocks.AMETHYST_SHARD_BLOCK);
 
-        getOrCreateTagBuilder(BlockTags.VIBRATION_RESONATORS)
-                .add(ModBlocks.AMETHYST_SHARD_BLOCK);
+//        getOrCreateTagBuilder(BlockTags.VIBRATION_RESONATORS)
+//                .add(ModBlocks.AMETHYST_SHARD_BLOCK);
 
-        getOrCreateTagBuilder(BlockTags.ENCHANTMENT_POWER_PROVIDER)
-                .add(ModBlocks.BOOK_BLOCK);
+//        getOrCreateTagBuilder(BlockTags.ENCHANTMENT_POWER_PROVIDER)
+//                .add(ModBlocks.BOOK_BLOCK);
 
         getOrCreateTagBuilder(BlockTags.BEACON_BASE_BLOCKS)
                 .add(ModBlocks.NETHERITE_SCRAP_BLOCK);
