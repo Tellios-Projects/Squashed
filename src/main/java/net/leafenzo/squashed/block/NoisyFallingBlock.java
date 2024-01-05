@@ -23,7 +23,7 @@ public class NoisyFallingBlock extends FallingBlock {
     @Override
     public void onLanding(World world, BlockPos pos, BlockState fallingBlockState, BlockState currentStateInPos, FallingBlockEntity fallingBlockEntity) {
         if (!fallingBlockEntity.isSilent()) {
-            world.playSound(null, pos, fallingSoundEvent, SoundCategory.BLOCKS, 1.4f, 1.0f);
+            world.playSound(null, pos, fallingSoundEvent, SoundCategory.BLOCKS, fallingSoundVolume, fallingSoundPitch);
         }
     }
 }
