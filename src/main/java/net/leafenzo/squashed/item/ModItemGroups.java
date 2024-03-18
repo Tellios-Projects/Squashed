@@ -23,6 +23,77 @@ public class ModItemGroups {
 //                        for(Identifier id : ModUtil.allItemIdsInNamespace(Super.MOD_ID)) entries.add(Registries.ITEM.get(id));
 //
 //                    }).build());
+public static ItemGroup SQUASHED_COMPACTED = Registry.register(Registries.ITEM_GROUP, new Identifier(Super.MOD_ID, "squashed_compacted_blocks"),
+        FabricItemGroup.builder().displayName(Text.translatable("itemgroup.squashed_compacted_blocks"))
+                .icon(() -> new ItemStack(ModBlocks.COMPACTED_TUFF[2].asItem())).entries((displayContext, entries) -> {
+                    for(Block block : ModBlocks.COMPACTED_DIRT) entries.add(block);
+                    for(Block block : ModBlocks.COMPACTED_MUD) entries.add(block);
+                    for(Block block : ModBlocks.COMPACTED_CLAY) entries.add(block);
+                    for(Block block : ModBlocks.COMPACTED_GRAVEL) entries.add(block);
+                    for(Block block : ModBlocks.COMPACTED_SAND) entries.add(block);
+                    for(Block block : ModBlocks.COMPACTED_RED_SAND) entries.add(block);
+                    for(Block block : ModBlocks.COMPACTED_BLUE_ICE) entries.add(block);
+                    for(Block block : ModBlocks.COMPACTED_SNOW_BLOCKS) entries.add(block);
+                    for(Block block : ModBlocks.COMPACTED_MOSS_BLOCKS) entries.add(block);
+                    for(Block block : ModBlocks.COMPACTED_STONE) entries.add(block);
+                    for(Block block : ModBlocks.COMPACTED_COBBLESTONE) entries.add(block);
+                    for(Block block : ModBlocks.COMPACTED_DEEPSLATE) entries.add(block);
+                    for(Block block : ModBlocks.COMPACTED_COBBLED_DEEPSLATE) entries.add(block);
+                    for(Block block : ModBlocks.COMPACTED_GRANITE) entries.add(block);
+                    for(Block block : ModBlocks.COMPACTED_DIORITE) entries.add(block);
+                    for(Block block : ModBlocks.COMPACTED_ANDESITE) entries.add(block);
+                    for(Block block : ModBlocks.COMPACTED_CALCITE) entries.add(block);
+                    for(Block block : ModBlocks.COMPACTED_TUFF) entries.add(block);
+                    for(Block block : ModBlocks.COMPACTED_DRIPSTONE_BLOCKS) entries.add(block);
+                    for(Block block : ModBlocks.COMPACTED_PRISMARINE) entries.add(block);
+                    for(Block block : ModBlocks.COMPACTED_MAGMA_BLOCKS) entries.add(block);
+                    for(Block block : ModBlocks.COMPACTED_OBSIDIAN) entries.add(block);
+                    for(Block block : ModBlocks.COMPACTED_NETHERRACK) entries.add(block);
+                    for(Block block : ModBlocks.COMPACTED_SOUL_SAND) entries.add(block);
+                    for(Block block : ModBlocks.COMPACTED_SOUL_SOIL) entries.add(block);
+                    for(Block block : ModBlocks.COMPACTED_BONE_BLOCKS) entries.add(block);
+                    for(Block block : ModBlocks.COMPACTED_BLACKSTONE) entries.add(block);
+                    for(Block block : ModBlocks.COMPACTED_BASALT) entries.add(block);
+                    for(Block block : ModBlocks.COMPACTED_END_STONE) entries.add(block);
+                    for(Block block : ModBlocks.COMPACTED_COAL_BLOCKS) entries.add(block);
+                    for(Block block : ModBlocks.COMPACTED_RAW_IRON_BLOCKS) entries.add(block);
+                    for(Block block : ModBlocks.COMPACTED_RAW_COPPER_BLOCKS) entries.add(block);
+                    for(Block block : ModBlocks.COMPACTED_RAW_GOLD_BLOCKS) entries.add(block);
+                    for(Block block : ModBlocks.COMPACTED_IRON_BLOCKS) entries.add(block);
+                    entries.add(ModBlocks.COMPACTED_COPPER_BLOCKS[0]);
+                    entries.add(ModBlocks.EXPOSED_COMPRESSED_COPPER_BLOCK);
+                    entries.add(ModBlocks.WEATHERED_COMPRESSED_COPPER_BLOCK);
+                    entries.add(ModBlocks.OXIDIZED_COMPRESSED_COPPER_BLOCK);
+                    entries.add(ModBlocks.WAXED_COMPRESSED_COPPER_BLOCK);
+                    entries.add(ModBlocks.WAXED_EXPOSED_COMPRESSED_COPPER_BLOCK);
+                    entries.add(ModBlocks.WAXED_WEATHERED_COMPRESSED_COPPER_BLOCK);
+                    entries.add(ModBlocks.WAXED_OXIDIZED_COMPRESSED_COPPER_BLOCK);
+                    entries.add(ModBlocks.COMPACTED_COPPER_BLOCKS[1]);
+                    entries.add(ModBlocks.COMPACTED_COPPER_BLOCKS[2]);
+                    entries.add(ModBlocks.COMPACTED_COPPER_BLOCKS[3]);
+                    for(Block block : ModBlocks.COMPACTED_GOLD_BLOCKS) entries.add(block);
+                    for(Block block : ModBlocks.COMPACTED_REDSTONE_BLOCKS) entries.add(block);
+                    for(Block block : ModBlocks.COMPACTED_EMERALD_BLOCKS) entries.add(block);
+                    for(Block block : ModBlocks.COMPACTED_LAPIS_BLOCKS) entries.add(block);
+                    for(Block block : ModBlocks.COMPACTED_DIAMOND_BLOCKS) entries.add(block);
+                    for(Block block : ModBlocks.COMPACTED_NETHERITE_BLOCKS) entries.add(block);
+                    for(Block block : ModBlocks.COMPACTED_GLOWSTONE_BLOCKS) entries.add(block);
+                    for(Block block : ModBlocks.COMPACTED_QUARTZ_BLOCKS) entries.add(block);
+                    for(Block block : ModBlocks.COMPACTED_AMETHYST_BLOCKS) entries.add(block);
+                    for(Block block : ModBlocks.COMPACTED_OAK_LOGS) entries.add(block);
+                    for(Block block : ModBlocks.COMPACTED_SPRUCE_LOGS) entries.add(block);
+                    for(Block block : ModBlocks.COMPACTED_BIRCH_LOGS) entries.add(block);
+                    for(Block block : ModBlocks.COMPACTED_JUNGLE_LOGS) entries.add(block);
+                    for(Block block : ModBlocks.COMPACTED_ACACIA_LOGS) entries.add(block);
+                    for(Block block : ModBlocks.COMPACTED_DARK_OAK_LOGS) entries.add(block);
+                    for(Block block : ModBlocks.COMPACTED_MANGROVE_LOGS) entries.add(block);
+                    for(Block block : ModBlocks.COMPACTED_CHERRY_LOGS) entries.add(block);
+                    for(Block block : ModBlocks.COMPACTED_BAMBOO_BLOCKS) entries.add(block);
+                    for(Block block : ModBlocks.COMPACTED_CRIMSON_STEMS) entries.add(block);
+                    for(Block block : ModBlocks.COMPACTED_WARPED_STEMS) entries.add(block);
+                    for(Block block : ModBlocks.COMPACTED_SCULK) entries.add(block);
+                }).build());
+
 
     public static ItemGroup SQUASHED_BLOCKS = Registry.register(Registries.ITEM_GROUP, new Identifier(Super.MOD_ID, "squashed_blocks"),
             FabricItemGroup.builder().displayName(Text.translatable("itemgroup.squashed_blocks"))
@@ -218,78 +289,6 @@ public class ModItemGroups {
                             entries.add(ModItems.STACKED_BOWLS);
                             entries.add(ModItems.BUNDLED_BOTTLES);
                     }).build());
-
-    public static ItemGroup SQUASHED_COMPACTED = Registry.register(Registries.ITEM_GROUP, new Identifier(Super.MOD_ID, "squashed_compacted_blocks"),
-            FabricItemGroup.builder().displayName(Text.translatable("itemgroup.squashed_compacted_blocks"))
-                    .icon(() -> new ItemStack(ModBlocks.COMPACTED_TUFF[2].asItem())).entries((displayContext, entries) -> {
-                            for(Block block : ModBlocks.COMPACTED_DIRT) entries.add(block);
-                            for(Block block : ModBlocks.COMPACTED_MUD) entries.add(block);
-                            for(Block block : ModBlocks.COMPACTED_CLAY) entries.add(block);
-                            for(Block block : ModBlocks.COMPACTED_GRAVEL) entries.add(block);
-                            for(Block block : ModBlocks.COMPACTED_SAND) entries.add(block);
-                            for(Block block : ModBlocks.COMPACTED_RED_SAND) entries.add(block);
-                            for(Block block : ModBlocks.COMPACTED_BLUE_ICE) entries.add(block);
-                            for(Block block : ModBlocks.COMPACTED_SNOW_BLOCKS) entries.add(block);
-                            for(Block block : ModBlocks.COMPACTED_MOSS_BLOCKS) entries.add(block);
-                            for(Block block : ModBlocks.COMPACTED_STONE) entries.add(block);
-                            for(Block block : ModBlocks.COMPACTED_COBBLESTONE) entries.add(block);
-                            for(Block block : ModBlocks.COMPACTED_DEEPSLATE) entries.add(block);
-                            for(Block block : ModBlocks.COMPACTED_COBBLED_DEEPSLATE) entries.add(block);
-                            for(Block block : ModBlocks.COMPACTED_GRANITE) entries.add(block);
-                            for(Block block : ModBlocks.COMPACTED_DIORITE) entries.add(block);
-                            for(Block block : ModBlocks.COMPACTED_ANDESITE) entries.add(block);
-                            for(Block block : ModBlocks.COMPACTED_CALCITE) entries.add(block);
-                            for(Block block : ModBlocks.COMPACTED_TUFF) entries.add(block);
-                            for(Block block : ModBlocks.COMPACTED_DRIPSTONE_BLOCKS) entries.add(block);
-                            for(Block block : ModBlocks.COMPACTED_PRISMARINE) entries.add(block);
-                            for(Block block : ModBlocks.COMPACTED_MAGMA_BLOCKS) entries.add(block);
-                            for(Block block : ModBlocks.COMPACTED_OBSIDIAN) entries.add(block);
-                            for(Block block : ModBlocks.COMPACTED_NETHERRACK) entries.add(block);
-                            for(Block block : ModBlocks.COMPACTED_SOUL_SAND) entries.add(block);
-                            for(Block block : ModBlocks.COMPACTED_SOUL_SOIL) entries.add(block);
-                            for(Block block : ModBlocks.COMPACTED_BONE_BLOCKS) entries.add(block);
-                            for(Block block : ModBlocks.COMPACTED_BLACKSTONE) entries.add(block);
-                            for(Block block : ModBlocks.COMPACTED_BASALT) entries.add(block);
-                            for(Block block : ModBlocks.COMPACTED_END_STONE) entries.add(block);
-                            for(Block block : ModBlocks.COMPACTED_COAL_BLOCKS) entries.add(block);
-                            for(Block block : ModBlocks.COMPACTED_RAW_IRON_BLOCKS) entries.add(block);
-                            for(Block block : ModBlocks.COMPACTED_RAW_COPPER_BLOCKS) entries.add(block);
-                            for(Block block : ModBlocks.COMPACTED_RAW_GOLD_BLOCKS) entries.add(block);
-                            for(Block block : ModBlocks.COMPACTED_IRON_BLOCKS) entries.add(block);
-                            entries.add(ModBlocks.COMPACTED_COPPER_BLOCKS[0]);
-                            entries.add(ModBlocks.EXPOSED_COMPRESSED_COPPER_BLOCK);
-                            entries.add(ModBlocks.WEATHERED_COMPRESSED_COPPER_BLOCK);
-                            entries.add(ModBlocks.OXIDIZED_COMPRESSED_COPPER_BLOCK);
-                            entries.add(ModBlocks.WAXED_COMPRESSED_COPPER_BLOCK);
-                            entries.add(ModBlocks.WAXED_EXPOSED_COMPRESSED_COPPER_BLOCK);
-                            entries.add(ModBlocks.WAXED_WEATHERED_COMPRESSED_COPPER_BLOCK);
-                            entries.add(ModBlocks.WAXED_OXIDIZED_COMPRESSED_COPPER_BLOCK);
-                            entries.add(ModBlocks.COMPACTED_COPPER_BLOCKS[1]);
-                            entries.add(ModBlocks.COMPACTED_COPPER_BLOCKS[2]);
-                            entries.add(ModBlocks.COMPACTED_COPPER_BLOCKS[3]);
-                            for(Block block : ModBlocks.COMPACTED_GOLD_BLOCKS) entries.add(block);
-                            for(Block block : ModBlocks.COMPACTED_REDSTONE_BLOCKS) entries.add(block);
-                            for(Block block : ModBlocks.COMPACTED_EMERALD_BLOCKS) entries.add(block);
-                            for(Block block : ModBlocks.COMPACTED_LAPIS_BLOCKS) entries.add(block);
-                            for(Block block : ModBlocks.COMPACTED_DIAMOND_BLOCKS) entries.add(block);
-                            for(Block block : ModBlocks.COMPACTED_NETHERITE_BLOCKS) entries.add(block);
-                            for(Block block : ModBlocks.COMPACTED_GLOWSTONE_BLOCKS) entries.add(block);
-                            for(Block block : ModBlocks.COMPACTED_QUARTZ_BLOCKS) entries.add(block);
-                            for(Block block : ModBlocks.COMPACTED_AMETHYST_BLOCKS) entries.add(block);
-                            for(Block block : ModBlocks.COMPACTED_OAK_LOGS) entries.add(block);
-                            for(Block block : ModBlocks.COMPACTED_SPRUCE_LOGS) entries.add(block);
-                            for(Block block : ModBlocks.COMPACTED_BIRCH_LOGS) entries.add(block);
-                            for(Block block : ModBlocks.COMPACTED_JUNGLE_LOGS) entries.add(block);
-                            for(Block block : ModBlocks.COMPACTED_ACACIA_LOGS) entries.add(block);
-                            for(Block block : ModBlocks.COMPACTED_DARK_OAK_LOGS) entries.add(block);
-                            for(Block block : ModBlocks.COMPACTED_MANGROVE_LOGS) entries.add(block);
-                            for(Block block : ModBlocks.COMPACTED_CHERRY_LOGS) entries.add(block);
-                            for(Block block : ModBlocks.COMPACTED_BAMBOO_BLOCKS) entries.add(block);
-                            for(Block block : ModBlocks.COMPACTED_CRIMSON_STEMS) entries.add(block);
-                            for(Block block : ModBlocks.COMPACTED_WARPED_STEMS) entries.add(block);
-                            for(Block block : ModBlocks.COMPACTED_SCULK) entries.add(block);
-                    }).build());
-
     public static void registerModItemGroups() {
         ModInit.LOGGER.debug("Registering item groups for " + Super.MOD_ID);
     }
