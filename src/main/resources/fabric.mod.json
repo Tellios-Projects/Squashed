@@ -6,7 +6,13 @@
   "name": "Squashed",
   "description": "",
   "authors": [
-    "Leah (@leafenzio), Tellio (@tellioaridoitsu), Merp (@I_Am_Merp), Zucchini (@zucchinibyday)"
+    "Leah (@leafenzio on Twitter)",
+    "Tellio (@tellioaridoitsu on Twitter)"
+  ],
+  "contributors": [
+    "Merp (@I_Am_Merp on Twitter)",
+    "Zucchini (@zucchinibyday on Twitter)",
+    "BrickerMan (@bricker_man on Twitter)"
   ],
   "contact": {
     "homepage": "https://modrinth.com/mod/squashed",
